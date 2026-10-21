@@ -1,0 +1,1158 @@
+{
+  "date": "2026-10-21",
+  "url": "https://api.crossref.org/works/10.1038/s42256-023-00657-x",
+  "kind": "json",
+  "response": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            20
+          ]
+        ],
+        "date-time": "2026-10-20T11:49:28Z",
+        "timestamp": 1792496968797,
+        "version": "4.5.0"
+      },
+      "reference-count": 75,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "6",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                22
+              ]
+            ],
+            "date-time": "2023-05-22T00:00:00Z",
+            "timestamp": 1684713600000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                22
+              ]
+            ],
+            "date-time": "2023-05-22T00:00:00Z",
+            "timestamp": 1684713600000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/100000001",
+          "name": "National Science Foundation",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "DBI-1552309"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "DBI-1552309"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/100000001",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/100000001",
+          "name": "National Science Foundation",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "DGE-1762114"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "DGE-1762114"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/100000001",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/100000001",
+          "name": "National Science Foundation",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "DGE-1256082"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "DGE-1256082"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/100000001",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/100000001",
+          "name": "National Science Foundation",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "DBI-1759487"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "DBI-1759487"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/100000001",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/100000001",
+          "name": "National Science Foundation",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "DGE-1762114"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "DGE-1762114"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/100000001",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/100000001",
+          "name": "National Science Foundation",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "DBI-1759487"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "DBI-1759487"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/100000001",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/100000001",
+          "name": "National Science Foundation",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "DBI-1552309"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "DBI-1552309"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/100000001",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/100000001",
+          "name": "National Science Foundation",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "DBI-1759487"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "DBI-1759487"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/100000001",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/100000001",
+          "name": "National Science Foundation",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "DBI-1552309"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "DBI-1552309"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/100000001",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/100000001",
+          "name": "National Science Foundation",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "DGE-1256082"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "DGE-1256082"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/100000001",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/100000001",
+          "name": "National Science Foundation",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "DBI-1759487"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "DBI-1759487"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/100000001",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/100000001",
+          "name": "National Science Foundation",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "DBI-1552309"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "DBI-1552309"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/100000001",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/100000002",
+          "name": "U.S. Department of Health & Human Services | National Institutes of Health",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "R35 GM 128638"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "R35 GM 128638"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/100000002",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/100000002",
+          "name": "U.S. Department of Health & Human Services | National Institutes of Health",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "R01 NIA AG 061132"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "R01 NIA AG 061132"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/100000002",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "link.springer.com"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Nat Mach Intell"
+      ],
+      "DOI": "10.1038/s42256-023-00657-x",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2023,
+            5,
+            22
+          ]
+        ],
+        "date-time": "2023-05-22T12:01:35Z",
+        "timestamp": 1684756895000
+      },
+      "page": "590-601",
+      "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 493,
+      "title": [
+        "Algorithms to estimate Shapley value feature attributions"
+      ],
+      "prefix": "10.1038",
+      "volume": "5",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0549-4524",
+          "authenticated-orcid": false,
+          "given": "Hugh",
+          "family": "Chen",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ian C.",
+          "family": "Covert",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Scott M.",
+          "family": "Lundberg",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5833-5215",
+          "authenticated-orcid": false,
+          "given": "Su-In",
+          "family": "Lee",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "297",
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            5,
+            22
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "657_CR1",
+          "doi-asserted-by": "publisher",
+          "first-page": "354",
+          "DOI": "10.1038/nature24270",
+          "volume": "550",
+          "author": "D Silver",
+          "year": "2017",
+          "unstructured": "Silver, D. et al. Mastering the game of Go without human knowledge. Nature 550, 354–359 (2017).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "657_CR2",
+          "doi-asserted-by": "publisher",
+          "first-page": "508",
+          "DOI": "10.1126/science.aam6960",
+          "volume": "356",
+          "author": "M Moravcik",
+          "year": "2017",
+          "unstructured": "Moravcik, M. et al. Deepstack: expert-level artificial intelligence in heads-up no-limit poker. Science 356, 508–513 (2017).",
+          "journal-title": "Science"
+        },
+        {
+          "key": "657_CR3",
+          "doi-asserted-by": "publisher",
+          "first-page": "350",
+          "DOI": "10.1038/s41586-019-1724-z",
+          "volume": "575",
+          "author": "O Vinyals",
+          "year": "2019",
+          "unstructured": "Vinyals, O. et al. Grandmaster level in StarCraft II using multi-agent reinforcement learning. Nature 575, 350–354 (2019).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "657_CR4",
+          "doi-asserted-by": "publisher",
+          "first-page": "583",
+          "DOI": "10.1038/s41586-021-03819-2",
+          "volume": "596",
+          "author": "J Jumper",
+          "year": "2021",
+          "unstructured": "Jumper, J. et al. Highly accurate protein structure prediction with AlphaFold. Nature 596, 583–589 (2021).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "657_CR5",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Jean, S., Cho, K., Memisevic, R. & Bengio, Y. On using very large target vocabulary for neural machine translation. In Proc. 53rd Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing (Volume 1, Long Papers) P15-1001 (2015).",
+          "DOI": "10.3115/v1/P15-1001"
+        },
+        {
+          "key": "657_CR6",
+          "doi-asserted-by": "publisher",
+          "first-page": "5",
+          "DOI": "10.1023/A:1010933404324",
+          "volume": "45",
+          "author": "L Breiman",
+          "year": "2001",
+          "unstructured": "Breiman, L. Random forests. Mach. Learn. 45, 5–32 (2001).",
+          "journal-title": "Mach. Learn."
+        },
+        {
+          "key": "657_CR7",
+          "doi-asserted-by": "publisher",
+          "first-page": "436",
+          "DOI": "10.1038/nature14539",
+          "volume": "521",
+          "author": "Y LeCun",
+          "year": "2015",
+          "unstructured": "LeCun, Y., Bengio, Y. & Hinton, G. Deep learning. Nature 521, 436–444 (2015).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "657_CR8",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Chen, T. & Guestrin, C. XGBoost: a scalable tree boosting system. In Proc. 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining 785–794 (ACM, 2016).",
+          "DOI": "10.1145/2939672.2939785"
+        },
+        {
+          "key": "657_CR9",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Steinkraus, D., Buck, I. & Simard, P. Using GPUs for machine learning algorithms. In Proc. Eighth International Conference on Document Analysis and Recognition (ICDAR’05) 1115–1120 (IEEE, 2005).",
+          "DOI": "10.1109/ICDAR.2005.251"
+        },
+        {
+          "key": "657_CR10",
+          "doi-asserted-by": "publisher",
+          "first-page": "665",
+          "DOI": "10.1038/s42256-020-00257-z",
+          "volume": "2",
+          "author": "R Geirhos",
+          "year": "2020",
+          "unstructured": "Geirhos, R. et al. Shortcut learning in deep neural networks. Nat. Mach. Intell. 2, 665–673 (2020).",
+          "journal-title": "Nat. Mach. Intell."
+        },
+        {
+          "key": "657_CR11",
+          "unstructured": "Doshi-Velez, F. & Kim, B. Towards a rigorous science of interpretable machine learning. Preprint at https://arxiv.org/abs/1702.08608 (2017)."
+        },
+        {
+          "key": "657_CR12",
+          "unstructured": "Selbst, A. & Powles, J. ‘Meaningful information’ and the right to explanation. In Proc. Conference on Fairness, Accountability and Transparency 48–48 (PMLR, 2018)."
+        },
+        {
+          "key": "657_CR13",
+          "first-page": "236",
+          "volume": "3",
+          "author": "E Knight",
+          "year": "2019",
+          "unstructured": "Knight, E. AI and machine learning-based credit underwriting and adverse action under the ECOA. Bus. Fin. L. Rev. 3, 236 (2019).",
+          "journal-title": "Bus. Fin. L. Rev."
+        },
+        {
+          "key": "657_CR14",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Ribeiro, M. T., Singh, S. & Guestrin, C. ‘Why should I trust you?’ Explaining the predictions of any classifier. In Proc. 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining 1135–1144 (ACM, 2016).",
+          "DOI": "10.1145/2939672.2939778"
+        },
+        {
+          "key": "657_CR15",
+          "unstructured": "Lundberg, S. M. & Lee, S.-I. A unified approach to interpreting model predictions. In Advances in Neural Information Processing Systems 4765–4774 (ACM, 2017)."
+        },
+        {
+          "key": "657_CR16",
+          "doi-asserted-by": "publisher",
+          "first-page": "56",
+          "DOI": "10.1038/s42256-019-0138-9",
+          "volume": "2",
+          "author": "SM Lundberg",
+          "year": "2020",
+          "unstructured": "Lundberg, S. M. et al. From local explanations to global understanding with explainable AI for trees. Nat. Mach. Intell. 2, 56–67 (2020).",
+          "journal-title": "Nat. Mach. Intell."
+        },
+        {
+          "key": "657_CR17",
+          "unstructured": "Shrikumar, A., Greenside, P. & Kundaje, A. Learning important features through propagating activation differences. In Proc. 34th International Conference on Machine Learning Vol. 70, 3145–3153 (JMLR, 2017)."
+        },
+        {
+          "key": "657_CR18",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Binder, A., Montavon, G., Lapuschkin, S., Muller, K.-R. & Samek, W. Layer-wise relevance propagation for neural networks with local renormalization layers. In Proc. International Conference on Artificial Neural Networks 63–71 (Springer, 2016).",
+          "DOI": "10.1007/978-3-319-44781-0_8"
+        },
+        {
+          "key": "657_CR19",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Datta, A., Sen, S. & Zick, Y. Algorithmic transparency via quantitative input influence: theory and experiments with learning systems. In Proc. 2016 IEEE Symposium on Security and Privacy (SP) 598–617 (IEEE, 2016).",
+          "DOI": "10.1109/SP.2016.42"
+        },
+        {
+          "key": "657_CR20",
+          "unstructured": "Sundararajan, M., Taly, A. & Yan, Q. Axiomatic attribution for deep networks. In Proc. International Conference on Machine Learning 3319–3328 (PMLR, 2017)."
+        },
+        {
+          "key": "657_CR21",
+          "first-page": "1",
+          "volume": "11",
+          "author": "E Strumbelj",
+          "year": "2010",
+          "unstructured": "Strumbelj, E. & Kononenko, I. An efficient explanation of individual classifications using game theory. J. Mach. Learn. Res. 11, 1–18 (2010).",
+          "journal-title": "J. Mach. Learn. Res."
+        },
+        {
+          "key": "657_CR22",
+          "unstructured": "Kumar, I. E., Venkatasubramanian, S., Scheidegger, C. & Friedler, S. Problems with Shapley-value-based explanations as feature importance measures. In Proc. International Conference on Machine Learning 5491–5500 (PMLR, 2020)."
+        },
+        {
+          "key": "657_CR23",
+          "unstructured": "Sundararajan, M. & Najmi, A. The many Shapley values for model explanation. In Proc. International Conference on Machine Learning 9269–9278 (PMLR, 2020)."
+        },
+        {
+          "key": "657_CR24",
+          "unstructured": "Janzing, D., Minorics, L. & Blobaum, P. Feature relevance quantification in explainable AI: a causal problem. In Proc. International Conference on Artificial Intelligence and Statistics 2907–2916 (PMLR, 2020)."
+        },
+        {
+          "key": "657_CR25",
+          "first-page": "4778",
+          "volume": "33",
+          "author": "T Heskes",
+          "year": "2020",
+          "unstructured": "Heskes, T., Sijben, E., Bucur, I. G. & Claassen, T. Causal Shapley values: exploiting causal knowledge to explain individual predictions of complex models. Adv. Neural Inf. Process. Syst. 33, 4778–4789 (2020).",
+          "journal-title": "Adv. Neural Inf. Process. Syst."
+        },
+        {
+          "key": "657_CR26",
+          "first-page": "9477",
+          "volume": "22",
+          "author": "I Covert",
+          "year": "2021",
+          "unstructured": "Covert, I., Lundberg, S. & Lee, S.-I. Explaining by removing: a unified framework for model explanation. J. Mach. Learn. Res. 22, 9477–9566 (2021).",
+          "journal-title": "J. Mach. Learn. Res."
+        },
+        {
+          "key": "657_CR27",
+          "unstructured": "Chen, J., Song, L., Wainwright, M. J. & Jordan, M. I. L-Shapley and C-Shapley: efficient model interpretation for structured data. In Proc. International Conference on Learning Representations (ICLR'19) (2019)."
+        },
+        {
+          "key": "657_CR28",
+          "unstructured": "Chen, H., Janizek, J. D., Lundberg, S. & Lee, S.-I. True to the model or true to the data? Preprint at https://arxiv.org/abs/2006.16234 (2020)."
+        },
+        {
+          "key": "657_CR29",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Chen, H., Lundberg, S.M. & Lee, SI. Explaining a series of models by propagating Shapley values. Nat. Commun. 13, 4512 (2022).",
+          "DOI": "10.1038/s41467-022-31384-3"
+        },
+        {
+          "key": "657_CR30",
+          "doi-asserted-by": "publisher",
+          "first-page": "1726",
+          "DOI": "10.1016/j.cor.2008.04.004",
+          "volume": "36",
+          "author": "J Castro",
+          "year": "2009",
+          "unstructured": "Castro, J., Gómez, D. & Tejada, J. Polynomial calculation of the Shapley value based on sampling. Comput. Op. Res. 36, 1726–1730 (2009).",
+          "journal-title": "Comput. Op. Res."
+        },
+        {
+          "key": "657_CR31",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Okhrati, R. & Lipani, A. A multilinear sampling algorithm to estimate Shapley values. In Proc. 2020 25th International Conference on Pattern Recognition (ICPR) 7992–7999 (IEEE, 2021).",
+          "DOI": "10.1109/ICPR48806.2021.9412511"
+        },
+        {
+          "key": "657_CR32",
+          "unstructured": "Jethani, N., Sudarshan, M., Covert, I. C., Lee, S.-I. & Ranganath, R. FastSHAP: real-time Shapley value estimation. In Proc. International Conference on Learning Representations (PMLR, 2022)."
+        },
+        {
+          "key": "657_CR33",
+          "unstructured": "Ancona, M., Oztireli, C. & Gross, M. Explaining deep neural networks with a polynomial time algorithm for Shapley value approximation. In Proc. International Conference on Machine Learning 272–281 (PMLR, 2019)."
+        },
+        {
+          "key": "657_CR34",
+          "unstructured": "Wang, R., Wang, X. & Inouye, D. I. Shapley explanation networks. In Proc. International Conference on Learning Representations (PMLR, 2020)."
+        },
+        {
+          "key": "657_CR35",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Shapley, L. in Contributions to the Theory of Games Vol. II, 307–317 (Princeton Univ. Press, 1953).",
+          "DOI": "10.1515/9781400881970-018"
+        },
+        {
+          "key": "657_CR36",
+          "doi-asserted-by": "publisher",
+          "first-page": "1406",
+          "DOI": "10.1016/j.cor.2009.02.020",
+          "volume": "37",
+          "author": "R Lucchetti",
+          "year": "2010",
+          "unstructured": "Lucchetti, R., Moretti, S., Patrone, F. & Radrizzani, P. The Shapley and Banzhaf values in microarray games. Comput. Op. Res. 37, 1406–1412 (2010).",
+          "journal-title": "Comput. Op. Res."
+        },
+        {
+          "key": "657_CR37",
+          "doi-asserted-by": "publisher",
+          "first-page": "1413",
+          "DOI": "10.1016/j.cor.2009.02.016",
+          "volume": "37",
+          "author": "S Moretti",
+          "year": "2010",
+          "unstructured": "Moretti, S. Statistical analysis of the Shapley value for microarray games. Comput. Op. Res. 37, 1413–1418 (2010).",
+          "journal-title": "Comput. Op. Res."
+        },
+        {
+          "key": "657_CR38",
+          "doi-asserted-by": "publisher",
+          "first-page": "1189",
+          "DOI": "10.1093/rof/rfv028",
+          "volume": "20",
+          "author": "N Tarashev",
+          "year": "2016",
+          "unstructured": "Tarashev, N., Tsatsaronis, K. & Borio, C. Risk attribution using the Shapley value: methodology and policy applications. Rev. Finance 20, 1189–1213 (2016).",
+          "journal-title": "Rev. Finance"
+        },
+        {
+          "key": "657_CR39",
+          "unstructured": "Tarashev, N. A., Borio, C. E. & Tsatsaronis, K. The Systemic Importance of Financial Institutions. BIS Quarterly Review (September 2009)."
+        },
+        {
+          "key": "657_CR40",
+          "doi-asserted-by": "publisher",
+          "first-page": "65",
+          "DOI": "10.1007/BF01769885",
+          "volume": "14",
+          "author": "HP Young",
+          "year": "1985",
+          "unstructured": "Young, H. P. Monotonic solutions of cooperative games. Int. J. Game Theory 14, 65–72 (1985).",
+          "journal-title": "Int. J. Game Theory"
+        },
+        {
+          "key": "657_CR41",
+          "first-page": "2055",
+          "volume": "3",
+          "author": "D Monderer",
+          "year": "2002",
+          "unstructured": "Monderer, D. & Samet, D. et al. Variations on the Shapley value. Handbook Game Theory 3, 2055–2076 (2002).",
+          "journal-title": "Handbook Game Theory"
+        },
+        {
+          "key": "657_CR42",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Fong, R. C. & Vedaldi, A. Interpretable explanations of black boxes by meaningful perturbation. In Proc. IEEE International Conference on Computer Vision 3429–3437 (IEEE, 2017).",
+          "DOI": "10.1109/ICCV.2017.371"
+        },
+        {
+          "key": "657_CR43",
+          "doi-asserted-by": "publisher",
+          "first-page": "e22",
+          "DOI": "10.23915/distill.00022",
+          "volume": "5",
+          "author": "P Sturmfels",
+          "year": "2020",
+          "unstructured": "Sturmfels, P., Lundberg, S. & Lee, S.-I. Visualizing the impact of feature attribution baselines. Distill 5, e22 (2020).",
+          "journal-title": "Distill"
+        },
+        {
+          "key": "657_CR44",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Kapishnikov, A., Bolukbasi, T., Viégas, F. & Terry, M. XRAI: better attributions through regions. In Proc. IEEE/CVF International Conference on Computer Vision 4948–4957 (IEEE, 2019).",
+          "DOI": "10.1109/ICCV.2019.00505"
+        },
+        {
+          "key": "657_CR45",
+          "unstructured": "Ren, J., Zhou, Z., Chen, Q. & Zhang, Q. Can we faithfully represent absence states to compute Shapley values on a DNN? In Proc. International Conference on Learning Representations (2023)."
+        },
+        {
+          "key": "657_CR46",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Merrick, L. & Taly, A. The explanation game: explaining machine learning models using Shapley values. In Proc. International Cross-Domain Conference for Machine Learning and Knowledge Extraction 17–38 (Springer, 2020).",
+          "DOI": "10.1007/978-3-030-57321-8_2"
+        },
+        {
+          "key": "657_CR47",
+          "doi-asserted-by": "publisher",
+          "first-page": "103502",
+          "DOI": "10.1016/j.artint.2021.103502",
+          "volume": "298",
+          "author": "K Aas",
+          "year": "2021",
+          "unstructured": "Aas, K., Jullum, M. & Løland, A. Explaining individual predictions when features are dependent: more accurate approximations to Shapley values. Artif. Intell. 298, 103502 (2021).",
+          "journal-title": "Artif. Intell."
+        },
+        {
+          "key": "657_CR48",
+          "unstructured": "Frye, C., de Mijolla, D., Begley, T., Cowton, L., Stanley, M. & Feige, I. Shapley-based explainability on the data manifold. In Proc. International Conference on Learning Representations (2021)."
+        },
+        {
+          "key": "657_CR49",
+          "unstructured": "Frye, C., Rowat, C. & Feige, I. Asymmetric Shapley values: incorporating causal knowledge into model-agnostic explainability. In Proc. Advances in Neural Information Processing Systems 33 (NIPS, 2020)."
+        },
+        {
+          "key": "657_CR50",
+          "unstructured": "Wang, J., Wiens, J. & Lundberg, S. Shapley flow: a graph-based approach to interpreting model predictions. In Proc. International Conference on Artificial Intelligence and Statistics 721–729 (PMLR, 2021)."
+        },
+        {
+          "key": "657_CR51",
+          "unstructured": "Mase, M., Owen, A. B. & Seiler, B. Explaining black box decisions by Shapley cohort refinement. Preprint at https://arxiv.org/abs/1911.00467 (2019)."
+        },
+        {
+          "key": "657_CR52",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Redelmeier, A., Jullum, M. & Aas, K. Explaining predictive models with mixed features using Shapley values and conditional inference trees. In Proc. International Cross-Domain Conference for Machine Learning and Knowledge Extraction 117–137 (Springer, 2020).",
+          "DOI": "10.1007/978-3-030-57321-8_7"
+        },
+        {
+          "key": "657_CR53",
+          "unstructured": "Bénard, C., Biau, G., Da Veiga, S. & Scornet, E. SHAFF: fast and consistent Shapley effect estimates via random forests. In Proc. International Conference on Artificial Intelligence and Statistics 5563–5582 (PMLR, 2022)."
+        },
+        {
+          "key": "657_CR54",
+          "doi-asserted-by": "publisher",
+          "first-page": "62",
+          "DOI": "10.1515/demo-2021-0103",
+          "volume": "9",
+          "author": "K Aas",
+          "year": "2021",
+          "unstructured": "Aas, K., Nagler, T., Jullum, M. & Løland, A. Explaining predictive models using Shapley values and non-parametric vine copulas. Dependence Model. 9, 62–81 (2021).",
+          "journal-title": "Dependence Model."
+        },
+        {
+          "key": "657_CR55",
+          "first-page": "1",
+          "volume": "23",
+          "author": "LHB Olsen",
+          "year": "2022",
+          "unstructured": "Olsen, L. H. B., Glad, I. K., Jullum, M. & Aas, K. Using Shapley values and variational autoencoders to explain predictive models with dependent mixed features. J. Mach. Learn. Res. 23, 1–51 (2022).",
+          "journal-title": "J. Mach. Learn. Res."
+        },
+        {
+          "key": "657_CR56",
+          "doi-asserted-by": "publisher",
+          "first-page": "319",
+          "DOI": "10.1002/asmb.446",
+          "volume": "17",
+          "author": "S Lipovetsky",
+          "year": "2001",
+          "unstructured": "Lipovetsky, S. & Conklin, M. Analysis of regression in game theory approach. Appl. Stochastic Models Business Industry 17, 319–330 (2001).",
+          "journal-title": "Appl. Stochastic Models Business Industry"
+        },
+        {
+          "key": "657_CR57",
+          "doi-asserted-by": "publisher",
+          "first-page": "886",
+          "DOI": "10.1016/j.datak.2009.01.004",
+          "volume": "68",
+          "author": "E Štrumbelj",
+          "year": "2009",
+          "unstructured": "Štrumbelj, E., Kononenko, I. & Šikonja, M. R. Explaining instance classifications with interactions of subsets of feature values. Data Knowledge Eng. 68, 886–904 (2009).",
+          "journal-title": "Data Knowledge Eng."
+        },
+        {
+          "key": "657_CR58",
+          "unstructured": "Williamson, B. & Feng, J. Efficient nonparametric statistical inference on population feature importance using Shapley values. In Proc. International Conference on Machine Learning 10282–10291 (PMLR, 2020)."
+        },
+        {
+          "key": "657_CR59",
+          "unstructured": "Covert, I., Kim, C. & Lee, S.-I. Learning to estimate Shapley values with vision transformers. In Proc. International Conference on Learning Representations (2023)."
+        },
+        {
+          "key": "657_CR60",
+          "doi-asserted-by": "publisher",
+          "first-page": "257",
+          "DOI": "10.1287/moor.19.2.257",
+          "volume": "19",
+          "author": "X Deng",
+          "year": "1994",
+          "unstructured": "Deng, X. & Papadimitriou, C. H. On the complexity of cooperative solution concepts. Math. Op. Res. 19, 257–266 (1994).",
+          "journal-title": "Math. Op. Res."
+        },
+        {
+          "key": "657_CR61",
+          "doi-asserted-by": "publisher",
+          "first-page": "249",
+          "DOI": "10.1007/BF01258278",
+          "volume": "21",
+          "author": "U Faigle",
+          "year": "1992",
+          "unstructured": "Faigle, U. & Kern, W. The Shapley value for cooperative games under precedence constraints. Int. J. Game Theory 21, 249–266 (1992).",
+          "journal-title": "Int. J. Game Theory"
+        },
+        {
+          "key": "657_CR62",
+          "doi-asserted-by": "publisher",
+          "first-page": "180",
+          "DOI": "10.1016/j.cor.2017.01.019",
+          "volume": "82",
+          "author": "J Castro",
+          "year": "2017",
+          "unstructured": "Castro, J., Gómez, D., Molina, E. & Tejada, J. Improving polynomial estimation of the Shapley value by stratified random sampling with optimum allocation. Comput. Op. Res. 82, 180–188 (2017).",
+          "journal-title": "Comput. Op. Res."
+        },
+        {
+          "key": "657_CR63",
+          "doi-asserted-by": "publisher",
+          "first-page": "1673",
+          "DOI": "10.1016/j.artint.2008.05.003",
+          "volume": "172",
+          "author": "SS Fatima",
+          "year": "2008",
+          "unstructured": "Fatima, S. S., Wooldridge, M. & Jennings, N. R. A linear approximation method for the Shapley value. Artif. Intell. 172, 1673–1699 (2008).",
+          "journal-title": "Artif. Intell."
+        },
+        {
+          "key": "657_CR64",
+          "unstructured": "Illés, F. & Kerényi, P. Estimation of the Shapley value by ergodic sampling. Preprint at https://arxiv.org/abs/1906.05224 (2019)."
+        },
+        {
+          "key": "657_CR65",
+          "doi-asserted-by": "publisher",
+          "first-page": "189",
+          "DOI": "10.1287/moor.3.3.189",
+          "volume": "3",
+          "author": "N Megiddo",
+          "year": "1978",
+          "unstructured": "Megiddo, N. Computational complexity of the game theory approach to cost allocation for a tree. Math. Op. Res. 3, 189–196 (1978).",
+          "journal-title": "Math. Op. Res."
+        },
+        {
+          "key": "657_CR66",
+          "doi-asserted-by": "publisher",
+          "first-page": "647",
+          "DOI": "10.1287/moor.27.4.647.307",
+          "volume": "27",
+          "author": "D Granot",
+          "year": "2002",
+          "unstructured": "Granot, D., Kuipers, J. & Chopra, S. Cost allocation for a tree network with heterogeneous customers. Math. Op. Res. 27, 647–661 (2002).",
+          "journal-title": "Math. Op. Res."
+        },
+        {
+          "key": "657_CR67",
+          "doi-asserted-by": "publisher",
+          "first-page": "122",
+          "DOI": "10.1287/moor.6.1.122",
+          "volume": "6",
+          "author": "P Dubey",
+          "year": "1981",
+          "unstructured": "Dubey, P., Neyman, A. & Weber, R. J. Value theory without efficiency. Math. Op. Res. 6, 122–128 (1981).",
+          "journal-title": "Math. Op. Res."
+        },
+        {
+          "key": "657_CR68",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Charnes, A., Golany, B., Keane, M. & Rousseau, J. in Econometrics of Planning and Efficiency 123–133 (Springer, 1988).",
+          "DOI": "10.1007/978-94-009-3677-5_7"
+        },
+        {
+          "key": "657_CR69",
+          "doi-asserted-by": "publisher",
+          "first-page": "109",
+          "DOI": "10.1006/game.1997.0622",
+          "volume": "24",
+          "author": "LM Ruiz",
+          "year": "1998",
+          "unstructured": "Ruiz, L. M., Valenciano, F. & Zarzuelo, J. M. The family of least square values for transferable utility games. Games Econ. Behav. 24, 109–130 (1998).",
+          "journal-title": "Games Econ. Behav."
+        },
+        {
+          "key": "657_CR70",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Simon, G. & Vincent, T. A projected stochastic gradient algorithm for estimating Shapley value applied in attribute importance. In Proc. International Cross-Domain Conference for Machine Learning and Knowledge Extraction 97–115 (Springer, 2020).",
+          "DOI": "10.1007/978-3-030-57321-8_6"
+        },
+        {
+          "key": "657_CR71",
+          "doi-asserted-by": "publisher",
+          "first-page": "64",
+          "DOI": "10.1287/mnsc.18.5.64",
+          "volume": "18",
+          "author": "G Owen",
+          "year": "1972",
+          "unstructured": "Owen, G. Multilinear extensions of games. Manag. Sci. 18, 64–79 (1972).",
+          "journal-title": "Manag. Sci."
+        },
+        {
+          "key": "657_CR72",
+          "unstructured": "Covert, I. & Lee, S.-I. Improving KernelSHAP: practical Shapley value estimation using linear regression. In Proc. International Conference on Artificial Intelligence and Statistics 3457–3465 (PMLR, 2021)."
+        },
+        {
+          "key": "657_CR73",
+          "first-page": "1",
+          "volume": "23",
+          "author": "R Mitchell",
+          "year": "2022",
+          "unstructured": "Mitchell, R., Cooper, J., Frank, E. & Holmes, G. Sampling permutations for Shapley value estimation. J. Mach. Learn. Res. 23, 1–46 (2022).",
+          "journal-title": "J. Mach. Learn. Res."
+        },
+        {
+          "key": "657_CR74",
+          "first-page": "17212",
+          "volume": "33",
+          "author": "I Covert",
+          "year": "2020",
+          "unstructured": "Covert, I., Lundberg, S. M. & Lee, S.-I. Understanding global feature contributions with additive importance measures. Advances Neural Information Processing Systems 33, 17212–17223 (2020).",
+          "journal-title": "Advances Neural Information Processing Systems"
+        },
+        {
+          "key": "657_CR75",
+          "unstructured": "Yang, J. Fast TreeSHAP: accelerating SHAP value computation for trees. Preprint at https://arxiv.org/abs/2109.09847 (2021)."
+        }
+      ],
+      "container-title": [
+        "Nature Machine Intelligence"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://www.nature.com/articles/s42256-023-00657-x.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://www.nature.com/articles/s42256-023-00657-x",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://www.nature.com/articles/s42256-023-00657-x.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            21
+          ]
+        ],
+        "date-time": "2023-06-21T19:11:56Z",
+        "timestamp": 1687374716000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://www.nature.com/articles/s42256-023-00657-x"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            5,
+            22
+          ]
+        ]
+      },
+      "references-count": 75,
+      "journal-issue": {
+        "issue": "6",
+        "published-online": {
+          "date-parts": [
+            [
+              2023,
+              6
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "657"
+      ],
+      "URL": "https://doi.org/10.1038/s42256-023-00657-x",
+      "relation": {},
+      "ISSN": [
+        "2522-5839"
+      ],
+      "issn-type": [
+        {
+          "value": "2522-5839",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            5,
+            22
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "1 July 2022",
+          "order": 1,
+          "name": "received",
+          "label": "Received",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "6 April 2023",
+          "order": 2,
+          "name": "accepted",
+          "label": "Accepted",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "22 May 2023",
+          "order": 3,
+          "name": "first_online",
+          "label": "First Online",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "The authors declare no competing interests.",
+          "order": 1,
+          "name": "Ethics",
+          "group": {
+            "name": "EthicsHeading",
+            "label": "Competing interests"
+          }
+        }
+      ]
+    }
+  },
+  "status": "OK"
+}

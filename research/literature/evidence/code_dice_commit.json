@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-20",
+  "url": "https://api.github.com/repos/interpretml/DiCE/commits?per_page=1",
+  "kind": "json",
+  "response": [
+    {
+      "sha": "8a3aea404f857fa599bfa7da663d94823b674688",
+      "html_url": "https://github.com/interpretml/DiCE/commit/8a3aea404f857fa599bfa7da663d94823b674688",
+      "commit": {
+        "committer": {
+          "date": "2025-07-13T17:30:34Z"
+        }
+      }
+    }
+  ],
+  "status": "OK",
+  "normalization_note": "Minimum repository/commit provenance retained; personal emails/signatures omitted."
+}

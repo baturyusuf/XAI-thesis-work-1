@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-20",
+  "url": "https://api.github.com/repos/annahedstroem/MetaQuantus",
+  "kind": "json",
+  "response": {
+    "full_name": "annahedstroem/MetaQuantus",
+    "html_url": "https://github.com/annahedstroem/MetaQuantus",
+    "default_branch": "main",
+    "license": {
+      "key": "lgpl-3.0",
+      "name": "GNU Lesser General Public License v3.0",
+      "spdx_id": "LGPL-3.0",
+      "url": "https://api.github.com/licenses/lgpl-3.0",
+      "node_id": "MDc6TGljZW5zZTEy"
+    },
+    "pushed_at": "2024-04-17T14:22:01Z"
+  },
+  "status": "OK",
+  "normalization_note": "Minimum repository/commit provenance retained; personal emails/signatures omitted."
+}

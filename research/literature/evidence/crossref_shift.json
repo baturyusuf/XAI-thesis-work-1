@@ -1,0 +1,147 @@
+{
+  "date": "2026-10-20",
+  "url": "https://api.crossref.org/works?query.bibliographic=Explanation%20Shift%20Investigating%20Interactions%20Models%20Shifting%20Data%20Distributions&rows=3&select=DOI,title,author,published,container-title,type,URL",
+  "kind": "json",
+  "response": {
+    "status": "ok",
+    "message-type": "work-list",
+    "message-version": "1.0.0",
+    "message": {
+      "facets": {},
+      "total-results": 5222478,
+      "items": [
+        {
+          "DOI": "10.64388/irev9i7-1713617",
+          "title": [
+            "Investigating Data Leakage–Induced Over-Confidence and Explanation Faithfulness in Transformer-Based Text and Audio Models"
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                1,
+                20
+              ]
+            ]
+          },
+          "container-title": [
+            "Iconic Research and Engineering Journals"
+          ],
+          "type": "journal-article",
+          "URL": "https://doi.org/10.64388/irev9i7-1713617"
+        },
+        {
+          "DOI": "10.5220/0014435900004067",
+          "title": [
+            "Explanation Uncertainty in Tabular Data Models"
+          ],
+          "author": [
+            {
+              "given": "Yingsi",
+              "family": "Gao",
+              "sequence": "first",
+              "affiliation": [
+                {
+                  "name": "Bernoulli Institute for Mathematics, Computer Science, and Artificial Intelligence, University of Groningen, Groningen, The Netherlands"
+                }
+              ],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Ömer",
+              "family": "Özyilmaz",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Bernoulli Institute for Mathematics, Computer Science, and Artificial Intelligence, University of Groningen, Groningen, The Netherlands"
+                },
+                {
+                  "name": "Department of Internal Medicine, Division of Nephrology, University of Groningen, University Medical Center Groningen, Groningen, The Netherlands"
+                }
+              ],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Matias",
+              "family": "Valdenegro-Toro",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Bernoulli Institute for Mathematics, Computer Science, and Artificial Intelligence, University of Groningen, Groningen, The Netherlands"
+                }
+              ],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2026
+              ]
+            ]
+          },
+          "container-title": [
+            "Proceedings of the 15th International Conference on Pattern Recognition Applications and Methods"
+          ],
+          "type": "proceedings-article",
+          "URL": "https://doi.org/10.5220/0014435900004067"
+        },
+        {
+          "DOI": "10.20378/irb-89771",
+          "title": [
+            "Human-centered Interactions with Text Classifiers : Fusing Concept-based Knowledge with Local Surrogate Explanation Models"
+          ],
+          "author": [
+            {
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-1194-917X",
+              "authenticated-orcid": false,
+              "given": "Sebastian",
+              "family": "Kiefer",
+              "sequence": "first",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            }
+          ],
+          "type": "dissertation",
+          "URL": "https://doi.org/10.20378/irb-89771"
+        }
+      ],
+      "items-per-page": 3,
+      "query": {
+        "start-index": 0,
+        "search-terms": null
+      }
+    }
+  },
+  "status": "OK"
+}

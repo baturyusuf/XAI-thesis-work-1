@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-20",
+  "url": "https://export.arxiv.org/api/query?id_list=2312.11831,2502.03391,2507.00260,2606.10877,2412.19523&max_results=10",
+  "kind": "atom",
+  "total_hits": "5",
+  "records": [
+    {
+      "id": "http://arxiv.org/abs/2312.11831v3",
+      "title": "Locally-Minimal Probabilistic Explanations",
+      "authors": [
+        "Yacine Izza",
+        "Kuldeep S. Meel",
+        "Joao Marques-Silva"
+      ],
+      "published": "2023-12-19T03:45:27Z",
+      "updated": "2024-05-06T07:49:24Z",
+      "abstract": "Explainable Artificial Intelligence (XAI) is widely regarding as a cornerstone of trustworthy AI. Unfortunately, most work on XAI offers no guarantees of rigor. In high-stakes domains, e.g. uses of AI that impact humans, the lack of rigor of explanations can have disastrous consequences. Formal abductive explanations offer crucial guarantees of rigor and so are of interest in high-stakes uses of machine learning (ML). One drawback of abductive explanations is explanation size, justified by the cognitive limits of human decision-makers. Probabilistic abductive explanations (PAXps) address this limitation, but their theoretical and practical complexity makes their exact computation most often unrealistic. This paper proposes novel efficient algorithms for the computation of locally-minimal PXAps, which offer high-quality approximations of PXAps in practice. The experimental results demonstrate the practical efficiency of the proposed algorithms.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2502.03391v3",
+      "title": "Explain Yourself, Briefly! Self-Explaining Neural Networks with Concise Sufficient Reasons",
+      "authors": [
+        "Shahaf Bassan",
+        "Ron Eliav",
+        "Shlomit Gur"
+      ],
+      "published": "2025-02-05T17:29:12Z",
+      "updated": "2025-03-02T17:32:48Z",
+      "abstract": "*Minimal sufficient reasons* represent a prevalent form of explanation - the smallest subset of input features which, when held constant at their corresponding values, ensure that the prediction remains unchanged. Previous *post-hoc* methods attempt to obtain such explanations but face two main limitations: (1) Obtaining these subsets poses a computational challenge, leading most scalable methods to converge towards suboptimal, less meaningful subsets; (2) These methods heavily rely on sampling out-of-distribution input assignments, potentially resulting in counterintuitive behaviors. To tackle these limitations, we propose in this work a self-supervised training approach, which we term *sufficient subset training* (SST). Using SST, we train models to generate concise sufficient reasons for their predictions as an integral part of their output. Our results indicate that our framework produces succinct and faithful subsets substantially more efficiently than competing post-hoc methods, while maintaining comparable predictive performance.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2606.10877v1",
+      "title": "XtrAIn: Training-Guided Occlusion for Feature Attribution",
+      "authors": [
+        "Thodoris Lymperopoulos",
+        "Ioannis Kakogeorgiou",
+        "Denia Kanellopoulou"
+      ],
+      "published": "2026-06-09T13:52:05Z",
+      "updated": "2026-06-09T13:52:05Z",
+      "abstract": "Occlusion-based attribution methods provide an intuitive way to estimate feature importance by perturbing input features and measuring the resulting change in model output. However, their reliability is strongly affected by how feature removal is implemented: externally selected baselines can introduce bias, out-of-distribution samples, and unstable explanations, while in nonlinear models the occlusion of a set of features can also alter the contribution of non-occluded features. We refer to this effect as attribution shift, as the attribution scores of the non-occluded features drift from their initial values. To challenge these major issues that render explanations unstable, we introduce XtrAIn, a training-guided attribution method that transfers the occlusion operation from the input space to the parameter space. Instead of replacing input values with hand-crafted baselines, XtrAIn follows the model's training trajectory and measures how feature-associated parameter updates affect the output logits. We further introduce Xstep, a lightweight approximation for reducing computational cost, and XtrAIn+, a target-focused variant that emphasizes updates aligned with the target class. Experiments on controlled image datasets and PAM50 breast-cancer subtype classification show that the proposed methods produce cleaner and more interpretable attribution patterns than standard attribution baselines. Overall, XtrAIn provides a training-aware perspective on feature attribution and offers a useful diagnostic tool for studying how feature-level evidence is formed during training.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2412.19523v1",
+      "title": "Attribution for Enhanced Explanation with Transferable Adversarial eXploration",
+      "authors": [
+        "Zhiyu Zhu",
+        "Jiayu Zhang",
+        "Zhibo Jin",
+        "Huaming Chen",
+        "Jianlong Zhou",
+        "Fang Chen"
+      ],
+      "published": "2024-12-27T08:27:53Z",
+      "updated": "2024-12-27T08:27:53Z",
+      "abstract": "The interpretability of deep neural networks is crucial for understanding model decisions in various applications, including computer vision. AttEXplore++, an advanced framework built upon AttEXplore, enhances attribution by incorporating transferable adversarial attack methods such as MIG and GRA, significantly improving the accuracy and robustness of model explanations. We conduct extensive experiments on five models, including CNNs (Inception-v3, ResNet-50, VGG16) and vision transformers (MaxViT-T, ViT-B/16), using the ImageNet dataset. Our method achieves an average performance improvement of 7.57\\% over AttEXplore and 32.62\\% compared to other state-of-the-art interpretability algorithms. Using insertion and deletion scores as evaluation metrics, we show that adversarial transferability plays a vital role in enhancing attribution results. Furthermore, we explore the impact of randomness, perturbation rate, noise amplitude, and diversity probability on attribution performance, demonstrating that AttEXplore++ provides more stable and reliable explanations across various models. We release our code at: https://anonymous.4open.science/r/ATTEXPLOREP-8435/",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2507.00260v3",
+      "title": "Disentangled Feature Importance",
+      "authors": [
+        "Jin-Hong Du",
+        "Kathryn Roeder",
+        "Larry Wasserman"
+      ],
+      "published": "2025-06-30T20:54:48Z",
+      "updated": "2026-06-06T14:24:30Z",
+      "abstract": "When predictors are statistically dependent, the appropriate definition of feature importance depends on the operational goal. Conditional-incremental measures are well-suited for feature selection, acquisition, and compression, where shared predictive information is treated as redundancy. For post-hoc interpretation, however, the goal is often to attribute predictive signals across correlated measurement channels. We introduce Disentangled Feature Importance (DFI), a population-level attribution framework for this setting. DFI maps covariates to an independent latent representation under a specified entropic optimal transport geometry, computes latent importance, and attributes it back to the original covariates through barycentric sensitivities. We show that broad conditional-incremental FI functionals target conditional incremental predictive value under squared-error loss, and therefore answer a different question from attribution of shared predictive signal under dependence. Under fixed transport cost, reference law, and regularization level, DFI defines a well-specified family of estimands. Latent scores admit a functional ANOVA interpretation, and in the Gaussian linear case, the attributed DFI recovers the classical $R^2$ decomposition for correlated regressors. We derive influence-function-based inference under nuisance-rate and smoothness conditions, and show in simulations and an HIV-1 neutralization-resistance analysis that DFI yields stable, interpretable, uncertainty-quantified attributions of shared predictive signal.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    }
+  ],
+  "status": "OK"
+}

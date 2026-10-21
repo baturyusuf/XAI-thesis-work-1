@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-20",
+  "url": "https://api.github.com/repos/marcotcr/anchor",
+  "kind": "json",
+  "response": {
+    "full_name": "marcotcr/anchor",
+    "html_url": "https://github.com/marcotcr/anchor",
+    "default_branch": "master",
+    "license": {
+      "key": "bsd-2-clause",
+      "name": "BSD 2-Clause \"Simplified\" License",
+      "spdx_id": "BSD-2-Clause",
+      "url": "https://api.github.com/licenses/bsd-2-clause",
+      "node_id": "MDc6TGljZW5zZTQ="
+    },
+    "pushed_at": "2022-07-19T18:09:12Z"
+  },
+  "status": "OK",
+  "normalization_note": "Minimum repository/commit provenance retained; personal emails/signatures omitted."
+}

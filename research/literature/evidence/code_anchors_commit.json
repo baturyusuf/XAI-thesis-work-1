@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-20",
+  "url": "https://api.github.com/repos/marcotcr/anchor/commits?per_page=1",
+  "kind": "json",
+  "response": [
+    {
+      "sha": "b1f5e6ca37428613723597e85c38558e8cd21c2e",
+      "html_url": "https://github.com/marcotcr/anchor/commit/b1f5e6ca37428613723597e85c38558e8cd21c2e",
+      "commit": {
+        "committer": {
+          "date": "2022-07-19T18:08:39Z"
+        }
+      }
+    }
+  ],
+  "status": "OK",
+  "normalization_note": "Minimum repository/commit provenance retained; personal emails/signatures omitted."
+}

@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-21",
+  "url": "https://arxiv.org/html/2308.11975v1",
+  "sha256": "817d8b5e498a1d479b48557312ce0ff40390621e9dbd856f96439b2c95ba22c4",
+  "headings": [
+    "Report GitHub Issue",
+    "Approximating Score-based Explanation Techniques Using Conformal Regression",
+    "Abstract",
+    "keywords",
+    "1 Introduction",
+    "2 Background",
+    "2.1 Inductive Conformal Prediction for Regression Models",
+    "2.2 Normalized Non-Conformity Functions",
+    "3 Related Work",
+    "4 Method",
+    "4.1 Explanation Method Approximation",
+    "4.2 Validity Guarantees",
+    "4.3 Non-Conformity Measures",
+    "5 Empirical Evaluation",
+    "5.1 Experimental Setup",
+    "5.2 Experimental Results",
+    "5.2.1 Execution Time",
+    "5.2.2 Interval Size",
+    "6 Concluding Remarks",
+    "acknowledgments-disclosure-of-funding.",
+    "References",
+    "Appendix A First Appendix",
+    "Instructions for reporting errors"
+  ],
+  "text_chars": 50016,
+  "code_urls": [
+    "https://github.com/arXiv/html_feedback/issues",
+    "https://github.com/brucemiller/LaTeXML/issues",
+    "https://github.com/brucemiller/LaTeXML/wiki/Porting-LaTeX-packages-for-LaTeXML",
+    "https://github.com/henrikbostrom/crepes"
+  ]
+}

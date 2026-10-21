@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-20",
+  "url": "https://export.arxiv.org/api/query?search_query=ti%3Aconformal%20AND%20%28ti%3Aexplanations%20OR%20ti%3Aattribution%29%20AND%20cat%3Acs.LG&max_results=12&sortBy=relevance",
+  "kind": "atom",
+  "total_hits": "4",
+  "records": [
+    {
+      "id": "http://arxiv.org/abs/2605.06788v1",
+      "title": "Conformal Agent Error Attribution",
+      "authors": [
+        "Naihe Feng",
+        "Yi Sui",
+        "Shiyi Hou",
+        "Ga Wu",
+        "Jesse C. Cresswell"
+      ],
+      "published": "2026-05-07T18:00:07Z",
+      "updated": "2026-05-07T18:00:07Z",
+      "abstract": "When multi-agent systems (MAS) fail, identifying where the decisive error occurred is the first step for automated recovery to an earlier state. Error attribution remains a fundamental challenge due to the long interaction traces that large language model-based MAS generate. This paper presents a framework for error attribution based on conformal prediction (CP) which provides finite-sample, distribution-free coverage guarantees. We introduce new algorithms for filtration-based CP designed for sequential data such as agent trajectories. Unlike existing CP algorithms, our approach predicts sets that are contiguous sequences to enable efficient recovery and debugging. We verify our theoretical guarantees on a variety of agents and datasets, show that errors can be precisely isolated, then use prediction sets to rollback MAS to correct their own errors. Our overall approach is model-agnostic, and offers a principled uncertainty layer for MAS error attribution. We release code at https://github.com/layer6ai-labs/conformal-agent-error-attribution.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2510.19754v2",
+      "title": "CONFEX: Uncertainty-Aware Counterfactual Explanations with Conformal Guarantees",
+      "authors": [
+        "Aman Bilkhoo",
+        "Mehran Hosseini",
+        "Milad Kazemi",
+        "Nicola Paoletti"
+      ],
+      "published": "2025-10-22T16:43:36Z",
+      "updated": "2025-10-23T10:54:08Z",
+      "abstract": "Counterfactual explanations (CFXs) provide human-understandable justifications for model predictions, enabling actionable recourse and enhancing interpretability. To be reliable, CFXs must avoid regions of high predictive uncertainty, where explanations may be misleading or inapplicable. However, existing methods often neglect uncertainty or lack principled mechanisms for incorporating it with formal guarantees. We propose CONFEX, a novel method for generating uncertainty-aware counterfactual explanations using Conformal Prediction (CP) and Mixed-Integer Linear Programming (MILP). CONFEX explanations are designed to provide local coverage guarantees, addressing the issue that CFX generation violates exchangeability. To do so, we develop a novel localised CP procedure that enjoys an efficient MILP encoding by leveraging an offline tree-based partitioning of the input space. This way, CONFEX generates CFXs with rigorous guarantees on both predictive uncertainty and optimality. We evaluate CONFEX against state-of-the-art methods across diverse benchmarks and metrics, demonstrating that our uncertainty-aware approach yields robust and plausible explanations.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2312.10648v1",
+      "title": "Faithful Model Explanations through Energy-Constrained Conformal Counterfactuals",
+      "authors": [
+        "Patrick Altmeyer",
+        "Mojtaba Farmanbar",
+        "Arie van Deursen",
+        "Cynthia C. S. Liem"
+      ],
+      "published": "2023-12-17T08:24:44Z",
+      "updated": "2023-12-17T08:24:44Z",
+      "abstract": "Counterfactual explanations offer an intuitive and straightforward way to explain black-box models and offer algorithmic recourse to individuals. To address the need for plausible explanations, existing work has primarily relied on surrogate models to learn how the input data is distributed. This effectively reallocates the task of learning realistic explanations for the data from the model itself to the surrogate. Consequently, the generated explanations may seem plausible to humans but need not necessarily describe the behaviour of the black-box model faithfully. We formalise this notion of faithfulness through the introduction of a tailored evaluation metric and propose a novel algorithmic framework for generating Energy-Constrained Conformal Counterfactuals that are only as plausible as the model permits. Through extensive empirical studies, we demonstrate that ECCCo reconciles the need for faithfulness and plausibility. In particular, we show that for models with gradient access, it is possible to achieve state-of-the-art performance without the need for surrogate models. To do so, our framework relies solely on properties defining the black-box model itself by leveraging recent advances in energy-based modelling and conformal prediction. To our knowledge, this is the first venture in this direction for generating faithful counterfactual explanations. Thus, we anticipate that ECCCo can serve as a baseline for future research. We believe that our work opens avenues for researchers and practitioners seeking tools to better distinguish trustworthy from unreliable models.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2308.11975v1",
+      "title": "Approximating Score-based Explanation Techniques Using Conformal Regression",
+      "authors": [
+        "Amr Alkhatib",
+        "Henrik Boström",
+        "Sofiane Ennadir",
+        "Ulf Johansson"
+      ],
+      "published": "2023-08-23T07:50:43Z",
+      "updated": "2023-08-23T07:50:43Z",
+      "abstract": "Score-based explainable machine-learning techniques are often used to understand the logic behind black-box models. However, such explanation techniques are often computationally expensive, which limits their application in time-critical contexts. Therefore, we propose and investigate the use of computationally less costly regression models for approximating the output of score-based explanation techniques, such as SHAP. Moreover, validity guarantees for the approximated values are provided by the employed inductive conformal prediction framework. We propose several non-conformity measures designed to take the difficulty of approximating the explanations into account while keeping the computational cost low. We present results from a large-scale empirical investigation, in which the approximate explanations generated by our proposed models are evaluated with respect to efficiency (interval size). The results indicate that the proposed method can significantly improve execution time compared to the fast version of SHAP, TreeSHAP. The results also suggest that the proposed method can produce tight intervals, while providing validity guarantees. Moreover, the proposed approach allows for comparing explanations of different approximation methods and selecting a method based on how informative (tight) are the predicted intervals.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "Proceedings of Machine Learning Research (PMLR) Volume 204, Year 2023"
+    }
+  ],
+  "status": "OK"
+}

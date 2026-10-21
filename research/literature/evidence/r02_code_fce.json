@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-21",
+  "url": "https://api.github.com/repos/Moffran/calibrated_explanations",
+  "kind": "json",
+  "normalization_note": "Minimum provenance; emails/signatures omitted.",
+  "response": {
+    "full_name": "Moffran/calibrated_explanations",
+    "html_url": "https://github.com/Moffran/calibrated_explanations",
+    "default_branch": "main",
+    "license": {
+      "key": "bsd-3-clause",
+      "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+      "spdx_id": "BSD-3-Clause",
+      "url": "https://api.github.com/licenses/bsd-3-clause",
+      "node_id": "MDc6TGljZW5zZTU="
+    },
+    "pushed_at": "2026-10-20T21:51:25Z"
+  },
+  "status": "OK"
+}

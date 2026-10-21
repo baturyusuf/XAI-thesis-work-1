@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-21",
+  "url": "https://arxiv.org/html/2011.06169v1",
+  "sha256": "3c5cc4c6fd35aa93e95ee612fda528a691fd8e09af237eaa0df4ff7001588b2a",
+  "headings": [
+    "Report GitHub Issue",
+    "Robust and Stable Black Box Explanations",
+    "Abstract",
+    "1 Introduction",
+    "2 Related Work",
+    "3 Our Framework",
+    "3.1 Robust & Stable Explanations",
+    "Definition 3.1 .",
+    "Definition 3.2 .",
+    "Assumption 3.3 .",
+    "Definition 3.4 .",
+    "Lemma 3.5 .",
+    "3.2 General Class of Distribution Shifts",
+    "Proposition 3.6 .",
+    "3.3 Constructing Robust Linear Explanations",
+    "3.4 Constructing Robust Rule-Based Explanations",
+    "Theorem 3.7 .",
+    "4 Experiments",
+    "4.1 Experimental Setup",
+    "4.2 Robustness to Real Distribution Shifts",
+    "4.3 Impact of Degree of Distribution Shift on Fidelity",
+    "4.4 Evaluating Correctness of Explanations",
+    "4.5 Evaluating Stability of Explanations",
+    "5 Conclusions & Future Work",
+    "Acknowledgements",
+    "References",
+    "Appendix A Additional Results",
+    "A.1 Robustness to Real Distribution Shifts",
+    "A.2 Impact of Degree of Distribution Shift on Fidelity",
+    "Instructions for reporting errors"
+  ],
+  "text_chars": 64351,
+  "code_urls": [
+    "https://github.com/arXiv/html_feedback/issues",
+    "https://github.com/brucemiller/LaTeXML/issues",
+    "https://github.com/brucemiller/LaTeXML/wiki/Porting-LaTeX-packages-for-LaTeXML"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-20",
+  "url": "https://api.github.com/repos/AI4LIFE-GROUP/OpenXAI",
+  "kind": "json",
+  "response": {
+    "full_name": "AI4LIFE-GROUP/OpenXAI",
+    "html_url": "https://github.com/AI4LIFE-GROUP/OpenXAI",
+    "default_branch": "main",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "pushed_at": "2024-08-17T06:50:23Z"
+  },
+  "status": "OK",
+  "normalization_note": "Minimum repository/commit provenance retained; personal emails/signatures omitted."
+}

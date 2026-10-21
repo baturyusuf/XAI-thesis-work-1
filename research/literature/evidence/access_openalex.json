@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-20",
+  "url": "https://api.openalex.org/works?search=Selective%20Explanations&per-page=3&select=id,title,doi,publication_date",
+  "kind": "json",
+  "response": {
+    "meta": {
+      "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+      "count": 1190506,
+      "db_response_time_ms": 124,
+      "page": 1,
+      "per_page": 3,
+      "groups_count": null,
+      "x_query": {
+        "oql": "get works where full text has (Selective Explanations)",
+        "x_new_oql": "get works with (Selective Explanations) in the full text",
+        "oqo": {
+          "get_rows": "works",
+          "filter_rows": [
+            {
+              "column_id": "fulltext.search",
+              "value": "Selective Explanations",
+              "operator": "has"
+            }
+          ]
+        },
+        "url": "/works?filter=fulltext.search:Selective Explanations&per_page=3"
+      },
+      "cost_usd": 0.001
+    },
+    "results": [
+      {
+        "id": "https://openalex.org/W4415797592",
+        "title": "Selective Explanations",
+        "doi": "https://doi.org/10.52202/079017-1765",
+        "publication_date": "2024-01-01"
+      },
+      {
+        "id": "https://openalex.org/W4387344795",
+        "title": "Selective Explanations: Leveraging Human Input to Align Explainable AI",
+        "doi": "https://doi.org/10.1145/3610206",
+        "publication_date": "2023-09-28"
+      },
+      {
+        "id": "https://openalex.org/W1975469513",
+        "title": "The Evolution of Altruism and Selective Explanation",
+        "doi": "https://doi.org/10.4216/jpssj.41.1_1",
+        "publication_date": "2008-01-01"
+      }
+    ],
+    "group_by": []
+  },
+  "status": "OK"
+}

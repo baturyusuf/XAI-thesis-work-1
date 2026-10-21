@@ -1,0 +1,308 @@
+{
+  "date": "2026-10-21",
+  "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Aexplanations%20AND%20%28ti%3Arobust%20OR%20all%3A%22distributionally%20robust%22%29%29%20OR%20ti%3AVeriX%20OR%20ti%3ACXPlain&max_results=20&sortBy=relevance",
+  "kind": "atom",
+  "total_hits": "106",
+  "records": [
+    {
+      "id": "http://arxiv.org/abs/2303.16390v1",
+      "title": "Are Data-driven Explanations Robust against Out-of-distribution Data?",
+      "authors": [
+        "Tang Li",
+        "Fengchun Qiao",
+        "Mengmeng Ma",
+        "Xi Peng"
+      ],
+      "published": "2023-03-29T02:02:08Z",
+      "updated": "2023-03-29T02:02:08Z",
+      "abstract": "As black-box models increasingly power high-stakes applications, a variety of data-driven explanation methods have been introduced. Meanwhile, machine learning models are constantly challenged by distributional shifts. A question naturally arises: Are data-driven explanations robust against out-of-distribution data? Our empirical results show that even though predict correctly, the model might still yield unreliable explanations under distributional shifts. How to develop robust explanations against out-of-distribution data? To address this problem, we propose an end-to-end model-agnostic learning framework Distributionally Robust Explanations (DRE). The key idea is, inspired by self-supervised learning, to fully utilizes the inter-distribution information to provide supervisory signals for the learning of explanations without human annotation. Can robust explanations benefit the model's generalization capability? We conduct extensive experiments on a wide range of tasks and data types, including classification and regression on image and scientific tabular data. Our results demonstrate that the proposed method significantly improves the model's performance in terms of explanation and prediction robustness against distributional shifts.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2307.04024v1",
+      "title": "Robust Ranking Explanations",
+      "authors": [
+        "Chao Chen",
+        "Chenghua Guo",
+        "Guixiang Ma",
+        "Ming Zeng",
+        "Xi Zhang",
+        "Sihong Xie"
+      ],
+      "published": "2023-07-08T18:05:41Z",
+      "updated": "2023-07-08T18:05:41Z",
+      "abstract": "Robust explanations of machine learning models are critical to establish human trust in the models. Due to limited cognition capability, most humans can only interpret the top few salient features. It is critical to make top salient features robust to adversarial attacks, especially those against the more vulnerable gradient-based explanations. Existing defense measures robustness using $\\ell_p$-norms, which have weaker protection power. We define explanation thickness for measuring salient features ranking stability, and derive tractable surrogate bounds of the thickness to design the \\textit{R2ET} algorithm to efficiently maximize the thickness and anchor top salient features. Theoretically, we prove a connection between R2ET and adversarial training. Experiments with a wide spectrum of network architectures and data modalities, including brain networks, demonstrate that R2ET attains higher explanation robustness under stealthy attacks while retaining accuracy.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/1910.12336v1",
+      "title": "CXPlain: Causal Explanations for Model Interpretation under Uncertainty",
+      "authors": [
+        "Patrick Schwab",
+        "Walter Karlen"
+      ],
+      "published": "2019-10-27T19:59:18Z",
+      "updated": "2019-10-27T19:59:18Z",
+      "abstract": "Feature importance estimates that inform users about the degree to which given inputs influence the output of a predictive model are crucial for understanding, validating, and interpreting machine-learning models. However, providing fast and accurate estimates of feature importance for high-dimensional data, and quantifying the uncertainty of such estimates remain open challenges. Here, we frame the task of providing explanations for the decisions of machine-learning models as a causal learning task, and train causal explanation (CXPlain) models that learn to estimate to what degree certain inputs cause outputs in another machine-learning model. CXPlain can, once trained, be used to explain the target model in little time, and enables the quantification of the uncertainty associated with its feature importance estimates via bootstrap ensembling. We present experiments that demonstrate that CXPlain is significantly more accurate and faster than existing model-agnostic methods for estimating feature importance. In addition, we confirm that the uncertainty estimates provided by CXPlain ensembles are strongly correlated with their ability to accurately estimate feature importance on held-out data.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2304.12943v1",
+      "title": "Generating robust counterfactual explanations",
+      "authors": [
+        "Victor Guyomard",
+        "Françoise Fessant",
+        "Thomas Guyet",
+        "Tassadit Bouadi",
+        "Alexandre Termier"
+      ],
+      "published": "2023-04-24T09:00:31Z",
+      "updated": "2023-04-24T09:00:31Z",
+      "abstract": "Counterfactual explanations have become a mainstay of the XAI field. This particularly intuitive statement allows the user to understand what small but necessary changes would have to be made to a given situation in order to change a model prediction. The quality of a counterfactual depends on several criteria: realism, actionability, validity, robustness, etc. In this paper, we are interested in the notion of robustness of a counterfactual. More precisely, we focus on robustness to counterfactual input changes. This form of robustness is particularly challenging as it involves a trade-off between the robustness of the counterfactual and the proximity with the example to explain. We propose a new framework, CROCO, that generates robust counterfactuals while managing effectively this trade-off, and guarantees the user a minimal robustness. An empirical evaluation on tabular datasets confirms the relevance and effectiveness of our approach.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/1206.6819v1",
+      "title": "On the Robustness of Most Probable Explanations",
+      "authors": [
+        "Hei Chan",
+        "Adnan Darwiche"
+      ],
+      "published": "2012-06-27T15:39:15Z",
+      "updated": "2012-06-27T15:39:15Z",
+      "abstract": "In Bayesian networks, a Most Probable Explanation (MPE) is a complete variable instantiation with a highest probability given the current evidence. In this paper, we discuss the problem of finding robustness conditions of the MPE under single parameter changes. Specifically, we ask the question: How much change in a single network parameter can we afford to apply while keeping the MPE unchanged? We will describe a procedure, which is the first of its kind, that computes this answer for each parameter in the Bayesian network variable in time O(n exp(w)), where n is the number of network variables and w is its treewidth.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2103.02354v3",
+      "title": "Evaluating Robustness of Counterfactual Explanations",
+      "authors": [
+        "André Artelt",
+        "Valerie Vaquet",
+        "Riza Velioglu",
+        "Fabian Hinder",
+        "Johannes Brinkrolf",
+        "Malte Schilling",
+        "Barbara Hammer"
+      ],
+      "published": "2021-03-03T12:16:06Z",
+      "updated": "2021-07-22T06:52:32Z",
+      "abstract": "Transparency is a fundamental requirement for decision making systems when these should be deployed in the real world. It is usually achieved by providing explanations of the system's behavior. A prominent and intuitive type of explanations are counterfactual explanations. Counterfactual explanations explain a behavior to the user by proposing actions -- as changes to the input -- that would cause a different (specified) behavior of the system. However, such explanation methods can be unstable with respect to small changes to the input -- i.e. even a small change in the input can lead to huge or arbitrary changes in the output and of the explanation. This could be problematic for counterfactual explanations, as two similar individuals might get very different explanations. Even worse, if the recommended actions differ considerably in their complexity, one would consider such unstable (counterfactual) explanations as individually unfair. In this work, we formally and empirically study the robustness of counterfactual explanations in general, as well as under different models and different kinds of perturbations. Furthermore, we propose that plausible counterfactual explanations can be used instead of closest counterfactual explanations to improve the robustness and consequently the individual fairness of counterfactual explanations.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2206.12284v1",
+      "title": "Robustness of Explanation Methods for NLP Models",
+      "authors": [
+        "Shriya Atmakuri",
+        "Tejas Chheda",
+        "Dinesh Kandula",
+        "Nishant Yadav",
+        "Taesung Lee",
+        "Hessel Tuinhof"
+      ],
+      "published": "2022-06-24T13:34:07Z",
+      "updated": "2022-06-24T13:34:07Z",
+      "abstract": "Explanation methods have emerged as an important tool to highlight the features responsible for the predictions of neural networks. There is mounting evidence that many explanation methods are rather unreliable and susceptible to malicious manipulations. In this paper, we particularly aim to understand the robustness of explanation methods in the context of text modality. We provide initial insights and results towards devising a successful adversarial attack against text explanations. To our knowledge, this is the first attempt to evaluate the adversarial robustness of an explanation method. Our experiments show the explanation method can be largely disturbed for up to 86% of the tested samples with small changes in the input sentence and its semantics.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2212.08507v1",
+      "title": "Robust Explanation Constraints for Neural Networks",
+      "authors": [
+        "Matthew Wicker",
+        "Juyeon Heo",
+        "Luca Costabello",
+        "Adrian Weller"
+      ],
+      "published": "2022-12-16T14:40:25Z",
+      "updated": "2022-12-16T14:40:25Z",
+      "abstract": "Post-hoc explanation methods are used with the intent of providing insights about neural networks and are sometimes said to help engender trust in their outputs. However, popular explanations methods have been found to be fragile to minor perturbations of input features or model parameters. Relying on constraint relaxation techniques from non-convex optimization, we develop a method that upper-bounds the largest change an adversary can make to a gradient-based explanation via bounded manipulation of either the input features or model parameters. By propagating a compact input or parameter set as symbolic intervals through the forwards and backwards computations of the neural network we can formally certify the robustness of gradient-based explanations. Our bounds are differentiable, hence we can incorporate provable explanation robustness into neural network training. Empirically, our method surpasses the robustness provided by previous heuristic approaches. We find that our training method is the only method able to learn neural networks with certificates of explanation robustness across all six datasets tested.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2001.08730v1",
+      "title": "Robust Explanations for Visual Question Answering",
+      "authors": [
+        "Badri N. Patro",
+        "Shivansh Pate",
+        "Vinay P. Namboodiri"
+      ],
+      "published": "2020-01-23T18:43:34Z",
+      "updated": "2020-01-23T18:43:34Z",
+      "abstract": "In this paper, we propose a method to obtain robust explanations for visual question answering(VQA) that correlate well with the answers. Our model explains the answers obtained through a VQA model by providing visual and textual explanations. The main challenges that we address are i) Answers and textual explanations obtained by current methods are not well correlated and ii) Current methods for visual explanation do not focus on the right location for explaining the answer. We address both these challenges by using a collaborative correlated module which ensures that even if we do not train for noise based attacks, the enhanced correlation ensures that the right explanation and answer can be generated. We further show that this also aids in improving the generated visual and textual explanations. The use of the correlated module can be thought of as a robust method to verify if the answer and explanations are coherent. We evaluate this model using VQA-X dataset. We observe that the proposed method yields better textual and visual justification that supports the decision. We showcase the robustness of the model against a noise-based perturbation attack using corresponding visual and textual explanations. A detailed empirical analysis is shown. Here we provide source code link for our model \\url{https://github.com/DelTA-Lab-IITK/CCM-WACV}.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2601.18678v2",
+      "title": "Counterfactual Explanations on Robust Perceptual Geodesics",
+      "authors": [
+        "Eslam Zaher",
+        "Maciej Trzaskowski",
+        "Quan Nguyen",
+        "Fred Roosta"
+      ],
+      "published": "2026-01-26T16:52:54Z",
+      "updated": "2026-03-01T05:56:04Z",
+      "abstract": "Latent-space optimization methods for counterfactual explanations - framed as minimal semantic perturbations that change model predictions - inherit the ambiguity of Wachter et al.'s objective: the choice of distance metric dictates whether perturbations are meaningful or adversarial. Existing approaches adopt flat or misaligned geometries, leading to off-manifold artifacts, semantic drift, or adversarial collapse. We introduce Perceptual Counterfactual Geodesics (PCG), a method that constructs counterfactuals by tracing geodesics under a perceptually Riemannian metric induced from robust vision features. This geometry aligns with human perception and penalizes brittle directions, enabling smooth, on-manifold, semantically valid transitions. Experiments on three vision datasets show that PCG outperforms baselines and reveals failure modes hidden under standard metrics.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2212.14106v4",
+      "title": "Provable Robust Saliency-based Explanations",
+      "authors": [
+        "Chao Chen",
+        "Chenghua Guo",
+        "Rufeng Chen",
+        "Guixiang Ma",
+        "Ming Zeng",
+        "Xiangwen Liao",
+        "Xi Zhang",
+        "Sihong Xie"
+      ],
+      "published": "2022-12-28T22:05:32Z",
+      "updated": "2024-12-26T02:37:07Z",
+      "abstract": "To foster trust in machine learning models, explanations must be faithful and stable for consistent insights. Existing relevant works rely on the $\\ell_p$ distance for stability assessment, which diverges from human perception. Besides, existing adversarial training (AT) associated with intensive computations may lead to an arms race. To address these challenges, we introduce a novel metric to assess the stability of top-$k$ salient features. We introduce R2ET which trains for stable explanation by efficient and effective regularizer, and analyze R2ET by multi-objective optimization to prove numerical and statistical stability of explanations. Moreover, theoretical connections between R2ET and certified robustness justify R2ET's stability in all attacks. Extensive experiments across various data modalities and model architectures show that R2ET achieves superior stability against stealthy attacks, and generalizes effectively across different explanation methods.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "NeurIPS 2024"
+    },
+    {
+      "id": "http://arxiv.org/abs/2212.01051v5",
+      "title": "VeriX: Towards Verified Explainability of Deep Neural Networks",
+      "authors": [
+        "Min Wu",
+        "Haoze Wu",
+        "Clark Barrett"
+      ],
+      "published": "2022-12-02T09:43:21Z",
+      "updated": "2023-09-26T01:59:25Z",
+      "abstract": "We present VeriX (Verified eXplainability), a system for producing optimal robust explanations and generating counterfactuals along decision boundaries of machine learning models. We build such explanations and counterfactuals iteratively using constraint solving techniques and a heuristic based on feature-level sensitivity ranking. We evaluate our method on image recognition benchmarks and a real-world scenario of autonomous aircraft taxiing.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2406.09069v2",
+      "title": "On the Robustness of Global Feature Effect Explanations",
+      "authors": [
+        "Hubert Baniecki",
+        "Giuseppe Casalicchio",
+        "Bernd Bischl",
+        "Przemyslaw Biecek"
+      ],
+      "published": "2024-06-13T12:54:53Z",
+      "updated": "2025-07-28T16:59:49Z",
+      "abstract": "We study the robustness of global post-hoc explanations for predictive models trained on tabular data. Effects of predictor features in black-box supervised learning are an essential diagnostic tool for model debugging and scientific discovery in applied sciences. However, how vulnerable they are to data and model perturbations remains an open research question. We introduce several theoretical bounds for evaluating the robustness of partial dependence plots and accumulated local effects. Our experimental results with synthetic and real-world datasets quantify the gap between the best and worst-case scenarios of (mis)interpreting machine learning predictions globally.",
+      "doi": "10.1007/978-3-031-70344-7_8",
+      "journal_ref": "Machine Learning and Knowledge Discovery in Databases, vol. 2, pp. 125-142, 2024"
+    },
+    {
+      "id": "http://arxiv.org/abs/2404.13736v2",
+      "title": "Interval Abstractions for Robust Counterfactual Explanations",
+      "authors": [
+        "Junqi Jiang",
+        "Francesco Leofante",
+        "Antonio Rago",
+        "Francesca Toni"
+      ],
+      "published": "2024-04-21T18:24:34Z",
+      "updated": "2024-11-22T15:01:12Z",
+      "abstract": "Counterfactual Explanations (CEs) have emerged as a major paradigm in explainable AI research, providing recourse recommendations for users affected by the decisions of machine learning models. However, CEs found by existing methods often become invalid when slight changes occur in the parameters of the model they were generated for. The literature lacks a way to provide exhaustive robustness guarantees for CEs under model changes, in that existing methods to improve CEs' robustness are mostly heuristic, and the robustness performances are evaluated empirically using only a limited number of retrained models. To bridge this gap, we propose a novel interval abstraction technique for parametric machine learning models, which allows us to obtain provable robustness guarantees for CEs under a possibly infinite set of plausible model changes $Δ$. Based on this idea, we formalise a robustness notion for CEs, which we call $Δ$-robustness, in both binary and multi-class classification settings. We present procedures to verify $Δ$-robustness based on Mixed Integer Linear Programming, using which we further propose algorithms to generate CEs that are $Δ$-robust. In an extensive empirical study involving neural networks and logistic regression models, we demonstrate the practical applicability of our approach. We discuss two strategies for determining the appropriate hyperparameters in our method, and we quantitatively benchmark CEs generated by eleven methods, highlighting the effectiveness of our algorithms in finding robust CEs.",
+      "doi": "10.1016/j.artint.2024.104218",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2203.03729v1",
+      "title": "Robustness and Usefulness in AI Explanation Methods",
+      "authors": [
+        "Erick Galinkin"
+      ],
+      "published": "2022-03-07T21:30:48Z",
+      "updated": "2022-03-07T21:30:48Z",
+      "abstract": "Explainability in machine learning has become incredibly important as machine learning-powered systems become ubiquitous and both regulation and public sentiment begin to demand an understanding of how these systems make decisions. As a result, a number of explanation methods have begun to receive widespread adoption. This work summarizes, compares, and contrasts three popular explanation methods: LIME, SmoothGrad, and SHAP. We evaluate these methods with respect to: robustness, in the sense of sample complexity and stability; understandability, in the sense that provided explanations are consistent with user expectations; and usability, in the sense that the explanations allow for the model to be modified based on the output. This work concludes that current explanation methods are insufficient; that putting faith in and adopting these methods may actually be worse than simply not using them.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2011.06169v1",
+      "title": "Robust and Stable Black Box Explanations",
+      "authors": [
+        "Himabindu Lakkaraju",
+        "Nino Arsov",
+        "Osbert Bastani"
+      ],
+      "published": "2020-11-12T02:29:03Z",
+      "updated": "2020-11-12T02:29:03Z",
+      "abstract": "As machine learning black boxes are increasingly being deployed in real-world applications, there has been a growing interest in developing post hoc explanations that summarize the behaviors of these black boxes. However, existing algorithms for generating such explanations have been shown to lack stability and robustness to distribution shifts. We propose a novel framework for generating robust and stable explanations of black box models based on adversarial training. Our framework optimizes a minimax objective that aims to construct the highest fidelity explanation with respect to the worst-case over a set of adversarial perturbations. We instantiate this algorithm for explanations in the form of linear models and decision sets by devising the required optimization procedures. To the best of our knowledge, this work makes the first attempt at generating post hoc explanations that are robust to a general class of adversarial perturbations that are of practical interest. Experimental evaluation with real-world and synthetic datasets demonstrates that our approach substantially improves robustness of explanations without sacrificing their fidelity on the original data distribution.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2012.10425v1",
+      "title": "Towards Robust Explanations for Deep Neural Networks",
+      "authors": [
+        "Ann-Kathrin Dombrowski",
+        "Christopher J. Anders",
+        "Klaus-Robert Müller",
+        "Pan Kessel"
+      ],
+      "published": "2020-12-18T18:29:09Z",
+      "updated": "2020-12-18T18:29:09Z",
+      "abstract": "Explanation methods shed light on the decision process of black-box classifiers such as deep neural networks. But their usefulness can be compromised because they are susceptible to manipulations. With this work, we aim to enhance the resilience of explanations. We develop a unified theoretical framework for deriving bounds on the maximal manipulability of a model. Based on these theoretical insights, we present three different techniques to boost robustness against manipulation: training with weight decay, smoothing activation functions, and minimizing the Hessian of the network. Our experimental results confirm the effectiveness of these approaches.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2312.11747v2",
+      "title": "Robust Stochastic Graph Generator for Counterfactual Explanations",
+      "authors": [
+        "Mario Alfonso Prado-Romero",
+        "Bardh Prenkaj",
+        "Giovanni Stilo"
+      ],
+      "published": "2023-12-18T23:16:28Z",
+      "updated": "2024-01-11T10:09:12Z",
+      "abstract": "Counterfactual Explanation (CE) techniques have garnered attention as a means to provide insights to the users engaging with AI systems. While extensively researched in domains such as medical imaging and autonomous vehicles, Graph Counterfactual Explanation (GCE) methods have been comparatively under-explored. GCEs generate a new graph similar to the original one, with a different outcome grounded on the underlying predictive model. Among these GCE techniques, those rooted in generative mechanisms have received relatively limited investigation despite demonstrating impressive accomplishments in other domains, such as artistic styles and natural language modelling. The preference for generative explainers stems from their capacity to generate counterfactual instances during inference, leveraging autonomously acquired perturbations of the input graph. Motivated by the rationales above, our study introduces RSGG-CE, a novel Robust Stochastic Graph Generator for Counterfactual Explanations able to produce counterfactual examples from the learned latent space considering a partially ordered generation sequence. Furthermore, we undertake quantitative and qualitative analyses to compare RSGG-CE's performance against SoA generative explainers, highlighting its increased ability to engendering plausible counterfactual candidates.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2506.02378v1",
+      "title": "Exploring Explanations Improves the Robustness of In-Context Learning",
+      "authors": [
+        "Ukyo Honda",
+        "Tatsushi Oka"
+      ],
+      "published": "2025-06-03T02:29:14Z",
+      "updated": "2025-06-03T02:29:14Z",
+      "abstract": "In-context learning (ICL) has emerged as a successful paradigm for leveraging large language models (LLMs). However, it often struggles to generalize beyond the distribution of the provided demonstrations. A recent advancement in enhancing robustness is ICL with explanations (X-ICL), which improves prediction reliability by guiding LLMs to understand and articulate the reasoning behind correct labels. Building on this approach, we introduce an advanced framework that extends X-ICL by systematically exploring explanations for all possible labels (X$^2$-ICL), thereby enabling more comprehensive and robust decision-making. Experimental results on multiple natural language understanding datasets validate the effectiveness of X$^2$-ICL, demonstrating significantly improved robustness to out-of-distribution data compared to the existing ICL approaches.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2102.03785v2",
+      "title": "Robust Explanations for Private Support Vector Machines",
+      "authors": [
+        "Rami Mochaourab",
+        "Sugandh Sinha",
+        "Stanley Greenstein",
+        "Panagiotis Papapetrou"
+      ],
+      "published": "2021-02-07T11:55:32Z",
+      "updated": "2021-06-09T19:21:19Z",
+      "abstract": "We consider counterfactual explanations for private support vector machines (SVM), where the privacy mechanism that publicly releases the classifier guarantees differential privacy. While privacy preservation is essential when dealing with sensitive data, there is a consequent degradation in the classification accuracy due to the introduced perturbations in the classifier weights. For such classifiers, counterfactual explanations need to be robust against the uncertainties in the SVM weights in order to ensure, with high confidence, that the classification of the data instance to be explained is different than its explanation. We model the uncertainties in the SVM weights through a random vector, and formulate the explanation problem as an optimization problem with probabilistic constraint. Subsequently, we characterize the problem's deterministic equivalent and study its solution. For linear SVMs, the problem is a convex second-order cone program. For non-linear SVMs, the problem is non-convex. Thus, we propose a sub-optimal solution that is based on the bisection method. The results show that, contrary to non-robust explanations, the quality of explanations from the robust solution degrades with increasing privacy in order to guarantee a prespecified confidence level for correct classifications.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    }
+  ],
+  "status": "OK"
+}

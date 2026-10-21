@@ -1,0 +1,203 @@
+{
+  "date": "2026-10-20",
+  "url": "https://api.crossref.org/works?query.bibliographic=Selective%20Explanations&rows=3&select=DOI,title,author,published,container-title,type,URL",
+  "kind": "json",
+  "response": {
+    "status": "ok",
+    "message-type": "work-list",
+    "message-version": "1.0.0",
+    "message": {
+      "facets": {},
+      "total-results": 436547,
+      "items": [
+        {
+          "DOI": "10.21203/rs.3.rs-7316975/v1",
+          "title": [
+            "Sparse-Selective Similarity Regularisation for Enhanced Explanations"
+          ],
+          "author": [
+            {
+              "given": "Ismail",
+              "family": "Alarab",
+              "sequence": "first",
+              "affiliation": [
+                {
+                  "name": "Bournemouth University"
+                }
+              ],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Mohammad",
+              "family": "Naiseh",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Bournemouth University"
+                }
+              ],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Simant",
+              "family": "Prakoonwit",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Bournemouth University"
+                }
+              ],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                10,
+                16
+              ]
+            ]
+          },
+          "type": "posted-content",
+          "URL": "https://doi.org/10.21203/rs.3.rs-7316975/v1"
+        },
+        {
+          "DOI": "10.1017/cbo9780511489877.010",
+          "title": [
+            "Conclusion: stereotypes are selective, variable and contested explanations"
+          ],
+          "author": [
+            {
+              "given": "Craig",
+              "family": "McGarty",
+              "sequence": "first",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Russell",
+              "family": "Spears",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Vincent Y.",
+              "family": "Yzerbyt",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2002,
+                8,
+                8
+              ]
+            ]
+          },
+          "container-title": [
+            "Stereotypes as Explanations"
+          ],
+          "type": "book-chapter",
+          "URL": "https://doi.org/10.1017/cbo9780511489877.010"
+        },
+        {
+          "DOI": "10.52202/079017-1765",
+          "title": [
+            "Selective Explanations"
+          ],
+          "author": [
+            {
+              "given": "Lucas",
+              "family": "Paes",
+              "sequence": "first",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Dennis",
+              "family": "Wei",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Flavio",
+              "family": "Calmon",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2024
+              ]
+            ]
+          },
+          "container-title": [
+            "Advances in Neural Information Processing Systems 37"
+          ],
+          "type": "proceedings-article",
+          "URL": "https://doi.org/10.52202/079017-1765"
+        }
+      ],
+      "items-per-page": 3,
+      "query": {
+        "start-index": 0,
+        "search-terms": null
+      }
+    }
+  },
+  "status": "OK"
+}

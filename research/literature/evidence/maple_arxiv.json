@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-20",
+  "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Supervised%20Neighborhoods%22&max_results=12&sortBy=relevance",
+  "kind": "atom",
+  "total_hits": "1",
+  "records": [
+    {
+      "id": "http://arxiv.org/abs/2605.13194v1",
+      "title": "ECG-NAT: A Self-supervised Neighborhood Attention Transformer for Multi-lead Electrocardiogram Classification",
+      "authors": [
+        "Mahsa Gazeran",
+        "Sayvan Soleymanbaigi",
+        "Fatemeh Daneshfar",
+        "Amjad Seyedi",
+        "Fardin Akhlaghian Tab"
+      ],
+      "published": "2026-05-13T08:50:00Z",
+      "updated": "2026-05-13T08:50:00Z",
+      "abstract": "Electrocardiogram (ECG) arrhythmia classification remains challenging due to signal variability, noise, limited labeled data, and the difficulty in achieving both accuracy and efficiency in models. While self-supervised learning reduces label dependency, most methods target either global contextual features or local morphological patterns, but rarely implement hierarchical multi-scale feature extraction. ECG signals require architectures that simultaneously capture fine-grained beat-level morphology and broader rhythm-level dependencies with computational efficiency. To overcome this limitation, this paper proposes the Electrocardiogram Neighborhood Attention Transformer (ECG-NAT), a novel self-supervised learning approach tailored for multi-lead ECG classification. Our two-stage approach begins with generative pretraining, using a masked autoencoder to reconstruct partially masked ECG signals across multiple diverse datasets, enabling the model to learn robust, domain-invariant representations from unlabeled data. This is followed by discriminative fine-tuning with a dual-loss function that combines supervised contrastive and cross-entropy losses, aligning representation learning with label prediction. The hierarchical attention mechanism efficiently captures multi-scale temporal features from localized beat morphology to broader rhythm patterns at low computational cost. ECG-NAT achieves robust performance on benchmark datasets, with 88.1\\% accuracy using only 1\\% labeled data, demonstrating strong efficacy in low-resource settings. The framework combines superior classification performance with computational efficiency, making it practical for real-time ECG diagnosis. The code will be made available upon acceptance at: https://github.com/Mahsagazeran/ECG-NAT.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    }
+  ],
+  "status": "OK"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-21",
+  "url": "https://api.github.com/repos/aangelopoulos/conformal-risk/commits?per_page=1",
+  "kind": "json",
+  "normalization_note": "Minimum provenance; emails/signatures omitted.",
+  "response": [
+    {
+      "sha": "3eff946390a8f188b1e5ab700fce21a66a215e7c",
+      "html_url": "https://github.com/aangelopoulos/conformal-risk/commit/3eff946390a8f188b1e5ab700fce21a66a215e7c",
+      "commit": {
+        "committer": {
+          "date": "2023-01-23T09:24:05Z"
+        }
+      }
+    }
+  ],
+  "status": "OK"
+}

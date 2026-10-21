@@ -1,0 +1,252 @@
+{
+  "date": "2026-10-21",
+  "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Asufficient%20AND%20%28ti%3Arobust%20OR%20ti%3Adistribution%29%29%20AND%20submittedDate%3A%5B202401010000%20TO%20202610212359%5D&max_results=20&sortBy=submittedDate&sortOrder=descending",
+  "kind": "atom",
+  "total_hits": "17",
+  "records": [
+    {
+      "id": "http://arxiv.org/abs/2609.37144v1",
+      "title": "Margenau-Hill distribution as a Necessary and Sufficient Signature of Measurement Incompatibility",
+      "authors": [
+        "Partha Patra",
+        "A. K. Pan"
+      ],
+      "published": "2026-09-29T09:41:38Z",
+      "updated": "2026-09-29T09:41:38Z",
+      "abstract": "Measurement incompatibility and the negativity of quasi-probability distributions both demonstrate the signature of nonclassicality. However, their relations largely remained qualitative, and no explicit operational connection has been established. We provide an operational link between measurement incompatibility and the Margenau-Hill(MH) quasi-probability distribution associated with two dichotomic observables. { We first derive the joint measurability (measurement compatibility) condition for any pair of dichotomic observables in arbitrary finite dimension $d$.} We then rigorously prove that for any pair of unsharp dichotomic measurements in dimension $d$, the positivity of the MH distribution is equivalent to joint measurability \\emph{i.e.}, the MH distribution is positive \\emph{if and only if} the measurements are jointly measurable. We further introduce the MH-like quasi-probability distribution for $n$ dichotomic unsharp observables in arbitrary finite dimension and derive a sufficient condition of joint-measurability when the observables are mutually anticommuting. Finally, we propose an interferometric setup, inspired by quantum-switch architectures, that directly reconstructs MH quasi-probability which in turn provides a test of incompatibility.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.29291v1",
+      "title": "Sufficiently Reduced Distributional Regression",
+      "authors": [
+        "Alexander Henzi",
+        "Tiange Liu",
+        "Xinwei Shen"
+      ],
+      "published": "2026-09-24T09:27:17Z",
+      "updated": "2026-09-24T09:27:17Z",
+      "abstract": "We propose Sufficiently Reduced Distributional Regression (SRDR), a generative method that combines conditional distribution estimation with nonlinear sufficient dimension reduction (SDR). It builds on a characterization of sufficiency through strictly proper scoring rules: a dimension reduction is sufficient if and only if predicting the response from the reduced covariates incurs no loss in expected score relative to the full covariates. Sufficient dimension reduction thus becomes a risk minimization problem. SRDR jointly trains a dimension reduction map and a generative prediction model by minimizing the energy score, which can be estimated by sampling without density evaluation or adversarial training. The framework extends to multi-environment data and to classification. We prove that the estimated conditional distributions converge in energy distance to the true ones, which implies that the learned representation is asymptotically sufficient. In simulations and applications to CT slice localization, superconductivity, and digit classification, SRDR recovers low-dimensional sufficient structure and matches or outperforms state-of-the-art nonlinear SDR methods in representation quality and predictive performance.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.23789v1",
+      "title": "Belted Engression: Sufficient Dimension Reduction for Generative Distributional Regression",
+      "authors": [
+        "Wenxi Tan",
+        "Bing Li",
+        "Lingzhou Xue"
+      ],
+      "published": "2026-09-20T18:20:21Z",
+      "updated": "2026-09-20T18:20:21Z",
+      "abstract": "Modern conditional generative models face significant challenges when learning complex covariate dependencies. While sufficient dimension reduction (SDR) provides a principled approach to compress these dependencies, traditional SDR frameworks were not formulated for conditional generation. To bridge this gap, we propose Belted Engression, a unified and architecturally parameter-efficient framework for generative distributional regression. Our approach establishes an end-to-end compress-then-generate paradigm driven by sufficient representation learning, embedding a structural bottleneck into the generative architecture. Theoretically, we prove that the standard SDR condition is equivalent to a law-preserving generative factorization, which is achieved at the global optimum of the population Belted Engression objective. Furthermore, by uncovering a localized Bernstein-type control for the energy-score loss, we establish finite-sample convergence rates that are sharper than those of existing results. We also prove that this belted architecture is strictly smaller, operating with an asymptotically vanishing parameter count relative to the unstructured baseline. Extensive simulations and real-world applications demonstrate that Belted Engression achieves superior distributional prediction and SDR recovery with fewer trainable parameters.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.11646v1",
+      "title": "Your Retriever Already Knows: Distribution-Shape QPP for RAG Retrieval Sufficiency",
+      "authors": [
+        "Matyáš Veselý",
+        "Michal Průšek",
+        "Jiří Franc"
+      ],
+      "published": "2026-09-10T14:52:16Z",
+      "updated": "2026-09-10T14:52:16Z",
+      "abstract": "Standard Retrieval-Augmented Generation (RAG) pipelines often provide no reliable inference-time signal of whether retrieval succeeded; on ambiguous or out-of-scope queries, generation may then hallucinate. Motivated by a Czech nuclear-regulator deployment where data sensitivity precludes third-party LLM APIs, we compare three Query Performance Prediction (QPP) paradigms for retrieval sufficiency in RAG: score-based features, a content-based LLM judge, and a hybrid. On the eight ViDoRe vision domains (14,514 queries), our 24 non-lexical features (GeneralQPP; 15 distribution-shape, 5 query-surface, 4 global) reach a weighted-average AUROC of 0.856 at 2 ms per query, ahead of a classic-QPP literature pool (Classic Full, 0.835) and well above a local Qwen3.5 LLM judge (0.649, +0.207 gap; $\\sim$3000$\\times$ faster and cheaper per query). Adding the LLM judgment as one feature (hybrid) matches S1 on ViDoRe (0.863) but gains a statistically significant edge on SÚJB (AUROC 0.911 at Hit@5, adversarial-detection 0.954; 1,510 queries, 500 synthetic adversarial), at LLM latency. Rankings agree across datasets (Spearman $ρ= 0.90$). Under Leave-One-Domain-Out, S1 drops to 0.706; a 13-feature LODO-stepwise subset (S1-Lean) recovers to 0.719 (+0.032 over the literature pool).",
+      "doi": "10.1007/978-3-032-37249-9_48",
+      "journal_ref": "Text, Speech, and Dialogue (TSD 2026), Lecture Notes in Computer Science, vol. 16940, pp. 592-604, Springer, 2027"
+    },
+    {
+      "id": "http://arxiv.org/abs/2604.21177v2",
+      "title": "Revisiting Subgradient Dominance in Robust MDPs: Counterexamples, Hardness, and Sufficient Conditions",
+      "authors": [
+        "Toshinori Kitamura",
+        "Arnob Ghosh",
+        "Alex Ayoub",
+        "Thang D. Chu",
+        "Csaba Szepesvári"
+      ],
+      "published": "2026-04-23T00:49:34Z",
+      "updated": "2026-10-08T01:29:15Z",
+      "abstract": "Projected subgradient descent (PSD) has gained popularity for solving robust Markov decision processes (RMDPs) because it applies to a broader class of uncertainty sets than traditional dynamic programming. Existing work claims that RMDPs with a general compact uncertainty set satisfy the subgradient dominance property, under which exact PSD finds an $\\varepsilon$-optimal policy in a polynomial number of updates (e.g., Wang et al., 2023). We show that these claims are incorrect. Even when the uncertainty set has cardinality two, the RMDP objective need not be subgradient-dominant and can admit suboptimal strict local minima. Moreover, we prove that finding an $\\varepsilon$-optimal policy can be NP-hard even in settings where subgradients are efficiently computable: (i) finite transition uncertainty sets and (ii) $sa$-rectangular finite transition uncertainty sets with finite non-rectangular cost uncertainty sets. Finally, we identify two conditions under which RMDPs do satisfy subgradient dominance: when, for each policy, either the worst-case transition kernel is unique or a robust action-value function exists.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2603.10288v2",
+      "title": "Version-Robust Methods for Identifying Minimal Sufficient Statistics",
+      "authors": [
+        "Rafael Oliveira Cavalcante",
+        "Alexandre Galvão Patriota"
+      ],
+      "published": "2026-03-11T00:10:26Z",
+      "updated": "2026-04-03T13:59:18Z",
+      "abstract": "Let $f_θ$ be the joint density of a random sample $X$. A frequently used criterion asserts that a statistic $T(X)$ is minimal sufficient if, for any sample points $x$ and $y$, $T(x) = T(y)$ exactly when there exists a finite constant $h_{xy} > 0$, independent of $θ$, such that $f_θ(y) = f_θ(x)h_{xy}$ for all $θ$. We show that this criterion is false in general via a counterexample exploiting the non-uniqueness of versions of Radon--Nikodym derivatives. Although Sato (1996) established sufficient regularity conditions for the validity of this criterion, these conditions are frequently intractable to verify in practice. We resolve this limitation by introducing a version-robust method applicable whenever sufficiency is known. Moreover, our method allows us to generalize Sato's approach from Euclidean settings to arbitrary analytic Borel sample spaces and separable measurable statistic spaces. We also obtain a method for exponential-family densities under verifiable hypotheses. Taken together, these results clarify when pointwise likelihood-ratio arguments for minimal sufficiency are mathematically sound in irregular settings. Finally, we construct a counterexample demonstrating that a distinct criterion for minimal sufficiency due to Pfanzagl (1994, 2017) similarly fails in the absence of supplementary hypotheses. Identifying minimal sufficient statistics is important not only for parsimonious data reduction but also because, in models admitting complete sufficiency, such statistics provide a practical route to the complete sufficient structure underlying optimal estimation and prediction.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2602.12253v1",
+      "title": "Is Online Linear Optimization Sufficient for Strategic Robustness?",
+      "authors": [
+        "Yang Cai",
+        "Haipeng Luo",
+        "Chen-Yu Wei",
+        "Weiqiang Zheng"
+      ],
+      "published": "2026-02-12T18:41:55Z",
+      "updated": "2026-02-12T18:41:55Z",
+      "abstract": "We consider bidding in repeated Bayesian first-price auctions. Bidding algorithms that achieve optimal regret have been extensively studied, but their strategic robustness to the seller's manipulation remains relatively underexplored. Bidding algorithms based on no-swap-regret algorithms achieve both desirable properties, but are suboptimal in terms of statistical and computational efficiency. In contrast, online gradient ascent is the only algorithm that achieves $O(\\sqrt{TK})$ regret and strategic robustness [KSS24], where $T$ denotes the number of auctions and $K$ the number of bids. In this paper, we explore whether simple online linear optimization (OLO) algorithms suffice for bidding algorithms with both desirable properties. Our main result shows that sublinear linearized regret is sufficient for strategic robustness. Specifically, we construct simple black-box reductions that convert any OLO algorithm into a strategically robust no-regret bidding algorithm, in both known and unknown value distribution settings. For the known value distribution case, our reduction yields a bidding algorithm that achieves $O(\\sqrt{T \\log K})$ regret and strategic robustness (with exponential improvement on the $K$-dependence compared to [KSS24]). For the unknown value distribution case, our reduction gives a bidding algorithm with high-probability $O(\\sqrt{T (\\log K+\\log(T/δ)})$ regret and strategic robustness, while removing the bounded density assumption made in [KSS24].",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2511.04291v1",
+      "title": "Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition",
+      "authors": [
+        "Giovanni Barbarino",
+        "Nicolas Gillis",
+        "Subhayan Saha"
+      ],
+      "published": "2025-11-06T11:36:32Z",
+      "updated": "2025-11-06T11:36:32Z",
+      "abstract": "Minimum-volume nonnegative matrix factorization (min-vol NMF) has been used successfully in many applications, such as hyperspectral imaging, chemical kinetics, spectroscopy, topic modeling, and audio source separation. However, its robustness to noise has been a long-standing open problem. In this paper, we prove that min-vol NMF identifies the groundtruth factors in the presence of noise under a condition referred to as the expanded sufficiently scattered condition which requires the data points to be sufficiently well scattered in the latent simplex generated by the basis vectors.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2511.02955v1",
+      "title": "Necessary and Sufficient Conditions for Characterizing Finite Discrete Distributions with Generalized Shannon's Entropy",
+      "authors": [
+        "Jialin Zhang"
+      ],
+      "published": "2025-11-04T19:57:22Z",
+      "updated": "2025-11-04T19:57:22Z",
+      "abstract": "This article establishes necessary and sufficient conditions under which a finite set of Generalized Shannon's Entropy (GSE) characterizes a finite discrete distribution up to permutation. For an alphabet of cardinality K, it is shown that K-1 distinct positive real orders of GSE are sufficient (and necessary if no multiplicity) to identify the distribution up to permutation. When the distribution has a known multiplicity structure with s distinct values, s-1 orders are sufficient and necessary. These results provide a label-invariant foundation for inference on unordered sample spaces and enable practical goodness-of-fit procedures across disparate alphabets. The findings also suggest new approaches for testing, estimation, and model comparison in settings where moment-based and link-based methods are inadequate.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2509.11455v1",
+      "title": "Unified Distributed Estimation Framework for Sufficient Dimension Reduction Based on Conditional Moments",
+      "authors": [
+        "Hongying Li",
+        "Minyi Zhu",
+        "Yaqi Cao",
+        "Xinyi Xu"
+      ],
+      "published": "2025-09-14T22:10:47Z",
+      "updated": "2025-09-14T22:10:47Z",
+      "abstract": "Nowadays, massive datasets are typically dispersed across multiple locations, encountering dual challenges of high dimensionality and huge sample size. Therefore, it is necessary to explore sufficient dimension reduction (SDR) methods for distributed data. In this paper, we first propose an exact distributed estimation of sliced inverse regression, which substantially improves computational efficiency while obtaining identical estimation as that on the full sample. Then, we propose a unified distributed framework for general conditional-moment-based inverse regression methods. This framework allows for distinct population structure for data distributed at different locations, thus addressing the issue of heterogeneity. To assess the effectiveness of our proposed methods, we conduct simulations incorporating various data generation mechanisms, and examine scenarios where samples are homogeneous equally, heterogeneous equally, and heterogeneous unequally scattered across local nodes. Our findings highlight the versatility and applicability of the unified framework. Meanwhile, the communication cost is practically acceptable and the computation cost is greatly reduced. Sensitivity analysis verifies the robustness of the algorithm under extreme conditions where the SDR method locally fails on some nodes. A real data analysis also demonstrates the superior performance of the algorithm.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2507.19437v1",
+      "title": "Observations Meet Actions: Learning Control-Sufficient Representations for Robust Policy Generalization",
+      "authors": [
+        "Yuliang Gu",
+        "Hongpeng Cao",
+        "Marco Caccamo",
+        "Naira Hovakimyan"
+      ],
+      "published": "2025-07-25T17:08:16Z",
+      "updated": "2025-07-25T17:08:16Z",
+      "abstract": "Capturing latent variations (\"contexts\") is key to deploying reinforcement-learning (RL) agents beyond their training regime. We recast context-based RL as a dual inference-control problem and formally characterize two properties and their hierarchy: observation sufficiency (preserving all predictive information) and control sufficiency (retaining decision-making relevant information). Exploiting this dichotomy, we derive a contextual evidence lower bound(ELBO)-style objective that cleanly separates representation learning from policy learning and optimizes it with Bottlenecked Contextual Policy Optimization (BCPO), an algorithm that places a variational information-bottleneck encoder in front of any off-policy policy learner. On standard continuous-control benchmarks with shifting physical parameters, BCPO matches or surpasses other baselines while using fewer samples and retaining performance far outside the training regime. The framework unifies theory, diagnostics, and practice for context-based RL.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2503.00316v1",
+      "title": "Sufficient conditions for distributional chaos of type I",
+      "authors": [
+        "Noriaki Kawaguchi"
+      ],
+      "published": "2025-03-01T03:05:29Z",
+      "updated": "2025-03-01T03:05:29Z",
+      "abstract": "Distributional chaos of type I (DC1) is a stronger variant of Li-Yorke chaos. In this paper, we consider the fact that the time-one map of a mixing Anosov flow exhibits DC1 and generalize it to obtain simple sufficient conditions for DC1.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2502.01254v4",
+      "title": "A necessary and sufficient condition for convergence in distribution of the quantile process in $L^1(0,1)$",
+      "authors": [
+        "Brendan K. Beare",
+        "Tetsuya Kaji"
+      ],
+      "published": "2025-02-03T11:26:10Z",
+      "updated": "2026-04-16T04:24:09Z",
+      "abstract": "We establish a necessary and sufficient condition for the quantile process based on iid sampling to converge in distribution in $L^1(0,1)$. The condition is that the quantile function is locally absolutely continuous and satisfies a slight strengthening of square integrability. If the quantile process converges in distribution then it may be approximated using the bootstrap.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2412.17470v5",
+      "title": "A Necessary and Sufficient Condition for Size Controllability of Heteroskedasticity Robust Test Statistics",
+      "authors": [
+        "Benedikt M. Pötscher",
+        "David Preinerstorfer"
+      ],
+      "published": "2024-12-23T10:52:27Z",
+      "updated": "2026-06-18T12:23:15Z",
+      "abstract": "We revisit size controllability results in Pötscher and Preinerstorfer (2025) concerning heteroskedasticity robust test statistics in regression models. For the special, but important, case of testing a single restriction (e.g., a zero restriction on a single coefficient), we povide a necessary and sufficient condition for size controllability, whereas the condition in Pötscher and Preinerstorfer (2025) is, in general, only sufficient (even in the case of testing a single restriction).",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2407.15273v1",
+      "title": "Unifying Invariant and Variant Features for Graph Out-of-Distribution via Probability of Necessity and Sufficiency",
+      "authors": [
+        "Xuexin Chen",
+        "Ruichu Cai",
+        "Kaitao Zheng",
+        "Zhifan Jiang",
+        "Zhengting Huang",
+        "Zhifeng Hao",
+        "Zijian Li"
+      ],
+      "published": "2024-07-21T21:35:01Z",
+      "updated": "2024-07-21T21:35:01Z",
+      "abstract": "Graph Out-of-Distribution (OOD), requiring that models trained on biased data generalize to the unseen test data, has considerable real-world applications. One of the most mainstream methods is to extract the invariant subgraph by aligning the original and augmented data with the help of environment augmentation. However, these solutions might lead to the loss or redundancy of semantic subgraphs and result in suboptimal generalization. To address this challenge, we propose exploiting Probability of Necessity and Sufficiency (PNS) to extract sufficient and necessary invariant substructures. Beyond that, we further leverage the domain variant subgraphs related to the labels to boost the generalization performance in an ensemble manner. Specifically, we first consider the data generation process for graph data. Under mild conditions, we show that the sufficient and necessary invariant subgraph can be extracted by minimizing an upper bound, built on the theoretical advance of the probability of necessity and sufficiency. To further bridge the theory and algorithm, we devise the model called Sufficiency and Necessity Inspired Graph Learning (SNIGL), which ensembles an invariant subgraph classifier on top of latent sufficient and necessary invariant subgraphs, and a domain variant subgraph classifier specific to the test domain for generalization enhancement. Experimental results demonstrate that our SNIGL model outperforms the state-of-the-art techniques on six public benchmarks, highlighting its effectiveness in real-world scenarios.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2402.09165v1",
+      "title": "Unifying Invariance and Spuriousity for Graph Out-of-Distribution via Probability of Necessity and Sufficiency",
+      "authors": [
+        "Xuexin Chen",
+        "Ruichu Cai",
+        "Kaitao Zheng",
+        "Zhifan Jiang",
+        "Zhengting Huang",
+        "Zhifeng Hao",
+        "Zijian Li"
+      ],
+      "published": "2024-02-14T13:31:53Z",
+      "updated": "2024-02-14T13:31:53Z",
+      "abstract": "Graph Out-of-Distribution (OOD), requiring that models trained on biased data generalize to the unseen test data, has a massive of real-world applications. One of the most mainstream methods is to extract the invariant subgraph by aligning the original and augmented data with the help of environment augmentation. However, these solutions might lead to the loss or redundancy of semantic subgraph and further result in suboptimal generalization. To address this challenge, we propose a unified framework to exploit the Probability of Necessity and Sufficiency to extract the Invariant Substructure (PNSIS). Beyond that, this framework further leverages the spurious subgraph to boost the generalization performance in an ensemble manner to enhance the robustness on the noise data. Specificially, we first consider the data generation process for graph data. Under mild conditions, we show that the invariant subgraph can be extracted by minimizing an upper bound, which is built on the theoretical advance of probability of necessity and sufficiency. To further bridge the theory and algorithm, we devise the PNSIS model, which involves an invariant subgraph extractor for invariant graph learning as well invariant and spurious subgraph classifiers for generalization enhancement. Experimental results demonstrate that our \\textbf{PNSIS} model outperforms the state-of-the-art techniques on graph OOD on several benchmarks, highlighting the effectiveness in real-world scenarios.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2402.00778v2",
+      "title": "Robust Sufficient Dimension Reduction via $α$-Distance Covariance",
+      "authors": [
+        "Hsin-Hsiung Huang",
+        "Feng Yu",
+        "Teng Zhang"
+      ],
+      "published": "2024-02-01T17:06:51Z",
+      "updated": "2024-02-05T03:50:52Z",
+      "abstract": "We introduce a novel sufficient dimension-reduction (SDR) method which is robust against outliers using $α$-distance covariance (dCov) in dimension-reduction problems. Under very mild conditions on the predictors, the central subspace is effectively estimated and model-free advantage without estimating link function based on the projection on the Stiefel manifold. We establish the convergence property of the proposed estimation under some regularity conditions. We compare the performance of our method with existing SDR methods by simulation and real data analysis and show that our algorithm improves the computational efficiency and effectiveness.",
+      "doi": "10.1080/10485252.2024.2313137",
+      "journal_ref": "UNVERIFIED"
+    }
+  ],
+  "status": "OK"
+}

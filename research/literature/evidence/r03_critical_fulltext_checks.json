@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-21",
+  "scope": "Parent targeted full-text recheck from version-pinned caches; not replication",
+  "sources": [
+    {
+      "key": "ltt",
+      "url": "https://arxiv.org/html/2110.01052v5",
+      "cached_retrieval_date": "2026-10-21",
+      "html_sha256": "192d32c2ee55afd9bf7287e865608019dd3bded7f97e6aafa4789db9ff9f75e9",
+      "snippets": [
+        {
+          "locator": "## Theorem 1",
+          "text_offset": 13065,
+          "short_excerpt": "## Theorem 1 .\nSuppose p_{j} has a distribution stochastically dominating the uniform distribution for all j under \\mathcal{H}_{j} .\nLet \\mathcal{A} be an FWER-controlling algorithm at level \\delta . Then \\hat{\\Lambda}=\\"
+        },
+        {
+          "locator": "## Proposition 1",
+          "text_offset": 15787,
+          "short_excerpt": "## Proposition 1 (Hoeffding-Bentkus inequality p-values) .\nThe following is a valid p-value for \\mathcal{H}_{j} :\np_{j}^{\\rm HB}=\\min\\left(\\exp\\{-nh_{1}(\\widehat{R}_{j}\\wedge\\alpha,\\alpha)\\},e\\mathbb{P}\\big(\\mathrm{Bin}("
+        },
+        {
+          "locator": "## 3.2 Selective",
+          "text_offset": 29364,
+          "short_excerpt": "## 3.2 Selective Classification with Accuracy Control\nFigure 4 : Numerical results of selective classification on Imagenet.\nThe violins plot the selective error over 100 data splits at levels \\alpha=0.15 and \\delta=0.1 ."
+        },
+        {
+          "locator": "## 3.3 Selective",
+          "text_offset": 31425,
+          "short_excerpt": "## 3.3 Selective Regression with MSE Control\nFigure 5 : Numerical results of selective regression on the MEPS dataset.\nThe MSE is plotted as a violin plot over 100 random splits of the MEPS data, with parameters \\alpha=0"
+        },
+        {
+          "locator": "## Appendix B CLT",
+          "text_offset": 74671,
+          "short_excerpt": "## Appendix B CLT p-value\nDefining the empirical standard deviation as \\hat{\\sigma}_{j}=((L_{1,j}-\\widehat{R}_{j})^{2}+\\ldots+(L_{n,j}-\\widehat{R}_{j})^{2})^{1/2}/(n-1) , the p-value is\n## Proposition B.1 (CLT p-values) "
+        },
+        {
+          "locator": "all the guarantees in this paper are marginal",
+          "text_offset": 52597,
+          "short_excerpt": "all the guarantees in this paper are marginal.\nThe reader should internalize what this means: we cannot guarantee that the errors are balanced over different strata of X - and Y -space, even meaningful ones such as objec"
+        }
+      ]
+    },
+    {
+      "key": "paxp",
+      "url": "https://arxiv.org/html/2312.11831v3",
+      "cached_retrieval_date": "2026-10-21",
+      "html_sha256": "7df5d6a9ac9fc91d561da1f056aee0b9e3391ca8c309278b7d406eaf678e8b5b",
+      "snippets": [
+        {
+          "locator": "## 2.5",
+          "text_offset": 16211,
+          "short_excerpt": "## 2.5 Formal Probabilistic Explanations\nWe follow the recent accounts on formal probabilistic\nexplanations [ 20 ] .\n{\\mathcal{S}}\n\\mathsf{WeakAXp} ?\n\\mathsf{AXp} ?\n\\textnormal{Pr}_{\\mathbf{x}}(\\kappa(\\mathbf{x})=\\ominus"
+        },
+        {
+          "locator": "DelLmPAXp",
+          "text_offset": 32139,
+          "short_excerpt": "DelLmPAXp} ( {\\mathcal{E}},\\mathrm{T};\\epsilon,\\delta )\n2:\n{\\mathcal{S}}\\leftarrow{\\mathcal{F}}\n3:\n\\Phi\\leftarrow\\mathsf{encode}({\\mathcal{E}})\n4:\nfor i\\in{\\mathcal{F}} do\n5:\nmc\\leftarrow\\mathsf{approxCount}(Sol(\\Phi_{\\m"
+        },
+        {
+          "locator": "## 4.3",
+          "text_offset": 32751,
+          "short_excerpt": "## 4.3 Computing Locally-Minimal PAXp’s\nAlgorithm 1 depicts a (deletion-based) linear search method\nfor computing a locally-minimal PAXp.\nAs shown, to compute one LmPAXp {\\mathcal{S}} , one can starts from\nan initial set"
+        },
+        {
+          "locator": "## Proposition 1",
+          "text_offset": 30362,
+          "short_excerpt": "## Proposition 1 (Hoeffding [ 50 ] ) .\nGiven independent 0–1 random variables X_{i} , X=\\frac{1}{N}\\sum\\nolimits_{i=1}^{N}X_{i} ,\nthe expected value \\mu=\\mathbb{E}(X)\nand \\epsilon>0 , \\textnormal{Pr}(\\mid X-\\mu\\mid\\geq\\e"
+        }
+      ]
+    }
+  ]
+}

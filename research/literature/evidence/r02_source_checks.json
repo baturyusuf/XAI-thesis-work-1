@@ -1,0 +1,36 @@
+[
+  {
+    "key": "recalx",
+    "date": "2026-10-21",
+    "url": "https://raw.githubusercontent.com/thomdeck/recalx/222807cbcebb19603b3ae9150675a94ebc8b871b/recalx/calibration.py",
+    "status": "OK",
+    "sha256": "6d71eea9bdadba52237e06740d535a4bd9b92f51811b5611ebf6d44533e144c5",
+    "snippets": [
+      {
+        "start_line": 220,
+        "text": "    def _infer_perturbation_level(self, x: torch.Tensor) -> float:\n        \"\"\"Infer perturbation level by comparing to unperturbed reference.\"\"\"\n        if self.unperturbed_input is None:\n            return 0.0\n        \n        # Fraction of features that differ from original\n        diff = (x != self.unperturbed_input).float()\n        level = float(diff.mean().item())\n        return round(level, 1)\n    \n    def set_unperturbed_input(self, x: torch.Tensor):\n        \"\"\"Set reference input for perturbation inference.\"\"\"\n        if x.dim() == 1:\n            x = x.unsqueeze(0)\n        self.unperturbed_input = x[0].detach()\n    \n    def calibrate_logits(self, logits: torch.Tensor, perturbation_level: float) -> torch.Tensor:\n        \"\"\"Apply calibration to precomputed logits at a given perturbation level.\"\"\"\n        bin_idx = min(int(perturbation_level * self.num_bins), self.num_bins - 1)\n        temp = self.temperature[bin_idx]"
+      },
+      {
+        "start_line": 203,
+        "text": "    def forward(self, x: torch.Tensor) -> torch.Tensor:\n        \"\"\"Forward with adaptive temperature scaling.\"\"\"\n        logits = self.model(x)\n        \n        # Infer perturbation levels\n        with torch.no_grad():\n            perturb_levels = torch.tensor(\n                [self._infer_perturbation_level(x[i]) for i in range(len(x))],\n                device=logits.device\n            )\n        \n        # Apply temperature scaling\n        bin_indices = (perturb_levels * self.num_bins).long().clamp(0, self.num_bins - 1)\n        temps = self.temperature.to(logits.device)[bin_indices].reshape(-1, 1)\n        \n        return logits / temps\n    \n    def _infer_perturbation_level(self, x: torch.Tensor) -> float:\n        \"\"\"Infer perturbation level by comparing to unperturbed reference.\"\"\"\n        if self.unperturbed_input is None:"
+      }
+    ]
+  },
+  {
+    "key": "fce",
+    "date": "2026-10-21",
+    "url": "https://raw.githubusercontent.com/Moffran/calibrated_explanations/7fd6bf1bb75683ebd6f5ca6d193e6831444eaa8f/src/calibrated_explanations/core/calibrated_explainer.py",
+    "status": "OK",
+    "sha256": "bd5d7fac486bde4480eff68e9aa59f96d9c4059a95224b5f2e5e5d7d17309bb0",
+    "snippets": [
+      {
+        "start_line": 1519,
+        "text": "    def _initialize_interval_learner_for_fast_explainer(self) -> None:  # noqa: N802\n        \"\"\"Backward-compatible wrapper for fast-mode interval learner initialization.\n\n        Notes\n        -----\n        This method delegates to the interval registry. It is kept for backward\n        compatibility with the external fast_explanations plugin and other\n        production code that calls this private method.\n\n        See ADR-001.\n        \"\"\"\n        self.prediction_orchestrator.interval_registry.initialize_for_fast_explainer()\n\n    def reinitialize(self, learner, xs=None, ys=None, bins=None):\n        \"\"\"Reinitialize the explainer with a new learner.\n\n        This is useful when the learner is updated or retrained and the explainer needs to be reinitialized.\n\n        Parameters\n        ----------"
+      },
+      {
+        "start_line": 2108,
+        "text": "    def explain_fast(\n        self,\n        x,\n        threshold=None,\n        low_high_percentiles=(5, 95),\n        bins=None,\n        *,\n        reject_policy: Any | None = None,\n        _use_plugin: bool = True,\n    ) -> CalibratedExplanations:\n        \"\"\"Create a :class:`.CalibratedExplanations` object for the test data.\n\n        Parameters\n        ----------\n        x : array-like\n            A set with n_samples of test objects to predict\n        threshold : float, int or array-like of shape (n_samples,), default=None\n            values for which p-values should be returned. Only used for probabilistic explanations for regression.\n        low_high_percentiles : a tuple of floats, default=(5, 95)\n            The low and high percentile used to calculate the interval. Applicable to regression."
+      }
+    ]
+  }
+]

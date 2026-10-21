@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-20",
+  "url": "https://export.arxiv.org/api/query?search_query=au%3APlumb%20AND%20ti%3Ainterpretability&max_results=5",
+  "kind": "atom",
+  "total_hits": "3",
+  "records": [
+    {
+      "id": "http://arxiv.org/abs/1902.06787v6",
+      "title": "Regularizing Black-box Models for Improved Interpretability",
+      "authors": [
+        "Gregory Plumb",
+        "Maruan Al-Shedivat",
+        "Angel Alexander Cabrera",
+        "Adam Perer",
+        "Eric Xing",
+        "Ameet Talwalkar"
+      ],
+      "published": "2019-02-18T20:23:12Z",
+      "updated": "2020-11-08T15:49:08Z",
+      "abstract": "Most of the work on interpretable machine learning has focused on designing either inherently interpretable models, which typically trade-off accuracy for interpretability, or post-hoc explanation systems, whose explanation quality can be unpredictable. Our method, ExpO, is a hybridization of these approaches that regularizes a model for explanation quality at training time. Importantly, these regularizers are differentiable, model agnostic, and require no domain knowledge to define. We demonstrate that post-hoc explanations for ExpO-regularized models have better explanation quality, as measured by the common fidelity and stability metrics. We verify that improving these metrics leads to significantly more useful explanations with a user study on a realistic task.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/1906.01431v1",
+      "title": "Regularizing Black-box Models for Improved Interpretability (HILL 2019 Version)",
+      "authors": [
+        "Gregory Plumb",
+        "Maruan Al-Shedivat",
+        "Eric Xing",
+        "Ameet Talwalkar"
+      ],
+      "published": "2019-05-31T20:18:33Z",
+      "updated": "2019-05-31T20:18:33Z",
+      "abstract": "Most of the work on interpretable machine learning has focused on designing either inherently interpretable models, which typically trade-off accuracy for interpretability, or post-hoc explanation systems, which lack guarantees about their explanation quality. We propose an alternative to these approaches by directly regularizing a black-box model for interpretability at training time. Our approach explicitly connects three key aspects of interpretable machine learning: (i) the model's innate explainability, (ii) the explanation system used at test time, and (iii) the metrics that measure explanation quality. Our regularization results in substantial improvement in terms of the explanation fidelity and stability metrics across a range of datasets and black-box explanation systems while slightly improving accuracy. Further, if the resulting model is still not sufficiently interpretable, the weight of the regularization term can be adjusted to achieve the desired trade-off between accuracy and interpretability. Finally, we justify theoretically that the benefits of explanation-based regularization generalize to unseen points.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2103.06254v2",
+      "title": "Interpretable Machine Learning: Moving From Mythos to Diagnostics",
+      "authors": [
+        "Valerie Chen",
+        "Jeffrey Li",
+        "Joon Sik Kim",
+        "Gregory Plumb",
+        "Ameet Talwalkar"
+      ],
+      "published": "2021-03-10T18:38:33Z",
+      "updated": "2021-07-28T23:42:45Z",
+      "abstract": "Despite increasing interest in the field of Interpretable Machine Learning (IML), a significant gap persists between the technical objectives targeted by researchers' methods and the high-level goals of consumers' use cases. In this work, we synthesize foundational work on IML methods and evaluation into an actionable taxonomy. This taxonomy serves as a tool to conceptualize the gap between researchers and consumers, illustrated by the lack of connections between its methods and use cases components. It also provides the foundation from which we describe a three-step workflow to better enable researchers and consumers to work together to discover what types of methods are useful for what use cases. Eventually, by building on the results generated from this workflow, a more complete version of the taxonomy will increasingly allow consumers to find relevant methods for their target use cases and researchers to identify applicable use cases for their proposed methods.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    }
+  ],
+  "status": "OK"
+}

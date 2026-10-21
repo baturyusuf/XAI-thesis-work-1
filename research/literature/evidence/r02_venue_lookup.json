@@ -1,0 +1,20 @@
+[
+  {
+    "key": "icml",
+    "date": "2026-10-21",
+    "url": "https://proceedings.mlr.press/v267/",
+    "term": "Explaining, Fast and Slow",
+    "status": "OK",
+    "sha256": "9e17ee7ed7eda2727ad46178644225738ee1d8e3e319441ad4d1c11e4986288d",
+    "matches": []
+  },
+  {
+    "key": "neurips",
+    "date": "2026-10-21",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2025",
+    "term": "Improving Perturbation-based Explanations",
+    "status": "OK",
+    "sha256": "d653a2ce6057507d84d68d82e77b0dd4e874d9c4748ff3e7424d50fac7379dac",
+    "matches": []
+  }
+]

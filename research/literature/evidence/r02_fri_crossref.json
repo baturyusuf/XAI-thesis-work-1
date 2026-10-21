@@ -1,0 +1,703 @@
+{
+  "date": "2026-10-21",
+  "url": "https://api.crossref.org/works/10.1016/j.neucom.2019.12.133",
+  "kind": "json",
+  "response": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            14
+          ]
+        ],
+        "date-time": "2025-10-14T01:03:08Z",
+        "timestamp": 1760403788787,
+        "version": "build-2065373602"
+      },
+      "reference-count": 45,
+      "publisher": "Elsevier BV",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                11,
+                1
+              ]
+            ],
+            "date-time": "2020-11-01T00:00:00Z",
+            "timestamp": 1604188800000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                11,
+                1
+              ]
+            ],
+            "date-time": "2020-11-01T00:00:00Z",
+            "timestamp": 1604188800000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/legal/tdmrep-license"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/501100002347",
+          "name": "Bundesministerium für Bildung und Forschung",
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "id": "10.13039/501100002347",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/501100001659",
+          "name": "Deutsche Forschungsgemeinschaft",
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "id": "10.13039/501100001659",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "elsevier.com",
+          "sciencedirect.com"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "Neurocomputing"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2020,
+            11
+          ]
+        ]
+      },
+      "DOI": "10.1016/j.neucom.2019.12.133",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            9
+          ]
+        ],
+        "date-time": "2020-04-09T10:55:12Z",
+        "timestamp": 1586429712000
+      },
+      "page": "266-279",
+      "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 5,
+      "special_numbering": "C",
+      "title": [
+        "Feature relevance determination for ordinal regression in the context of feature redundancies and privileged information"
+      ],
+      "prefix": "10.1016",
+      "volume": "416",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-5521-0326",
+          "authenticated-orcid": false,
+          "given": "Lukas",
+          "family": "Pfannschmidt",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jonathan",
+          "family": "Jakob",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Fabian",
+          "family": "Hinder",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5148-4568",
+          "authenticated-orcid": false,
+          "given": "Michael",
+          "family": "Biehl",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2330-128X",
+          "authenticated-orcid": false,
+          "given": "Peter",
+          "family": "Tino",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Barbara",
+          "family": "Hammer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "78",
+      "reference": [
+        {
+          "issue": "4",
+          "key": "10.1016/j.neucom.2019.12.133_bib0001",
+          "doi-asserted-by": "crossref",
+          "first-page": "19",
+          "DOI": "10.1145/2827872",
+          "article-title": "The movielens datasets: History and context",
+          "volume": "5",
+          "author": "Harper",
+          "year": "2016",
+          "journal-title": "ACM transactions on interactive intelligent systems"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_bib0002",
+          "series-title": "Machine Learning: ECML 2001",
+          "first-page": "145",
+          "article-title": "A Simple Approach to Ordinal Classification",
+          "author": "Frank",
+          "year": "2001"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_sbref0003",
+          "series-title": "Proceedings of the 15th International Conference on Neural Information Processing Systems",
+          "first-page": "961",
+          "article-title": "Ranking with Large Margin Principle: Two Approaches",
+          "author": "Shashua",
+          "year": "2002"
+        },
+        {
+          "issue": "3",
+          "key": "10.1016/j.neucom.2019.12.133_bib0004",
+          "doi-asserted-by": "crossref",
+          "first-page": "792",
+          "DOI": "10.1162/neco.2007.19.3.792",
+          "article-title": "Support Vector Ordinal Regression",
+          "volume": "19",
+          "author": "Chu",
+          "year": "2007",
+          "journal-title": "Neural Comput."
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_bib0005",
+          "doi-asserted-by": "crossref",
+          "first-page": "2825",
+          "DOI": "10.1162/NECO_a_00358",
+          "article-title": "Adaptive Metric Learning Vector Quantization for Ordinal Classification",
+          "volume": "24 11",
+          "author": "Fouad",
+          "year": "2012",
+          "journal-title": "Neural computation"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_bib0006",
+          "doi-asserted-by": "crossref",
+          "first-page": "76",
+          "DOI": "10.1016/j.neunet.2017.05.006",
+          "article-title": "Ordinal regression based on learning vector quantization",
+          "volume": "93",
+          "author": "Tang",
+          "year": "2017",
+          "journal-title": "Neural Networks"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_othref0001",
+          "doi-asserted-by": "crossref",
+          "first-page": "294",
+          "DOI": "10.1016/j.neunet.2018.07.015",
+          "article-title": "Incremental sparse Bayesian ordinal regression",
+          "volume": "106",
+          "author": "Li",
+          "year": "2018",
+          "journal-title": "Neural Networks"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_bib0008",
+          "unstructured": "W. Cao, V. Mirjalili, S. Raschka, Rank-consistent Ordinal Regression for Neural Networks, http://arxiv.org/abs/1901.07884."
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_bib0009",
+          "first-page": "1",
+          "article-title": "On the consistency of ordinal regression methods",
+          "volume": "18",
+          "author": "Pedregosa",
+          "year": "2017",
+          "journal-title": "J. Mach. Learn. Res."
+        },
+        {
+          "issue": "5",
+          "key": "10.1016/j.neucom.2019.12.133_bib0010",
+          "first-page": "93:1",
+          "article-title": "A survey of methods for explaining black box models",
+          "volume": "51",
+          "author": "Guidotti",
+          "year": "2018",
+          "journal-title": "ACM Comput. Surv."
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_bib0011",
+          "series-title": "Proceedings of the 30th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval",
+          "first-page": "407",
+          "article-title": "Feature Selection for Ranking",
+          "author": "Geng",
+          "year": "2007"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_bib0012",
+          "series-title": "Proceedings of the 2010 ACM Symposium on Applied Computing",
+          "first-page": "1748",
+          "article-title": "Feature Selection for Ordinal Regression",
+          "author": "Baccianella",
+          "year": "2010"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_sbref0012",
+          "first-page": "1205",
+          "article-title": "Efficient feature selection via analysis of relevance and redundancy",
+          "volume": "5",
+          "author": "Yu",
+          "year": "2004",
+          "journal-title": "J. Mach. Learn. Res."
+        },
+        {
+          "issue": "11",
+          "key": "10.1016/j.neucom.2019.12.133_bib0014",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.18637/jss.v036.i11",
+          "article-title": "Feature Selection with the Boruta Package",
+          "volume": "36",
+          "author": "Kursa",
+          "year": "2010",
+          "journal-title": "Journal of Statistical Software"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_othref0002",
+          "doi-asserted-by": "crossref",
+          "first-page": "69",
+          "DOI": "10.1016/j.neucom.2017.11.074",
+          "article-title": "Interpretation of linear classifiers by means of feature relevance bounds",
+          "volume": "298",
+          "author": "Göpfert",
+          "year": "2018",
+          "journal-title": "Neurocomputing"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_bib0016",
+          "series-title": "Proceedings of the 2017 ACM Conference on Economics and Computation",
+          "first-page": "1",
+          "article-title": "Fair algorithms for machine learning",
+          "author": "Kearns",
+          "year": "2017"
+        },
+        {
+          "issue": "5",
+          "key": "10.1016/j.neucom.2019.12.133_bib0017",
+          "doi-asserted-by": "crossref",
+          "first-page": "544",
+          "DOI": "10.1016/j.neunet.2009.06.042",
+          "article-title": "A new learning paradigm: Learning using privileged information",
+          "volume": "22",
+          "author": "Vapnik",
+          "year": "2009",
+          "journal-title": "Neural Networks"
+        },
+        {
+          "issue": "2023-2049",
+          "key": "10.1016/j.neucom.2019.12.133_bib0018",
+          "first-page": "2",
+          "article-title": "Learning using privileged information: Similarity control and knowledge transfer.",
+          "volume": "16",
+          "author": "Vapnik",
+          "year": "2015",
+          "journal-title": "Journal of machine learning research"
+        },
+        {
+          "issue": "4",
+          "key": "10.1016/j.neucom.2019.12.133_bib0019",
+          "doi-asserted-by": "crossref",
+          "first-page": "954",
+          "DOI": "10.1162/NECO_a_00714",
+          "article-title": "The Benefits of Modelling Slack Variables in SVMs",
+          "volume": "27",
+          "author": "Tang",
+          "year": "2015",
+          "journal-title": "Neural computation"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_bib0020",
+          "series-title": "Advances in Neural Information Processing Systems 23: 24th Annual Conference on Neural Information Processing Systems 2010. Proceedings of a meeting held 6-9 December 2010, Vancouver, British Columbia, Canada.",
+          "first-page": "1894",
+          "article-title": "On the theory of learnining with privileged information",
+          "author": "Pechyony",
+          "year": "2010"
+        },
+        {
+          "issue": "1",
+          "key": "10.1016/j.neucom.2019.12.133_bib0021",
+          "doi-asserted-by": "crossref",
+          "first-page": "267",
+          "DOI": "10.1111/j.2517-6161.1996.tb02080.x",
+          "article-title": "Regression Shrinkage and Selection via the Lasso",
+          "volume": "58",
+          "author": "Tibshirani",
+          "year": "1996",
+          "journal-title": "Journal of the Royal Statistical Society. Series B (Methodological)"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_bib0022",
+          "series-title": "Proceedings of the 22nd International Conference on Machine Learning",
+          "first-page": "145",
+          "article-title": "New Approaches to Support Vector Ordinal Regression",
+          "author": "Chu",
+          "year": "2005"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_bib0023",
+          "series-title": "ALT",
+          "article-title": "Generalization Bounds for Some Ordinal Regression Algorithms",
+          "author": "Agarwal",
+          "year": "2008"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_bib0024",
+          "first-page": "527",
+          "article-title": "Covering number bounds of certain regularized linear function classes",
+          "volume": "2",
+          "author": "Zhang",
+          "year": "2002",
+          "journal-title": "Journal of Machine Learning Research"
+        },
+        {
+          "issue": "2",
+          "key": "10.1016/j.neucom.2019.12.133_bib0025",
+          "doi-asserted-by": "crossref",
+          "first-page": "301",
+          "DOI": "10.1111/j.1467-9868.2005.00503.x",
+          "article-title": "Regularization and variable selection via the elastic net",
+          "volume": "67",
+          "author": "Zou",
+          "year": "2005",
+          "journal-title": "Journal of the Royal Statistical Society: Series B (Statistical Methodology)"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_sbref0024",
+          "first-page": "2541",
+          "article-title": "On Model Selection Consistency of Lasso",
+          "volume": "7",
+          "author": "Zhao",
+          "year": "2006",
+          "journal-title": "J. Mach. Learn. Res."
+        },
+        {
+          "year": "2014",
+          "series-title": "Understanding Machine Learning: From Theory to Algorithms",
+          "author": "Shalev-Shwartz",
+          "key": "10.1016/j.neucom.2019.12.133_bib0027"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_sbref0026",
+          "series-title": "ICLR",
+          "article-title": "Unifying distillation and privileged information",
+          "author": "Lopez-Paz",
+          "year": "2016"
+        },
+        {
+          "year": "1993",
+          "series-title": "Predictive Inference",
+          "author": "Geisser",
+          "key": "10.1016/j.neucom.2019.12.133_bib0029"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_othref0003",
+          "doi-asserted-by": "crossref",
+          "first-page": "1276",
+          "DOI": "10.1016/j.neucom.2006.11.019",
+          "article-title": "Resampling methods for parameter-free and robust feature selection with mutual information",
+          "volume": "70",
+          "author": "François",
+          "year": "2007",
+          "journal-title": "Neurocomputing"
+        },
+        {
+          "year": "1998",
+          "series-title": "Sequential Minimal Optimization: A Fast Algorithm for Training Support Vector Machines, Technical Report MSR-TR-98-14",
+          "author": "Platt",
+          "key": "10.1016/j.neucom.2019.12.133_bib0031"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_bib0032",
+          "doi-asserted-by": "crossref",
+          "unstructured": "N. Karmarkar, A new polynomial-time algorithm for linear programming 4(4) 373–395. 10.1007/BF02579150. https://doi.org/10.1007/BF02579150.",
+          "DOI": "10.1007/BF02579150"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_bib0033",
+          "doi-asserted-by": "crossref",
+          "unstructured": "P.M. Vaidya, Speeding-up linear programming using fast matrix multiplication, in: 30th Annual Symposium on Foundations of Computer Science, pp. 332–337. 10.1109/SFCS.1989.63499",
+          "DOI": "10.1109/SFCS.1989.63499"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_sbref000039",
+          "series-title": "Proceedings of the 51st Annual ACM SIGACT Symposium on Theory of Computing",
+          "first-page": "938",
+          "article-title": "Solving linear programs in the current matrix multiplication time",
+          "author": "Cohen",
+          "year": "2019"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_bib0035",
+          "unstructured": "T. Joachims, Training linear SVMs in linear time, in: Proceedings of the 12th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining - KDD ’06, ACM Press, p. 217. 10.1145/1150402.1150429. http://portal.acm.org/citation.cfm?doid=1150402.1150429."
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_bib0036",
+          "doi-asserted-by": "crossref",
+          "unstructured": "C.-J. Hsieh, K.-W. Chang, C.-J. Lin, S.S. Keerthi, S. Sundararajan, A dual coordinate descent method for large-scale linear SVM, in: Proceedings of the 25th International Conference on Machine Learning - ICML ’08, ACM Press, pp. 408–415. 10.1145/1390156.1390208. http://portal.acm.org/citation.cfm?doid=1390156.1390208.",
+          "DOI": "10.1145/1390156.1390208"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_sbref000039a",
+          "series-title": "2019 IEEE Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB)",
+          "article-title": "FRI -- Feature Relevance Intervals for Interpretable and Interactive Data Exploration",
+          "author": "Pfannschmidt",
+          "year": "2019"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_bib0038",
+          "series-title": "Proceedings of the ESANN, 24th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning",
+          "first-page": "187—192",
+          "article-title": "Feature Relevance Bounds for Linear Classification",
+          "author": "Göpfert",
+          "year": "2017"
+        },
+        {
+          "issue": "9",
+          "key": "10.1016/j.neucom.2019.12.133_bib0039",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1162/NECO_a_00478",
+          "article-title": "Exploitation of Pairwise Class Distances for Ordinal Classification",
+          "volume": "25",
+          "author": "Sánchez-Monedero",
+          "year": "2013",
+          "journal-title": "Neural Computation"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_bib0040",
+          "unstructured": "J. Angwin, J. Larson, S. Mattu, L. Kirchner, How we analyzed the compas recidivism algorithm, 2016. https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm."
+        },
+        {
+          "issue": "7",
+          "key": "10.1016/j.neucom.2019.12.133_bib0041",
+          "doi-asserted-by": "crossref",
+          "first-page": "1445",
+          "DOI": "10.1109/TKDE.2012.72",
+          "article-title": "A Methodology for Direct and Indirect Discrimination Prevention in Data Mining",
+          "volume": "25",
+          "author": "Hajian",
+          "year": "2013",
+          "journal-title": "IEEE Transactions on Knowledge and Data Engineering"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_bib0042",
+          "series-title": "Advances in Neural Information Processing Systems 29",
+          "first-page": "3315",
+          "article-title": "Equality of opportunity in supervised learning",
+          "author": "Hardt",
+          "year": "2016"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_othref0012",
+          "series-title": "Proceedings of the 14th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining",
+          "first-page": "560",
+          "article-title": "Discrimination-aware data mining",
+          "author": "Pedreshi",
+          "year": "2008"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_sbref0032",
+          "series-title": "International Conference on Machine Learning",
+          "first-page": "3150",
+          "article-title": "Delayed Impact of Fair Machine Learning",
+          "author": "Liu",
+          "year": "2018"
+        },
+        {
+          "key": "10.1016/j.neucom.2019.12.133_othref0013",
+          "series-title": "European Control Conference (ECC)",
+          "first-page": "3071",
+          "article-title": "ECOS: An SOCP solver for embedded systems",
+          "author": "Domahidi",
+          "year": "2013"
+        }
+      ],
+      "container-title": [
+        "Neurocomputing"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0925231220305038?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0925231220305038?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            13
+          ]
+        ],
+        "date-time": "2025-10-13T19:24:19Z",
+        "timestamp": 1760383459000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0925231220305038"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            11
+          ]
+        ]
+      },
+      "references-count": 45,
+      "alternative-id": [
+        "S0925231220305038"
+      ],
+      "URL": "https://doi.org/10.1016/j.neucom.2019.12.133",
+      "relation": {},
+      "ISSN": [
+        "0925-2312"
+      ],
+      "issn-type": [
+        {
+          "type": "print",
+          "value": "0925-2312"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            11
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "Elsevier",
+          "name": "publisher",
+          "label": "This article is maintained by"
+        },
+        {
+          "value": "Feature relevance determination for ordinal regression in the context of feature redundancies and privileged information",
+          "name": "articletitle",
+          "label": "Article Title"
+        },
+        {
+          "value": "Neurocomputing",
+          "name": "journaltitle",
+          "label": "Journal Title"
+        },
+        {
+          "value": "https://doi.org/10.1016/j.neucom.2019.12.133",
+          "name": "articlelink",
+          "label": "CrossRef DOI link to publisher maintained version"
+        },
+        {
+          "value": "article",
+          "name": "content_type",
+          "label": "Content Type"
+        },
+        {
+          "value": "© 2020 Elsevier B.V. All rights reserved.",
+          "name": "copyright",
+          "label": "Copyright"
+        }
+      ]
+    }
+  },
+  "status": "OK"
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-21",
+  "url": "https://api.github.com/repos/NeuralNetworkVerification/VeriX",
+  "kind": "json",
+  "normalization_note": "Minimum provenance; emails/signatures omitted.",
+  "response": {
+    "full_name": "NeuralNetworkVerification/VeriX",
+    "html_url": "https://github.com/NeuralNetworkVerification/VeriX",
+    "default_branch": "main",
+    "license": {
+      "key": "bsd-3-clause",
+      "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+      "spdx_id": "BSD-3-Clause",
+      "url": "https://api.github.com/licenses/bsd-3-clause",
+      "node_id": "MDc6TGljZW5zZTU="
+    },
+    "pushed_at": "2026-08-05T22:42:22Z"
+  },
+  "status": "OK"
+}

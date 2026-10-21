@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-21",
+  "url": "https://api.github.com/repos/aangelopoulos/conformal-risk",
+  "kind": "json",
+  "normalization_note": "Minimum provenance; emails/signatures omitted.",
+  "response": {
+    "full_name": "aangelopoulos/conformal-risk",
+    "html_url": "https://github.com/aangelopoulos/conformal-risk",
+    "default_branch": "main",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "pushed_at": "2023-01-23T09:24:05Z"
+  },
+  "status": "OK"
+}

@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-21",
+  "url": "https://arxiv.org/html/2410.21129v1",
+  "sha256": "da00c2c101f5b66053a6f8c4d0605f7eeb063ed29180a4b21e0936e5eadd1f20",
+  "headings": [
+    "Report GitHub Issue",
+    "Fast Calibrated Explanations: Efficient and Uncertainty-Aware Explanations for Machine Learning Models",
+    "Abstract",
+    "Keywords:",
+    "1 Introduction",
+    "2 Background",
+    "2.1 Post-Hoc Explanation Methods",
+    "2.2 Calibration and Uncertainty Quantification",
+    "2.2.1 Venn-Abers Calibration",
+    "2.2.2 Conformal Predictive Systems",
+    "2.3 Calibrated Explanations",
+    "2.4 Perturbation Based Explanations",
+    "2.4.1 Definition 1: Permutation-based Perturbations",
+    "2.4.2 Definition 2: Gaussian Noise Perturbations",
+    "2.4.3 Definition 3: Uniform Noise Perturbations",
+    "3 Proposed Solution",
+    "4 Experimental Setup",
+    "5 Experimental Results",
+    "5.1 Performance Evaluation for Classification and Regression",
+    "5.1.1 Comparison of Computation Time",
+    "5.1.2 Stability and Robustness",
+    "5.2 Demonstration",
+    "6 Concluding Discussion",
+    "Acknowledgement",
+    "Declaration of generative AI and AI-assisted technologies in the writing process",
+    "References",
+    "Instructions for reporting errors"
+  ],
+  "text_chars": 69244,
+  "code_urls": [
+    "https://github.com/Moffran/calibrated_explanations",
+    "https://github.com/Moffran/calibrated_explanations/blob/main/evaluation/FastCE",
+    "https://github.com/arXiv/html_feedback/issues",
+    "https://github.com/brucemiller/LaTeXML/issues",
+    "https://github.com/brucemiller/LaTeXML/wiki/Porting-LaTeX-packages-for-LaTeXML"
+  ]
+}

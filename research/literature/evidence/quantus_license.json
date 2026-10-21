@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-20",
+  "url": "https://api.github.com/repos/understandable-machine-intelligence-lab/Quantus/license?ref=85bc29d137d8f42835dd392f5cc441ad61d6d1f1",
+  "kind": "json",
+  "response": {
+    "name": "LICENSE",
+    "path": "LICENSE",
+    "sha": "7c6da3a3c642a7dab4715b5e26081ec076250e92",
+    "size": 386,
+    "url": "https://api.github.com/repos/understandable-machine-intelligence-lab/Quantus/contents/LICENSE?ref=85bc29d137d8f42835dd392f5cc441ad61d6d1f1",
+    "html_url": "https://github.com/understandable-machine-intelligence-lab/Quantus/blob/85bc29d137d8f42835dd392f5cc441ad61d6d1f1/LICENSE",
+    "git_url": "https://api.github.com/repos/understandable-machine-intelligence-lab/Quantus/git/blobs/7c6da3a3c642a7dab4715b5e26081ec076250e92",
+    "download_url": "https://raw.githubusercontent.com/understandable-machine-intelligence-lab/Quantus/85bc29d137d8f42835dd392f5cc441ad61d6d1f1/LICENSE",
+    "type": "file",
+    "content": "UXVhbnR1cyBpcyBsaWNlbnNlZCB1bmRlciB0aGUgR05VIExFU1NFUiBHRU5F\nUkFMIFBVQkxJQyBMSUNFTlNFIFZFUlNJT04gMyBPUgogIExBVEVSIC0tIHNl\nZSB0aGUgJ0NPUFlJTkcnIGFuZCAnQ09QWUlORy5MRVNTRVInIGZpbGVzIGlu\nIHRoZSByb290IGRpcmVjdG9yeSBmb3IKICBkZXRhaWxzLgogIApDb3B5cmln\naHQ6IFRVIEJlcmxpbiwgVW5kZXJzdGFuZGFibGUgTWFjaGluZSBJbnRlbGxp\nZ2VuY2UgTGFiLCBBbm5hIEhlZHN0csO2bSwgTWFyaW5hIEjDtmhuZSAoMjAy\nMSwgMjAyMikKQ29weXJpZ2h0OiBGcmF1bmhvZmVyIEhISSwgU2ViYXN0aWFu\nIExhcHVzY2hraW4sIExlYW5kZXIgV2ViZXIsIEZyYW56IE1vdHprdXMsIFdv\namNpZWNoIFNhbWVrICgyMDIxLCAyMDIyKQo=\n",
+    "encoding": "base64",
+    "_links": {
+      "self": "https://api.github.com/repos/understandable-machine-intelligence-lab/Quantus/contents/LICENSE?ref=85bc29d137d8f42835dd392f5cc441ad61d6d1f1",
+      "git": "https://api.github.com/repos/understandable-machine-intelligence-lab/Quantus/git/blobs/7c6da3a3c642a7dab4715b5e26081ec076250e92",
+      "html": "https://github.com/understandable-machine-intelligence-lab/Quantus/blob/85bc29d137d8f42835dd392f5cc441ad61d6d1f1/LICENSE"
+    },
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    }
+  },
+  "status": "OK"
+}

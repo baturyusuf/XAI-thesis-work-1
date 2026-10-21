@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-21",
+  "url": "https://api.github.com/repos/Moffran/calibrated_explanations/commits?per_page=1",
+  "kind": "json",
+  "normalization_note": "Minimum provenance; emails/signatures omitted.",
+  "response": [
+    {
+      "sha": "7fd6bf1bb75683ebd6f5ca6d193e6831444eaa8f",
+      "html_url": "https://github.com/Moffran/calibrated_explanations/commit/7fd6bf1bb75683ebd6f5ca6d193e6831444eaa8f",
+      "commit": {
+        "committer": {
+          "date": "2026-10-20T21:44:15Z"
+        }
+      }
+    }
+  ],
+  "status": "OK"
+}

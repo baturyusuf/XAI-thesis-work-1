@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-20",
+  "url": "https://api.semanticscholar.org/graph/v1/paper/search?query=Selective%20Explanations&limit=3&fields=title,year,externalIds,url",
+  "kind": "json",
+  "status": "ERROR",
+  "error": "HTTP Error 429: "
+}

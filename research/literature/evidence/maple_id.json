@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-20",
+  "url": "https://export.arxiv.org/api/query?id_list=1807.02902&max_results=1",
+  "kind": "atom",
+  "total_hits": "1",
+  "records": [
+    {
+      "id": "http://arxiv.org/abs/1807.02902v1",
+      "title": "Is It Small-scale Weak Magnetic Activity That Effectively Heats the Upper Solar Atmosphere?",
+      "authors": [
+        "K. J. Li",
+        "J. C. Xu",
+        "W. Feng"
+      ],
+      "published": "2018-07-09T00:14:08Z",
+      "updated": "2018-07-09T00:14:08Z",
+      "abstract": "Solar chromosphere and coronal heating is a big question for astrophysics. Daily measurement of 985 solar spectral irradiances (SSIs) at the spectral intervals 1-39 nm and 116-2416 nm during March 1 2003 to October 28 2017 is utilized to investigate phase relation respectively with daily sunspot number, the Mount Wilson Sunspot Index, and the Magnetic Plage Strength Index. All SSIs which form in the whole heated region: the upper photosphere, chromosphere, transition region, and corona are found to be significantly more correlated to weak magnetic activity than to strong magnetic activity, and to dance in step with weak magnetic activity. All SSIs which form in the low photosphere (the unheated region), which indicate the \"energy\" leaked from the solar subsurface are found to be more related to strong magnetic activity instead and in anti-phase with weak magnetic activity. In the upper photosphere and chromosphere, strong magnetic activity should lead SSI by about a solar rotation, also displaying that weak magnetic activity should take effect on heating there. It is thus small-scale weak magnetic activity that effectively heats the upper solar atmosphere.",
+      "doi": "10.3847/1538-4365/aac7c8",
+      "journal_ref": "UNVERIFIED"
+    }
+  ],
+  "status": "OK"
+}

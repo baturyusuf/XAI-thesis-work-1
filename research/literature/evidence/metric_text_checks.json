@@ -1,0 +1,78 @@
+[
+  {
+    "key": "bhatt_text",
+    "url": "https://arxiv.org/html/2005.00631",
+    "date": "2026-10-20",
+    "status": "OK",
+    "length": 97326,
+    "snippets": [
+      {
+        "term": "faithfulness",
+        "text": "function are relevant to the model itself Camburu et al. (2019) . Borrowing from the humanities, we motivate three criteria for assessing a feature-based explanation: sensitivity, faithfulness, and complexity. Philosophy of science research has advocated for explanations that vary proportionally with changes in the system being explained Lipton (2003) ; as such, explanation functions should be insensitive to perturbations in the model inputs, especially if the model output does not change. Capturing relevancy faithfully is helpful in an explanation Ruben (2015) . Since humans cannot process a lot of information at once, some have argued for minimal model explanations that contain only relevant and representative features Batterman and Rice (2014) ; therefore, an explanations should not be complex (i.e., use few features). In this paper, we first define these three distinct criteria: low sensitivity, high faithfulness, and low complexity. With many explanation function choices, we then propose methods for learning an aggregate explanation function that combines explanation functions. If we want to find the simplest explanation from a set of explanations, then we can aggregate explanations to minimize the complexity of the resulting explanation. If we want to le"
+      },
+      {
+        "term": "sensitivity",
+        "text": " explanation function are relevant to the model itself Camburu et al. (2019) . Borrowing from the humanities, we motivate three criteria for assessing a feature-based explanation: sensitivity, faithfulness, and complexity. Philosophy of science research has advocated for explanations that vary proportionally with changes in the system being explained Lipton (2003) ; as such, explanation functions should be insensitive to perturbations in the model inputs, especially if the model output does not change. Capturing relevancy faithfully is helpful in an explanation Ruben (2015) . Since humans cannot process a lot of information at once, some have argued for minimal model explanations that contain only relevant and representative features Batterman and Rice (2014) ; therefore, an explanations should not be complex (i.e., use few features). In this paper, we first define these three distinct criteria: low sensitivity, high faithfulness, and low complexity. With many explanation function choices, we then propose methods for learning an aggregate explanation function that combines explanation functions. If we want to find the simplest explanation from a set of explanations, then we can aggregate explanations to minimize the complexity of the resulting explanation. If "
+      },
+      {
+        "term": "complexity",
+        "text": "ant to the model itself Camburu et al. (2019) . Borrowing from the humanities, we motivate three criteria for assessing a feature-based explanation: sensitivity, faithfulness, and complexity. Philosophy of science research has advocated for explanations that vary proportionally with changes in the system being explained Lipton (2003) ; as such, explanation functions should be insensitive to perturbations in the model inputs, especially if the model output does not change. Capturing relevancy faithfully is helpful in an explanation Ruben (2015) . Since humans cannot process a lot of information at once, some have argued for minimal model explanations that contain only relevant and representative features Batterman and Rice (2014) ; therefore, an explanations should not be complex (i.e., use few features). In this paper, we first define these three distinct criteria: low sensitivity, high faithfulness, and low complexity. With many explanation function choices, we then propose methods for learning an aggregate explanation function that combines explanation functions. If we want to find the simplest explanation from a set of explanations, then we can aggregate explanations to minimize the complexity of the resulting explanation. If we want to learn a smoother exp"
+      }
+    ]
+  },
+  {
+    "key": "yeh_text",
+    "url": "https://arxiv.org/html/1901.09392",
+    "date": "2026-10-20",
+    "status": "OK",
+    "length": 109521,
+    "snippets": [
+      {
+        "term": "infidelity",
+        "text": ", we get different values of such subset correlations. In this work, we consider a simple generalization of this notion, that produces a single fidelity measure, which we call the infidelity measure. Our infidelity measure is defined as the expected difference between the two terms: (a) the dot product of the input perturbation to the explanation and (b) the output perturbation (i.e., the difference in function values after significant perturbations on the input). This general setup allows for a varied class of significant perturbations: a non-random perturbation towards a single reference or baseline value, perturbations towards multiple reference points e.g. by varying subsets of features to perturb, and a random perturbation towards a reference point with added small Gaussian noise, which allows the infidelity measure to be robust to small mis-specifications or noise in either the test input or the reference point. We then show that the optimal explanation that minimizes this infidelity measure could be loosely cast as a novel combination of two well-known explanation mechanisms: Smooth-Grad [ 40 ] and Integrated Gradients [ 43 ] using a kernel function specified by the random perturbations. As another validation of our formalization, we show that many rece"
+      },
+      {
+        "term": "constant",
+        "text": "tter fidelity. Asking this question for sensitivity might seem vacuous, since the optimal explanation that minimizes sensitivity (for all its related variants) is simply a trivial constant explanation, which is naturally not a desired explanation. So a more interesting question would be: how do we modify a given explanation so that it has lower sensitivity, but not too much. To quantify the latter, we could in turn use fidelity. As one key contribution of the paper, we show that a restrained lowering of the sensitivity of an explanation also increases its fidelity. In particular, we consider a simple kernel smoothing based algorithm that appropriately lowers the sensitivity of any given explanation, but importantly also lowers its infidelity. Our meta-algorithm encompasses Smooth-Grad [ 40 ] which too modifies any existing explanation mechanism by averaging explanations in a small local neighborhood of the test point. In the appendix, we also consider an alternative approach to improve gradient explanation sensitivity and fidelity by adversarial training, which however requires that we be able to modify the given predictor function itself, which might not always be feasible. Our modifications improve both sensitivity and fidelity in most cases, and also provid"
+      },
+      {
+        "term": "perturbation",
+        "text": "single fidelity measure, which we call the infidelity measure. Our infidelity measure is defined as the expected difference between the two terms: (a) the dot product of the input perturbation to the explanation and (b) the output perturbation (i.e., the difference in function values after significant perturbations on the input). This general setup allows for a varied class of significant perturbations: a non-random perturbation towards a single reference or baseline value, perturbations towards multiple reference points e.g. by varying subsets of features to perturb, and a random perturbation towards a reference point with added small Gaussian noise, which allows the infidelity measure to be robust to small mis-specifications or noise in either the test input or the reference point. We then show that the optimal explanation that minimizes this infidelity measure could be loosely cast as a novel combination of two well-known explanation mechanisms: Smooth-Grad [ 40 ] and Integrated Gradients [ 43 ] using a kernel function specified by the random perturbations. As another validation of our formalization, we show that many recently proposed explanations can be seen as optimal explanations for the infidelity measure with specific perturbations. We also introduce "
+      }
+    ]
+  },
+  {
+    "key": "eraser_text",
+    "url": "https://arxiv.org/html/1911.03429",
+    "date": "2026-10-20",
+    "status": "OK",
+    "length": 72933,
+    "snippets": [
+      {
+        "term": "Sufficiency",
+        "text": "hich corpora contain comprehensive rationales in the test set in Table 1 . 4.2 Measuring faithfulness Figure 2: Illustration of faithfulness scoring metrics, comprehensiveness and sufficiency , on the Commonsense Explanations (CoS-E) dataset. For the former, erasing the tokens comprising the provided rationale ( x ~ i \\tilde{x}_{i} ) ought to decrease model confidence in the output ‘Forest’. For the latter, the model should be able to come to a similar disposition regarding ‘Forest’ using only the rationales r i r_{i} . As discussed above, a model may provide rationales that are plausible (agreeable to humans) but that it did not rely on for its output. In many settings one may want rationales that actually explain model predictions, i.e., rationales extracted for an instance in this case ought to have meaningfully influenced its prediction for the same. We call these faithful rationales. How best to measure rationale faithfulness is an open question. In this first version of ERASER we propose simple metrics motivated by prior work ( Zaidan et al., 2007 ; Yu et al., 2019 ) . In particular, following Yu et al. (2019) we define metrics intended to measure the comprehensiveness (were all features needed to make a prediction selected?) and sufficiency (do the extr"
+      },
+      {
+        "term": "Comprehensiveness",
+        "text": "mprehensive . However, for some datasets we have explicitly collected comprehensive rationales for at least a subset of the test set. Therefore, on these datasets recall evaluates comprehensiveness directly (it does so only noisily on other datasets). We highlight which corpora contain comprehensive rationales in the test set in Table 1 . 4.2 Measuring faithfulness Figure 2: Illustration of faithfulness scoring metrics, comprehensiveness and sufficiency , on the Commonsense Explanations (CoS-E) dataset. For the former, erasing the tokens comprising the provided rationale ( x ~ i \\tilde{x}_{i} ) ought to decrease model confidence in the output ‘Forest’. For the latter, the model should be able to come to a similar disposition regarding ‘Forest’ using only the rationales r i r_{i} . As discussed above, a model may provide rationales that are plausible (agreeable to humans) but that it did not rely on for its output. In many settings one may want rationales that actually explain model predictions, i.e., rationales extracted for an instance in this case ought to have meaningfully influenced its prediction for the same. We call these faithful rationales. How best to measure rationale faithfulness is an open question. In this first version of ERASER we propose simpl"
+      }
+    ]
+  },
+  {
+    "key": "roar_text",
+    "url": "https://arxiv.org/html/1806.10758",
+    "date": "2026-10-20",
+    "status": "OK",
+    "length": 59871,
+    "snippets": [
+      {
+        "term": "retrain",
+        "text": "e features that were removed are truly informative [ 10 , 12 ] . For this reason we decided to verify how much information can be removed in a typical dataset before accuracy of a retrained model breaks down completely. In this experiment, we applied ResNet-50 [ 17 ] , one of the most commonly used models, to ImageNet. It turns out that removing information is quite hard. With 90% of the inputs removed the network still achieves 63.53% accuracy compared to 76.68% on clean data. This implies that a strong performance degradation without re-training might be caused by a shift in distribution instead of removal of information. Instead, in this work we evaluate interpretability methods by verifying how the accuracy of a retrained model degrades as features estimated to be important are removed. We term this approach ROAR , R em O ve A nd R etrain. For each feature importance estimator, ROAR replaces the fraction of the pixels estimated to be most important with a fixed uninformative value. This modification (shown in Fig. 1 ) is repeated for each image in both the training and test set. To measure the change to model behavior after the removal of these input features, we separately train new models on the modified dataset such that train and test data comes from a"
+      },
+      {
+        "term": "distribution",
+        "text": "d the network still achieves 63.53% accuracy compared to 76.68% on clean data. This implies that a strong performance degradation without re-training might be caused by a shift in distribution instead of removal of information. Instead, in this work we evaluate interpretability methods by verifying how the accuracy of a retrained model degrades as features estimated to be important are removed. We term this approach ROAR , R em O ve A nd R etrain. For each feature importance estimator, ROAR replaces the fraction of the pixels estimated to be most important with a fixed uninformative value. This modification (shown in Fig. 1 ) is repeated for each image in both the training and test set. To measure the change to model behavior after the removal of these input features, we separately train new models on the modified dataset such that train and test data comes from a similar distribution. More accurate estimators will identify as important input pixels whose subsequent removal causes the sharpest degradation in accuracy. We also compare each method performance to a random assignment of importance and a sobel edge filter [ 36 ] . Both of these control variants produce rankings that are independent of the properties of the model we aim to interpret. Given that thes"
+      }
+    ]
+  }
+]

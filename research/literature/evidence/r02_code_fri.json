@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-21",
+  "url": "https://api.github.com/repos/lpfann/fri",
+  "kind": "json",
+  "normalization_note": "Minimum provenance; emails/signatures omitted.",
+  "response": {
+    "full_name": "lpfann/fri",
+    "html_url": "https://github.com/lpfann/fri",
+    "default_branch": "dev",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "pushed_at": "2026-02-09T21:59:13Z"
+  },
+  "status": "OK"
+}

@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-21",
+  "url": "https://export.arxiv.org/api/query?id_list=2511.10439,2410.21129,2305.02305,2506.08505,2502.03391,1912.04832,2207.07605&max_results=10",
+  "kind": "atom",
+  "total_hits": "7",
+  "records": [
+    {
+      "id": "http://arxiv.org/abs/1912.04832v1",
+      "title": "Feature Relevance Determination for Ordinal Regression in the Context of Feature Redundancies and Privileged Information",
+      "authors": [
+        "Lukas Pfannschmidt",
+        "Jonathan Jakob",
+        "Fabian Hinder",
+        "Michael Biehl",
+        "Peter Tino",
+        "Barbara Hammer"
+      ],
+      "published": "2019-12-10T17:20:18Z",
+      "updated": "2019-12-10T17:20:18Z",
+      "abstract": "Advances in machine learning technologies have led to increasingly powerful models in particular in the context of big data. Yet, many application scenarios demand for robustly interpretable models rather than optimum model accuracy; as an example, this is the case if potential biomarkers or causal factors should be discovered based on a set of given measurements. In this contribution, we focus on feature selection paradigms, which enable us to uncover relevant factors of a given regularity based on a sparse model. We focus on the important specific setting of linear ordinal regression, i.e.\\ data have to be ranked into one of a finite number of ordered categories by a linear projection. Unlike previous work, we consider the case that features are potentially redundant, such that no unique minimum set of relevant features exists. We aim for an identification of all strongly and all weakly relevant features as well as their type of relevance (strong or weak); we achieve this goal by determining feature relevance bounds, which correspond to the minimum and maximum feature relevance, respectively, if searched over all equivalent models. In addition, we discuss how this setting enables us to substitute some of the features, e.g.\\ due to their semantics, and how to extend the framework of feature relevance intervals to the setting of privileged information, i.e.\\ potentially relevant information is available for training purposes only, but cannot be used for the prediction itself.",
+      "doi": "10.1016/j.neucom.2019.12.133",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2207.07605v1",
+      "title": "Algorithms to estimate Shapley value feature attributions",
+      "authors": [
+        "Hugh Chen",
+        "Ian C. Covert",
+        "Scott M. Lundberg",
+        "Su-In Lee"
+      ],
+      "published": "2022-07-15T17:04:41Z",
+      "updated": "2022-07-15T17:04:41Z",
+      "abstract": "Feature attributions based on the Shapley value are popular for explaining machine learning models; however, their estimation is complex from both a theoretical and computational standpoint. We disentangle this complexity into two factors: (1)~the approach to removing feature information, and (2)~the tractable estimation strategy. These two factors provide a natural lens through which we can better understand and compare 24 distinct algorithms. Based on the various feature removal approaches, we describe the multiple types of Shapley value feature attributions and methods to calculate each one. Then, based on the tractable estimation strategies, we characterize two distinct families of approaches: model-agnostic and model-specific approximations. For the model-agnostic approximations, we benchmark a wide class of estimation approaches and tie them to alternative yet equivalent characterizations of the Shapley value. For the model-specific approximations, we clarify the assumptions crucial to each method's tractability for linear, tree, and deep models. Finally, we identify gaps in the literature and promising future research directions.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2511.10439v1",
+      "title": "Improving Perturbation-based Explanations by Understanding the Role of Uncertainty Calibration",
+      "authors": [
+        "Thomas Decker",
+        "Volker Tresp",
+        "Florian Buettner"
+      ],
+      "published": "2025-11-13T16:04:11Z",
+      "updated": "2025-11-13T16:04:11Z",
+      "abstract": "Perturbation-based explanations are widely utilized to enhance the transparency of machine-learning models in practice. However, their reliability is often compromised by the unknown model behavior under the specific perturbations used. This paper investigates the relationship between uncertainty calibration - the alignment of model confidence with actual accuracy - and perturbation-based explanations. We show that models systematically produce unreliable probability estimates when subjected to explainability-specific perturbations and theoretically prove that this directly undermines global and local explanation quality. To address this, we introduce ReCalX, a novel approach to recalibrate models for improved explanations while preserving their original predictions. Empirical evaluations across diverse models and datasets demonstrate that ReCalX consistently reduces perturbation-specific miscalibration most effectively while enhancing explanation robustness and the identification of globally important input features.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2410.21129v1",
+      "title": "Fast Calibrated Explanations: Efficient and Uncertainty-Aware Explanations for Machine Learning Models",
+      "authors": [
+        "Tuwe Löfström",
+        "Fatima Rabia Yapicioglu",
+        "Alessandra Stramiglio",
+        "Helena Löfström",
+        "Fabio Vitali"
+      ],
+      "published": "2024-10-28T15:29:35Z",
+      "updated": "2024-10-28T15:29:35Z",
+      "abstract": "This paper introduces Fast Calibrated Explanations, a method designed for generating rapid, uncertainty-aware explanations for machine learning models. By incorporating perturbation techniques from ConformaSight - a global explanation framework - into the core elements of Calibrated Explanations (CE), we achieve significant speedups. These core elements include local feature importance with calibrated predictions, both of which retain uncertainty quantification. While the new method sacrifices a small degree of detail, it excels in computational efficiency, making it ideal for high-stakes, real-time applications. Fast Calibrated Explanations are applicable to probabilistic explanations in classification and thresholded regression tasks, where they provide the likelihood of a target being above or below a user-defined threshold. This approach maintains the versatility of CE for both classification and probabilistic regression, making it suitable for a range of predictive tasks where uncertainty quantification is crucial.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2305.02305v3",
+      "title": "Calibrated Explanations: with Uncertainty Information and Counterfactuals",
+      "authors": [
+        "Helena Lofstrom",
+        "Tuwe Lofstrom",
+        "Ulf Johansson",
+        "Cecilia Sonstrod"
+      ],
+      "published": "2023-05-03T17:52:41Z",
+      "updated": "2023-11-04T18:53:16Z",
+      "abstract": "While local explanations for AI models can offer insights into individual predictions, such as feature importance, they are plagued by issues like instability. The unreliability of feature weights, often skewed due to poorly calibrated ML models, deepens these challenges. Moreover, the critical aspect of feature importance uncertainty remains mostly unaddressed in Explainable AI (XAI). The novel feature importance explanation method presented in this paper, called Calibrated Explanations (CE), is designed to tackle these issues head-on. Built on the foundation of Venn-Abers, CE not only calibrates the underlying model but also delivers reliable feature importance explanations with an exact definition of the feature weights. CE goes beyond conventional solutions by addressing output uncertainty. It accomplishes this by providing uncertainty quantification for both feature weights and the model's probability estimates. Additionally, CE is model-agnostic, featuring easily comprehensible conditional rules and the ability to generate counterfactual explanations with embedded uncertainty quantification. Results from an evaluation with 25 benchmark datasets underscore the efficacy of CE, making it stand as a fast, reliable, stable, and robust solution.",
+      "doi": "10.1016/j.eswa.2024.123154",
+      "journal_ref": "H. Lofstrom, T. Lofstrom, U. Johansson, C. Sonstrod, (2024) Calibrated explanations: With uncertainty information and counterfactuals, Expert Systems with Applications, 123154, ISSN 0957-4174"
+    },
+    {
+      "id": "http://arxiv.org/abs/2502.03391v3",
+      "title": "Explain Yourself, Briefly! Self-Explaining Neural Networks with Concise Sufficient Reasons",
+      "authors": [
+        "Shahaf Bassan",
+        "Ron Eliav",
+        "Shlomit Gur"
+      ],
+      "published": "2025-02-05T17:29:12Z",
+      "updated": "2025-03-02T17:32:48Z",
+      "abstract": "*Minimal sufficient reasons* represent a prevalent form of explanation - the smallest subset of input features which, when held constant at their corresponding values, ensure that the prediction remains unchanged. Previous *post-hoc* methods attempt to obtain such explanations but face two main limitations: (1) Obtaining these subsets poses a computational challenge, leading most scalable methods to converge towards suboptimal, less meaningful subsets; (2) These methods heavily rely on sampling out-of-distribution input assignments, potentially resulting in counterintuitive behaviors. To tackle these limitations, we propose in this work a self-supervised training approach, which we term *sufficient subset training* (SST). Using SST, we train models to generate concise sufficient reasons for their predictions as an integral part of their output. Our results indicate that our framework produces succinct and faithful subsets substantially more efficiently than competing post-hoc methods, while maintaining comparable predictive performance.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2506.08505v1",
+      "title": "Explaining, Fast and Slow: Abstraction and Refinement of Provable Explanations",
+      "authors": [
+        "Shahaf Bassan",
+        "Yizhak Yisrael Elboher",
+        "Tobias Ladner",
+        "Matthias Althoff",
+        "Guy Katz"
+      ],
+      "published": "2025-06-10T07:04:13Z",
+      "updated": "2025-06-10T07:04:13Z",
+      "abstract": "Despite significant advancements in post-hoc explainability techniques for neural networks, many current methods rely on heuristics and do not provide formally provable guarantees over the explanations provided. Recent work has shown that it is possible to obtain explanations with formal guarantees by identifying subsets of input features that are sufficient to determine that predictions remain unchanged using neural network verification techniques. Despite the appeal of these explanations, their computation faces significant scalability challenges. In this work, we address this gap by proposing a novel abstraction-refinement technique for efficiently computing provably sufficient explanations of neural network predictions. Our method abstracts the original large neural network by constructing a substantially reduced network, where a sufficient explanation of the reduced network is also provably sufficient for the original network, hence significantly speeding up the verification process. If the explanation is in sufficient on the reduced network, we iteratively refine the network size by gradually increasing it until convergence. Our experiments demonstrate that our approach enhances the efficiency of obtaining provably sufficient explanations for neural network predictions while additionally providing a fine-grained interpretation of the network's predictions across different abstraction levels.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    }
+  ],
+  "status": "OK"
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://raw.githubusercontent.com/Moffran/calibrated_explanations/7fd6bf1bb75683ebd6f5ca6d193e6831444eaa8f/src/calibrated_explanations/core/reject/orchestrator.py",
+  "date": "2026-10-21",
+  "status": "OK",
+  "sha256": "0ed7378178e6c82c285c5a9e122782a54e04f097864c70efe054dfe0e9f25466",
+  "snippets": [
+    {
+      "term": "exact_validity_claimed",
+      "line": 2017,
+      "text": "            \"singleton_bound_confidence\": confidence,\n            \"singleton_bound_uses_separate_prediction_sets\": False,\n            \"smoothing\": False,\n            \"exact_validity_claimed\": False,\n            \"validity_claim\": \"deterministic split-conformal singleton plug-in estimate; not an empirical error rate\",\n            \"epsilon\": epsilon,\n            \"raw_total_examples\": int(num_instances),\n            \"n_total\": accounting[\"n_total\"],\n            \"n_empty\": accounting[\"n_empty\"],\n            \"n_singleton\": accounting[\"n_singleton\"],"
+    },
+    {
+      "term": "deterministic split-conformal",
+      "line": 2018,
+      "text": "            \"singleton_bound_uses_separate_prediction_sets\": False,\n            \"smoothing\": False,\n            \"exact_validity_claimed\": False,\n            \"validity_claim\": \"deterministic split-conformal singleton plug-in estimate; not an empirical error rate\",\n            \"epsilon\": epsilon,\n            \"raw_total_examples\": int(num_instances),\n            \"n_total\": accounting[\"n_total\"],\n            \"n_empty\": accounting[\"n_empty\"],\n            \"n_singleton\": accounting[\"n_singleton\"],\n            \"n_ambiguity\": accounting[\"n_ambiguity\"],"
+    }
+  ]
+}

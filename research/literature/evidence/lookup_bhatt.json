@@ -1,0 +1,191 @@
+{
+  "date": "2026-10-20",
+  "url": "https://api.crossref.org/works/10.24963/ijcai.2020/417",
+  "kind": "json",
+  "response": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            13
+          ]
+        ],
+        "date-time": "2026-10-13T18:18:02Z",
+        "timestamp": 1791915482402,
+        "version": "4.3.4"
+      },
+      "publisher-location": "California",
+      "reference-count": 0,
+      "publisher": "International Joint Conferences on Artificial Intelligence Organization",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [],
+      "published-print": {
+        "date-parts": [
+          [
+            2020,
+            7
+          ]
+        ]
+      },
+      "abstract": "<jats:p>A feature-based model explanation denotes how much each input feature contributes to a model's output for a given data point. As the number of proposed explanation functions grows, we lack quantitative evaluation criteria to help practitioners know when to use which explanation function. This paper proposes quantitative evaluation criteria for feature-based explanations: low sensitivity, high faithfulness, and low complexity. We devise a framework for aggregating explanation functions. We develop a procedure for learning an aggregate explanation function with lower complexity and then derive a new aggregate Shapley value explanation function that minimizes sensitivity.</jats:p>",
+      "DOI": "10.24963/ijcai.2020/417",
+      "type": "proceedings-article",
+      "created": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            8
+          ]
+        ],
+        "date-time": "2020-07-08T08:12:10Z",
+        "timestamp": 1594195930000
+      },
+      "page": "3016-3022",
+      "source": "Crossref",
+      "is-referenced-by-count": 142,
+      "title": [
+        "Evaluating and Aggregating Feature-based Model Explanations"
+      ],
+      "prefix": "10.24963",
+      "author": [
+        {
+          "given": "Umang",
+          "family": "Bhatt",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Cambridge"
+            },
+            {
+              "name": "Carnegie Mellon University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Adrian",
+          "family": "Weller",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Cambridge"
+            },
+            {
+              "name": "The Alan Turing Institute"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "José M. F.",
+          "family": "Moura",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Carnegie Mellon University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "10584",
+      "event": {
+        "name": "Twenty-Ninth International Joint Conference on Artificial Intelligence and Seventeenth Pacific Rim International Conference on Artificial Intelligence {IJCAI-PRICAI-20}",
+        "theme": "Artificial Intelligence",
+        "location": "Yokohama, Japan",
+        "acronym": "IJCAI-PRICAI-2020",
+        "number": "28",
+        "sponsor": [
+          "International Joint Conferences on Artificial Intelligence Organization (IJCAI)"
+        ],
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              7,
+              11
+            ]
+          ]
+        },
+        "end": {
+          "date-parts": [
+            [
+              2020,
+              7,
+              17
+            ]
+          ]
+        }
+      },
+      "container-title": [
+        "Proceedings of the Twenty-Ninth International Joint Conference on Artificial Intelligence"
+      ],
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            8
+          ]
+        ],
+        "date-time": "2020-07-08T22:15:02Z",
+        "timestamp": 1594246502000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://www.ijcai.org/proceedings/2020/417"
+        }
+      },
+      "subtitle": [],
+      "proceedings-subject": "Artificial Intelligence Research Articles",
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            7
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "https://doi.org/10.24963/ijcai.2020/417",
+      "relation": {},
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7
+          ]
+        ]
+      }
+    }
+  },
+  "status": "OK"
+}

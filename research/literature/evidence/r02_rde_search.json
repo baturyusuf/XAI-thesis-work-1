@@ -1,0 +1,278 @@
+{
+  "date": "2026-10-21",
+  "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22rate-distortion%22%20AND%20%28all%3Aexplanations%20OR%20all%3Ainterpretability%29&max_results=20&sortBy=relevance",
+  "kind": "atom",
+  "total_hits": "19",
+  "records": [
+    {
+      "id": "http://arxiv.org/abs/2605.14694v1",
+      "title": "The Rate-Distortion-Polysemanticity Tradeoff in SAEs",
+      "authors": [
+        "Tommaso Mencattini",
+        "Francesco Montagna",
+        "Francesco Locatello"
+      ],
+      "published": "2026-05-14T11:10:52Z",
+      "updated": "2026-05-14T11:10:52Z",
+      "abstract": "Sparse Autoencoders (SAEs) that can accurately reconstruct their input (minimizing distortion) by making efficient use of few features (minimizing the rate) often fail to learn monosemantic representations (highly interpretable), limiting their usefulness for mechanistic interpretability. In this paper, we characterise this tension in learning faithful, efficient, and interpretable explanations, introducing the Rate-Distortion-Polysemanticity tradeoff in SAEs. Under toy-modeling assumptions, we theoretically and empirically show that restricting the SAE to be monosemantic necessarily comes with an increase in rate and distortion. Assuming a generative model behind the input observations, we further demonstrate that the degree of polysemanticity of optimal SAEs is determined by the training data distribution, especially by the probability of features to co-occur. Finally, we extend the analysis to real-world settings by deriving necessary conditions that a polysemanticity measure should satisfy when the data-generating process is unknown, and we benchmark existing proxy metrics on SAEs trained on Large Language Models. Taken together, our findings show that polysemanticity is a data problem that should be accounted for when addressing it at the architectural and optimization level.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2302.10383v1",
+      "title": "On Interpretable Approaches to Cluster, Classify and Represent Multi-Subspace Data via Minimum Lossy Coding Length based on Rate-Distortion Theory",
+      "authors": [
+        "Kai-Liang Lu",
+        "Avraham Chapman"
+      ],
+      "published": "2023-02-21T01:15:08Z",
+      "updated": "2023-02-21T01:15:08Z",
+      "abstract": "To cluster, classify and represent are three fundamental objectives of learning from high-dimensional data with intrinsic structure. To this end, this paper introduces three interpretable approaches, i.e., segmentation (clustering) via the Minimum Lossy Coding Length criterion, classification via the Minimum Incremental Coding Length criterion and representation via the Maximal Coding Rate Reduction criterion. These are derived based on the lossy data coding and compression framework from the principle of rate distortion in information theory. These algorithms are particularly suitable for dealing with finite-sample data (allowed to be sparse or almost degenerate) of mixed Gaussian distributions or subspaces. The theoretical value and attractive features of these methods are summarized by comparison with other learning methods or evaluation criteria. This summary note aims to provide a theoretical guide to researchers (also engineers) interested in understanding 'white-box' machine (deep) learning methods.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/1905.11092v1",
+      "title": "A Rate-Distortion Framework for Explaining Neural Network Decisions",
+      "authors": [
+        "Jan Macdonald",
+        "Stephan Wäldchen",
+        "Sascha Hauch",
+        "Gitta Kutyniok"
+      ],
+      "published": "2019-05-27T09:58:08Z",
+      "updated": "2019-05-27T09:58:08Z",
+      "abstract": "We formalise the widespread idea of interpreting neural network decisions as an explicit optimisation problem in a rate-distortion framework. A set of input features is deemed relevant for a classification decision if the expected classifier score remains nearly constant when randomising the remaining features. We discuss the computational complexity of finding small sets of relevant features and show that the problem is complete for $\\mathsf{NP}^\\mathsf{PP}$, an important class of computational problems frequently arising in AI tasks. Furthermore, we show that it even remains $\\mathsf{NP}$-hard to only approximate the optimal solution to within any non-trivial approximation factor. Finally, we consider a continuous problem relaxation and develop a heuristic solution strategy based on assumed density filtering for deep ReLU neural networks. We present numerical experiments for two image classification data sets where we outperform established methods in particular for sparse explanations of neural network decisions.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2110.08252v1",
+      "title": "A Rate-Distortion Framework for Explaining Black-box Model Decisions",
+      "authors": [
+        "Stefan Kolek",
+        "Duc Anh Nguyen",
+        "Ron Levie",
+        "Joan Bruna",
+        "Gitta Kutyniok"
+      ],
+      "published": "2021-10-12T12:17:04Z",
+      "updated": "2021-10-12T12:17:04Z",
+      "abstract": "We present the Rate-Distortion Explanation (RDE) framework, a mathematically well-founded method for explaining black-box model decisions. The framework is based on perturbations of the target input signal and applies to any differentiable pre-trained model such as neural networks. Our experiments demonstrate the framework's adaptability to diverse data modalities, particularly images, audio, and physical simulations of urban environments.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2005.01889v2",
+      "title": "Interpreting Rate-Distortion of Variational Autoencoder and Using Model Uncertainty for Anomaly Detection",
+      "authors": [
+        "Seonho Park",
+        "George Adosoglou",
+        "Panos M. Pardalos"
+      ],
+      "published": "2020-05-05T00:03:48Z",
+      "updated": "2020-05-07T16:59:36Z",
+      "abstract": "Building a scalable machine learning system for unsupervised anomaly detection via representation learning is highly desirable. One of the prevalent methods is using a reconstruction error from variational autoencoder (VAE) via maximizing the evidence lower bound. We revisit VAE from the perspective of information theory to provide some theoretical foundations on using the reconstruction error, and finally arrive at a simpler and more effective model for anomaly detection. In addition, to enhance the effectiveness of detecting anomalies, we incorporate a practical model uncertainty measure into the metric. We show empirically the competitive performance of our approach on benchmark datasets.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2511.15255v1",
+      "title": "The Rate-Distortion-Perception Trade-Off with Algorithmic Realism",
+      "authors": [
+        "Yassine Hamdi",
+        "Aaron B. Wagner",
+        "Deniz Gündüz"
+      ],
+      "published": "2025-11-19T09:18:03Z",
+      "updated": "2025-11-19T09:18:03Z",
+      "abstract": "Realism constraints (or constraints on perceptual quality) have received considerable recent attention within the context of lossy compression, particularly of images. Theoretical studies of lossy compression indicate that high-rate common randomness between the compressor and the decompressor is a valuable resource for achieving realism. On the other hand, the utility of significant amounts of common randomness has not been noted in practice. We offer an explanation for this discrepancy by considering a realism constraint that requires satisfying a universal critic that inspects realizations of individual compressed reconstructions, or batches thereof. We characterize the optimal rate-distortion trade-off under such a realism constraint, and show that it is asymptotically achievable without any common randomness, unless the batch size is impractically large.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/0908.3562v1",
+      "title": "Another Look at the Physics of Large Deviations With Application to Rate-Distortion Theory",
+      "authors": [
+        "Neri Merhav"
+      ],
+      "published": "2009-08-25T08:35:16Z",
+      "updated": "2009-08-25T08:35:16Z",
+      "abstract": "We revisit and extend the physical interpretation recently given to a certain identity between large--deviations rate--functions (as well as applications of this identity to Information Theory), as an instance of thermal equilibrium between several physical systems that are brought into contact. Our new interpretation, of mechanical equilibrium between these systems, is shown to have several advantages relative to that of thermal equilibrium. This physical point of view also provides a trigger to the development of certain alternative representations of the rate--distortion function and channel capacity, which are new to the best knowledge of the author.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2602.00906v7",
+      "title": "Hallucination is a Consequence of Space-Optimality: A Rate-Distortion Theorem for Membership Testing",
+      "authors": [
+        "Anxin Guo",
+        "Jingwei Li"
+      ],
+      "published": "2026-01-31T21:18:28Z",
+      "updated": "2026-05-29T20:54:28Z",
+      "abstract": "Large language models often hallucinate with high confidence on \"random facts\" that lack inferable patterns. We formalize the memorization of such facts as a membership testing problem, unifying the discrete error metrics of Bloom filters with the continuous log-loss of LLMs. By analyzing this problem in the regime where facts are sparse in the universe of plausible claims, we establish a rate-distortion theorem: the optimal memory efficiency is characterized by the minimum KL divergence between score distributions on facts and non-facts. This theoretical framework provides a distinctive explanation for hallucination under an idealized setting: even with optimal training, perfect data, and a simplified ``closed world'' setting, the information-theoretically optimal strategy under limited capacity is not to abstain or forget, but to assign high confidence to some non-facts, resulting in hallucination. We validate this theory empirically on both synthetic and real-world data, showing that hallucinations persist as a natural consequence of lossy compression. The same theorem recovers and sharpens classical space lower bounds for Bloom-type filters, pinning down an additive constant left open for two-sided filters.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2201.03707v3",
+      "title": "Rate Distortion Theory for Descriptive Statistics",
+      "authors": [
+        "Peter Harremoës"
+      ],
+      "published": "2022-01-11T00:06:42Z",
+      "updated": "2022-02-16T06:27:57Z",
+      "abstract": "Rate distortion theory was developed for optimizing lossy compression of data, but it also has a lot of applications in statistics. In this paper we will see how rate distortion theory can be used to analyze a complicated data set involving orientations of early Islamic mosques. The analysis involves testing, identification of outliers, choice of compression rate, calculation of optimal reconstruction points, and assigning \"descriptive confidence regions\" to the reconstruction points. In this paper the focus will be on the methods, so the integrity of the data set and the interpretation of the results will not be discussed.",
+      "doi": "10.3390/e25030456",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2602.03949v1",
+      "title": "Semantic Rate Distortion and Posterior Design: Compute Constraints, Multimodality, and Strategic Inference",
+      "authors": [
+        "Emrah Akyol"
+      ],
+      "published": "2026-02-03T19:12:02Z",
+      "updated": "2026-02-03T19:12:02Z",
+      "abstract": "We study strategic Gaussian semantic compression under rate and compute constraints, where an encoder and decoder optimize distinct quadratic objectives. A latent Gaussian state generates a task dependent semantic variable, and the decoder best responds via MMSE estimation, reducing the encoder's problem to posterior covariance design under an information rate constraint. We characterize the strategic rate distortion function in direct, remote, and full information regimes, derive semantic waterfilling and rate constrained Gaussian persuasion solutions, and establish Gaussian optimality under misaligned objectives. We further show that architectural compute limits act as implicit rate constraints, yielding exponential improvements in semantic accuracy with model depth and inference time compute, while multimodal observation eliminates the geometric mean penalty inherent to remote encoding. These results provide information theoretic foundations for data and energy efficient AI and offer a principled interpretation of modern multimodal language models as posterior design mechanisms under resource constraints.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2202.03711v2",
+      "title": "Rate-Distortion Theory for Strategic Semantic Communication",
+      "authors": [
+        "Yong Xiao",
+        "Xu Zhang",
+        "Yingyu Li",
+        "Guangming Shi",
+        "Tamer Basar"
+      ],
+      "published": "2022-02-08T08:14:50Z",
+      "updated": "2022-08-06T02:55:44Z",
+      "abstract": "This paper analyzes the fundamental limit of the strategic semantic communication problem in which a transmitter obtains a limited number of indirect observation of an intrinsic semantic information source and can then influence the receiver's decoding by sending a limited number of messages to an imperfect channel. The transmitter and the receiver can have different distortion measures and can make rational decision about their encoding and decoding strategies, respectively. The decoder can also have some side information (e.g., background knowledge and/or information obtained from previous communications) about the semantic source to assist its interpretation of the semantic information. We focus particularly on the case that the transmitter can commit to an encoding strategy and study the impact of the strategic decision making on the rate distortion of semantic communication. Three equilibrium solutions including the strong Stackelberg equilibrium, weak Stackelberg equilibrium, as well as Nash equilibrium have been studied and compared. The optimal encoding and decoding strategy profiles under various equilibrium solutions have been derived. We prove that committing to an encoding strategy cannot always bring benefit to the encoder. We therefore propose a feasible condition under which committing to an encoding strategy can always reduce the distortion performance of semantic communication.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2212.10897v4",
+      "title": "Deterministic-Random Tradeoff of Integrated Sensing and Communications in Gaussian Channels: A Rate-Distortion Perspective",
+      "authors": [
+        "Fan Liu",
+        "Yifeng Xiong",
+        "Kai Wan",
+        "Tony Xiao Han",
+        "Giuseppe Caire"
+      ],
+      "published": "2022-12-21T10:14:17Z",
+      "updated": "2023-01-04T10:47:11Z",
+      "abstract": "Integrated sensing and communications (ISAC) is recognized as a key enabling technology for future wireless networks. To shed light on the fundamental performance limits of ISAC systems, this paper studies the deterministic-random tradeoff between sensing and communications (S&C) from a rate-distortion perspective under vector Gaussian channels. We model the ISAC signal as a random matrix that carries information, whose realization is perfectly known to the sensing receiver, but is unknown to the communication receiver. We characterize the sensing mutual information conditioned on the random ISAC signal, and show that it provides a universal lower bound for distortion metrics of sensing. Furthermore, we prove that the distortion lower bound is minimized if the sample covariance matrix of the ISAC signal is deterministic. We then offer our understanding of the main results by interpreting wireless sensing as non-cooperative source-channel coding, and reveal the deterministic-random tradeoff of S&C for ISAC systems. Finally, we provide sufficient conditions for the achievability of the distortion bound by analyzing a specific example of target response matrix estimation.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2511.14595v1",
+      "title": "Rate-Distortion Guided Knowledge Graph Construction from Lecture Notes Using Gromov-Wasserstein Optimal Transport",
+      "authors": [
+        "Yuan An",
+        "Ruhma Hashmi",
+        "Michelle Rogers",
+        "Jane Greenberg",
+        "Brian K. Smith"
+      ],
+      "published": "2025-11-18T15:37:39Z",
+      "updated": "2025-11-18T15:37:39Z",
+      "abstract": "Task-oriented knowledge graphs (KGs) enable AI-powered learning assistant systems to automatically generate high-quality multiple-choice questions (MCQs). Yet converting unstructured educational materials, such as lecture notes and slides, into KGs that capture key pedagogical content remains difficult. We propose a framework for knowledge graph construction and refinement grounded in rate-distortion (RD) theory and optimal transport geometry. In the framework, lecture content is modeled as a metric-measure space, capturing semantic and relational structure, while candidate KGs are aligned using Fused Gromov-Wasserstein (FGW) couplings to quantify semantic distortion. The rate term, expressed via the size of KG, reflects complexity and compactness. Refinement operators (add, merge, split, remove, rewire) minimize the rate-distortion Lagrangian, yielding compact, information-preserving KGs. Our prototype applied to data science lectures yields interpretable RD curves and shows that MCQs generated from refined KGs consistently surpass those from raw notes on fifteen quality criteria. This study establishes a principled foundation for information-theoretic KG optimization in personalized and AI-assisted education.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2601.09254v1",
+      "title": "A Theoretical Framework for Rate-Distortion Limits in Learned Image Compression",
+      "authors": [
+        "Changshuo Wang",
+        "Zijian Liang",
+        "Kai Niu",
+        "Ping Zhang"
+      ],
+      "published": "2026-01-14T07:41:54Z",
+      "updated": "2026-01-14T07:41:54Z",
+      "abstract": "We present a novel systematic theoretical framework to analyze the rate-distortion (R-D) limits of learned image compression. While recent neural codecs have achieved remarkable empirical results, their distance from the information-theoretic limit remains unclear. Our work addresses this gap by decomposing the R-D performance loss into three key components: variance estimation, quantization strategy, and context modeling. First, we derive the optimal latent variance as the second moment under a Gaussian assumption, providing a principled alternative to hyperprior-based estimation. Second, we quantify the gap between uniform quantization and the Gaussian test channel derived from the reverse water-filling theorem. Third, we extend our framework to include context modeling, and demonstrate that accurate mean prediction yields substantial entropy reduction. Unlike prior R-D estimators, our method provides a structurally interpretable perspective that aligns with real compression modules and enables fine-grained analysis. Through joint simulation and end-to-end training, we derive a tight and actionable approximation of the theoretical R-D limits, offering new insights into the design of more efficient learned compression systems.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2508.13486v1",
+      "title": "A Convergent Primal-Dual Algorithm for Computing Rate-Distortion-Perception Functions",
+      "authors": [
+        "Chunhui Chen",
+        "Linyi Chen",
+        "Xueyan Niu",
+        "Hao Wu"
+      ],
+      "published": "2025-08-19T03:30:26Z",
+      "updated": "2025-08-19T03:30:26Z",
+      "abstract": "Recent advances in Rate-Distortion-Perception (RDP) theory highlight the importance of balancing compression level, reconstruction quality, and perceptual fidelity. While previous work has explored numerical approaches to approximate the information RDP function, the lack of theoretical guarantees remains a major limitation, especially in the presence of complex perceptual constraints that introduce non-convexity and computational intractability. Inspired by our previous constrained Blahut-Arimoto algorithm for solving the rate-distortion function, in this paper, we present a new theoretical framework for computing the information RDP function by relaxing the constraint on the reconstruction distribution and replacing it with an alternative optimization approach over the reconstruction distribution itself. This reformulation significantly simplifies the optimization and enables a rigorous proof of convergence. Based on this formulation, we develop a novel primal-dual algorithm with provable convergence guarantees. Our analysis establishes, for the first time, a rigorous convergence rate of $O(1/n)$ for the computation of RDP functions. The proposed method not only bridges a key theoretical gap in the existing literature but also achieves competitive empirical performance in representative settings. These results lay the groundwork for more reliable and interpretable optimization in RDP-constrained compression systems. Experimental results demonstrate the efficiency and accuracy of the proposed algorithm.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2604.21909v2",
+      "title": "Directional Confusions Reveal Divergent Inductive Biases Through Rate-Distortion Geometry in Human and Machine Vision",
+      "authors": [
+        "Leyla Roksan Caglar",
+        "Pedro A. M. Mediano",
+        "Baihan Lin"
+      ],
+      "published": "2026-04-23T17:52:16Z",
+      "updated": "2026-05-14T17:52:52Z",
+      "abstract": "To humans, a robin seems more like a bird than a bird seems like a robin, but does this asymmetry also hold for machine vision? Humans and modern vision models can match each other in accuracy while making systematically different kinds of errors, differing not in how often they fail, but in who gets mistaken for whom. We show these directional confusions reveal distinct inductive biases invisible to accuracy alone. Using matched human and deep neural network responses on a natural-image categorization task under 12 perturbation types, we quantify asymmetry in confusion matrices and link its organization to the geometry of the information--error trade-off - how efficiently, and how gracefully, a system generalizes under distortion. We find that humans exhibit broad but weak asymmetries across many class pairs, whereas deep vision models show sparser, stronger directional collapses into a few dominant categories. Robustness training reduces overall asymmetry magnitude but fails to recover this human-like distributed structure. Generative simulations further show that these two asymmetry organizations shift the trade-off geometry in opposite directions even at matched accuracy, explaining why the same scalar asymmetry score can reflect fundamentally different generalization strategies. Together, these results establish directional confusion structure as a sensitive, interpretable signature of inductive bias that accuracy-based evaluation cannot recover.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2607.17232v1",
+      "title": "Rate-Distortion-Perception Theory: Redefining the Fundamental Limits of Information Representation",
+      "authors": [
+        "Photios A. Stavrou",
+        "Giuseppe Serra",
+        "Marios Kountouris"
+      ],
+      "published": "2026-07-19T12:55:43Z",
+      "updated": "2026-07-19T12:55:43Z",
+      "abstract": "Classical rate-distortion (RD) theory has long established the fundamental limits of lossy compression by quantifying the minimum number of bits required to represent a source under a prescribed distortion constraint. However, widely used distortion measures such as mean-squared error often fail to capture perceptual quality or semantic validity, which are increasingly central in modern learning-driven applications. Rate-distortion-perception (RDP) theory extends the RD framework by introducing perception as a third fundamental axis, quantified via distributional similarity between the source and reconstructed signals, leading to the rate-distortion-perception function (RDPF). This tutorial provides a structured overview of the coding principles underlying perception-aware lossy compression and surveys recent achievability results under different randomness assumptions. It then presents a unifying optimization viewpoint for computing the RDPF as defined by Blau and Michaeli, for both discrete and continuous sources under broad families of perceptual constraints, including f-divergences, alpha-divergences, and Wasserstein-based metrics. Special attention is given to computational tools such as alternating minimization schemes, Newton-based methods, and convex optimization formulations, as well as to analytically tractable cases such as Gaussian sources and the perfect-realism regime. Unlike recent broad surveys that emphasize generative architectures and AI-empowered communication systems, this tutorial focuses on the coding-theoretic and computational machinery needed to characterize, compute, and interpret the RDP limits. Finally, the tutorial outlines promising research directions at the intersection of information theory, neural compression, robust source coding, and perception-aware networked control systems.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/1307.5210v3",
+      "title": "Approaching the Rate-Distortion Limit with Spatial Coupling, Belief propagation and Decimation",
+      "authors": [
+        "Vahid Aref",
+        "Nicolas Macris",
+        "Marc Vuffray"
+      ],
+      "published": "2013-07-19T13:26:54Z",
+      "updated": "2015-06-11T18:09:40Z",
+      "abstract": "We investigate an encoding scheme for lossy compression of a binary symmetric source based on simple spatially coupled Low-Density Generator-Matrix codes. The degree of the check nodes is regular and the one of code-bits is Poisson distributed with an average depending on the compression rate. The performance of a low complexity Belief Propagation Guided Decimation algorithm is excellent. The algorithmic rate-distortion curve approaches the optimal curve of the ensemble as the width of the coupling window grows. Moreover, as the check degree grows both curves approach the ultimate Shannon rate-distortion limit. The Belief Propagation Guided Decimation encoder is based on the posterior measure of a binary symmetric test-channel. This measure can be interpreted as a random Gibbs measure at a \"temperature\" directly related to the \"noise level of the test-channel\". We investigate the links between the algorithmic performance of the Belief Propagation Guided Decimation encoder and the phase diagram of this Gibbs measure. The phase diagram is investigated thanks to the cavity method of spin glass theory which predicts a number of phase transition thresholds. In particular the dynamical and condensation \"phase transition temperatures\" (equivalently test-channel noise thresholds) are computed. We observe that: (i) the dynamical temperature of the spatially coupled construction saturates towards the condensation temperature; (ii) for large degrees the condensation temperature approaches the temperature (i.e. noise level) related to the information theoretic Shannon test-channel noise parameter of rate-distortion theory. This provides heuristic insight into the excellent performance of the Belief Propagation Guided Decimation algorithm. The paper contains an introduction to the cavity method.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2603.01568v2",
+      "title": "Same Compression Principle, Different Geometry: Rate-Distortion Signatures Dissociate Biological and Artificial Visual Systems",
+      "authors": [
+        "Leyla Roksan Caglar",
+        "Pedro A. M. Mediano",
+        "Baihan Lin"
+      ],
+      "published": "2026-03-02T07:48:39Z",
+      "updated": "2026-07-13T23:49:37Z",
+      "abstract": "Efficient coding theory predicts that biological perceptual systems compress sensory input optimally under resource constraints, with the systematic structure of errors reflecting the geometry of that compression. Here we operationalize this principle using rate-distortion theory (RDT) to characterize how any system - biological or artificial - trades representational fidelity for informational efficiency. Treating stimulus-response behavior as an effective communication channel, we infer rate-distortion (RD) frontiers directly from confusion matrices and summarize each system with three geometric signatures: slope (beta), curvature (kappa), and area under the RD curve (AUC), capturing the marginal cost, abruptness, and overall efficiency of the accuracy-compression trade-off respectively. Applying this framework to human psychophysical data and 18 deep vision models across 12 families of controlled image perturbations at graded severities, we find that both biological and artificial systems follow a common lossy-compression principle but occupy systematically different regions of RD space. Humans exhibit smooth, flexible trade-offs characteristic of near-optimal efficient coding, while deep networks operate in steeper, more brittle regimes even at matched accuracy, with geometry dissociable from performance across training regimes. Critically, behavioral RD signatures track internal representational geometry, evidenced by the behaviorally inferred compression structure correlating with internal representational dissimilarity across all models. These results establish RD geometry as a compact diagnostic of perceptual compression strategy that recovers mechanistically interpretable structure in internal representations from behavioral input alone and extends naturally to the direct characterization of compression geometry in neural population activity.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    }
+  ],
+  "status": "OK"
+}

@@ -1,0 +1,236 @@
+{
+  "date": "2026-10-20",
+  "url": "https://api.openalex.org/works?search=INVASE%20Instancewise%20Variable%20Selection%20using%20Neural%20Networks&per-page=2&select=id,title,doi,publication_date,authorships,primary_location",
+  "kind": "json",
+  "response": {
+    "meta": {
+      "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+      "count": 21,
+      "db_response_time_ms": 44,
+      "page": 1,
+      "per_page": 2,
+      "groups_count": null,
+      "x_query": {
+        "oql": "get works where full text has (INVASE Instancewise Variable Selection using Neural Networks)",
+        "x_new_oql": "get works with (INVASE Instancewise Variable Selection using Neural Networks) in the full text",
+        "oqo": {
+          "get_rows": "works",
+          "filter_rows": [
+            {
+              "column_id": "fulltext.search",
+              "value": "INVASE Instancewise Variable Selection using Neural Networks",
+              "operator": "has"
+            }
+          ]
+        },
+        "url": "/works?filter=fulltext.search:INVASE Instancewise Variable Selection using Neural Networks&per_page=2"
+      },
+      "cost_usd": 0.001
+    },
+    "results": [
+      {
+        "id": "https://openalex.org/W7120272235",
+        "title": "Aligned explanations in neural networks",
+        "doi": null,
+        "publication_date": "2026-01-07",
+        "authorships": [
+          {
+            "author_position": "first",
+            "author": {
+              "id": "https://openalex.org/A5115944517",
+              "display_name": "Corentin Lobet",
+              "orcid": null,
+              "observed_orcids": []
+            },
+            "institutions": [
+              {
+                "id": "https://openalex.org/I162290304",
+                "display_name": "Scuola Superiore Sant'Anna",
+                "ror": "https://ror.org/025602r80",
+                "country_code": "IT",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I162290304"
+                ]
+              }
+            ],
+            "countries": [
+              "IT"
+            ],
+            "is_corresponding": false,
+            "raw_author_name": "Lobet, Corentin",
+            "raw_affiliation_strings": [
+              "Institute of Economics and L'EMBEDS , Sant'Anna School of Advanced Studies - Italy"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "Institute of Economics and L'EMBEDS , Sant'Anna School of Advanced Studies - Italy",
+                "institution_ids": [
+                  "https://openalex.org/I162290304"
+                ]
+              }
+            ]
+          },
+          {
+            "author_position": "last",
+            "author": {
+              "id": "https://openalex.org/A5015561999",
+              "display_name": "Francesca Chiaromonte",
+              "orcid": "https://orcid.org/0000-0001-5605-9886",
+              "observed_orcids": [
+                "https://orcid.org/0000-0001-5605-9886"
+              ]
+            },
+            "institutions": [
+              {
+                "id": "https://openalex.org/I130769515",
+                "display_name": "Pennsylvania State University",
+                "ror": "https://ror.org/04p491231",
+                "country_code": "US",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I130769515"
+                ]
+              },
+              {
+                "id": "https://openalex.org/I162290304",
+                "display_name": "Scuola Superiore Sant'Anna",
+                "ror": "https://ror.org/025602r80",
+                "country_code": "IT",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I162290304"
+                ]
+              }
+            ],
+            "countries": [
+              "IT",
+              "US"
+            ],
+            "is_corresponding": false,
+            "raw_author_name": "Chiaromonte, Francesca",
+            "raw_affiliation_strings": [
+              "Dept. of Statistics and Huck Institutes of the Life Sciences , Penn State University - USA",
+              "Institute of Economics and L'EMBEDS , Sant'Anna School of Advanced Studies - Italy"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "Dept. of Statistics and Huck Institutes of the Life Sciences , Penn State University - USA",
+                "institution_ids": [
+                  "https://openalex.org/I130769515"
+                ]
+              },
+              {
+                "raw_affiliation_string": "Institute of Economics and L'EMBEDS , Sant'Anna School of Advanced Studies - Italy",
+                "institution_ids": [
+                  "https://openalex.org/I162290304"
+                ]
+              }
+            ]
+          }
+        ],
+        "primary_location": {
+          "id": "pmh:oai:arXiv.org:2601.04378",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://arxiv.org/abs/2601.04378",
+          "pdf_url": "https://arxiv.org/pdf/2601.04378",
+          "source": {
+            "id": "https://openalex.org/S4306400194",
+            "display_name": "arXiv (Cornell University)",
+            "issn_l": "2331-8422",
+            "issn": [
+              "2331-8422"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_name": "Cornell University",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "text"
+        }
+      },
+      {
+        "id": "https://openalex.org/W4393320085",
+        "title": "Supervised learning using interpretable ensemble methods",
+        "doi": "https://doi.org/10.31274/td-20240329-707",
+        "publication_date": "2021-01-01",
+        "authorships": [
+          {
+            "author_position": "first",
+            "author": {
+              "id": "https://openalex.org/A5100699345",
+              "display_name": "Qi Xiao",
+              "orcid": "https://orcid.org/0000-0003-0199-9170",
+              "observed_orcids": [
+                "https://orcid.org/0000-0003-0199-9170",
+                "https://orcid.org/0000-0002-8992-8897"
+              ]
+            },
+            "institutions": [
+              {
+                "id": "https://openalex.org/I173911158",
+                "display_name": "Iowa State University",
+                "ror": "https://ror.org/04rswrd78",
+                "country_code": "US",
+                "type": "education",
+                "lineage": [
+                  "https://openalex.org/I173911158"
+                ]
+              }
+            ],
+            "countries": [
+              "US"
+            ],
+            "is_corresponding": true,
+            "raw_author_name": "Qi Xiao",
+            "raw_affiliation_strings": [
+              "Iowa State University"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "Iowa State University",
+                "institution_ids": [
+                  "https://openalex.org/I173911158"
+                ]
+              }
+            ]
+          }
+        ],
+        "primary_location": {
+          "id": "doi:10.31274/td-20240329-707",
+          "doi": "https://doi.org/10.31274/td-20240329-707",
+          "is_oa": true,
+          "landing_page_url": "http://dx.doi.org/10.31274/td-20240329-707",
+          "pdf_url": "https://dr.lib.iastate.edu/bitstreams/122b681b-041a-4057-aba1-b0b4590c646f/download",
+          "source": null,
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Iowa State University",
+          "raw_type": "dissertation"
+        }
+      }
+    ],
+    "group_by": []
+  },
+  "status": "OK"
+}

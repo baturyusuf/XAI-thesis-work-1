@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-21",
+  "url": "https://api.github.com/repos/IBM/SAX",
+  "kind": "json",
+  "normalization_note": "Minimum provenance; emails/signatures omitted.",
+  "response": {
+    "full_name": "IBM/SAX",
+    "html_url": "https://github.com/IBM/SAX",
+    "default_branch": "main",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "pushed_at": "2025-09-17T23:00:23Z"
+  },
+  "status": "OK"
+}

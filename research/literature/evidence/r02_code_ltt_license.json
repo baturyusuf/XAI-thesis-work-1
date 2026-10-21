@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-21",
+  "url": "https://api.github.com/repos/aangelopoulos/ltt/license?ref=3ad7a64adad9f356e29f40e73935a6114f896396",
+  "kind": "json",
+  "response": {
+    "name": "LICENSE",
+    "path": "LICENSE",
+    "sha": "a10af71ba380b94b4d438a66989e7f8f3564d12b",
+    "size": 1080,
+    "url": "https://api.github.com/repos/aangelopoulos/ltt/contents/LICENSE?ref=3ad7a64adad9f356e29f40e73935a6114f896396",
+    "html_url": "https://github.com/aangelopoulos/ltt/blob/3ad7a64adad9f356e29f40e73935a6114f896396/LICENSE",
+    "git_url": "https://api.github.com/repos/aangelopoulos/ltt/git/blobs/a10af71ba380b94b4d438a66989e7f8f3564d12b",
+    "download_url": "https://raw.githubusercontent.com/aangelopoulos/ltt/3ad7a64adad9f356e29f40e73935a6114f896396/LICENSE",
+    "type": "file",
+    "content": "TUlUIExpY2Vuc2UKCkNvcHlyaWdodCAoYykgMjAyMSBBbmFzdGFzaW9zIEFu\nZ2Vsb3BvdWxvcwoKUGVybWlzc2lvbiBpcyBoZXJlYnkgZ3JhbnRlZCwgZnJl\nZSBvZiBjaGFyZ2UsIHRvIGFueSBwZXJzb24gb2J0YWluaW5nIGEgY29weQpv\nZiB0aGlzIHNvZnR3YXJlIGFuZCBhc3NvY2lhdGVkIGRvY3VtZW50YXRpb24g\nZmlsZXMgKHRoZSAiU29mdHdhcmUiKSwgdG8gZGVhbAppbiB0aGUgU29mdHdh\ncmUgd2l0aG91dCByZXN0cmljdGlvbiwgaW5jbHVkaW5nIHdpdGhvdXQgbGlt\naXRhdGlvbiB0aGUgcmlnaHRzCnRvIHVzZSwgY29weSwgbW9kaWZ5LCBtZXJn\nZSwgcHVibGlzaCwgZGlzdHJpYnV0ZSwgc3VibGljZW5zZSwgYW5kL29yIHNl\nbGwKY29waWVzIG9mIHRoZSBTb2Z0d2FyZSwgYW5kIHRvIHBlcm1pdCBwZXJz\nb25zIHRvIHdob20gdGhlIFNvZnR3YXJlIGlzCmZ1cm5pc2hlZCB0byBkbyBz\nbywgc3ViamVjdCB0byB0aGUgZm9sbG93aW5nIGNvbmRpdGlvbnM6CgpUaGUg\nYWJvdmUgY29weXJpZ2h0IG5vdGljZSBhbmQgdGhpcyBwZXJtaXNzaW9uIG5v\ndGljZSBzaGFsbCBiZSBpbmNsdWRlZCBpbiBhbGwKY29waWVzIG9yIHN1YnN0\nYW50aWFsIHBvcnRpb25zIG9mIHRoZSBTb2Z0d2FyZS4KClRIRSBTT0ZUV0FS\nRSBJUyBQUk9WSURFRCAiQVMgSVMiLCBXSVRIT1VUIFdBUlJBTlRZIE9GIEFO\nWSBLSU5ELCBFWFBSRVNTIE9SCklNUExJRUQsIElOQ0xVRElORyBCVVQgTk9U\nIExJTUlURUQgVE8gVEhFIFdBUlJBTlRJRVMgT0YgTUVSQ0hBTlRBQklMSVRZ\nLApGSVRORVNTIEZPUiBBIFBBUlRJQ1VMQVIgUFVSUE9TRSBBTkQgTk9OSU5G\nUklOR0VNRU5ULiBJTiBOTyBFVkVOVCBTSEFMTCBUSEUKQVVUSE9SUyBPUiBD\nT1BZUklHSFQgSE9MREVSUyBCRSBMSUFCTEUgRk9SIEFOWSBDTEFJTSwgREFN\nQUdFUyBPUiBPVEhFUgpMSUFCSUxJVFksIFdIRVRIRVIgSU4gQU4gQUNUSU9O\nIE9GIENPTlRSQUNULCBUT1JUIE9SIE9USEVSV0lTRSwgQVJJU0lORyBGUk9N\nLApPVVQgT0YgT1IgSU4gQ09OTkVDVElPTiBXSVRIIFRIRSBTT0ZUV0FSRSBP\nUiBUSEUgVVNFIE9SIE9USEVSIERFQUxJTkdTIElOIFRIRQpTT0ZUV0FSRS4K\n",
+    "encoding": "base64",
+    "_links": {
+      "self": "https://api.github.com/repos/aangelopoulos/ltt/contents/LICENSE?ref=3ad7a64adad9f356e29f40e73935a6114f896396",
+      "git": "https://api.github.com/repos/aangelopoulos/ltt/git/blobs/a10af71ba380b94b4d438a66989e7f8f3564d12b",
+      "html": "https://github.com/aangelopoulos/ltt/blob/3ad7a64adad9f356e29f40e73935a6114f896396/LICENSE"
+    },
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    }
+  },
+  "status": "OK"
+}

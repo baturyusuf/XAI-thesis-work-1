@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-21",
+  "url": "https://api.github.com/repos/thomdeck/recalx/commits?per_page=1",
+  "kind": "json",
+  "normalization_note": "Minimum provenance; emails/signatures omitted.",
+  "response": [
+    {
+      "sha": "222807cbcebb19603b3ae9150675a94ebc8b871b",
+      "html_url": "https://github.com/thomdeck/recalx/commit/222807cbcebb19603b3ae9150675a94ebc8b871b",
+      "commit": {
+        "committer": {
+          "date": "2026-02-23T19:48:07Z"
+        }
+      }
+    }
+  ],
+  "status": "OK"
+}

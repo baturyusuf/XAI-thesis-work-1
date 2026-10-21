@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-21",
+  "url": "https://api.github.com/repos/IBM/SAX/commits?per_page=1",
+  "kind": "json",
+  "normalization_note": "Minimum provenance; emails/signatures omitted.",
+  "response": [
+    {
+      "sha": "e296e3c721852cc43ce60d5dfceaae379515b1cc",
+      "html_url": "https://github.com/IBM/SAX/commit/e296e3c721852cc43ce60d5dfceaae379515b1cc",
+      "commit": {
+        "committer": {
+          "date": "2025-05-27T09:23:26Z"
+        }
+      }
+    }
+  ],
+  "status": "OK"
+}

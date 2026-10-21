@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-21",
+  "url": "https://api.github.com/repos/aangelopoulos/ltt/commits?per_page=1",
+  "kind": "json",
+  "normalization_note": "Minimum provenance; emails/signatures omitted.",
+  "response": [
+    {
+      "sha": "3ad7a64adad9f356e29f40e73935a6114f896396",
+      "html_url": "https://github.com/aangelopoulos/ltt/commit/3ad7a64adad9f356e29f40e73935a6114f896396",
+      "commit": {
+        "committer": {
+          "date": "2024-11-17T03:43:25Z"
+        }
+      }
+    }
+  ],
+  "status": "OK"
+}

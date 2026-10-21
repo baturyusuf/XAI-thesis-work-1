@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-20",
+  "url": "https://api.github.com/repos/understandable-machine-intelligence-lab/Quantus/commits?per_page=1",
+  "kind": "json",
+  "response": [
+    {
+      "sha": "85bc29d137d8f42835dd392f5cc441ad61d6d1f1",
+      "html_url": "https://github.com/understandable-machine-intelligence-lab/Quantus/commit/85bc29d137d8f42835dd392f5cc441ad61d6d1f1",
+      "commit": {
+        "committer": {
+          "date": "2026-08-20T12:03:52Z"
+        }
+      }
+    }
+  ],
+  "status": "OK",
+  "normalization_note": "Minimum repository/commit provenance retained; personal emails/signatures omitted."
+}

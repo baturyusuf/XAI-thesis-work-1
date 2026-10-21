@@ -1,0 +1,496 @@
+{
+  "date": "2026-10-20",
+  "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Supervised%20Neighborhoods%22%20OR%20ti%3AINVASE%20OR%20ti%3A%22Explanation%20Shift%22%20OR%20ti%3A%22Conformal%20Explanations%22%20OR%20ti%3A%22Ordinal%20Explanations%22&max_results=30&sortBy=submittedDate&sortOrder=descending",
+  "kind": "atom",
+  "total_hits": "1009",
+  "records": [
+    {
+      "id": "http://arxiv.org/abs/2610.26347v1",
+      "title": "Logit Averaging During Training Sets a New State of the Art for Non-Invasive Speech BCI",
+      "authors": [
+        "Miran Özdogan",
+        "Gereon Elvers",
+        "Michael Bronstein",
+        "Oiwi Parker Jones"
+      ],
+      "published": "2026-10-19T13:13:25Z",
+      "updated": "2026-10-19T13:13:25Z",
+      "abstract": "Non-invasive brain-computer interfaces are in practice limited by signal-to-noise ratio, and recent state-of-the-art methods address this limitation by aggregating over repeated trials of the same stimulus. Yet multi-trial aggregation has been treated inconsistently across the literature: some work averages brain signals at the model's input, other work averages predictions at the model's output, and neither treats aggregation as an architectural choice in its own right. We provide the first systematic comparison of aggregation strategies for non-invasive neural decoding, evaluating six paradigms (including logit averaging during training and three attention-based variants we introduce) across three datasets, four tasks, and two group sizes. We find that aggregation choice matters substantially: training-time logit averaging, the simplest method we propose, outperforms all others in 6 of 7 settings. On the phoneme classification setting of the 2025 PNPL competition, it sets a new state of the art, significantly outperforming the competition winner by 17.4 absolute percentage points in balanced accuracy. We further draw a theoretical connection between logit averaging and joint ensemble training, which has been shown to underperform independent ensembling in the deep learning literature; our results call into question recent explanations of why joint ensemble training fails. Together, these findings establish multi-trial aggregation as a key design choice for non-invasive neural decoding and identify training-time logit averaging as a simple, effective default.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2610.26317v1",
+      "title": "Leaky-Wave Antenna for Non-Invasive Continuous Glucose Monitoring",
+      "authors": [
+        "Huan Wang",
+        "Han Xiao",
+        "Yi Zhang",
+        "Zhi Hua Ren",
+        "Yang Gao"
+      ],
+      "published": "2026-10-19T12:58:31Z",
+      "updated": "2026-10-19T12:58:31Z",
+      "abstract": "Non-invasive continuous glucose monitoring requires sensing techniques capable of delivering stable, accurate, and real-time quantification of glucose-induced dielectric variations. This paper presents a microwave-based methodology that employs a leaky-wave antenna (LWA) to launch localized traveling electromagnetic waves and estimate glucose concentration through phase measurements at a fixed operating frequency. The LWA architecture enhances electromagnetic coupling with the material under test through controlled energy leakage, enabling strong linearity and high phase sensitivity within the physiological permittivity range (relative permittivity 68-70). In vitro measurements using fetal bovine serum-glucose samples demonstrate a total phase shift of 8.51 degree across glucose concentrations from 50 to 255 mg per liter. Preliminary in vivo experiments conducted on two human subjects show strong correlations between measured S11 phase and reference glucose levels (r=0.939 and r=0.906), confirming the potential of the LWA-based sensing mechanism to track dynamic glycemic variations in a proof-of-concept setting. These results highlight the potential of the proposed approach for practical, continuous, and non-invasive glucose monitoring.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2610.26235v1",
+      "title": "The resource cost of cooperative invasion",
+      "authors": [
+        "Abhishek Chowdhury"
+      ],
+      "published": "2026-10-19T12:00:54Z",
+      "updated": "2026-10-19T12:00:54Z",
+      "abstract": "A contact network can favor cooperation by sheltering a lineage until its descendants compete with defectors as a group. We determine the contact strengths, invasion times and measurement effort needed to realize this advantage at fixed population size. Individuals reproduce according to averaged cooperation payoffs, and offspring replace neighbors through contacts of equal weight in both directions. Contact contrast is the ratio of strongest to weakest contact. Under weak selection on a six-site path, the least contrast needed to favor a single cooperator over the reverse invasion by a defector grows as $656ε^{-2}$ for uniformly placed mutants and $4050ε^{-3}$ for mutations in newborn offspring, as the benefit-cost ratio $b/c=1+ε$ approaches one. The extra power arises because rare replacement protects a site while suppressing mutation arrival there. Global bounds force two weakly coupled groups and exact mirror symmetry of the least-contrast contacts for sufficiently small $ε$. Under uniform introduction, additional contrast shortens the leading mean time to extinction or fixation in the absence of selection, from $12/ε$ toward $6/ε$ reproduction attempts, and eventually breaks the mirror symmetry of the fastest design. Estimating the uniform-introduction advantage from fixation outcomes of independent completed invasions defines a third optimum. Within the six-site family with mirror-symmetric, strongly separated contacts, we optimize contacts and selection strength with reproduction weighted linearly or exponentially by payoff. At fixed relative precision, with contrast a fixed factor above its minimum, the leading summed trial duration grows as $ε^{-3}$. Efficient measurement accepts a smaller advantage in exchange for shorter trials. The cheapest, fastest and most efficiently measured networks therefore differ.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2610.26172v1",
+      "title": "Demonstration of continuous non-invasive monitoring of plant metabolism using mid-infrared photoacoustic spectroscopy",
+      "authors": [
+        "Ellyne Liégeois",
+        "Héloïse Hannart",
+        "Jules Skubich",
+        "Maeva Doron",
+        "Kevin Jourde",
+        "Johan Decelle",
+        "Yann Bresson",
+        "Sylvain Delzon",
+        "Régis Burlett"
+      ],
+      "published": "2026-10-19T11:03:19Z",
+      "updated": "2026-10-19T11:03:19Z",
+      "abstract": "Life is a rhythmic process driven by cellular and physiological mechanisms that allow plants to respond and adapt to their environment. In addition to natural fluctuations, plants are increasingly exposed to environmental stresses, mainly caused by climate change and anthropogenic pollution. Multiple approaches across different biological scales (gene, cell, metabolite, and physiology) have shed light on acclimation mechanisms but generally lack sufficient temporal resolution. Establishing a non-invasive and high-temporal-resolution monitoring method to measure plant activity across different conditions is therefore needed to fully assess how plant metabolism changes under stress. Here, we established a novel approach to perform continuous and non-invasive mid-infrared photoacoustic spectroscopy on vascular plants, with the aim of identifying and monitoring the chemical composition of peripheral tissues, including sap, over periods ranging from a few minutes to several months. We describe an experimental setup, the physics underlying its operation, and present a multi-day acquisition. Compared with controls, data enabled to identify a diurnal pattern, with peaks of approximately equal duration, that recurred consistently over the experiment. Estimations of the impact of instrumental and environmental fluctuations indicate that the signal amplitude and trends cannot be explained by instrumental drifts. The experiment thus demonstrated the detection of a signal associated with plant physiological activity. While its origins remain to be clarified, this preliminary experiment demonstrates the feasibility of the measurements and provides a basis for future developments.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2610.18422v1",
+      "title": "Augmenting Real-time Visualization in Minimally Invasive Surgery with Particle Filtering and Depth-Aware Occlusion Handling",
+      "authors": [
+        "Anuska Sarkar",
+        "Partha Acharya",
+        "Vishnu Nandury",
+        "Kaustav Basu",
+        "Subhamoy Mandal"
+      ],
+      "published": "2026-10-13T14:01:01Z",
+      "updated": "2026-10-13T14:01:01Z",
+      "abstract": "We present a real-time, hybrid framework for occlusion handling and depth-aware tracking in minimally invasive surgeries (MIS). Occlusions caused by surgical instruments often obscure the region of interest (ROI), affecting surgical precision. To address this, our approach integrates enhanced You Only Look Once (YOLO) based detection, Particle Filtering (PF), and monocular depth estimation using Multiple Depth Estimation Accuracy with Single Network (MiDaS). Occlusion is detected using a distance-based threshold between instruments and ROI. Experimental results demonstrate robust instrument detection with a confidence score of 0.85, effective occlusion event handling, and accurate depth prediction with an MAE of 0.34 cm and RMSE of 0.53 cm. Independent phantom-based validation against stereo depth measurements yielded an MAE of 0.65 cm and RMSE of 0.66 cm. The framework further achieved an occlusion detection accuracy of 81.95\\% while maintaining real-time performance at 38.7 FPS. Preliminary surgeon feedback indicates that the proposed visualization framework is clinically relevant and holds promise for future intraoperative image-guided navigation and decision support in MIS.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "IEEE Transactions on Medical Robotics and Bionics (T-MRB), October 2026"
+    },
+    {
+      "id": "http://arxiv.org/abs/2610.14916v1",
+      "title": "Multilateral governance of invasive alien species management: An ecological-economic model with Allee effect",
+      "authors": [
+        "Raouf Boucekkine",
+        "Weihua Ruan",
+        "Ullrika Sahlin"
+      ],
+      "published": "2026-10-10T13:38:45Z",
+      "updated": "2026-10-10T13:38:45Z",
+      "abstract": "Invasive alien species (IAS) generate substantial ecological and economic damages that often transcend political boundaries, creating strong incentives for coordinated management. We develop a two-region ecological-economic model of IAS control that integrates prevention and eradication measures with population dynamics characterized by logistic growth and an Allee effect. We derive analytical results on the interaction between ecological thresholds and strategic behaviour and compare outcomes under cooperation (central planner) and non-cooperation (open loop Nash equilibrium and Markovian Nash equilibrium). We show that, under realistic control costs, neither prevention nor eradication can eliminate invasive populations in finite time, and complete prevention of cross-border spread is generally not optimal. In the absence of an Allee effect, the zero-population equilibrium is unstable, implying long-run persistence of the invasive species. By contrast, the presence of an Allee effect fundamentally alters system dynamics by making extinction locally stable and creating a basin of attraction within which eradication becomes feasible. This finding highlights the economic significance of ecological thresholds and demonstrates how delays in management can shift populations beyond critical levels, after which eradication is unlikely regardless of subsequent control efforts. Numerical simulations further show that cooperative management expands the set of initial conditions leading to eradication and consistently reduces aggregate social costs relative to decentralized management. The results provide a formal rationale for rapid intervention, precautionary regulation, and stronger multilateral cooperation in IAS management, particularly in jurisdictions such as the European Union where listing and control actions may be delayed pending evidence of harm.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2610.12636v1",
+      "title": "Selectively Actuated Fiberbots for High-precision Minimally Invasive Surgery",
+      "authors": [
+        "Jinshi Zhao",
+        "Libaihe Tian",
+        "Alex Ranne",
+        "Qindong Zheng",
+        "Yue Li",
+        "Xiaotong Guo",
+        "Ziqi Yang",
+        "Ali Anil Demircali",
+        "Mohamed E. M. K. Abdelaziz",
+        "Bruno Gil Rosa",
+        "Ferdinando Rodriguez y Baena",
+        "Burak Temelkuran"
+      ],
+      "published": "2026-10-08T18:59:35Z",
+      "updated": "2026-10-08T18:59:35Z",
+      "abstract": "Long, slender instruments are essential for minimally invasive surgery (MIS), but achieving precise distal manipulation becomes increasingly difficult when actuation extends along the entire instrument. Here, we present an electrothermally actuated fiber-based robot designed for MIS procedures, in which Joule heating is concentrated in the distal active segment. The fiber is fabricated using a thermal drawing process and uses embedded metallic wires for thermal actuation. This robotic fiber, 1.9 mm in diameter and 1.2 m in length, can precisely manipulate surgical laser fibers with positional precision below 100 $μ$m. The compact size of the fiber robot allows it to pass through the working channel of a flexible endoscope, while keeping both devices mechanically uncoupled to allow independent motion. A phantom demonstration combining the robotic fiber with a da Vinci instrument conceptually demonstrated its compatibility with existing endoscopic systems for clinical applications. Our robotic fiber enables precise distal motion and holds the potential to improve clinical outcomes by enhancing precision in MIS procedures.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2610.11604v1",
+      "title": "Some counterexamples concerning a model of eradication of invasive species",
+      "authors": [
+        "Stefano Bianchini",
+        "Chiara Trifone"
+      ],
+      "published": "2026-10-08T09:48:49Z",
+      "updated": "2026-10-08T09:48:49Z",
+      "abstract": "In this note we study the regularity properties of the \\emph{Effort Function $E(β)$}. This can be defined as the minimal $L^1$-norm of the control $\\tilde α(x) \\geq 0$ so that the PDE $$U_t = ΔU + f(U) - \\tilde α(t,x) U, \\quad U \\in [0,1], %\\ \\tilde α\\geq 0,$$ admits a traveling profile $U(x - βt)$ connecting $0$ to $1$. The above PDE models the evolution of an invasive species, where the control $\\tilde α(t,x)$ describes the percentage amount of species removal. In the literature some conditions are assumed on the properties of $f(U)$ and (consequently) on the effort function $E(β)$, the main ones being that the traveling profile has a simple structure and that the effort function can be used as an anisotropic perimeter to generated a cost function over sets of finite perimeter. This note gives some examples showing that in the interesting cases, i.e. when the PDE has a non trivial dynamics, these assumptions are in general not satisfied. We also show that $E(β)$ is in general only $C^1$.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2610.10346v1",
+      "title": "Hall Effect-Based Tactile Force Detection Sensor for Robot-Assisted Minimally Invasive Surgery",
+      "authors": [
+        "Charles DeLorey",
+        "Michael Brockdorff",
+        "Adam Metcalf",
+        "Benjamin Calmé",
+        "Pietro Valdastri",
+        "Dominic Jones"
+      ],
+      "published": "2026-10-07T16:24:49Z",
+      "updated": "2026-10-07T16:24:49Z",
+      "abstract": "Robotic minimally invasive surgery has revolutionized surgical practice. However, as the surgeons are mechanically separated from the surgical tools, loss of tactile feedback occurs. We present a compact force sensor with three, millimeter scale sensing elements (taxels) that can be affixed to the grasping face of a robotic surgical tool. The sensor features a miniaturized design using Hall effect sensors and magnets embedded in a deformable elastomer contact layer. Sensor calibration is achieved with a 6 degree of freedom (DoF) parallel robot. Each taxel can detect applied normal and shear forces with average RMSE of 2.133 kPa. The calibrated sensor was validated on phantom and ex vivo porcine tissue, demonstrating tactile sensing during retraction as well as slip. This work introduces a small-scale Hall effect based tactile sensor, enabling sensing for force-sensitive robotic surgical applications.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2610.05919v1",
+      "title": "Non-invasive Seizure Detection Using Wearable Wrist-worn Accelerometry and Deep Learning",
+      "authors": [
+        "Nilushika Udayangani Hewa Dehigahawattage",
+        "Kishor Nandakishor",
+        "Marimuthu Palaniswami"
+      ],
+      "published": "2026-10-05T07:35:26Z",
+      "updated": "2026-10-05T07:35:26Z",
+      "abstract": "Seizure monitoring and detection are crucial for reducing the morbidity and mortality associated with seizures. Current epilepsy care, often involving expensive video-electroencephalography (VEEG) monitoring, requires specialized expertise and is limited to in-hospital settings, and intrusive in nature. Seizure diaries, on the other hand, suffer from unreliability due to under-reporting, leading to incorrect therapeutic decisions. Wearable non-invasive seizure detection may offer a more tolerable and feasible solution for long-term ambulatory monitoring. This study explores a wearable remote monitoring system utilizing a single wrist-worn accelerometer device and capable of detecting multiple types of seizures, including shorter duration events. We enrolled 79 patients under video-electroencephalography monitoring to wear accelerometer devices and collect data. Concurrent VEEG recordings were reviewed by board-certified epileptologists to produce annotations, including seizure onset, offset, and seizure type. Using this data, we constructed a deep neural network based on the time-series ResNet architecture, which could discriminate among seizure and non-seizure events. Our proposed approach achieved a seizure detection sensitivity of 95.65% and an overall false alarm rate of 0.15/24 hours during the evaluation, which spanned 5576 hours of total recording. Additionally, it resulted in an area under the receiver operating characteristic curve (AUC-ROC) of 0.98 and an area under the precision-re call curve (AUC-PRC) of 0.67 when averaged over 20 patients who experienced 46 convulsive seizures. These promising results suggest that the proposed seizure detection system can be effectively used for long-term ambulatory seizure monitoring. Future steps include validating our findings in larger datasets and assessing the utility of detection for additional seizure types.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2610.01268v1",
+      "title": "Global classical solutions for a metastatic cancer invasion model with negative haptotaxis",
+      "authors": [
+        "Nishith Mohan",
+        "Dimitrios Katsaounis"
+      ],
+      "published": "2026-10-01T08:07:58Z",
+      "updated": "2026-10-01T08:07:58Z",
+      "abstract": "We analyze a coupled PDE-ODE model for metastatic cancer invasion involving epithelial-like and mesenchymal-like cancer cells, cancer-associated fibroblasts (CAFs), the transforming growth factor $β$, matrix-degrading metalloproteinases, and extracellular matrix reconstruction by CAFs. The model incorporates bidirectional phenotypic transitions between epithelial-like and mesenchymal-like cancer cells, cancer-cell haptotaxis, negative fibroblast haptotaxis, as well as cell-specific proliferation. Under explicit parameter restrictions, we establish global classical solvability for the full model in two dimensions using an energy-based approach, and for a three-dimensional variant with constant phenotypic transition rates using coupled $L^p$-estimates. Numerical simulations illustrate primary tumor invasion and metastatic spread to secondary sites.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.40359v1",
+      "title": "Removing Timing Shortcuts Improves Non-Invasive Brain-to-Text",
+      "authors": [
+        "Dulhan Jayalath",
+        "Oiwi Parker Jones"
+      ],
+      "published": "2026-09-30T17:59:52Z",
+      "updated": "2026-09-30T17:59:52Z",
+      "abstract": "We find that major reported improvements in decoding words from non-invasive brain recordings are largely reproducible without any brain data. In the influential work of d'Ascoli et al. (2025), time series of brain activity from subjects perceiving continuous speech are segmented into fixed-length windows starting at each word. A neural network then generates predictions for all of the words in a sentence together. Neighbouring windows partially overlap, implicitly revealing the interval between words. Since these intervals indicate the duration of the words spoken, and different words tend to have different durations - for example, \"the\" is much shorter than \"supercalifragilisticexpialidocious\" - the neural network can improve its predictions of words without relying on the underlying brain activity. Consistent with this, the method reaches 22.0% balanced accuracy on synthetic signals containing no brain information, compared with 22.3% on real brain recordings. To prevent the network from learning this shortcut, we make a single, simple change. Instead of jointly encoding all windows in a sentence, we process each independently. As a result, the neural network achieves better performance by learning underlying word-specific information from brain recordings. This makes two existing strategies become much more effective than before. Both aggregating predictions from distinct neural responses to the same word and using a pretrained LLM as a linguistic prior now substantially improve results. On our perceived speech benchmark, this simple recipe (SimpleB2T) achieves a word error rate of 36.6% with five observations per word, approaching past invasive speech decoding performance, albeit under different conditions. The results in this work expose an important shortcut in brain-to-text decoding and show that removing it leads to a simple and considerably more effective strategy.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.40178v1",
+      "title": "Non-Invasive Inspection of Water Canals Using Dronar",
+      "authors": [
+        "Michael Zielinski",
+        "Zhizhan Wang",
+        "Benjamin Dymond",
+        "Reza Razavian",
+        "Zhongwang Dou"
+      ],
+      "published": "2026-09-30T17:03:32Z",
+      "updated": "2026-09-30T17:03:32Z",
+      "abstract": "Open concrete canals play a vital role in water transportation, serving as primary water infrastructure for millions of people across the Phoenix, Arizona, metro area. Over time, the concrete canals can experience a range of issues, including canal lining deformation, cracked concrete, and sediment buildup on the canal floor. Identifying such critical issues is a resource-intensive process, which currently happens only during four-year dry-up cycles. This prevents the maintenance crew from prioritizing operations on the most affected canal segments. To address this issue, the research team has developed and verified an easily deployable and non-invasive method to inspect canal beds without draining the water. This inspection system integrates affordable, off-the-shelf drone and sonar technology (termed dronar). This dronar system includes a consumer-grade sonar system integrated into an unmanned surface vehicle (USV) that carries the sonar transducer just under the surface of the canal water. This paper presents a proof-of-concept demonstration of the dronar system across three field tests on the Arizona Canal in Phoenix. DownScan depth profiles from the sedimented canal segment were consistently shallower than profiles from the same segment after cleaning, with offsets of up to 15 cm observed along the track. Repeated runs over the clean segment produced closely overlapping DownScan depth profiles, confirming that the dronar yields repeatable measurements across the natural variation of the canal bed. These results establish the dronar as a viable proof-of-concept tool for non-invasive canal bed inspection.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.36375v1",
+      "title": "Neural Succession: A Mesoscopic Theory of Invasion, Coexistence, and Stabilization in Continual Learning",
+      "authors": [
+        "Shoaib Ahmed Dipu",
+        "Md Salman Shamil",
+        "Sayeed Shafayet Chowdhury"
+      ],
+      "published": "2026-09-28T23:07:28Z",
+      "updated": "2026-09-28T23:07:28Z",
+      "abstract": "Continual learning is usually studied through mechanisms that preserve old knowledge. We develop Successional Learning Theory (SLT), a mesoscopic account in which the current representation is a resident community, the incoming task is an invader, forgetting is resident displacement, joint retention is coexistence, replay is resident reinforcement, and training moves from establishment toward stabilization. Its empirical coordinate is directional pre-invasion compatibility, measured on the resident model before the incoming task is learned. Across eight experiments, compatibility orders later forgetting on the 20 directed Split-CIFAR-10 transitions (three-repeat r=-0.789, incoming-task cluster 95% CI [-0.90,-0.72], every repeat alone r<=-0.67), forecasts held-out forgetting with 24% lower error than a no-information baseline, and reproduces under controlled MNIST permutations and CIFAR-10 rotations (r=-0.804, -0.718). On an 84-transition suite, compatibility separates coexistence from exclusion at every retention threshold (AUC 0.93-0.97). Replay repairs every transition with at most 325 stored examples and is most efficient where displacement is largest. Compatibility reaches |r|=0.720, while activation, representation, Jacobian, and fixed-coefficient Lotka-Volterra specializations do not. Plasticity and feature turnover fall reliably from early to late training (15/15 and 14/15 runs). We formalize a minimum habitat-modification bound, a displacement floor, a sufficient coexistence condition, an identifiability law with a range-restriction corollary, successional stabilization, and local reinforcement. The identifiability law also predicts where the coordinate loses leverage, and the prediction matches three CIFAR-100 partitions and five optimizer regimes. SLT is a pre-adaptation diagnostic that complements replay, regularization, and projection methods.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.34464v1",
+      "title": "Automatic Generation of Expert-Level Neuron Segmentation Masks from Fluorescence Microscopy Images for Non-Invasive Deep Learning Analysis of Phase-Contrast Images",
+      "authors": [
+        "Gerard Villarroya-Piqué",
+        "Víctor M. González",
+        "Esther Serrano-Pertierra",
+        "M. Teresa Fernandez-Sanchez",
+        "Antonello Novelli",
+        "Angel Rio-Alvarez"
+      ],
+      "published": "2026-09-28T07:20:08Z",
+      "updated": "2026-09-28T07:20:08Z",
+      "abstract": "Background & Objective Accurate segmentation of neurons in microscopy images of neuronal cultures is crucial for research on neurodegenerative diseases and neurotoxicity. Manual annotation of such images is time-consuming, subjective, and inconsistent across experts. Deep learning (DL) models offer an effective alternative, but require high-quality training datasets composed of microscopy images with accurately segmented neurons, typically created by experts. Neuronal cultures can be imaged using either phase-contrast or fluorescence microscopy. While live neurons are easily detected in fluorescence images, this modality requires staining, which affects cell viability. Conversely, phase-contrast imaging is non-invasive but makes neuron identification more challenging. Methods In this work we present a robust computer vision pipeline for the automatic generation of expert-level neuron segmentation masks from fluorescence microscopy images. These masks are used to train DL models for neuron identification in phase-contrast images. Our method relies on paired fluorescence and phase-contrast images captured simultaneously at the same magnification and coordinates, ensuring alignment across modalities. Once trained, the DL models can segment neurons in phase-contrast images alone, eliminating the need for fluorescence staining. Results We validate our approach by comparing the automatically generated masks with expert annotations using multiple agreement metrics, including IoU, Accuracy, and Gwet's AC1. Such metrics are calculated not only for the identification but also for the segmentation of instances. Conclusions This study presents a classical computer vision algorithm for generating neuron segmentation masks, which can be used for downstream applications such as non-invasive cell viability analyses by means of DL.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.30218v1",
+      "title": "Minimally Invasive Steering of Language Models",
+      "authors": [
+        "Taha Entesari",
+        "Jingyu Zhang",
+        "Daniel Khashabi",
+        "Mahyar Fazlyab"
+      ],
+      "published": "2026-09-24T17:46:46Z",
+      "updated": "2026-09-24T17:46:46Z",
+      "abstract": "Pre-logit steering adapts a frozen language model to a test-time reward by adding vectors to its final hidden states. Unregularized reward optimization can substantially alter the output distribution and degrade generation quality. We propose Minimally Invasive Steering Vector Optimization (MISVO), which penalizes interventions using the local KL geometry of the induced token distribution. The resulting Fisher quadratic measures distributional sensitivity and admits an analytic gradient computed through matrix--vector products with the frozen language-model head. We derive an exact decomposition of the sequence-level KL gradient into an analytic Fisher term and a suffix score-function term. For a fixed generation horizon, we show that the suffix term is second order in the steering magnitude and that three Fisher surrogates agree with the full KL gradient to first order. MISVO uses the frozen-reference surrogate to optimize position-specific interventions without updating model parameters. Across preference and code-generation tasks on models with approximately 1B--14B parameters, MISVO achieves the highest mean reward in six of seven model--task settings, with diversity and coherence scores close to those of Best-of-N.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.27099v1",
+      "title": "Design and Modeling of a Single-Port Three-Arm Robotic Tool for Minimally Invasive Neurosurgery",
+      "authors": [
+        "Nazia H. Dana",
+        "Harith S. Gallage",
+        "Ismail A. Auta",
+        "Dhanvi Yuvaraj",
+        "Ronghuai Qi"
+      ],
+      "published": "2026-09-22T21:54:18Z",
+      "updated": "2026-09-22T21:54:18Z",
+      "abstract": "Surgical robots require highly dexterous and compact robotic systems capable of operating effectively within confined anatomical spaces. However, due to limited access provided by a single incision, the miniaturization and maneuverability of these robots still need to be improved. In this paper, we propose the design and modeling of a single-port three-arm robotic tool containing one major cannula (7.14 mm outer diameter (OD)) and three steerable minor cannulas (1.93 mm OD). By integrating the proposed 12 degrees-of-freedom (DoFs) steerable robotic tool with a 7-DoF robotic arm, this robotic system can potentially achieve multi-arm manipulation capability. We present the design of the steerable robotic tool consisting of tendon-driven joints controlled by a compact actuation system, derive the kinematic model, and validate both the static and kinematic models through experiments. The performance is evaluated with the root mean square error (RMSE) and mean absolute error (MAE) computed between the experimental data and the kinematic model.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.24524v1",
+      "title": "Preoperative Prediction of Microvascular Invasion in Hepatocellular Carcinoma by Integrating Multimodal Ultrasound and Clinical Data: A Multicenter Study",
+      "authors": [
+        "Jun Cheng",
+        "Yuanyuan Kong",
+        "Qing Huang",
+        "Xiaotong Tan",
+        "Licong Dong",
+        "Yulong Han",
+        "Wufeng Xue",
+        "Ruobing Huang",
+        "Dong Ni",
+        "Qi Yang",
+        "Jie Yu",
+        "Ping Liang"
+      ],
+      "published": "2026-09-21T12:59:53Z",
+      "updated": "2026-09-21T12:59:53Z",
+      "abstract": "Background: Microvascular invasion (MVI) predicts recurrence and survival in hepatocellular carcinoma (HCC) but requires postoperative histopathology for diagnosis. We developed and validated a model integrating multimodal ultrasound and clinical data for preoperative MVI prediction. Methods: This multicenter study included 489 patients with HCC from eight centers. All patients had B-mode ultrasound (BUS), color Doppler flow imaging (CDFI), dynamic contrast-enhanced ultrasound (DCE-US), and clinical information. Data from seven centers (n = 421) were used for model development with five-fold cross-validation; data from the remaining center (n = 68) formed an independent external validation cohort. The proposed multimodal information fusion network used modality-specific encoders, a hemodynamic temporal change module for bidirectional DCE-US perfusion changes, and a representation consistency learning module to align heterogeneous ultrasound representations before Transformer-based fusion. Results: In external validation, DCE-US achieved the highest single-modality area under the receiver operating characteristic curve (AUC; 0.8545+/-0.0198), versus clinical information (0.6715+/-0.0156), CDFI (0.6435+/-0.0344), and BUS (0.6087+/-0.0417). Pixel-difference sampling and the proposed temporal module outperformed alternative sampling and video representation methods. The full model achieved the best performance, with an AUC of 0.8953+/-0.0180, accuracy of 81.18%+/-2.83%, sensitivity of 86.40%+/-6.69%, and specificity of 78.14%+/-6.28. Conclusions: Integrating multimodal ultrasound and clinical information enabled promising preoperative MVI prediction in HCC. DCE-US was the main source of predictive information, while BUS, CDFI, and clinical information provided complementary value. The proposed framework may support preoperative risk stratification and individualized clinical decision-making.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.24095v2",
+      "title": "HDND: Hierarchical Dynamic Neural Decoding for Multilingual Word/Character Retrieval from Non-Invasive Brain Recordings",
+      "authors": [
+        "Yueyang Li",
+        "Shuran Chen",
+        "Wai Ting Siok",
+        "Nizhuan Wang"
+      ],
+      "published": "2026-09-21T04:28:18Z",
+      "updated": "2026-09-30T04:56:37Z",
+      "abstract": "While deep learning has enabled language decoding from intracranial brain recordings, extending this capability to non-invasive recordings remains an unresolved challenge. Decoding individual words from non-invasive brain recordings is particularly difficult, as word-level neural evidence is weak, temporally distributed, and entangled with acoustic, lexical, and semantic structure. Existing retrieval pipelines often collapse these factors into a single representation, potentially discarding information available at intermediate temporal scales. Here, we introduce Hierarchical Dynamic Neural Decoding (HDND), a hierarchical dynamic decoding framework that treats word decoding as structured refinement rather than flat label retrieval. HDND combines intermediate neural representations, contextual semantic predictions, and, for selected reading conditions, an auxiliary character-form objective. We evaluate HDND across seven electroencephalography (EEG) and magnetoencephalography (MEG) datasets spanning English, Dutch, Mandarin, and Cantonese listening, reading, and reading-aloud conditions. Across the nine-condition word-retrieval benchmark, the proposed HDND yields a higher participant-averaged balanced Top-10 point estimate than the matched contextual word-decoding baseline in every condition and achieves the highest mean among all compared methods in eight of nine conditions. Across the same nine matched conditions, HDND also yields higher token-micro and pooled word-macro Top-10 point estimates in every setting. Sentence retrieval favors HDND in eight of nine conditions, while auditory speech-segment retrieval is mixed across the six listening conditions. These results show that hierarchical residual refinement can improve multilingual word retrieval from heterogeneous non-invasive brain recordings.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.23229v1",
+      "title": "Tumor-induced lipid loss physically accelerates breast cancer invasion into mammary adipose tissue",
+      "authors": [
+        "Garrett F. Beeghly",
+        "Dong Wang",
+        "Bo Ri Seo",
+        "Yitong Zheng",
+        "Joseph E. Druso",
+        "Benjamin D. Hopkins",
+        "Linda T. Vahdat",
+        "Neil M. Iyengar",
+        "Mark D. Shattuck",
+        "Corey S. O'Hern",
+        "Claudia Fischbach"
+      ],
+      "published": "2026-09-19T22:09:45Z",
+      "updated": "2026-09-19T22:09:45Z",
+      "abstract": "Obesity is a major risk factor for breast cancer, yet how obesity-associated changes in the physical properties of white adipose tissue (WAT) influence tumor invasion remains poorly understood. Here, we combine experimental and computational approaches to investigate this question. Using mouse models and human mastectomy samples, we show that obesity not only increases adipocyte size, but also asphericity. We observe that tumor-conditioned media drives lipid loss and dedifferentiation of adipocytes into myofibroblast-like cells in vitro and that adipocytes in high-fat diet-fed mice lose lipid at a faster rate than those in normal diet-fed mice in response to mammary tumors in vivo. We then develop discrete element method (DEM) simulations to understand how these obesity-induced changes in cell and tissue properties alter breast cancer invasion under high-fat and normal diet conditions. In DEM simulations, adipocytes are modeled as deformable polygons and polyhedra, and cancer cells are modeled as soft, adhesive disks and spheres in two and three dimensions, respectively. Invasion is driven by cancer cell proliferation and tumor-induced lipid loss is modeled as corresponding decreases in adipocyte size. DEM simulations indicate that obesity-associated increases in tissue pressure induce adipocyte deformation, consistent with elevated asphericity in experimental data. At small lipid loss rates, the degree of cancer invasion is only weakly affected by tissue pressure. However, at sufficiently large lipid loss rates, we find that tissue pressure accelerates cancer invasion. Together, these results suggest that lipid loss physically remodels WAT to facilitate breast cancer invasion, and that obesity may exacerbate this effect.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.19422v1",
+      "title": "BurnRiSc: Toward Non-Invasive Burnout Screening in Open Source from Public Repository Signals",
+      "authors": [
+        "Timofey Sanko",
+        "Yuan Tian",
+        "Mariam Guizani"
+      ],
+      "published": "2026-09-16T20:55:41Z",
+      "updated": "2026-09-16T20:55:41Z",
+      "abstract": "Burnout is a chronic occupational syndrome, and open source is close to a worst case for it: maintainers absorb unbounded demand with no manager to reallocate work and no organization to notice decline. The cost is not only personal. Burnout precedes withdrawal, and in projects sustained by a handful of maintainers, one departure can break infrastructure that thousands of downstream systems depend on. Yet the field has no way to see it coming: self-report inventories, the only existing measure, miss exactly the contributors most in need of detection and cannot be applied retroactively, so the field cannot even ask how common burnout is or what helps. We present BurnRiSc, a framework that operationalizes the Oldenburg Burnout Inventory's two dimensions, exhaustion and disengagement, as 14 behavioral and linguistic signals computed from GitHub activity and scored against each contributor's own history. The signals aggregate into two weighted dimension scores, with weights learned from labeled cases, and average into a monthly Burnout Risk Score (BRS). In a preliminary evaluation across 68 contributors in ten repositories (ten disclosed burnout cases, twelve comparable-volume collapses, and 46 comparison contributors), sustained BRS elevation precedes 6 of 10 disclosures by 6-15 months, 8 of 10 when adding peak BRS as a second criterion, and 10 of 10 over any prior time frame. We thus present BurnRiSc as evidence that burnout is screenable from public data.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.17350v1",
+      "title": "SpiroPhonia: Non-Invasive Respiratory Health Assessment from Spontaneous Speech",
+      "authors": [
+        "Roksana Khanom",
+        "Shafia Supty",
+        "Nirupam Roy",
+        "Ashok Agrawala"
+      ],
+      "published": "2026-09-15T15:49:37Z",
+      "updated": "2026-09-15T15:49:37Z",
+      "abstract": "Chronic Obstructive Pulmonary Disease (COPD) remains a major global health challenge, emphasizing the need for accessible and non-invasive detection. Since speech production is fundamentally linked to respiratory physiology, its disruptions can serve as indirect indicators of pulmonary impairment. This study introduces SpiroPhonia, a machine learning framework that leverages spontaneous speech for respiratory health assessment. We evaluated SpiroPhonia on a new dataset of 201 speakers (102 with COPD, 99 healthy controls). By integrating statistical analysis with recursive feature selection, we identified a compact set of discriminative speech markers. Our best model achieved 78% accuracy, 80% F1-score, and 87% AUC. This performance on spontaneous speech is competitive with methods using controlled laboratory recordings. Findings demonstrate that everyday speech encodes robust respiratory biomarkers, paving the way for continuous health monitoring via voice-enabled technologies.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.15269v2",
+      "title": "Invasion dynamics with vanishing fitness for a quasi-critical birth-death process",
+      "authors": [
+        "Vincent Bansaye",
+        "Nadia Belmabrouk",
+        "Xavier Erny",
+        "Simon Girel"
+      ],
+      "published": "2026-09-14T09:28:58Z",
+      "updated": "2026-10-18T12:15:22Z",
+      "abstract": "We study the invasion dynamics of populations exhibiting positive density-dependent effects. We start with a single individual and consider a single-type birth and death process. The initial individual growth rate vanishes but it increases with the population density, proportionally to the number of individuals divided by a scaling parameter $K$. Before reaching the macroscopic scale~$K$, the population process is almost critical. We prove that the probability for the population to reach the macroscopic level $K$ decreases as $1/\\sqrt{K}$ as $K$ goes to infinity. We also describe the associated trajectories and show that invasion can be split into three time periods. First, the process needs to escape from zero, and conditioning on survival, it grows linearly until the order $\\sqrt{K}$. The scaled process is approximated by a diffusion, as for critical branching process, with an additional drift term coming from cooperation, which breaks the branching property. Second, in intermediate scale $\\sqrt{K}$, we observe another diffusion, surviving with positive probability, without conditioning. Finally, beyond $\\sqrt{K}$ scale, the process can be approximated by a classical macroscopic ODE limit. The proof of the first phase involves change of probability and characterization of uniform integrability of martingales, while the two other phases rely on uniform approximations on polynomial time scales.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.14573v1",
+      "title": "A free boundary problem for spreading of an invasive species in the territory of a native competitor under shifting climate",
+      "authors": [
+        "Phuoc Vinh Dinh",
+        "Phuong Le",
+        "Tien Dung Nguyen"
+      ],
+      "published": "2026-09-13T14:59:35Z",
+      "updated": "2026-09-13T14:59:35Z",
+      "abstract": "In this paper we consider a free boundary problem for the spreading of an invasive species in the habitat of a native competitor. We assume that the invasive species benefits from a climate shift that turns the environment from unfavorable to favorable at a constant speed $c$. We show that if the invasive species is an inferior one, then it must vanish, while the native competitor always persists. However, if the invasive species is a superior one, then a dichotomy occurs: either the invasive species vanishes and the native one persists, or the invasive one spreads and the native one vanishes. We also show that in the latter case the asymptotic spreading speed equals $\\min\\{c, c_0\\}$, where $c_0$ is the spreading speed in the corresponding homogeneous environment. Numerical simulations are provided to illustrate our theoretical results.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.13753v1",
+      "title": "A Nonlocal Perfusion-Gated Angiogenesis System: Global Weak Solutions, Fast-Signal Limits, and Invasion Fronts",
+      "authors": [
+        "Jiguang Yu",
+        "Louis Shuo Wang"
+      ],
+      "published": "2026-09-12T06:47:38Z",
+      "updated": "2026-09-12T06:47:38Z",
+      "abstract": "Continuum angiogenesis systems often use local endothelial or vessel density as an oxygen-delivery proxy without distinguishing structurally formed vessels from pressure-supported vascular function. We formulate a two-dimensional model in which lumenized density determines a normalized nonlocal conductivity, a globally solved pressure field, and a flow-functional density that gates oxygen delivery and vessel regression. For fixed positive regularization parameters and signal relaxation times, we prove Lipschitz stability of the pressure--perfusion map and global bounded weak solvability; strong vessel compactness follows from a nonlocal ordinary differential equation stability estimate rather than spatial smoothing. As the oxygen and vascular endothelial growth factor timescales vanish simultaneously, weak solutions converge along a subsequence to a parabolic--elliptic--ordinary differential equation system, with both fast fields converging strongly in \\(L^2(0,T;H^1)\\). A locally frozen one-dimensional reduction admits monotone fronts precisely at or above the threshold \\(B+2\\sqrt{DR}\\) for \\(B\\geq-\\sqrt{DR}\\) and \\(-DR/B\\) otherwise. Finite-volume experiments verify the analytical mechanisms and show that equal-mass vessel fields can generate distinct functional masses and oxygenation levels.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.12824v1",
+      "title": "Newtonian fluid invasion into a Yield-Stress Fluid-Saturated Medium",
+      "authors": [
+        "Nathan Abitbol",
+        "Alex Hansen",
+        "Alberto Rosso",
+        "Federico Lanza",
+        "Laurent Talon"
+      ],
+      "published": "2026-09-11T13:21:03Z",
+      "updated": "2026-09-11T13:21:03Z",
+      "abstract": "We investigate pressure imposed two-phase flows in porous media where a Newtonian fluid displaces an immiscible Bingham yield-stress fluid. Using a pore-network model, we identify invasion patterns governed by three dimensionless parameters: the pressure-based capillary number $Ca_P$, the viscosity ratio $M$ , and a number $R_τ$, the ratio of yield stress to capillary forces. Beyond the classical Lenormand regimes (viscous fingering, capillary fingering, stable displacement), we discover two new regimes: a tree-like pattern at low viscosity ratios and a progressively widening column-like pattern at high viscosity ratios. We characterize all regime transitions and establish a breakthrough condition for the invading fluid.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.11271v1",
+      "title": "Order-Aware 2.5D Multiple Instance Learning for Preoperative MRI-Based Perineural Invasion Risk Assessment in Intrahepatic Cholangiocarcinoma",
+      "authors": [
+        "Hyunsu Go",
+        "Youngung Han",
+        "Kyeonghun Kim",
+        "Jinyong Jun",
+        "Junbeom Lee",
+        "Dohyun Kweon",
+        "Yului Jeong",
+        "Suah Park",
+        "Sungha Park",
+        "Anna Jung",
+        "Woo Kyoung Jeong",
+        "Ken Ying-Kai Liao",
+        "Hyuk-Jae Lee",
+        "Nam-Joon Kim"
+      ],
+      "published": "2026-09-10T09:04:52Z",
+      "updated": "2026-09-10T09:04:52Z",
+      "abstract": "Perineural invasion (PNI) is an adverse histopathologic marker in intrahepatic cholangiocarcinoma (ICC), but it is usually confirmed only after resection. Preoperative T2-weighted MRI may provide noninvasive imaging cues predictive of PNI, although labels are available only at the patient level without slice- or voxel-level annotations. We propose Order-Aware Slab Multiple Instance Learning (OAS-MIL), a weakly supervised framework for patient-level PNI prediction. Each tumor-centered MRI crop is represented as an ordered sequence of overlapping 2.5D slabs formed from contiguous axial slices. A shared encoder extracts slab-level features, which are aggregated by a permutation-invariant set-attention branch and a bidirectional sequence-attention branch. Using five-fold label-stratified cross-validation at the patient level, OAS-MIL achieved a mean AUROC of 0.770, outperforming the evaluated volumetric and MIL baselines. These results suggest that axial order provides a useful inductive bias for weakly supervised PNI prediction from MRI.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.11237v2",
+      "title": "SCINTILLA-SNN: A Spiking Multi-Scale Selective Aggregation Network for Perineural Invasion Prediction",
+      "authors": [
+        "Youngung Han",
+        "Yului Jeong",
+        "Kyeonghun Kim",
+        "Dohyun Kweon",
+        "Suah Park",
+        "Hyunsu Go",
+        "Sungha Park",
+        "Anna Jung",
+        "Jinyong Jun",
+        "Yunho Choe",
+        "Yunjin Seo",
+        "Ken Ying-Kai Liao",
+        "Hyuk-Jae Lee",
+        "Nam-Joon Kim"
+      ],
+      "published": "2026-09-10T08:36:34Z",
+      "updated": "2026-10-11T13:26:40Z",
+      "abstract": "Preoperative prediction of perineural invasion (PNI) in cholangiocarcinoma (CCA) is clinically valuable but remains challenging because PNI-related cues on magnetic resonance imaging (MRI) are subtle, sparse, and spatially localized around the tumor boundary. Standard 3D CNN and transformer architectures process volumetric data in a dense or spatially uniform manner, which can dilute subtle PNI-related evidence while requiring a large number of multiply-accumulate operations over 3D feature grids. To address these limitations, we propose SCINTILLA-SNN, a 3D spiking network composed of a four-stage hierarchical backbone and a Multi-Scale Spike Aggregation (MSSA) module for PNI prediction. The backbone extracts hierarchical volumetric representations through spiking convolutional stages and local spike window modulation stages. Given the resulting stage-wise representations, MSSA maps each spatial token to a learnable content value and modulates it with a spike-dynamics gate derived from firing rate and timestep-wise membrane-potential variability. The resulting score, referred to as the diagnostic token score, is used to selectively aggregate sparse PNI-related evidence. Experiments on a 10-year retrospective cohort of 182 CCA patients show that SCINTILLA-SNN achieves an AUROC of 0.748 under 5-fold cross-validation, while reducing the estimated inference energy by 23.18$\\times$ compared with dense MAC-only computation of the same network.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.10463v3",
+      "title": "Protected domains and cooperative invasion on weighted networks",
+      "authors": [
+        "Abhishek Chowdhury"
+      ],
+      "published": "2026-09-09T17:08:13Z",
+      "updated": "2026-10-15T17:51:18Z",
+      "abstract": "Reciprocal contacts can favor cooperation by protecting a lineage until its descendants compete as a group. An individual is chosen to reproduce from the whole population, with a probability increasing with its averaged cooperation payoff. Its offspring replaces a neighbor through contacts weighted equally in both directions. We compare a single cooperator taking over defectors with the reverse invasion, using the same distribution of introduction sites. When payoffs weakly affect reproduction, every network with at least six sites and a path visiting them all admits weights favoring cooperation at any benefit-cost ratio $b/c>1$. This holds for mutants placed uniformly or arising in newborn offspring. Unequal contacts sustain aligned domains around two protected sites, converting individual reproduction into collective competition. Cooperation cannot have an advantage when its benefit does not exceed its cost, at any positive selection strength with positive reproduction rates. Where mutants arise changes which contact patterns can use this mechanism. On a five-site path, the weak-selection threshold has the sharp lower bound seven under uniform placement; newborn introduction never favors cooperation at this order. We classify the contact patterns with at most five sites that can favor cooperation under either rule; newborn introduction requires a four- or five-site cycle. Tracing copies backward to their ancestors separates domain competition from the probability of reaching it. Exact polynomial inequalities prove sharp threshold bounds for paths and the four- and five-site cycles. The same ancestry reconstructs evolution without selection on weighted paths and cycles and fixes the slowest relaxation rate on every connected reciprocal network. Cooperation thus depends on both the collective competitors created by contacts and the route by which a new lineage enters them.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.10296v2",
+      "title": "The Semantic Bottleneck: Leveraging Semantic Representations for Non-Invasive Speech Decoding",
+      "authors": [
+        "Gilad D. Landau",
+        "Dulhan Jayalath",
+        "Oiwi Parker Jones"
+      ],
+      "published": "2026-09-09T15:11:57Z",
+      "updated": "2026-10-07T13:33:46Z",
+      "abstract": "Non-invasive speech decoding remains constrained by the low signal-to-noise ratio of neural recordings, which makes fine-grained reconstruction of phonemes or individual words difficult. Motivated by neuroscientific evidence that high-level semantic representations are distributed across cortical regions and evolve over slower temporal scales, we hypothesize that semantic content may provide a more suitable target for non-invasive decoding than low-level acoustic or lexical features. We introduce Brain2Semantics2Text, a method that reconstructs text through an intermediate semantic embedding space. Our model maps sentence-level MEG responses into a semantic manifold and then inverts the predicted embeddings into natural language. This semantic bottleneck enables recovery of high-level meaning without word-level alignment. We describe the core principles of the approach, its implementation, and the strategies used to mitigate the challenges of learning a reliable neural-to-semantic mapping. Finally, we compare against prior non-invasive Brain2Text methods and show improved sentence-level results.",
+      "doi": "UNVERIFIED",
+      "journal_ref": "UNVERIFIED"
+    }
+  ],
+  "status": "OK"
+}

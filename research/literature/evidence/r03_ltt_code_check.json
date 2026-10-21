@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-21",
+  "sources": [
+    {
+      "key": "ltt_meps",
+      "url": "https://raw.githubusercontent.com/aangelopoulos/ltt/3ad7a64adad9f356e29f40e73935a6114f896396/experiments/meps/experiment.py",
+      "sha256": "b043d9c4738cdf250ddd2d3b6172adfe5c74fe21286623d7435838c8d63a6757",
+      "inspection": "parent targeted static lines; not executed",
+      "hits": [
+        {
+          "term": "mse_max",
+          "line": 176,
+          "excerpt": "mse_max = mse_table.max()"
+        },
+        {
+          "term": "mse_max",
+          "line": 177,
+          "excerpt": "mse_table = mse_table/mse_max # scale all to 0-1"
+        },
+        {
+          "term": "squared_errors",
+          "line": 162,
+          "excerpt": "squared_errors = (mean_val - y_val)**2"
+        },
+        {
+          "term": "squared_errors",
+          "line": 166,
+          "excerpt": "loss_table[:,0,i] = (squared_errors * bool_predict) - alpha*bool_predict + alpha"
+        },
+        {
+          "term": "bonferroni_HB",
+          "line": 255,
+          "excerpt": "rejection_region_functions = ( uniform_region, bonferroni_HB, _bonferroni_search_HB, _bonferroni_search_HB_J1 )"
+        }
+      ]
+    },
+    {
+      "key": "ltt_concentration",
+      "url": "https://raw.githubusercontent.com/aangelopoulos/ltt/3ad7a64adad9f356e29f40e73935a6114f896396/core/concentration.py",
+      "sha256": "8f0df536d3c77a29b88030019c105e6640bc5d66c5af222d0da3050729fd1fbf",
+      "inspection": "parent targeted static lines; not executed",
+      "hits": [
+        {
+          "term": "def bonferroni_HB",
+          "line": 127,
+          "excerpt": "def bonferroni_HB(loss_table,lambdas,alpha,delta):"
+        }
+      ]
+    }
+  ]
+}

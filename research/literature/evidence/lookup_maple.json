@@ -1,0 +1,140 @@
+{
+  "date": "2026-10-20",
+  "url": "https://api.crossref.org/works?query.title=Supervised%20Neighborhoods%20for%20Improved%20Model%20Interpretability&rows=2&select=DOI,title,author,published,container-title,type,URL",
+  "kind": "json",
+  "response": {
+    "status": "ok",
+    "message-type": "work-list",
+    "message-version": "1.0.0",
+    "message": {
+      "facets": {},
+      "total-results": 3560109,
+      "items": [
+        {
+          "DOI": "10.1016/j.array.2024.100350",
+          "title": [
+            "Inter-model interpretability: Self-supervised models as a case study"
+          ],
+          "author": [
+            {
+              "given": "Ahmad",
+              "family": "Mustapha",
+              "sequence": "first",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-2241-8665",
+              "authenticated-orcid": false,
+              "given": "Wael",
+              "family": "Khreich",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Wes",
+              "family": "Masri",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                7
+              ]
+            ]
+          },
+          "container-title": [
+            "Array"
+          ],
+          "type": "journal-article",
+          "URL": "https://doi.org/10.1016/j.array.2024.100350"
+        },
+        {
+          "DOI": "10.2139/ssrn.4184454",
+          "title": [
+            "Inter-Model Interpretability: Self-Supervised Models as a Case Study"
+          ],
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0001-5345-2666",
+              "authenticated-orcid": true,
+              "given": "Ahmad",
+              "family": "Mustapha",
+              "sequence": "first",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-2241-8665",
+              "authenticated-orcid": true,
+              "given": "Wael",
+              "family": "Khreich",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0001-8842-7129",
+              "authenticated-orcid": true,
+              "given": "Wassim",
+              "family": "Masri",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2022
+              ]
+            ]
+          },
+          "type": "posted-content",
+          "URL": "https://doi.org/10.2139/ssrn.4184454"
+        }
+      ],
+      "items-per-page": 2,
+      "query": {
+        "start-index": 0,
+        "search-terms": null
+      }
+    }
+  },
+  "status": "OK"
+}

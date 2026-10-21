@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-20",
+  "url": "https://api.github.com/repos/shap/shap",
+  "kind": "json",
+  "response": {
+    "full_name": "shap/shap",
+    "html_url": "https://github.com/shap/shap",
+    "default_branch": "main",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "pushed_at": "2026-10-20T13:05:56Z"
+  },
+  "status": "OK",
+  "normalization_note": "Minimum repository/commit provenance retained; personal emails/signatures omitted."
+}
