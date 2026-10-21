@@ -1,0 +1,14 @@
+# Alt ajan kayıtları ve bağımsız kontrol
+
+2026-10-21. Her yeni görevlendirme öncesi `list_agents_and_models` çağrıldı; seçilen native model tam kimliği `openai-subscribed/gpt-6-luna`. Luna/Medium tercihine uygun model erişildi ancak araç reasoning seviyesi parametresi sunmuyor; Medium ayarlandığı iddia edilmez. Yerel/Rumeli/company-coder kullanılmadı.
+
+| Session | Kapsam / kanıt standardı ve sınırlar | Sonuç / ana ajan doğrulaması |
+|---|---|---|
+| cc9cffe7-1a08-4a0e-9bfd-f9222ecf8dd5 | UCI597/186/320;official metadata+license+possible raw stats;raw yalnız private interim;no models/hidden/private BGH-Torres;assigned uci files | İlk tur raw parse yok ve H/metric tanımları yanlıştı. Görev daraltılıp gerçek H1/H2/H3 ve sekiz XAI boyutu açıkça tekrar verildi;ikinci tur raw/hash sağladı. Parent student13-key ve garment department kontrolünü bağımsız tekrar hesapladı;39 signature ifadesini final kişi eşleme bulgusu olarak reddetti. Hardcoded-path script yerine configurable audit yazıldı;rapor tamamen düzeltildi. |
+| e729a401-c1bf-40f9-a986-e4bbe452d04d | TOCUCO + önceki INX/HR source/target/license;NHANES/LEST metadata-only;no other worktrees/hidden raw | Dış worktree dosya araçlarıyla yazma başarısız;aynı yazma işi tekrar başlatılmadı,bulgular cevap olarak istendi. Parent UCO landing/per-dataset metadata ve pinned old acquisition contract okudu. Alt ajanın H tanımları user hipotezleriyle uyuşmadığı için karar kanıtına alınmadı. Commit signature iddiası bilimsel otorite sayılmadı. HR özgün creator sonra parent tarafından bulundu;sentetik bulgusu alt ajanın belirsizliğini çözdü. |
+| 95727e69-60f6-44c9-a6e8-82f65ad185b5 | BGH official license;Torres DOI;Trip/Fresh/TILES metadata/access;no raw/restricted/register/contact;response-only | BGH/Fresh/TILES metadata ve Parkinson alternatifi sağladı;Torres/Trip fetch başarısız kaldı. Parent Crossref+publisher ve Harvard API ile bu iki erişim belirsizliğini kısmen çözdü. Parent raw değil metadata sonucu için onay verdi;gerçek file population/ID/rubric hâlâ UNVERIFIED. |
+
+Alt ajanlar bilimsel kabul yetkisi taşımadı. Görevler disjointti; yerel BGH/Torres ham denetimini yalnız parent yaptı. Kaynaksız varsayımlar, yanlış hipotez/metrik eşlemeleri ve salt dosya erişimi başarı iddiası elendi. Çıktı sayısı veya model çalışması başarı ölçütü sayılmadı.
+
+## Bağımsız son tutarlılık incelemesi
+Session `7bcd3782-48f0-4e46-a911-e83fbfe638ad`,native model `openai-subscribed/gpt-6-sol`;çağrı öncesi model listesi doğrulandı. Görev yalnız belirtilen public belgeler/JSONlar,salt okunur,no network/raw/edits. Ana sayısal iddialardaP0tutarsızlık bulmadı;H1/H2 açıklama-loss ayrımı veH3 cumulative-output tanımını ana raporda daha açık istemesiP1olarak kabul edildi. Parent tanımsal veri sözleşmesini ekledi;benchmarkloss/algoritma kararını üstlenmedi. Bu bağımsız bilimsel onay veyaAgent5finaltest değildir.

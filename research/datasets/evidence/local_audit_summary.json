@@ -1,0 +1,461 @@
+{
+  "audit_started_at_utc": "2026-10-21T10:01:58.270621+00:00",
+  "versions": {
+    "python": "3.13.15",
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "numpy": "2.5.4",
+    "openpyxl": "3.1.5"
+  },
+  "bgh": {
+    "rows": 74071,
+    "columns": 54,
+    "dtypes": {
+      "year": "int8",
+      "edlev": "str",
+      "age": "float64",
+      "sex": "str",
+      "titleok": "int8",
+      "edyrs": "float64",
+      "level": "str",
+      "salary": "float32",
+      "bonus": "float64",
+      "salgrade": "str",
+      "costcen": "str",
+      "perfrat": "str",
+      "sal88": "float32",
+      "nsalinc": "float32",
+      "rsalinc": "float32",
+      "bonus88": "float32",
+      "comp88": "float32",
+      "grade": "float64",
+      "rating": "float64",
+      "fsalary": "float32",
+      "fsal88": "float32",
+      "fslevel": "float32",
+      "yratco": "float64",
+      "yratlevl": "float64",
+      "yratitle": "float64",
+      "flevel": "float64",
+      "fylev2": "float64",
+      "fylev3": "float64",
+      "fylev4": "float64",
+      "fylev5": "float64",
+      "bonuspct": "float32",
+      "olevel": "str",
+      "titlechg": "float64",
+      "promoted": "float64",
+      "nnsalinc": "float32",
+      "nrsalinc": "float32",
+      "yrtoquit": "float64",
+      "yrtoleav": "float64",
+      "yrtoprom": "float64",
+      "yrtodemo": "float64",
+      "yrtolatl": "float64",
+      "yrtochgt": "float64",
+      "salaryok": "int8",
+      "nlevel": "str",
+      "relinc": "float32",
+      "cosalinc": "float32",
+      "nrelinc": "float32",
+      "bubble": "int8",
+      "alltitok": "float64",
+      "allsalok": "float64",
+      "titlcode": "str",
+      "racevar": "float64",
+      "randomid": "int32",
+      "function": "str"
+    },
+    "missing": {
+      "year": 0,
+      "edlev": 0,
+      "age": 284,
+      "sex": 0,
+      "titleok": 0,
+      "edyrs": 11965,
+      "level": 0,
+      "salary": 678,
+      "bonus": 45397,
+      "salgrade": 0,
+      "costcen": 0,
+      "perfrat": 0,
+      "sal88": 11118,
+      "nsalinc": 23844,
+      "rsalinc": 23844,
+      "bonus88": 37224,
+      "comp88": 37224,
+      "grade": 28434,
+      "rating": 28398,
+      "fsalary": 14315,
+      "fsal88": 23217,
+      "fslevel": 19089,
+      "yratco": 18669,
+      "yratlevl": 14252,
+      "yratitle": 14399,
+      "flevel": 22797,
+      "fylev2": 42817,
+      "fylev3": 49884,
+      "fylev4": 61067,
+      "fylev5": 72745,
+      "bonuspct": 37224,
+      "olevel": 0,
+      "titlechg": 20774,
+      "promoted": 21097,
+      "nnsalinc": 23844,
+      "nrsalinc": 23844,
+      "yrtoquit": 41581,
+      "yrtoleav": 38593,
+      "yrtoprom": 49720,
+      "yrtodemo": 73703,
+      "yrtolatl": 70403,
+      "yrtochgt": 47720,
+      "salaryok": 0,
+      "nlevel": 0,
+      "relinc": 23844,
+      "cosalinc": 1305,
+      "nrelinc": 23844,
+      "bubble": 0,
+      "alltitok": 3354,
+      "allsalok": 3354,
+      "titlcode": 0,
+      "racevar": 855,
+      "randomid": 0,
+      "function": 0
+    },
+    "duplicate_rows": 0,
+    "constant_columns": [],
+    "empty_string_counts": {
+      "edlev": 11946,
+      "sex": 121,
+      "level": 6577,
+      "salgrade": 16901,
+      "costcen": 518,
+      "perfrat": 24596,
+      "olevel": 19376,
+      "nlevel": 18371,
+      "titlcode": 0,
+      "function": 2310
+    },
+    "missing_policy": "Native numeric nulls and empty string counts reported separately; semantic missing codes require codebook",
+    "perfrat_rating_crosstab": {
+      "1.0": {
+        "1": 13263,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 731
+      },
+      "2.0": {
+        "1": 0,
+        "2": 22314,
+        "3": 0,
+        "4": 442,
+        "5": 0
+      },
+      "3.0": {
+        "1": 0,
+        "2": 0,
+        "3": 8455,
+        "4": 0,
+        "5": 0
+      },
+      "4.0": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 438,
+        "5": 0
+      },
+      "5.0": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 30
+      }
+    },
+    "unique_persons": 16133,
+    "missing_person_ids": 0,
+    "duplicate_person_year": 0,
+    "year_range_encoded": [
+      69,
+      88
+    ],
+    "rating_counts": {
+      "1.0": 13994,
+      "2.0": 22756,
+      "3.0": 8455,
+      "4.0": 438,
+      "5.0": 30,
+      "nan": 28398
+    },
+    "titleok_rating_counts": {
+      "1.0": 12551,
+      "2.0": 19903,
+      "3.0": 7086,
+      "4.0": 294,
+      "5.0": 19,
+      "nan": 23104
+    },
+    "rows_by_year": {
+      "69": 1305,
+      "70": 1439,
+      "71": 1556,
+      "72": 1610,
+      "73": 1762,
+      "74": 2049,
+      "75": 2648,
+      "76": 2696,
+      "77": 2941,
+      "78": 3233,
+      "79": 3441,
+      "80": 3699,
+      "81": 4142,
+      "82": 4479,
+      "83": 4705,
+      "84": 5004,
+      "85": 5814,
+      "86": 6178,
+      "87": 6521,
+      "88": 8849
+    },
+    "rating_observed_by_year": {
+      "69": 11,
+      "70": 150,
+      "71": 289,
+      "72": 387,
+      "73": 791,
+      "74": 1680,
+      "75": 2368,
+      "76": 2542,
+      "77": 2787,
+      "78": 2928,
+      "79": 2938,
+      "80": 115,
+      "81": 190,
+      "82": 258,
+      "83": 3893,
+      "84": 4168,
+      "85": 4163,
+      "86": 4730,
+      "87": 4744,
+      "88": 6541
+    },
+    "csv_unique_persons": 9794,
+    "csv_duplicate_person_year": 20494,
+    "csv_duplicate_rows": 1,
+    "csv_dta_id_different_rows_in_file_order": 32054,
+    "csv_dta_schema_equal": true,
+    "csv_dta_target_values_equal": true,
+    "csv_ids_merging_multiple_dta_ids_row_order_diagnostic": 1096,
+    "observations_per_person_quantiles": {
+      "0.0": 1.0,
+      "0.25": 1.0,
+      "0.5": 3.0,
+      "0.75": 6.0,
+      "1.0": 20.0
+    },
+    "consecutive_year_next_rating_pairs": 38820,
+    "next_rating_counts_on_consecutive_pairs": {
+      "1.0": 10909,
+      "2.0": 19688,
+      "3.0": 7830,
+      "4.0": 376,
+      "5.0": 17
+    },
+    "high_abs_pearson_pairs_ge_095": [
+      {
+        "a": "titleok",
+        "b": "salaryok",
+        "abs_r": 0.9997883328441813
+      },
+      {
+        "a": "salary",
+        "b": "comp88",
+        "abs_r": 0.9518382201370575
+      },
+      {
+        "a": "bonus",
+        "b": "bonus88",
+        "abs_r": 0.998506062269535
+      },
+      {
+        "a": "sal88",
+        "b": "comp88",
+        "abs_r": 0.9754787481022268
+      },
+      {
+        "a": "nsalinc",
+        "b": "relinc",
+        "abs_r": 0.9738243636996738
+      },
+      {
+        "a": "fsal88",
+        "b": "fslevel",
+        "abs_r": 0.9592161935698704
+      },
+      {
+        "a": "yratlevl",
+        "b": "yratitle",
+        "abs_r": 0.9753435809369583
+      },
+      {
+        "a": "nnsalinc",
+        "b": "nrelinc",
+        "abs_r": 0.9738243636996738
+      },
+      {
+        "a": "yrtoquit",
+        "b": "yrtoleav",
+        "abs_r": 0.9649531977741682
+      },
+      {
+        "a": "yrtoprom",
+        "b": "yrtochgt",
+        "abs_r": 0.9501143300754654
+      },
+      {
+        "a": "yrtodemo",
+        "b": "yrtochgt",
+        "abs_r": 0.9500727983089509
+      },
+      {
+        "a": "alltitok",
+        "b": "allsalok",
+        "abs_r": 0.9980921865249524
+      }
+    ]
+  },
+  "torres": {
+    "parquet_files": 600,
+    "parquet_bytes": 2178569855,
+    "file_rows_range": [
+      83,
+      191596
+    ],
+    "file_columns_range": [
+      256,
+      359
+    ],
+    "row_groups_distribution": {
+      "1": 600
+    },
+    "files_with_explicit_identity_fields": 500,
+    "files_with_persisted_index": 0,
+    "training_profiles": {
+      "Storage/1/featuresAbs_treino.parquet": {
+        "rows": 170893,
+        "columns": 315,
+        "duplicate_rows": 105,
+        "target_counts": {
+          "abs_periodo_binario": {
+            "False": 146733,
+            "True": 24160
+          }
+        },
+        "time_range": [
+          "2020-01-21 00:00:00",
+          "2020-03-31 00:00:00"
+        ],
+        "unique_dates": 10,
+        "unparseable_dates": 0,
+        "index_type": "RangeIndex",
+        "index_name": null,
+        "index_unique": true,
+        "other_outcome_dummies_present": [
+          "grupo_g1_periodo_binario_True",
+          "grupo_g1_periodo_binario_vazio",
+          "grupo_g1_periodo_binario_False"
+        ],
+        "id_fields": [],
+        "missing_cells": 0,
+        "constant_column_count": 5
+      },
+      "Storage/1/grupoG1PeriodoBinario_treino.parquet": {
+        "rows": 191596,
+        "columns": 295,
+        "duplicate_rows": 5,
+        "target_counts": {
+          "grupo_g1_periodo_binario": {
+            "False": 66206,
+            "True": 125390
+          }
+        },
+        "time_range": [
+          "2020-01-21 00:00:00",
+          "2020-04-07 00:00:00"
+        ],
+        "unique_dates": 11,
+        "unparseable_dates": 0,
+        "index_type": "RangeIndex",
+        "index_name": null,
+        "index_unique": true,
+        "other_outcome_dummies_present": [
+          "abs_periodo_binario_False",
+          "abs_periodo_binario_vazio",
+          "abs_periodo_binario_True"
+        ],
+        "id_fields": [],
+        "missing_cells": 0,
+        "constant_column_count": 5
+      },
+      "Storage/2019-01-01_2019-01-07/featuresAbs_0_treino_completo.parquet": {
+        "rows": 68161,
+        "columns": 311,
+        "duplicate_rows": 23,
+        "target_counts": {
+          "abs_periodo_binario": {
+            "False": 62427,
+            "True": 5734
+          }
+        },
+        "time_range": [
+          "2018-10-21 00:00:00",
+          "2018-12-07 00:00:00"
+        ],
+        "unique_dates": 6,
+        "unparseable_dates": 0,
+        "index_type": "RangeIndex",
+        "index_name": null,
+        "index_unique": true,
+        "other_outcome_dummies_present": [
+          "grupo_g1_periodo_binario_False",
+          "grupo_g1_periodo_binario_vazio",
+          "grupo_g1_periodo_binario_True"
+        ],
+        "id_fields": [],
+        "missing_cells": 0,
+        "constant_column_count": 36
+      },
+      "Storage/2019-01-01_2019-01-07/featuresAbs_0_treino.parquet": {
+        "rows": 1435,
+        "columns": 264,
+        "duplicate_rows": 0,
+        "target_counts": {
+          "abs_periodo_binario": {
+            "False": 1284,
+            "True": 151
+          }
+        },
+        "time_range": [
+          "2018-10-21 00:00:00",
+          "2018-12-07 00:00:00"
+        ],
+        "unique_dates": 6,
+        "unparseable_dates": 0,
+        "index_type": "RangeIndex",
+        "index_name": null,
+        "index_unique": true,
+        "other_outcome_dummies_present": [
+          "grupo_g1_periodo_binario_True",
+          "grupo_g1_periodo_binario_False",
+          "grupo_g1_periodo_binario_vazio"
+        ],
+        "id_fields": [],
+        "missing_cells": 0,
+        "constant_column_count": 32
+      }
+    },
+    "payload_scope": "Four specified treino files only; all Parquet footers; no teste payload, result CSV rows, SAV or supplied code execution"
+  }
+}

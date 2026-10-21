@@ -1,0 +1,18 @@
+{
+  "checked_at_utc": "2026-10-21T10:05:48.268645+00:00",
+  "branch": "research/dataset-validity",
+  "worktree": "Linked worktree for research/dataset-validity; local absolute path omitted",
+  "head": "1b71d4c45ae1aba771e7c499f87f197f44b3112c",
+  "main": "1b71d4c45ae1aba771e7c499f87f197f44b3112c",
+  "agent1_worktree_present": true,
+  "status": "## research/dataset-validity\n?? research/\n",
+  "raw_files_hashed_and_rechecked": 780,
+  "internal_consistency_tests_passed": 5,
+  "python_scripts_parsed": 5,
+  "private_binary_in_research_tree": false,
+  "trailing_whitespace": false,
+  "commit_push_merge_performed": false,
+  "hidden_test_payload_opened": false,
+  "scientific_final_approval": false,
+  "snapshot_scope": "Historical Phase 0 end-of-review checks, before approved documentation publication"
+}

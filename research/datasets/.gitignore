@@ -1,0 +1,11 @@
+# Raw and restricted files do not belong in research documents
+/raw/
+/interim/
+/processed/
+/heldout/
+*.parquet
+*.dta
+*.sav
+*.xls
+*.xlsx
+*.zip

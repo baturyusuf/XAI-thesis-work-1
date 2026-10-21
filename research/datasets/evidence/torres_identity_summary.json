@@ -1,0 +1,43 @@
+{
+  "Storage/1/featuresAbs_1_treino.parquet": {
+    "rows": 101825,
+    "columns": 317,
+    "id_dtype": "int32",
+    "missing_ids": 0,
+    "unique_ids": 18739,
+    "duplicate_id_date": 16357,
+    "max_rows_per_id_date": 2,
+    "keys_with_conflicting_target": 2370,
+    "date_min": "2020-01-21 00:00:00",
+    "date_max": "2020-02-29 00:00:00",
+    "unique_dates": 6
+  },
+  "Storage/1/featuresAbs_2_treino.parquet": {
+    "rows": 119231,
+    "columns": 317,
+    "id_dtype": "int32",
+    "missing_ids": 0,
+    "unique_ids": 19239,
+    "duplicate_id_date": 16357,
+    "max_rows_per_id_date": 2,
+    "keys_with_conflicting_target": 2370,
+    "date_min": "2020-01-21 00:00:00",
+    "date_max": "2020-03-07 00:00:00",
+    "unique_dates": 7
+  },
+  "Storage/1/grupoG1PeriodoBinario_1_treino.parquet": {
+    "rows": 125830,
+    "columns": 297,
+    "id_dtype": "int32",
+    "missing_ids": 0,
+    "unique_ids": 20272,
+    "duplicate_id_date": 18197,
+    "max_rows_per_id_date": 2,
+    "keys_with_conflicting_target": 4251,
+    "date_min": "2020-01-21 00:00:00",
+    "date_max": "2020-03-07 00:00:00",
+    "unique_dates": 7
+  },
+  "overlap_first_two_id_date_hashes": 85468,
+  "hash_scope": "64-bit pandas key signatures; overlap diagnostic, not proven identical person-row linkage"
+}

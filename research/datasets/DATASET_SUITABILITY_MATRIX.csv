@@ -1,0 +1,451 @@
+dataset_id,audit_field_number,audit_field,evidence_status,finding,recommendation,evidence
+BGH,1,name,VERIFIED,Baker–Gibbs–Holmström public-use personnel files,CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,2,source,REPORTED,Michael Gibbs 2014 public-use codebook; IZA kurumsal arşiv bağı ayrı teyit gerektirir,CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,3,persistent_url,VERIFIED,https://doi.org/10.15185/bgh.1,CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,4,source_reliability,VERIFIED,IZA metadata ve yerel codebook okundu; yerel dosyaların IZA ZIP ile byte eşliği UNVERIFIED,CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,5,license,VERIFIED,yerel codebook academic research/teaching only ve reidentification yasak; IZA IIL-1.0 restricted; eşdeğer lisans varsayılmaz,CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,6,raw_access,VERIFIED,"CSV/DTA/XLSX yerelde okunabildi; resmi ZIP restricted, indirilmedi",CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,7,n_rows,VERIFIED,DTA/CSV 74071; DTA 16133 benzersiz randomid,CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,8,n_features,VERIFIED,"54 toplam sütun; target/ID/gelecek alanlar dahil, izinli predictor sayısı henüz sabit değil",CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,9,feature_types,VERIFIED,numeric ve string; salary/grade/tenure/job/unit/demographics; dtypes aggregate JSON içinde,CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,10,target_name,VERIFIED,rating; perfrat alternatif temsil,CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,11,target_meaning,REPORTED,yıl-sonu performance rating; rating 1–5 known values; rubrik/yön/yıllar arası invariance UNVERIFIED,CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,12,n_classes,VERIFIED,5 gözlenen sayısal değer; ordinal yönü UNVERIFIED,CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,13,class_distribution,VERIFIED,1=13994;2=22756;3=8455;4=438;5=30;missing=28398 (tüm DTA),CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,14,missing,VERIFIED,"rating28398/74071 (38.34percent) numeric null; string blank sayımları ayrıca JSONda (perfrat24596,level6577 vb). Native null ile blank/missing code ayrıldı; otomatik recode yapılmadı",CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,15,duplicates,VERIFIED,DTA full=0/id-year=0; CSV full=1/id-year excess=20494,CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,16,person_group_id,VERIFIED,"DTA randomid=16133 unique, missing=0; CSV=9794 unique; ID feature değil",CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,17,repeated_observations,VERIFIED,kişi-yıl panel; gözlem sayısı dağılımı ve ardışık yıl çiftleri JSONda,CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,18,time,VERIFIED,"year 69–88; REPORTED: 1969–1988, yıl sonu tapes",CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,19,target_leakage,VERIFIED,perfrat target eş-temsili; gelecek ve compensation alanları quarantine gerektirir,CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,20,temporal_leakage,REPORTED,yıl içi rating/pay/title tarihleri bilinmiyor; ileri bilgi alanları codebook ile doğrulandı,CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,21,selection_bias,REPORTED,tek eski ABD service firm managers; titleok scope ve eksik rating seçilimi,CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,22,sensitive,VERIFIED,"sex, age, racevar ve ücret/iş bilgileri",CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,23,proxies,HYPOTHESIS,"costcen, function, title, tenure hassas nitelikler için proxy olabilir",CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,24,feature_dependence,VERIFIED,nominal/real compensation ve tenure ilişkileri; Pearson tanısal tarama mevcut,CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,25,conditional_sampling,HYPOTHESIS,training-only mixed-data sampler; repeated-person ve deterministic constraints korunmalı,CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,26,cost,VERIFIED,DTA 9566117 byte; CSV 14856787 byte; modest tabular fakat sampler maliyeti ölçülmedi,CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,27,xai_suitability,HYPOTHESIS,H1/H2 ve temporal için güçlü koşullu aday; H3 rubrik/nadir destek kapısına bağlı; real GT yok,CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,28,final_test_adequacy,UNVERIFIED,gelecekteki splitte accepted kişi/cluster ve nadir sınıf n; 30 toplam sınıf5 güçlü sınıf-özel risk iddiası taşımaz,CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,29,cross_dataset_independence,VERIFIED,CSV/DTA aynı aile; REPORTED: tek firma; diğer firmalarla bağımsızlık lineage sonrası,CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+BGH,30,ethics,VERIFIED,reidentification yasak; raw redistribution onayı yok; istihdam karar sistemi kurulmadı,CONDITIONAL,local_audit_summary.json; LOCAL_FILE_MANIFEST.csv; bgh_iza; local codebook
+TORRES,1,name,VERIFIED,yerel paket Brazilian Call Center - Torres; özgün başlık bağı UNVERIFIED,NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,2,source,REPORTED,araştırmacı Torres tarafından paylaşıldığını belirtti; README organizational outcomes projesi,NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,3,persistent_url,VERIFIED,ilgili makale https://doi.org/10.1016/j.sasc.2026.200484; yerel dosyalarla definitive bağ UNVERIFIED,NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,4,source_reliability,VERIFIED,Crossref Oliveira/Torres/Moreira başlığı doğrular; makale ham paket doğrulaması değildir,NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,5,license,UNVERIFIED,yerel açık veri lisansı/yazılı kullanım izni bulunmadı; makale lisansı raw izni değil,NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,6,raw_access,VERIFIED,600 Parquet footerı ve 7 seçilmiş treino payload/sütun grubu okunabildi; bunlar işlenmiş artifactlar,NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,7,n_rows,VERIFIED,artifact bazında 83–191596 satır; toplam benzersiz popülasyon UNVERIFIED; makale yaklaşık10500 çalışan REPORTED,NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,8,n_features,VERIFIED,footerda 256–359 toplam sütun; izinli semantik feature grupları henüz belirlenmedi,NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,9,feature_types,VERIFIED,"float/int/bool/dictionary string; one-hot, aggregates, dataFim ve bazı dosyalarda userId",NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,10,target_name,VERIFIED,abs_periodo_binario ve grupo_g1_periodo_binario,NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,11,target_meaning,REPORTED,devamsızlık ve productivity; kesin eşik/payda/ölçüm penceresi UNVERIFIED,NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,12,n_classes,VERIFIED,örneklerde iki boolean sınıf; çok-sınıflı ordinal hedef değil,NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,13,class_distribution,VERIFIED,170893 abs train: False146733/True24160;191596 G1 train: False66206/True125390; popülasyon prevalansı değil,NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,14,missing,VERIFIED,4 tam incelenen training artifactında 0 null; orijinal missingness imputation nedeniyle UNVERIFIED,NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,15,duplicates,VERIFIED,ana abs/G1 full duplicates105/5;IDli örnekler userId-date excess16357/18197 ve çelişen target keys2370/4251;keyfi dedup yok,NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,16,person_group_id,VERIFIED,"500/600 footer userId içeriyor; 100 training içermiyor; IDli örneklerin key uniqueness başarısız, stabil kişi kimliği UNVERIFIED",NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,17,repeated_observations,VERIFIED,tarihler tekrarlı; iki training snapshotında85468 ortak key hash; canonical kişi-period bağı UNVERIFIED,NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,18,time,VERIFIED,örneklerde2018-10-21..2018-12-07 ve2020-01-21..2020-04-07; folder adı raw zaman aralığı değil,NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,19,target_leakage,HYPOTHESIS,diğer outcome dummies ve result/aggregate alanları timing/target recipe olmadan kullanılamaz,NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,20,temporal_leakage,VERIFIED,sağlanan kodda test dataframe mean imputation; tüm artifactların bu koddan üretildiği UNVERIFIED,NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,21,selection_bias,UNVERIFIED,"kayıt uygunluğu, turn-over, missing outcome seçilimi; kaynak kodu bazı user filtreleri kullanıyor",NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,22,sensitive,VERIFIED,"sex/age/mood/health-family motive türevleri, employment ve davranış alanları",NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,23,proxies,HYPOTHESIS,"DDD, CPF region, city, family, manager ve social aggregates",NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,24,feature_dependence,VERIFIED,one-hot ve aynı kavram türevleri; bağımsız dummy masking geçersiz olabilir,NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,25,conditional_sampling,HYPOTHESIS,yüksek boyut/encoding ve geçmiş imputation zorlaştırır; özgün veri ve support audit gerekli,NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,26,cost,VERIFIED,"Parquet2178569855 byte; tümü tek row group; projected okumalar uygun, full concat gereksiz",NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,27,xai_suitability,HYPOTHESIS,H1/H2 için izin/ID/provenance sonrası; H3 çok-eşikli ana testine uygun değil; real GT yok,NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,28,final_test_adequacy,UNVERIFIED,benzersiz kişi/period n ve effective cluster sayısı bilinmiyor; row n yeterlilik kanıtı değil,NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,29,cross_dataset_independence,VERIFIED,mevcut tüm artifactlar tek kaynak ailesi; abs/G1 bağımsız replikasyon değil,NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+TORRES,30,ethics,UNVERIFIED,"kullanım ve publishable aggregate izni; raw Git yok, credentials/satır/ID değerleri dışarı çıkarılmadı",NEEDS_EVIDENCE,local_audit_summary.json; torres_identity_summary.json; LOCAL_FILE_MANIFEST.csv; torres_crossref; publisher fetch
+INX,1,name,REPORTED,INX Future Inc Employee Performance V1.8,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,2,source,UNVERIFIED,birincil köken; eski repo yalnız yerel dosya sözleşmesi,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,3,persistent_url,VERIFIED,https://github.com/baturyusuf/employee-performance-with-XAI/blob/050cfa7f53cb2a55d2b5eff1ef99490d01202d14/configs/data_acquisition.yaml,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,4,source_reliability,VERIFIED,sözleşmenin kendisi upstream_source_unverified ve manual_review_required diyor,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,5,license,UNVERIFIED,onaylı download/lisans yok,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,6,raw_access,UNVERIFIED,bu tur INX ham dosyası indirilmedi/okunmadı; sözleşme incelendi,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,7,n_rows,REPORTED,1200,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,8,n_features,REPORTED,28 toplam sütun,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,9,feature_types,REPORTED,mixed numeric/categorical HR snapshot,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,10,target_name,REPORTED,PerformanceRating,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,11,target_meaning,UNVERIFIED,"authoritative rubric, rater, zaman ve gerçek firma bağı",NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,12,n_classes,REPORTED,3 (2/3/4),NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,13,class_distribution,REPORTED,2=194/3=874/4=132; ham hesap değil,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,14,missing,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,15,duplicates,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,16,person_group_id,REPORTED,EmpNumber; uniqueness bu tur UNVERIFIED,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,17,repeated_observations,UNVERIFIED,snapshot olduğu varsayılmaz,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,18,time,UNVERIFIED,chronology; tenure zaman ekseni değil,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,19,target_leakage,HYPOTHESIS,EmpLastSalaryHikePercent outcome sonucu olabilir; Attrition ve kariyer alanları zaman denetimi gerektirir,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,20,temporal_leakage,UNVERIFIED,ölçüm/tahmin anı,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,21,selection_bias,UNVERIFIED,sampling/gerçek çalışan popülasyonu,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,22,sensitive,REPORTED,Age/Gender/MaritalStatus,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,23,proxies,HYPOTHESIS,department/role/experience proxy,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,24,feature_dependence,HYPOTHESIS,"tenure, age, job level/compensation ilişkileri",NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,25,conditional_sampling,HYPOTHESIS,1200 kayıt mixed-data conditional için sınırlı,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,26,cost,REPORTED,küçük tabular; raw byte bu tur UNVERIFIED,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,27,xai_suitability,HYPOTHESIS,H1/H2 izin/semantik sonrası; H3 sıra rubriği sonrası; real GT/temporal yok,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,28,final_test_adequacy,REPORTED,nadir sınıf132; küçük holdout güçlü risk garantisi taşımaz,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,29,cross_dataset_independence,UNVERIFIED,IBM HR ve benzer tablolarla lineage,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+INX,30,ethics,UNVERIFIED,kullanım/redistribution hakkı,NEEDS_EVIDENCE,old_contract snapshot; prior repository commit 050cfa7f53cb2a55d2b5eff1ef99490d01202d14
+HR_V14,1,name,VERIFIED,Human Resources Data Set v14,REJECT,hr_original; old_contract
+HR_V14,2,source,VERIFIED,Dr.Rich Huebner ve Dr.Carla Patalano özgün creator açıklaması,REJECT,hr_original; old_contract
+HR_V14,3,persistent_url,VERIFIED,https://www.kaggle.com/datasets/rhuebner/human-resources-data-set,REJECT,hr_original; old_contract
+HR_V14,4,source_reliability,VERIFIED,"original creator API synthetic, fictitious company, teaching diyor",REJECT,hr_original; old_contract
+HR_V14,5,license,VERIFIED,creator description CC BY-NC-ND4.0; API licenseName Original Authors; öğrenme/öğretme grant ve research sınırı incelenmeli,REJECT,hr_original; old_contract
+HR_V14,6,raw_access,UNVERIFIED,bu tur raw CSV açılmadı; creator metadata ve önceki sözleşme okundu,REJECT,hr_original; old_contract
+HR_V14,7,n_rows,REPORTED,311,REJECT,hr_original; old_contract
+HR_V14,8,n_features,REPORTED,36 toplam sütun,REJECT,hr_original; old_contract
+HR_V14,9,feature_types,REPORTED,"mixed categories, IDs, dates, numerics",REJECT,hr_original; old_contract
+HR_V14,10,target_name,REPORTED,PerformanceScore; PerfScoreID aynı hedef kodu,REJECT,hr_original; old_contract
+HR_V14,11,target_meaning,VERIFIED,synthetic teaching company; gerçek çalışan performansı değil,REJECT,hr_original; old_contract
+HR_V14,12,n_classes,REPORTED,4,REJECT,hr_original; old_contract
+HR_V14,13,class_distribution,REPORTED,Exceeds37/Fully Meets243/Needs Improvement18/PIP13,REJECT,hr_original; old_contract
+HR_V14,14,missing,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,REJECT,hr_original; old_contract
+HR_V14,15,duplicates,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,REJECT,hr_original; old_contract
+HR_V14,16,person_group_id,REPORTED,EmpID/ManagerID; uniqueness UNVERIFIED,REJECT,hr_original; old_contract
+HR_V14,17,repeated_observations,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,REJECT,hr_original; old_contract
+HR_V14,18,time,REPORTED,hire/termination/review dates; gerçek longitudinal ölçüm değil,REJECT,hr_original; old_contract
+HR_V14,19,target_leakage,VERIFIED,sözleşme target ve PerfScoreID alanlarını içeriyor; eş-kod feature olamaz,REJECT,hr_original; old_contract
+HR_V14,20,temporal_leakage,HYPOTHESIS,"Termd, review date, last30-day fields as-of sorunları",REJECT,hr_original; old_contract
+HR_V14,21,selection_bias,VERIFIED,tasarlanmış teaching sample; real workforce temsil iddiası REJECTED,REJECT,hr_original; old_contract
+HR_V14,22,sensitive,REPORTED,"names,DOB,Zip,sex,race; sentetik olması doğrulandı diye her alanın güvenliği varsayılmaz",REJECT,hr_original; old_contract
+HR_V14,23,proxies,HYPOTHESIS,manager/Zip/department,REJECT,hr_original; old_contract
+HR_V14,24,feature_dependence,HYPOTHESIS,ID-description redundant encodings,REJECT,hr_original; old_contract
+HR_V14,25,conditional_sampling,HYPOTHESIS,311 mixed records geniş conditional için zayıf,REJECT,hr_original; old_contract
+HR_V14,26,cost,REPORTED,küçük tabular,REJECT,hr_original; old_contract
+HR_V14,27,xai_suitability,REJECTED,"gerçek dünya HR kanıtı; izinli sınırlı smoke-test mümkün, bilinen generator yok",REJECT,hr_original; old_contract
+HR_V14,28,final_test_adequacy,REPORTED,"PIP13 toplam; 20percent test yaklaşık2–3 kişi, güçlü sınıf-özel garanti yok",REJECT,hr_original; old_contract
+HR_V14,29,cross_dataset_independence,UNVERIFIED,önceki mapped-target çalışması hedef eşdeğerliği değil,REJECT,hr_original; old_contract
+HR_V14,30,ethics,VERIFIED,NC-ND ve creator attribution göz ardı edilemez; raw paylaşılmadı,REJECT,hr_original; old_contract
+TOCUCO,1,name,VERIFIED,TOC-UCO Tabular Ordinal Classification repository UCO,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,2,source,VERIFIED,AYRNA University of Córdoba sayfası,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,3,persistent_url,VERIFIED,https://www.uco.es/grupos/ayrna/materials/tocuco/ ; https://github.com/ayrna/tocuco,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,4,source_reliability,VERIFIED,kurumsal metadata okunabildi; özgün her veri kaynağı aynı derecede doğrulanmış değil,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,5,license,UNVERIFIED,her dataset için kaynak lisansı; code license raw lisansın yerine geçmez,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,6,raw_access,VERIFIED,bireysel raw ve metadata bağlantıları var; bu tur raw/maskeler açılmadı,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,7,n_rows,REPORTED,46 tabular tablo; satır sayısı dataset bazında,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,8,n_features,REPORTED,tablo bazında değişir; encoded boyut semantik feature sayısı değil,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,9,feature_types,REPORTED,common preprocessed tabular,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,10,target_name,UNVERIFIED,dataset-specific,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,11,target_meaning,VERIFIED,katalog natural OC ve discretised regression ayırıyor; rubrikler ayrı teyit gerektirir,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,12,n_classes,REPORTED,3–10,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,13,class_distribution,REPORTED,katalog oranları; raw-computed değil; sayfa/metadata IR farklılıkları var,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,14,missing,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,15,duplicates,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,16,person_group_id,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,17,repeated_observations,UNVERIFIED,dataset-specific; random masks bağımsızlık kanıtı değil,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,18,time,UNVERIFIED,dataset-specific,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,19,target_leakage,HYPOTHESIS,target construction inputs ve shared preprocessing kontrolü,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,20,temporal_leakage,HYPOTHESIS,random masks temporal süreçler için uygun olmayabilir,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,21,selection_bias,REPORTED,reasonable n/class distribution için benchmark seçimi; dünya görev örneklemi değil,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,22,sensitive,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,23,proxies,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,24,feature_dependence,VERIFIED,source families ve encoding türevleri; bağımlılık seviyesi dataset bazında bilinmiyor,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,25,conditional_sampling,HYPOTHESIS,inverse one-hot/semantic groups ve training-only fit gerekir,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,26,cost,UNVERIFIED,tüm benchmark indirilmedi; Phase0 için gerekli değil,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,27,xai_suitability,HYPOTHESIS,H1/H2/H3 per-dataset; ground truth gerçek veri için yok,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,28,final_test_adequacy,UNVERIFIED,accepted n ve cluster başına destek,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,29,cross_dataset_independence,VERIFIED,Wine/Student türevleri raw UCI ailesiyle örtüşüyor; bank/census/computer/buoy family kontrolü,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+TOCUCO,30,ethics,UNVERIFIED,per-source permissions; hidden raw açılmadı,CONDITIONAL,tocuco; tocuco_nhanes;tocuco_lest;tocuco_wine;tocuco_student
+NHANES,1,name,VERIFIED,TOCUCO oc05_nhanes,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,2,source,VERIFIED,UCO metadata; özgün dataset bağı henüz doğrulanmadı,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,3,persistent_url,VERIFIED,https://www.uco.es/ayrna/tocuco/files/oc05_nhanes/metadata.csv,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,4,source_reliability,VERIFIED,kurumsal boyut metadata; target codebook değil,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,5,license,UNVERIFIED,upstream reuse ve dönüştürülmüş benchmark hakkı,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,6,raw_access,VERIFIED,raw link listeleniyor; gizlilik koruması nedeniyle payload indirilmedi,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,7,n_rows,REPORTED,5223 total katalog maskesi; raw incelenmedi,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,8,n_features,REPORTED,30 preprocessed feature,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,9,feature_types,UNVERIFIED,semantic schema; ham açılmadı,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,10,target_name,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,11,target_meaning,UNVERIFIED,hedefin bilimsel kavramı ve üretim reçetesi,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,12,n_classes,REPORTED,5;is_oc=True,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,13,class_distribution,REPORTED,"0.11,0.28,0.40,0.18,0.04; yuvarlanmış metadata oranları",NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,14,missing,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,15,duplicates,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,16,person_group_id,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,17,repeated_observations,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,18,time,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,19,target_leakage,UNVERIFIED,target inputs/rubrik,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,20,temporal_leakage,UNVERIFIED,grup/zaman kimliği ve masks uygunluğu,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,21,selection_bias,UNVERIFIED,survey/sensor population ve seçilim,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,22,sensitive,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,23,proxies,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,24,feature_dependence,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,25,conditional_sampling,HYPOTHESIS,boyut/n umut verici ama support/semantics bilinmiyor,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,26,cost,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,27,xai_suitability,HYPOTHESIS,H1/H2/H3 uygunluğu hedef ve bağımlılık doğrulamasından sonra; real GT yok,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,28,final_test_adequacy,UNVERIFIED,gerçek bağımsız kişi/cluster ve accepted n,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,29,cross_dataset_independence,UNVERIFIED,NHANES sürüm/diğer survey veya LEST-LEVX sensor ailesi bağı,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+NHANES,30,ethics,VERIFIED,yalnız metadata erişimi; raw/test labels açılmadı; izinler UNVERIFIED,NEEDS_EVIDENCE,tocuco; tocuco_nhanes
+LEST,1,name,VERIFIED,TOCUCO oc04_LESTSensors,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,2,source,VERIFIED,UCO metadata; özgün dataset bağı henüz doğrulanmadı,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,3,persistent_url,VERIFIED,https://www.uco.es/ayrna/tocuco/files/oc04_LESTSensors/metadata.csv,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,4,source_reliability,VERIFIED,kurumsal boyut metadata; target codebook değil,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,5,license,UNVERIFIED,upstream reuse ve dönüştürülmüş benchmark hakkı,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,6,raw_access,VERIFIED,raw link listeleniyor; gizlilik koruması nedeniyle payload indirilmedi,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,7,n_rows,REPORTED,5112 total katalog maskesi; raw incelenmedi,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,8,n_features,REPORTED,6 preprocessed feature,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,9,feature_types,UNVERIFIED,semantic schema; ham açılmadı,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,10,target_name,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,11,target_meaning,UNVERIFIED,hedefin bilimsel kavramı ve üretim reçetesi,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,12,n_classes,REPORTED,4;is_oc=True,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,13,class_distribution,REPORTED,"0.16,0.14,0.23,0.46; yuvarlanmış metadata oranları",NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,14,missing,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,15,duplicates,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,16,person_group_id,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,17,repeated_observations,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,18,time,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,19,target_leakage,UNVERIFIED,target inputs/rubrik,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,20,temporal_leakage,UNVERIFIED,grup/zaman kimliği ve masks uygunluğu,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,21,selection_bias,UNVERIFIED,survey/sensor population ve seçilim,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,22,sensitive,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,23,proxies,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,24,feature_dependence,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,25,conditional_sampling,HYPOTHESIS,boyut/n umut verici ama support/semantics bilinmiyor,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,26,cost,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,27,xai_suitability,HYPOTHESIS,H1/H2/H3 uygunluğu hedef ve bağımlılık doğrulamasından sonra; real GT yok,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,28,final_test_adequacy,UNVERIFIED,gerçek bağımsız kişi/cluster ve accepted n,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,29,cross_dataset_independence,UNVERIFIED,NHANES sürüm/diğer survey veya LEST-LEVX sensor ailesi bağı,NEEDS_EVIDENCE,tocuco; tocuco_lest
+LEST,30,ethics,VERIFIED,yalnız metadata erişimi; raw/test labels açılmadı; izinler UNVERIFIED,NEEDS_EVIDENCE,tocuco; tocuco_lest
+GARMENT,1,name,VERIFIED,Productivity Prediction of Garment Employees,CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,2,source,VERIFIED,UCI597,CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,3,persistent_url,VERIFIED,https://archive.ics.uci.edu/dataset/597/productivity+prediction+of+garment+employees,CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,4,source_reliability,VERIFIED,resmi kaynak metadata/raw; ölçüm güvenilirliği kaynak beyanı,CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,5,license,VERIFIED,UCI CC BY4.0,CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,6,raw_access,VERIFIED,resmi CSV indirildi/parse edildi; SHA256 ve boyut uci_aggregate.json,CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,7,n_rows,VERIFIED,1197,CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,8,n_features,VERIFIED,"15 toplam sütun;14 non-target, metadata/ID/date ayrıca ayrılacak",CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,9,feature_types,VERIFIED,mixed categories/numeric/date,CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,10,target_name,VERIFIED,actual_productivity,CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,11,target_meaning,REPORTED,takım düzeyi fiili productivity; bireysel performans notu değil,CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,12,n_classes,VERIFIED,"sürekli hedef, class count uygulanmaz",CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,13,class_distribution,VERIFIED,37 değer>1; sürekli dağılım sınıf diye sunulmadı,CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,14,missing,VERIFIED,wip506 eksik; diğer sütunlar0 null,CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,15,duplicates,VERIFIED,full0;date-team496 excess ama date-department-team0,CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,16,person_group_id,VERIFIED,"12 team etiketi, department ile bağlam; person ID yok",CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,17,repeated_observations,VERIFIED,team/date tekrarları,CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,18,time,VERIFIED,2015-01-01..2015-03-11,CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,19,target_leakage,HYPOTHESIS,"incentive,overtime,idle sonrası ölçülmüş olabilir",CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,20,temporal_leakage,HYPOTHESIS,random row split aynı team/date shock bilgisini taşır,CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,21,selection_bias,REPORTED,tek üretim ortamı; bağımsız fabrikalar değil,CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,22,sensitive,VERIFIED,person names yok; çalışan takım büyüklüğü ve operasyon verisi,CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,23,proxies,HYPOTHESIS,team/department schedule,CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,24,feature_dependence,HYPOTHESIS,"process constraints, wip department-specific missing",CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,25,conditional_sampling,HYPOTHESIS,team/date/department geçerli completion kısıtları gerekir,CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,26,cost,VERIFIED,CSV96194 byte; computation küçük tabular,CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,27,xai_suitability,HYPOTHESIS,H1/H2 ve temporal C; H3 için sürekli target keyfi bin yapılmaz; real GT yok,CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,28,final_test_adequacy,UNVERIFIED,12 takım ve kısa takvimden effective test n; IID1197 değil,CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,29,cross_dataset_independence,REPORTED,tek UCI source family,CONDITIONAL,uci_garment;uci_aggregate.json
+GARMENT,30,ethics,VERIFIED,CC BY attribution; team-level sonuçlardan bireysel istihdam kararı çıkarılmaz,CONDITIONAL,uci_garment;uci_aggregate.json
+WINE,1,name,VERIFIED,UCI Wine Quality red ve white,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,2,source,VERIFIED,Cortez et al. UCI186,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,3,persistent_url,VERIFIED,https://doi.org/10.24432/C56S3T,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,4,source_reliability,VERIFIED,official source and raw bytes; sensory rating reliability bağımsız doğrulanmadı,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,5,license,VERIFIED,UCI CC BY4.0,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,6,raw_access,VERIFIED,resmi zip ve iki CSV parse; hashes/size kaydedildi,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,7,n_rows,VERIFIED,red1599;white4898,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,8,n_features,VERIFIED,11 physicochemical input;12 sütun target dahil,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,9,feature_types,VERIFIED,numeric physicochemical,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,10,target_name,VERIFIED,quality,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,11,target_meaning,REPORTED,sensory quality ordinal0–10 scale,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,12,n_classes,VERIFIED,red6 gözlenen3–8;white7 gözlenen3–9,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,13,class_distribution,VERIFIED,red3:10/4:53/5:681/6:638/7:199/8:18;white3:20/4:163/5:1457/6:2198/7:880/8:175/9:5,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,14,missing,VERIFIED,iki dosyada0 null,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,15,duplicates,VERIFIED,red240/white937 full duplicates; predictor duplicate sayıları JSONda,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,16,person_group_id,UNVERIFIED,batch/producer/sample ID yok,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,17,repeated_observations,UNVERIFIED,equal rows replicate mi kopya mı belirsiz; konservatif group split,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,18,time,UNVERIFIED,collection timestamp yok; temporal holdout kurulamaz,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,19,target_leakage,HYPOTHESIS,dupe/predictor groups train-test ayrımını bozabilir; target input yok,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,20,temporal_leakage,UNVERIFIED,zaman yok; row order zaman sayılmaz,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,21,selection_bias,REPORTED,Portugal Vinho Verde; özel/grape/brand details yok,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,22,sensitive,REPORTED,commercial details withheld; direct person ID yok,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,23,proxies,HYPOTHESIS,chemistry wine type/batch proxy,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,24,feature_dependence,HYPOTHESIS,chemistry correlations/support constraints conditional audit gerekli,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,25,conditional_sampling,HYPOTHESIS,11 numeric input H1 için uygun başlangıç; true conditional law gözlenmez,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,26,cost,VERIFIED,zip91353 byte; member byte/hash JSONda,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,27,xai_suitability,HYPOTHESIS,H1/H2/H3 C;temporalN;GTN;cost/sparsity C,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,28,final_test_adequacy,UNVERIFIED,coverage/duplicate-grup/rare-class sonrası n; güçlü küçük-risk garantisi otomatik yok,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,29,cross_dataset_independence,VERIFIED,red/white ve TOCUCO wine aynı aile;TOCUCO5 sınıf vs raw red6,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+WINE,30,ethics,VERIFIED,attribution gerekli; raw Git içine alınmadı,ACCEPT_CANDIDATE,uci_wine;uci_aggregate.json;tocuco_wine
+STUDENT,1,name,VERIFIED,UCI Student Performance math/Portuguese,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,2,source,VERIFIED,Cortez UCI320,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,3,persistent_url,VERIFIED,https://doi.org/10.24432/C5TG7T,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,4,source_reliability,VERIFIED,resmi codebook ve ZIP/raw parse,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,5,license,VERIFIED,CC BY4.0,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,6,raw_access,VERIFIED,legacy resmi ZIP200; static student.zip404 indirme yokluğu kanıtı değil,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,7,n_rows,VERIFIED,math395/Portuguese649,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,8,n_features,VERIFIED,33 toplam;G3 hariç32 incl G1/G2;30 background,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,9,feature_types,VERIFIED,numeric/categorical school and social fields,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,10,target_name,VERIFIED,G3,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,11,target_meaning,REPORTED,final dönem ders notu0–20; farklı employee productivity değil,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,12,n_classes,VERIFIED,math18/Portuguese17 gözlenen G3 not değeri;keyfi coarse bin kullanılmadı,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,13,class_distribution,VERIFIED,ham not sayımları uci_aggregate.json,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,14,missing,VERIFIED,her iki tabloda0 null,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,15,duplicates,VERIFIED,"full duplicate0; official13-key merge382 satır ve366 shared signature, unique people değil",CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,16,person_group_id,UNVERIFIED,gerçek person ID yok;13 alan eşleme reçetesi yayımlanmış,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,17,repeated_observations,REPORTED,dersler aynı öğrencileri içerebilir;382 merge satırı tekil kişi kanıtı değil,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,18,time,VERIFIED,G1/G2/G3 dönem sırası kaynakta; tam timestamp yok,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,19,target_leakage,HYPOTHESIS,erken tahminde G1/G2 ve yılsonu absences erişilemez;late taskında önceki not otomatik leakage değil,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,20,temporal_leakage,UNVERIFIED,gerçek collection date; temporal holdout iddiası yok,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,21,selection_bias,REPORTED,iki Portuguese school,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,22,sensitive,VERIFIED,sex/age/family/alcohol/health; küçük hücre riski,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,23,proxies,HYPOTHESIS,parent jobs/education/address/internet,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,24,feature_dependence,HYPOTHESIS,prior grades/social dependencies;13-key ambiguity,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,25,conditional_sampling,HYPOTHESIS,mixed low-n sampler support zayıf; feasible categorical groups gerekli,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,26,cost,VERIFIED,ZIP20478byte; member hash JSONda,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,27,xai_suitability,HYPOTHESIS,H1/H2 küçük-n C;H3 grade-scale C;temporalN;GTN,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,28,final_test_adequacy,UNVERIFIED,accepted bağımsız n/rare grade coverage,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,29,cross_dataset_independence,VERIFIED,iki ders/TOCUCO türevi tek aile,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+STUDENT,30,ethics,VERIFIED,CC BY; minors/health/social mahremiyetine uygun aggregate raporlama,CONDITIONAL,uci_student;uci_aggregate.json; official student-merge.R
+TRIP,1,name,VERIFIED,Replication Data for Hybrid working from home improves retention without damaging performance,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,2,source,VERIFIED,"Bloom,Han,Liang Harvard Dataverse",NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,3,persistent_url,VERIFIED,https://doi.org/10.7910/DVN/6X4ZZL,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,4,source_reliability,VERIFIED,kurumsal replication metadata ve dosya listesi,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,5,license,VERIFIED,CC BY4.0 API v1.1,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,6,raw_access,VERIFIED,API .tab/.do ve README.docx restricted=false; raw payload bu tur indirilmedi,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,7,n_rows,UNVERIFIED,paper sample raw row sayısı yerine kullanılmadı,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,8,n_features,UNVERIFIED,file-specific,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,9,feature_types,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,10,target_name,UNVERIFIED,figure3_2021H2/2022H1/2022H2/2023H1 file adları hedef/ID eşleşmesini kanıtlamaz,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,11,target_meaning,REPORTED,hybrid work performance/retention study; ham target rubriği bilinmiyor,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,12,n_classes,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,13,class_distribution,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,14,missing,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,15,duplicates,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,16,person_group_id,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,17,repeated_observations,UNVERIFIED,aynı kişiyi dönemler arası eşleme,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,18,time,VERIFIED,file adlarında farklı yarıyıllar; gerçek observation-time semantics raw incelenmedi,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,19,target_leakage,HYPOTHESIS,treatment/post-treatment alanları as-of ve causal/predictive hedefe göre ayrı,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,20,temporal_leakage,UNVERIFIED,public files stable ID içeriyor mu,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,21,selection_bias,REPORTED,tek şirket RCT bağlamı;genel tüm çalışan popülasyonu değil,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,22,sensitive,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,23,proxies,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,24,feature_dependence,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,25,conditional_sampling,UNVERIFIED,şema/support bilinmiyor,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,26,cost,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,27,xai_suitability,HYPOTHESIS,H1/H2/H3 ve temporal ancak raw/rubrik sonrası;RCT kendi başına explanation GT değil,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,28,final_test_adequacy,UNVERIFIED,raw bağımsız kişi/accepted n,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,29,cross_dataset_independence,UNVERIFIED,şirket kaynağı diğer HRlerden ayrı olabilir;raw lineage gerekir,NEEDS_EVIDENCE,trip_dataverse API v1.1
+TRIP,30,ethics,VERIFIED,CC BY metadata;person-level raw açılmadı,NEEDS_EVIDENCE,trip_dataverse API v1.1
+FRESH,1,name,VERIFIED,OSF Vitality Sleep and Dynamic Job Performance; Fresh as a Daisy aday bağı henüz teyit edilmeli,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,2,source,VERIFIED,public OSF dzeg7 metadata,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,3,persistent_url,VERIFIED,https://osf.io/dzeg7/,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,4,source_reliability,VERIFIED,public node API;bu tek başına data validity değil,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,5,license,VERIFIED,API node_license null;reuse grant UNVERIFIED,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,6,raw_access,UNVERIFIED,public storage node var;dosya payload/target/schema açılmadı,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,7,n_rows,REPORTED,kullanıcı yaklaşık165 participant dedi;raw row/participant count UNVERIFIED,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,8,n_features,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,9,feature_types,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,10,target_name,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,11,target_meaning,UNVERIFIED,individual dynamic performance ölçümü/rater/time,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,12,n_classes,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,13,class_distribution,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,14,missing,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,15,duplicates,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,16,person_group_id,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,17,repeated_observations,REPORTED,aday açıklamasında tekrarlar;raw ID bağlantısı bilinmiyor,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,18,time,UNVERIFIED,time axis,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,19,target_leakage,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,20,temporal_leakage,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,21,selection_bias,UNVERIFIED,popülasyon ve katılım,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,22,sensitive,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,23,proxies,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,24,feature_dependence,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,25,conditional_sampling,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,26,cost,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,27,xai_suitability,HYPOTHESIS,H1/H2 sample sınırlı;temporal/ordinal raw sonrası;GTN,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,28,final_test_adequacy,UNVERIFIED,165 katılımcı varsayımı bile bağımsız H2 risk eğrisi desteği değil,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,29,cross_dataset_independence,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+FRESH,30,ethics,UNVERIFIED,license/privacy permission,NEEDS_EVIDENCE,fresh_osf API; user-provided candidate count
+TILES,1,name,VERIFIED,TILES-2018,CONDITIONAL,tiles official landing page
+TILES,2,source,VERIFIED,ISI TILES official page,CONDITIONAL,tiles official landing page
+TILES,3,persistent_url,VERIFIED,https://tiles-data.isi.edu/dataset2018_details,CONDITIONAL,tiles official landing page
+TILES,4,source_reliability,VERIFIED,kurumsal study description;raw doğrulanmadı,CONDITIONAL,tiles official landing page
+TILES,5,license,UNVERIFIED,landing public availability özel kullanım izni anlamına gelmez,CONDITIONAL,tiles official landing page
+TILES,6,raw_access,UNVERIFIED,download link var;terms/raw açılmadı,CONDITIONAL,tiles official landing page
+TILES,7,n_rows,REPORTED,212 participant;10 hafta;raw row sayısı değil,CONDITIONAL,tiles official landing page
+TILES,8,n_features,UNVERIFIED,modality/time aggregation bağlı,CONDITIONAL,tiles official landing page
+TILES,9,feature_types,REPORTED,wearable/environment/survey multimodal,CONDITIONAL,tiles official landing page
+TILES,10,target_name,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,CONDITIONAL,tiles official landing page
+TILES,11,target_meaning,REPORTED,pre/post/semi-daily job-performance assessments;kesin rubrik bilinmiyor,CONDITIONAL,tiles official landing page
+TILES,12,n_classes,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,CONDITIONAL,tiles official landing page
+TILES,13,class_distribution,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,CONDITIONAL,tiles official landing page
+TILES,14,missing,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,CONDITIONAL,tiles official landing page
+TILES,15,duplicates,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,CONDITIONAL,tiles official landing page
+TILES,16,person_group_id,UNVERIFIED,public files stable ID,CONDITIONAL,tiles official landing page
+TILES,17,repeated_observations,REPORTED,10-week longitudinal design,CONDITIONAL,tiles official landing page
+TILES,18,time,REPORTED,repeated collection schedules;raw alignment bilinmiyor,CONDITIONAL,tiles official landing page
+TILES,19,target_leakage,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,CONDITIONAL,tiles official landing page
+TILES,20,temporal_leakage,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,CONDITIONAL,tiles official landing page
+TILES,21,selection_bias,REPORTED,hospital workforce selected cohort,CONDITIONAL,tiles official landing page
+TILES,22,sensitive,REPORTED,worker health/wearable/survey,CONDITIONAL,tiles official landing page
+TILES,23,proxies,HYPOTHESIS,shift/site/physiology,CONDITIONAL,tiles official landing page
+TILES,24,feature_dependence,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,CONDITIONAL,tiles official landing page
+TILES,25,conditional_sampling,HYPOTHESIS,multimodal mixed dependencies zaman hizalama gerektirir,CONDITIONAL,tiles official landing page
+TILES,26,cost,UNVERIFIED,bytes;multimodal processing/sensor alignment potansiyel yüksek,CONDITIONAL,tiles official landing page
+TILES,27,xai_suitability,HYPOTHESIS,temporal/robustness ancak harmonized target ile;H2 bağımsız kişi212;GTN,CONDITIONAL,tiles official landing page
+TILES,28,final_test_adequacy,UNVERIFIED,effective participant n/retention/missingness,CONDITIONAL,tiles official landing page
+TILES,29,cross_dataset_independence,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,CONDITIONAL,tiles official landing page
+TILES,30,ethics,UNVERIFIED,DUA ve privacy limits,CONDITIONAL,tiles official landing page
+PARKINSON,1,name,VERIFIED,Parkinsons Telemonitoring,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,2,source,VERIFIED,UCI189,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,3,persistent_url,VERIFIED,https://doi.org/10.24432/C5ZS3N,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,4,source_reliability,VERIFIED,resmi UCI metadata;raw açılmadı,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,5,license,VERIFIED,UCI CC BY4.0,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,6,raw_access,UNVERIFIED,official download listeleniyor;bu tur raw parse yok,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,7,n_rows,REPORTED,5875 recordings/42 subjects,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,8,n_features,REPORTED,16 voice features artı subject/age/sex/test_time;raw budget teyit edilmeli,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,9,feature_types,REPORTED,voice numeric descriptors/time/demographics,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,10,target_name,REPORTED,"motor_UPDRS,total_UPDRS",CONDITIONAL,uci_parkinson metadata only
+PARKINSON,11,target_meaning,REPORTED,"clinical severity,linearly interpolated between assessments;real independent rating per recording değil",CONDITIONAL,uci_parkinson metadata only
+PARKINSON,12,n_classes,REPORTED,continuous regression;doğal ordinal class count uygulanmaz,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,13,class_distribution,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,14,missing,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,15,duplicates,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,16,person_group_id,REPORTED,subject#;raw linkage UNVERIFIED,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,17,repeated_observations,REPORTED,42 kişi six-month trial,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,18,time,REPORTED,test_time;raw chronology doğrulanmadı,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,19,target_leakage,HYPOTHESIS,other UPDRS target dışlanmalı;age/subject/severity proxy ve interpolated labels,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,20,temporal_leakage,HYPOTHESIS,interpolation endpoint future assessment bilgisi taşıyabilir;prospective claim ayrı inceleme,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,21,selection_bias,REPORTED,early-stage Parkinson selected clinical cohort,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,22,sensitive,REPORTED,health/age/sex,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,23,proxies,UNVERIFIED,bu tur doğrudan kaynak/codebook veya ham veri kanıtı yok; kabul koşulu kapanmadı,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,24,feature_dependence,HYPOTHESIS,highly related voice descriptors;H1 avantajı training-only audit ile doğrulanmalı,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,25,conditional_sampling,HYPOTHESIS,voice constraints ve subject heterogeneity dikkate alınmalı,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,26,cost,REPORTED,small tabular;raw byte UNVERIFIED,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,27,xai_suitability,HYPOTHESIS,H1/temporal regression reserve;H2 42cluster sınırlı;H3 binleme önerilmez;GTN,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,28,final_test_adequacy,UNVERIFIED,42subject ile accepted-independent n;5875 IID değil,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,29,cross_dataset_independence,REPORTED,non-HR source;TOCUCO/upstream lineage kontrolü gerekir,CONDITIONAL,uci_parkinson metadata only
+PARKINSON,30,ethics,VERIFIED,CC BY metadata;health-derived aggregate privacy,CONDITIONAL,uci_parkinson metadata only
+SYNTHETIC,1,name,HYPOTHESIS,controlled synthetic mechanism suite,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,2,source,HYPOTHESIS,proje içinde önceden tanımlanacak DGP,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,3,persistent_url,UNVERIFIED,henüz generator/sürüm yok,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,4,source_reliability,HYPOTHESIS,bilinen SCM/model estimand ve reproducible seeds,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,5,license,UNVERIFIED,generator çıktısı henüz oluşturulmadı,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,6,raw_access,VERIFIED,henüz veri üretilmedi;öneri,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,7,n_rows,UNVERIFIED,power/budget ile tasarlanacak,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,8,n_features,UNVERIFIED,low/high-d ve dependence grid önceden seçilecek,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,9,feature_types,HYPOTHESIS,"mixed,correlated,interaction,redundant feature",ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,10,target_name,UNVERIFIED,generator contract sonrası,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,11,target_meaning,HYPOTHESIS,bilinen fonksiyon+noise;causal/observational/model-based GT ayrı,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,12,n_classes,HYPOTHESIS,"binary,ordinal,regression mekanizmaları ayrı",ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,13,class_distribution,UNVERIFIED,önceden planlanacak,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,14,missing,HYPOTHESIS,MCAR/MAR/MNAR ayrı kontrollü regime,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,15,duplicates,UNVERIFIED,generator sonrası,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,16,person_group_id,HYPOTHESIS,group/time mechanisms gerekli ise tasarlanacak,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,17,repeated_observations,HYPOTHESIS,temporal/group kolu ayrı,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,18,time,HYPOTHESIS,"controlled shift,real-world temporal kanıtı değil",ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,19,target_leakage,HYPOTHESIS,oracle yalnız değerlendirmeciye;generator/model shortcuts ayrı test edilir,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,20,temporal_leakage,HYPOTHESIS,seed/mechanism family isolation,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,21,selection_bias,VERIFIED,tasarım kapsamı gerçek dünya temsil garantisi değil,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,22,sensitive,HYPOTHESIS,yalnız simulated covariates;gerçek kişi bilgisi yok,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,23,proxies,HYPOTHESIS,bilinen redundant/proxy mekanizmaları,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,24,feature_dependence,HYPOTHESIS,correlation/copula/nonlinear/mixed completion regimes,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,25,conditional_sampling,HYPOTHESIS,oracle vs estimated conditional law;bilinen mekanizma altında GT,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,26,cost,UNVERIFIED,budget önceden sabitlenecek,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,27,xai_suitability,HYPOTHESIS,sekiz boyut mekanizma tasarımına bağlı;GT yalnız açık estimand için,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,28,final_test_adequacy,UNVERIFIED,monte-carlo power/seeds/accepted n tasarlanacak,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,29,cross_dataset_independence,HYPOTHESIS,"unseen DGP families,seed değişimi tek başına domain independence değil",ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
+SYNTHETIC,30,ethics,HYPOTHESIS,gerçek data-derived parameter inference yapılmazsa kişisel veri yok,ACCEPT_CANDIDATE,Phase0 design proposal; generated data yok
