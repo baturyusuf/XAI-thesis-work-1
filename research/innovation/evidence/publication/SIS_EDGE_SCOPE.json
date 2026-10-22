@@ -1,0 +1,63 @@
+{
+  "status": "INDEPENDENT_REFERENCE_CHECKED_SOURCE_PATH",
+  "source_commit": "0d94f8c4d92678ce5f7a0eacae725f79174cfb03",
+  "source_sha256": "2718ae0e195384927f814efeba0edd127cabcdebfaf7a4b9a02bf2d59e7b9079",
+  "source_file": "third_party/google_sis/sis.py",
+  "source_lines": {
+    "empty_list": [
+      420,
+      467
+    ],
+    "index_transform": [
+      244,
+      246
+    ],
+    "mask_assignment": [
+      532,
+      534
+    ],
+    "mask_semantics": [
+      109,
+      113
+    ]
+  },
+  "input": [
+    1.0,
+    1.0
+  ],
+  "fully_masked": [
+    0.0,
+    0.0
+  ],
+  "threshold": 1.0,
+  "score": "constant ones for every batch row",
+  "fully_masked_score": 1.0,
+  "fully_masked_below_threshold": false,
+  "sis_idxs": [],
+  "indexer_repr": "()",
+  "mask_before": [
+    false,
+    false
+  ],
+  "mask_after": [
+    true,
+    true
+  ],
+  "native_sis": [],
+  "native_mask": [
+    true,
+    true
+  ],
+  "semantic_expected_mask": [
+    false,
+    false
+  ],
+  "mask_conformance": false,
+  "calls": 4,
+  "input_rows": 5,
+  "numpy": "2.3.4",
+  "scope": "Mask metadata inconsistency when empty SIS is emitted; full-mask still sufficient for constant score. Does NOT establish normal-use algorithmic failure.",
+  "recommendation": "Pinned doc lines30-38 recommend an uninformative fully-masked prediction. This high-score constant control does not establish that practical condition; recommendation is not a checked hard API precondition.",
+  "new_unit_tests": 0,
+  "source_patch": "NONE"
+}

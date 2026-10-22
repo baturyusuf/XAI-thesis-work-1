@@ -1,0 +1,16 @@
+{
+  "package": "lime",
+  "version": "0.2.0.1",
+  "metadata_url": "https://pypi.org/pypi/lime/0.2.0.1/json",
+  "archive_url": "https://files.pythonhosted.org/packages/f5/86/91a13127d83d793ecb50eb75e716f76e6eda809b6803c5a4ff462339789e/lime-0.2.0.1.tar.gz",
+  "archive_sha256": "76960e4f055feb53e89b5022383bafc87b63f25bac6265984b0a333d1a57f781",
+  "member": "lime-0.2.0.1/lime/lime_tabular.py",
+  "source_sha256": "4d9c5514fcf38b3652b5d43afd1696441cbc0189f0785d27a8d59b588ce540f7",
+  "private_api_signatures": [
+    "def __data_inverse(self, data_row, num_samples):"
+  ],
+  "archive_executed": false,
+  "installed": false,
+  "conclusion": "Declared historical dependency has no required sampling_method; current repository HEAD signature mismatch is NOT established against declared release",
+  "utc": "2026-10-22T13:18:48.574164+00:00"
+}

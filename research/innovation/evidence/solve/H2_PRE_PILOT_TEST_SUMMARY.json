@@ -1,0 +1,12 @@
+[
+  {
+    "pattern": "test_h2_reference.py",
+    "returncode": 0,
+    "seconds": 0.07696639999630861
+  },
+  {
+    "pattern": "test_ltt_accepted.py",
+    "returncode": 0,
+    "seconds": 0.13014249999832828
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "command": "python -m unittest discover -s tests/innovation -p test_h1_reference.py -v",
+  "returncode": 0,
+  "tests_run": 5,
+  "status": "PASS",
+  "tally_example": {
+    "scenario": "test_counts_and_deletion constant scorer, two groups, uniform 4-state law",
+    "model_callbacks": 15,
+    "predicate_calls": 3,
+    "unique_states": 4,
+    "referee_state_evaluations": 12,
+    "cache_policy": "uncached callbacks; unique_states counts distinct input states"
+  },
+  "note": "No benchmark run; counts are returned per repeated_deletion invocation. Test command output saved in H1_TEST_LOG.txt."
+}

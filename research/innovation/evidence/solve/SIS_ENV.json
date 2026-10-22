@@ -1,0 +1,28 @@
+{
+  "python_environment": [
+    "[WORKTREE_ROOT]\\.venv-sis\\Scripts\\python.exe",
+    "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+    "Windows-11-10.0.26200-SP0",
+    "2.3.4"
+  ],
+  "pip_version": "pip 26.2.1 from [WORKTREE_ROOT]\\.venv-sis\\Lib\\site-packages\\pip (python 3.13)",
+  "pip_freeze": [
+    "numpy @ file:///[WORKTREE_ROOT]/.cache/innovation/sis/numpy-2.3.4-cp313-cp313-win_amd64.whl#sha256=56209416e81a7893036eea03abcb91c130643eb14233b2515c90dcac963fe99d"
+  ],
+  "venv_system_site_packages": false,
+  "wheel": "numpy-2.3.4-cp313-cp313-win_amd64.whl",
+  "wheel_sha256": "56209416e81a7893036eea03abcb91c130643eb14233b2515c90dcac963fe99d",
+  "wheel_path": ".cache/innovation/sis/numpy-2.3.4-cp313-cp313-win_amd64.whl",
+  "resolved_wheel_url": "https://files.pythonhosted.org/packages/09/97/fd421e8bc50766665ad35536c2bb4ef916533ba1fdd053a62d96cc7c8b95/numpy-2.3.4-cp313-cp313-win_amd64.whl",
+  "wheel_audit": {
+    "pth_files": 0,
+    "bundled_scripts": 0,
+    "console_entry_points": [
+      "f2py",
+      "numpy-config"
+    ]
+  },
+  "source_sha256": "2718ae0e195384927f814efeba0edd127cabcdebfaf7a4b9a02bf2d59e7b9079",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "wheel_url_verification": "PyPI release JSON for numpy 2.3.4: filename and SHA-256 match exactly"
+}

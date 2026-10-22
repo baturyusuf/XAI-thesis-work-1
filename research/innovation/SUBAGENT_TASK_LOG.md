@@ -1,0 +1,21 @@
+# Subagent task log — 2026-10-22
+Available models queried. Both subagents used exact openai-subscribed/gpt-6-luna. spawn_agent has no reasoning-level field; Medium not selectable explicitly. No Rumeli/local model or manual subagent creation.
+
+| Session | Scope/output | Verification/stop condition |
+|---|---|---|
+| ff13eb24-6325-486d-abfe-6181c43ecc66 | H1 source/paper/provenance; SIS/RDE/VeriX APIs, PAXp/abstraction unresolved; follow-up Google source/license and RDE license | Immutable SHA/author links, actual signatures; no install/run; stop prioritized artifacts checked or blocked |
+| ff45aa89-f6fd-4769-8cbe-50c59bea1950 | H2 sources/LTT/CRC/LIME/SHAP; Bayes link initially unresolved; follow-up real author href provided by parent, Bayes source/license/posterior/deps audited | Guessed URL404 not absence evidence; immutable raw/tree, source depth/unknowns explicit |
+| H1 same session | Disjoint write scope only H1B/SCIENTIFIC_COMPARABILITY/H3 docs in own worktree | Absolute-path/branch/exclusive-create guards, no code/native execution |
+| H2 same session | Disjoint write scope only H2/NATIVE_API/ADAPTER docs in own worktree | Same safe-write rules; actual API vs metadata differentiated |
+| H1 same session final peer check | Report/registry/matrix/import/synthetic/failure scope read-only | No P0/P1 report defect; flagged stale inherited artifact-missing limits in registry, parent corrected SIS/RDE/Bayes. Integration gates remain open |
+
+Parent independently resolved Bayes raw HTML href, downloaded37 source/metadata snapshots with hashes, checked critical source/API/math, read A3 core and counted56 tests statically. Parent re-read agent docs and corrected ambiguous shared score/evaluator probes and LTT outer-vs-inner conditioning. Source existence was not accepted as run success. Paper equivalence unknown throughout. Two oversized parent shell write attempts failed before any file write; Windows limits handled with shorter guarded writes. No third-party source executed and no private data opened.
+
+## Controlled SOLVE task log
+All delegates used available native openai-subscribed/gpt-6-luna, no reasoning-level field/local model. H1 session2d455ea3-d5e9-4812-b4e7-6ad3ac87ca15 wrote only H1 reference/tests/evidence, then independently reviewed H2 source and replayed synthetic records; initial outside-root tool blocker resolved with terminal absolute-path technique. Parent identified/corrected semantic eta/tail-vs-mean reference errors and oracle/cross-law count artifacts; attempts preserved.
+SIS sessiond473cd0b-974e-4231-838b-b1588b20053d source/dependency audit then isolated native source/venv/adapter/tests/evidence. Parent corrected True-retained interpretation/harness coordinate forecasts and scoped native empty-mask failure; source never patched. NumPy binary wheel audit before install.
+Accepted-count sessionad579617-95e7-4b49-8703-bd81a0d6a7d3 wrote separate existing-mechanism adapter/tests/audit. Parent materialized iterators and rational scores, added regression; original six logs preserved/current7pass. Temporary tool-access difficulty fixed without researcher root switch. Two audit docs placed one level above scope were moved into solve.
+Parent designed/froze/implemented H2, ran original56 and final85, verified saved hashes/costs and historical LIME source API. Independent H2 peer (H1 author, not H2 author) recomputed means/draws/12controller decisions/population diagnostics without H2 helpers; not external Agent5. One audit CP1252 emdash losslessly converted UTF8 with receipt. Some oversized Windows write commands failed before writes and were split safely. No delegate success/guarantee conclusion accepted without main checks. All writes own worktree, no private data.
+
+## Final handoff review
+Read-only H2 reviewer190a10ac-7916-41f1-a7c6-85016a8869e7, GPT6Luna: same loss/grid/budgets, conditional accepted-count validity, no P0 found, substantive IID/unbiasedness/numerics unresolved. SIS license delegate86996e07-be2d-4738-a765-0e273c9788dd hit context-limit errors; no conclusion borrowed. Parent directly queried nontruncated upstream root/SIS trees and verified Apache2/NOTICE scope. No new pilot run; source-path replay adds0unit tests; portable helper syntax corrected before successful85-test freeze.

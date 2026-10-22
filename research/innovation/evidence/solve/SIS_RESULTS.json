@@ -1,0 +1,521 @@
+{
+  "suite_status": "PARTIAL / COMPLETE_WITH_KNOWN_EDGE_INCONSISTENCY",
+  "per_case_results": [
+    {
+      "name": "no_sis",
+      "mode": "find",
+      "threshold": 3.0,
+      "input_shape": [
+        2
+      ],
+      "fully_masked_score": 0.0,
+      "independent_subset_scores": [
+        {
+          "retained": [],
+          "score": 0.0
+        },
+        {
+          "retained": [
+            1
+          ],
+          "score": 1.0
+        },
+        {
+          "retained": [
+            0
+          ],
+          "score": 1.0
+        },
+        {
+          "retained": [
+            0,
+            1
+          ],
+          "score": 2.0
+        }
+      ],
+      "actual_results": [],
+      "callback_calls": 1,
+      "input_rows": 1
+    },
+    {
+      "name": "full_sis",
+      "mode": "find",
+      "threshold": 0.5,
+      "input_shape": [
+        2
+      ],
+      "fully_masked_score": 0.0,
+      "independent_subset_scores": [
+        {
+          "retained": [],
+          "score": 0.0
+        },
+        {
+          "retained": [
+            1
+          ],
+          "score": 0.0
+        },
+        {
+          "retained": [
+            0
+          ],
+          "score": 0.0
+        },
+        {
+          "retained": [
+            0,
+            1
+          ],
+          "score": 1.0
+        }
+      ],
+      "actual_results": [
+        {
+          "sis": [
+            [
+              1
+            ],
+            [
+              0
+            ]
+          ],
+          "sis_shape": [
+            2,
+            1
+          ],
+          "mask": [
+            true,
+            true
+          ],
+          "mask_shape": [
+            2
+          ],
+          "backselect_values": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "callback_calls": 3,
+      "input_rows": 4
+    },
+    {
+      "name": "known_sparse_or",
+      "mode": "collection",
+      "threshold": 1.0,
+      "input_shape": [
+        2
+      ],
+      "fully_masked_score": 0.0,
+      "independent_subset_scores": [
+        {
+          "retained": [],
+          "score": 0.0
+        },
+        {
+          "retained": [
+            1
+          ],
+          "score": 1.0
+        },
+        {
+          "retained": [
+            0
+          ],
+          "score": 1.0
+        },
+        {
+          "retained": [
+            0,
+            1
+          ],
+          "score": 1.0
+        }
+      ],
+      "actual_results": [
+        {
+          "sis": [
+            [
+              1
+            ]
+          ],
+          "sis_shape": [
+            1,
+            1
+          ],
+          "mask": [
+            false,
+            true
+          ],
+          "mask_shape": [
+            2
+          ],
+          "backselect_values": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "sis": [
+            [
+              0
+            ]
+          ],
+          "sis_shape": [
+            1,
+            1
+          ],
+          "mask": [
+            true,
+            false
+          ],
+          "mask_shape": [
+            2
+          ],
+          "backselect_values": [
+            0.0
+          ]
+        }
+      ],
+      "callback_calls": 6,
+      "input_rows": 7
+    },
+    {
+      "name": "seeded_random_nonlinear",
+      "mode": "collection",
+      "threshold": 4.06913832343736,
+      "input_shape": [
+        3
+      ],
+      "fully_masked_score": 0.0,
+      "independent_subset_scores": [
+        {
+          "retained": [],
+          "score": 0.0
+        },
+        {
+          "retained": [
+            2
+          ],
+          "score": 1.1642968591053084
+        },
+        {
+          "retained": [
+            1
+          ],
+          "score": 1.0021834961198801
+        },
+        {
+          "retained": [
+            1,
+            2
+          ],
+          "score": 3.426431611861844
+        },
+        {
+          "retained": [
+            0
+          ],
+          "score": 1.1427067115755165
+        },
+        {
+          "retained": [
+            0,
+            2
+          ],
+          "score": 2.307003570680825
+        },
+        {
+          "retained": [
+            0,
+            1
+          ],
+          "score": 2.1448902076953966
+        },
+        {
+          "retained": [
+            0,
+            1,
+            2
+          ],
+          "score": 4.56913832343736
+        }
+      ],
+      "actual_results": [
+        {
+          "sis": [
+            [
+              2
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ]
+          ],
+          "sis_shape": [
+            3,
+            1
+          ],
+          "mask": [
+            true,
+            true,
+            true
+          ],
+          "mask_shape": [
+            3
+          ],
+          "backselect_values": [
+            3.426431611861844,
+            1.1642968591053084,
+            0.0
+          ]
+        }
+      ],
+      "callback_calls": 5,
+      "input_rows": 8
+    },
+    {
+      "name": "constant_edge",
+      "mode": "collection",
+      "threshold": 1.0,
+      "input_shape": [
+        2
+      ],
+      "fully_masked_score": 1.0,
+      "independent_subset_scores": [
+        {
+          "retained": [],
+          "score": 1.0
+        },
+        {
+          "retained": [
+            1
+          ],
+          "score": 1.0
+        },
+        {
+          "retained": [
+            0
+          ],
+          "score": 1.0
+        },
+        {
+          "retained": [
+            0,
+            1
+          ],
+          "score": 1.0
+        }
+      ],
+      "actual_results": [
+        {
+          "sis": [],
+          "sis_shape": [
+            0
+          ],
+          "mask": [
+            true,
+            true
+          ],
+          "mask_shape": [
+            2
+          ],
+          "backselect_values": [
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "callback_calls": 4,
+      "input_rows": 5
+    },
+    {
+      "name": "tie_sum",
+      "mode": "collection",
+      "threshold": 0.5,
+      "input_shape": [
+        2
+      ],
+      "fully_masked_score": 0.0,
+      "independent_subset_scores": [
+        {
+          "retained": [],
+          "score": 0.0
+        },
+        {
+          "retained": [
+            1
+          ],
+          "score": 1.0
+        },
+        {
+          "retained": [
+            0
+          ],
+          "score": 1.0
+        },
+        {
+          "retained": [
+            0,
+            1
+          ],
+          "score": 2.0
+        }
+      ],
+      "actual_results": [
+        {
+          "sis": [
+            [
+              1
+            ]
+          ],
+          "sis_shape": [
+            1,
+            1
+          ],
+          "mask": [
+            false,
+            true
+          ],
+          "mask_shape": [
+            2
+          ],
+          "backselect_values": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "sis": [
+            [
+              0
+            ]
+          ],
+          "sis_shape": [
+            1,
+            1
+          ],
+          "mask": [
+            true,
+            false
+          ],
+          "mask_shape": [
+            2
+          ],
+          "backselect_values": [
+            0.0
+          ]
+        }
+      ],
+      "callback_calls": 6,
+      "input_rows": 7
+    },
+    {
+      "name": "broadcast_row_group",
+      "mode": "collection",
+      "threshold": 2.0,
+      "input_shape": [
+        2,
+        2
+      ],
+      "fully_masked_score": 0.0,
+      "independent_subset_scores": [
+        {
+          "retained_rows": [],
+          "score": 0.0
+        },
+        {
+          "retained_rows": [
+            1
+          ],
+          "score": 2.0
+        },
+        {
+          "retained_rows": [
+            0
+          ],
+          "score": 2.0
+        },
+        {
+          "retained_rows": [
+            0,
+            1
+          ],
+          "score": 4.0
+        }
+      ],
+      "actual_results": [
+        {
+          "sis": [
+            [
+              1,
+              0
+            ]
+          ],
+          "sis_shape": [
+            1,
+            2
+          ],
+          "mask": [
+            [
+              false
+            ],
+            [
+              true
+            ]
+          ],
+          "mask_shape": [
+            2,
+            1
+          ],
+          "backselect_values": [
+            2.0,
+            0.0
+          ]
+        },
+        {
+          "sis": [
+            [
+              0,
+              0
+            ]
+          ],
+          "sis_shape": [
+            1,
+            2
+          ],
+          "mask": [
+            [
+              true
+            ],
+            [
+              false
+            ]
+          ],
+          "mask_shape": [
+            2,
+            1
+          ],
+          "backselect_values": [
+            0.0
+          ]
+        }
+      ],
+      "callback_calls": 6,
+      "input_rows": 7
+    }
+  ],
+  "constant_edge_documented_expected_mask": [
+    false,
+    false
+  ],
+  "constant_edge_native_observed_mask": [
+    true,
+    true
+  ],
+  "no_mask_repair_applied": true
+}

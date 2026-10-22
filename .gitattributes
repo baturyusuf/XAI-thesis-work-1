@@ -1,2 +1,10 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Preserve immutable provenance bytes; do not normalize pinned sources/evidence.
+src/** -text
+tests/** -text
+third_party/google_sis/** -text
+research/innovation/** -text
+.gitattributes -text
+.gitignore -text

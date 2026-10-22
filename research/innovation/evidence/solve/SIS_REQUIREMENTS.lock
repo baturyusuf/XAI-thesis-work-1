@@ -1,0 +1,4 @@
+numpy==2.3.4; SHA256 56209416e81a7893036eea03abcb91c130643eb14233b2515c90dcac963fe99d
+Wheel URL: https://files.pythonhosted.org/packages/09/97/fd421e8bc50766665ad35536c2bb4ef916533ba1fdd053a62d96cc7c8b95/numpy-2.3.4-cp313-cp313-win_amd64.whl
+Python 3.13.15; Windows amd64; binary wheel only; no dependencies
+pip 26.2.1; venv system site packages disabled

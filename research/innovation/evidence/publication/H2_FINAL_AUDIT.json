@@ -1,0 +1,39 @@
+{
+  "status": "INDEPENDENT_REFERENCE_CHECKED_WITH_ASSUMPTION_LIMITS",
+  "same_frozen_target_loss_and_units": true,
+  "same_nine_threshold_family_and_order": true,
+  "same_calibration_empirical_risk_coverage_and_lower_bound_per_paired_policy": true,
+  "p_method": "Same bounded HB function, full-n transformed vs accepted-k inputs",
+  "alpha": "1/5",
+  "minimum_coverage": "1/20",
+  "n_fit": 256,
+  "n_calibration": 512,
+  "n_evaluation": 512,
+  "probe_counts": {
+    "fit": 16,
+    "score": 8,
+    "calibration_loss": 16,
+    "evaluation_loss": 32
+  },
+  "risk_budget_per_score_controller": "1/240",
+  "coverage_budget_per_score_controller": "1/240",
+  "main_family_union": "6*2*(1/240+1/240)=1/10",
+  "per_policy_risk_cutoff": "1/2160",
+  "positive_controls": "Separate deterministic perfect-bank correctness checks, not deployment candidates or efficacy replicates",
+  "result_counts": {
+    "eligible": 2,
+    "no_policy": 10
+  },
+  "preserved_config_sha256": "be881d0a43aa21196dec128ac4e57e1ec0830bfc19f39961df5953e1a03345a4",
+  "population_vs_test": "Population integrates known toy DGP/score noise conditional on fit/selected threshold. Test is finite independent T mean; calibration is C; outer probability is over calibration.",
+  "open_risks": [
+    "Factual IID and conditional independence not proven by IDs or seeds",
+    "Bounded conditional-unbiased MC loss required for latent-risk target",
+    "Score and family independently frozen before C, conditional on B",
+    "Floating HB/CDF/KL not interval-certified;1e-12 not universal error proof",
+    "No independently timestamped preregistration/formal Agent5 verification",
+    "Different coverage/cost precludes superiority"
+  ],
+  "native_LIME": false,
+  "new_pilot_run": false
+}

@@ -1,0 +1,37 @@
+{
+  "status": "LICENSE_AND_ATTRIBUTION_CHECKED",
+  "license": "Apache-2.0",
+  "copyright": "2026 The Google Research Authors; preserved verbatim",
+  "upstream_commit": "0d94f8c4d92678ce5f7a0eacae725f79174cfb03",
+  "root_tree_api": "https://api.github.com/repos/google-research/google-research/git/trees/0d94f8c4d92678ce5f7a0eacae725f79174cfb03",
+  "root_license_blob": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+  "SIS_tree": "8be30708b932c1c5c38a3ffd73c205b09ad16f0e",
+  "root_and_SIS_nontruncated": true,
+  "NOTICE_at_root_or_SIS_directory": false,
+  "NOTICE_scope": "Only inspected root and parent directory of copied files; tutorials/other projects not redistributed",
+  "redistribution": "Retain license, original headers and provenance; no ownership or original-paper experiment-code equivalence claim",
+  "files": [
+    {
+      "path": "third_party/google_sis/sis.py",
+      "sha256": "2718ae0e195384927f814efeba0edd127cabcdebfaf7a4b9a02bf2d59e7b9079",
+      "modified": false
+    },
+    {
+      "path": "third_party/google_sis/README.md",
+      "sha256": "2364b5afba16a1dcde8eab2ebf182d8890b28a1c13cccd4b106829ecb7170b15",
+      "modified": false
+    },
+    {
+      "path": "third_party/google_sis/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "modified": false
+    },
+    {
+      "path": "third_party/google_sis/requirements.txt",
+      "sha256": "b56b00d10505755a90ff8f2e17d2194266363b826a7fa601c5a9fea1dda8d984",
+      "modified": false
+    }
+  ],
+  "packages_redistributed": false,
+  "other_raw_source_snapshots": "EXCLUDED from publication; URLs and hashes retained"
+}

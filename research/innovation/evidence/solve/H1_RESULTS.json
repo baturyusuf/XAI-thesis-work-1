@@ -1,0 +1,171 @@
+{
+  "eta": "1/4",
+  "searches": {
+    "uniform_Qopt": {
+      "selected": [
+        0,
+        1
+      ],
+      "local_minimality": true,
+      "repeated_deletion_cost": {
+        "model_callbacks": 8,
+        "predicate_calls": 3,
+        "unique_states": 3
+      },
+      "global_enumeration": {
+        "minima": [
+          [
+            0,
+            1
+          ]
+        ],
+        "cost": {
+          "candidate_subsets_visited": 4,
+          "subset_metric_calls": 4,
+          "model_callbacks": 13,
+          "unique_states": 4
+        }
+      }
+    },
+    "misspecified_Qopt": {
+      "selected": [],
+      "local_minimality": true,
+      "repeated_deletion_cost": {
+        "model_callbacks": 10,
+        "predicate_calls": 3,
+        "unique_states": 4
+      },
+      "global_enumeration": {
+        "minima": [
+          []
+        ],
+        "cost": {
+          "candidate_subsets_visited": 1,
+          "subset_metric_calls": 1,
+          "model_callbacks": 5,
+          "unique_states": 4
+        }
+      }
+    }
+  },
+  "crossed_Qopt_search_and_Qeval_evaluation": {
+    "uniform_Qopt": {
+      "selected": [
+        0,
+        1
+      ],
+      "evaluation_under_Qopt": {
+        "label_violation": "0",
+        "mean_absolute_distortion": "0",
+        "cost": {
+          "model_callbacks": 2,
+          "unique_states": 1,
+          "predicate_calls": 0,
+          "subset_evaluations": 1
+        }
+      },
+      "evaluation_under_uniform_Qeval": {
+        "label_violation": "0",
+        "mean_absolute_distortion": "0",
+        "cost": {
+          "model_callbacks": 2,
+          "unique_states": 1,
+          "predicate_calls": 0,
+          "subset_evaluations": 1
+        }
+      }
+    },
+    "misspecified_Qopt": {
+      "selected": [],
+      "evaluation_under_Qopt": {
+        "label_violation": "1/5",
+        "mean_absolute_distortion": "1/5",
+        "cost": {
+          "model_callbacks": 5,
+          "unique_states": 4,
+          "predicate_calls": 0,
+          "subset_evaluations": 1
+        }
+      },
+      "evaluation_under_uniform_Qeval": {
+        "label_violation": "1/2",
+        "mean_absolute_distortion": "1/2",
+        "cost": {
+          "model_callbacks": 5,
+          "unique_states": 4,
+          "predicate_calls": 0,
+          "subset_evaluations": 1
+        }
+      }
+    }
+  },
+  "nonmonotone": {
+    "selected": [
+      0,
+      1
+    ],
+    "empty_violation": "9/50",
+    "singleton_violations": [
+      "9/10",
+      "9/10"
+    ],
+    "one_deletion_locally_minimal": true,
+    "global_enumeration": {
+      "minima": [
+        []
+      ],
+      "cost": {
+        "candidate_subsets_visited": 1,
+        "subset_metric_calls": 1,
+        "model_callbacks": 5,
+        "unique_states": 4
+      }
+    },
+    "deletion_cost": {
+      "model_callbacks": 8,
+      "predicate_calls": 3,
+      "unique_states": 3
+    }
+  },
+  "three_bit_controls": {
+    "unary_S0": {
+      "selected": [
+        0
+      ],
+      "violation": "0",
+      "cost": {
+        "model_callbacks": 27,
+        "predicate_calls": 6,
+        "unique_states": 8
+      }
+    },
+    "constant": {
+      "selected": [],
+      "violation": "0",
+      "cost": {
+        "model_callbacks": 19,
+        "predicate_calls": 4,
+        "unique_states": 8
+      }
+    },
+    "random_subset": {
+      "seed": 90210,
+      "chosen_groups": [
+        0,
+        2
+      ],
+      "size": 2,
+      "independent_of_model_outcomes": true,
+      "label_violation": "1/2",
+      "distortion": "1/2"
+    }
+  },
+  "runtime": "NOT_MEASURED",
+  "method_cost_notes": "Each search, enumeration and fixed-subset evaluation uses a fresh CountingModel. Enumeration candidate visits stop at first feasible cardinality and its callback/candidate costs are reported separately from deletion. No Q_eval re-search is performed.",
+  "limits": [
+    "finite synthetic supports only",
+    "not native PAXp replication",
+    "local minimality differs from global cardinality",
+    "no scalability or novelty claim"
+  ]
+}

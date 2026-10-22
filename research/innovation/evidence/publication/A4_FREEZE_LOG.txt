@@ -1,0 +1,50 @@
+test_exhaustive_binary_tables_against_a3_and_minimum (test_h1_reference.H1ReferenceTests.test_exhaustive_binary_tables_against_a3_and_minimum) ... ok
+test_independent_metrics_crosscheck_a3_and_eta (test_h1_reference.H1ReferenceTests.test_independent_metrics_crosscheck_a3_and_eta) ... ok
+test_invalid_target_support_and_probability_contract (test_h1_reference.H1ReferenceTests.test_invalid_target_support_and_probability_contract) ... ok
+test_mean_distortion_and_unsupported_target_status (test_h1_reference.H1ReferenceTests.test_mean_distortion_and_unsupported_target_status) ... ok
+test_nonmonotone_full_local_but_empty_global (test_h1_reference.H1ReferenceTests.test_nonmonotone_full_local_but_empty_global) ... ok
+test_random_subset_is_seeded_before_metric_evaluation (test_h1_reference.H1ReferenceTests.test_random_subset_is_seeded_before_metric_evaluation) ... ok
+test_three_bit_unary_constant_seeded_random_full (test_h1_reference.H1ReferenceTests.test_three_bit_unary_constant_seeded_random_full) ... ok
+test_uniform_xor_global_full_and_misspecified_law (test_h1_reference.H1ReferenceTests.test_uniform_xor_global_full_and_misspecified_law) ... ok
+test_clipping_known_controls (test_h2_reference.H2ReferenceTests.test_clipping_known_controls) ... ok
+test_fixed_bank_and_target (test_h2_reference.H2ReferenceTests.test_fixed_bank_and_target) ... ok
+test_float_vector_rejected_not_normalized (test_h2_reference.H2ReferenceTests.test_float_vector_rejected_not_normalized) ... ok
+test_histogram_oracle_population_and_random_control (test_h2_reference.H2ReferenceTests.test_histogram_oracle_population_and_random_control) ... ok
+test_learned_cells_use_labels_and_fallback (test_h2_reference.H2ReferenceTests.test_learned_cells_use_labels_and_fallback) ... ok
+test_probe_counts_and_no_loss_reuse (test_h2_reference.H2ReferenceTests.test_probe_counts_and_no_loss_reuse) ... ok
+test_score_probe_mean_is_unbiased_by_independent_binomial_sum (test_h2_reference.H2ReferenceTests.test_score_probe_mean_is_unbiased_by_independent_binomial_sum) ... ok
+test_assumptions_and_fit_leakage_block (test_ltt_accepted.AcceptedLTTTests.test_assumptions_and_fit_leakage_block) ... ok
+test_conditioned_sample_size_differs_from_full_sample (test_ltt_accepted.AcceptedLTTTests.test_conditioned_sample_size_differs_from_full_sample) ... ok
+test_exact_small_iid_fwer_enumeration (test_ltt_accepted.AcceptedLTTTests.test_exact_small_iid_fwer_enumeration) ... ok
+test_generators_and_decimal_threshold_follow_a3_contract (test_ltt_accepted.AcceptedLTTTests.test_generators_and_decimal_threshold_follow_a3_contract) ... ok
+test_positive_power_uses_k_and_full_n_coverage (test_ltt_accepted.AcceptedLTTTests.test_positive_power_uses_k_and_full_n_coverage) ... ok
+test_target_mismatch_blocks (test_ltt_accepted.AcceptedLTTTests.test_target_mismatch_blocks) ... ok
+test_zero_acceptance_has_no_risk_or_rejection (test_ltt_accepted.AcceptedLTTTests.test_zero_acceptance_has_no_risk_or_rejection) ... ok
+test_broadcast_row_group_mask (test_sis_native.SISNativeTests.test_broadcast_row_group_mask) ... ok
+test_constant_score_empty_sufficient_set (test_sis_native.SISNativeTests.test_constant_score_empty_sufficient_set) ... FAIL
+test_full_sis_find_sis (test_sis_native.SISNativeTests.test_full_sis_find_sis) ... ok
+test_known_sparse_sis_collection (test_sis_native.SISNativeTests.test_known_sparse_sis_collection) ... ok
+test_no_sis_find_sis (test_sis_native.SISNativeTests.test_no_sis_find_sis) ... ok
+test_seeded_random_nonlinear_three_feature_case (test_sis_native.SISNativeTests.test_seeded_random_nonlinear_three_feature_case) ... ok
+test_tie_prefers_lowest_masked_index (test_sis_native.SISNativeTests.test_tie_prefers_lowest_masked_index) ... ok
+
+======================================================================
+FAIL: test_constant_score_empty_sufficient_set (test_sis_native.SISNativeTests.test_constant_score_empty_sufficient_set)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "[CHECKOUT]\tests\innovation\test_sis_native.py", line 75, in test_constant_score_empty_sufficient_set
+    self.assertEqual(results[0].mask.tolist(), [False, False])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [True, True] != [False, False]
+
+First differing element 0:
+True
+False
+
+- [True, True]
++ [False, False]
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.081s
+
+FAILED (failures=1)

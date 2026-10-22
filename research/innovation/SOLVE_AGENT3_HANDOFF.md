@@ -1,0 +1,5 @@
+# Agent 3 — SOLVE integration handoff
+2026-10-22 | Your23 imported files byte-identical, original56pass, no API patch
+Separate innovation modules implement exact/reference deletion, Google SIS loader/count adapter, synthetic h/probe/histogram bank, and existing accepted-count HB+Bonferroni LTT reference. No current general float adapter or silent normalization. Accepted-count variant reuses your full metadata guards and full-n coverage bound, then tests only accepted k losses;7 targeted tests and independent H2 arithmetic audit, still conditional not formal numerical verification.
+At alpha.2/c_min.05/globalbudget.1, accepted-count certifies both direct/learned, your transformed form none on sameC; ideal perfect bank certifies under BOTH. This is power/controller choice in one toy, not explanation superiority. Need coordinated review before adopting controller as methodology default. Rank-only partial ties not necessarily grid-achievable; zero policy riskNone.
+Source/import/config/85tests84pass1SISnativefail and cost receipts attached; any further source patch requires explicit permission. No real/final experiments.

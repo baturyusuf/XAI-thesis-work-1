@@ -1,0 +1,68 @@
+{
+  "protocol": "agent4-controlled-synthetic-v2",
+  "status": "PREDECLARED_NOT_RUN",
+  "object": "synthetic local-surrogate reference, NOT LIME",
+  "predictor": "p1(z)=1/4+z/2, states0/1, ordered classes(0,1), target1",
+  "surrogates": "h(0),h(1) independently uniform in{1/4,1/2,3/4}; naturally probability-valued",
+  "law": "M=uniform{0,1}, fixed true known finite joint",
+  "unit": "independent simulated draw of surrogate endpoint pair, E deterministic from unit covariates",
+  "fit_units": 256,
+  "calibration_units": 512,
+  "evaluation_units": 512,
+  "train_label_probes": 16,
+  "score_probes": 8,
+  "calibration_loss_probes": 16,
+  "evaluation_loss_probes": 32,
+  "scores": [
+    "independent_probe",
+    "learned_histogram_mean",
+    "random",
+    "reversed_probe",
+    "always_accept",
+    "zero_accept"
+  ],
+  "quality_model": "existing fixed-bin histogram regression on endpoint pair, fit MC labels on B; unseen fallback global training mean",
+  "thresholds": [
+    "0",
+    "1/16",
+    "2/16",
+    "3/16",
+    "4/16",
+    "5/16",
+    "6/16",
+    "7/16",
+    "1/2"
+  ],
+  "alpha": "1/5",
+  "minimum_coverage": "1/20",
+  "risk_error_per_family": "1/240",
+  "coverage_error_per_family": "1/240",
+  "total_union_error_budget": "1/10 across6scores*2controllers risk+coverage",
+  "controller": "A3 unchanged HB + Bonferroni",
+  "tie_seed": 903,
+  "base_seeds": {
+    "fit": 801,
+    "calibration": 802,
+    "evaluation": 803
+  },
+  "probe_seed_bases": {
+    "fit": 100000,
+    "calibration": 200000,
+    "evaluation": 300000
+  },
+  "random_score_seed_base": 400000,
+  "fixed_coverage": "1/2, diagnostic only; tie permutation seed903",
+  "exact_population_diagnostic": "post-calibration enumerate9endpoint pairs and binomial8score draws, no scorer access/tuning",
+  "global_decision": "no efficacy/novelty/adequacy claim; no practical effect margin frozen",
+  "resources": "stdlib pilot timeout120s, no new packages for H2; memory/time measured or NOT_MEASURED",
+  "cost_matching": "sameE/shared independent loss eval; actual per-role queries counted; full matched total cost NOT_ESTABLISHED",
+  "independence": "conceptual IID product law; disjoint role/unit PRNG streams implement reproducible simulation, not proof of real-world IID",
+  "fitting_separation": "fixed analytic f/E rule beforeB; B fit only; C calibration; T eval only; score draws disjoint from loss draws; common final loss data allowed across policies only",
+  "retuning": "forbidden after results; bug corrections retain attempt log and do not alter scientific thresholds",
+  "controllers": [
+    "A3-transformed-HB-Bonferroni",
+    "existing-accepted-count-HB-Bonferroni-reference"
+  ],
+  "revision_reason": "BEFORE any H2 pilot outcomes: include existing accepted-count test to audit transformed-controller power; no scientific threshold/sample change",
+  "positive_control": "separate deterministic perfect-surrogate bank verifies existing LTT power, not efficacy evidence"
+}

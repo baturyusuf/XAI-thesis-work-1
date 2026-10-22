@@ -1,0 +1,165 @@
+{
+  "eta": {
+    "label": "1/4",
+    "distortion": "1/4"
+  },
+  "outcomes": {
+    "uniform_Qopt": {
+      "repeated_deletion": [
+        0,
+        1
+      ],
+      "global_minima": [
+        [
+          0,
+          1
+        ]
+      ],
+      "full_metrics": {
+        "label_violation": "0",
+        "mean_absolute_distortion": "0"
+      },
+      "empty_metrics": {
+        "label_violation": "1/2",
+        "mean_absolute_distortion": "1/2"
+      },
+      "repeated_deletion_costs": {
+        "model_callbacks": 8,
+        "predicate_calls": 3,
+        "unique_states": 3
+      },
+      "global_enumeration_candidate_subsets": 4
+    },
+    "misspecified_Qopt": {
+      "repeated_deletion": [],
+      "global_minima": [
+        []
+      ],
+      "full_metrics": {
+        "label_violation": "0",
+        "mean_absolute_distortion": "0"
+      },
+      "empty_metrics": {
+        "label_violation": "1/5",
+        "mean_absolute_distortion": "1/5"
+      },
+      "repeated_deletion_costs": {
+        "model_callbacks": 10,
+        "predicate_calls": 3,
+        "unique_states": 4
+      },
+      "global_enumeration_candidate_subsets": 4
+    },
+    "misspecified_Qeval": {
+      "repeated_deletion": [
+        0,
+        1
+      ],
+      "global_minima": [
+        [
+          0,
+          1
+        ]
+      ],
+      "full_metrics": {
+        "label_violation": "0",
+        "mean_absolute_distortion": "0"
+      },
+      "empty_metrics": {
+        "label_violation": "1/2",
+        "mean_absolute_distortion": "1/2"
+      },
+      "repeated_deletion_costs": {
+        "model_callbacks": 8,
+        "predicate_calls": 3,
+        "unique_states": 3
+      },
+      "global_enumeration_candidate_subsets": 4
+    }
+  },
+  "method_notes": {
+    "independent_metric": "uncached exact Fraction sums; callback counts shown for repeated deletion only; per-candidate metric work is base plus positive conditional states",
+    "repeated_deletion": "uses SubsetResult.feasible(mode,threshold), restarts after each successful deletion",
+    "global_reference": "separate exhaustive candidate-set enumeration; not deletion predicate calls",
+    "a3_crosscheck": "independent metrics agree with evaluate_subset and all 16 binary 2-bit tables/all 4 subsets agree; minimum-cardinality results crosschecked"
+  },
+  "limitations": [
+    "Finite synthetic supports only",
+    "No native PAXp replication or scalability claim",
+    "Local minimality is one-deletion infeasibility, distinct from minimum cardinality",
+    "Q_opt and Q_eval are explicit named laws; mismatch is a law effect, not search failure"
+  ],
+  "additional_controls": {
+    "three_bit": {
+      "unary_S0": {
+        "selected": [
+          0
+        ],
+        "one_deletion_locally_minimal": true,
+        "label_violation": "0",
+        "repeated_deletion_costs": {
+          "model_callbacks": 27,
+          "predicate_calls": 6,
+          "unique_states": 8
+        },
+        "all_global_minima": [
+          [
+            0
+          ]
+        ]
+      },
+      "constant": {
+        "selected": [],
+        "one_deletion_locally_minimal": true,
+        "label_violation": "0",
+        "repeated_deletion_costs": {
+          "model_callbacks": 19,
+          "predicate_calls": 4,
+          "unique_states": 8
+        },
+        "all_global_minima": [
+          []
+        ]
+      },
+      "seeded_random_1847": {
+        "selected": [
+          2
+        ],
+        "one_deletion_locally_minimal": true,
+        "label_violation": "1/4",
+        "repeated_deletion_costs": {
+          "model_callbacks": 19,
+          "predicate_calls": 4,
+          "unique_states": 8
+        },
+        "all_global_minima": [
+          [
+            0
+          ],
+          [
+            2
+          ]
+        ]
+      }
+    },
+    "nonmonotone_weights_001_009_009_081": {
+      "selected": [
+        0,
+        1
+      ],
+      "empty_violation": "9/50",
+      "singleton_0_violation": "9/10",
+      "singleton_1_violation": "9/10",
+      "full_violation": "0",
+      "one_deletion_locally_minimal": true,
+      "global_minima": [
+        []
+      ],
+      "repeated_deletion_costs": {
+        "model_callbacks": 8,
+        "predicate_calls": 3,
+        "unique_states": 3
+      }
+    }
+  }
+}

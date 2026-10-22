@@ -1,0 +1,122 @@
+{
+  "audit_status": "PASS_WITH_LIMITATIONS",
+  "scope": "Read-only source/config/result/unit-record audit; independent Fraction sums and seeded probe replay; no production source or upstream edits.",
+  "artifacts": {
+    "config_v2_hash_matches_results": true,
+    "unit_record_hash_matches_results": true,
+    "all_recorded_source_hashes_match": true,
+    "v1_v2_changes": [
+      "protocol label",
+      "controllers added for A3-transformed and accepted-count",
+      "risk/coverage delta per controller-family changed from 1/120 to 1/240 to retain 1/10 global union budget over 6 scores x 2 controllers x 2 error events",
+      "positive-control note and revision reason added"
+    ],
+    "unchanged_v1_v2_fields": [
+      "sample sizes",
+      "train/score/loss probe counts",
+      "score names",
+      "thresholds",
+      "alpha",
+      "minimum coverage",
+      "base/probe seeds",
+      "fixed-coverage setting"
+    ]
+  },
+  "reconstructed_data": {
+    "units": {
+      "fit": 256,
+      "calibration": 512,
+      "evaluation": 512
+    },
+    "fit_endpoint_cells_seen": 9,
+    "fit_histogram_cell_means_match_independent_Fraction_rebuild": true,
+    "calibration_exact_loss_rows": 0,
+    "evaluation_exact_loss_rows": 512,
+    "result_rows": 12,
+    "threshold_rows_per_result": 9,
+    "no_policy_selected_rows": 10,
+    "unit_ids_disjoint": true,
+    "probe_batches": 2304,
+    "role_and_base_seed_collision_count": 0,
+    "direct_reversed_random_MC_scores_and_losses_replayed_from_seeds": true,
+    "formula_losses_match_saved_rows": true,
+    "null_result_rows_retained": true,
+    "tie_seed_distinct_from_probe_and_base_seeds": true
+  },
+  "independent_calibration_reconstruction": {
+    "method": "Recomputed HB log-p values, transformed losses or accepted-only losses, Bonferroni threshold factor, and Hoeffding lower coverage bound from C unit rows; no innovation calibration functions used.",
+    "all_12_controller_score_threshold_selections_match": true,
+    "exact_and_MC_T_point_metrics_match": true,
+    "selected_thresholds": {
+      "independent_probe/accepted_count": "3/16",
+      "learned_histogram_mean/accepted_count": "3/16",
+      "other_10_rows": "None"
+    },
+    "accepted_count_eligible_thresholds": {
+      "independent_probe": [
+        "1/16",
+        "1/8",
+        "3/16"
+      ],
+      "learned_histogram_mean": [
+        "1/8",
+        "3/16"
+      ]
+    },
+    "all_other_accepted_count_and_all_transformed_rows": "NO_POLICY_CERTIFIED"
+  },
+  "selected_population_referee_rebuilt_from_9_pairs_and_8-draw_score-noise": {
+    "independent_probe": {
+      "coverage": "13/32",
+      "risk": "433/3744"
+    },
+    "learned_histogram_mean": {
+      "coverage": "1/3",
+      "risk": "1/12"
+    },
+    "scope_note": "Conditional on the realized B-fitted learned score and selected threshold; integrates score-probe noise only, not B/C selection uncertainty."
+  },
+  "costs": {
+    "logical_sampling_draws": 36864,
+    "model_callbacks_by_role": {
+      "fit/score_fit": 512,
+      "calibration/score_probe": 1020,
+      "calibration/calibration_loss": 1024,
+      "evaluation/score_probe": 1016,
+      "evaluation/evaluation_loss": 1024,
+      "evaluation/exact_referee": 1024,
+      "diagnostics": 7
+    },
+    "total_actual_callbacks_including_exact_referee_and_diagnostics": 5627,
+    "distinct_support_states_per_role": 2,
+    "native_method_runtime": "NOT_MEASURED",
+    "matched_total_cost": "NOT_ESTABLISHED"
+  },
+  "diagnostics": {
+    "primary_output_mode": "native_probability",
+    "primary probe invalid probability rate": "0",
+    "primary clipped equals raw losses": true,
+    "strict invalid raw surrogate rejected": true,
+    "explicit clipping diagnostic raw_abs_loss": "5/8",
+    "explicit clipping diagnostic clipped_abs_loss": "1/8",
+    "clipping_gain": "1/2",
+    "interpretation": "Clipping changes the surrogate; not algorithmic improvement."
+  },
+  "findings": {
+    "P0": [],
+    "P1": [
+      "Accepted-count validity is conditional on true IID units, fixed score family, B/C/T independence, score/loss probe independence, and bounded unbiased MC loss. Code checks metadata and caller assertions, not truth of assumptions.",
+      "Seeded finite simulation and exact finite population diagnostic do not establish external or empirical IID, distribution shift robustness, real-world risk, or superiority.",
+      "No matched total-cost comparison or native LIME run; learned histogram is existing fixed-cell mean regression, not LIME."
+    ],
+    "P2": [
+      "V2 changes multiplicity allocation and adds a controller relative to unexecuted V1; rationale is multiplicity accounting, while scientific thresholds/sample sizes are unchanged. Artifacts/hash support use of V2, but file artifacts alone cannot independently timestamp pre-outcome chronology.",
+      "Accepted-count reference and transformed LTT use different test statistics; positive-control power is not efficacy or novelty evidence."
+    ]
+  },
+  "limitations": [
+    "Audit author previously implemented H1, so this is not external Agent5 custody.",
+    "No private data, production code changes, upstream changes, or new pilot run.",
+    "Guarantee review is mathematical/code inspection, not formal proof."
+  ]
+}

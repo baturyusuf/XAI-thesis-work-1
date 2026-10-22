@@ -1,0 +1,13 @@
+test_exhaustive_binary_tables_against_a3_and_minimum (test_h1_reference.H1ReferenceTests.test_exhaustive_binary_tables_against_a3_and_minimum) ... ok
+test_independent_metrics_crosscheck_a3_and_eta (test_h1_reference.H1ReferenceTests.test_independent_metrics_crosscheck_a3_and_eta) ... ok
+test_invalid_target_support_and_probability_contract (test_h1_reference.H1ReferenceTests.test_invalid_target_support_and_probability_contract) ... ok
+test_mean_distortion_and_unsupported_target_status (test_h1_reference.H1ReferenceTests.test_mean_distortion_and_unsupported_target_status) ... ok
+test_nonmonotone_full_local_but_empty_global (test_h1_reference.H1ReferenceTests.test_nonmonotone_full_local_but_empty_global) ... ok
+test_random_subset_is_seeded_before_metric_evaluation (test_h1_reference.H1ReferenceTests.test_random_subset_is_seeded_before_metric_evaluation) ... ok
+test_three_bit_unary_constant_seeded_random_full (test_h1_reference.H1ReferenceTests.test_three_bit_unary_constant_seeded_random_full) ... ok
+test_uniform_xor_global_full_and_misspecified_law (test_h1_reference.H1ReferenceTests.test_uniform_xor_global_full_and_misspecified_law) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.012s
+
+OK

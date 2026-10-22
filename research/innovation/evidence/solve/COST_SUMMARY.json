@@ -1,0 +1,115 @@
+{
+  "h2_total_runtime_seconds": 7.7764237000083085,
+  "ledger": {
+    "calibration/calibration_loss": {
+      "actual_model_callbacks": 1024,
+      "logical_draws": 8192,
+      "unique_states_across_role": 2
+    },
+    "calibration/score_probe": {
+      "actual_model_callbacks": 1020,
+      "logical_draws": 4096,
+      "unique_states_across_role": 2
+    },
+    "diagnostics": {
+      "actual_model_callbacks": 7,
+      "logical_draws": 0,
+      "unique_states_across_role": 2
+    },
+    "evaluation/evaluation_loss": {
+      "actual_model_callbacks": 1024,
+      "logical_draws": 16384,
+      "unique_states_across_role": 2
+    },
+    "evaluation/exact_referee": {
+      "actual_model_callbacks": 1024,
+      "logical_draws": 0,
+      "unique_states_across_role": 2
+    },
+    "evaluation/score_probe": {
+      "actual_model_callbacks": 1016,
+      "logical_draws": 4096,
+      "unique_states_across_role": 2
+    },
+    "fit/score_fit": {
+      "actual_model_callbacks": 512,
+      "logical_draws": 4096,
+      "unique_states_across_role": 2
+    }
+  },
+  "logical_draws": 36864,
+  "model_callbacks": 5627,
+  "per_method_attribution": {
+    "direct_probe": {
+      "C_score_model_callbacks": 1020,
+      "T_score_model_callbacks": 1016,
+      "quality_fit_callbacks": 0
+    },
+    "learned_histogram": {
+      "quality_fit_model_callbacks": 512,
+      "C_score_model_callbacks": 0,
+      "T_score_model_callbacks": 0
+    },
+    "common_per_method": {
+      "calibration_loss_callbacks": 1024,
+      "independent_MC_eval_callbacks": 1024,
+      "privileged_exact_eval_callbacks": 1024
+    },
+    "reverse_probe": "explicit reuse of direct scores; no extra measurement calls"
+  },
+  "limits": {
+    "predictor_fit": "NOT_APPLICABLE analytic fixed reference",
+    "surrogate_fit": "NOT_APPLICABLE analytic predeclared bank rule",
+    "explanation_generation_runtime": "NOT_MEASURED separately; included phase time",
+    "learned_score_inference_runtime": "NOT_MEASURED separately; no model queries",
+    "native_method_real_cost": "NOT_MEASURED",
+    "full_process_peak_memory": "NOT_MEASURED",
+    "matched_total_cost": "NOT_ESTABLISHED; reverse reuses direct score, evaluation common across policies",
+    "probe_aggregation": "A3 evaluates each unique drawn state once per batch; logical draws != actual callbacks"
+  },
+  "runtime_by_phase": {
+    "score_fit_labels_and_histogram_seconds": 0.022395699998014607,
+    "calibration_generation_score_loss_seconds": 0.08179950001067482,
+    "evaluation_generation_score_loss_seconds": 0.1165335999976378,
+    "global_probe_metadata_validation_seconds": 1.897055099994759
+  },
+  "SIS_native": [
+    {
+      "name": "no_sis",
+      "calls": 1,
+      "rows": 1
+    },
+    {
+      "name": "full_sis",
+      "calls": 3,
+      "rows": 4
+    },
+    {
+      "name": "known_sparse_or",
+      "calls": 6,
+      "rows": 7
+    },
+    {
+      "name": "seeded_random_nonlinear",
+      "calls": 5,
+      "rows": 8
+    },
+    {
+      "name": "constant_edge",
+      "calls": 4,
+      "rows": 5
+    },
+    {
+      "name": "tie_sum",
+      "calls": 6,
+      "rows": 7
+    },
+    {
+      "name": "broadcast_row_group",
+      "calls": 6,
+      "rows": 7
+    }
+  ],
+  "H1_costs": "H1_RESULTS.json; each fresh role ledger; runtime NOT_MEASURED",
+  "H1_total_run_and_extra_diagnostic_callback_aggregation": "NOT_MEASURED; reported deletion/enumeration/fixed-Qeval snapshots are separate, no full-run cost ranking"
+}

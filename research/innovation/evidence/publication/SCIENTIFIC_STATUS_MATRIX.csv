@@ -1,0 +1,12 @@
+component,scientific_status,scope,evidence
+A3 original56,REPRODUCED,56pass; byte-identical,A3 import manifest/final logs
+H1 exact reference,INDEPENDENT_REFERENCE_CHECKED,8tests;16tables x4subsets; not PAXp,H1_RESULTS/tests
+SIS ordinary native cases,REPRODUCED,"6pass, not full paper experiments",SIS_RESULTS
+SIS empty-mask conformance,KNOWN_TEST_FAILURE,1retained failure; source path verified,SIS_EDGE_SCOPE.json
+SIS normal-use algorithmic failure,INCONCLUSIVE,Not established by constant already-sufficient baseline,FINAL_SIS_H2_SCOPE_AUDIT.md
+H2 fixed-cohort computations,REPRODUCED,2eligible10none; original records preserved,H2_RESULTS
+H2 reference arithmetic,INDEPENDENT_REFERENCE_CHECKED,Saved records replayed; not formal Agent5,INDEPENDENT_H2_CHECK
+H2 unconditional guarantee,INCONCLUSIVE,IID/unbiasedness/numerics remain open,H2_FINAL_AUDIT.json
+Full paper experiments,REPORTED,No full paper replication,source registry
+Native LIME/Bayes/RDE/VeriX,BLOCKED,Not authorized/run here; not scientific failure,DEFERRED_NATIVE_PLAN
+Full memory/matched total cost,NOT_MEASURED,No cost superiority,COST_SUMMARY

@@ -1,0 +1,7 @@
+{
+  "command": "python -m unittest discover -s tests/innovation -p test_h1_reference.py -v",
+  "returncode": 0,
+  "tests_run": 8,
+  "status": "PASS",
+  "coverage": "Exhaustive 16 binary two-bit tables x four subsets; A3 metric/minimum crosschecks; binary and continuous-score contracts; seeded subset; support/target statuses."
+}

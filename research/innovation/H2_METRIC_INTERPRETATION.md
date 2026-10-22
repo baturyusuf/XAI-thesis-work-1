@@ -1,0 +1,6 @@
+# H2 metric interpretation — 2026-10-22
+Selected deployment policies are the C-certified thresholds only. Zero acceptance gives conditional risk null; NO_POLICY_CERTIFIED means no deployable point was certified, not loss1 or risk0. No-policy T metrics remain null.
+
+Descriptive AURC integrates all unit-count prefixes with predeclared seed903, separately uniform-tie expectation. Fixed-half coverage may split tied score blocks, therefore it is a hypothetical randomized rank policy, not necessarily reachable by the fixed threshold grid or covered by its certificate. This also applies to all-tied always/zero scores: nonzero hypothetical rank-risk does NOT override actual zero-policy risk null. Population-grid rows and calibration rows correctly preserve zero acceptance. Direct/learned fixed-half rank risk both141/1024; do not infer same-certified-coverage or matched-cost superiority.
+
+Exact selected-population diagnostics integrate the nine-type DGP and score-probe noise conditional on the realized training fit and C-selected threshold. They are privileged referee calculations, never scoring/training input, and not empirical over-calibration violation-frequency validation. One simulated realization, no independent dataset-family claims. Raw Fraction AURC values are exact arithmetic; HB inference remains floating and not interval certified.

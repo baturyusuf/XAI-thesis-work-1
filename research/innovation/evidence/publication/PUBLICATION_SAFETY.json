@@ -1,0 +1,12 @@
+{
+  "authorization": "Current human local commit/normal push only research/xai-innovation",
+  "prospective_whitelist_files": 129,
+  "whitelist_scan": "PASS",
+  "secrets_or_personal_path_findings": [],
+  "staged_scan": "PASS: exact129-path whitelist and secret/personal-path scan, verified again before commit",
+  "H2_scientific_records_and_source_hashes_unchanged": true,
+  "excluded_local_payloads_retained": true,
+  "source_snapshot_id": "sha256:9c5b2eca9453937c58075fccde067cc764469eae40c0381d36749012f482a6c0",
+  "test_result": "85total84pass1nativefailure; exit1, no skips/xfail",
+  "third_party": "Unmodified four-file Google SIS Apache2 plus own provenance only; no packages/cache/other raw source payloads"
+}

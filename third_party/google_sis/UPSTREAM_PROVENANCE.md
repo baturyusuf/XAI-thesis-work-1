@@ -1,0 +1,4 @@
+# Third-party Google Research SIS — not Agent4 original code
+Source: https://github.com/google-research/google-research/tree/0d94f8c4d92678ce5f7a0eacae725f79174cfb03/sufficient_input_subsets
+Unmodified sis.py, README.md and requirements.txt copied from that directory; LICENSE copied from repository root. Copyright2026 The Google Research Authors, Apache License2.0. Original copyright/license headers and license text retained. No NOTICE found in non-truncated root/SIS directory trees at this pin; no tutorials/other projects or packages bundled.
+Source/byte digests and redistribution review: research/innovation/evidence/publication/SIS_LICENSE_REVIEW.json. The author-endorsed Google port implements SIS; equivalence to original paper experiment code is UNVERIFIED. Agent4 loader/counters/tests live separately under src/innovation/tests/innovation. No native source patch, empty-mask repair, xfail or skip. The known empty-SIS-mask conformance failure is retained.

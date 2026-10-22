@@ -1,0 +1,4 @@
+# Agent 1 — SOLVE outcomes
+2026-10-22 | No novelty/gap request
+Existing accepted-count LTT+direct and learned loss works on one predeclared toy h bank; transformed no-policy results cannot establish H2 failure. H1 wrong-law optimum error isolated; nonmonotone deletion gap is only an existing heuristic/reference limitation, not native PAXp or sufficient-explanation literature failure. Google SIS6pass/1narrow empty-SIS mask source contract failure, no patch/general-paper claim. Review native port/paper-version and retained strong rivals; Bayes historical LIME private API matched release, current HEAD incompatibility is not release bug.
+Read SOLVE_REPORT/RE_REVIEW, source pins and evidence/solve/OUTCOME_ARTIFACTS.json; full source/results/cost/independence caveats retained. Missing PAXp/abstraction/Selective/conformal native artifacts still unresolved. No real/saklı data or topic/protocol freeze.

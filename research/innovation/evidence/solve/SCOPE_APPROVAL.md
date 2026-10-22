@@ -1,0 +1,3 @@
+# Controlled SOLVE authorization
+2026-10-22 | Human current D1-D5 conditional approval
+Approved: selective A3 source/test transfer and unchanged56 tests; H1 exact/repeated-deletion reference (not native PAXp); separate Google SIS native fixed-mask smoke; H2 independent direct probe and independently learned functional-loss score + existing LTT on same frozen bank; synthetic local-surrogate reference allowed, no LIME claim if unused. Bayes/RDE/VeriX environment/API planning only. Explicit clipping diagnostics, no silent probability normalization. Small controlled synthetic inputs only; no real/private/hidden payloads, novelty/new algorithm/final protocol, merge/push/commit. Predeclared pilot settings document before outcomes; no post-hoc success threshold.
