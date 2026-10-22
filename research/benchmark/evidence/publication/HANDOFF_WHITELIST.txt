@@ -1,0 +1,4 @@
+research/benchmark/AGENT4_PUBLISHED_HANDOFF.md
+research/benchmark/evidence/publication/ARCHIVE_VALIDATION.json
+research/benchmark/evidence/publication/HANDOFF_WHITELIST.txt
+research/benchmark/evidence/publication/PUBLICATION_RECEIPT.json

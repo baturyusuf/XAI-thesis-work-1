@@ -1,0 +1,42 @@
+{
+  "recorded_utc": "2026-10-22T09:33:08.480955+00:00",
+  "scope": "Primary implementation publication verified before separate handoff-only commit; final delivery tip is verified after its push and reported in closing output",
+  "branch": "research/benchmark-methodology",
+  "origin": "https://github.com/baturyusuf/XAI-thesis-work-1.git",
+  "implementation_commit": "51a6915ec8f94cf1779609422bd61e8d6b3911c7",
+  "remote_implementation_sha_verified": "51a6915ec8f94cf1779609422bd61e8d6b3911c7",
+  "remote_check": "git ls-remote --heads origin refs/heads/research/benchmark-methodology",
+  "primary_files": 77,
+  "primary_whitelist": "COMMIT_WHITELIST.txt",
+  "primary_whitelist_sha256": "83aa8ce8046c6a4f97f071b35f9a86d0b190a55261b8449b18d3726901e24f6a",
+  "staged_privacy_audit": "PASS; 77 reviewed text files; zero pattern findings, not proof of absence",
+  "staged_manifest": "76 LF-normalized payload hashes matched staged Git blobs; manifest excludes itself",
+  "unit_tests": {
+    "unit_tests": 56,
+    "original_solve_tests_preserved": 49,
+    "added_final_qc_tests": 7,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "source_objects": "21 VERIFIED with explicit --verify-source-objects in publishing worktree; distinct from default archive NOT_CHECKED",
+  "archive_validation": "ARCHIVE_VALIDATION.json; 56 pass without .git, same Windows/Python, scratch removed",
+  "protected_heads_verified": {
+    "main": "1b71d4c45ae1aba771e7c499f87f197f44b3112c",
+    "research/literature-novelty": "27bc1a7fb731bbf1f13787038e4d3a123233fa61",
+    "research/dataset-validity": "2a3cc1abc29c823fb6eda26ebf1ed29b064da63c"
+  },
+  "linked_worktrees_preserved": 4,
+  "main_status": "Pre-existing untracked private directory only; not inspected or modified",
+  "push_policy": "Only explicit research ref, non-force, no tags, no main merge or other branch update",
+  "operational_notes": [
+    "A parallel clean-tree assertion encountered the temporary archive-validation scratch/output and failed; remote SHA had matched. Rechecked after scratch cleanup: primary tracked tree clean, only generated archive receipt untracked for the next commit. Not a code/test or push failure."
+  ],
+  "scientific_limits": [
+    "Toy/synthetic validation only; no new XAI, native rival efficacy, real/hidden data or novelty claim",
+    "Six tiny pilot configurations remain NO_POLICY_CERTIFIED; this is not a quality/failure score",
+    "IID, independent calibration/probes, frozen family and valid multiplicity remain substantive assumptions, not metadata guarantees",
+    "Final primary/effect/risk/coverage/data/custody/protocol decisions remain unfrozen"
+  ],
+  "handoff": "research/benchmark/AGENT4_PUBLISHED_HANDOFF.md"
+}

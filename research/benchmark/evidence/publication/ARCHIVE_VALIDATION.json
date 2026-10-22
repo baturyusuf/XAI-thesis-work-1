@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "source_commit": "51a6915ec8f94cf1779609422bd61e8d6b3911c7",
+  "archive_paths": [
+    "research/benchmark",
+    "src/benchmark",
+    "tests/benchmark"
+  ],
+  "git_metadata_present": false,
+  "command": "python research/benchmark/evidence/solve/run_validation.py",
+  "exit_code": 0,
+  "tests": 56,
+  "failures": 0,
+  "errors": 0,
+  "original_tests": 49,
+  "added_tests": 7,
+  "source_objects": "NOT_CHECKED; opt-in requires pinned Git objects",
+  "scope": "LF Git archive with no .git; same OS/Python, not cross-platform validation",
+  "cleanup": "scratch removed after validation"
+}
