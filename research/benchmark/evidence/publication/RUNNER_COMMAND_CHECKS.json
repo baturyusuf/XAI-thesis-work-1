@@ -1,0 +1,17 @@
+{
+  "scope": "Executed documented direct unit and synthetic CLI commands; no real data",
+  "checks": [
+    {
+      "command": "PYTHONPATH=src python -m unittest discover -s tests/benchmark -v",
+      "cwd": "checkout root",
+      "exit_code": 0,
+      "outcome": "56 tests; zero failures/errors/skips"
+    },
+    {
+      "command": "PYTHONPATH=src python -m benchmark.synthetic --output research/benchmark/evidence/solve/REFERENCE_RESULTS.json",
+      "cwd": "checkout root",
+      "exit_code": 0,
+      "outcome": "COMPLETE_SYNTHETIC_REFERENCE_ONLY"
+    }
+  ]
+}

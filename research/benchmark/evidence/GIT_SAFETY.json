@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-21",
+  "main_status": "Pre-existing untracked private directory; not opened or changed",
+  "main_head": "1b71d4c45ae1aba771e7c499f87f197f44b3112c",
+  "agent3_branch": "research/benchmark-methodology",
+  "agent3_head": "1b71d4c45ae1aba771e7c499f87f197f44b3112c",
+  "agent1_head": "27bc1a7fb731bbf1f13787038e4d3a123233fa61",
+  "agent2_head": "2a3cc1abc29c823fb6eda26ebf1ed29b064da63c",
+  "tracked_changes": "",
+  "staged_changes": "",
+  "scope": "No commit/stage/merge/push; main private folder untouched; all deliverables in Agent3 worktree",
+  "linked_worktree_refs": [
+    {
+      "HEAD": "1b71d4c45ae1aba771e7c499f87f197f44b3112c",
+      "branch": "refs/heads/main"
+    },
+    {
+      "HEAD": "1b71d4c45ae1aba771e7c499f87f197f44b3112c",
+      "branch": "refs/heads/research/benchmark-methodology"
+    },
+    {
+      "HEAD": "2a3cc1abc29c823fb6eda26ebf1ed29b064da63c",
+      "branch": "refs/heads/research/dataset-validity"
+    },
+    {
+      "HEAD": "27bc1a7fb731bbf1f13787038e4d3a123233fa61",
+      "branch": "refs/heads/research/literature-novelty"
+    }
+  ],
+  "publication_note": "Historical snapshot; machine locations redacted, branch/commit facts retained"
+}

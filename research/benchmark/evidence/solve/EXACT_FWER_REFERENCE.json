@@ -1,0 +1,16 @@
+{
+  "bonferroni": {
+    "unsafe_policy_population_risk": "2/3",
+    "calibration_samples_enumerated": 243,
+    "false_risk_rejections": 1,
+    "exact_probability": "1/243",
+    "risk_error_budget": "1/10"
+  },
+  "fixed_sequence": {
+    "unsafe_policy_population_risk": "2/3",
+    "calibration_samples_enumerated": 243,
+    "false_risk_rejections": 1,
+    "exact_probability": "1/243",
+    "risk_error_budget": "1/10"
+  }
+}

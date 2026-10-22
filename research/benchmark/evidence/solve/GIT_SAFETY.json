@@ -1,0 +1,35 @@
+{
+  "scope": "Controlled synthetic SOLVE only; no raw/hidden access or other-worktree edits",
+  "branch": "research/benchmark-methodology",
+  "heads": {
+    "HEAD": "1b71d4c45ae1aba771e7c499f87f197f44b3112c",
+    "main": "1b71d4c45ae1aba771e7c499f87f197f44b3112c",
+    "research/literature-novelty": "27bc1a7fb731bbf1f13787038e4d3a123233fa61",
+    "research/dataset-validity": "2a3cc1abc29c823fb6eda26ebf1ed29b064da63c"
+  },
+  "main_status": "Pre-existing untracked private directory; not opened or changed",
+  "tracked_changes": [],
+  "staged_changes": [],
+  "tests": 49,
+  "result_source_hashes": "MATCH",
+  "new_commits": 0,
+  "linked_worktree_refs": [
+    {
+      "HEAD": "1b71d4c45ae1aba771e7c499f87f197f44b3112c",
+      "branch": "refs/heads/main"
+    },
+    {
+      "HEAD": "1b71d4c45ae1aba771e7c499f87f197f44b3112c",
+      "branch": "refs/heads/research/benchmark-methodology"
+    },
+    {
+      "HEAD": "2a3cc1abc29c823fb6eda26ebf1ed29b064da63c",
+      "branch": "refs/heads/research/dataset-validity"
+    },
+    {
+      "HEAD": "27bc1a7fb731bbf1f13787038e4d3a123233fa61",
+      "branch": "refs/heads/research/literature-novelty"
+    }
+  ],
+  "publication_note": "Historical snapshot; machine locations redacted, branch/commit facts retained"
+}

@@ -1,0 +1,1 @@
+{"status": "PASS", "scope": "document integrity only; no IID/theorem proof", "pinned_sources": 21, "source_objects": "VERIFIED", "metrics": 9, "experiment_contracts": 8, "report_sections": 15, "benchmark_tests": "SEE SOLVE_TEST_REPORT.md"}
