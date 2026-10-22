@@ -1,0 +1,790 @@
+{
+  "status": "COMPLETE_SYNTHETIC_REFERENCE_ONLY",
+  "protocol": "reference-kernel-publication-qc-v0.2",
+  "generated_utc": "2026-10-22T14:38:04.884750+00:00",
+  "environment": {
+    "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": "Python standard library only"
+  },
+  "source_hash_normalization": "UTF-8 text, universal newlines normalized to LF",
+  "source_sha256": {
+    "__init__.py": "f76cfc86b44fe7278d80aba219af130b35bbe030c3276b3a7c00e7e79953f604",
+    "contracts.py": "4b3e6071b0e9cf996b67fc135a6c662a81c79075841fb3e9aac12adae00bdd1c",
+    "finite.py": "3fc854bd12e6d7b0308a50f2644e1df4cb14b8507534babde94c66ae2d6cdc28",
+    "h1.py": "82a0887a1c3a07976d899a6a75769d01c501f2be4f0a26a4ac8d969ae3ef9022",
+    "ltt.py": "ba6f1323ee201acc6881e07079f5ff3d6a668808bcb9e7527ff349eceeae5a66",
+    "provenance.py": "7fc34ac06bb2613f2b0a8d80e07ce93fa0e6bc3d2197fa9c1d1825f65a7982ca",
+    "sampling.py": "bc367e1c1471a7498c73cb5a5a83fd9d3994bf157e564ea05418ceb41836a6f7",
+    "selective.py": "b08c8fcd1177d0b39925afa73635b3877685fefce94228ad906436b1a41fb28b",
+    "surrogate.py": "4a20db9cb8c3a698ea4bee5a324d736c391ec4e7df3f0396969fed6c160fa42b",
+    "synthetic.py": "d9214303e80d56f401163baa37f0c652e8b8bcfeb8edaf0bd637939a5892cfb0"
+  },
+  "reference_cases": {
+    "tied_score_aurc": {
+      "seed0": "1/4",
+      "seed1": "3/4",
+      "uniform_permutation_mean": "1/2",
+      "two_block_permutation_mean": "7/36",
+      "two_block_endpoint_integral_reference": "2/9"
+    },
+    "law_separation": {
+      "uniform-truth": {
+        "kind": "exact",
+        "empty": {
+          "label_violation": "1/2",
+          "probability_distortion": "1/2",
+          "group_size": 0
+        },
+        "full": {
+          "label_violation": "0",
+          "probability_distortion": "0",
+          "group_size": 2
+        },
+        "minimum_sets_under_own_law": [
+          [
+            0,
+            1
+          ]
+        ],
+        "selected_first_set_true_law": {
+          "label_violation": "0",
+          "probability_distortion": "0",
+          "group_size": 2
+        }
+      },
+      "eight-training-draw-counts": {
+        "kind": "estimated",
+        "empty": {
+          "label_violation": "1/4",
+          "probability_distortion": "1/4",
+          "group_size": 0
+        },
+        "full": {
+          "label_violation": "0",
+          "probability_distortion": "0",
+          "group_size": 2
+        },
+        "minimum_sets_under_own_law": [
+          []
+        ],
+        "selected_first_set_true_law": {
+          "label_violation": "1/2",
+          "probability_distortion": "1/2",
+          "group_size": 0
+        }
+      },
+      "wrong-masses": {
+        "kind": "misspecified",
+        "empty": {
+          "label_violation": "1/5",
+          "probability_distortion": "1/5",
+          "group_size": 0
+        },
+        "full": {
+          "label_violation": "0",
+          "probability_distortion": "0",
+          "group_size": 2
+        },
+        "minimum_sets_under_own_law": [
+          []
+        ],
+        "selected_first_set_true_law": {
+          "label_violation": "1/2",
+          "probability_distortion": "1/2",
+          "group_size": 0
+        }
+      }
+    },
+    "same_model_different_U": {
+      "diagonal_empty_certificate": true,
+      "full_support_empty_certificate": false
+    },
+    "nonmonotonicity": {
+      "full_single_deletion_minimal": true,
+      "global_minimum_sets": [
+        []
+      ],
+      "empty_violation": "9/50"
+    },
+    "clipping_hidden_failure": {
+      "loss": "0",
+      "invalid_probability_rate": "1/4",
+      "raw_abs_loss": "1/4",
+      "clipped_abs_loss": "0",
+      "clipping_gain": "1/4",
+      "explanation_changed": true,
+      "surrogate_id": "raw-outlier",
+      "target": {
+        "predictor_id": "identity-fixture",
+        "class_labels": [
+          0,
+          1
+        ],
+        "target_class": 1,
+        "scale": "probability"
+      },
+      "output_mode": "clip_adapter",
+      "description": "bounded functional fidelity to frozen predictor target; not causal truth"
+    },
+    "interpretation": "Analytical fixtures only; law error, certificate scope and clipping are not new XAI gaps"
+  },
+  "selective_pilot": {
+    "experiment_id": "H2-E1-CONTROLLED-SMOKE",
+    "population": "Uniform four-state synthetic base units; same declared E(x) bank for both scores",
+    "counts": {
+      "calibration_units": 64,
+      "evaluation_units": 64,
+      "score_probes_per_unit": 16,
+      "loss_probes_per_unit": 32,
+      "logical_probes": 6144,
+      "uncached_empirical_predictor_rows": 1018,
+      "additional_exact_evaluator_rows": 256
+    },
+    "family_error_budget": "Six predeclared score/controller configurations: each risk=1/120, coverage=1/120; total union budget<=1/10, conditional on assumptions",
+    "scientific_status": "DIAGNOSTIC_ONLY; pseudo-random IID simulation design, not verified real-world IID or method superiority",
+    "surrogate_diagnostics": {
+      "(0, 0)": {
+        "loss": "0",
+        "invalid_probability_rate": "0",
+        "raw_abs_loss": "0",
+        "clipped_abs_loss": "0",
+        "clipping_gain": "0",
+        "explanation_changed": false,
+        "surrogate_id": "analytic-perfect",
+        "target": {
+          "predictor_id": "bounded-probability-fixture",
+          "class_labels": [
+            0,
+            1
+          ],
+          "target_class": 1,
+          "scale": "probability"
+        },
+        "output_mode": "native_probability",
+        "description": "bounded functional fidelity to frozen predictor target; not causal truth"
+      },
+      "(0, 1)": {
+        "loss": "1/4",
+        "invalid_probability_rate": "0",
+        "raw_abs_loss": "1/4",
+        "clipped_abs_loss": "1/4",
+        "clipping_gain": "0",
+        "explanation_changed": false,
+        "surrogate_id": "constant-half",
+        "target": {
+          "predictor_id": "bounded-probability-fixture",
+          "class_labels": [
+            0,
+            1
+          ],
+          "target_class": 1,
+          "scale": "probability"
+        },
+        "output_mode": "native_probability",
+        "description": "bounded functional fidelity to frozen predictor target; not causal truth"
+      },
+      "(1, 0)": {
+        "loss": "1/2",
+        "invalid_probability_rate": "0",
+        "raw_abs_loss": "1/2",
+        "clipped_abs_loss": "1/2",
+        "clipping_gain": "0",
+        "explanation_changed": false,
+        "surrogate_id": "constant-zero",
+        "target": {
+          "predictor_id": "bounded-probability-fixture",
+          "class_labels": [
+            0,
+            1
+          ],
+          "target_class": 1,
+          "scale": "probability"
+        },
+        "output_mode": "native_probability",
+        "description": "bounded functional fidelity to frozen predictor target; not causal truth"
+      },
+      "(1, 1)": {
+        "loss": "1/2",
+        "invalid_probability_rate": "1",
+        "raw_abs_loss": "1",
+        "clipped_abs_loss": "1/2",
+        "clipping_gain": "1/2",
+        "explanation_changed": true,
+        "surrogate_id": "overshoot",
+        "target": {
+          "predictor_id": "bounded-probability-fixture",
+          "class_labels": [
+            0,
+            1
+          ],
+          "target_class": 1,
+          "scale": "probability"
+        },
+        "output_mode": "clip_adapter",
+        "description": "bounded functional fidelity to frozen predictor target; not causal truth"
+      }
+    },
+    "results": [
+      {
+        "score": "independent_probe",
+        "pvalue": "hoeffding",
+        "controller": "bonferroni",
+        "calibration": {
+          "status": "NO_POLICY_CERTIFIED",
+          "reasons": [
+            "NO_RISK_NULL_REJECTED"
+          ],
+          "policies": [
+            {
+              "threshold": "1",
+              "coverage": "1",
+              "risk": "1383/4096",
+              "coverage_lower": 0.780380547453706,
+              "log_pvalue": -3.3739089965820312,
+              "risk_rejected": false,
+              "certified": false
+            },
+            {
+              "threshold": "1/2",
+              "coverage": "47/64",
+              "risk": "841/3008",
+              "coverage_lower": 0.514755547453706,
+              "log_pvalue": -3.3536453247070312,
+              "risk_rejected": false,
+              "certified": false
+            },
+            {
+              "threshold": "1/4",
+              "coverage": "29/64",
+              "risk": "17/116",
+              "coverage_lower": 0.233505547453706,
+              "log_pvalue": -3.283203125,
+              "risk_rejected": false,
+              "certified": false
+            },
+            {
+              "threshold": "0",
+              "coverage": "3/16",
+              "risk": "0",
+              "coverage_lower": 0.0,
+              "log_pvalue": -1.125,
+              "risk_rejected": false,
+              "certified": false
+            }
+          ],
+          "selected_threshold": null,
+          "guarantee_scope": "Conditional on caller declarations; not proof of IID, true law, subgroup or shift validity"
+        },
+        "independent_exact_test": null,
+        "descriptive_test_aurc": "2691313413785883073405194359/13757287378651022749223116800",
+        "descriptive_half_coverage": {
+          "coverage": "1/2",
+          "accepted_count": 32,
+          "risk": "13/64",
+          "minimum_coverage_met": true,
+          "accepted_unit_ids": [
+            "evaluation-32",
+            "evaluation-39",
+            "evaluation-55",
+            "evaluation-29",
+            "evaluation-6",
+            "evaluation-22",
+            "evaluation-35",
+            "evaluation-31",
+            "evaluation-10",
+            "evaluation-63",
+            "evaluation-36",
+            "evaluation-23",
+            "evaluation-41",
+            "evaluation-53",
+            "evaluation-19",
+            "evaluation-62",
+            "evaluation-30",
+            "evaluation-13",
+            "evaluation-38",
+            "evaluation-12",
+            "evaluation-4",
+            "evaluation-42",
+            "evaluation-45",
+            "evaluation-56",
+            "evaluation-37",
+            "evaluation-15",
+            "evaluation-48",
+            "evaluation-43",
+            "evaluation-3",
+            "evaluation-14",
+            "evaluation-16",
+            "evaluation-40"
+          ]
+        }
+      },
+      {
+        "score": "independent_probe",
+        "pvalue": "hb",
+        "controller": "bonferroni",
+        "calibration": {
+          "status": "NO_POLICY_CERTIFIED",
+          "reasons": [
+            "NO_RISK_NULL_REJECTED"
+          ],
+          "policies": [
+            {
+              "threshold": "1",
+              "coverage": "1",
+              "risk": "1383/4096",
+              "coverage_lower": 0.780380547453706,
+              "log_pvalue": -3.776065864790226,
+              "risk_rejected": false,
+              "certified": false
+            },
+            {
+              "threshold": "1/2",
+              "coverage": "47/64",
+              "risk": "841/3008",
+              "coverage_lower": 0.514755547453706,
+              "log_pvalue": -3.776065864790226,
+              "risk_rejected": false,
+              "certified": false
+            },
+            {
+              "threshold": "1/4",
+              "coverage": "29/64",
+              "risk": "17/116",
+              "coverage_lower": 0.233505547453706,
+              "log_pvalue": -3.776065864790226,
+              "risk_rejected": false,
+              "certified": false
+            },
+            {
+              "threshold": "0",
+              "coverage": "3/16",
+              "risk": "0",
+              "coverage_lower": 0.0,
+              "log_pvalue": -1.4731189301083343,
+              "risk_rejected": false,
+              "certified": false
+            }
+          ],
+          "selected_threshold": null,
+          "guarantee_scope": "Conditional on caller declarations; not proof of IID, true law, subgroup or shift validity"
+        },
+        "independent_exact_test": null,
+        "descriptive_test_aurc": "2691313413785883073405194359/13757287378651022749223116800",
+        "descriptive_half_coverage": {
+          "coverage": "1/2",
+          "accepted_count": 32,
+          "risk": "13/64",
+          "minimum_coverage_met": true,
+          "accepted_unit_ids": [
+            "evaluation-32",
+            "evaluation-39",
+            "evaluation-55",
+            "evaluation-29",
+            "evaluation-6",
+            "evaluation-22",
+            "evaluation-35",
+            "evaluation-31",
+            "evaluation-10",
+            "evaluation-63",
+            "evaluation-36",
+            "evaluation-23",
+            "evaluation-41",
+            "evaluation-53",
+            "evaluation-19",
+            "evaluation-62",
+            "evaluation-30",
+            "evaluation-13",
+            "evaluation-38",
+            "evaluation-12",
+            "evaluation-4",
+            "evaluation-42",
+            "evaluation-45",
+            "evaluation-56",
+            "evaluation-37",
+            "evaluation-15",
+            "evaluation-48",
+            "evaluation-43",
+            "evaluation-3",
+            "evaluation-14",
+            "evaluation-16",
+            "evaluation-40"
+          ]
+        }
+      },
+      {
+        "score": "independent_probe",
+        "pvalue": "hb",
+        "controller": "fixed_sequence",
+        "calibration": {
+          "status": "NO_POLICY_CERTIFIED",
+          "reasons": [
+            "NO_RISK_NULL_REJECTED"
+          ],
+          "policies": [
+            {
+              "threshold": "1",
+              "coverage": "1",
+              "risk": "1383/4096",
+              "coverage_lower": 0.780380547453706,
+              "log_pvalue": -3.776065864790226,
+              "risk_rejected": false,
+              "certified": false
+            },
+            {
+              "threshold": "1/2",
+              "coverage": "47/64",
+              "risk": "841/3008",
+              "coverage_lower": 0.514755547453706,
+              "log_pvalue": -3.776065864790226,
+              "risk_rejected": false,
+              "certified": false
+            },
+            {
+              "threshold": "1/4",
+              "coverage": "29/64",
+              "risk": "17/116",
+              "coverage_lower": 0.233505547453706,
+              "log_pvalue": -3.776065864790226,
+              "risk_rejected": false,
+              "certified": false
+            },
+            {
+              "threshold": "0",
+              "coverage": "3/16",
+              "risk": "0",
+              "coverage_lower": 0.0,
+              "log_pvalue": -1.4731189301083343,
+              "risk_rejected": false,
+              "certified": false
+            }
+          ],
+          "selected_threshold": null,
+          "guarantee_scope": "Conditional on caller declarations; not proof of IID, true law, subgroup or shift validity"
+        },
+        "independent_exact_test": null,
+        "descriptive_test_aurc": "2691313413785883073405194359/13757287378651022749223116800",
+        "descriptive_half_coverage": {
+          "coverage": "1/2",
+          "accepted_count": 32,
+          "risk": "13/64",
+          "minimum_coverage_met": true,
+          "accepted_unit_ids": [
+            "evaluation-32",
+            "evaluation-39",
+            "evaluation-55",
+            "evaluation-29",
+            "evaluation-6",
+            "evaluation-22",
+            "evaluation-35",
+            "evaluation-31",
+            "evaluation-10",
+            "evaluation-63",
+            "evaluation-36",
+            "evaluation-23",
+            "evaluation-41",
+            "evaluation-53",
+            "evaluation-19",
+            "evaluation-62",
+            "evaluation-30",
+            "evaluation-13",
+            "evaluation-38",
+            "evaluation-12",
+            "evaluation-4",
+            "evaluation-42",
+            "evaluation-45",
+            "evaluation-56",
+            "evaluation-37",
+            "evaluation-15",
+            "evaluation-48",
+            "evaluation-43",
+            "evaluation-3",
+            "evaluation-14",
+            "evaluation-16",
+            "evaluation-40"
+          ]
+        }
+      },
+      {
+        "score": "prediction_confidence",
+        "pvalue": "hoeffding",
+        "controller": "bonferroni",
+        "calibration": {
+          "status": "NO_POLICY_CERTIFIED",
+          "reasons": [
+            "NO_RISK_NULL_REJECTED"
+          ],
+          "policies": [
+            {
+              "threshold": "1",
+              "coverage": "1",
+              "risk": "1383/4096",
+              "coverage_lower": 0.780380547453706,
+              "log_pvalue": -3.3739089965820312,
+              "risk_rejected": false,
+              "certified": false
+            },
+            {
+              "threshold": "1/2",
+              "coverage": "1",
+              "risk": "1383/4096",
+              "coverage_lower": 0.780380547453706,
+              "log_pvalue": -3.3739089965820312,
+              "risk_rejected": false,
+              "certified": false
+            },
+            {
+              "threshold": "1/4",
+              "coverage": "1",
+              "risk": "1383/4096",
+              "coverage_lower": 0.780380547453706,
+              "log_pvalue": -3.3739089965820312,
+              "risk_rejected": false,
+              "certified": false
+            },
+            {
+              "threshold": "0",
+              "coverage": "0",
+              "risk": null,
+              "coverage_lower": 0.0,
+              "log_pvalue": 0.0,
+              "risk_rejected": false,
+              "certified": false
+            }
+          ],
+          "selected_threshold": null,
+          "guarantee_scope": "Conditional on caller declarations; not proof of IID, true law, subgroup or shift validity"
+        },
+        "independent_exact_test": null,
+        "descriptive_test_aurc": "12126817342027397055158523457/30266032233032250048290856960",
+        "descriptive_half_coverage": {
+          "coverage": "1/2",
+          "accepted_count": 32,
+          "risk": "13/32",
+          "minimum_coverage_met": true,
+          "accepted_unit_ids": [
+            "evaluation-47",
+            "evaluation-40",
+            "evaluation-33",
+            "evaluation-45",
+            "evaluation-5",
+            "evaluation-30",
+            "evaluation-8",
+            "evaluation-1",
+            "evaluation-34",
+            "evaluation-50",
+            "evaluation-54",
+            "evaluation-19",
+            "evaluation-35",
+            "evaluation-63",
+            "evaluation-38",
+            "evaluation-26",
+            "evaluation-59",
+            "evaluation-3",
+            "evaluation-28",
+            "evaluation-60",
+            "evaluation-27",
+            "evaluation-7",
+            "evaluation-46",
+            "evaluation-29",
+            "evaluation-11",
+            "evaluation-17",
+            "evaluation-53",
+            "evaluation-14",
+            "evaluation-52",
+            "evaluation-9",
+            "evaluation-56",
+            "evaluation-20"
+          ]
+        }
+      },
+      {
+        "score": "prediction_confidence",
+        "pvalue": "hb",
+        "controller": "bonferroni",
+        "calibration": {
+          "status": "NO_POLICY_CERTIFIED",
+          "reasons": [
+            "NO_RISK_NULL_REJECTED"
+          ],
+          "policies": [
+            {
+              "threshold": "1",
+              "coverage": "1",
+              "risk": "1383/4096",
+              "coverage_lower": 0.780380547453706,
+              "log_pvalue": -3.776065864790226,
+              "risk_rejected": false,
+              "certified": false
+            },
+            {
+              "threshold": "1/2",
+              "coverage": "1",
+              "risk": "1383/4096",
+              "coverage_lower": 0.780380547453706,
+              "log_pvalue": -3.776065864790226,
+              "risk_rejected": false,
+              "certified": false
+            },
+            {
+              "threshold": "1/4",
+              "coverage": "1",
+              "risk": "1383/4096",
+              "coverage_lower": 0.780380547453706,
+              "log_pvalue": -3.776065864790226,
+              "risk_rejected": false,
+              "certified": false
+            },
+            {
+              "threshold": "0",
+              "coverage": "0",
+              "risk": null,
+              "coverage_lower": 0.0,
+              "log_pvalue": 0.0,
+              "risk_rejected": false,
+              "certified": false
+            }
+          ],
+          "selected_threshold": null,
+          "guarantee_scope": "Conditional on caller declarations; not proof of IID, true law, subgroup or shift validity"
+        },
+        "independent_exact_test": null,
+        "descriptive_test_aurc": "12126817342027397055158523457/30266032233032250048290856960",
+        "descriptive_half_coverage": {
+          "coverage": "1/2",
+          "accepted_count": 32,
+          "risk": "13/32",
+          "minimum_coverage_met": true,
+          "accepted_unit_ids": [
+            "evaluation-47",
+            "evaluation-40",
+            "evaluation-33",
+            "evaluation-45",
+            "evaluation-5",
+            "evaluation-30",
+            "evaluation-8",
+            "evaluation-1",
+            "evaluation-34",
+            "evaluation-50",
+            "evaluation-54",
+            "evaluation-19",
+            "evaluation-35",
+            "evaluation-63",
+            "evaluation-38",
+            "evaluation-26",
+            "evaluation-59",
+            "evaluation-3",
+            "evaluation-28",
+            "evaluation-60",
+            "evaluation-27",
+            "evaluation-7",
+            "evaluation-46",
+            "evaluation-29",
+            "evaluation-11",
+            "evaluation-17",
+            "evaluation-53",
+            "evaluation-14",
+            "evaluation-52",
+            "evaluation-9",
+            "evaluation-56",
+            "evaluation-20"
+          ]
+        }
+      },
+      {
+        "score": "prediction_confidence",
+        "pvalue": "hb",
+        "controller": "fixed_sequence",
+        "calibration": {
+          "status": "NO_POLICY_CERTIFIED",
+          "reasons": [
+            "NO_RISK_NULL_REJECTED"
+          ],
+          "policies": [
+            {
+              "threshold": "1",
+              "coverage": "1",
+              "risk": "1383/4096",
+              "coverage_lower": 0.780380547453706,
+              "log_pvalue": -3.776065864790226,
+              "risk_rejected": false,
+              "certified": false
+            },
+            {
+              "threshold": "1/2",
+              "coverage": "1",
+              "risk": "1383/4096",
+              "coverage_lower": 0.780380547453706,
+              "log_pvalue": -3.776065864790226,
+              "risk_rejected": false,
+              "certified": false
+            },
+            {
+              "threshold": "1/4",
+              "coverage": "1",
+              "risk": "1383/4096",
+              "coverage_lower": 0.780380547453706,
+              "log_pvalue": -3.776065864790226,
+              "risk_rejected": false,
+              "certified": false
+            },
+            {
+              "threshold": "0",
+              "coverage": "0",
+              "risk": null,
+              "coverage_lower": 0.0,
+              "log_pvalue": 0.0,
+              "risk_rejected": false,
+              "certified": false
+            }
+          ],
+          "selected_threshold": null,
+          "guarantee_scope": "Conditional on caller declarations; not proof of IID, true law, subgroup or shift validity"
+        },
+        "independent_exact_test": null,
+        "descriptive_test_aurc": "12126817342027397055158523457/30266032233032250048290856960",
+        "descriptive_half_coverage": {
+          "coverage": "1/2",
+          "accepted_count": 32,
+          "risk": "13/32",
+          "minimum_coverage_met": true,
+          "accepted_unit_ids": [
+            "evaluation-47",
+            "evaluation-40",
+            "evaluation-33",
+            "evaluation-45",
+            "evaluation-5",
+            "evaluation-30",
+            "evaluation-8",
+            "evaluation-1",
+            "evaluation-34",
+            "evaluation-50",
+            "evaluation-54",
+            "evaluation-19",
+            "evaluation-35",
+            "evaluation-63",
+            "evaluation-38",
+            "evaluation-26",
+            "evaluation-59",
+            "evaluation-3",
+            "evaluation-28",
+            "evaluation-60",
+            "evaluation-27",
+            "evaluation-7",
+            "evaluation-46",
+            "evaluation-29",
+            "evaluation-11",
+            "evaluation-17",
+            "evaluation-53",
+            "evaluation-14",
+            "evaluation-52",
+            "evaluation-9",
+            "evaluation-56",
+            "evaluation-20"
+          ]
+        }
+      }
+    ]
+  },
+  "elapsed_seconds": 0.1749160000035772
+}

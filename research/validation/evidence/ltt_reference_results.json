@@ -1,0 +1,19 @@
+{
+  "status": "PASS_STANDALONE_ENUMERATION",
+  "date": "2026-10-22",
+  "test_command": "python -B tests/independent_validation/test_ltt_reference.py",
+  "test_result": "Ran 3 tests in 0.001s; OK",
+  "base_law": "uniform on (rejected,loss=0), (accepted,loss=0), (accepted,loss=1)",
+  "n": 4,
+  "samples_enumerated": 81,
+  "alpha": "1/2",
+  "population_coverage": "2/3",
+  "population_conditional_risk": "1/2",
+  "hoeffding_distinct_p_values": 5,
+  "largest_empirical_cdf_minus_p_at_attained_values": 0.0,
+  "coverage_delta": 0.2,
+  "coverage_failures": 0,
+  "coverage_failure_probability": 0.0,
+  "scope": "Toy enumeration only; no benchmark imports or universal theorem test",
+  "publication_note": "User-specific path removed; numeric evidence unchanged."
+}

@@ -1,0 +1,28 @@
+test_certificate_checks_matching_universe_and_not_extension (test_h1_reference.IndependentReference.test_certificate_checks_matching_universe_and_not_extension) ... ok
+test_dependent_conditioning_empty_full_and_null (test_h1_reference.IndependentReference.test_dependent_conditioning_empty_full_and_null) ... ok
+test_fixed_x_label_violation_and_probability_distortion (test_h1_reference.IndependentReference.test_fixed_x_label_violation_and_probability_distortion) ... ok
+test_grouped_one_hot_conditioning (test_h1_reference.IndependentReference.test_grouped_one_hot_conditioning) ... ok
+test_one_pass_stale_deletion_truth_table (test_h1_reference.IndependentReference.test_one_pass_stale_deletion_truth_table) ... ok
+test_same_support_weight_misspecification_vs_support_shift (test_h1_reference.IndependentReference.test_same_support_weight_misspecification_vs_support_shift) ... ok
+test_weighted_xor_local_minimum_not_global (test_h1_reference.IndependentReference.test_weighted_xor_local_minimum_not_global) ... ok
+test_endpoint_area_is_calculated_from_blocks (test_h2_reference.H2Reference.test_endpoint_area_is_calculated_from_blocks) ... ok
+test_formula_matches_exhaustive_tie_block_permutations (test_h2_reference.H2Reference.test_formula_matches_exhaustive_tie_block_permutations) ... ok
+test_two_tied_unit_orders_and_membership (test_h2_reference.H2Reference.test_two_tied_unit_orders_and_membership) ... ok
+test_weighted_clipping_law_and_raw_loss_above_one (test_h2_reference.H2Reference.test_weighted_clipping_law_and_raw_loss_above_one) ... ok
+test_zero_acceptance_risk_is_undefined (test_h2_reference.H2Reference.test_zero_acceptance_risk_is_undefined) ... ok
+test_null_hoeffding_superuniform_enumeration (test_ltt_reference.IndependentLttReference.test_null_hoeffding_superuniform_enumeration) ... ok
+test_separate_coverage_lower_bound_enumeration (test_ltt_reference.IndependentLttReference.test_separate_coverage_lower_bound_enumeration) ... ok
+test_transform_and_population_null (test_ltt_reference.IndependentLttReference.test_transform_and_population_null) ... ok
+test_all_binary_tables_all_x_all_subsets (test_pinned_implementation.PinnedDifferentialChecks.test_all_binary_tables_all_x_all_subsets) ... ok
+test_clipping_native_rejection_and_raw_diagnostics (test_pinned_implementation.PinnedDifferentialChecks.test_clipping_native_rejection_and_raw_diagnostics) ... ok
+test_fixed_target_distortion_and_support_scope (test_pinned_implementation.PinnedDifferentialChecks.test_fixed_target_distortion_and_support_scope) ... ok
+test_hb_numeric_grid_against_decimal_and_exact_binomial (test_pinned_implementation.PinnedDifferentialChecks.test_hb_numeric_grid_against_decimal_and_exact_binomial) ... ok
+test_small_unsafe_population_fwer_and_eligible_control (test_pinned_implementation.PinnedDifferentialChecks.test_small_unsafe_population_fwer_and_eligible_control) ... ok
+test_tie_expectation_against_all_permutations (test_pinned_implementation.PinnedDifferentialChecks.test_tie_expectation_against_all_permutations) ... ok
+test_weighted_xor_local_and_global (test_pinned_implementation.PinnedDifferentialChecks.test_weighted_xor_local_and_global) ... ok
+test_zero_coverage_and_partial_ties (test_pinned_implementation.PinnedDifferentialChecks.test_zero_coverage_and_partial_ties) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.110s
+
+OK

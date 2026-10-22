@@ -1,0 +1,37 @@
+# Hidden-test custody design — NOT IMPLEMENTED
+
+2026-10-22. Preparation only: conditional Phase 0 acceptance and a design preference do NOT authorize accounts, ACLs, relocation, hidden-data inspection or release. Agent 4 immutable SHA is pending; no final dataset, metric or success threshold is chosen. Policy: A2 `research/datasets/HIDDEN_DATASET_POLICY.md` at `2a3cc1abc29c823fb6eda26ebf1ed29b064da63c`; A3 `research/benchmark/HELDOUT_EVALUATION_REQUIREMENTS.md` and `AGENT5_HANDOFF.md` at `d42bec729e9e78ae5387720d29360c5d60f38192`.
+
+## Roles and protected assets
+
+Development agents receive allowlisted development/calibration data; independent validation uses separately reserved units after freeze (debugging makes it exploratory); final evaluation uses a separate human-released frozen run. Agent 5 oversight, worktrees, `.gitignore` and same-user Zed agents are not isolation. Record prior metadata/payload access; later controls cannot undo exposure. Publicly available sources still need a test-use prohibition.
+
+Protect X **and** y, linkage/identities, private splits/masks/seeds, row hashes, as-of features, source version, backgrounds/donors, fitted sampler/model caches, completion probes, explanations, errors, scratch and exports. Hashed person IDs are not anonymous; final-X leakage through caches or probes counts as exposure. Keep private artifacts and backups outside Git and development mounts; public receipts contain no sensitive paths or per-unit digests.
+
+## Level 1: separate standard Windows custodian account + NTFS ACL + outside-Git storage
+
+**Identity and rights.** This practical minimum works ONLY if development and evaluation processes have different effective OS security tokens. Human owner assigns independent custodian/credential holder, export reviewer and administrator/break-glass authority. Developers have no list/read/write rights to custody storage, scratch, backups, private manifest or logs; custodian may read designated inputs and write confined scratch/results/logs, and release only reviewed aggregates. Check actual process tokens, group memberships, inherited ACLs, service accounts, elevation, backups and credential sharing. An administrator can override ACLs; developer admin access or same-token execution invalidates the isolation claim. If separation is impossible, call it governance-only.
+
+**Placement and lifecycle.** Human selects restricted non-development storage and distinct protected scratch/cache, manifest, log and backup areas (no live locations specified here). Human controls import, records earlier access, verifies effective permissions and signs a frozen restricted inventory. After separate human release, custodian executes once, reviews and releases allowed outputs; then closes temporary access, preserves receipts and applies approved retention/deletion. Approved source-local fitting uses designated disjoint fit/calibration partitions only; final X/y and derived artifacts remain in custody. Closing does not restore blindness.
+
+**Limits and cost.** ACLs restrict ordinary file reads, NOT submitted code running as custodian. Malicious code can leak via network, stdout/stderr, exception traces, timing, logs or encoded aggregates. Human must review code and control I/O; do not claim an execution sandbox or exfiltration prevention. Account/credential management, ACL inheritance/backup audits, canary checks, transfer and export review cost ongoing moderate effort.
+
+## Level 2: human-controlled offline custody / separate machine or external custodian
+
+**Identity and rights.** Independent human/external custodian controls a physically separate or offline host and transfer decisions. Developers have no account, mount, network login, key, backup or host-admin access. Custodian reads sealed inputs, writes restricted scratch/results, and releases only human-approved reports. Disclose privileged host operators and insider risk; shared administrator or developer access defeats the stronger boundary.
+
+**Placement and lifecycle.** Store final inputs, splits, private manifests/logs and outputs on non-development storage; keep execution offline where feasible. Human verifies frozen code/model/config/environment during controlled import, reviews code for hidden I/O, opens one authorized run, checks all exports before reconnect/transfer and records closure, retention and custody transfers. Guard against sync and removable-media copies. Offline hardware still cannot stop unreviewed code encoding data in outputs or timing. Setup/management cost is higher: independent staff, host, reproducible runtime, secure import/export, backups and incident handling.
+
+## Common manifest, audit, opening and contamination
+
+Restricted human-controlled versioned/read-only or write-once manifest: exact source byte hashes/version/license/lineage; target and feature policy; unit/group/time hierarchy; private split mapping/seed and role history; permitted fit/calibration/final access; frozen byte hashes and versions of code, config, predictor/model/training provenance, explainer/adapter, sampler/background assets, dependencies and runtime. Record zero-shot versus allowed source-local fitting and the claim (unseen units versus independent family). A Git ref or editable file alone is not immutable. Preserve revisions and verify hashes; publish only a reviewed non-sensitive receipt/digest. Digests do not prove permission, independence or concealment.
+
+Protected ledger records UTC time, actor and effective principal, authorization, operation and result (including denials), artifact/version digest, transfer, opening/closing, attempt, deviation, disclosure and reviewer. Independently protect logs and reconcile with inventory. Editable logs, hashes and ACLs cannot establish absence of prior copies, administrator access or covert channels; record audit coverage/limits. Restrict all test-derived scratch and do not return per-unit traces or iterative probes. Prespecify privacy-safe aggregates and report adverse results plus all scheduled-unit failures/timeouts/undefined outcomes.
+
+Any outcome-driven tuning of methods, metrics, thresholds, source, stopping or reporting permanently reclassifies the opened test as development/exploratory. No history reset or rerun-until-pass; confirmation requires a newly approved unexposed source or precommitted untouched reserve with its own custody history.
+
+## Human actions and future harmless-canary preflight (NOT performed)
+
+1. Human names custodian, owner, admin/break-glass and export reviewer; chooses level, checks conflicts, effective tokens and privilege, then approves A2 source eligibility and A3 statistical freeze. Human chooses storage/backup/transfer details and permitted outputs without publishing private paths.
+2. Future authorized operator uses **synthetic canaries only**: verify developer-token listing/reading/writing custody, scratch, backup, manifest and logs fails; custodian-token approved read succeeds; allowed/denied events log correctly; canary caches/probes stay confined; output review rejects a marked canary in stdout, errors and reports. Check process tokens, not account labels. No real data or executable admin commands here.
+3. Human reviews canary evidence, manifest and audit/tamper/exfil limits and separately signs or blocks opening under `FINAL_TEST_RELEASE_PROTOCOL.md`. Until then final custody and release remain BLOCKED.

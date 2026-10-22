@@ -1,0 +1,36 @@
+{
+  "date_utc": "2026-10-22T14:38:02.657834+00:00",
+  "command": [
+    "python",
+    "-B",
+    "-m",
+    "unittest",
+    "test_accepted_count_reference",
+    "test_sis_mask_reference",
+    "test_repeated_deletion_reference",
+    "-v"
+  ],
+  "cwd": "tests/independent_validation",
+  "exit_code": 0,
+  "tests": 14,
+  "skipped": 0,
+  "modules": [
+    "test_accepted_count_reference",
+    "test_sis_mask_reference",
+    "test_repeated_deletion_reference"
+  ],
+  "test_counts": {
+    "accepted_count": 3,
+    "generic_sis_mask": 7,
+    "repeated_deletion": 4
+  },
+  "python": "3.13.15",
+  "numpy_existing_optional": "2.4.4",
+  "dependency_install": false,
+  "agent4_sha": null,
+  "agent4_handoff": null,
+  "agent4_source_read": false,
+  "native_sis_executed": false,
+  "real_or_hidden_data_opened": false,
+  "scope": "Mathematical/generic API preparation only; original Phase0 56+(15+8) recorded separately"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "reference_tests_passed_native_audit_not_performed",
+  "suite": "test_sis_mask_reference.py",
+  "tests_run": 7,
+  "passed": 7,
+  "failed": 0,
+  "skipped": 0,
+  "optional_numpy_indexing_test": "ran; NumPy was already available",
+  "native_sis_executed": false,
+  "native_source_sha": null,
+  "limitations": [
+    "Tests cover only independently declared generic retain-mask reference semantics.",
+    "No official immutable native SIS source was supplied; native signature, mask orientation, axes, broadcasting, groups, adapter behavior, and algorithmic behavior remain unverified.",
+    "No dependencies were installed and no native source was fetched or executed."
+  ]
+}

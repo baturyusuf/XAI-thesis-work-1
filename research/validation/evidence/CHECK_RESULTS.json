@@ -1,0 +1,102 @@
+{
+  "date_utc": "2026-10-22T14:38:05.115098+00:00",
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "source_sha": "51a6915ec8f94cf1779609422bd61e8d6b3911c7",
+  "delivery_sha": "d42bec729e9e78ae5387720d29360c5d60f38192",
+  "reproduction": {
+    "command": [
+      "python",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/benchmark",
+      "-v"
+    ],
+    "cwd": "research/validation/evidence/source_copy/agent3_51a6915",
+    "exit_code": 0,
+    "tests": 56,
+    "log": "agent3_reproduction.txt"
+  },
+  "independent": {
+    "command": [
+      "python",
+      "-B",
+      "-m",
+      "unittest",
+      "test_h1_reference",
+      "test_h2_reference",
+      "test_ltt_reference",
+      "test_pinned_implementation",
+      "-v"
+    ],
+    "cwd": "tests/independent_validation",
+    "exit_code": 0,
+    "tests": 23,
+    "log": "independent_checks.txt"
+  },
+  "standalone_reference_tests": 15,
+  "differential_tests": 8,
+  "pilot": {
+    "command": [
+      "python",
+      "-B",
+      "-m",
+      "benchmark.synthetic"
+    ],
+    "cwd": "research/validation/evidence/source_copy/agent3_51a6915",
+    "exit_code": 0,
+    "tests": null,
+    "log": "agent3_synthetic_reproduction.txt"
+  },
+  "pinned_result_parity": {
+    "reference_cases": true,
+    "selective_pilot": true,
+    "source_sha256": true
+  },
+  "source_files_verified_before": 22,
+  "source_files_verified_after": 22,
+  "pilot_statuses": [
+    "NO_POLICY_CERTIFIED",
+    "NO_POLICY_CERTIFIED",
+    "NO_POLICY_CERTIFIED",
+    "NO_POLICY_CERTIFIED",
+    "NO_POLICY_CERTIFIED",
+    "NO_POLICY_CERTIFIED"
+  ],
+  "pilot_reasons": [
+    [
+      "NO_RISK_NULL_REJECTED"
+    ],
+    [
+      "NO_RISK_NULL_REJECTED"
+    ],
+    [
+      "NO_RISK_NULL_REJECTED"
+    ],
+    [
+      "NO_RISK_NULL_REJECTED"
+    ],
+    [
+      "NO_RISK_NULL_REJECTED"
+    ],
+    [
+      "NO_RISK_NULL_REJECTED"
+    ]
+  ],
+  "levels": {
+    "A": "Same Windows/Python: pinned source suite and tiny pilot reproduced",
+    "B": "Independent Fraction/permutation/Decimal answers checked; limited cases only",
+    "C": "Mathematical and protocol review, not empirical scientific validation"
+  },
+  "not_run": [
+    "real datasets",
+    "hidden datasets",
+    "large benchmark",
+    "Agent4 native methods",
+    "cross-platform reproduction",
+    "formal all-parameter floating proof"
+  ]
+}

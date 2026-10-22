@@ -1,0 +1,58 @@
+{
+  "checked_utc": "2026-10-22T13:31:39.005247+00:00",
+  "worktree": "verified-linked-audit-worktree",
+  "branch": "research/independent-validation",
+  "head": "1b71d4c45ae1aba771e7c499f87f197f44b3112c",
+  "base": "1b71d4c45ae1aba771e7c499f87f197f44b3112c",
+  "main_branch": "main",
+  "main_head": "1b71d4c45ae1aba771e7c499f87f197f44b3112c",
+  "main_status": "main at recorded HEAD; untracked private directory reported, contents not inspected",
+  "origin": "https://github.com/baturyusuf/XAI-thesis-work-1.git",
+  "worktrees": [
+    {
+      "branch": "refs/heads/main",
+      "head": "1b71d4c45ae1aba771e7c499f87f197f44b3112c"
+    },
+    {
+      "branch": "refs/heads/research/benchmark-methodology",
+      "head": "d42bec729e9e78ae5387720d29360c5d60f38192"
+    },
+    {
+      "branch": "refs/heads/research/dataset-validity",
+      "head": "2a3cc1abc29c823fb6eda26ebf1ed29b064da63c"
+    },
+    {
+      "branch": "refs/heads/research/independent-validation",
+      "head": "1b71d4c45ae1aba771e7c499f87f197f44b3112c"
+    },
+    {
+      "branch": "refs/heads/research/literature-novelty",
+      "head": "27bc1a7fb731bbf1f13787038e4d3a123233fa61"
+    },
+    {
+      "branch": "refs/heads/research/xai-innovation",
+      "head": "1b71d4c45ae1aba771e7c499f87f197f44b3112c"
+    }
+  ],
+  "research_refs": "refs/heads/research/benchmark-methodology d42bec729e9e78ae5387720d29360c5d60f38192\nrefs/heads/research/dataset-validity 2a3cc1abc29c823fb6eda26ebf1ed29b064da63c\nrefs/heads/research/independent-validation 1b71d4c45ae1aba771e7c499f87f197f44b3112c\nrefs/heads/research/literature-novelty 27bc1a7fb731bbf1f13787038e4d3a123233fa61\nrefs/heads/research/xai-innovation 1b71d4c45ae1aba771e7c499f87f197f44b3112c",
+  "system": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+    "shell_observed": "MSYS MINGW64 sh"
+  },
+  "operations": {
+    "created_branch_worktree": true,
+    "commit": false,
+    "push": false,
+    "merge": false,
+    "cherry_pick": false,
+    "history_rewrite": false,
+    "real_data_open": false,
+    "hidden_data_open": false,
+    "agent4_live_read": false,
+    "data_move": false,
+    "acl_change": false
+  },
+  "scope": "Historical Phase0 pre-publication receipt; logical refs retained, user-specific filesystem paths omitted; no private payload inspected",
+  "publication_authorized_later": true
+}

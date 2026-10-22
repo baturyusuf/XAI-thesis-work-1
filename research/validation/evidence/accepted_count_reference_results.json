@@ -1,0 +1,43 @@
+{
+  "cwd": "W (verified independent-validation worktree root)",
+  "command": "python -m unittest discover -s tests/independent_validation -p test_accepted_count_reference.py -v",
+  "exit_code": 0,
+  "tests_run": 3,
+  "passed": 3,
+  "failed": 0,
+  "tests": [
+    "test_binomial_conditional_and_mixture",
+    "test_fractional_losses_use_bounded_tail_not_binomial",
+    "test_same_sample_candidate_choice_breaks_single_test_level"
+  ],
+  "stdout_stderr": "test_binomial_conditional_and_mixture (test_accepted_count_reference.AcceptedCountReference.test_binomial_conditional_and_mixture) ... ok\ntest_fractional_losses_use_bounded_tail_not_binomial (test_accepted_count_reference.AcceptedCountReference.test_fractional_losses_use_bounded_tail_not_binomial) ... ok\ntest_same_sample_candidate_choice_breaks_single_test_level (test_accepted_count_reference.AcceptedCountReference.test_same_sample_candidate_choice_breaks_single_test_level) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.070s\n\nOK\n",
+  "exact_enumeration": {
+    "binary_n": 6,
+    "binary_laws": 4,
+    "binary_prevalences": [
+      "1/4",
+      "3/4"
+    ],
+    "binary_null_risks": [
+      "1/2",
+      "3/4"
+    ],
+    "zero_acceptance_probabilities": [
+      "729/4096",
+      "1/4096"
+    ],
+    "fractional_n": 6,
+    "fractional_risk": "1/4",
+    "selection_counterexample": {
+      "n": 2,
+      "risk_each": "1/2",
+      "alpha": "49/100",
+      "null": "R>alpha (both strictly unsafe)",
+      "nominal": "2601/10000",
+      "fixed_candidate_false_rejection": "1/4",
+      "same_sample_min_p_false_rejection": "1/2",
+      "bonferroni_at_nominal_over_two_false_rejection": "0"
+    }
+  },
+  "scope": "Standalone mathematical enumeration only; not Agent4 or benchmark validation"
+}

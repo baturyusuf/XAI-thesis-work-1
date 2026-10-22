@@ -1,0 +1,30 @@
+{
+  "url": "https://arxiv.org/html/2110.01052v5",
+  "access_date": "2026-10-22",
+  "access_status": "SUCCESS",
+  "reviewers": [
+    "parent",
+    "LTT subagent"
+  ],
+  "read_sections": [
+    "1.1",
+    "2.1 Theorem 1",
+    "2.2 Proposition 1",
+    "2.3 fixed sequence",
+    "2.4",
+    "3.2",
+    "3.3",
+    "5",
+    "Appendix B",
+    "Appendix C",
+    "Appendix D"
+  ],
+  "version_header": "29 Sep 2022",
+  "displayed_title_date": "August 24, 2026",
+  "limits": [
+    "HTML mathematical conversion artifacts",
+    "Body not archived; no independent external byte digest collected",
+    "HB hybridization proof in cited prior work not fully re-proved",
+    "Native package equivalence not tested"
+  ]
+}

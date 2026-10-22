@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "original_required_documents": 21,
+  "published_research_documents": 26,
+  "report_sections": 16,
+  "audit_python_files_parsed": 11,
+  "source_manifest_entries": 50,
+  "source_copies_verified": 22,
+  "whitespace_issues": [],
+  "reproduction_tests": 56,
+  "phase0_independent_tests": 23,
+  "preparation_tests": 14,
+  "preparation_skipped": 0,
+  "scope": "Document/syntax/integrity and executed tiny tests, not native or final validity"
+}

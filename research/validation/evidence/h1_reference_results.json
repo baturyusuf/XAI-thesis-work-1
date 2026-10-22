@@ -1,0 +1,8 @@
+{
+  "status": "numerical execution VERIFIED",
+  "command": "python -B -m unittest discover -s W/tests/independent_validation -p test_h1_reference.py -v",
+  "tests_run": 7,
+  "result": "PASS",
+  "reproduction": "NOT_RUN",
+  "scope": "Independent Fraction truth-table reference only; no benchmark imports or data. Includes corrected fixed-x distortion, weighted same-support law, weighted XOR, grouped one-hot conditioning, and finite certificate-universe checks."
+}

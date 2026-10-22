@@ -1,0 +1,19 @@
+test_binomial_conditional_and_mixture (test_accepted_count_reference.AcceptedCountReference.test_binomial_conditional_and_mixture) ... ok
+test_fractional_losses_use_bounded_tail_not_binomial (test_accepted_count_reference.AcceptedCountReference.test_fractional_losses_use_bounded_tail_not_binomial) ... ok
+test_same_sample_candidate_choice_breaks_single_test_level (test_accepted_count_reference.AcceptedCountReference.test_same_sample_candidate_choice_breaks_single_test_level) ... ok
+test_all_false_selects_baseline (test_sis_mask_reference.RetainMaskReferenceTests.test_all_false_selects_baseline) ... ok
+test_all_true_retains_every_value (test_sis_mask_reference.RetainMaskReferenceTests.test_all_true_retains_every_value) ... ok
+test_baseline_already_meets_target (test_sis_mask_reference.RetainMaskReferenceTests.test_baseline_already_meets_target) ... ok
+test_baseline_does_not_meet_target (test_sis_mask_reference.RetainMaskReferenceTests.test_baseline_does_not_meet_target) ... ok
+test_integer_empty_indices_work_but_float_empty_indices_fail (test_sis_mask_reference.RetainMaskReferenceTests.test_integer_empty_indices_work_but_float_empty_indices_fail) ... ok
+test_length_mismatch_is_reference_input_error (test_sis_mask_reference.RetainMaskReferenceTests.test_length_mismatch_is_reference_input_error) ... ok
+test_true_retains_and_false_uses_baseline (test_sis_mask_reference.RetainMaskReferenceTests.test_true_retains_and_false_uses_baseline) ... ok
+test_all_tiny_tables_terminate_at_single_deletion_minimum (test_repeated_deletion_reference.RepeatedDeletionReference.test_all_tiny_tables_terminate_at_single_deletion_minimum) ... ok
+test_completion_law_changes_feasibility_not_search_contract (test_repeated_deletion_reference.RepeatedDeletionReference.test_completion_law_changes_feasibility_not_search_contract) ... ok
+test_local_deletion_is_not_cardinality_oracle (test_repeated_deletion_reference.RepeatedDeletionReference.test_local_deletion_is_not_cardinality_oracle) ... ok
+test_repeated_pass_fixes_stale_one_pass_fixture (test_repeated_deletion_reference.RepeatedDeletionReference.test_repeated_pass_fixes_stale_one_pass_fixture) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.071s
+
+OK

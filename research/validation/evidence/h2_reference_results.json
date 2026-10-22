@@ -1,0 +1,44 @@
+{
+  "status": "independent_reference_only_not_A3_reproduction",
+  "arithmetic": "stdlib Fraction and exhaustive within-tie permutations",
+  "two_tied_losses_0_1": {
+    "areas": [
+      "1/4",
+      "3/4"
+    ],
+    "expected_prefix_area": "1/2"
+  },
+  "q_0_1_1_L_0_0_1": {
+    "expected_prefix_area": "7/36",
+    "tie_block_endpoint_area": "2/9"
+  },
+  "fixed_coverage_partial_tie": {
+    "selected_risk_possible": [
+      "0",
+      "1"
+    ]
+  },
+  "clipping_example": {
+    "raw_expected_loss": "1/4",
+    "invalid_probability_rate": "1/4",
+    "clipped_expected_loss": "0",
+    "projection_inequality": "clipped <= raw",
+    "raw_unbounded_caveat": true
+  },
+  "test_file": "tests/independent_validation/test_h2_reference.py",
+  "test_count": 5,
+  "validation": "H2-only unittest module; passed",
+  "additional_checks": {
+    "zero_acceptance_risk": "null/None",
+    "partial_tie_fixed_coverage_risks": [
+      "0",
+      "1"
+    ],
+    "endpoint_area": "2/9 computed as sum(block coverage increment * endpoint risk)",
+    "exhaustive_permutation_cases": 3,
+    "permutation_cases": "all within-block orders and all row permutations for each case",
+    "clipping_weighted_states": 2,
+    "raw_residual_above_one": "2",
+    "clipped_residual": "1"
+  }
+}

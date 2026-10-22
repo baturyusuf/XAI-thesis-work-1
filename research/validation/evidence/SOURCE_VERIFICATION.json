@@ -1,0 +1,10 @@
+{
+  "status": "VERIFIED",
+  "source_entries": 50,
+  "copied_files": 22,
+  "source_test_delivery_diff": [],
+  "base": "1b71d4c45ae1aba771e7c499f87f197f44b3112c",
+  "branch": "research/independent-validation",
+  "worktree": "verified-linked-audit-worktree",
+  "source_scope": "No raw data or other worktree files; source copy not independently authored tests"
+}
