@@ -1,0 +1,39 @@
+{
+  "search_AST_identical": true,
+  "uniform_XOR_checks": [
+    {
+      "version": "frozen_missing",
+      "selected": [
+        0,
+        1
+      ],
+      "actual_callbacks": 8,
+      "reported_callbacks": 0,
+      "predicates": 3,
+      "reported_unique_states": 0
+    },
+    {
+      "version": "v2_missing",
+      "selected": [
+        0,
+        1
+      ],
+      "actual_callbacks": 8,
+      "reported_callbacks": null,
+      "predicates": 3,
+      "reported_unique_states": null
+    },
+    {
+      "version": "v2_measured",
+      "selected": [
+        0,
+        1
+      ],
+      "actual_callbacks": 8,
+      "reported_callbacks": 8,
+      "predicates": 3,
+      "reported_unique_states": 3
+    }
+  ],
+  "scope": "publication QC assertion; NOT additional unittest count or a new experiment branch"
+}

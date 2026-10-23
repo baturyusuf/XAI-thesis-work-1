@@ -1,0 +1,9 @@
+{
+  "local_source_snapshot_sha256": "07e537056c4121fcad23cedcfd06b1fb9ca32549fdea6ac4bdc46a30956f80e1",
+  "manifest": "research/innovation/phase1/SOURCE_MANIFEST.csv",
+  "manifest_files": 25,
+  "git_base": "305fb2f30bdcac1bf852a2f2c9f226346869fdc2",
+  "new_phase1_git_commit": null,
+  "published": false,
+  "scope": "content addressed local source/config/result snapshot, not a GitHub immutable commit"
+}

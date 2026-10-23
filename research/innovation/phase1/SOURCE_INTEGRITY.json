@@ -1,0 +1,32 @@
+{
+  "frozen_manifest_sha256": "9c5b2eca9453937c58075fccde067cc764469eae40c0381d36749012f482a6c0",
+  "frozen_manifest_files_verified": 127,
+  "frozen_mismatches": [],
+  "tracked_diff_before_phase1_publication": "",
+  "Agent3_import_files_verified_by_frozen_runner": 23,
+  "SIS_source_and_failing_test_and_original_h1_identical": true,
+  "installed_lime_py_files_byte_identical_to_release": {
+    "lime/lime_base.py": "2387f09404982d6bdccb23007f2d78c384c2b79e4a39fffb27b4748058121a63",
+    "lime/wrappers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lime/wrappers/scikit_image.py": "c07688f9b981213981b73bb8ad3901b819110d8c963248f56ad5bad57e2ae12f",
+    "lime/discretize.py": "496df9b96561ea22c73cff84e76f9e9f115f437783cf731174dfc2061d2963e1",
+    "lime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lime/exceptions.py": "8f2eb3beac887a2422c95acc58e95c0520580c7c69cd64c92cf8ae37c25dd39b",
+    "lime/lime_image.py": "bb8300635fdfe4f572303bc10bc562b9e54326ebf934e7aedc7353b360a89e5f",
+    "lime/lime_text.py": "bc2a29015429c914851d0cad5733c6c42a677e6460946d90b2a6e64121292d22",
+    "lime/tests/test_generic_utils.py": "e17a540b8359894e8c27afcb4383ed61e00a453818e3ef585afdf4a153df08c3",
+    "lime/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lime/tests/test_lime_tabular.py": "f0dff1698db02cdee01907dec7c8bb7b40e0d0012d5fdcdc3286522ccd1acd13",
+    "lime/tests/test_lime_text.py": "4c3a9c3fe907b0d9b2fea68e01d8c358e7b23186710ce5456886174c28b50819",
+    "lime/tests/test_discretize.py": "c3dc21ffc0c25d8ba001a2c2a9c2f3de8637d3fb6c53fa9e380c79f20f0af92d",
+    "lime/tests/test_scikit_image.py": "300d674310fa609f1afb30b8a05d92c83a80775c8a6efaca314fd212d6f5323f",
+    "lime/submodular_pick.py": "96076edcc089a155b5a56fc354731e510804a299bbecd4b36329403298ecf00b",
+    "lime/lime_tabular.py": "4d9c5514fcf38b3652b5d43afd1696441cbc0189f0785d27a8d59b588ce540f7",
+    "lime/explanation.py": "9742db9f1cf1b3d9c47f46fd5ab223478170b67c24c1b24a2dba251bc8f01fda",
+    "lime/utils/generic_utils.py": "222b02cffbd15bd40dfc4d963b6b22921160af26c30abcd6c3da0380a66f6ace",
+    "lime/utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "phase1_commit": "NOT_CREATED",
+  "remote_Agent5_audit": "2992eeee9d6436d62846e8190ed129bd3d9852ea",
+  "remote_verified": true
+}

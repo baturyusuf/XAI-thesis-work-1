@@ -1,0 +1,53 @@
+{
+  "scientific_replay_checks": [
+    {
+      "original": "LIME_PILOT_RESULTS.json",
+      "replay": "LIME_REPLAY.json",
+      "original_sha256": "ce97604f7406363d48cb6fb2c15ce34ce6c6bcbfcd1ace2bb7724ee56e8c5921",
+      "replay_sha256": "baaae709396dfd1606ebeab9399dfb9d7d9830955aa565630cdfefb1848b7cd5",
+      "all_nontiming_fields_identical": true,
+      "canonical_scientific_sha256": "5e3b1a431d1e139a27118065680488f31920d12e68c70024ae11c74d111140f9"
+    },
+    {
+      "original": "BAYES_SMOKE_RESULTS.json",
+      "replay": "BAYES_REPLAY.json",
+      "original_sha256": "0347258ed47457179035bcdef1fdf11f84e75419353e105683ce9541336752b5",
+      "replay_sha256": "b528d6d6a4cdd0bc64195c205a0020d7a56ac7e6c0d2a385b1338f1f51ff52d1",
+      "all_nontiming_fields_identical": true,
+      "canonical_scientific_sha256": "dde12eada85e4cbb0c6deb4748f03b25ac5de8fae9f490f9593d604ec0a2fbc0"
+    }
+  ],
+  "only_excluded_timing_keys": [
+    "controller_seconds",
+    "explanation_wall_seconds",
+    "fitting_seconds",
+    "generation_seconds",
+    "seconds",
+    "surrogate_fitting_seconds",
+    "timing_seconds",
+    "total_seconds"
+  ],
+  "environment_excluded_from_comparison": false,
+  "nativeLIME_explanations": 160,
+  "nativeBayes_centers": 3,
+  "all_four_scores_same64_accepted_test_ids": true,
+  "common_test_exact_unit_loss": "107486909779412685/9223372036854775808",
+  "model_callback_count": 512,
+  "model_rows": 25344,
+  "phase1_unittest": {
+    "tests": 23,
+    "pass": 23,
+    "fail": 0,
+    "errors": 0,
+    "skips": 0
+  },
+  "frozen_unittest": {
+    "tests": 85,
+    "pass": 84,
+    "known_fail": 1,
+    "errors": 0,
+    "skips": 0,
+    "exit": 1
+  },
+  "limits": "Same-protocol deterministic replay; not a new experiment, population validation or selective superiority"
+}

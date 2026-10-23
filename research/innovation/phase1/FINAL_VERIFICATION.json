@@ -1,0 +1,31 @@
+{
+  "branch": "research/xai-innovation",
+  "base_HEAD_unchanged": "305fb2f30bdcac1bf852a2f2c9f226346869fdc2",
+  "new_commit_created": false,
+  "pushed": false,
+  "source_manifest_sha256": "07e537056c4121fcad23cedcfd06b1fb9ca32549fdea6ac4bdc46a30956f80e1",
+  "new_source_files_verified": 25,
+  "frozen_manifest_files_verified": 127,
+  "tracked_diff_empty": true,
+  "new_files_status": [
+    "?? research/innovation/phase1/",
+    "?? src/innovation/phase1/",
+    "?? tests/phase1/"
+  ],
+  "personal_path_or_secret_pattern_matches": [],
+  "validation": {
+    "frozen85": {
+      "passed": 84,
+      "known_failure": 1,
+      "exit": 1
+    },
+    "phase1": {
+      "passed": 23,
+      "failures": 0,
+      "exit": 0
+    },
+    "same_environment_nontiming_replay": "MATCH"
+  },
+  "Agent5_phase1_audit": "PENDING",
+  "publication": "NOT_AUTHORIZED_AUTOMATICALLY"
+}

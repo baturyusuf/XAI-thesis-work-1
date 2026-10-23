@@ -1,0 +1,9 @@
+arm,explanation,generation_law,evaluation_target,same_bank_strong_null,status,limits
+nativeLIME_hL,full scaled-coordinate Ridge + intercept,native Gaussian centered on x + kernel,explicit clip(hL) absolute selected probability; uniform4offsets,direct probe; B-trained Ridge; random; reversed on same160 bank,REPRODUCED,not unbounded-native population guarantee
+BayesLIME_hB,raw-coordinate BLR mean + posterior,native training-mean Gaussian + kernel,native/raw and explicitclip diagnostics; uniform4offsets,future direct learned posterior on hB bank only,REPRODUCED,3center smoke only; no LTT calibration; not same hL bank
+frozenH2,synthetic local-surrogate reference,fixed analytic endpoint rule,frozen two-state law; accepted LTT,audited direct/histogram remain frozen,REPRODUCED,different predictor/bank; not nativeLIME or comparative Phase1 leaderboard
+H1oracle_deletion,conditional label subset,exact Q versus misspecified Q,label violation and cardinality,not H2 functional loss,INDEPENDENT_REFERENCE_CHECKED,privileged exact oracle distinct costclass
+GoogleSIS,fixed-mask score sufficient subset,fixed baseline mask,native score threshold,NOT_APPLICABLE,KNOWN_TEST_FAILURE,empty-mask output inconsistency only
+PAXp,conditional uniform finite-domain label subset,paper uniform product,probabilistic label sufficiency,NOT_APPLICABLE,BLOCKED,official artifact unresolved; reference requires approval
+VeriX,universal bounded-U certified subset,bounded independent coordinate box,UNSAT property subject model backend support,NOT_APPLICABLE,NOT_MEASURED,deferred heavy solver; not conditional-Q probability
+RDE,optimized continuous mask,native noisy replacement,pre-softmax expected distortion,NOT_APPLICABLE,NOT_MEASURED,deferred legacy TensorFlow1 environment

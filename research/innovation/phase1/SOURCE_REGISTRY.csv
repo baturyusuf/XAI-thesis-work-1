@@ -1,0 +1,7 @@
+method,immutable_source,license,source_evidence,execution,paper_equivalence_scope
+LIME,PyPI lime0.2.0.1 sha25676960e4f055feb53e89b5022383bafc87b63f25bac6265984b0a333d1a57f781,BSD-2-Clause,LIME_SOURCE_AUDIT; SOURCE_INTEGRITY19pyfiles,native160fits plus tests/replay,native local ridge mechanism; NOT full paper benchmark
+BayesLIME,dylan-slack/Modeling-Uncertainty-Local-Explainability@72c4330bc7d29150b55018b0946f85f7df88e107,MIT,BAYES_SMOKE_RESULTS source_sha256; raw bytes match,native3center fixed128path plus tests/replay,author README paper link; NOT historical full env/PTG focus/benchmark
+GoogleSIS,google-research@0d94f8c4d92678ce5f7a0eacae725f79174cfb03,Apache-2.0,frozen source manifest; source unchanged,original85strict rerun; knownfailure retained,narrow mask output inconsistency only
+PAXp,arXiv2312.11831v3 DOI10.3233/FAIA240601,UNVERIFIED_ARTIFACT,H1_FUTURE_NATIVE_REQUIREMENTS,NOT_RUN,official artifact unresolved
+VeriX,NeuralNetworkVerification/VeriX@fd2041ec304767d1e233f72d41c70b2701c3b647,BSD-3-Clause,prior static snapshots + current contract review,NOT_RUN,wrapper/model/backend dependent
+RDE,jmaces/rde@d71169d697c322695901653fedd2ccf97413f018,MIT,prior static review preserved,NOT_RUN,TF1/Keras/ADF continuous-mask pre-softmax distortion

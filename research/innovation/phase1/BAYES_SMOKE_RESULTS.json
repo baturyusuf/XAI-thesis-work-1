@@ -1,0 +1,416 @@
+{
+  "status": "completed",
+  "config_sha256": "53992abc80954e20f6f7a0bb4deced75b1729bd3fa4a2ce003f3ac06d2a69b9a",
+  "source_sha256": {
+    "bayes/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bayes/explanations.py": "096c018074080d4fbe37e7a60925a8fac1805ba982c545be5abcd15baf4891fe",
+    "bayes/regression.py": "f451ee33398175e6c6662fde3990975b6b53712d4b8ff86d42b80f4b8671773e",
+    "LICENSE": "570f4719dc3df329c8c92af090e6e4bf3e040fc10896ec7c5ee57cccf8521c5e",
+    "README.md": "48d3ca06d9b0984ba4b44a374725065622accd13b951e9f05f9737012eb9322c",
+    "requirements.txt": "1f746e5cb366ed1bb9ca23f2f8534e97aead470c5014bfabb1d5566daa009aeb"
+  },
+  "license_provenance": "MIT License; Copyright (c) 2021 Dylan Slack; upstream LICENSE byte-identical to pinned raw source",
+  "source": "dylan-slack/Modeling-Uncertainty-Local-Explainability@72c4330bc7d29150b55018b0946f85f7df88e107",
+  "python": "3.11.9",
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.11.4",
+    "scikit-learn": "1.3.2",
+    "lime": "0.2.0.1",
+    "tqdm": "4.67.1"
+  },
+  "samples_per_center": 128,
+  "centers": [
+    {
+      "center_index": 0,
+      "center": [
+        0.0,
+        0.0
+      ],
+      "seed_role": "bayes_smoke:native_lime",
+      "seed_uint32": 684159987,
+      "requested_samples": 128,
+      "fit_rows": 128,
+      "generation_classifier_calls": 1,
+      "evaluation_classifier_calls": 1,
+      "generation_classifier_rows": 128,
+      "evaluation_classifier_rows": 4,
+      "explanation_wall_seconds": 0.7584142000123393,
+      "surrogate_fit_runtime": "NOT_MEASURED",
+      "posterior_runtime": "NOT_MEASURED",
+      "lime_sample_around_instance_default": false,
+      "feature_coordinates": "original feature coordinates; native fit uses result[data]; LIME scaler is used only for distances/kernel weights",
+      "coefficients": [
+        0.1325436613812539,
+        0.08678069332009569
+      ],
+      "intercept": 0.49397646141078433,
+      "s_2": 0.002265299028206039,
+      "coefficient_credible_deviation_95": [
+        0.01818837067189943,
+        0.019986289221886912
+      ],
+      "eval_points": [
+        [
+          -0.25,
+          -0.25
+        ],
+        [
+          -0.25,
+          0.25
+        ],
+        [
+          0.25,
+          -0.25
+        ],
+        [
+          0.25,
+          0.25
+        ]
+      ],
+      "native_predictive_mean": [
+        0.43914537273544696,
+        0.4825357193954948,
+        0.5054172034260739,
+        0.5488075500861217
+      ],
+      "native_predictive_std": [
+        0.04812267303046421,
+        0.048013997496064775,
+        0.04809226237853896,
+        0.048038850347666535
+      ],
+      "black_box_target1_at_eval": [
+        0.42652440127888724,
+        0.48530488025577745,
+        0.5146951197442226,
+        0.5734755987211128
+      ],
+      "computational_loss_eval": [
+        {
+          "raw_float": 0.43914537273544696,
+          "raw_fraction": "3955469874025673/9007199254740992",
+          "clipped_float": 0.43914537273544696,
+          "clipped_fraction": "3955469874025673/9007199254740992",
+          "invalid": false,
+          "point": [
+            -0.25,
+            -0.25
+          ],
+          "black_box_target1": 0.42652440127888724,
+          "computational_loss_raw_float": 0.012620971456559715,
+          "computational_loss_exact_fraction": "3552487646801/281474976710656",
+          "evaluation_invalid": false
+        },
+        {
+          "raw_float": 0.4825357193954948,
+          "raw_fraction": "4346295372125009/9007199254740992",
+          "clipped_float": 0.4825357193954948,
+          "clipped_fraction": "4346295372125009/9007199254740992",
+          "invalid": false,
+          "point": [
+            -0.25,
+            0.25
+          ],
+          "black_box_target1": 0.48530488025577745,
+          "computational_loss_raw_float": 0.002769160860282671,
+          "computational_loss_exact_fraction": "6235595909249/2251799813685248",
+          "evaluation_invalid": false
+        },
+        {
+          "raw_float": 0.5054172034260739,
+          "raw_fraction": "4552393458032609/9007199254740992",
+          "clipped_float": 0.5054172034260739,
+          "clipped_fraction": "4552393458032609/9007199254740992",
+          "invalid": false,
+          "point": [
+            0.25,
+            -0.25
+          ],
+          "black_box_target1": 0.5146951197442226,
+          "computational_loss_raw_float": 0.009277916318148671,
+          "computational_loss_exact_fraction": "41784020473189/4503599627370496",
+          "evaluation_invalid": false
+        },
+        {
+          "raw_float": 0.5488075500861217,
+          "raw_fraction": "4943218956131945/9007199254740992",
+          "clipped_float": 0.5488075500861217,
+          "clipped_fraction": "4943218956131945/9007199254740992",
+          "invalid": false,
+          "point": [
+            0.25,
+            0.25
+          ],
+          "black_box_target1": 0.5734755987211128,
+          "computational_loss_raw_float": 0.024668048634991058,
+          "computational_loss_exact_fraction": "111095014640503/4503599627370496",
+          "evaluation_invalid": false
+        }
+      ],
+      "predict_signature": "predict(self, data)",
+      "get_creds_signature": "get_creds(self, percent=95, n_samples=10000, get_intercept=False)"
+    },
+    {
+      "center_index": 1,
+      "center": [
+        1.0,
+        -1.0
+      ],
+      "seed_role": "bayes_smoke:native_lime",
+      "seed_uint32": 3768878344,
+      "requested_samples": 128,
+      "fit_rows": 128,
+      "generation_classifier_calls": 1,
+      "evaluation_classifier_calls": 1,
+      "generation_classifier_rows": 128,
+      "evaluation_classifier_rows": 4,
+      "explanation_wall_seconds": 0.7641912999970373,
+      "surrogate_fit_runtime": "NOT_MEASURED",
+      "posterior_runtime": "NOT_MEASURED",
+      "lime_sample_around_instance_default": false,
+      "feature_coordinates": "original feature coordinates; native fit uses result[data]; LIME scaler is used only for distances/kernel weights",
+      "coefficients": [
+        0.13801515094246686,
+        0.062477078595799755
+      ],
+      "intercept": 0.4738675048967984,
+      "s_2": 0.0021439849081144576,
+      "coefficient_credible_deviation_95": [
+        0.025218827657919975,
+        0.024882953366951326
+      ],
+      "eval_points": [
+        [
+          0.75,
+          -1.25
+        ],
+        [
+          0.75,
+          -0.75
+        ],
+        [
+          1.25,
+          -1.25
+        ],
+        [
+          1.25,
+          -0.75
+        ]
+      ],
+      "native_predictive_mean": [
+        0.4992825198588989,
+        0.5305210591567987,
+        0.5682900953301323,
+        0.5995286346280322
+      ],
+      "native_predictive_std": [
+        0.04816662426482041,
+        0.04722210921631011,
+        0.049108187737837504,
+        0.048150265065620326
+      ],
+      "black_box_target1_at_eval": [
+        0.5125327746348102,
+        0.5381089371432373,
+        0.5508970183974509,
+        0.5764731809058778
+      ],
+      "computational_loss_eval": [
+        {
+          "raw_float": 0.4992825198588989,
+          "raw_fraction": "8994274281556557/18014398509481984",
+          "clipped_float": 0.4992825198588989,
+          "clipped_fraction": "8994274281556557/18014398509481984",
+          "invalid": false,
+          "point": [
+            0.75,
+            -1.25
+          ],
+          "black_box_target1": 0.5125327746348102,
+          "computational_loss_raw_float": 0.013250254775911297,
+          "computational_loss_exact_fraction": "238695369885433/18014398509481984",
+          "evaluation_invalid": false
+        },
+        {
+          "raw_float": 0.5305210591567987,
+          "raw_fraction": "4778508888661519/9007199254740992",
+          "clipped_float": 0.5305210591567987,
+          "clipped_fraction": "4778508888661519/9007199254740992",
+          "invalid": false,
+          "point": [
+            0.75,
+            -0.75
+          ],
+          "black_box_target1": 0.5381089371432373,
+          "computational_loss_raw_float": 0.007587877986438563,
+          "computational_loss_exact_fraction": "68345528944515/9007199254740992",
+          "evaluation_invalid": false
+        },
+        {
+          "raw_float": 0.5682900953301323,
+          "raw_fraction": "5118702123134255/9007199254740992",
+          "clipped_float": 0.5682900953301323,
+          "clipped_fraction": "5118702123134255/9007199254740992",
+          "invalid": false,
+          "point": [
+            1.25,
+            -1.25
+          ],
+          "black_box_target1": 0.5508970183974509,
+          "computational_loss_raw_float": 0.01739307693268144,
+          "computational_loss_exact_fraction": "156662909585701/9007199254740992",
+          "evaluation_invalid": false
+        },
+        {
+          "raw_float": 0.5995286346280322,
+          "raw_fraction": "675009233877187/1125899906842624",
+          "clipped_float": 0.5995286346280322,
+          "clipped_fraction": "675009233877187/1125899906842624",
+          "invalid": false,
+          "point": [
+            1.25,
+            -0.75
+          ],
+          "black_box_target1": 0.5764731809058778,
+          "computational_loss_raw_float": 0.02305545372215434,
+          "computational_loss_exact_fraction": "6489533299497/281474976710656",
+          "evaluation_invalid": false
+        }
+      ],
+      "predict_signature": "predict(self, data)",
+      "get_creds_signature": "get_creds(self, percent=95, n_samples=10000, get_intercept=False)"
+    },
+    {
+      "center_index": 2,
+      "center": [
+        -1.0,
+        1.0
+      ],
+      "seed_role": "bayes_smoke:native_lime",
+      "seed_uint32": 281698153,
+      "requested_samples": 128,
+      "fit_rows": 128,
+      "generation_classifier_calls": 1,
+      "evaluation_classifier_calls": 1,
+      "generation_classifier_rows": 128,
+      "evaluation_classifier_rows": 4,
+      "explanation_wall_seconds": 0.7591586000053212,
+      "surrogate_fit_runtime": "NOT_MEASURED",
+      "posterior_runtime": "NOT_MEASURED",
+      "lime_sample_around_instance_default": false,
+      "feature_coordinates": "original feature coordinates; native fit uses result[data]; LIME scaler is used only for distances/kernel weights",
+      "coefficients": [
+        0.09879982642131091,
+        0.09996219722149646
+      ],
+      "intercept": 0.46788337984884976,
+      "s_2": 0.002110290577296557,
+      "coefficient_credible_deviation_95": [
+        0.026337310171249528,
+        0.027463993916927807
+      ],
+      "eval_points": [
+        [
+          -1.25,
+          0.75
+        ],
+        [
+          -1.25,
+          1.25
+        ],
+        [
+          -0.75,
+          0.75
+        ],
+        [
+          -0.75,
+          1.25
+        ]
+      ],
+      "native_predictive_mean": [
+        0.41935524473833347,
+        0.4693363433490817,
+        0.4687551579489889,
+        0.5187362565597371
+      ],
+      "native_predictive_std": [
+        0.04822635543999315,
+        0.04934294987854941,
+        0.04705724208874927,
+        0.04815442516855087
+      ],
+      "black_box_target1_at_eval": [
+        0.42352681909412215,
+        0.44910298160254924,
+        0.4618910628567628,
+        0.4874672253651898
+      ],
+      "computational_loss_eval": [
+        {
+          "raw_float": 0.41935524473833347,
+          "raw_fraction": "7554432495757687/18014398509481984",
+          "clipped_float": 0.41935524473833347,
+          "clipped_fraction": "7554432495757687/18014398509481984",
+          "invalid": false,
+          "point": [
+            -1.25,
+            0.75
+          ],
+          "black_box_target1": 0.42352681909412215,
+          "computational_loss_raw_float": 0.0041715743557886875,
+          "computational_loss_exact_fraction": "75148402857113/18014398509481984",
+          "evaluation_invalid": false
+        },
+        {
+          "raw_float": 0.4693363433490817,
+          "raw_fraction": "4227405962036711/9007199254740992",
+          "clipped_float": 0.4693363433490817,
+          "clipped_fraction": "4227405962036711/9007199254740992",
+          "invalid": false,
+          "point": [
+            -1.25,
+            1.25
+          ],
+          "black_box_target1": 0.44910298160254924,
+          "computational_loss_raw_float": 0.020233361746532452,
+          "computational_loss_exact_fraction": "11390370052767/562949953421312",
+          "evaluation_invalid": false
+        },
+        {
+          "raw_float": 0.4687551579489889,
+          "raw_fraction": "4222171109334129/9007199254740992",
+          "clipped_float": 0.4687551579489889,
+          "clipped_fraction": "4222171109334129/9007199254740992",
+          "invalid": false,
+          "point": [
+            -0.75,
+            0.75
+          ],
+          "black_box_target1": 0.4618910628567628,
+          "computational_loss_raw_float": 0.00686409509222613,
+          "computational_loss_exact_fraction": "123652544398341/18014398509481984",
+          "evaluation_invalid": false
+        },
+        {
+          "raw_float": 0.5187362565597371,
+          "raw_fraction": "1168090205872999/2251799813685248",
+          "clipped_float": 0.5187362565597371,
+          "clipped_fraction": "1168090205872999/2251799813685248",
+          "invalid": false,
+          "point": [
+            -0.75,
+            1.25
+          ],
+          "black_box_target1": 0.4874672253651898,
+          "computational_loss_raw_float": 0.03126903119454727,
+          "computational_loss_exact_fraction": "281646394471999/9007199254740992",
+          "evaluation_invalid": false
+        }
+      ],
+      "predict_signature": "predict(self, data)",
+      "get_creds_signature": "get_creds(self, percent=95, n_samples=10000, get_intercept=False)"
+    }
+  ],
+  "scope": "h_B native posterior predictive diagnostics and four-point computational loss only; descriptive and not equivalence or certificate; no transfer to h_L"
+}

@@ -1,0 +1,23 @@
+test_native_blr_matches_weighted_normal_equations_and_predictive_variance (test_bayes_native.TestBayesNative.test_native_blr_matches_weighted_normal_equations_and_predictive_variance) ... ok
+test_native_smoke_repeat_is_deterministic (test_bayes_native.TestBayesNative.test_native_smoke_repeat_is_deterministic) ... ok
+test_fraction_loss_uses_original_float_values (test_float_adapter.FloatAdapterTests.test_fraction_loss_uses_original_float_values) ... ok
+test_preserves_selected_float_and_does_not_normalize_near_sum (test_float_adapter.FloatAdapterTests.test_preserves_selected_float_and_does_not_normalize_near_sum) ... ok
+test_rejects_invalid_probability_inputs (test_float_adapter.FloatAdapterTests.test_rejects_invalid_probability_inputs) ... ok
+test_rejects_nonfinite_surrogate (test_float_adapter.FloatAdapterTests.test_rejects_nonfinite_surrogate) ... ok
+test_valid_native_loss_and_known_good_or_wrong (test_float_adapter.FloatAdapterTests.test_valid_native_loss_and_known_good_or_wrong) ... ok
+test_measured_zero_differs_from_unknown (test_h1_counter_v2.H1CounterV2Tests.test_measured_zero_differs_from_unknown) ... ok
+test_missing_counter_is_unknown_despite_eight_executions (test_h1_counter_v2.H1CounterV2Tests.test_missing_counter_is_unknown_despite_eight_executions) ... ok
+test_search_and_predicate_count_match_frozen_reference (test_h1_counter_v2.H1CounterV2Tests.test_search_and_predicate_count_match_frozen_reference) ... ok
+test_supplied_counts_are_lifetime_snapshot (test_h1_counter_v2.H1CounterV2Tests.test_supplied_counts_are_lifetime_snapshot) ... ok
+test_capture_is_native_default_not_changed_fit (test_lime_native.NativeLimeTests.test_capture_is_native_default_not_changed_fit) ... ok
+test_fixed_target_probability_and_role_seed (test_lime_native.NativeLimeTests.test_fixed_target_probability_and_role_seed) ... ok
+test_full_surrogate_matches_native_local_pred (test_lime_native.NativeLimeTests.test_full_surrogate_matches_native_local_pred) ... ok
+test_independent_finite_loss_reference (test_lime_native.NativeLimeTests.test_independent_finite_loss_reference) ... ok
+test_independent_weighted_normal_equation (test_lime_native.NativeLimeTests.test_independent_weighted_normal_equation) ... ok
+test_query_rows_and_native_perturbations (test_lime_native.NativeLimeTests.test_query_rows_and_native_perturbations) ... ok
+test_seed_repeat_preserves_native_object (test_lime_native.NativeLimeTests.test_seed_repeat_preserves_native_object) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 1.540s
+
+OK

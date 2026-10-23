@@ -1,0 +1,217 @@
+{
+  "status": "INCONCLUSIVE_NONNATIVE_CONFIG",
+  "config_sha256": "53992abc80954e20f6f7a0bb4deced75b1729bd3fa4a2ce003f3ac06d2a69b9a",
+  "source_sha256": {
+    "bayes/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bayes/explanations.py": "096c018074080d4fbe37e7a60925a8fac1805ba982c545be5abcd15baf4891fe",
+    "bayes/regression.py": "f451ee33398175e6c6662fde3990975b6b53712d4b8ff86d42b80f4b8671773e",
+    "LICENSE": "570f4719dc3df329c8c92af090e6e4bf3e040fc10896ec7c5ee57cccf8521c5e",
+    "README.md": "48d3ca06d9b0984ba4b44a374725065622accd13b951e9f05f9737012eb9322c",
+    "requirements.txt": "1f746e5cb366ed1bb9ca23f2f8534e97aead470c5014bfabb1d5566daa009aeb"
+  },
+  "license_provenance": "MIT License; Copyright (c) 2021 Dylan Slack; upstream LICENSE byte-identical to pinned raw source",
+  "source": "dylan-slack/Modeling-Uncertainty-Local-Explainability@72c4330bc7d29150b55018b0946f85f7df88e107",
+  "python": "3.11.9",
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.11.4",
+    "scikit-learn": "1.3.2",
+    "lime": "0.2.0.1",
+    "tqdm": "4.67.1"
+  },
+  "samples_per_center": 128,
+  "centers": [
+    {
+      "center_index": 0,
+      "center": [
+        0.0,
+        0.0
+      ],
+      "seed_role": "bayes_smoke:native_lime",
+      "seed_uint32": 684159987,
+      "requested_samples": 128,
+      "fit_rows": 128,
+      "classifier_calls": 1,
+      "classifier_rows": 128,
+      "runtime_seconds": 0.7570570000098087,
+      "feature_coordinates": "original feature coordinates; native fit uses result[data]; LIME scaler is used only for distances/kernel weights",
+      "coefficients": [
+        0.1325436613812539,
+        0.08678069332009569
+      ],
+      "intercept": 0.49397646141078433,
+      "s_2": 0.002265299028206039,
+      "coefficient_credible_deviation_95": [
+        0.01818837067189943,
+        0.019986289221886912
+      ],
+      "eval_points": [
+        [
+          -0.25,
+          -0.25
+        ],
+        [
+          -0.25,
+          0.25
+        ],
+        [
+          0.25,
+          -0.25
+        ],
+        [
+          0.25,
+          0.25
+        ]
+      ],
+      "native_predictive_mean": [
+        0.43914537273544696,
+        0.4825357193954948,
+        0.5054172034260739,
+        0.5488075500861217
+      ],
+      "native_predictive_std": [
+        0.04812267303046421,
+        0.048013997496064775,
+        0.04809226237853896,
+        0.048038850347666535
+      ],
+      "black_box_target1_at_eval": [
+        0.42652440127888724,
+        0.48530488025577745,
+        0.5146951197442226,
+        0.5734755987211128
+      ],
+      "predict_signature": "predict(self, data)",
+      "get_creds_signature": "get_creds(self, percent=95, n_samples=10000, get_intercept=False)"
+    },
+    {
+      "center_index": 1,
+      "center": [
+        1.0,
+        -1.0
+      ],
+      "seed_role": "bayes_smoke:native_lime",
+      "seed_uint32": 3768878344,
+      "requested_samples": 128,
+      "fit_rows": 128,
+      "classifier_calls": 1,
+      "classifier_rows": 128,
+      "runtime_seconds": 0.7463675000180956,
+      "feature_coordinates": "original feature coordinates; native fit uses result[data]; LIME scaler is used only for distances/kernel weights",
+      "coefficients": [
+        0.09713481311013344,
+        0.0335027214718802
+      ],
+      "intercept": 0.4691173161497709,
+      "s_2": 0.0023236589532334337,
+      "coefficient_credible_deviation_95": [
+        0.01920115861495605,
+        0.01855472323559281
+      ],
+      "eval_points": [
+        [
+          0.75,
+          -1.25
+        ],
+        [
+          0.75,
+          -0.75
+        ],
+        [
+          1.25,
+          -1.25
+        ],
+        [
+          1.25,
+          -0.75
+        ]
+      ],
+      "native_predictive_mean": [
+        0.5000900241425208,
+        0.5168413848784609,
+        0.5486574306975874,
+        0.5654087914335276
+      ],
+      "native_predictive_std": [
+        0.04869564915514055,
+        0.0486920655027704,
+        0.04863628665383908,
+        0.048640243619871695
+      ],
+      "black_box_target1_at_eval": [
+        0.5125327746348102,
+        0.5381089371432373,
+        0.5508970183974509,
+        0.5764731809058778
+      ],
+      "predict_signature": "predict(self, data)",
+      "get_creds_signature": "get_creds(self, percent=95, n_samples=10000, get_intercept=False)"
+    },
+    {
+      "center_index": 2,
+      "center": [
+        -1.0,
+        1.0
+      ],
+      "seed_role": "bayes_smoke:native_lime",
+      "seed_uint32": 281698153,
+      "requested_samples": 128,
+      "fit_rows": 128,
+      "classifier_calls": 1,
+      "classifier_rows": 128,
+      "runtime_seconds": 0.7502681000041775,
+      "feature_coordinates": "original feature coordinates; native fit uses result[data]; LIME scaler is used only for distances/kernel weights",
+      "coefficients": [
+        0.06528818804546163,
+        0.071744124009093
+      ],
+      "intercept": 0.4456601572553718,
+      "s_2": 0.0021199099387152615,
+      "coefficient_credible_deviation_95": [
+        0.018884682334687253,
+        0.01760206681205681
+      ],
+      "eval_points": [
+        [
+          -1.25,
+          0.75
+        ],
+        [
+          -1.25,
+          1.25
+        ],
+        [
+          -0.75,
+          0.75
+        ],
+        [
+          -0.75,
+          1.25
+        ]
+      ],
+      "native_predictive_mean": [
+        0.4178580152053645,
+        0.453730077209911,
+        0.4505021092280953,
+        0.4863741712326418
+      ],
+      "native_predictive_std": [
+        0.04653863908947935,
+        0.046503321368724815,
+        0.04647136018991304,
+        0.04644137903689483
+      ],
+      "black_box_target1_at_eval": [
+        0.42352681909412215,
+        0.44910298160254924,
+        0.4618910628567628,
+        0.4874672253651898
+      ],
+      "predict_signature": "predict(self, data)",
+      "get_creds_signature": "get_creds(self, percent=95, n_samples=10000, get_intercept=False)"
+    }
+  ],
+  "scope": "h_B native posterior predictive diagnostics only; evaluation offsets are descriptive and are not a local-loss equivalence or certificate; no transfer to h_L",
+  "configuration_note": "Attempt 1 mutated exp.lime_info.sample_around_instance=True, an internal LIME setting not exposed by BayesLocalExplanations and not authorized by prespecified Bayes options. Retained for provenance only; exclude from native Bayes conclusions.",
+  "native_result": false
+}

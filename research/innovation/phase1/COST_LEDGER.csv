@@ -1,0 +1,21 @@
+arm,role,batch_callbacks,model_rows,seconds,scope
+nativeLIME,fit/explanation_fit,32,4096,0.0012355000362731516,includes repeated rows; no cache
+nativeLIME,fit/score_fit,32,512,0.0011513999197632074,includes repeated rows; no cache
+nativeLIME,calibration/explanation_fit,64,8192,0.002461900032358244,includes repeated rows; no cache
+nativeLIME,calibration/score_probe,64,512,0.0022860000608488917,includes repeated rows; no cache
+nativeLIME,calibration/calibration_loss,64,1024,0.0020496999204624444,includes repeated rows; no cache
+nativeLIME,evaluation/explanation_fit,64,8192,0.0024201999767683446,includes repeated rows; no cache
+nativeLIME,evaluation/score_probe,64,512,0.0023112999915611,includes repeated rows; no cache
+nativeLIME,evaluation/evaluation_loss,64,2048,0.0021499001304619014,includes repeated rows; no cache
+nativeLIME,evaluation/exact_referee,64,256,0.0022113001032266766,includes repeated rows; no cache
+nativeBayesLIME,"[0.0, 0.0]/generation",1,128,0.7584142000123393,combined explanation+posterior wall time; not isolated model time
+nativeBayesLIME,"[1.0, -1.0]/generation",1,128,0.7641912999970373,combined explanation+posterior wall time; not isolated model time
+nativeBayesLIME,"[-1.0, 1.0]/generation",1,128,0.7591586000053212,combined explanation+posterior wall time; not isolated model time
+nativeBayesLIME,"[0.0, 0.0]/evaluation",1,4,NOT_MEASURED,exact four-point unit law; native predictive scale not loss
+nativeBayesLIME,"[1.0, -1.0]/evaluation",1,4,NOT_MEASURED,exact four-point unit law; native predictive scale not loss
+nativeBayesLIME,"[-1.0, 1.0]/evaluation",1,4,NOT_MEASURED,exact four-point unit law; native predictive scale not loss
+nativeLIME,quality_score_ridge_fit,NOT_APPLICABLE,NOT_APPLICABLE,0.0009361999982502311,batch timing; model query cost separately counted
+nativeLIME,calibration/learned_score_inference,NOT_APPLICABLE,NOT_APPLICABLE,0.00018430000636726618,batch timing; model query cost separately counted
+nativeLIME,evaluation/learned_score_inference,NOT_APPLICABLE,NOT_APPLICABLE,8.200001320801675e-05,batch timing; model query cost separately counted
+nativeLIME,surrogate_ridge_fits,0,0,0.06113110019941814,"only model fitting; generation time includes it, do not sum twice"
+all,peak_memory,NOT_MEASURED,NOT_MEASURED,NOT_MEASURED,not zero

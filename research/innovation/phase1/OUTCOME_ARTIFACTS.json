@@ -1,0 +1,55 @@
+{
+  "snapshot_base": "305fb2f30bdcac1bf852a2f2c9f226346869fdc2",
+  "new_commit": "NOT_CREATED",
+  "H1_v2": {
+    "status": "INDEPENDENT_REFERENCE_CHECKED",
+    "tests": 4,
+    "frozen_results_unchanged": true
+  },
+  "SIS": {
+    "status": "KNOWN_TEST_FAILURE",
+    "normal_use_failure": "INCONCLUSIVE",
+    "source_patched": false
+  },
+  "LIME": {
+    "status": "REPRODUCED",
+    "scope": "native synthetic path only; NOT full paper benchmark",
+    "LTT_status": "ELIGIBLE_CONDITIONAL",
+    "all4scores_full_coverage": true,
+    "population_risk": "NOT_MEASURED",
+    "total_cost_superiority": "INCONCLUSIVE"
+  },
+  "BayesLIME": {
+    "status": "REPRODUCED",
+    "scope": "unmodified fixed-sample native3center path",
+    "LTT_calibration": "NOT_MEASURED",
+    "posterior_is_fidelity_guarantee": false
+  },
+  "prior_attempts": {
+    "LIME1": "ERROR_SERIALIZATION",
+    "LIME2": "INCONCLUSIVE_NUMERICAL_ADAPTER_CONTRACT",
+    "LIME3": "REPORTED_before_explicit_coverage_cost_metadata",
+    "Bayes1": "INCONCLUSIVE_NONNATIVE_CONFIG"
+  },
+  "test_summary": {
+    "frozen": {
+      "total": 85,
+      "pass": 84,
+      "known_fail": 1,
+      "errors": 0,
+      "skips": 0,
+      "exit": 1
+    },
+    "phase1": {
+      "total": 23,
+      "pass": 23,
+      "fail": 0,
+      "exit": 0
+    },
+    "disjoint_total": 108,
+    "disjoint_pass": 107,
+    "known_fail": 1
+  },
+  "new_algorithm_necessity": "INCONCLUSIVE_NO_CLAIM",
+  "Agent5_phase1_validation": "NOT_YET_PERFORMED"
+}

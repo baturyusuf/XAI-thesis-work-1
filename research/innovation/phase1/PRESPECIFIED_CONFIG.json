@@ -1,0 +1,77 @@
+{
+  "protocol": "agent4-phase1-native-v1",
+  "predictor": "p1=.5+.18*tanh(x0)+.12*tanh(x1); output(1-p1,p1)",
+  "classes": [
+    0,
+    1
+  ],
+  "target": 1,
+  "background": "Cartesian {-1,0,1}^2 deterministic; not fitted",
+  "unit_law": "IID uniform background centers plus independent native explainer randomness",
+  "fit_units": 32,
+  "calibration_units": 64,
+  "evaluation_units": 64,
+  "lime_samples": 128,
+  "lime_options": {
+    "discretize_continuous": false,
+    "feature_selection": "none",
+    "sample_around_instance": true,
+    "mode": "classification"
+  },
+  "eval_offsets": [
+    -0.25,
+    0.25
+  ],
+  "evaluation_law": "uniform four independent offsets; NOT native Gaussian/kernel law",
+  "fit_loss_probes": 16,
+  "score_probes": 8,
+  "calibration_loss_probes": 16,
+  "evaluation_loss_probes": 32,
+  "score_names": [
+    "direct_probe",
+    "learned_ridge",
+    "random",
+    "reversed_probe"
+  ],
+  "thresholds": [
+    "0",
+    "1/50",
+    "1/20",
+    "1/10",
+    "1"
+  ],
+  "alpha": "1/5",
+  "minimum_coverage": "1/20",
+  "risk_error_per_family": "1/80",
+  "coverage_error_per_family": "1/80",
+  "FWER": "four score families times risk+coverage = 1/10; accepted HB only",
+  "master_seed": 2026102304,
+  "seed_roles": "SHA256(master:split:unit:role) first32 bits; disjoint roles, collisions rejected; reproducible pseudorandom not proof of IID",
+  "learned": "sklearn Ridge alpha1 on B-only native coefficients/intercept/center; output clipped [0,1] as score only",
+  "adapter": "float selected scalar -> Fraction.from_float; no normalization; h clip explicit if outside [0,1]",
+  "bayes_smoke_centers": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      -1,
+      1
+    ]
+  ],
+  "bayes_samples": 128,
+  "bayes_options": {
+    "data": "tabular",
+    "kernel": "lime",
+    "focus_sample": false,
+    "feature_selection": false,
+    "discretize_continuous": false
+  },
+  "bayes_score": "native predictive std diagnostics on h_B only, no transfer to h_L",
+  "cost_matched": "NOT_ESTABLISHED; same coverage rank summaries descriptive only",
+  "no_retuning": "No thresholds/budgets/seeds changed on outcomes; no real/hidden data"
+}

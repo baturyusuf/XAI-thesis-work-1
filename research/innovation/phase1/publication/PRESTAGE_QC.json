@@ -1,0 +1,18 @@
+{
+  "explicit_whitelist_file": "STAGE_WHITELIST.txt",
+  "whitelisted_paths": 66,
+  "allowed_prefixes": [
+    "src/innovation/phase1/",
+    "tests/phase1/",
+    "research/innovation/phase1/"
+  ],
+  "secret_pattern_matches": [],
+  "machine_specific_windows_home_paths": 0,
+  "binary_or_native_source_or_environment_paths": 0,
+  "new_third_party_sources_wheels_environments": "EXCLUDED",
+  "historical_synthetic_attempt_records": "INCLUDED as human requested; generated synthetic JSON, not data downloads",
+  "source_file_bytes_policy": "Preserve all original bytes; .gitattributes has -text for these paths",
+  "stage_method": "git add -- exact individual paths from reviewed whitelist, NOT git add .",
+  "read_only_GPT_QC": "No hard source/native semantic blocker found in scoped review; not independent Agent5 validation",
+  "git_base": "305fb2f30bdcac1bf852a2f2c9f226346869fdc2"
+}

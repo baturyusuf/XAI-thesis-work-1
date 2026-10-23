@@ -1,0 +1,9 @@
+{
+  "replay_exit": 0,
+  "LIME_all_nontiming_fields_equal": true,
+  "Bayes_all_nontiming_fields_equal": true,
+  "phase1_tests": 23,
+  "tests_passed": 23,
+  "scope": "deterministic same-environment replay, not statistical replication or independently authored audit",
+  "replay_logs": "ignored .cache/innovation/phase1/REPLAY_LOG.txt"
+}

@@ -1,0 +1,10 @@
+# Phase1 subagent record
+Available models were checked with list_agents_and_models. All tasks used openai-subscribed/gpt-6-luna; no local model. Per-task reasoning level is not exposed and was not claimed.
+
+- H1measurement sessionfe2b2d64: disjoint v2module/init/test/H1report.4unittest passes; parent reviewed search equivalence/lifetime/None semantics.
+- Bayes audit/smoke sessioneb1109ca: initially read-only source/API/environment, then authorized bounded native smoke module/test/report/cache. Raw pinned sources independently downloaded and matched. Parent confirmed raw-coordinate fit; corrected overly restrictive initial scaled-coordinate request. Parent caught internal sampler override, required attempt preservation/native default rerun; source remained unmodified. Agent converted tests to unittest; final2pass. Parent independently checked formula and Student-t-scale limitation.
+- H1future session5b50a32e: PAXp/VeriX artifact/contracts only. Initial write quoting failed, later report succeeded. No native heavy execution.
+- Numerical adapter session265c3469: disjoint adapter/tests; initially5tests passed but exact-result contract was broken by returnfloat conversion. Parent caught this from final-record denominators, removed conversion and strengthened exact-type test; attempts preserved. Agent success report alone was NOT accepted as scientific correctness.
+- Fresh critique session67cdbe34: read-only new code/test review. Initial editor-root restriction avoided by explicit worktree Python reads. No demonstrated P0/P1 defect in examined paths; raised exactprobe0/querycost semantic ambiguity. Final per-unit referee cost metadata added and floor semantics clarified. Critique command initially failed discovery; it is NOT counted as a test pass. Parent executed current23tests/replay and frozen85strict command separately.
+
+Parent wrote nativeLIME integration/bank/controller orchestration, prespecified config, independent persisted-record Decimal checks and final reports. No subagent wrote other agents/main worktrees or made commits/pushes. These are assistant code reviews, NOT a substitute for independent Agent5 Phase1 validation.

@@ -1,0 +1,9 @@
+# Preserved implementation-attempt history
+All configured seeds, sizes, thresholds and error budgets stayed fixed. No attempt is dropped for disagreeing with a hypothesis.
+
+1. LIME numerical computation completed, but JSON export failed on native NumPy int32 feature IDs. ERROR/SERIALIZATION, not explainer failure. Original error log retained. Export casts integer IDs without altering weights.
+2. Parent found float_adapter computed exact Fractions then converted their means back to floats on return. This contradicted the declared computational target and exact conditional-unbiasedness contract. LIME_PILOT_ATTEMPT2_FLOAT_MEANS.json and its log are INCONCLUSIVE_NUMERICAL_ADAPTER_CONTRACT, NOT final exact outputs. Fixed by returning Fractions, with explicit type/exact-equality regression. Score fitting may use float labels; calibration loss means stay exact.
+3. The next exact output is preserved as LIME_PILOT_ATTEMPT3_BEFORE_COVERAGE_METADATA.json. Final rerun adds explicit per-unit exact-referee calls1/rows4, sampled-probes0 and reports zero-coverage control against declared positive minimum coverage rather than metric default0. This is reporting clarification, not changed policies or outcomes.
+4. Bayes wrapper attempt1 set internal sample_around_instance=True, not exposed by the Bayes API or in its declared config. Preserved as INCONCLUSIVE_NONNATIVE_CONFIG. Final wrapper removes the internal override and preserves native defaultFalse. It fits original coordinates, confirmed in source. Neither wrapper mistake is a native Bayes failure. No upstream source patched.
+
+Final filenames without ATTEMPT are authoritative within this phase. TEST_ATTEMPT1 predates strengthened exact-type assertion and persisted-record checks; TEST_FINAL is current. REPLAY_CHECK compares all nontiming fields of final LIME and Bayes results in a fresh same-environment deterministic rerun. This is not independent Agent5 validation.
