@@ -1,0 +1,36 @@
+{
+  "status": "COMPLETE_WITH_KNOWN_NATIVE_SIS_CONFORMANCE_FAILURE",
+  "all_tests_passed": false,
+  "total_tests": 85,
+  "total_passed": 84,
+  "total_failed": 1,
+  "suites": [
+    {
+      "suite": "A3_ORIGINAL",
+      "tests": 56,
+      "failures": [],
+      "errors": [],
+      "skipped": 0,
+      "wall_seconds": 0.33170609999797307,
+      "passed": 56
+    },
+    {
+      "suite": "A4_INTEGRATION",
+      "tests": 29,
+      "failures": [
+        "test_sis_native.SISNativeTests.test_constant_score_empty_sufficient_set"
+      ],
+      "errors": [],
+      "skipped": 0,
+      "wall_seconds": 0.14825440000277013,
+      "passed": 28
+    }
+  ],
+  "known_native_failure": "test_sis_native.SISNativeTests.test_constant_score_empty_sufficient_set",
+  "unexpected_failures": [],
+  "original_A3_files_unchanged": 23,
+  "native_source_unchanged": true,
+  "source_objects_verified": false,
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "strict_exit_code": 1
+}

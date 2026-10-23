@@ -1,0 +1,17 @@
+{
+  "status": "PASS_SCOPED_SAFETY_REVIEW",
+  "payload_files": 48,
+  "whitelist_files": 51,
+  "python_files_parsed": 12,
+  "source_payloads_rehashed_each": 199,
+  "personal_path_or_common_secret_findings": [],
+  "ignored_artifact_samples_checked": 5,
+  "git_head": "2992eeee9d6436d62846e8190ed129bd3d9852ea",
+  "branch": "research/independent-validation",
+  "index_empty": true,
+  "staged": false,
+  "commit_created": false,
+  "push_performed": false,
+  "real_or_hidden_data_access": false,
+  "limitations": "Explicit allowlist and human/source provenance review plus pattern scan; not universal secret-detection proof. Generated whitelist/manifest/safety record exclude self-reference hashes."
+}

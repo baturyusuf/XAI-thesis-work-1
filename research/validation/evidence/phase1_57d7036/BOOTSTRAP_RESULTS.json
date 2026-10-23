@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "pristine_environment": true,
+  "cached_artifacts": "Independently downloaded/hash+RECORD inspected before original bootstrap; original PyPI metadata requests retained",
+  "sandbox_changed_payload_files": [],
+  "source_snapshot_changed": false,
+  "scope": "Original unchanged --prepare in disposable Agent5-owned copy; no global install"
+}

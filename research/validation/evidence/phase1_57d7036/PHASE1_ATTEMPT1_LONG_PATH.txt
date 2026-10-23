@@ -1,0 +1,172 @@
+test_bayes_native (unittest.loader._FailedTest.test_bayes_native) ... ERROR
+
+test_fraction_loss_uses_original_float_values (test_float_adapter.FloatAdapterTests.test_fraction_loss_uses_original_float_values) ... ok
+
+test_preserves_selected_float_and_does_not_normalize_near_sum (test_float_adapter.FloatAdapterTests.test_preserves_selected_float_and_does_not_normalize_near_sum) ... ok
+
+test_rejects_invalid_probability_inputs (test_float_adapter.FloatAdapterTests.test_rejects_invalid_probability_inputs) ... ok
+
+test_rejects_nonfinite_surrogate (test_float_adapter.FloatAdapterTests.test_rejects_nonfinite_surrogate) ... ok
+
+test_valid_native_loss_and_known_good_or_wrong (test_float_adapter.FloatAdapterTests.test_valid_native_loss_and_known_good_or_wrong) ... ok
+
+test_measured_zero_differs_from_unknown (test_h1_counter_v2.H1CounterV2Tests.test_measured_zero_differs_from_unknown) ... ok
+
+test_missing_counter_is_unknown_despite_eight_executions (test_h1_counter_v2.H1CounterV2Tests.test_missing_counter_is_unknown_despite_eight_executions) ... ok
+
+test_search_and_predicate_count_match_frozen_reference (test_h1_counter_v2.H1CounterV2Tests.test_search_and_predicate_count_match_frozen_reference) ... ok
+
+test_supplied_counts_are_lifetime_snapshot (test_h1_counter_v2.H1CounterV2Tests.test_supplied_counts_are_lifetime_snapshot) ... ok
+
+test_lime_native (unittest.loader._FailedTest.test_lime_native) ... ERROR
+
+test_phase1_records (unittest.loader._FailedTest.test_phase1_records) ... ERROR
+
+
+
+======================================================================
+
+ERROR: test_bayes_native (unittest.loader._FailedTest.test_bayes_native)
+
+----------------------------------------------------------------------
+
+ImportError: Failed to import test module: test_bayes_native
+
+Traceback (most recent call last):
+
+  File "[USER_HOME]\AppData\Local\Programs\Python\Python311\Lib\unittest\loader.py", line 419, in _find_test_path
+
+    module = self._get_module_from_name(name)
+
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "[USER_HOME]\AppData\Local\Programs\Python\Python311\Lib\unittest\loader.py", line 362, in _get_module_from_name
+
+    __import__(name)
+
+  File "[AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\snapshot\tests\phase1\test_bayes_native.py", line 5, in <module>
+
+    from innovation.phase1.bayes_smoke import BACKGROUND, CENTERS, predictor, run_center
+
+  File "[AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\src\innovation\phase1\bayes_smoke.py", line 22, in <module>
+
+    from bayes.explanations import BayesLocalExplanations
+
+  File "[AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\bayes_source\bayes\explanations.py", line 17, in <module>
+
+    import sklearn.preprocessing
+
+  File "[AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\venv\Lib\site-packages\sklearn\preprocessing\__init__.py", line 30, in <module>
+
+    from ._polynomial import PolynomialFeatures, SplineTransformer
+
+  File "[AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\venv\Lib\site-packages\sklearn\preprocessing\_polynomial.py", line 25, in <module>
+
+    from ._csr_polynomial_expansion import (
+
+ImportError: DLL load failed while importing _csr_polynomial_expansion: Dosya ad� veya uzant�s� �ok uzun.
+
+
+
+
+
+======================================================================
+
+ERROR: test_lime_native (unittest.loader._FailedTest.test_lime_native)
+
+----------------------------------------------------------------------
+
+ImportError: Failed to import test module: test_lime_native
+
+Traceback (most recent call last):
+
+  File "[USER_HOME]\AppData\Local\Programs\Python\Python311\Lib\unittest\loader.py", line 419, in _find_test_path
+
+    module = self._get_module_from_name(name)
+
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "[USER_HOME]\AppData\Local\Programs\Python\Python311\Lib\unittest\loader.py", line 362, in _get_module_from_name
+
+    __import__(name)
+
+  File "[AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\snapshot\tests\phase1\test_lime_native.py", line 4, in <module>
+
+    from innovation.phase1.native_lime import (BACKGROUND,OFFSETS,QueryLedger,generate,explainer,
+
+  File "[AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\src\innovation\phase1\native_lime.py", line 7, in <module>
+
+    from lime.lime_tabular import LimeTabularExplainer
+
+  File "[AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\venv\Lib\site-packages\lime\lime_tabular.py", line 13, in <module>
+
+    import sklearn.preprocessing
+
+  File "[AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\venv\Lib\site-packages\sklearn\preprocessing\__init__.py", line 30, in <module>
+
+    from ._polynomial import PolynomialFeatures, SplineTransformer
+
+  File "[AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\venv\Lib\site-packages\sklearn\preprocessing\_polynomial.py", line 25, in <module>
+
+    from ._csr_polynomial_expansion import (
+
+ImportError: DLL load failed while importing _csr_polynomial_expansion: Dosya ad� veya uzant�s� �ok uzun.
+
+
+
+
+
+======================================================================
+
+ERROR: test_phase1_records (unittest.loader._FailedTest.test_phase1_records)
+
+----------------------------------------------------------------------
+
+ImportError: Failed to import test module: test_phase1_records
+
+Traceback (most recent call last):
+
+  File "[USER_HOME]\AppData\Local\Programs\Python\Python311\Lib\unittest\loader.py", line 419, in _find_test_path
+
+    module = self._get_module_from_name(name)
+
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "[USER_HOME]\AppData\Local\Programs\Python\Python311\Lib\unittest\loader.py", line 362, in _get_module_from_name
+
+    __import__(name)
+
+  File "[AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\snapshot\tests\phase1\test_phase1_records.py", line 7, in <module>
+
+    from innovation.phase1.native_lime import generate,probability,OFFSETS
+
+  File "[AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\src\innovation\phase1\native_lime.py", line 7, in <module>
+
+    from lime.lime_tabular import LimeTabularExplainer
+
+  File "[AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\venv\Lib\site-packages\lime\lime_tabular.py", line 13, in <module>
+
+    import sklearn.preprocessing
+
+  File "[AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\venv\Lib\site-packages\sklearn\preprocessing\__init__.py", line 30, in <module>
+
+    from ._polynomial import PolynomialFeatures, SplineTransformer
+
+  File "[AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\venv\Lib\site-packages\sklearn\preprocessing\_polynomial.py", line 25, in <module>
+
+    from ._csr_polynomial_expansion import (
+
+ImportError: DLL load failed while importing _csr_polynomial_expansion: Dosya ad� veya uzant�s� �ok uzun.
+
+
+
+
+
+----------------------------------------------------------------------
+
+Ran 12 tests in 0.001s
+
+
+
+FAILED (errors=3)
+

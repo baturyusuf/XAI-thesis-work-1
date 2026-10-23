@@ -1,0 +1,1622 @@
+{
+  "status": "PASS_SCOPED_NATIVE_LIME_RECONSTRUCTION",
+  "units": 160,
+  "seeded_design_hash_matches": 160,
+  "independent_qr_fits": 160,
+  "exact_fraction_fits": 3,
+  "max_qr_parameter_error": 7.771561172376096e-16,
+  "max_exact_parameter_error": 1.1102230246251565e-16,
+  "max_four_point_prediction_error": 7.771561172376096e-16,
+  "diagnostic_batches": 352,
+  "exact_diagnostic_batch_matches": 352,
+  "max_diagnostic_residual": 0.0,
+  "four_point_predictions": 640,
+  "raw_output_min": 0.26259529613933497,
+  "raw_output_max": 0.736715461805513,
+  "invalid_batches": 0,
+  "explanation_changed_observed_batches": 0,
+  "total_clipping_gain": "0",
+  "per_unit": [
+    {
+      "unit_id": "fit-0",
+      "qr_parameter_error": 4.996003610813204e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.42666464127312753,
+      "raw_output_max": 0.4914626184563232
+    },
+    {
+      "unit_id": "fit-1",
+      "qr_parameter_error": 6.938893903907228e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.374220926104293,
+      "raw_output_max": 0.46728125172368123
+    },
+    {
+      "unit_id": "fit-2",
+      "qr_parameter_error": 9.71445146547012e-17,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.5777898128536899,
+      "raw_output_max": 0.6587217469843977
+    },
+    {
+      "unit_id": "fit-3",
+      "qr_parameter_error": 1.6653345369377348e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.3682914104813483,
+      "raw_output_max": 0.4667330631404664
+    },
+    {
+      "unit_id": "fit-4",
+      "qr_parameter_error": 3.3306690738754696e-16,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.5733690088451695,
+      "raw_output_max": 0.6622207242203971
+    },
+    {
+      "unit_id": "fit-5",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.26726519869230736,
+      "raw_output_max": 0.3358890045335568
+    },
+    {
+      "unit_id": "fit-6",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.44063626213719753,
+      "raw_output_max": 0.5556320854407301
+    },
+    {
+      "unit_id": "fit-7",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.2649119782642182,
+      "raw_output_max": 0.33209925426776526
+    },
+    {
+      "unit_id": "fit-8",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.36949110381955597,
+      "raw_output_max": 0.4675845019481885
+    },
+    {
+      "unit_id": "fit-9",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.4298304448281927,
+      "raw_output_max": 0.4975890125961564
+    },
+    {
+      "unit_id": "fit-10",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.4257034538973318,
+      "raw_output_max": 0.49614316621894516
+    },
+    {
+      "unit_id": "fit-11",
+      "qr_parameter_error": 5.551115123125783e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.666201050869125,
+      "raw_output_max": 0.7343897156117473
+    },
+    {
+      "unit_id": "fit-12",
+      "qr_parameter_error": 3.3306690738754696e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.4412180059684996,
+      "raw_output_max": 0.5564228092290375
+    },
+    {
+      "unit_id": "fit-13",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5040568315321472,
+      "raw_output_max": 0.5751097379928529
+    },
+    {
+      "unit_id": "fit-14",
+      "qr_parameter_error": 6.938893903907228e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.2659381008869445,
+      "raw_output_max": 0.33337063088741636
+    },
+    {
+      "unit_id": "fit-15",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.5746685828916308,
+      "raw_output_max": 0.6618205912461423
+    },
+    {
+      "unit_id": "fit-16",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5327620437976041,
+      "raw_output_max": 0.6301232303151125
+    },
+    {
+      "unit_id": "fit-17",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.33816776283938355,
+      "raw_output_max": 0.42092144568178647
+    },
+    {
+      "unit_id": "fit-18",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.37329238564284795,
+      "raw_output_max": 0.4660663151386665
+    },
+    {
+      "unit_id": "fit-19",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5373242537286494,
+      "raw_output_max": 0.6304439184014685
+    },
+    {
+      "unit_id": "fit-20",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.33362711492022074,
+      "raw_output_max": 0.42404512340970085
+    },
+    {
+      "unit_id": "fit-21",
+      "qr_parameter_error": 4.440892098500626e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.6647986120952176,
+      "raw_output_max": 0.7319580856979593
+    },
+    {
+      "unit_id": "fit-22",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.3751029754958539,
+      "raw_output_max": 0.46848781131052647
+    },
+    {
+      "unit_id": "fit-23",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.6686019135266683,
+      "raw_output_max": 0.735980107259781
+    },
+    {
+      "unit_id": "fit-24",
+      "qr_parameter_error": 1.6653345369377348e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.42373956535361484,
+      "raw_output_max": 0.49077286999957825
+    },
+    {
+      "unit_id": "fit-25",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.535009892320431,
+      "raw_output_max": 0.6298943956743778
+    },
+    {
+      "unit_id": "fit-26",
+      "qr_parameter_error": 1.6653345369377348e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.4422851681582447,
+      "raw_output_max": 0.5560756159558726
+    },
+    {
+      "unit_id": "fit-27",
+      "qr_parameter_error": 1.6653345369377348e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.37498948499322726,
+      "raw_output_max": 0.4688988836193119
+    },
+    {
+      "unit_id": "fit-28",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.575709258579916,
+      "raw_output_max": 0.662767908047988
+    },
+    {
+      "unit_id": "fit-29",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5052798386565942,
+      "raw_output_max": 0.5756763163331278
+    },
+    {
+      "unit_id": "fit-30",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.5747829900056428,
+      "raw_output_max": 0.6610324116521931
+    },
+    {
+      "unit_id": "fit-31",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.43026038404891315,
+      "raw_output_max": 0.49560430939963285
+    },
+    {
+      "unit_id": "calibration-0",
+      "qr_parameter_error": 4.163336342344337e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5355636549857462,
+      "raw_output_max": 0.6281447004850174
+    },
+    {
+      "unit_id": "calibration-1",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.6671674380544003,
+      "raw_output_max": 0.736715461805513
+    },
+    {
+      "unit_id": "calibration-2",
+      "qr_parameter_error": 3.885780586188048e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.4273629015907071,
+      "raw_output_max": 0.4963379236332416
+    },
+    {
+      "unit_id": "calibration-3",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.6650836022938937,
+      "raw_output_max": 0.7338522634020933
+    },
+    {
+      "unit_id": "calibration-4",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5308730482429349,
+      "raw_output_max": 0.6244212101724028
+    },
+    {
+      "unit_id": "calibration-5",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5065730077687213,
+      "raw_output_max": 0.5732766545530311
+    },
+    {
+      "unit_id": "calibration-6",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.5747328095740392,
+      "raw_output_max": 0.6618659713770433
+    },
+    {
+      "unit_id": "calibration-7",
+      "qr_parameter_error": 1.6653345369377348e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.3699365332939612,
+      "raw_output_max": 0.468166998983126
+    },
+    {
+      "unit_id": "calibration-8",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.3708472870874396,
+      "raw_output_max": 0.4658870767937399
+    },
+    {
+      "unit_id": "calibration-9",
+      "qr_parameter_error": 2.7755575615628914e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.42905074908020857,
+      "raw_output_max": 0.49033911145850373
+    },
+    {
+      "unit_id": "calibration-10",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.369649665203835,
+      "raw_output_max": 0.466898940516416
+    },
+    {
+      "unit_id": "calibration-11",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.371633281196963,
+      "raw_output_max": 0.467132680889217
+    },
+    {
+      "unit_id": "calibration-12",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.26819599461066496,
+      "raw_output_max": 0.33156452674962
+    },
+    {
+      "unit_id": "calibration-13",
+      "qr_parameter_error": 9.71445146547012e-17,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.33962614432318855,
+      "raw_output_max": 0.42711988872105117
+    },
+    {
+      "unit_id": "calibration-14",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.4259370990259621,
+      "raw_output_max": 0.49334129529284865
+    },
+    {
+      "unit_id": "calibration-15",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.6664125873862299,
+      "raw_output_max": 0.7351495853521169
+    },
+    {
+      "unit_id": "calibration-16",
+      "qr_parameter_error": 2.7755575615628914e-16,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.33694623127861417,
+      "raw_output_max": 0.4207848833221312
+    },
+    {
+      "unit_id": "calibration-17",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.6631862298589514,
+      "raw_output_max": 0.7337725076757378
+    },
+    {
+      "unit_id": "calibration-18",
+      "qr_parameter_error": 1.6653345369377348e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.4283998920828054,
+      "raw_output_max": 0.497117011029657
+    },
+    {
+      "unit_id": "calibration-19",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.6688551676916816,
+      "raw_output_max": 0.7365343295243064
+    },
+    {
+      "unit_id": "calibration-20",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.3354209235126357,
+      "raw_output_max": 0.42295590666380445
+    },
+    {
+      "unit_id": "calibration-21",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.4200879655874014,
+      "raw_output_max": 0.4921316478716453
+    },
+    {
+      "unit_id": "calibration-22",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5339375523049051,
+      "raw_output_max": 0.6317414917626025
+    },
+    {
+      "unit_id": "calibration-23",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5355467267865938,
+      "raw_output_max": 0.6294017540333143
+    },
+    {
+      "unit_id": "calibration-24",
+      "qr_parameter_error": 1.6653345369377348e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.4285075697230893,
+      "raw_output_max": 0.4972676985566219
+    },
+    {
+      "unit_id": "calibration-25",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.338897817432561,
+      "raw_output_max": 0.42700749076356065
+    },
+    {
+      "unit_id": "calibration-26",
+      "qr_parameter_error": 1.249000902703301e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5310334624319275,
+      "raw_output_max": 0.626673613352986
+    },
+    {
+      "unit_id": "calibration-27",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.2630219595906671,
+      "raw_output_max": 0.3340423796747095
+    },
+    {
+      "unit_id": "calibration-28",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.26509007402201956,
+      "raw_output_max": 0.3318314422167993
+    },
+    {
+      "unit_id": "calibration-29",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.26259529613933497,
+      "raw_output_max": 0.3315227320609798
+    },
+    {
+      "unit_id": "calibration-30",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5027023437456906,
+      "raw_output_max": 0.5721964891404212
+    },
+    {
+      "unit_id": "calibration-31",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5071232217532134,
+      "raw_output_max": 0.5770944400928844
+    },
+    {
+      "unit_id": "calibration-32",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.33422863242931905,
+      "raw_output_max": 0.4228515274284332
+    },
+    {
+      "unit_id": "calibration-33",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.668447414789892,
+      "raw_output_max": 0.7350033682331261
+    },
+    {
+      "unit_id": "calibration-34",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.5734555562764749,
+      "raw_output_max": 0.6586538587005089
+    },
+    {
+      "unit_id": "calibration-35",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.3414296890641325,
+      "raw_output_max": 0.42547948268449015
+    },
+    {
+      "unit_id": "calibration-36",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.507929559500137,
+      "raw_output_max": 0.5769787490266302
+    },
+    {
+      "unit_id": "calibration-37",
+      "qr_parameter_error": 1.6653345369377348e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.4415147380341844,
+      "raw_output_max": 0.5567244598006114
+    },
+    {
+      "unit_id": "calibration-38",
+      "qr_parameter_error": 3.469446951953614e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.2634351038701999,
+      "raw_output_max": 0.32877254197494
+    },
+    {
+      "unit_id": "calibration-39",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.5725759731963886,
+      "raw_output_max": 0.6600948369640622
+    },
+    {
+      "unit_id": "calibration-40",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.6589323851375637,
+      "raw_output_max": 0.7330691053947085
+    },
+    {
+      "unit_id": "calibration-41",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.6676330338015112,
+      "raw_output_max": 0.7366403123834394
+    },
+    {
+      "unit_id": "calibration-42",
+      "qr_parameter_error": 4.440892098500626e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5056151732252361,
+      "raw_output_max": 0.5747276479416399
+    },
+    {
+      "unit_id": "calibration-43",
+      "qr_parameter_error": 1.6653345369377348e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.44275835722292145,
+      "raw_output_max": 0.5560701965309103
+    },
+    {
+      "unit_id": "calibration-44",
+      "qr_parameter_error": 2.7755575615628914e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.37338088687066784,
+      "raw_output_max": 0.4701924309891466
+    },
+    {
+      "unit_id": "calibration-45",
+      "qr_parameter_error": 1.5265566588595902e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5322751670121721,
+      "raw_output_max": 0.6286986859393452
+    },
+    {
+      "unit_id": "calibration-46",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.42483551099072364,
+      "raw_output_max": 0.4945138490241938
+    },
+    {
+      "unit_id": "calibration-47",
+      "qr_parameter_error": 8.326672684688674e-17,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.5756034901092493,
+      "raw_output_max": 0.6632712688278656
+    },
+    {
+      "unit_id": "calibration-48",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.530154458769725,
+      "raw_output_max": 0.6272130949783561
+    },
+    {
+      "unit_id": "calibration-49",
+      "qr_parameter_error": 1.6653345369377348e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.2681011537149433,
+      "raw_output_max": 0.337548259084353
+    },
+    {
+      "unit_id": "calibration-50",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.5803089082761583,
+      "raw_output_max": 0.6653898122823177
+    },
+    {
+      "unit_id": "calibration-51",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5327473516546962,
+      "raw_output_max": 0.6282343182681095
+    },
+    {
+      "unit_id": "calibration-52",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.2665002183253188,
+      "raw_output_max": 0.3328934178894946
+    },
+    {
+      "unit_id": "calibration-53",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.6681034457368743,
+      "raw_output_max": 0.7328017491109302
+    },
+    {
+      "unit_id": "calibration-54",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5311618080402556,
+      "raw_output_max": 0.6233113323602311
+    },
+    {
+      "unit_id": "calibration-55",
+      "qr_parameter_error": 3.3306690738754696e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5075645489478032,
+      "raw_output_max": 0.574177561106668
+    },
+    {
+      "unit_id": "calibration-56",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.6650480929413322,
+      "raw_output_max": 0.7325896548754111
+    },
+    {
+      "unit_id": "calibration-57",
+      "qr_parameter_error": 1.6653345369377348e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.3746031314183243,
+      "raw_output_max": 0.469239997772534
+    },
+    {
+      "unit_id": "calibration-58",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.44373345716181306,
+      "raw_output_max": 0.5575119306374822
+    },
+    {
+      "unit_id": "calibration-59",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5329369306219778,
+      "raw_output_max": 0.6284756263278899
+    },
+    {
+      "unit_id": "calibration-60",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5108078990781577,
+      "raw_output_max": 0.5723152950534691
+    },
+    {
+      "unit_id": "calibration-61",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.2642285671770226,
+      "raw_output_max": 0.33172927195609264
+    },
+    {
+      "unit_id": "calibration-62",
+      "qr_parameter_error": 3.3306690738754696e-16,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.571992255614839,
+      "raw_output_max": 0.6556903512578709
+    },
+    {
+      "unit_id": "calibration-63",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.3358813671335358,
+      "raw_output_max": 0.41707397190727163
+    },
+    {
+      "unit_id": "evaluation-0",
+      "qr_parameter_error": 2.7755575615628914e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.6695971523760393,
+      "raw_output_max": 0.7348133581386717
+    },
+    {
+      "unit_id": "evaluation-1",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.2660916296693052,
+      "raw_output_max": 0.3367708913941353
+    },
+    {
+      "unit_id": "evaluation-2",
+      "qr_parameter_error": 3.3306690738754696e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5333016055098452,
+      "raw_output_max": 0.6270343142967377
+    },
+    {
+      "unit_id": "evaluation-3",
+      "qr_parameter_error": 4.440892098500626e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.6679150826348225,
+      "raw_output_max": 0.7365461825635158
+    },
+    {
+      "unit_id": "evaluation-4",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5107881143518297,
+      "raw_output_max": 0.5737496187682707
+    },
+    {
+      "unit_id": "evaluation-5",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.44415239501636616,
+      "raw_output_max": 0.5575548520732265
+    },
+    {
+      "unit_id": "evaluation-6",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.42767693806968254,
+      "raw_output_max": 0.49377122385703626
+    },
+    {
+      "unit_id": "evaluation-7",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.36885596245062297,
+      "raw_output_max": 0.46809826495981943
+    },
+    {
+      "unit_id": "evaluation-8",
+      "qr_parameter_error": 8.326672684688674e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.42423129794939735,
+      "raw_output_max": 0.4909640539306878
+    },
+    {
+      "unit_id": "evaluation-9",
+      "qr_parameter_error": 6.938893903907228e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5335478284744591,
+      "raw_output_max": 0.6306574635565375
+    },
+    {
+      "unit_id": "evaluation-10",
+      "qr_parameter_error": 2.7755575615628914e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.44148068468666835,
+      "raw_output_max": 0.5556801750054319
+    },
+    {
+      "unit_id": "evaluation-11",
+      "qr_parameter_error": 3.3306690738754696e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5010136334443057,
+      "raw_output_max": 0.5718805394249926
+    },
+    {
+      "unit_id": "evaluation-12",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.33584905775388363,
+      "raw_output_max": 0.42197683241812606
+    },
+    {
+      "unit_id": "evaluation-13",
+      "qr_parameter_error": 7.771561172376096e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.6710613680372827,
+      "raw_output_max": 0.7351037609247036
+    },
+    {
+      "unit_id": "evaluation-14",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.4425980241695188,
+      "raw_output_max": 0.5575224556455841
+    },
+    {
+      "unit_id": "evaluation-15",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.5779448369599809,
+      "raw_output_max": 0.6630804427405207
+    },
+    {
+      "unit_id": "evaluation-16",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.5831191671331512,
+      "raw_output_max": 0.6638960048757181
+    },
+    {
+      "unit_id": "evaluation-17",
+      "qr_parameter_error": 1.6653345369377348e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.3742409808553867,
+      "raw_output_max": 0.46565427854560626
+    },
+    {
+      "unit_id": "evaluation-18",
+      "qr_parameter_error": 4.163336342344337e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.2634493532676778,
+      "raw_output_max": 0.33135423992482216
+    },
+    {
+      "unit_id": "evaluation-19",
+      "qr_parameter_error": 6.938893903907228e-18,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.42342207782546315,
+      "raw_output_max": 0.49472598889670977
+    },
+    {
+      "unit_id": "evaluation-20",
+      "qr_parameter_error": 3.3306690738754696e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5079399239137756,
+      "raw_output_max": 0.5756235922486967
+    },
+    {
+      "unit_id": "evaluation-21",
+      "qr_parameter_error": 5.551115123125783e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5069573553469061,
+      "raw_output_max": 0.5682864374148109
+    },
+    {
+      "unit_id": "evaluation-22",
+      "qr_parameter_error": 2.7755575615628914e-17,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.5769235720648648,
+      "raw_output_max": 0.6627978105478773
+    },
+    {
+      "unit_id": "evaluation-23",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5015526130166881,
+      "raw_output_max": 0.5737179647265234
+    },
+    {
+      "unit_id": "evaluation-24",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.37205899026259287,
+      "raw_output_max": 0.46857431015713724
+    },
+    {
+      "unit_id": "evaluation-25",
+      "qr_parameter_error": 4.440892098500626e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.6646625644698189,
+      "raw_output_max": 0.7323795269890628
+    },
+    {
+      "unit_id": "evaluation-26",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.26500176595640784,
+      "raw_output_max": 0.3330145318332072
+    },
+    {
+      "unit_id": "evaluation-27",
+      "qr_parameter_error": 2.7755575615628914e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.42691492782130475,
+      "raw_output_max": 0.4934094158161386
+    },
+    {
+      "unit_id": "evaluation-28",
+      "qr_parameter_error": 1.6653345369377348e-16,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.33773769735072534,
+      "raw_output_max": 0.4213016100766248
+    },
+    {
+      "unit_id": "evaluation-29",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.6621924957405823,
+      "raw_output_max": 0.7303126603135525
+    },
+    {
+      "unit_id": "evaluation-30",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.33435086015207494,
+      "raw_output_max": 0.42320193364312825
+    },
+    {
+      "unit_id": "evaluation-31",
+      "qr_parameter_error": 4.440892098500626e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5288014007237651,
+      "raw_output_max": 0.6273393404383211
+    },
+    {
+      "unit_id": "evaluation-32",
+      "qr_parameter_error": 3.3306690738754696e-16,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.5753029824426131,
+      "raw_output_max": 0.6656826469229691
+    },
+    {
+      "unit_id": "evaluation-33",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.4424932820128817,
+      "raw_output_max": 0.5565926061355492
+    },
+    {
+      "unit_id": "evaluation-34",
+      "qr_parameter_error": 1.6653345369377348e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.26760538107721055,
+      "raw_output_max": 0.3330067751810853
+    },
+    {
+      "unit_id": "evaluation-35",
+      "qr_parameter_error": 2.7755575615628914e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.2665453809926658,
+      "raw_output_max": 0.33257359012511656
+    },
+    {
+      "unit_id": "evaluation-36",
+      "qr_parameter_error": 2.7755575615628914e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.26632328572433667,
+      "raw_output_max": 0.336927663844412
+    },
+    {
+      "unit_id": "evaluation-37",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.33565125983752503,
+      "raw_output_max": 0.41913182286319906
+    },
+    {
+      "unit_id": "evaluation-38",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.42950495255115617,
+      "raw_output_max": 0.4916189702438694
+    },
+    {
+      "unit_id": "evaluation-39",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.44396887375761074,
+      "raw_output_max": 0.5577359205248439
+    },
+    {
+      "unit_id": "evaluation-40",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.4242109035557587,
+      "raw_output_max": 0.4953895193491141
+    },
+    {
+      "unit_id": "evaluation-41",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.4215977384796564,
+      "raw_output_max": 0.4899256485039481
+    },
+    {
+      "unit_id": "evaluation-42",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.3373699314139821,
+      "raw_output_max": 0.42268468872366577
+    },
+    {
+      "unit_id": "evaluation-43",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.5744153872583857,
+      "raw_output_max": 0.6618888734040578
+    },
+    {
+      "unit_id": "evaluation-44",
+      "qr_parameter_error": 3.3306690738754696e-16,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.5751453340826234,
+      "raw_output_max": 0.6642705495889102
+    },
+    {
+      "unit_id": "evaluation-45",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.2664242496729813,
+      "raw_output_max": 0.3361457310049965
+    },
+    {
+      "unit_id": "evaluation-46",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5039626949052556,
+      "raw_output_max": 0.570546860187907
+    },
+    {
+      "unit_id": "evaluation-47",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.42660805937029544,
+      "raw_output_max": 0.49716482385515676
+    },
+    {
+      "unit_id": "evaluation-48",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.4305582764751679,
+      "raw_output_max": 0.49723824088150553
+    },
+    {
+      "unit_id": "evaluation-49",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.4458779402174854,
+      "raw_output_max": 0.5583698359555739
+    },
+    {
+      "unit_id": "evaluation-50",
+      "qr_parameter_error": 3.3306690738754696e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.44433137616386637,
+      "raw_output_max": 0.5571099356271371
+    },
+    {
+      "unit_id": "evaluation-51",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5040116548178138,
+      "raw_output_max": 0.5778749137749044
+    },
+    {
+      "unit_id": "evaluation-52",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.6630641920355013,
+      "raw_output_max": 0.7324527167289989
+    },
+    {
+      "unit_id": "evaluation-53",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.5835051153584718,
+      "raw_output_max": 0.664146384609498
+    },
+    {
+      "unit_id": "evaluation-54",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.3396940400675465,
+      "raw_output_max": 0.4230458454305247
+    },
+    {
+      "unit_id": "evaluation-55",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.37124460167569173,
+      "raw_output_max": 0.46641782161819206
+    },
+    {
+      "unit_id": "evaluation-56",
+      "qr_parameter_error": 2.220446049250313e-16,
+      "ordered_features": [
+        1,
+        0
+      ],
+      "raw_output_min": 0.3372262529975689,
+      "raw_output_max": 0.42427819680440987
+    },
+    {
+      "unit_id": "evaluation-57",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.42530334415056376,
+      "raw_output_max": 0.4942158039401645
+    },
+    {
+      "unit_id": "evaluation-58",
+      "qr_parameter_error": 2.7755575615628914e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.4257190880769073,
+      "raw_output_max": 0.49648088779950966
+    },
+    {
+      "unit_id": "evaluation-59",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.42514729379924787,
+      "raw_output_max": 0.4936153318055463
+    },
+    {
+      "unit_id": "evaluation-60",
+      "qr_parameter_error": 5.551115123125783e-17,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.42523387001923124,
+      "raw_output_max": 0.4942592043400038
+    },
+    {
+      "unit_id": "evaluation-61",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.36955429231620707,
+      "raw_output_max": 0.46753405548991767
+    },
+    {
+      "unit_id": "evaluation-62",
+      "qr_parameter_error": 3.3306690738754696e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5298733265577839,
+      "raw_output_max": 0.6249879933371653
+    },
+    {
+      "unit_id": "evaluation-63",
+      "qr_parameter_error": 1.1102230246251565e-16,
+      "ordered_features": [
+        0,
+        1
+      ],
+      "raw_output_min": 0.5307862940721081,
+      "raw_output_max": 0.6256698519302901
+    }
+  ],
+  "limits": "Independent QR/rational fits and manual floating kernel. Shared NumPy RNG primitive but no native sampling/fitting/loss helpers. Exact binary loss is not analytic real tanh; finite support is not global boundedness."
+}

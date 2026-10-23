@@ -1,0 +1,7 @@
+{
+  "exit_code": 0,
+  "environment": "Python3.11.9 short Agent5 environment .cache/agent5-p1; unchanged dependencies",
+  "test_source": "immutable snapshot/tests/phase1",
+  "application_source": "byte-identical disposable bootstrap_sandbox/src",
+  "test_count": 23
+}

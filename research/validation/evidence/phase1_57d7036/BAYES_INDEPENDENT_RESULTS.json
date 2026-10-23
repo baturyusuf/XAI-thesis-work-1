@@ -1,0 +1,419 @@
+{
+  "status": "PASS_SCOPED_NATIVE_AND_INDEPENDENT_MATH",
+  "implementation_commit": "57d703699e7c7d1c323c251c4cac9bd0ca163634",
+  "author_source_commit": "72c4330bc7d29150b55018b0946f85f7df88e107",
+  "snapshot_display": "research/validation/evidence/phase1_57d7036/snapshot",
+  "native_snapshot_display": "research/validation/evidence/phase1_57d7036/bootstrap_sandbox",
+  "environment_python_display": ".cache/agent5-p1/Scripts/python.exe",
+  "payload_custody": {
+    "manifest_sha256": "e594d5c132e14d4c65764e50f82e95dc5811778aae25208705a1771048b7a999",
+    "immutable_files_before_and_after": 199,
+    "native_copy_files_before_and_after": 199,
+    "immutable_snapshot_cache_existed_before": false,
+    "immutable_snapshot_cache_exists_after": false
+  },
+  "input_sha256": {
+    "src/innovation/phase1/bayes_smoke.py": "b11b7001d24061423badf00925b10e4f85ff1fe243e4afc382f9c8d168ef3997",
+    "research/innovation/phase1/BAYES_SMOKE_RESULTS.json": "0347258ed47457179035bcdef1fdf11f84e75419353e105683ce9541336752b5",
+    "research/innovation/phase1/BAYESLIME_SOURCE_ENV_AUDIT.md": "69c90783f73d84fdbd8293e7814be82fabbebd9eabf966483d3c53ea5aee8988",
+    "tests/phase1/test_bayes_native.py": "c983c14ebad7cee52642649d4fb67457875e2b1a4b1dc19dcef57377a8b5e4c5"
+  },
+  "native_input_sha256": {
+    "src/innovation/phase1/bayes_smoke.py": "b11b7001d24061423badf00925b10e4f85ff1fe243e4afc382f9c8d168ef3997",
+    "research/innovation/phase1/BAYES_SMOKE_RESULTS.json": "0347258ed47457179035bcdef1fdf11f84e75419353e105683ce9541336752b5",
+    "research/innovation/phase1/BAYESLIME_SOURCE_ENV_AUDIT.md": "69c90783f73d84fdbd8293e7814be82fabbebd9eabf966483d3c53ea5aee8988",
+    "tests/phase1/test_bayes_native.py": "c983c14ebad7cee52642649d4fb67457875e2b1a4b1dc19dcef57377a8b5e4c5"
+  },
+  "source_sha256": {
+    "bayes/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bayes/explanations.py": "096c018074080d4fbe37e7a60925a8fac1805ba982c545be5abcd15baf4891fe",
+    "bayes/regression.py": "f451ee33398175e6c6662fde3990975b6b53712d4b8ff86d42b80f4b8671773e",
+    "LICENSE": "570f4719dc3df329c8c92af090e6e4bf3e040fc10896ec7c5ee57cccf8521c5e",
+    "README.md": "48d3ca06d9b0984ba4b44a374725065622accd13b951e9f05f9737012eb9322c",
+    "requirements.txt": "1f746e5cb366ed1bb9ca23f2f8534e97aead470c5014bfabb1d5566daa009aeb"
+  },
+  "download_source_sha256": {
+    "bayes/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bayes/explanations.py": "096c018074080d4fbe37e7a60925a8fac1805ba982c545be5abcd15baf4891fe",
+    "bayes/regression.py": "f451ee33398175e6c6662fde3990975b6b53712d4b8ff86d42b80f4b8671773e",
+    "LICENSE": "570f4719dc3df329c8c92af090e6e4bf3e040fc10896ec7c5ee57cccf8521c5e",
+    "README.md": "48d3ca06d9b0984ba4b44a374725065622accd13b951e9f05f9737012eb9322c",
+    "requirements.txt": "1f746e5cb366ed1bb9ca23f2f8534e97aead470c5014bfabb1d5566daa009aeb"
+  },
+  "config_sha256": "53992abc80954e20f6f7a0bb4deced75b1729bd3fa4a2ce003f3ac06d2a69b9a",
+  "python": "3.11.9",
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.11.4",
+    "scikit-learn": "1.3.2",
+    "lime": "0.2.0.1",
+    "tqdm": "4.67.1"
+  },
+  "installed_lime_tabular_sha256": "4d9c5514fcf38b3652b5d43afd1696441cbc0189f0785d27a8d59b588ce540f7",
+  "api_signatures": {
+    "constructor": "(self, training_data, data='image', kernel='lime', credible_interval=95, mode='classification', categorical_features=[], discretize_continuous=True, save_logs=False, log_file_name='bayes.log', width=0.75, verbose=False)",
+    "explain": "(self, data, classifier_f, label, cred_width=0.01, focus_sample=True, n_samples=None, max_n_samples=10000, focus_sample_batch_size=2500, focus_sample_initial_points=100, ptg_initial_points=200, to_consider=10000, feature_selection=True, n_features=15, tag=None, only_coef=False, only_blr=False, enumerate_initial=True, max_coefs=None, l2=True)",
+    "fit": "(self, xtrain, ytrain, sample_weight, compute_creds=True)",
+    "predict": "(self, data)",
+    "get_creds": "(self, percent=95, n_samples=10000, get_intercept=False)",
+    "lime_private_sampler": "(self, data_row, num_samples)"
+  },
+  "method_separation": {
+    "source_review": "Pinned author source, frozen wrapper/audit/tests/results; no install or source mutation.",
+    "reproduction": "Existing frozen run_center, exactly three centers, 128 rows each; callback-input observation only; every non-timing center field compared exactly.",
+    "independent_math": "Manual native-default Gaussian design/kernel; exact Fraction 3x3 normal equations and residual scale; Cholesky cross-check; analytic Student-t predictions/radii. This calculation uses no native posterior helper."
+  },
+  "prior": {
+    "coefficient_mean": [
+      0,
+      0,
+      0
+    ],
+    "conditional_coefficient_covariance_factor": "sigma2 I_3; intercept included",
+    "variance_prior_interpretation": "improper p(sigma2) proportional to 1/sigma2 under weighted Gaussian likelihood",
+    "custom_prior": "native prior != None rejected"
+  },
+  "coordinates": {
+    "bayes": "raw features; penalized intercept",
+    "lime_bank": "scaled features; unpenalized Ridge intercept; sample_around_instance=True",
+    "background_mean": [
+      0.0,
+      0.0
+    ],
+    "background_variance": [
+      0.6666666666666666,
+      0.6666666666666666
+    ],
+    "bayes_sample_around_instance": false,
+    "equivalence_or_posterior_transfer": "NOT_ESTABLISHED"
+  },
+  "sample_count_per_center": 128,
+  "center_count": 3,
+  "native_replay_generation_model_rows": 384,
+  "native_replay_evaluation_model_rows": 12,
+  "absolute_tolerance": 2e-12,
+  "relative_tolerance": 2e-12,
+  "student_t_marginal_sd_over_scale": 1.0079052613579393,
+  "mc_radii_check": {
+    "samples_per_native_fit": 10000,
+    "marginal_radii": 6,
+    "family_delta": 0.001,
+    "cdf_tolerance_dkw_plus_one_sample": 0.021771019736932243,
+    "interpretation": "Analytic consistency diagnostic only; MC radii are not exact t quantiles or simultaneous regions."
+  },
+  "centers": [
+    {
+      "center_index": 0,
+      "center": [
+        0.0,
+        0.0
+      ],
+      "seed_uint32": 684159987,
+      "checks": {
+        "seed": true,
+        "existing_center_and_128_rows": true,
+        "native_replay_all_nontiming_fields_exact": true,
+        "native_callbacks_128_plus_4_rows": true,
+        "recorded_costs": true,
+        "manual_sampler_equals_native_callback_bitwise": true,
+        "release_lime_sampler_equals_manual_bitwise": true,
+        "native_training_mean_centered_default": true,
+        "evaluation_uses_raw_coordinates": true,
+        "independent_kernel_matches_native_formula": true,
+        "manual_response_equals_native_predictor_bitwise": true,
+        "exact_posterior_mean_matches_frozen": true,
+        "cholesky_matches_exact_posterior_mean": true,
+        "cholesky_matches_exact_covariance_factor": true,
+        "exact_s2_matches_frozen": true,
+        "predictive_mean_matches_frozen": true,
+        "student_t_scale_matches_native_std_field": true,
+        "native_std_field_is_not_marginal_sd": true,
+        "mc_radii_consistent_with_marginal_student_t": true,
+        "stored_float_fraction_losses_exact": true
+      },
+      "replay_mismatched_fields": [],
+      "replay_extra_fields": [],
+      "raw_design_sha256_le_float64": "2dd49fd947f3ee5ef0720bde82db1c0374ac0e7eb8755e51a4f7c4f68fcbd8f0",
+      "independent_weights_sha256_le_float64": "4ce1591ebcda95c24b78dd4b139f72b02d6901be93c497b438c160d3559d97e8",
+      "independent_posterior_mean_intercept_first": [
+        0.4939764614107843,
+        0.13254366138125387,
+        0.08678069332009569
+      ],
+      "independent_posterior_covariance_factor": [
+        [
+          0.014739502025532812,
+          -0.00011891845858739985,
+          -0.003439338871285087
+        ],
+        [
+          -0.00011891845858739985,
+          0.0378432013241187,
+          0.004690900422385289
+        ],
+        [
+          -0.003439338871285087,
+          0.004690900422385289,
+          0.04511066338511469
+        ]
+      ],
+      "independent_s2": 0.002265299028206039,
+      "inverse_gamma_shape": 64.0,
+      "inverse_gamma_scale": 0.1449791378051865,
+      "student_t_df": 128,
+      "independent_predictive_mean": [
+        0.4391453727354469,
+        0.4825357193954947,
+        0.5054172034260739,
+        0.5488075500861217
+      ],
+      "independent_predictive_student_t_scale": [
+        0.04812267303046421,
+        0.048013997496064775,
+        0.04809226237853896,
+        0.048038850347666535
+      ],
+      "independent_predictive_marginal_standard_deviation": [
+        0.04850309533801269,
+        0.04839356069511061,
+        0.0484724442819359,
+        0.04841861001499977
+      ],
+      "analytic_coefficient_marginal_95_radii": [
+        0.018320202050987597,
+        0.02000211555480392
+      ],
+      "frozen_mc_coefficient_95_radii": [
+        0.01818837067189943,
+        0.019986289221886912
+      ],
+      "analytic_coverage_at_frozen_mc_radii": [
+        0.9483534476450757,
+        0.9498211592343455
+      ],
+      "max_abs_errors": {
+        "posterior_mean_vs_frozen": 5.551115123125783e-17,
+        "posterior_mean_vs_cholesky": 1.1102230246251565e-16,
+        "posterior_covariance_factor_vs_cholesky": 4.163336342344337e-17,
+        "s2_vs_frozen": 0.0,
+        "predictive_mean_vs_frozen": 5.551115123125783e-17,
+        "predictive_scale_vs_frozen": 0.0,
+        "independent_weights_vs_native_formula": 1.1102230246251565e-16
+      }
+    },
+    {
+      "center_index": 1,
+      "center": [
+        1.0,
+        -1.0
+      ],
+      "seed_uint32": 3768878344,
+      "checks": {
+        "seed": true,
+        "existing_center_and_128_rows": true,
+        "native_replay_all_nontiming_fields_exact": true,
+        "native_callbacks_128_plus_4_rows": true,
+        "recorded_costs": true,
+        "manual_sampler_equals_native_callback_bitwise": true,
+        "release_lime_sampler_equals_manual_bitwise": true,
+        "native_training_mean_centered_default": true,
+        "evaluation_uses_raw_coordinates": true,
+        "independent_kernel_matches_native_formula": true,
+        "manual_response_equals_native_predictor_bitwise": true,
+        "exact_posterior_mean_matches_frozen": true,
+        "cholesky_matches_exact_posterior_mean": true,
+        "cholesky_matches_exact_covariance_factor": true,
+        "exact_s2_matches_frozen": true,
+        "predictive_mean_matches_frozen": true,
+        "student_t_scale_matches_native_std_field": true,
+        "native_std_field_is_not_marginal_sd": true,
+        "mc_radii_consistent_with_marginal_student_t": true,
+        "stored_float_fraction_losses_exact": true
+      },
+      "replay_mismatched_fields": [],
+      "replay_extra_fields": [],
+      "raw_design_sha256_le_float64": "c00c6ff4e0fb05de512b6195f8a27054917c3b820c68f332721b3df5b32fc22b",
+      "independent_weights_sha256_le_float64": "320fac6531004a7c248d39aaa30d4246b5c171f92b25a1b720d8d5d00498287d",
+      "independent_posterior_mean_intercept_first": [
+        0.47386750489679824,
+        0.138015150942467,
+        0.06247707859579962
+      ],
+      "independent_posterior_covariance_factor": [
+        [
+          0.05963924399628922,
+          -0.03768739392194897,
+          0.03401540277773931
+        ],
+        [
+          -0.03768739392194897,
+          0.07682733962487015,
+          -0.0028638100597733213
+        ],
+        [
+          0.03401540277773931,
+          -0.0028638100597733213,
+          0.07389027304702496
+        ]
+      ],
+      "independent_s2": 0.0021439849081144576,
+      "inverse_gamma_shape": 64.0,
+      "inverse_gamma_scale": 0.13721503411932529,
+      "student_t_df": 128,
+      "independent_predictive_mean": [
+        0.49928251985889893,
+        0.5305210591567987,
+        0.5682900953301324,
+        0.5995286346280322
+      ],
+      "independent_predictive_student_t_scale": [
+        0.0481666242648204,
+        0.04722210921631011,
+        0.0491081877378375,
+        0.048150265065620326
+      ],
+      "independent_predictive_marginal_standard_deviation": [
+        0.04854739401836347,
+        0.047595412331538196,
+        0.04949640079671985,
+        0.04853090549541811
+      ],
+      "analytic_coefficient_marginal_95_radii": [
+        0.025394654880448935,
+        0.02490451298449211
+      ],
+      "frozen_mc_coefficient_95_radii": [
+        0.025218827657919975,
+        0.024882953366951326
+      ],
+      "analytic_coverage_at_frozen_mc_radii": [
+        0.9484165493644794,
+        0.9498043016982431
+      ],
+      "max_abs_errors": {
+        "posterior_mean_vs_frozen": 1.6653345369377348e-16,
+        "posterior_mean_vs_cholesky": 3.3306690738754696e-16,
+        "posterior_covariance_factor_vs_cholesky": 4.163336342344337e-17,
+        "s2_vs_frozen": 0.0,
+        "predictive_mean_vs_frozen": 1.1102230246251565e-16,
+        "predictive_scale_vs_frozen": 6.938893903907228e-18,
+        "independent_weights_vs_native_formula": 2.7755575615628914e-16
+      }
+    },
+    {
+      "center_index": 2,
+      "center": [
+        -1.0,
+        1.0
+      ],
+      "seed_uint32": 281698153,
+      "checks": {
+        "seed": true,
+        "existing_center_and_128_rows": true,
+        "native_replay_all_nontiming_fields_exact": true,
+        "native_callbacks_128_plus_4_rows": true,
+        "recorded_costs": true,
+        "manual_sampler_equals_native_callback_bitwise": true,
+        "release_lime_sampler_equals_manual_bitwise": true,
+        "native_training_mean_centered_default": true,
+        "evaluation_uses_raw_coordinates": true,
+        "independent_kernel_matches_native_formula": true,
+        "manual_response_equals_native_predictor_bitwise": true,
+        "exact_posterior_mean_matches_frozen": true,
+        "cholesky_matches_exact_posterior_mean": true,
+        "cholesky_matches_exact_covariance_factor": true,
+        "exact_s2_matches_frozen": true,
+        "predictive_mean_matches_frozen": true,
+        "student_t_scale_matches_native_std_field": true,
+        "native_std_field_is_not_marginal_sd": true,
+        "mc_radii_consistent_with_marginal_student_t": true,
+        "stored_float_fraction_losses_exact": true
+      },
+      "replay_mismatched_fields": [],
+      "replay_extra_fields": [],
+      "raw_design_sha256_le_float64": "14ce367821969e049a2971cf0a54915c33362dba5c48a0e177ec73dc37198834",
+      "independent_weights_sha256_le_float64": "62e10a218e39445759ef57a87552808613df14f48cbf48d0e0105edc80c1805b",
+      "independent_posterior_mean_intercept_first": [
+        0.46788337984884965,
+        0.09879982642131091,
+        0.09996219722149635
+      ],
+      "independent_posterior_covariance_factor": [
+        [
+          0.06281873887407023,
+          0.03197272024734585,
+          -0.045066952109722225
+        ],
+        [
+          0.03197272024734585,
+          0.08157548921406822,
+          -0.004246536876274669
+        ],
+        [
+          -0.045066952109722225,
+          -0.004246536876274669,
+          0.09138453571591852
+        ]
+      ],
+      "independent_s2": 0.002110290577296557,
+      "inverse_gamma_shape": 64.0,
+      "inverse_gamma_scale": 0.13505859694697964,
+      "student_t_df": 128,
+      "independent_predictive_mean": [
+        0.41935524473833324,
+        0.4693363433490814,
+        0.46875515794898875,
+        0.5187362565597369
+      ],
+      "independent_predictive_student_t_scale": [
+        0.04822635543999315,
+        0.04934294987854941,
+        0.04705724208874927,
+        0.04815442516855087
+      ],
+      "independent_predictive_marginal_standard_deviation": [
+        0.048607597384087174,
+        0.049733018793511045,
+        0.04742924188624466,
+        0.048535098485049596
+      ],
+      "analytic_coefficient_marginal_95_radii": [
+        0.025961186021408893,
+        0.027477741936999006
+      ],
+      "frozen_mc_coefficient_95_radii": [
+        0.026337310171249528,
+        0.027463993916927807
+      ],
+      "analytic_coverage_at_frozen_mc_radii": [
+        0.9531802984724527,
+        0.9498869737217106
+      ],
+      "max_abs_errors": {
+        "posterior_mean_vs_frozen": 1.1102230246251565e-16,
+        "posterior_mean_vs_cholesky": 1.3877787807814457e-16,
+        "posterior_covariance_factor_vs_cholesky": 4.163336342344337e-17,
+        "s2_vs_frozen": 0.0,
+        "predictive_mean_vs_frozen": 2.7755575615628914e-16,
+        "predictive_scale_vs_frozen": 0.0,
+        "independent_weights_vs_native_formula": 3.3306690738754696e-16
+      }
+    }
+  ],
+  "max_abs_errors": {
+    "posterior_mean_vs_frozen": 1.6653345369377348e-16,
+    "posterior_mean_vs_cholesky": 3.3306690738754696e-16,
+    "posterior_covariance_factor_vs_cholesky": 4.163336342344337e-17,
+    "s2_vs_frozen": 0.0,
+    "predictive_mean_vs_frozen": 2.7755575615628914e-16,
+    "predictive_scale_vs_frozen": 6.938893903907228e-18,
+    "independent_weights_vs_native_formula": 3.3306690738754696e-16
+  },
+  "limits": [
+    "Source hashes check frozen pins in downloads and disposable native copy; parent owns network acquisition, wheel/bootstrap and broader environment custody.",
+    "Compatible-minimal environment, not the authors full historical stack.",
+    "No new arm, BayesSHAP/focus/PTG route, controller, native patch, or LTT calibration.",
+    "Four points per center: descriptive computational-float loss, not population risk, classifier uncertainty, fidelity calibration, or posterior transfer to h_L.",
+    "No isolated posterior/fit timing, peak memory, or matched total-cost conclusion."
+  ]
+}

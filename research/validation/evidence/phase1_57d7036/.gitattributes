@@ -1,0 +1,2 @@
+SNAPSHOT_MANIFEST.csv -text whitespace=cr-at-eol
+*.txt whitespace=-blank-at-eof

@@ -1,0 +1,128 @@
+test_all_twelve_frozen_binary_fraction_losses (test_phase1_bayes_independent.TestBayesExactReference.test_all_twelve_frozen_binary_fraction_losses) ... ok
+
+test_frozen_input_custody (test_phase1_bayes_independent.TestBayesExactReference.test_frozen_input_custody) ... ok
+
+test_independent_posterior_has_no_native_or_numpy_solver_call (test_phase1_bayes_independent.TestBayesExactReference.test_independent_posterior_has_no_native_or_numpy_solver_call) ... ok
+
+test_private_drive_pattern_handles_both_separator_spellings (test_phase1_bayes_independent.TestBayesExactReference.test_private_drive_pattern_handles_both_separator_spellings) ... ok
+
+test_rational_solve_pivots_and_recovers_exact_inverse (test_phase1_bayes_independent.TestBayesExactReference.test_rational_solve_pivots_and_recovers_exact_inverse) ... ok
+
+test_singular_exact_solve_is_not_silently_regularized (test_phase1_bayes_independent.TestBayesExactReference.test_singular_exact_solve_is_not_silently_regularized) ... ok
+
+test_stored_means_use_raw_not_lime_scaled_coordinates (test_phase1_bayes_independent.TestBayesExactReference.test_stored_means_use_raw_not_lime_scaled_coordinates) ... ok
+
+test_three_frozen_seed_roles (test_phase1_bayes_independent.TestBayesExactReference.test_three_frozen_seed_roles) ... ok
+
+test_all_scoped_checks_pass_for_each_existing_center (test_phase1_bayes_independent.TestPhase1NativeBayesIndependent.test_all_scoped_checks_pass_for_each_existing_center) ... ok
+
+test_api_signatures_preserve_fixed_native_route (test_phase1_bayes_independent.TestPhase1NativeBayesIndependent.test_api_signatures_preserve_fixed_native_route) ... ok
+
+test_every_nontiming_native_field_reproduces_exactly (test_phase1_bayes_independent.TestPhase1NativeBayesIndependent.test_every_nontiming_native_field_reproduces_exactly) ... ok
+
+test_exact_normal_equations_and_penalized_intercept_stationarity (test_phase1_bayes_independent.TestPhase1NativeBayesIndependent.test_exact_normal_equations_and_penalized_intercept_stationarity) ... ok
+
+test_raw_sampler_not_scaled_fit_and_native_false_default (test_phase1_bayes_independent.TestPhase1NativeBayesIndependent.test_raw_sampler_not_scaled_fit_and_native_false_default) ... ok
+
+test_recomputed_report_matches_saved_artifact_without_private_paths (test_phase1_bayes_independent.TestPhase1NativeBayesIndependent.test_recomputed_report_matches_saved_artifact_without_private_paths) ... ok
+
+test_student_t_scale_is_not_full_marginal_standard_deviation (test_phase1_bayes_independent.TestPhase1NativeBayesIndependent.test_student_t_scale_is_not_full_marginal_standard_deviation) ... ok
+
+test_B_only_ridge_normal_equations (test_phase1_h2_independent.Phase1H2IndependentTests.test_B_only_ridge_normal_equations) ... ok
+
+test_MT19937_external_known_vector_and_legacy_uniform (test_phase1_h2_independent.Phase1H2IndependentTests.test_MT19937_external_known_vector_and_legacy_uniform) ... ok
+
+test_all_accept_same_ids_exact_and_mc_risks (test_phase1_h2_independent.Phase1H2IndependentTests.test_all_accept_same_ids_exact_and_mc_risks) ... ok
+
+test_all_hb_values_again_at_65_digits (test_phase1_h2_independent.Phase1H2IndependentTests.test_all_hb_values_again_at_65_digits) ... ok
+
+test_all_twenty_exact_counts (test_phase1_h2_independent.Phase1H2IndependentTests.test_all_twenty_exact_counts) ... ok
+
+test_all_unit_reconstructions_scoped_not_bitwise (test_phase1_h2_independent.Phase1H2IndependentTests.test_all_unit_reconstructions_scoped_not_bitwise) ... ok
+
+test_corruption_of_frozen_B_label_or_surrogate_is_detected (test_phase1_h2_independent.Phase1H2IndependentTests.test_corruption_of_frozen_B_label_or_surrogate_is_detected) ... ok
+
+test_corruption_of_policy_or_probe_is_detected (test_phase1_h2_independent.Phase1H2IndependentTests.test_corruption_of_policy_or_probe_is_detected) ... ok
+
+test_coverage_lcb_and_guard_margins (test_phase1_h2_independent.Phase1H2IndependentTests.test_coverage_lcb_and_guard_margins) ... ok
+
+test_empty_policy_never_certifies_or_reports_zero_risk (test_phase1_h2_independent.Phase1H2IndependentTests.test_empty_policy_never_certifies_or_reports_zero_risk) ... ok
+
+test_exact_ceiling_survives_near_integer_sum (test_phase1_h2_independent.Phase1H2IndependentTests.test_exact_ceiling_survives_near_integer_sum) ... ok
+
+test_finite_binary_null_type_I_enumeration_not_general_proof (test_phase1_h2_independent.Phase1H2IndependentTests.test_finite_binary_null_type_I_enumeration_not_general_proof) ... ok
+
+test_four_family_risk_and_coverage_fwer (test_phase1_h2_independent.Phase1H2IndependentTests.test_four_family_risk_and_coverage_fwer) ... ok
+
+test_fraction_means_and_noninteger_ceiling (test_phase1_h2_independent.Phase1H2IndependentTests.test_fraction_means_and_noninteger_ceiling) ... ok
+
+test_hb_invalid_inputs (test_phase1_h2_independent.Phase1H2IndependentTests.test_hb_invalid_inputs) ... ok
+
+test_hb_mean_at_or_above_null (test_phase1_h2_independent.Phase1H2IndependentTests.test_hb_mean_at_or_above_null) ... ok
+
+test_hb_zero_loss_and_empty_sample (test_phase1_h2_independent.Phase1H2IndependentTests.test_hb_zero_loss_and_empty_sample) ... ok
+
+test_only_stdlib_imports_and_no_snapshot_import_path (test_phase1_h2_independent.Phase1H2IndependentTests.test_only_stdlib_imports_and_no_snapshot_import_path) ... ok
+
+test_persisted_result_is_reproducible (test_phase1_h2_independent.Phase1H2IndependentTests.test_persisted_result_is_reproducible) ... FAIL
+
+test_ranking_not_confused_with_all_accept_null (test_phase1_h2_independent.Phase1H2IndependentTests.test_ranking_not_confused_with_all_accept_null) ... ok
+
+test_recorded_unit_loss_distribution_below_alpha_not_population (test_phase1_h2_independent.Phase1H2IndependentTests.test_recorded_unit_loss_distribution_below_alpha_not_population) ... ok
+
+test_seed_probe_and_cost_counts (test_phase1_h2_independent.Phase1H2IndependentTests.test_seed_probe_and_cost_counts) ... ok
+
+test_selection_uses_first_maximum_coverage_threshold (test_phase1_h2_independent.Phase1H2IndependentTests.test_selection_uses_first_maximum_coverage_threshold) ... ok
+
+test_all_truth_table_search_traces_unchanged (test_phase1_lime_h1_independent.Phase1H1Independent.test_all_truth_table_search_traces_unchanged) ... ok
+
+test_measured_zero_and_lifetime_snapshot (test_phase1_lime_h1_independent.Phase1H1Independent.test_measured_zero_and_lifetime_snapshot) ... ok
+
+test_saved_h1_reference_is_identical (test_phase1_lime_h1_independent.Phase1H1Independent.test_saved_h1_reference_is_identical) ... ok
+
+test_unknown_cost_is_none (test_phase1_lime_h1_independent.Phase1H1Independent.test_unknown_cost_is_none) ... ok
+
+test_all_160_gaussian_design_hashes (test_phase1_lime_h1_independent.Phase1LimeIndependent.test_all_160_gaussian_design_hashes) ... ok
+
+test_all_352_probe_diagnostics_match_exactly (test_phase1_lime_h1_independent.Phase1LimeIndependent.test_all_352_probe_diagnostics_match_exactly) ... ok
+
+test_clipping_counterexample_is_not_raw_fidelity (test_phase1_lime_h1_independent.Phase1LimeIndependent.test_clipping_counterexample_is_not_raw_fidelity) ... ok
+
+test_clipping_did_not_reduce_any_observed_loss (test_phase1_lime_h1_independent.Phase1LimeIndependent.test_clipping_did_not_reduce_any_observed_loss) ... ok
+
+test_exact_ridge_penalty_does_not_shrink_intercept_only_model (test_phase1_lime_h1_independent.Phase1LimeIndependent.test_exact_ridge_penalty_does_not_shrink_intercept_only_model) ... ok
+
+test_independent_lime_calculator_imports_no_application (test_phase1_lime_h1_independent.Phase1LimeIndependent.test_independent_lime_calculator_imports_no_application) ... ok
+
+test_independent_qr_and_exact_rational_parameters (test_phase1_lime_h1_independent.Phase1LimeIndependent.test_independent_qr_and_exact_rational_parameters) ... ok
+
+test_recomputed_saved_reference_is_identical (test_phase1_lime_h1_independent.Phase1LimeIndependent.test_recomputed_saved_reference_is_identical) ... ok
+
+
+
+======================================================================
+
+FAIL: test_persisted_result_is_reproducible (test_phase1_h2_independent.Phase1H2IndependentTests.test_persisted_result_is_reproducible)
+
+----------------------------------------------------------------------
+
+Traceback (most recent call last):
+
+  File "[AGENT5_WORKTREE]\tests\independent_validation\test_phase1_h2_independent.py", line 28, in test_persisted_result_is_reproducible
+
+    self.assertEqual(self.result,json.loads((E/"H2_INDEPENDENT_RESULTS.json").read_text()))
+
+AssertionError: {'sta[203447 chars] '3.11.9', 'stdlib_only': True, 'snapshot_impo[138 chars]ng'}} != {'sta[203447 chars] '3.13.15', 'stdlib_only': True, 'snapshot_imp[139 chars]ng'}}
+
+Diff is 375803 characters long. Set self.maxDiff to None to see it.
+
+
+
+----------------------------------------------------------------------
+
+Ran 50 tests in 4.611s
+
+
+
+FAILED (failures=1)
+

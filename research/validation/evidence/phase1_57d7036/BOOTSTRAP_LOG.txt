@@ -1,0 +1,82 @@
+audited 25 binary wheels against PyPI digests and RECORD; no install performed
+
+Looking in links: [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels\cloudpickle-3.1.2-py3-none-any.whl (from -r [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\research\innovation\phase1\requirements.lock (line 1))
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels\colorama-0.4.6-py2.py3-none-any.whl (from -r [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\research\innovation\phase1\requirements.lock (line 2))
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels\contourpy-1.3.3-cp311-cp311-win_amd64.whl (from -r [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\research\innovation\phase1\requirements.lock (line 3))
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels\cycler-0.12.1-py3-none-any.whl (from -r [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\research\innovation\phase1\requirements.lock (line 4))
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels\fonttools-4.67.0-cp311-cp311-win_amd64.whl (from -r [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\research\innovation\phase1\requirements.lock (line 5))
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels\imageio-2.38.1-py3-none-any.whl (from -r [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\research\innovation\phase1\requirements.lock (line 6))
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels\joblib-1.6.0-py3-none-any.whl (from -r [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\research\innovation\phase1\requirements.lock (line 7))
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels\kiwisolver-1.5.1-cp311-cp311-win_amd64.whl (from -r [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\research\innovation\phase1\requirements.lock (line 8))
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels\lazy_loader-0.6-py3-none-any.whl (from -r [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\research\innovation\phase1\requirements.lock (line 9))
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels\matplotlib-3.8.4-cp311-cp311-win_amd64.whl (from -r [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\research\innovation\phase1\requirements.lock (line 10))
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels\networkx-3.6.1-py3-none-any.whl (from -r [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\research\innovation\phase1\requirements.lock (line 11))
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels\numpy-1.26.4-cp311-cp311-win_amd64.whl (from -r [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\research\innovation\phase1\requirements.lock (line 12))
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels\packaging-26.3-py3-none-any.whl (from -r [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\research\innovation\phase1\requirements.lock (line 13))
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels\pillow-13.0.0-cp311-cp311-win_amd64.whl (from -r [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\research\innovation\phase1\requirements.lock (line 14))
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels\pyparsing-3.3.3-py3-none-any.whl (from -r [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\research\innovation\phase1\requirements.lock (line 15))
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels\python_dateutil-3.0.0-py2.py3-none-any.whl (from -r [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\research\innovation\phase1\requirements.lock (line 16))
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels\scikit_image-0.22.0-cp311-cp311-win_amd64.whl (from -r [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\research\innovation\phase1\requirements.lock (line 17))
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels\scikit_learn-1.3.2-cp311-cp311-win_amd64.whl (from -r [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\research\innovation\phase1\requirements.lock (line 18))
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels\scipy-1.11.4-cp311-cp311-win_amd64.whl (from -r [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\research\innovation\phase1\requirements.lock (line 19))
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels\six-1.17.0-py2.py3-none-any.whl (from -r [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\research\innovation\phase1\requirements.lock (line 20))
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels\threadpoolctl-3.7.0-py3-none-any.whl (from -r [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\research\innovation\phase1\requirements.lock (line 21))
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels\tifffile-2026.3.3-py3-none-any.whl (from -r [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\research\innovation\phase1\requirements.lock (line 22))
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels\tqdm-4.67.1-py3-none-any.whl (from -r [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\research\innovation\phase1\requirements.lock (line 23))
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels\tzdata-2026.5-py2.py3-none-any.whl (from -r [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\research\innovation\phase1\requirements.lock (line 24))
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\wheels\wheel-0.45.1-py3-none-any.whl (from -r [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\research\innovation\phase1\requirements.lock (line 25))
+
+Installing collected packages: wheel, tzdata, threadpoolctl, six, pyparsing, pillow, packaging, numpy, networkx, kiwisolver, fonttools, cycler, colorama, cloudpickle, tqdm, tifffile, scipy, python-dateutil, lazy-loader, joblib, ImageIO, contourpy, scikit-learn, scikit-image, matplotlib
+
+Successfully installed ImageIO-2.38.1 cloudpickle-3.1.2 colorama-0.4.6 contourpy-1.3.3 cycler-0.12.1 fonttools-4.67.0 joblib-1.6.0 kiwisolver-1.5.1 lazy-loader-0.6 matplotlib-3.8.4 networkx-3.6.1 numpy-1.26.4 packaging-26.3 pillow-13.0.0 pyparsing-3.3.3 python-dateutil-3.0.0 scikit-image-0.22.0 scikit-learn-1.3.2 scipy-1.11.4 six-1.17.0 threadpoolctl-3.7.0 tifffile-2026.3.3 tqdm-4.67.1 tzdata-2026.5 wheel-0.45.1
+
+Processing [AGENT5_WORKTREE]\research\validation\evidence\phase1_57d7036\bootstrap_sandbox\.cache\innovation\phase1\lime-0.2.0.1.tar.gz
+
+  Preparing metadata (setup.py): started
+
+  Preparing metadata (setup.py): finished with status 'done'
+
+Building wheels for collected packages: lime
+
+  Building wheel for lime (setup.py): started
+
+  Building wheel for lime (setup.py): finished with status 'done'
+
+  Created wheel for lime: filename=lime-0.2.0.1-py3-none-any.whl size=283840 sha256=812b6d99846cdc6792781d3725a74972bfd90b883c6ea226c886146fd7a2132d
+
+  Stored in directory: [USER_HOME]\AppData\Local\Temp\pip-ephem-wheel-cache-zjpciccx\wheels\1a\0e\c5\518b872c8c38f7a60863e00bc972a975e5c84a91dea046ad04
+
+Successfully built lime
+
+Installing collected packages: lime
+
+Successfully installed lime-0.2.0.1
+
+No broken requirements found.
+

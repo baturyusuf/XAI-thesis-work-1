@@ -1,0 +1,91 @@
+{
+  "status": "PASS_COUNTER_AND_SEARCH_DIFFERENTIAL",
+  "xor": [
+    {
+      "mode": "label",
+      "ledger_supplied": false,
+      "preload": 0,
+      "executed_callbacks": 8,
+      "reported_callbacks": null,
+      "predicates": 3,
+      "unique_states": null,
+      "subset": [
+        0,
+        1
+      ]
+    },
+    {
+      "mode": "label",
+      "ledger_supplied": true,
+      "preload": 0,
+      "executed_callbacks": 8,
+      "reported_callbacks": 8,
+      "predicates": 3,
+      "unique_states": 3,
+      "subset": [
+        0,
+        1
+      ]
+    },
+    {
+      "mode": "label",
+      "ledger_supplied": true,
+      "preload": 7,
+      "executed_callbacks": 8,
+      "reported_callbacks": 15,
+      "predicates": 3,
+      "unique_states": 4,
+      "subset": [
+        0,
+        1
+      ]
+    },
+    {
+      "mode": "distortion",
+      "ledger_supplied": false,
+      "preload": 0,
+      "executed_callbacks": 8,
+      "reported_callbacks": null,
+      "predicates": 3,
+      "unique_states": null,
+      "subset": [
+        0,
+        1
+      ]
+    },
+    {
+      "mode": "distortion",
+      "ledger_supplied": true,
+      "preload": 0,
+      "executed_callbacks": 8,
+      "reported_callbacks": 8,
+      "predicates": 3,
+      "unique_states": 3,
+      "subset": [
+        0,
+        1
+      ]
+    },
+    {
+      "mode": "distortion",
+      "ledger_supplied": true,
+      "preload": 7,
+      "executed_callbacks": 8,
+      "reported_callbacks": 15,
+      "predicates": 3,
+      "unique_states": 4,
+      "subset": [
+        0,
+        1
+      ]
+    }
+  ],
+  "measured_zero": {
+    "callbacks": 0,
+    "unique_states": 0
+  },
+  "boolean_truth_tables": 128,
+  "modes": 2,
+  "old_new_trace_checks": 512,
+  "source_delta": "metadata availability only; supplied counters lifetime snapshots, not deltas"
+}

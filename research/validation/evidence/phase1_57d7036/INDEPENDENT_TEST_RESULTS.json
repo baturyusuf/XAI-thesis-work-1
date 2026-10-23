@@ -1,0 +1,11 @@
+{
+  "exit_code": 0,
+  "test_count": 50,
+  "failures": 0,
+  "errors": 0,
+  "skips": 0,
+  "python": "3.11.9",
+  "scope": "23 H2 + 15 Bayes + 12 LIME/H1 auditor tests; separate from original108",
+  "metadata_boundary": "Only current-vs-stored Python version differs in cross-interpreter H2 comparison; all scientific fields compared exactly",
+  "warnings": "ResourceWarning promoted to error"
+}

@@ -26,3 +26,18 @@ Before commit, index equality passed but Git reported future CRLF conversion. Pa
 Models listed again; only GPT used, no unsupported reasoning parameter. H1 audit: GPT6Luna, session1ff70d50-8288-4ab3-8c85-ada23b211abb, exclusive H1 doc/test/results. H2 theorem/numerics: GPT6Sol, c778bf76-0b3d-42c2-96a1-c17531221e2d, exclusive two docs/Decimal calculator/two focused test modules/results. SIS source audit: GPT6Luna,034cca79-8a81-408b-9065-7f081a3a728b, exclusive SIS doc/test/results.
 Parent verified all source manifests/upstream Google bytes and hashed wheel/RECORD, created isolated environment, reproduced strict85 plus H1/H2 outputs, authored independent1280unit/108policy reconstruction, query/cost references,7additional tests and synthesis. SIS delegate initially confused absent live files/upstream Git object with unavailable A4 blobs; corrected immutable git-show access and supplied own verified snapshot, then native audit completed. No inaccessible-source claim retained.
 Final H2 read-only review identified two overbroad evidence wordings: diagnostic7 needed source-derived/runtime-counter distinction, and seeds/roles were reconstructed but persisted stream/draw-token records were not available. Parent narrowed both and independently instrumented diagnostic2+2+1+2 actual calls. New25 tests and prior37 regressions all pass under NumPy2.3.4; original85 retains1failure. No delegate verdict substitutes for source/math review, no real/hidden data or Agent4 worktree accessed, and no push authorized.
+
+
+## Phase 1 native audit (2026-10-23)
+
+Models re-listed first; only native GPT models, no unsupported reasoning-level parameter.
+
+| Task | Model/session | Disjoint write scope | Parent verification |
+|---|---|---|---|
+| H2 exact/Decimal/accepted-count theorem | GPT6.1Sol / 694ce0b3-f4ad-463b-b63c-090d81ffc54c | H2 report, calculator/results, H2 test file | Parent reviewed source/theorem/budgets and reran 23 tests in combined50; exact native replay matches |
+| Bayes source/posterior | GPT6.1Sol / 9403fccc-1035-4524-addf-9ea3124ec489 | Bayes report, calculator/results, Bayes test file | Parent acquired/audited six pins and exact environment; reran all15 tests, read posterior equations/scale derivation |
+| Cost + design proposal | GPT6Luna / 0109aad5-30de-4d04-8c70-a7b23c4ac06c | Cost/design reports, calculator/results | Parent checked sums against native replay, corrected A/B/C labels and added learned B generation charges and concrete design gates |
+
+Bayes initially reported BLOCKED_NATIVE_ASSETS with seven skips, then completed after parent supplied audited assets. Follow-up tool reached usage limit after writing results; parent did not infer success from the partial message but verified saved JSON, unchanged hashes and full15-test execution. Auditor-only regex/resource-warning fixes are described in the Bayes report. Parent corrected cross-interpreter metadata comparison and an initial XOR visited-state expectation (three visited states, not four); no native defect was inferred. Shell-length/escaping failures during audit-file preparation did not execute scientific code or alter frozen files.
+
+Parent owns snapshots/dependency audits/bootstrap/short-path remediation, 85+23 reproduction, full160/3-center replay, LIME QR/rational/clipping checks, H1 truth-table audit, extra12 tests, main reports and safety checks. No delegate inspected Agent 4 active files or real/hidden data; no delegate verdict is a novelty/final-protocol approval.

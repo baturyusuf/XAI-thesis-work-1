@@ -1,0 +1,85 @@
+{
+  "method": "stdlib CSV/JSON; no application imports or experiment",
+  "referee": {
+    "records": 64,
+    "rows_each": 4,
+    "sampled_probes_each": 0
+  },
+  "roles": {
+    "calibration/calibration_loss": {
+      "callbacks": 64,
+      "model_rows": 1024,
+      "seconds": 0.0020496999204624444
+    },
+    "calibration/explanation_fit": {
+      "callbacks": 64,
+      "model_rows": 8192,
+      "seconds": 0.002461900032358244
+    },
+    "calibration/learned_score_inference": {
+      "callbacks": 0,
+      "model_rows": 0,
+      "seconds": 0.00018430000636726618
+    },
+    "calibration/score_probe": {
+      "callbacks": 64,
+      "model_rows": 512,
+      "seconds": 0.0022860000608488917
+    },
+    "evaluation/evaluation_loss": {
+      "callbacks": 64,
+      "model_rows": 2048,
+      "seconds": 0.0021499001304619014
+    },
+    "evaluation/exact_referee": {
+      "callbacks": 64,
+      "model_rows": 256,
+      "seconds": 0.0022113001032266766
+    },
+    "evaluation/explanation_fit": {
+      "callbacks": 64,
+      "model_rows": 8192,
+      "seconds": 0.0024201999767683446
+    },
+    "evaluation/learned_score_inference": {
+      "callbacks": 0,
+      "model_rows": 0,
+      "seconds": 8.200001320801675e-05
+    },
+    "evaluation/score_probe": {
+      "callbacks": 64,
+      "model_rows": 512,
+      "seconds": 0.0023112999915611
+    },
+    "fit/explanation_fit": {
+      "callbacks": 32,
+      "model_rows": 4096,
+      "seconds": 0.0012355000362731516
+    },
+    "fit/score_fit": {
+      "callbacks": 32,
+      "model_rows": 512,
+      "seconds": 0.0011513999197632074
+    },
+    "quality_score_ridge_fit": {
+      "callbacks": 0,
+      "model_rows": 0,
+      "seconds": 0.0009361999982502311
+    },
+    "surrogate_ridge_fits": {
+      "callbacks": 0,
+      "model_rows": 0,
+      "seconds": 0.06113110019941814
+    }
+  },
+  "timing_warning": "nested timing buckets overlap",
+  "totals": {
+    "callbacks": 512,
+    "model_rows": 25344
+  },
+  "units": {
+    "calibration": 64,
+    "evaluation": 64,
+    "fit": 32
+  }
+}

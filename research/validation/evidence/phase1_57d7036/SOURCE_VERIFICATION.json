@@ -1,0 +1,33 @@
+{
+  "implementation": "57d703699e7c7d1c323c251c4cac9bd0ca163634",
+  "handoff": "61206e3f1532f241109320e359df1a136a7250cc",
+  "agent5_base": "2992eeee9d6436d62846e8190ed129bd3d9852ea",
+  "snapshot_files": 199,
+  "manifest_checks": [
+    {
+      "path": "research/innovation/phase1/publication/IMPLEMENTATION_FILE_MANIFEST.csv",
+      "rows_verified": 65,
+      "sha256": "59642059961c67734e1bfc1ff5ab90b3bdc14ffd23c8fd845a7096ed43361552"
+    },
+    {
+      "path": "research/innovation/phase1/DELIVERABLE_MANIFEST.csv",
+      "rows_verified": 51,
+      "sha256": "d3b7079723d858928f8b7d268a9d9ef55da15c72bb0451543605acc17a07c611"
+    },
+    {
+      "path": "research/innovation/phase1/SOURCE_MANIFEST.csv",
+      "rows_verified": 25,
+      "sha256": "07e537056c4121fcad23cedcfd06b1fb9ca32549fdea6ac4bdc46a30956f80e1"
+    }
+  ],
+  "handoff_sha256": "102b5b523d06320415a177138250e2d5fb6d7f36e9be4a304aea173d098cd42e",
+  "documentation_commit_changed_paths": [
+    "research/innovation/phase1/AGENT5_PHASE1_INDEPENDENT_AUDIT_HANDOFF.md"
+  ],
+  "scope": "Only src/tests/third_party/research/innovation and project license/ignore; no raw/hidden data",
+  "git_rules": "No tracked AGENTS.md found in base/implementation tree",
+  "agent3_imports_original_git_blob_verified": 23,
+  "prior_implementation_payload_files_unchanged": 127,
+  "sis_source_sha256": "2718ae0e195384927f814efeba0edd127cabcdebfaf7a4b9a02bf2d59e7b9079",
+  "prespecified_config_sha256": "53992abc80954e20f6f7a0bb4deced75b1729bd3fa4a2ce003f3ac06d2a69b9a"
+}

@@ -44,3 +44,32 @@ Human now authorizes independent audit of implementation3327e942f8d3abfe851f9513
 | D5-22 | Local safe audit commit permitted; NO PUSH/MERGE this round |Current human instruction overrides prior publication permission |
 
 Next: human review; any responsible-agent fix needs new SHA/diff and independent recheck. No new native installations beyond pinned SIS dependency, real/hidden access, final threshold/benchmark freeze or novelty decision.
+
+
+## Phase 1 independent native audit (2026-10-23)
+
+Human authorizes only audit of implementation `57d703699e7c7d1c323c251c4cac9bd0ca163634` and handoff `61206e3f1532f241109320e359df1a136a7250cc`. Previous publication of `2992eeee...` is historical and does not authorize a new push.
+
+| ID | Audit disposition | Status / boundary |
+|---|---|---|
+| D5-23 | Verify 199-file snapshot, 65/51/25 manifests, 127 old payload files and 23 A3 originals | VERIFIED; own read-only S and disposable D; no active Agent 4 worktree |
+| D5-24 | Preserve strict 85=84 pass+SIS failure; reproduce native 23/23 | VERIFIED, distinct Python3.13/3.11 environments; original108 not all green |
+| D5-25 | Accept scoped A/B native results | All non-timing fields replay; 50 independent tests pass, no skips |
+| D5-26 | Accept H1 v2 unknown=None, zero=0, lifetime semantics | VERIFIED via XOR and 512 old/new Boolean trace checks; old frozen code untouched |
+| D5-27 | Retain conditional H2/FWER justification, not IID from PRNG IDs | 20/20 policies matched; factual assumptions not metadata-proved |
+| D5-28 | Reject endpoint superiority/necessity interpretation | Four all-accept policies match null; direct descriptive ranking remains informative |
+| D5-29 | Retain clipped-object/law and Bayes-scale boundaries | Observed clipping gain0 does not transfer a raw/global guarantee |
+| D5-30 | Require new design approval | Proposed harder mechanisms/strong nulls/margins/power/full costs not implemented |
+| D5-31 | Keep all work local and unstaged | No commit/push/merge, new native method, real/hidden data or novelty approval |
+
+Windows deep-path import and auditor-only harness corrections are documented separately from algorithm defects. No scientific threshold/seed/budget changed. Human review precedes any next experiment or publication.
+
+
+## Phase 1 publication authorization (2026-10-23)
+
+| ID | Human-authorized disposition | Boundary |
+|---|---|---|
+| D5-32 | Conditionally accept and publish existing Phase1 independent audit as immutable source for Agent3 | Technical/mathematical scope only, not novelty/real-data/final-protocol approval; no new experiments |
+| D5-33 | Safety-reviewed explicit-whitelist commit and normal push on research/independent-validation | Preserve separate85/23/50 counts, SISfailure, Windows path limit, clippinggain0 and informative direct ranking; no other branch/merge/forcepush |
+
+Previous no-stage/commit/push statements describe the completed audit turn, before this later publication approval. Publication normalizes audit text line endings to LF to match scoped Git attributes; the original snapshot manifest remains byte-preserved with its -text rule. No scientific contract, thresholds, result values or frozen/native source is changed by publication.
