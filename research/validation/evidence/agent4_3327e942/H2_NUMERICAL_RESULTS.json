@@ -1,0 +1,97 @@
+{
+  "implementation_commit": "3327e942f8d3abfe851f9513ba2c4a2a30e29a67",
+  "handoff_commit": "305fb2f30bdcac1bf852a2f2c9f226346869fdc2",
+  "method": "85-digit Decimal KL/log and exact Fraction binomial CDF; frozen rational policy summaries only",
+  "policy_count": 108,
+  "row_count": 12,
+  "alpha": "1/5",
+  "risk_log_cut_decimal": "-7.677863500678210686455423529826471025770073565177787093599450930360236355242263527674",
+  "coverage_radius_decimal": "0.08659049355951879041981172060076486143892061001762765982262688353431493464218403666092",
+  "maximum_logp_absolute_error": "1.84060619435391691355101255874395466890475817616120608028942899247244213E-13",
+  "maximum_coverage_lower_absolute_error": "3.04198117206007648614389206100176276598226268835343149346421840366609E-17",
+  "minimum_risk_decision_margin_log": "0.597009688656680755056831903199888741835691531031769384258997829653953840661558691225",
+  "minimum_coverage_decision_margin": "0.00377799356051879041981172060076486143892061001762765982262688353431493464218403666092",
+  "minimum_joint_decision_margin": "0.00377799356051879041981172060076486143892061001762765982262688353431493464218403666092",
+  "hb_ceiling_range": [
+    0,
+    101
+  ],
+  "mismatches": [],
+  "zero_count_policies": 18,
+  "risk_rejection_count": 8,
+  "certified_policy_count": 5,
+  "closest_risk": {
+    "score": "independent_probe",
+    "controller": "existing-accepted-count-HB-Bonferroni-reference",
+    "threshold": "3/16",
+    "risk_margin": "0.597009688656680755056831903199888741835691531031769384258997829653953840661558691225"
+  },
+  "closest_coverage": {
+    "score": "independent_probe",
+    "controller": "A3-transformed-HB-Bonferroni",
+    "threshold": "0",
+    "coverage_margin": "0.00377799356051879041981172060076486143892061001762765982262688353431493464218403666092"
+  },
+  "selected": [
+    {
+      "score": "independent_probe",
+      "controller": "A3-transformed-HB-Bonferroni",
+      "threshold": null
+    },
+    {
+      "score": "independent_probe",
+      "controller": "existing-accepted-count-HB-Bonferroni-reference",
+      "threshold": "3/16"
+    },
+    {
+      "score": "learned_histogram_mean",
+      "controller": "A3-transformed-HB-Bonferroni",
+      "threshold": null
+    },
+    {
+      "score": "learned_histogram_mean",
+      "controller": "existing-accepted-count-HB-Bonferroni-reference",
+      "threshold": "3/16"
+    },
+    {
+      "score": "random",
+      "controller": "A3-transformed-HB-Bonferroni",
+      "threshold": null
+    },
+    {
+      "score": "random",
+      "controller": "existing-accepted-count-HB-Bonferroni-reference",
+      "threshold": null
+    },
+    {
+      "score": "reversed_probe",
+      "controller": "A3-transformed-HB-Bonferroni",
+      "threshold": null
+    },
+    {
+      "score": "reversed_probe",
+      "controller": "existing-accepted-count-HB-Bonferroni-reference",
+      "threshold": null
+    },
+    {
+      "score": "always_accept",
+      "controller": "A3-transformed-HB-Bonferroni",
+      "threshold": null
+    },
+    {
+      "score": "always_accept",
+      "controller": "existing-accepted-count-HB-Bonferroni-reference",
+      "threshold": null
+    },
+    {
+      "score": "zero_accept",
+      "controller": "A3-transformed-HB-Bonferroni",
+      "threshold": null
+    },
+    {
+      "score": "zero_accept",
+      "controller": "existing-accepted-count-HB-Bonferroni-reference",
+      "threshold": null
+    }
+  ]
+}

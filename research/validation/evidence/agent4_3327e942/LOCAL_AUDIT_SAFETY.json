@@ -1,0 +1,18 @@
+{
+  "status": "PASS_LOCAL_AUDIT_PRECOMMIT",
+  "base": "24196a9a6b5faec39d8aef9a19a1dc2d9ff450cb",
+  "implementation": "3327e942f8d3abfe851f9513ba2c4a2a30e29a67",
+  "handoff": "305fb2f30bdcac1bf852a2f2c9f226346869fdc2",
+  "files": 50,
+  "snapshot_files_verified": 129,
+  "original_tests": "85 total,84 passed,1 failed,exit1",
+  "new_audit_tests": 25,
+  "prior_regression_tests": 37,
+  "private_data_included": false,
+  "snapshot_environment_wheels_replay_excluded": true,
+  "push_authorized": false,
+  "push_performed": false,
+  "merge_performed": false,
+  "limits": "Pattern scan plus reviewed public/synthetic provenance, not universal secret detection or scientific validity",
+  "findings": []
+}

@@ -1,0 +1,15 @@
+{
+  "status": "VERIFIED_EXACT_ENVIRONMENT",
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.4",
+  "wheel": "numpy-2.3.4-cp313-cp313-win_amd64.whl",
+  "wheel_sha256": "56209416e81a7893036eea03abcb91c130643eb14233b2515c90dcac963fe99d",
+  "pypi_metadata_url": "https://pypi.org/pypi/numpy/2.3.4/json",
+  "canonical_wheel_url": "https://files.pythonhosted.org/packages/09/97/fd421e8bc50766665ad35536c2bb4ef916533ba1fdd053a62d96cc7c8b95/numpy-2.3.4-cp313-cp313-win_amd64.whl",
+  "record_hashes_checked": 918,
+  "pth_files": 0,
+  "bundled_data_scripts": 0,
+  "install_policy": "local binary wheel only; no index/no deps/require hashes; no source build or setup script",
+  "environment_scope": "Agent5 local ignored environment; no global or Agent4 environment modified",
+  "third_party_integrity_scope": "Wheel SHA256 and RECORD, not formal binary-code verification"
+}

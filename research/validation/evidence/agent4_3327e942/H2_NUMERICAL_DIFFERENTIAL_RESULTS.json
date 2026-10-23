@@ -1,0 +1,69 @@
+{
+  "implementation_commit": "3327e942f8d3abfe851f9513ba2c4a2a30e29a67",
+  "snapshot_sha256_verified": [
+    "src/benchmark/ltt.py",
+    "src/innovation/ltt_accepted.py"
+  ],
+  "test_count": 4,
+  "failure_count": 0,
+  "error_count": 0,
+  "cases": {
+    "all_accept": {
+      "n": 20,
+      "accepted": 20,
+      "exact_sum": "2",
+      "ceil": 2,
+      "logp_expected": "-0.7338002806950115628638297275530375550816525574446860316909154793197517255670187335202",
+      "logp_transformed": -0.7338002806950117,
+      "logp_accepted": -0.7338002806950117,
+      "rejected": false
+    },
+    "cutoff": {
+      "exact_p": "1099511627776/95367431640625",
+      "expected_logp": "-4.462871026284195115325901806196690067492021710960144273425757449747834875365366668368",
+      "checks": [
+        {
+          "case": "equal",
+          "budget": "1099511627776/95367431640625",
+          "exact_log_margin": "0E-84",
+          "transformed_logp": -4.462871026284195,
+          "accepted_logp": -4.462871026284195,
+          "rejected": false
+        },
+        {
+          "case": "inside_guard",
+          "budget": "268435456000134217728/23283064365386962890625",
+          "exact_log_margin": "4.99999999999875000000000041666666666651041666666672916666666664062500000E-13",
+          "transformed_logp": -4.462871026284195,
+          "accepted_logp": -4.462871026284195,
+          "rejected": false
+        },
+        {
+          "case": "outside_guard",
+          "budget": "429496733894967296/37252902984619140625",
+          "exact_log_margin": "9.999999950000000333333330833333353333333166666668095238082738095349206348206E-9",
+          "transformed_logp": -4.462871026284195,
+          "accepted_logp": -4.462871026284195,
+          "rejected": true
+        }
+      ]
+    },
+    "false_declarations": {
+      "status": "BLOCKED",
+      "reason": "iid_units",
+      "controllers": 2
+    },
+    "fit_overlap": {
+      "status": "BLOCKED",
+      "reason": "SPLIT_LEAKAGE",
+      "controllers": 2
+    },
+    "zero_accept": {
+      "n": 20,
+      "accepted": 0,
+      "risk": null,
+      "logp": 0,
+      "rejected": false
+    }
+  }
+}

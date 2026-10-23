@@ -1,0 +1,31 @@
+{
+  "status": "VERIFIED_UPSTREAM_PIN_BYTES",
+  "upstream_commit": "0d94f8c4d92678ce5f7a0eacae725f79174cfb03",
+  "files": [
+    {
+      "file": "sis.py",
+      "url": "https://raw.githubusercontent.com/google-research/google-research/0d94f8c4d92678ce5f7a0eacae725f79174cfb03/sufficient_input_subsets/sis.py",
+      "sha256": "2718ae0e195384927f814efeba0edd127cabcdebfaf7a4b9a02bf2d59e7b9079",
+      "matches_pinned_snapshot": true
+    },
+    {
+      "file": "LICENSE",
+      "url": "https://raw.githubusercontent.com/google-research/google-research/0d94f8c4d92678ce5f7a0eacae725f79174cfb03/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "matches_pinned_snapshot": true
+    },
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/google-research/google-research/0d94f8c4d92678ce5f7a0eacae725f79174cfb03/sufficient_input_subsets/README.md",
+      "sha256": "2364b5afba16a1dcde8eab2ebf182d8890b28a1c13cccd4b106829ecb7170b15",
+      "matches_pinned_snapshot": true
+    },
+    {
+      "file": "requirements.txt",
+      "url": "https://raw.githubusercontent.com/google-research/google-research/0d94f8c4d92678ce5f7a0eacae725f79174cfb03/sufficient_input_subsets/requirements.txt",
+      "sha256": "b56b00d10505755a90ff8f2e17d2194266363b826a7fa601c5a9fea1dda8d984",
+      "matches_pinned_snapshot": true
+    }
+  ],
+  "limits": "Exact four-file upstream byte/provenance check; not full paper or legal-opinion replication"
+}

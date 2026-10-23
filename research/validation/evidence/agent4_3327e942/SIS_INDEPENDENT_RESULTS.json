@@ -1,0 +1,22 @@
+{
+  "audit": "Google SIS empty-subset mask metadata",
+  "implementation_commit": "3327e942f8d3abfe851f9513ba2c4a2a30e29a67",
+  "handoff_commit": "305fb2f30bdcac1bf852a2f2c9f226346869fdc2",
+  "source_commit": "0d94f8c4d92678ce5f7a0eacae725f79174cfb03",
+  "source_path": "third_party/google_sis/sis.py",
+  "source_sha256": "2718ae0e195384927f814efeba0edd127cabcdebfaf7a4b9a02bf2d59e7b9079",
+  "runtime": "Parent-provided isolated Python 3.13, NumPy 2.3.4",
+  "test_file": "tests/independent_validation/test_agent4_sis_audit.py",
+  "case": {"input": [1.0, 1.0], "fully_masked_input": [0.0, 0.0], "threshold": 1.0, "scorer": "constant one for every batch row", "fully_masked_score": 1.0},
+  "observed": {"sis": [], "indexer_repr": "()", "mask": [true, true]},
+  "semantic_expected_mask": [false, false],
+  "finding": "Narrow mask metadata inconsistency for emitted empty SIS.",
+  "severity": "low / edge case",
+  "normal_use_failure_demonstrated": false,
+  "fully_masked_uninformative_recommendation_met": false,
+  "hard_precondition_enforced": false,
+  "original_test_modified": false,
+  "native_source_modified": false,
+  "upstream_issue_sent": false,
+  "focused_test_result": "PASS: 5 tests passed in 0.055s"
+}

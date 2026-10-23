@@ -1,0 +1,148 @@
+test_mutable_constructor_inputs_are_snapshotted (test_contracts.FrozenMetadataTests.test_mutable_constructor_inputs_are_snapshotted) ... ok
+test_all_equal_optima (test_h1.H1Tests.test_all_equal_optima) ... ok
+test_correlated_and_wrong_mass (test_h1.H1Tests.test_correlated_and_wrong_mass) ... ok
+test_global_enumeration (test_h1.H1Tests.test_global_enumeration) ... ok
+test_independent_hand_sum_and_full (test_h1.H1Tests.test_independent_hand_sum_and_full) ... ok
+test_nonmonotone_local_not_global (test_h1.H1Tests.test_nonmonotone_local_not_global) ... ok
+test_one_hot_logical_group (test_h1.H1Tests.test_one_hot_logical_group) ... ok
+test_support_and_validation (test_h1.H1Tests.test_support_and_validation) ... ok
+test_validation (test_h1.H1Tests.test_validation) ... ok
+test_xor_interaction_and_certificate (test_h1.H1Tests.test_xor_interaction_and_certificate) ... ok
+test_curve_and_independent_auc (test_h2.H2Tests.test_curve_and_independent_auc) ... ok
+test_duplicate_unit_rejected (test_h2.H2Tests.test_duplicate_unit_rejected) ... ok
+test_law_type_mode_and_target_identity (test_h2.H2Tests.test_law_type_mode_and_target_identity) ... ok
+test_natural_and_clipping_diagnostics (test_h2.H2Tests.test_natural_and_clipping_diagnostics) ... ok
+test_target_invalid_output_and_predictor (test_h2.H2Tests.test_target_invalid_output_and_predictor) ... ok
+test_zero_minimum_and_fixed_count (test_h2.H2Tests.test_zero_minimum_and_fixed_count) ... ok
+test_exact_conditional_hand_sum (test_independent_review.IndependentReview.test_exact_conditional_hand_sum) ... ok
+test_exhaust_all_binary_predictor_tables (test_independent_review.IndependentReview.test_exhaust_all_binary_predictor_tables) ... ok
+test_schema_groups_and_probability_scale (test_independent_review.IndependentReview.test_schema_groups_and_probability_scale) ... ok
+test_selective_exact_sums_and_units (test_independent_review.IndependentReview.test_selective_exact_sums_and_units) ... ok
+test_surrogate_rational_weighted_absolute_error (test_independent_review.IndependentReview.test_surrogate_rational_weighted_absolute_error) ... ok
+test_zero_weight_support_and_zero_condition (test_independent_review.IndependentReview.test_zero_weight_support_and_zero_condition) ... ok
+test_calibration_learned_family_and_bad_options (test_ltt.LTTTests.test_calibration_learned_family_and_bad_options) ... ok
+test_exact_fwer_over_small_iid_population (test_ltt.LTTTests.test_exact_fwer_over_small_iid_population) ... ok
+test_power_and_separate_minimum_coverage (test_ltt.LTTTests.test_power_and_separate_minimum_coverage) ... ok
+test_probe_count_does_not_multiply_calibration_n (test_ltt.LTTTests.test_probe_count_does_not_multiply_calibration_n) ... ok
+test_repeated_clusters_and_reused_seed_blocked (test_ltt.LTTTests.test_repeated_clusters_and_reused_seed_blocked) ... ok
+test_transform_identity_and_pvalue_hand_reference (test_ltt.LTTTests.test_transform_identity_and_pvalue_hand_reference) ... ok
+test_unmet_assumptions_and_fit_leakage_blocked (test_ltt.LTTTests.test_unmet_assumptions_and_fit_leakage_blocked) ... ok
+test_unsafe_null_superuniform_small_exhaustion (test_ltt.LTTTests.test_unsafe_null_superuniform_small_exhaustion) ... ok
+test_zero_coverage_never_zero_risk (test_ltt.LTTTests.test_zero_coverage_never_zero_risk) ... ok
+test_old_tie_block_auc_bug_is_detected (test_mutation_sensitivity.MutationSensitivityTests.test_old_tie_block_auc_bug_is_detected) ... ok
+test_probe_pseudoreplication_is_detected (test_mutation_sensitivity.MutationSensitivityTests.test_probe_pseudoreplication_is_detected) ... ok
+test_suppressed_clipping_diagnostics_are_detected (test_mutation_sensitivity.MutationSensitivityTests.test_suppressed_clipping_diagnostics_are_detected) ... ok
+test_bad_target_scale_class_probabilities_and_groups (test_provenance_sampling.ProvenanceSamplingTests.test_bad_target_scale_class_probabilities_and_groups) ... ok
+test_disjoint_units_and_clusters (test_provenance_sampling.ProvenanceSamplingTests.test_disjoint_units_and_clusters) ... ok
+test_known_finite_mc_mean_reproduces_without_inflating_n (test_provenance_sampling.ProvenanceSamplingTests.test_known_finite_mc_mean_reproduces_without_inflating_n) ... ok
+test_naturally_probability_valued_sigmoid (test_provenance_sampling.ProvenanceSamplingTests.test_naturally_probability_valued_sigmoid) ... ok
+test_probe_reuse_and_renamed_seed (test_provenance_sampling.ProvenanceSamplingTests.test_probe_reuse_and_renamed_seed) ... ok
+test_clipping_default_is_strict_and_adapter_is_identified (test_publication_qc.FinalMethodologyQC.test_clipping_default_is_strict_and_adapter_is_identified) ... ok
+test_expected_tie_formula_matches_exhaustive_orders (test_publication_qc.FinalMethodologyQC.test_expected_tie_formula_matches_exhaustive_orders) ... ok
+test_metadata_does_not_override_missing_iid_or_split (test_publication_qc.FinalMethodologyQC.test_metadata_does_not_override_missing_iid_or_split) ... ok
+test_no_certification_does_not_imply_positive_loss (test_publication_qc.FinalMethodologyQC.test_no_certification_does_not_imply_positive_loss) ... ok
+test_permutation_average_is_not_block_endpoint_integral (test_publication_qc.FinalMethodologyQC.test_permutation_average_is_not_block_endpoint_integral) ... ok
+test_seeded_determinism_is_not_tie_order_invariance (test_publication_qc.FinalMethodologyQC.test_seeded_determinism_is_not_tie_order_invariance) ... ok
+test_zero_coverage_is_not_zero_risk_or_a_success (test_publication_qc.FinalMethodologyQC.test_zero_coverage_is_not_zero_risk_or_a_success) ... ok
+test_clipping_can_completely_hide_raw_invalidity (test_reference_controls.ReferenceControlTests.test_clipping_can_completely_hide_raw_invalidity) ... ok
+test_constant_predictor_empty_globally_minimum (test_reference_controls.ReferenceControlTests.test_constant_predictor_empty_globally_minimum) ... ok
+test_distinct_output_properties_not_equivalent (test_reference_controls.ReferenceControlTests.test_distinct_output_properties_not_equivalent) ... ok
+test_missing_and_wrong_explanation_objects_fail (test_reference_controls.ReferenceControlTests.test_missing_and_wrong_explanation_objects_fail) ... ok
+test_same_support_and_certificate_support_inclusion_differ (test_reference_controls.ReferenceControlTests.test_same_support_and_certificate_support_inclusion_differ) ... ok
+test_cli_refuses_output_outside_authorized_evidence (test_synthetic_runner.SyntheticRunnerTests.test_cli_refuses_output_outside_authorized_evidence) ... ok
+test_frozen_synthetic_pilot_is_reproducible (test_synthetic_runner.SyntheticRunnerTests.test_frozen_synthetic_pilot_is_reproducible) ... ok
+test_reference_values_are_not_only_self_consistency (test_synthetic_runner.SyntheticRunnerTests.test_reference_values_are_not_only_self_consistency) ... ok
+test_two_tie_blocks_share_same_seeded_rank_policy (test_tie_consistency.TieConsistencyTests.test_two_tie_blocks_share_same_seeded_rank_policy) ... ok
+test_unfixed_seed_is_rejected (test_tie_consistency.TieConsistencyTests.test_unfixed_seed_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 56 tests in 0.236s
+
+OK
+
+test_exhaustive_binary_tables_against_a3_and_minimum (test_h1_reference.H1ReferenceTests.test_exhaustive_binary_tables_against_a3_and_minimum) ... ok
+test_independent_metrics_crosscheck_a3_and_eta (test_h1_reference.H1ReferenceTests.test_independent_metrics_crosscheck_a3_and_eta) ... ok
+test_invalid_target_support_and_probability_contract (test_h1_reference.H1ReferenceTests.test_invalid_target_support_and_probability_contract) ... ok
+test_mean_distortion_and_unsupported_target_status (test_h1_reference.H1ReferenceTests.test_mean_distortion_and_unsupported_target_status) ... ok
+test_nonmonotone_full_local_but_empty_global (test_h1_reference.H1ReferenceTests.test_nonmonotone_full_local_but_empty_global) ... ok
+test_random_subset_is_seeded_before_metric_evaluation (test_h1_reference.H1ReferenceTests.test_random_subset_is_seeded_before_metric_evaluation) ... ok
+test_three_bit_unary_constant_seeded_random_full (test_h1_reference.H1ReferenceTests.test_three_bit_unary_constant_seeded_random_full) ... ok
+test_uniform_xor_global_full_and_misspecified_law (test_h1_reference.H1ReferenceTests.test_uniform_xor_global_full_and_misspecified_law) ... ok
+test_clipping_known_controls (test_h2_reference.H2ReferenceTests.test_clipping_known_controls) ... ok
+test_fixed_bank_and_target (test_h2_reference.H2ReferenceTests.test_fixed_bank_and_target) ... ok
+test_float_vector_rejected_not_normalized (test_h2_reference.H2ReferenceTests.test_float_vector_rejected_not_normalized) ... ok
+test_histogram_oracle_population_and_random_control (test_h2_reference.H2ReferenceTests.test_histogram_oracle_population_and_random_control) ... ok
+test_learned_cells_use_labels_and_fallback (test_h2_reference.H2ReferenceTests.test_learned_cells_use_labels_and_fallback) ... ok
+test_probe_counts_and_no_loss_reuse (test_h2_reference.H2ReferenceTests.test_probe_counts_and_no_loss_reuse) ... ok
+test_score_probe_mean_is_unbiased_by_independent_binomial_sum (test_h2_reference.H2ReferenceTests.test_score_probe_mean_is_unbiased_by_independent_binomial_sum) ... ok
+test_assumptions_and_fit_leakage_block (test_ltt_accepted.AcceptedLTTTests.test_assumptions_and_fit_leakage_block) ... ok
+test_conditioned_sample_size_differs_from_full_sample (test_ltt_accepted.AcceptedLTTTests.test_conditioned_sample_size_differs_from_full_sample) ... ok
+test_exact_small_iid_fwer_enumeration (test_ltt_accepted.AcceptedLTTTests.test_exact_small_iid_fwer_enumeration) ... ok
+test_generators_and_decimal_threshold_follow_a3_contract (test_ltt_accepted.AcceptedLTTTests.test_generators_and_decimal_threshold_follow_a3_contract) ... ok
+test_positive_power_uses_k_and_full_n_coverage (test_ltt_accepted.AcceptedLTTTests.test_positive_power_uses_k_and_full_n_coverage) ... ok
+test_target_mismatch_blocks (test_ltt_accepted.AcceptedLTTTests.test_target_mismatch_blocks) ... ok
+test_zero_acceptance_has_no_risk_or_rejection (test_ltt_accepted.AcceptedLTTTests.test_zero_acceptance_has_no_risk_or_rejection) ... ok
+test_broadcast_row_group_mask (test_sis_native.SISNativeTests.test_broadcast_row_group_mask) ... ok
+test_constant_score_empty_sufficient_set (test_sis_native.SISNativeTests.test_constant_score_empty_sufficient_set) ... FAIL
+test_full_sis_find_sis (test_sis_native.SISNativeTests.test_full_sis_find_sis) ... ok
+test_known_sparse_sis_collection (test_sis_native.SISNativeTests.test_known_sparse_sis_collection) ... ok
+test_no_sis_find_sis (test_sis_native.SISNativeTests.test_no_sis_find_sis) ... ok
+test_seeded_random_nonlinear_three_feature_case (test_sis_native.SISNativeTests.test_seeded_random_nonlinear_three_feature_case) ... ok
+test_tie_prefers_lowest_masked_index (test_sis_native.SISNativeTests.test_tie_prefers_lowest_masked_index) ... ok
+
+======================================================================
+FAIL: test_constant_score_empty_sufficient_set (test_sis_native.SISNativeTests.test_constant_score_empty_sufficient_set)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "[CHECKOUT]\tests\innovation\test_sis_native.py", line 75, in test_constant_score_empty_sufficient_set
+    self.assertEqual(results[0].mask.tolist(), [False, False])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [True, True] != [False, False]
+
+First differing element 0:
+True
+False
+
+- [True, True]
++ [False, False]
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.080s
+
+FAILED (failures=1)
+
+{
+  "status": "COMPLETE_WITH_KNOWN_NATIVE_SIS_CONFORMANCE_FAILURE",
+  "all_tests_passed": false,
+  "total_tests": 85,
+  "total_passed": 84,
+  "total_failed": 1,
+  "suites": [
+    {
+      "suite": "A3_ORIGINAL",
+      "tests": 56,
+      "failures": [],
+      "errors": [],
+      "skipped": 0,
+      "wall_seconds": 0.3075111000216566,
+      "passed": 56
+    },
+    {
+      "suite": "A4_INTEGRATION",
+      "tests": 29,
+      "failures": [
+        "test_sis_native.SISNativeTests.test_constant_score_empty_sufficient_set"
+      ],
+      "errors": [],
+      "skipped": 0,
+      "wall_seconds": 0.14248640000005253,
+      "passed": 28
+    }
+  ],
+  "known_native_failure": "test_sis_native.SISNativeTests.test_constant_score_empty_sufficient_set",
+  "unexpected_failures": [],
+  "original_A3_files_unchanged": 23,
+  "native_source_unchanged": true,
+  "source_objects_verified": false,
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]"
+}

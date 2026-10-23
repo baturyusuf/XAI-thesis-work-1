@@ -17,3 +17,6 @@ From own worktree: python -B research/validation/evidence/prepare_sources.py; py
 Publication actions are explicit: python -B research/validation/evidence/publication/publish_audit.py prepare, then stage, then verify-index. Review before commit/push. After a separately authorized non-force push, receipt verifies exact remote SHA and writes a local ignored non-sensitive receipt. No helper auto-pushes.
 
 Levels A reproduction, B independent calculations and C scientific validity remain distinct. Final custody, native correctness and real-data guarantees remain outside executed validation.
+
+## Later immutable Agent4 audit (local, no new push authorized)
+The earlier publication manifests/receipts above bind the24196a9 preparation delivery, not current audit additions. Do not rerun the earlier publication helper to infer authorization for this turn. New scope/results are AGENT4_INDEPENDENT_AUDIT_REPORT.md and evidence/agent4_3327e942. Its own local whitelist/manifest distinguishes ignored snapshot/environment/wheels/replay from safe reports/logs/calculators. Original85 outcome remains84pass/1fail;25new audit and37prior regressions pass separately. Current human instruction permits a local commit only, no automatic push/merge.

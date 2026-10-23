@@ -1,0 +1,57 @@
+{
+  "status": "PASS_INDEPENDENT_REFERENCES_ONLY",
+  "suites": [
+    {
+      "suite": "NEW_AGENT4_AUDIT",
+      "command": [
+        "environment/Scripts/python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "test_agent4_h1_audit",
+        "test_agent4_h2_numerics",
+        "test_agent4_controller_boundary",
+        "test_agent4_sis_audit",
+        "test_agent4_unit_record_audit",
+        "-v"
+      ],
+      "cwd": "tests/independent_validation",
+      "exit_code": 0,
+      "tests": 25,
+      "skipped": 0
+    },
+    {
+      "suite": "PRIOR_AGENT5_REGRESSION",
+      "command": [
+        "environment/Scripts/python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "test_h1_reference",
+        "test_h2_reference",
+        "test_ltt_reference",
+        "test_pinned_implementation",
+        "test_accepted_count_reference",
+        "test_sis_mask_reference",
+        "test_repeated_deletion_reference",
+        "-v"
+      ],
+      "cwd": "tests/independent_validation",
+      "exit_code": 0,
+      "tests": 37,
+      "skipped": 0
+    }
+  ],
+  "new_audit_tests": 25,
+  "previous_agent5_tests": 37,
+  "snapshot_files_before": 129,
+  "snapshot_files_after": 129,
+  "original_agent4_strict_tests": {
+    "total": 85,
+    "passed": 84,
+    "failed": 1,
+    "exit_code": 1
+  },
+  "original_failure_not_suppressed": true,
+  "scope": "Positive independent/differential checks do not turn the original SIS test green or prove C scientific validity"
+}

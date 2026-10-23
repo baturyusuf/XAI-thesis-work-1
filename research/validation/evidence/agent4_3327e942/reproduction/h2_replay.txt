@@ -1,0 +1,104 @@
+{
+  "status": "COMPLETE_SYNTHETIC_REFERENCE_ONLY",
+  "output": "[AUDIT_ROOT]\\research\\validation\\evidence\\agent4_3327e942\\replay\\research\\innovation\\evidence\\solve\\AGENT5_REPLAY_H2.json",
+  "config_sha256": "be881d0a43aa21196dec128ac4e57e1ec0830bfc19f39961df5953e1a03345a4",
+  "total_run_seconds": 7.844881900004111,
+  "results": [
+    {
+      "score": "independent_probe",
+      "controller": "A3-transformed-HB-Bonferroni",
+      "status": "NO_POLICY_CERTIFIED",
+      "selected_threshold": "None",
+      "test_risk": null,
+      "test_coverage": null
+    },
+    {
+      "score": "independent_probe",
+      "controller": "existing-accepted-count-HB-Bonferroni-reference",
+      "status": "ELIGIBLE_CONDITIONAL",
+      "selected_threshold": "3/16",
+      "test_risk": "91/816",
+      "test_coverage": "51/128"
+    },
+    {
+      "score": "learned_histogram_mean",
+      "controller": "A3-transformed-HB-Bonferroni",
+      "status": "NO_POLICY_CERTIFIED",
+      "selected_threshold": "None",
+      "test_risk": null,
+      "test_coverage": null
+    },
+    {
+      "score": "learned_histogram_mean",
+      "controller": "existing-accepted-count-HB-Bonferroni-reference",
+      "status": "ELIGIBLE_CONDITIONAL",
+      "selected_threshold": "3/16",
+      "test_risk": "14/171",
+      "test_coverage": "171/512"
+    },
+    {
+      "score": "random",
+      "controller": "A3-transformed-HB-Bonferroni",
+      "status": "NO_POLICY_CERTIFIED",
+      "selected_threshold": "None",
+      "test_risk": null,
+      "test_coverage": null
+    },
+    {
+      "score": "random",
+      "controller": "existing-accepted-count-HB-Bonferroni-reference",
+      "status": "NO_POLICY_CERTIFIED",
+      "selected_threshold": "None",
+      "test_risk": null,
+      "test_coverage": null
+    },
+    {
+      "score": "reversed_probe",
+      "controller": "A3-transformed-HB-Bonferroni",
+      "status": "NO_POLICY_CERTIFIED",
+      "selected_threshold": "None",
+      "test_risk": null,
+      "test_coverage": null
+    },
+    {
+      "score": "reversed_probe",
+      "controller": "existing-accepted-count-HB-Bonferroni-reference",
+      "status": "NO_POLICY_CERTIFIED",
+      "selected_threshold": "None",
+      "test_risk": null,
+      "test_coverage": null
+    },
+    {
+      "score": "always_accept",
+      "controller": "A3-transformed-HB-Bonferroni",
+      "status": "NO_POLICY_CERTIFIED",
+      "selected_threshold": "None",
+      "test_risk": null,
+      "test_coverage": null
+    },
+    {
+      "score": "always_accept",
+      "controller": "existing-accepted-count-HB-Bonferroni-reference",
+      "status": "NO_POLICY_CERTIFIED",
+      "selected_threshold": "None",
+      "test_risk": null,
+      "test_coverage": null
+    },
+    {
+      "score": "zero_accept",
+      "controller": "A3-transformed-HB-Bonferroni",
+      "status": "NO_POLICY_CERTIFIED",
+      "selected_threshold": "None",
+      "test_risk": null,
+      "test_coverage": null
+    },
+    {
+      "score": "zero_accept",
+      "controller": "existing-accepted-count-HB-Bonferroni-reference",
+      "status": "NO_POLICY_CERTIFIED",
+      "selected_threshold": "None",
+      "test_risk": null,
+      "test_coverage": null
+    }
+  ]
+}

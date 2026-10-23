@@ -1,0 +1,29 @@
+{
+  "status": "REPRODUCED_WITH_PRESERVED_KNOWN_FAILURE",
+  "strict_exit_code": 1,
+  "total_tests": 85,
+  "total_passed": 84,
+  "total_failed": 1,
+  "errors": 0,
+  "skips": 0,
+  "failed_test": "test_sis_native.SISNativeTests.test_constant_score_empty_sufficient_set",
+  "a3_imports_verified": 23,
+  "h1_full_json_equal": true,
+  "h2_scientific_fields_equal": true,
+  "h2_all_unit_records_equal": true,
+  "h2_excluded_nondeterministic_metadata": [
+    "environment",
+    "generated_utc",
+    "results/controller_seconds",
+    "timing_seconds",
+    "total_run_seconds",
+    "unit_records_file",
+    "unit_records_sha256"
+  ],
+  "snapshot_files_before": 129,
+  "snapshot_files_after": 129,
+  "frozen_sources_modified": false,
+  "source_patches": 0,
+  "environment": "Python3.13.15 NumPy2.3.4 isolated Agent5 environment",
+  "scientific_scope": "A reproduction only; known failure retained, no theorem or general method validation"
+}

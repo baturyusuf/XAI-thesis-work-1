@@ -1,0 +1,15 @@
+{
+  "status": "VERIFIED",
+  "implementation": "3327e942f8d3abfe851f9513ba2c4a2a30e29a67",
+  "handoff": "305fb2f30bdcac1bf852a2f2c9f226346869fdc2",
+  "implementation_tree": "52d429fb8e23ad17fb3e394649bcbed33e47a1a4",
+  "original_snapshot_manifest_files": 127,
+  "materialized_whitelist_files": 129,
+  "a3_import_files": 23,
+  "all_a3_blobs_equal": true,
+  "all_source_hashes_equal": true,
+  "handoff_hash_equal": true,
+  "source_test_changes_between_pins": false,
+  "snapshot": "local ignored snapshot, never Agent4 worktree",
+  "source_patches": 0
+}

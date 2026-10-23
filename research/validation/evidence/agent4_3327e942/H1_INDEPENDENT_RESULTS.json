@@ -1,0 +1,48 @@
+{
+  "audit": "independent exact event sums for finite two-bit XOR",
+  "implementation_commit": "3327e942f8d3abfe851f9513ba2c4a2a30e29a67",
+  "threshold": "1/4",
+  "uniform": {
+    "empty": "1/2",
+    "singletons": [
+      "1/2",
+      "1/2"
+    ],
+    "full": "0",
+    "minimum": [
+      [
+        0,
+        1
+      ]
+    ]
+  },
+  "misspecified_7_10_1_10_1_10_1_10": {
+    "empty_own_law": "1/5",
+    "same_empty_uniform_law": "1/2",
+    "minimum": [
+      []
+    ]
+  },
+  "weighted_1_100_9_100_9_100_81_100": {
+    "empty": "9/50",
+    "singletons": [
+      "9/10",
+      "9/10"
+    ],
+    "full": "0",
+    "full_feasible": true,
+    "minimum": [
+      []
+    ],
+    "deletion_from_full": "full is one-deletion minimal; empty is global cardinality minimum"
+  },
+  "enumeration_candidate_visits": {
+    "uniform_Qopt": 4,
+    "misspecified_Qopt": 1,
+    "nonmonotone": 1
+  },
+  "counter_note": "Predicate calls, callbacks, unique states, candidate visits and metric calls are distinct. Frozen counts are not independently reproduced.",
+  "runtime": "NOT_MEASURED",
+  "scope": "Finite synthetic mathematical audit only; not native PAXp replication, literature-failure claim, scalability result, or proof of implementation invariants.",
+  "stage": "Initial delegated event-sum reference; later parent reproduced H1 artifact and independently checked callback formulas/optional counter behavior; see main and cost audit"
+}
