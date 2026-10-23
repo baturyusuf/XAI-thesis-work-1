@@ -1,0 +1,99 @@
+{
+  "status": "DESIGN_MATH_ONLY; no experiment/simulation/model calls",
+  "decimal_precision": 70,
+  "decimal_values": "NUMERICALLY_APPROXIMATED planning values, not interval-certified transcendental results",
+  "m2": {
+    "bound_exact_expression": "9*(2+sqrt(3))/640",
+    "bound_rational_lower": "6717691453623979128349403414709/128000000000000000000000000000000",
+    "bound_rational_upper": "16794228634059947820873508536777/320000000000000000000000000000000",
+    "enclosure_proof": "r=isqrt(3*10^60); r/10^30 <= sqrt(3) < (r+1)/10^30",
+    "lower_decimal": "0.0524819644814373369402297141774140625",
+    "upper_decimal": "0.052481964481437336940229714177428125",
+    "conservative_gap_decimal": "0.0024819644814373369402297141774140625",
+    "single_policy_one_sided95_sufficient_test_count_at_bound": 243155
+  },
+  "m4_zero_score": [
+    {
+      "m": 1,
+      "coverage_exact": "4/5",
+      "loss_numerator_exact": "143/2500",
+      "risk_exact": "143/2000",
+      "risk_approx": "0.0715"
+    },
+    {
+      "m": 4,
+      "coverage_exact": "1772147/3125000",
+      "loss_numerator_exact": "44587/2500000",
+      "risk_exact": "222935/7088588",
+      "risk_approx": "0.03144984586493106948802779904827308344059493935886808487106317929607420"
+    }
+  ],
+  "family_budget": {
+    "families": 17,
+    "thresholds": 9,
+    "events": 2,
+    "tests": 306,
+    "per_test_exact": "1/3060",
+    "total_exact": "1/10"
+  },
+  "zero_loss": {
+    "p_exact": "(19/20)^K",
+    "k_min": 157,
+    "log_cutoff": "-8.026170194946426456475248667860718720559785751220271920920634315618247",
+    "log_p156": "-8.001753924457883214486598503731209196518688423624308212103437152061071",
+    "log_p157": "-8.053047218845433747912794647985896434957910785314207623719484826112744",
+    "coverage_k_min": {
+      "512": 97,
+      "4096": 538
+    },
+    "lcb_n512_k157": "0.2181078241237012224932337926319127578390822465085780784743774493305757",
+    "lcb_n4096_k157": "0.00702900619646540870560445003382180766444173627697705835914633027840137",
+    "count_failure_upper_n512_cHalf": "2.360303779542164463025337986543979641840510927382983094571629041216213E-17"
+  },
+  "generic": {
+    "gamma": "0.025",
+    "coverage": "2/3",
+    "accepted_k": 16664,
+    "calibration_n": 25288,
+    "power_lower": "9/10 via two .05 failure bounds, coverage also required"
+  },
+  "evaluation": {
+    "reported_policy_cap": 17,
+    "two_sided_union_error": ".05",
+    "halfwidth": ".02",
+    "accepted_k": 8153,
+    "fixed_T": 32768,
+    "T_sufficient_count95_at_cHalf": 16622,
+    "T_sufficient_count95_at_cTenth": 85101,
+    "coverage_sufficient_count95_at_T32768": "0.2555708237601651771022773778150590061191318761469657782587020291569889"
+  },
+  "replicates": {
+    "J1000_MCSE_at_p01": "0.009486832980505137995996680633298155601158665417975650480572514558377783",
+    "zero_violations_J1000_upper95": "0.0029912495450952962443218382789173928911095517371810168328172629210890",
+    "R64_scope": "normal planning approximation; no variance established"
+  },
+  "runs": {
+    "benchmarks": 0,
+    "native_tests": 0,
+    "simulations": 0,
+    "model_calls": 0
+  },
+  "projected_costs_exact_not_measured": {
+    "D1_banks": 2,
+    "D1_units_per_bank": 16,
+    "generation_rows": 4096,
+    "Q4_logical_rows": 128,
+    "QJ_m4_rows": 2048,
+    "QJ_m16_rows": 32768,
+    "D1_generation_Q4_m4_rows": 6272,
+    "D1_generation_Q4_m16_rows": 36992,
+    "D1_both_grids_total_rows": 39040,
+    "D1_Bayes_posterior_draws_if_unchanged": 160000,
+    "large_units_per_bank": 39424,
+    "large_two_bank_R64_generation_rows": 645922816,
+    "large_hB_R64_posterior_draws": 25231360000,
+    "J1000_C4096_reference_units": 4096000,
+    "J1000_C4096_m4_plus16loss_draws": 81920000,
+    "elapsed_and_peak_memory": "NOT_MEASURED; no run"
+  }
+}

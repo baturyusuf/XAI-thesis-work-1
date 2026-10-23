@@ -1,0 +1,126 @@
+{
+  "role": "Agent3 Phase2 REVIEW per latest human task; not Agent5 publication",
+  "agent3_base": "d42bec729e9e78ae5387720d29360c5d60f38192",
+  "branch": "research/benchmark-methodology",
+  "agent4_implementation": "57d703699e7c7d1c323c251c4cac9bd0ca163634",
+  "agent4_handoff": "61206e3f1532f241109320e359df1a136a7250cc",
+  "remote_agent5_sha": "2992eeee9d6436d62846e8190ed129bd3d9852ea",
+  "missing_agent5_phase1_paths": [
+    "research/validation/PHASE1_INDEPENDENT_AUDIT_REPORT.md",
+    "research/validation/PHASE1_H2_STATISTICAL_AUDIT.md",
+    "research/validation/PHASE1_LOSS_AND_CLIPPING_AUDIT.md",
+    "research/validation/DISCRIMINATIVE_BENCHMARK_REQUIREMENTS.md",
+    "research/validation/PHASE1_COST_AUDIT.md"
+  ],
+  "agent5_phase1_review_status": "BLOCKED_MISSING_IMMUTABLE_PUBLICATION",
+  "agent5_local_drafts_read": false,
+  "source_manifest": [
+    {
+      "commit": "57d703699e7c7d1c323c251c4cac9bd0ca163634",
+      "path": "research/innovation/phase1/REPORT.md",
+      "git_blob": "ec24f141b6ff19a232e9f3c5f93b3365b5a3ca9d",
+      "bytes": 7282,
+      "sha256": "533cc4c117108d092a9e0566fa9abbec3189e5f8c11e3b849d8c1f0cb50c32d1",
+      "status": "VERIFIED_DOCUMENT_NOT_REPRODUCED"
+    },
+    {
+      "commit": "57d703699e7c7d1c323c251c4cac9bd0ca163634",
+      "path": "research/innovation/phase1/RE_REVIEW_REPORT.md",
+      "git_blob": "9ea6f22c959a45b8c0a38b9b1450a229ca269edd",
+      "bytes": 4540,
+      "sha256": "197a2d4bb29e5feff2281979025bb7df21deba1d0482a96c2a8c1c0c4ffd92d9",
+      "status": "VERIFIED_DOCUMENT_NOT_REPRODUCED"
+    },
+    {
+      "commit": "57d703699e7c7d1c323c251c4cac9bd0ca163634",
+      "path": "research/innovation/phase1/SCIENTIFIC_COMPATIBILITY.csv",
+      "git_blob": "efe310794adee4e2206d9647d4b7cc1d1089ad80",
+      "bytes": 1771,
+      "sha256": "02e871ef01a35f4f33b2556955ef3443d11dccad8b50e434b2d2518cbede5f80",
+      "status": "VERIFIED_DOCUMENT_NOT_REPRODUCED"
+    },
+    {
+      "commit": "57d703699e7c7d1c323c251c4cac9bd0ca163634",
+      "path": "research/innovation/phase1/COST_LEDGER.csv",
+      "git_blob": "39bf59d5ed42f5173c9ff4671226862a5eed193b",
+      "bytes": 2317,
+      "sha256": "12ab59faf487f38b3906ea0c4bf5ab42514c107826fdb0c406049c49423bc1f7",
+      "status": "VERIFIED_DOCUMENT_NOT_REPRODUCED"
+    },
+    {
+      "commit": "57d703699e7c7d1c323c251c4cac9bd0ca163634",
+      "path": "research/innovation/phase1/PRESPECIFIED_CONFIG.json",
+      "git_blob": "ad4859bf606957459ef9dfda39042db80658cd61",
+      "bytes": 2246,
+      "sha256": "53992abc80954e20f6f7a0bb4deced75b1729bd3fa4a2ce003f3ac06d2a69b9a",
+      "status": "VERIFIED_DOCUMENT_NOT_REPRODUCED"
+    },
+    {
+      "commit": "61206e3f1532f241109320e359df1a136a7250cc",
+      "path": "research/innovation/phase1/AGENT5_PHASE1_INDEPENDENT_AUDIT_HANDOFF.md",
+      "git_blob": "9a700ebfb498ee952d5bd8973ac0e3ab21e176ed",
+      "bytes": 14619,
+      "sha256": "102b5b523d06320415a177138250e2d5fb6d7f36e9be4a304aea173d098cd42e",
+      "status": "VERIFIED_DOCUMENT_NOT_REPRODUCED"
+    },
+    {
+      "commit": "d42bec729e9e78ae5387720d29360c5d60f38192",
+      "path": "research/benchmark/AGENT3_CHARTER.md",
+      "git_blob": "c6e9f4983324b9206853b670868ed22cb82cc74a",
+      "bytes": 2105,
+      "sha256": "5402bab3a0e7dce5ca8614dfe3ee782dd7f11dd4ee5e154181ff167a6e962b99",
+      "status": "VERIFIED_DOCUMENT_NOT_REPRODUCED"
+    },
+    {
+      "commit": "d42bec729e9e78ae5387720d29360c5d60f38192",
+      "path": "research/benchmark/STATISTICAL_ANALYSIS_PLAN.md",
+      "git_blob": "20b118923ae412e97cc1624a7d7574bbcfb94b88",
+      "bytes": 9987,
+      "sha256": "8d195cd2dcbbdcac49b9a39b022372fc3e096af1236ff04723d8ce5dd9d8bed3",
+      "status": "VERIFIED_DOCUMENT_NOT_REPRODUCED"
+    },
+    {
+      "commit": "d42bec729e9e78ae5387720d29360c5d60f38192",
+      "path": "research/benchmark/COST_AND_QUERY_BUDGET.md",
+      "git_blob": "33acd9b291010d9f683472c23eee1ee23e27da01",
+      "bytes": 4132,
+      "sha256": "2ca805038d22021eec42ce9f9dccd9ce5294c1ec649dc4a2b7e91358a734302a",
+      "status": "VERIFIED_DOCUMENT_NOT_REPRODUCED"
+    },
+    {
+      "commit": "d42bec729e9e78ae5387720d29360c5d60f38192",
+      "path": "research/benchmark/FINAL_METHOD_QC.md",
+      "git_blob": "f3dc9050953d38bbee5e4630593731e89be6cb2b",
+      "bytes": 4676,
+      "sha256": "284ec93c8da3ac4f6a6e206a9268f6d02333b554ad3786d93ac4ccd85c1607e6",
+      "status": "VERIFIED_DOCUMENT_NOT_REPRODUCED"
+    },
+    {
+      "commit": "57d703699e7c7d1c323c251c4cac9bd0ca163634",
+      "path": "src/innovation/ltt_accepted.py",
+      "git_blob": "e3ce7b65f462b0a23806b51e5d6065fade0672b6",
+      "bytes": 3079,
+      "sha256": "c2668998be0e09edb604d0db644c3f59572deab4d4a279c351f4e1aac50c260b",
+      "status": "VERIFIED_SOURCE_READ_NOT_EXECUTED"
+    },
+    {
+      "commit": "57d703699e7c7d1c323c251c4cac9bd0ca163634",
+      "path": "src/innovation/phase1/float_adapter.py",
+      "git_blob": "781e71905ccd2780105c3c0ed8182af5b39bcd71",
+      "bytes": 2562,
+      "sha256": "45e055403e348c29eacabe3b086b1477b0a7b972c4b0303a8da01a39ee5a353c",
+      "status": "VERIFIED_SOURCE_READ_NOT_EXECUTED"
+    },
+    {
+      "commit": "57d703699e7c7d1c323c251c4cac9bd0ca163634",
+      "path": "src/innovation/phase1/native_lime.py",
+      "git_blob": "aadea52ed0631180b429f2760a76734c00557782",
+      "bytes": 4013,
+      "sha256": "a07fef73707bd48bbafbbcffae24450c2c8e5a2077efed8807ff593c9c723bca",
+      "status": "VERIFIED_SOURCE_READ_NOT_EXECUTED"
+    }
+  ],
+  "boundaries": "Own phase2 docs only; no experiments/core changes/real or hidden data/commit/push/merge",
+  "remote_agent5_sha_rechecked_at_close": "2992eeee9d6436d62846e8190ed129bd3d9852ea",
+  "alternate_phase1_or_discriminative_paths_in_remote_tree": []
+}

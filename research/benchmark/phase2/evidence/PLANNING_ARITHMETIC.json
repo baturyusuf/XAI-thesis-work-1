@@ -1,0 +1,146 @@
+{
+  "status": "DETERMINISTIC_PLANNING_ARITHMETIC_NOT_EXPERIMENT",
+  "precision": 60,
+  "rows": [
+    {
+      "families": 11,
+      "threshold_cap": 9,
+      "joint_calibration_delta": "1/10",
+      "per_risk_or_coverage_test": "1/1980",
+      "log_inverse_cutoff": "7.59085212368858092028765762795272148479328959257194430884196",
+      "zero_loss_accepted_k_min": 148,
+      "zero_loss_n512_coverage_lcb_at_observed_half": "0.413901559090540845003391112282918768344416024207074079907866",
+      "M1_mean03_kl": "0.0048842955827770073855613880031130628882129345850277229545164",
+      "M1_accepted_k_strict_min": 1555,
+      "M1_conservative_k": 1556,
+      "M1_nC4096_count_tail_upper": "2.47580152406397263159248158232316915734523559757400025829059E-293",
+      "M1_loss_tail_upper": "2.86849955328710370357800630285563179347157993657645317137010E-38",
+      "generic_eta": "0.00964573416979381547686287350346220157607887207933766133011385",
+      "generic_accepted_k": 16100,
+      "generic_base_n": 24437,
+      "test_accepted_for_002_halfwidth": 7609
+    },
+    {
+      "families": 13,
+      "threshold_cap": 9,
+      "joint_calibration_delta": "1/10",
+      "per_risk_or_coverage_test": "1/2340",
+      "log_inverse_cutoff": "7.75790620835174711227920149155291078977685068339473425004244",
+      "zero_loss_accepted_k_min": 152,
+      "zero_loss_n512_coverage_lcb_at_observed_half": "0.412959318238001472790100285195732996379356996739703961613144",
+      "M1_mean03_kl": "0.0048842955827770073855613880031130628882129345850277229545164",
+      "M1_accepted_k_strict_min": 1589,
+      "M1_conservative_k": 1590,
+      "M1_nC4096_count_tail_upper": "1.22234195331540462084864496883316450398142317209388230405220E-276",
+      "M1_loss_tail_upper": "4.33831183111436018058481103475964462059097831419623143259018E-39",
+      "generic_eta": "0.00958133478705246254726085007462407095428831696268199986244267",
+      "generic_accepted_k": 16317,
+      "generic_base_n": 24765,
+      "test_accepted_for_002_halfwidth": 7818
+    },
+    {
+      "families": 17,
+      "threshold_cap": 9,
+      "joint_calibration_delta": "1/10",
+      "per_risk_or_coverage_test": "1/3060",
+      "log_inverse_cutoff": "8.02617019494642645647524866786071872055978575122027192092063",
+      "zero_loss_accepted_k_min": 157,
+      "zero_loss_n512_coverage_lcb_at_observed_half": "0.411467199123701222493233792631912757839082246508578078474378",
+      "M1_mean03_kl": "0.0048842955827770073855613880031130628882129345850277229545164",
+      "M1_accepted_k_strict_min": 1644,
+      "M1_conservative_k": 1645,
+      "M1_nC4096_count_tail_upper": "1.13063734408616247966043836267621063526630279798371163407270E-250",
+      "M1_loss_tail_upper": "2.04319514654108365931525759802934197019184726311128427116701E-40",
+      "generic_accepted_k": 16664,
+      "generic_base_n": 25288,
+      "test_accepted_for_002_halfwidth": 8153
+    }
+  ],
+  "reference_M1": {
+    "losses": [
+      "1/100",
+      "1/25",
+      "1/4"
+    ],
+    "weights": [
+      "1/3",
+      "1/3",
+      "1/3"
+    ],
+    "always_risk": "1/10",
+    "oracle_coverage": "2/3",
+    "oracle_risk": "1/40",
+    "planning_alpha": "1/20",
+    "unrestricted_randomized_oracle_coverage": "3/4",
+    "unrestricted_oracle_risk": "1/20",
+    "oracle_note": "2/3 is feasible deterministic G-only reference;3/4 upper bound allows randomized bad tie acceptance, not a calibrated policy"
+  },
+  "reference_M2": {
+    "bad_stratum_lower": "9/80",
+    "always_lower": "9/160",
+    "good_context_coverage": "1/2",
+    "good_context_risk_exact_real": "0",
+    "scope": "native LIME unpenalized-intercept affine; not native Bayes exactness",
+    "continuous_jitter_always_lower_expression": "9*cos(pi/12)^2/160",
+    "continuous_jitter_always_lower_decimal": 0.05248196448143734
+  },
+  "zero_violations_upper95_J299": 0.009969146792899286,
+  "zero_violations_upper95_J1000": 0.0029912495450953314,
+  "simulation_count": 0,
+  "model_calls": 0,
+  "thresholds_frozen": false,
+  "current_family_ceiling": 17,
+  "earlier_rows": "11 and13 are multiplicity sensitivities, not the full proposed17family registry",
+  "paired_planning_normal_approx": {
+    "contrast_cap": 17,
+    "two_sided_family_alpha": 0.05,
+    "z_critical": 2.973819901220312,
+    "power": 0.8,
+    "paired_sd_assumed": 0.1,
+    "coverage_effect_illustrative": 0.05,
+    "replicate_n": 59,
+    "equivalence_margin_illustrative": 0.02,
+    "rough_margin_n": 364,
+    "warning": "Normal approximation for planning only; unknown variance and equivalence require dedicated approval/power analysis"
+  },
+  "M4_exact_zero_score_policies": [
+    {
+      "score_probes": 1,
+      "zero_score_coverage": "4/5",
+      "zero_score_risk": "143/2000",
+      "coverage_decimal": 0.8,
+      "risk_decimal": 0.0715
+    },
+    {
+      "score_probes": 4,
+      "zero_score_coverage": "1772147/3125000",
+      "zero_score_risk": "222935/7088588",
+      "coverage_decimal": 0.56708704,
+      "risk_decimal": 0.03144984586493107
+    },
+    {
+      "score_probes": 16,
+      "zero_score_coverage": "251059618918392660121082987/762939453125000000000000000",
+      "zero_score_risk": "90421225855377834340359907/5021192378367853202421659740",
+      "coverage_decimal": 0.32906886370871563,
+      "risk_decimal": 0.01800791904427478
+    },
+    {
+      "score_probes": 64,
+      "zero_score_coverage": "252317879696815645922698962241944259340508465159249886253501463988905141130893622577081620922260101547602347/2710505431213761085018632002174854278564453125000000000000000000000000000000000000000000000000000000000000000",
+      "zero_score_risk": "10614547807538269470567882602665672866739998885162601526243562623520139525283269338982512189904401179480327/1009271518787262583690795848967777037362033860636999545014005855955620564523574490308326483689040406190409388",
+      "coverage_decimal": 0.09308886703976388,
+      "risk_decimal": 0.010517038883939454
+    }
+  ],
+  "M4_W0_policy": {
+    "coverage": "1/3",
+    "risk": "7/160",
+    "risk_decimal": 0.04375
+  },
+  "M4_W01_policy": {
+    "coverage": "2/3",
+    "risk": "17/320",
+    "risk_decimal": 0.053125
+  }
+}

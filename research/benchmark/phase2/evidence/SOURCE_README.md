@@ -1,0 +1,6 @@
+# Phase 2 source custody
+
+Source SHA/blob/hash identities are in SOURCE_VERIFICATION.json. Only immutable Git documents were read; no live Agent4/5 files. Historical SOURCE_VERIFICATION.json records that Agent5 was then missing five Phase1 documents at2992eeee. That availability gap is NOW CLOSED at32ed345318f15e0d316835e362fcbc78b16a4cda: see ../SOURCE_GATE_CLOSURE.md and REVISION_SOURCE_MAP.json. Phase1 audit ingestion does NOT endorse this Phase2 design or authorize SOLVE. No experiments or source copies/dependencies are executed.
+
+## Revision provenance
+REVISION_SOURCE_MAP.json hashes all five read published Agent5 documents; original thirteen source pins remain unchanged. Initial PLANNING_ARITHMETIC.json, REVIEW_VALIDATION.json and DELIVERABLE_MANIFEST.csv are HISTORICAL pre-revision snapshots, not current-file digest/test claims. REVISION_ARITHMETIC.json is deterministic design math only (EXACT/BOUNDED vs numerically approximated labels). Current publication hashes use UTF-8 LF normalization in REVISION_PUBLICATION_MANIFEST.csv; its self-row is excluded. No code/core/source replay, packages, experiments, tests, model calls or real/hidden-data access in this revision. All status/source scope changes are in ../REVIEW_REVISION_LOG.md.

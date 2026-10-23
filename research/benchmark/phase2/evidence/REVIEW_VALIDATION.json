@@ -1,0 +1,23 @@
+{
+  "status": "PASS_DOCUMENT_SOURCE_AND_DETERMINISTIC_PLANNING_CHECKS",
+  "review_documents": 11,
+  "payload_files": 15,
+  "source_objects_rehashed": 13,
+  "missing_Agent5_immutable_documents": 5,
+  "source_closure": "BLOCKED",
+  "tracked_files_changed": false,
+  "index_empty": true,
+  "private_path_or_secret_pattern_findings": [],
+  "benchmarks_run": 0,
+  "native_tests_run": 0,
+  "simulations_run": 0,
+  "model_calls": 0,
+  "packages_installed": 0,
+  "core_changed": false,
+  "real_hidden_data_access": false,
+  "primary_metric_frozen": false,
+  "commit_created": false,
+  "push_performed": false,
+  "solve_authorized": false,
+  "validation_scope": "Read-only Git/source/document checks and rational/60digit planning algebra, not scientific experiment/reproduction/IID proof; pattern scan is not universal secret-detection proof"
+}
