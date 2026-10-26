@@ -1,0 +1,18 @@
+{
+  "url": "https://raw.githubusercontent.com/dylan-slack/Modeling-Uncertainty-Local-Explainability/72c4330bc7d29150b55018b0946f85f7df88e107/bayes/regression.py",
+  "sha256": "f451ee33398175e6c6662fde3990975b6b53712d4b8ff86d42b80f4b8671773e",
+  "scope": "parent static source only; not executed",
+  "lines": {
+    "48": "        N = xtrain.shape[0]",
+    "51": "        s_2 = (1.0 / N) * (Y_m_Phi_hat.dot(diag_pi_z).dot(Y_m_Phi_hat) \\",
+    "52": "                     + Phi_hat.transpose().dot(Phi_hat))",
+    "54": "        self.score = s_2",
+    "56": "        self.s_2 = s_2",
+    "57": "        self.N = N",
+    "94": "        temp = np.matmul(data_ones, self.V_Phi)",
+    "95": "        mat = np.matmul(temp, data_ones.transpose())",
+    "96": "        var = self.s_2 * (q_1 + mat)",
+    "99": "        return response, np.sqrt(diag)",
+    "134": "        sigma_2 = invgamma.rvs(self.N / 2, scale=(self.N * self.s_2) / 2, size=num_samples)"
+  }
+}

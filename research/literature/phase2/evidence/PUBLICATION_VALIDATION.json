@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-26",
+  "status": "PRECOMMIT_PREFLIGHT_PASS",
+  "source_citation_checks": "cached title/arXiv/raw source SHA +23immutable Git blobs PASS; scope not exhaustive",
+  "scientific_preservation": "original8manifest verified before notices; four scientific bodies identical; negative/blocked states preserved",
+  "sources": 16,
+  "typed_matrix_rows": 22,
+  "privacy": "selected UTF8 document blobs, token/contact/private-key/personal-path heuristics PASS; no fulltext cache/environment/raw data/native code",
+  "attributed_agent5": "human-reported DESIGN REVISE / D1 REVISE first LIME-only / CONFIRMATORY BLOCKED; no new A5Phase2 artifact verified",
+  "git_safety": "own branch27bc1a7; no prior staging/tracked edits; expected GitHub origin; no active default hooks/push overrides",
+  "current_manifest": "PUBLICATION_MANIFEST.csv exact index/working byte/hash checks run after staging; excludes only itself",
+  "execution": "No new research/experiment/model/native test/code change/real-hidden data; documentation publication only",
+  "staged_whitespace_check": "PASS after trimming trailing whitespace in 26 access-note fields; records/statuses unchanged"
+}

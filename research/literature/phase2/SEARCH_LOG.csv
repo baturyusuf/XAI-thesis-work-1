@@ -1,0 +1,40 @@
+task,date,source,query_or_url,returned_count,access_status,limitations
+PARENT,2026-10-26,Crossref,https://api.crossref.org/works?query.title=GLIME%20General%20Stable%20Local%20LIME%20Explanation&rows=3,0,ERROR,"Top returned records, not exhaustive; metadata not method evidence. HTTP Error 429: Too Many Requests"
+PARENT,2026-10-26,Crossref,https://api.crossref.org/works?query.title=S-LIME%20Stabilized%20LIME%20model%20explanation&rows=3,3,OK,"Top returned records, not exhaustive; metadata not method evidence."
+PARENT,2026-10-26,OpenAlex,"https://api.openalex.org/works?search=local%20surrogate%20fidelity%20quality%20estimation&filter=from_publication_date:2024-01-01,to_publication_date:2026-10-23&per-page=5",5,OK,"Top returned records, not exhaustive; metadata not method evidence."
+PARENT,2026-10-26,OpenAlex,"https://api.openalex.org/works?search=active%20sampling%20local%20explanations&filter=from_publication_date:2024-01-01,to_publication_date:2026-10-23&per-page=5",5,OK,"Top returned records, not exhaustive; metadata not method evidence."
+PARENT,2026-10-26,OpenAlex,"https://api.openalex.org/works?search=GLIME&per-page=5&select=id,display_name,doi,publication_date,open_access,best_oa_location",5,OK,Identity/current targeted search; method claims require primary fulltext.
+PARENT,2026-10-26,OpenAlex,"https://api.openalex.org/works?search=Stabilized-LIME&per-page=5&select=id,display_name,doi,publication_date,open_access,best_oa_location",5,OK,Identity/current targeted search; method claims require primary fulltext.
+PARENT,2026-10-26,OpenAlex,"https://api.openalex.org/works?search=%22explanation%22%20%22selective%22&filter=from_publication_date:2024-01-01,to_publication_date:2026-10-23&per-page=5&select=id,display_name,doi,publication_date,open_access,best_oa_location",5,OK,Identity/current targeted search; method claims require primary fulltext.
+PARENT,2026-10-26,OpenAlex,"https://api.openalex.org/works?search=%22LIME%22%20%22sampling%22&filter=from_publication_date:2024-01-01,to_publication_date:2026-10-23&per-page=5&select=id,display_name,doi,publication_date,open_access,best_oa_location",5,OK,Identity/current targeted search; method claims require primary fulltext.
+PARENT,2026-10-26,primary fulltext,https://arxiv.org/html/2311.15722,1,OK,Fetch/read depth follows targeted passages;
+PARENT,2026-10-26,primary fulltext,https://arxiv.org/html/2010.09686,1,OK,Fetch/read depth follows targeted passages;
+PARENT,2026-10-26,primary fulltext,https://arxiv.org/html/1810.08240,1,OK,Fetch/read depth follows targeted passages;
+PARENT,2026-10-26,primary fulltext,https://arxiv.org/html/2405.19562v1,1,OK,Fetch/read depth follows targeted passages;
+PARENT,2026-10-26,identity/proceedings,"https://api.openalex.org/works?search=%22S-LIME%22&per-page=5&select=id,display_name,doi,publication_date,open_access",5,OK,"Targeted identity check, not exhaustive search"
+PARENT,2026-10-26,identity/proceedings,https://api.crossref.org/works/10.1093/jrsssb/qkad009,1,OK,"Targeted identity check, not exhaustive search"
+PARENT,2026-10-26,identity/proceedings,https://openaccess.thecvf.com/CVPR2024?day=all,3,OK,"Targeted identity check, not exhaustive search"
+PARENT,2026-10-26,primary fulltext,https://arxiv.org/html/2106.07875,1,OK,Access only; scope in SOURCE_REGISTRY.
+PARENT,2026-10-26,primary fulltext,https://arxiv.org/html/2208.01510,1,OK,Access only; scope in SOURCE_REGISTRY.
+PARENT,2026-10-26,primary fulltext,https://openaccess.thecvf.com/content/CVPR2024/html/Bora_SLICE_Stabilized_LIME_for_Consistent_Explanations_for_Image_Classification_CVPR_2024_paper.html,1,OK,Access only; scope in SOURCE_REGISTRY.
+PARENT,2026-10-26,primary fulltext,https://arxiv.org/html/2008.05030v4,1,OK,Access only; scope in SOURCE_REGISTRY.
+PARENT,2026-10-26,primary fulltext,https://arxiv.org/html/2110.01052v5,1,OK,Access only; scope in SOURCE_REGISTRY.
+PARENT,2026-10-26,author code/static provenance,https://raw.githubusercontent.com/dylan-slack/Modeling-Uncertainty-Local-Explainability/72c4330bc7d29150b55018b0946f85f7df88e107/bayes/regression.py,1,OK,No execution; author contacts omitted.
+PARENT,2026-10-26,author code/static provenance,https://raw.githubusercontent.com/dylan-slack/Modeling-Uncertainty-Local-Explainability/72c4330bc7d29150b55018b0946f85f7df88e107/bayes/explanations.py,1,OK,No execution; author contacts omitted.
+PARENT,2026-10-26,author code/static provenance,https://raw.githubusercontent.com/dylan-slack/Modeling-Uncertainty-Local-Explainability/72c4330bc7d29150b55018b0946f85f7df88e107/LICENSE,1,OK,No execution; author contacts omitted.
+PARENT,2026-10-26,author code/static provenance,https://api.github.com/repos/thutzr/GLIME-General-Stable-and-Local-LIME-Explanation/commits?per_page=1,1,OK,No execution; author contacts omitted.
+PARENT,2026-10-26,author code/static provenance,https://api.github.com/repos/ZhengzeZhou/slime/commits?per_page=1,1,OK,No execution; author contacts omitted.
+PARENT,2026-10-26,author code/static provenance,https://api.github.com/repos/WannabeSmith/betting-paper-simulations/commits?per_page=1,1,OK,No execution; author contacts omitted.
+PARENT,2026-10-26,pinned code metadata,https://api.github.com/repos/thutzr/GLIME-General-Stable-and-Local-LIME-Explanation/license?ref=03d26045f6483417353020692c108101bb0dc195,0,ERROR,HTTP Error 404: Not Found
+PARENT,2026-10-26,pinned code metadata,https://api.github.com/repos/ZhengzeZhou/slime/readme?ref=bdc44f773fb1184df5a4e4d1f9f220389ee68366,1,OK,Static source only; no paper replication
+PARENT,2026-10-26,pinned code metadata,https://api.github.com/repos/WannabeSmith/betting-paper-simulations/license?ref=cb05eef4d49336f114cff15f39bcaca74996843f,1,OK,Static source only; no paper replication
+PARENT,2026-10-26,benchmark/native source,https://arxiv.org/html/2206.11104v5,1,OK,"Targeted method/applicability reading, no execution."
+PARENT,2026-10-26,benchmark/native source,https://arxiv.org/html/2407.19897v1,1,OK,"Targeted method/applicability reading, no execution."
+PARENT,2026-10-26,benchmark/native source,https://scikit-learn.org/1.3/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html,1,OK,"Targeted method/applicability reading, no execution."
+PARENT,2026-10-26,benchmark/native source,https://pypi.org/pypi/lime/0.2.0.1/json,1,OK,"Targeted method/applicability reading, no execution."
+S10,2026-10-26,arXiv API (REPORTED),https://export.arxiv.org/api/query?search_query=all:%22local%20linear%20surrogate%22%20AND%20submittedDate:%5B202401010000%20TO%202610230000%5D&start=0&max_results=20,UNVERIFIED,ERROR_REPORTED,Agent internal-server-error; no current result inferred
+S10,2026-10-26,SemanticScholar/AAAI (REPORTED),UNVERIFIED exact request URLs,UNVERIFIED,429/403_REPORTED,No parent access claim; not included bibliography
+S11,2026-10-26,subagent partial search,UNVERIFIED exact request URLs,UNVERIFIED,USAGE_LIMIT,"No final source extraction, no evidence accepted"
+PARENT,2026-10-26,primary locator,https://proceedings.neurips.cc/paper_files/paper/2023/hash/3a46bb02e29642e3e33c3bf83fa6a48f-Abstract-Conference.html,0,404,Guessed locator failed/discarded; not bibliographic evidence; correct GLIME later verified via OpenAlex+arXiv
+PARENT,2026-10-26,publisher metadata,https://api.crossref.org/works/10.1093/jrsssb/qkad009,1,OK,"Second targeted field check: published-online2023 vs published-print2024, volume86issue1pp1-27"
+S12,2026-10-26,primary/code (REPORTED),https://arxiv.org/html/2008.05030v4,1,OK_REPORTED,Parent independently fetched primary and pinned raw files; separate logs above

@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-26",
+  "branch": "research/literature-novelty",
+  "head_unchanged": true,
+  "main_unchanged": true,
+  "tracked_files_changed": false,
+  "staged_files": 0,
+  "expected_reports": 8,
+  "csv_counts": {
+    "SEARCH_LOG.csv": 39,
+    "SOURCE_REGISTRY.csv": 16,
+    "STRONG_NULL_BASELINE_MATRIX.csv": 22
+  },
+  "git_source_manifest_rows": 23,
+  "json_snapshots_checked_before_this_report": 37,
+  "checks": [
+    "8deliverables +6research-report heading structures",
+    "16source IDs,22typed baseline rows and source crosslinks",
+    "UTF8/CSV/JSON/Markdown trailing whitespace",
+    "immutable Git source SHA256 matches",
+    "contact/credential/local-user-path heuristics",
+    "new nonignored files only in own phase2; source cache ignored"
+  ],
+  "execution_boundary": "NO native benchmark/simulation/model fit/new algorithm/new real-hidden data; no commit/merge/push",
+  "scientific_scope": "Structural/source consistency, not complete literature/novelty/theorem or performance verification"
+}

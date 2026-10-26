@@ -1,0 +1,16 @@
+{
+  "id": "slime_locality",
+  "url": "https://arxiv.org/html/2208.01510",
+  "access_date": "2026-10-26",
+  "status": "OK",
+  "sha256": "3ac9e02586ccc1b6a7cd3e6bbecece1d5677e98b9c5ad353971574f099b2c5e2",
+  "text_chars": 39328,
+  "code_urls": [
+    "https://github.com/arXiv/html_feedback/issues",
+    "https://github.com/brucemiller/LaTeXML/issues",
+    "https://github.com/brucemiller/LaTeXML/wiki/Porting-LaTeX-packages-for-LaTeXML"
+  ],
+  "pdf_links": [
+    "http://ceur-ws.org/Vol-2699/paper03.pdf"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "glime",
+  "url": "https://arxiv.org/html/2311.15722",
+  "access_date": "2026-10-26",
+  "status": "OK",
+  "sha256": "34783ac3906fca9a1ee2fa3943411ba37f5916e4dea0db7cf182702254ee9ef2",
+  "text_chars": 98094,
+  "code_urls": [
+    "https://github.com/Horizon2333/imagenet-autoencoder",
+    "https://github.com/arXiv/html_feedback/issues",
+    "https://github.com/brucemiller/LaTeXML/issues",
+    "https://github.com/brucemiller/LaTeXML/wiki/Porting-LaTeX-packages-for-LaTeXML",
+    "https://github.com/marcotcr/lime",
+    "https://github.com/thutzr/GLIME-General-Stable-and-Local-LIME-Explanation"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "bayes",
+  "url": "https://arxiv.org/html/2008.05030v4",
+  "access_date": "2026-10-26",
+  "status": "OK",
+  "sha256": "05d948ef3a5795081b8f0ac7296c59d90884524c99ec8611914195298e7277e8",
+  "text_chars": 75847,
+  "code_urls": [
+    "https://github.com/arXiv/html_feedback/issues",
+    "https://github.com/brucemiller/LaTeXML/issues",
+    "https://github.com/brucemiller/LaTeXML/wiki/Porting-LaTeX-packages-for-LaTeXML"
+  ],
+  "pdf_links": [
+    "http://papers.nips.cc/paper/9211-cxplain-causal-explanations-for-model-interpretation-under-uncertainty.pdf"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "selective",
+  "url": "https://arxiv.org/html/2405.19562v1",
+  "access_date": "2026-10-26",
+  "status": "OK",
+  "sha256": "4965b5fa6bc7f778514ab15f78cbd26f80713d8b2d2f44c18c087b62fa39814c",
+  "text_chars": 78173,
+  "code_urls": [
+    "https://github.com/arXiv/html_feedback/issues",
+    "https://github.com/brucemiller/LaTeXML/issues",
+    "https://github.com/brucemiller/LaTeXML/wiki/Porting-LaTeX-packages-for-LaTeXML"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "slime_readme",
+  "url": "https://api.github.com/repos/ZhengzeZhou/slime/readme?ref=bdc44f773fb1184df5a4e4d1f9f220389ee68366",
+  "date": "2026-10-26",
+  "status": "OK",
+  "path": "README.md",
+  "license": null,
+  "html_url": "https://github.com/zzzworks/slime/blob/bdc44f773fb1184df5a4e4d1f9f220389ee68366/README.md",
+  "short_excerpt": "# slime\n\nThis repository holds code for replicating experiments in papar [S-LIME: Stabilized-LIME for Model Explanation]() to appear in [KDD2021](https://www.kdd.org/kdd2021/). \n\nIt is built on the implementation of [LIME](https://github.com/marcotcr"
+}

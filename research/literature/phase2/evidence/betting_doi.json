@@ -1,0 +1,26 @@
+{
+  "id": "betting_doi",
+  "url": "https://api.crossref.org/works/10.1093/jrsssb/qkad009",
+  "date": "2026-10-26",
+  "status": "OK",
+  "records": [
+    {
+      "title": [
+        "Estimating means of bounded random variables by betting"
+      ],
+      "year": {
+        "date-parts": [
+          [
+            2023,
+            2,
+            16
+          ]
+        ]
+      },
+      "doi": "10.1093/jrsssb/qkad009",
+      "venue": [
+        "Journal of the Royal Statistical Society Series B: Statistical Methodology"
+      ]
+    }
+  ]
+}

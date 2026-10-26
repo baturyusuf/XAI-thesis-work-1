@@ -1,0 +1,20 @@
+{
+  "id": "ltt",
+  "url": "https://arxiv.org/html/2110.01052v5",
+  "access_date": "2026-10-26",
+  "status": "OK",
+  "sha256": "192d32c2ee55afd9bf7287e865608019dd3bded7f97e6aafa4789db9ff9f75e9",
+  "text_chars": 123111,
+  "code_urls": [
+    "https://github.com/aangelopoulos/ltt",
+    "https://github.com/arXiv/html_feedback/issues",
+    "https://github.com/brucemiller/LaTeXML/issues",
+    "https://github.com/brucemiller/LaTeXML/wiki/Porting-LaTeX-packages-for-LaTeXML",
+    "https://github.com/facebookresearch/detectron2"
+  ],
+  "pdf_links": [
+    "https://proceedings.neurips.cc/paper/2019/file/5103c3584b063c431bd1268e9b5e76fb-Paper.pdf",
+    "https://proceedings.neurips.cc/paper/2020/file/244edd7e85dc81602b7615cd705545f5-Paper.pdf",
+    "https://proceedings.neurips.cc/paper/2019/file/8fb21ee7a2207526da55a679f0332de2-Paper.pdf"
+  ]
+}

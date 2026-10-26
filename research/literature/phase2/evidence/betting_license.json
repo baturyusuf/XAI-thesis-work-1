@@ -1,0 +1,16 @@
+{
+  "id": "betting_license",
+  "url": "https://api.github.com/repos/WannabeSmith/betting-paper-simulations/license?ref=cb05eef4d49336f114cff15f39bcaca74996843f",
+  "date": "2026-10-26",
+  "status": "OK",
+  "path": "LICENSE",
+  "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause",
+    "url": "https://api.github.com/licenses/bsd-3-clause",
+    "node_id": "MDc6TGljZW5zZTU="
+  },
+  "html_url": "https://github.com/WannabeSmith/betting-paper-simulations/blob/cb05eef4d49336f114cff15f39bcaca74996843f/LICENSE",
+  "short_excerpt": "BSD 3-Clause License\n\nCopyright (c) 2021, Ian Waudby-Smith\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of sou"
+}

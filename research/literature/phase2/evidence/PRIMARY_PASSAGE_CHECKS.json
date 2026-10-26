@@ -1,0 +1,122 @@
+[
+  {
+    "source_key": "bayes",
+    "locator": "Error Uncertainty",
+    "offset": 16700,
+    "excerpt": "Error Uncertainty\nThe error term \\epsilon can serve as a proxy for explanation quality because it captures the mismatch between the constructed explanation and the local decision s"
+  },
+  {
+    "source_key": "bayes",
+    "locator": "We then evaluate",
+    "offset": 17232,
+    "excerpt": "We then evaluate the probability density function (PDF) of the above posterior at 0 , i.e., P(\\epsilon=0) by substituting the value of s^{2} computed using Eqn. ( 7 ) into the Stud"
+  },
+  {
+    "source_key": "bayes",
+    "locator": "Theorem 3.3",
+    "offset": 21155,
+    "excerpt": "Theorem 3.3 .\nGiven S seed perturbations, the number of additional perturbations required ( G ) to achieve a credible interval width W of feature importance for a data point x at u"
+  },
+  {
+    "source_key": "bayes",
+    "locator": "6 Conclusion",
+    "offset": 41791,
+    "excerpt": "6 Conclusion\nWe developed a Bayesian framework for generating local explanations along with their associated uncertainty. We instantiated this framework to obtain Bayesian versions"
+  },
+  {
+    "source_key": "glime",
+    "locator": "3.2 An alternative formulation",
+    "offset": 19448,
+    "excerpt": "3.2 An alternative formulation of Glime without the weighting function\nIndeed, we can readily transform Equation 2 into an equivalent formulation without the weighting function. Wh"
+  },
+  {
+    "source_key": "glime",
+    "locator": "4.3 Sampling distribution selection",
+    "offset": 32995,
+    "excerpt": "4.3 Sampling distribution selection for user-specific objectives\nUsers may possess specific objectives they wish the explanation method to fulfill. For instance, if a user seeks to"
+  },
+  {
+    "source_key": "slime_stability",
+    "locator": "3. Asymptotic Properties",
+    "offset": 15756,
+    "excerpt": "3. Asymptotic Properties of LARS Decisions\nConsider at any given step when LARS needs to choose a new variable to enter the model. With sample size of n , let the current residuals"
+  },
+  {
+    "source_key": "slime_stability",
+    "locator": "4. Stabilized-LIME",
+    "offset": 20156,
+    "excerpt": "4. Stabilized-LIME\nBased on the theoretical analysis developed in Section 3 , we can run LIME equipped with hypothesis testing at each step when a new variable enters. If the testi"
+  },
+  {
+    "source_key": "slime_locality",
+    "locator": "4.1 Generic Algorithm",
+    "offset": 15844,
+    "excerpt": "4.1 Generic Algorithm\nAlgorithm 1 s-LIME applied to black-box function f at target instance x\n1:\nConversion function \\eta_{x} , distribution \\nu_{\\sigma} on the surrogate space\n2:\n"
+  },
+  {
+    "source_key": "slime_locality",
+    "locator": "4.3 s-LIME and the Gradient",
+    "offset": 20281,
+    "excerpt": "4.3 s-LIME and the Gradient of the Black-Box Function\nLet us assume the surrogate function f\\circ\\eta_{x} to be differentiable at \\hat{x} .\nLet us also denote by \\hat{\\bm{\\alpha}} "
+  },
+  {
+    "source_key": "betting",
+    "locator": "2.1 Confidence sequences",
+    "offset": 18015,
+    "excerpt": "2.1 Confidence sequences and the method(s) of mixtures\nEven though the concentration inequalities thus far have been described in a setting where the sample size n is fixed in adva"
+  },
+  {
+    "source_key": "betting",
+    "locator": "4 The capital process",
+    "offset": 46907,
+    "excerpt": "4 The capital process, betting, and martingales\nIn Section 3 , we generalized the Cramer-Chernoff method to derive predictable plug-in exponential supermartingales and used this re"
+  },
+  {
+    "source_key": "cs",
+    "locator": "a uniform coverage",
+    "offset": 4417,
+    "excerpt": "a uniform coverage\nguarantee: after observing the t th unit, we calculate an updated confidence set\n\\textup{CI}_{t} for the unknown quantity of interest \\theta_{t} , with the unifo"
+  },
+  {
+    "source_key": "cs",
+    "locator": "6 Implications for sequential",
+    "offset": 78093,
+    "excerpt": "6 Implications for sequential hypothesis testing\nWe have organized our presentation around confidence sequences and closely\nrelated uniform concentration bounds\ndue to our belief t"
+  },
+  {
+    "source_key": "ltt",
+    "locator": "Theorem 1",
+    "offset": 13038,
+    "excerpt": "Theorem 1 .\nSuppose p_{j} has a distribution stochastically dominating the uniform distribution for all j under \\mathcal{H}_{j} .\nLet \\mathcal{A} be an FWER-controlling algorithm a"
+  },
+  {
+    "source_key": "ltt",
+    "locator": "3.2 Selective Classification",
+    "offset": 29286,
+    "excerpt": "3.2 Selective Classification with Accuracy Control\nFigure 4 : Numerical results of selective classification on Imagenet.\nThe violins plot the selective error over 100 data splits a"
+  },
+  {
+    "source_key": "openxai",
+    "locator": "2 Overview",
+    "offset": 14251,
+    "excerpt": "2 Overview of OpenXAI Framework\nOpenXAI provides a comprehensive programmatic environment with synthetic and real-world datasets, data processing functions, explainers, and evaluat"
+  },
+  {
+    "source_key": "openxai",
+    "locator": "faithfulness",
+    "offset": 4107,
+    "excerpt": "faithfulness (or fidelity) [ 81 , 51 , 33 ] , stability (or robustness) [ 7 , 4 ] , and fairness [ 18 , 9 ] , and proposed metrics for quantifying these notions. Many of these work"
+  },
+  {
+    "source_key": "beexai",
+    "locator": "2.1 XAI evaluation",
+    "offset": 14068,
+    "excerpt": "2.1 XAI evaluation\nThe literature has explored various metrics and desired properties. However, our purpose is not to include all available metrics, which could introduce unnecessa"
+  },
+  {
+    "source_key": "beexai",
+    "locator": "2.2 Choice of baseline",
+    "offset": 17404,
+    "excerpt": "2.2 Choice of baseline\nSome evaluation metrics require a features’ ablation process, which involves replacing (masking) specific features with a baseline value. Choosing the right "
+  }
+]

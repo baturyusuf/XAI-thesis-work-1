@@ -1,0 +1,15 @@
+{
+  "id": "slime_stability",
+  "url": "https://arxiv.org/html/2106.07875",
+  "access_date": "2026-10-26",
+  "status": "OK",
+  "sha256": "357a388d2cd6029fc4042087752f7c3c6d046dbdfc5cafb561973caf5edfd859",
+  "text_chars": 60174,
+  "code_urls": [
+    "https://github.com/ZhengzeZhou/slime",
+    "https://github.com/arXiv/html_feedback/issues",
+    "https://github.com/brucemiller/LaTeXML/issues",
+    "https://github.com/brucemiller/LaTeXML/wiki/Porting-LaTeX-packages-for-LaTeXML"
+  ],
+  "pdf_links": []
+}

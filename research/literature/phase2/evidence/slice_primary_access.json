@@ -1,0 +1,13 @@
+{
+  "id": "slice",
+  "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Bora_SLICE_Stabilized_LIME_for_Consistent_Explanations_for_Image_Classification_CVPR_2024_paper.html",
+  "access_date": "2026-10-26",
+  "status": "OK",
+  "sha256": "17a791884099cbd8d7cfda75630db0c8443426d0c3d1a4d9f7b5c27977eba4f5",
+  "text_chars": 2550,
+  "code_urls": [],
+  "pdf_links": [
+    "/content/CVPR2024/papers/Bora_SLICE_Stabilized_LIME_for_Consistent_Explanations_for_Image_Classification_CVPR_2024_paper.pdf",
+    "/content/CVPR2024/supplemental/Bora_SLICE_Stabilized_LIME_CVPR_2024_supplemental.pdf"
+  ]
+}

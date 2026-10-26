@@ -1,0 +1,16 @@
+{
+  "id": "betting",
+  "url": "https://arxiv.org/html/2010.09686",
+  "access_date": "2026-10-26",
+  "status": "OK",
+  "sha256": "4527a655d300d078b622221f179361cd93f9261d75d682fce1a1a3a5d4021093",
+  "text_chars": 215106,
+  "code_urls": [
+    "https://github.com/WannabeSmith/betting-paper-simulations",
+    "https://github.com/arXiv/html_feedback/issues",
+    "https://github.com/brucemiller/LaTeXML/issues",
+    "https://github.com/brucemiller/LaTeXML/wiki/Porting-LaTeX-packages-for-LaTeXML",
+    "https://github.com/gostevehoward/confseq",
+    "https://github.com/myphan9/small_sample_mean_bounds"
+  ]
+}
