@@ -1,0 +1,607 @@
+{
+  "schema": "agent5.phase2.m4.exact-reference.v1",
+  "status": "DERIVED_EXACT: deterministic rational enumeration, not experiments",
+  "provenance": {
+    "audit_branch": "research/independent-validation",
+    "audit_head_before_writes": "32ed345318f15e0d316835e362fcbc78b16a4cda",
+    "source_commit": "e5c9bca028ca465c3d35221a5dca9f1257b3fdd5",
+    "snapshot_prefix": "research/validation/phase2/evidence/source_snapshot/",
+    "source_identities": {
+      "research/benchmark/phase2/DISCRIMINATIVE_MECHANISMS.md": {
+        "git_blob": "df953d67f9d6c1b19171bc97f9adedadd3fd3a95",
+        "sha256": "54ad543bc72f3773a6d1174e4f9c4cdf7edb281be06c192b46e50e069e2ce09d",
+        "snapshot_matches_git_bytes": true
+      },
+      "research/benchmark/phase2/EXPERIMENT_CONTRACTS.md": {
+        "git_blob": "64ab19d3d37a900ad3e9c6be60b746645df6e616",
+        "sha256": "6ce25d732c4c1c9e84f6a3526c8302f64bb3a0721b51bdee152087c1257ad2cd",
+        "snapshot_matches_git_bytes": true
+      },
+      "research/benchmark/phase2/BASELINE_COMPARABILITY.md": {
+        "git_blob": "92de987a00007ba2f6625f90d01d9604c79dce59",
+        "sha256": "4bcfe9c45f069db78fda8e308b06f90a497bf3c95c1ed7f92eea6bd5dbb1c730",
+        "snapshot_matches_git_bytes": true
+      },
+      "research/benchmark/phase2/COST_AND_QUERY_POLICY.md": {
+        "git_blob": "4a5086bb88f82d7370aa850400acce9ff32aa238",
+        "sha256": "4ba79e79dc7873bd9fbdbcbaa6cd297248229b2a6a703647b9eb6f7ff5632e57",
+        "snapshot_matches_git_bytes": true
+      }
+    },
+    "arithmetic_basis": "Public prose transcribed into DEFINITIONS; stdlib Fraction; no Agent3 calculation files/helpers read or imported.",
+    "personnel_independence": false,
+    "disclosure": "Parent previously authored an older Agent3 draft. Fresh consultation does not remove that overlap. This is independently implemented arithmetic, not personnel-independent scientific acceptance."
+  },
+  "assumptions": {
+    "sampling": "IID units; W and probes independent conditional on G; probes IID conditional on G; fresh C/T loss draws separate from score draws.",
+    "within_interval": "Uniform location independent of G conditional on Y=I[z>=1/2]; continuous location adds no G information, but can provide randomization.",
+    "public": [
+      "W",
+      "prior",
+      "rho template",
+      "confusion law",
+      "predictor formula",
+      "supplied h",
+      "sampled z"
+    ],
+    "private": [
+      "realized G",
+      "realized rho_G",
+      "referee outputs",
+      "sampler live state"
+    ],
+    "risk_target": "Population expected true unit loss conditional on acceptance; not the mean of acceptance-selected score probes."
+  },
+  "calculation": {
+    "definitions": {
+      "g_order": [
+        "good",
+        "medium",
+        "bad"
+      ],
+      "prior": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "rho": [
+        "1/50",
+        "2/25",
+        "1/2"
+      ],
+      "loss": [
+        "1/100",
+        "1/25",
+        "1/4"
+      ],
+      "alpha": "1/20",
+      "confusion_rows_g_columns_w": [
+        [
+          "3/4",
+          "1/8",
+          "1/8"
+        ],
+        [
+          "1/8",
+          "3/4",
+          "1/8"
+        ],
+        [
+          "1/8",
+          "1/8",
+          "3/4"
+        ]
+      ],
+      "p1": "1/2+(1/2)*I[z>=1/2]",
+      "supplied_h": "1/2"
+    },
+    "m1_loss_control": {
+      "always": {
+        "coverage": "1",
+        "accepted_loss_numerator": "1/10",
+        "risk": "1/10",
+        "safe_at_alpha": false
+      },
+      "good_and_medium": {
+        "coverage": "2/3",
+        "accepted_loss_numerator": "1/60",
+        "risk": "1/40",
+        "safe_at_alpha": true
+      },
+      "randomized_true_loss_oracle": {
+        "extra_bad_mass": "1/12",
+        "accept_given_bad": "1/4",
+        "coverage": "3/4",
+        "accepted_loss_numerator": "3/80",
+        "risk": "1/20",
+        "safe_at_alpha": true
+      }
+    },
+    "sample_mean_m1_frontier": [
+      {
+        "max_count": 0,
+        "cutoff": "0",
+        "acceptance_given_g": [
+          "49/50",
+          "23/25",
+          "1/2"
+        ],
+        "coverage": "4/5",
+        "accepted_loss_numerator": "143/2500",
+        "risk": "143/2000",
+        "safe_at_alpha": false
+      },
+      {
+        "max_count": 1,
+        "cutoff": "1/2",
+        "acceptance_given_g": [
+          "1",
+          "1",
+          "1"
+        ],
+        "coverage": "1",
+        "accepted_loss_numerator": "1/10",
+        "risk": "1/10",
+        "safe_at_alpha": false
+      }
+    ],
+    "sample_mean_m4_frontier": [
+      {
+        "max_count": 0,
+        "cutoff": "0",
+        "acceptance_given_g": [
+          "5764801/6250000",
+          "279841/390625",
+          "1/16"
+        ],
+        "coverage": "1772147/3125000",
+        "accepted_loss_numerator": "44587/2500000",
+        "risk": "222935/7088588",
+        "safe_at_alpha": true
+      },
+      {
+        "max_count": 1,
+        "cutoff": "1/8",
+        "acceptance_given_g": [
+          "6235397/6250000",
+          "377177/390625",
+          "5/16"
+        ],
+        "coverage": "2370559/3125000",
+        "accepted_loss_numerator": "528019/12500000",
+        "risk": "528019/9482236",
+        "safe_at_alpha": false
+      },
+      {
+        "max_count": 2,
+        "cutoff": "1/4",
+        "acceptance_given_g": [
+          "6249803/6250000",
+          "389873/390625",
+          "11/16"
+        ],
+        "coverage": "2797441/3125000",
+        "accepted_loss_numerator": "924157/12500000",
+        "risk": "924157/11189764",
+        "safe_at_alpha": false
+      },
+      {
+        "max_count": 3,
+        "cutoff": "3/8",
+        "acceptance_given_g": [
+          "6249999/6250000",
+          "390609/390625",
+          "15/16"
+        ],
+        "coverage": "3059853/3125000",
+        "accepted_loss_numerator": "1184889/12500000",
+        "risk": "394963/4079804",
+        "safe_at_alpha": false
+      },
+      {
+        "max_count": 4,
+        "cutoff": "1/2",
+        "acceptance_given_g": [
+          "1",
+          "1",
+          "1"
+        ],
+        "coverage": "1",
+        "accepted_loss_numerator": "1/10",
+        "risk": "1/10",
+        "safe_at_alpha": false
+      }
+    ],
+    "observable_w_y_states": [
+      {
+        "id": "good:0",
+        "w": "good",
+        "y": 0,
+        "mass": "73/240",
+        "joint_g_w_y": [
+          "49/200",
+          "23/600",
+          "1/48"
+        ],
+        "posterior_g": [
+          "294/365",
+          "46/365",
+          "5/73"
+        ],
+        "accepted_loss_numerator": "1103/120000",
+        "posterior_mean_loss": "1103/36500"
+      },
+      {
+        "id": "good:1",
+        "w": "good",
+        "y": 1,
+        "mass": "7/240",
+        "joint_g_w_y": [
+          "1/200",
+          "1/300",
+          "1/48"
+        ],
+        "posterior_g": [
+          "6/35",
+          "4/35",
+          "5/7"
+        ],
+        "accepted_loss_numerator": "647/120000",
+        "posterior_mean_loss": "647/3500"
+      },
+      {
+        "id": "medium:0",
+        "w": "medium",
+        "y": 0,
+        "mass": "7/24",
+        "joint_g_w_y": [
+          "49/1200",
+          "23/100",
+          "1/48"
+        ],
+        "posterior_g": [
+          "7/50",
+          "138/175",
+          "1/14"
+        ],
+        "accepted_loss_numerator": "889/60000",
+        "posterior_mean_loss": "127/2500"
+      },
+      {
+        "id": "medium:1",
+        "w": "medium",
+        "y": 1,
+        "mass": "1/24",
+        "joint_g_w_y": [
+          "1/1200",
+          "1/50",
+          "1/48"
+        ],
+        "posterior_g": [
+          "1/50",
+          "12/25",
+          "1/2"
+        ],
+        "accepted_loss_numerator": "361/60000",
+        "posterior_mean_loss": "361/2500"
+      },
+      {
+        "id": "bad:0",
+        "w": "bad",
+        "y": 0,
+        "mass": "49/240",
+        "joint_g_w_y": [
+          "49/1200",
+          "23/600",
+          "1/8"
+        ],
+        "posterior_g": [
+          "1/5",
+          "46/245",
+          "30/49"
+        ],
+        "accepted_loss_numerator": "3983/120000",
+        "posterior_mean_loss": "569/3500"
+      },
+      {
+        "id": "bad:1",
+        "w": "bad",
+        "y": 1,
+        "mass": "31/240",
+        "joint_g_w_y": [
+          "1/1200",
+          "1/300",
+          "1/8"
+        ],
+        "posterior_g": [
+          "1/155",
+          "4/155",
+          "30/31"
+        ],
+        "accepted_loss_numerator": "3767/120000",
+        "posterior_mean_loss": "3767/15500"
+      }
+    ],
+    "posterior_score_threshold_frontier": [
+      {
+        "cutoff": "1103/36500",
+        "accepted_states": [
+          "good:0"
+        ],
+        "coverage": "73/240",
+        "accepted_loss_numerator": "1103/120000",
+        "risk": "1103/36500",
+        "safe_at_alpha": true
+      },
+      {
+        "cutoff": "127/2500",
+        "accepted_states": [
+          "good:0",
+          "medium:0"
+        ],
+        "coverage": "143/240",
+        "accepted_loss_numerator": "2881/120000",
+        "risk": "2881/71500",
+        "safe_at_alpha": true
+      },
+      {
+        "cutoff": "361/2500",
+        "accepted_states": [
+          "good:0",
+          "medium:0",
+          "medium:1"
+        ],
+        "coverage": "51/80",
+        "accepted_loss_numerator": "1201/40000",
+        "risk": "1201/25500",
+        "safe_at_alpha": true
+      },
+      {
+        "cutoff": "569/3500",
+        "accepted_states": [
+          "good:0",
+          "medium:0",
+          "medium:1",
+          "bad:0"
+        ],
+        "coverage": "101/120",
+        "accepted_loss_numerator": "3793/60000",
+        "risk": "3793/50500",
+        "safe_at_alpha": false
+      },
+      {
+        "cutoff": "647/3500",
+        "accepted_states": [
+          "good:0",
+          "medium:0",
+          "medium:1",
+          "bad:0",
+          "good:1"
+        ],
+        "coverage": "209/240",
+        "accepted_loss_numerator": "8233/120000",
+        "risk": "8233/104500",
+        "safe_at_alpha": false
+      },
+      {
+        "cutoff": "3767/15500",
+        "accepted_states": [
+          "good:0",
+          "medium:0",
+          "medium:1",
+          "bad:0",
+          "good:1",
+          "bad:1"
+        ],
+        "coverage": "1",
+        "accepted_loss_numerator": "1/10",
+        "risk": "1/10",
+        "safe_at_alpha": false
+      }
+    ],
+    "deterministic_six_state_subsets_checked": 63,
+    "safe_deterministic_six_state_subsets": [
+      {
+        "accepted_states": [
+          "good:0"
+        ],
+        "coverage": "73/240",
+        "accepted_loss_numerator": "1103/120000",
+        "risk": "1103/36500",
+        "safe_at_alpha": true
+      },
+      {
+        "accepted_states": [
+          "good:0",
+          "good:1"
+        ],
+        "coverage": "1/3",
+        "accepted_loss_numerator": "7/480",
+        "risk": "7/160",
+        "safe_at_alpha": true
+      },
+      {
+        "accepted_states": [
+          "good:0",
+          "medium:0"
+        ],
+        "coverage": "143/240",
+        "accepted_loss_numerator": "2881/120000",
+        "risk": "2881/71500",
+        "safe_at_alpha": true
+      },
+      {
+        "accepted_states": [
+          "good:0",
+          "medium:1"
+        ],
+        "coverage": "83/240",
+        "accepted_loss_numerator": "73/4800",
+        "risk": "73/1660",
+        "safe_at_alpha": true
+      },
+      {
+        "accepted_states": [
+          "good:0",
+          "good:1",
+          "medium:0"
+        ],
+        "coverage": "5/8",
+        "accepted_loss_numerator": "147/5000",
+        "risk": "147/3125",
+        "safe_at_alpha": true
+      },
+      {
+        "accepted_states": [
+          "good:0",
+          "medium:0",
+          "medium:1"
+        ],
+        "coverage": "51/80",
+        "accepted_loss_numerator": "1201/40000",
+        "risk": "1201/25500",
+        "safe_at_alpha": true
+      }
+    ],
+    "w_only_state_means": [
+      {
+        "w": "good",
+        "coverage": "1/3",
+        "accepted_loss_numerator": "7/480",
+        "risk": "7/160",
+        "safe_at_alpha": true
+      },
+      {
+        "w": "medium",
+        "coverage": "1/3",
+        "accepted_loss_numerator": "1/48",
+        "risk": "1/16",
+        "safe_at_alpha": false
+      },
+      {
+        "w": "bad",
+        "coverage": "1/3",
+        "accepted_loss_numerator": "31/480",
+        "risk": "31/160",
+        "safe_at_alpha": false
+      }
+    ],
+    "w_only_threshold_frontier": [
+      {
+        "accepted_w": [
+          "good"
+        ],
+        "coverage": "1/3",
+        "accepted_loss_numerator": "7/480",
+        "risk": "7/160",
+        "safe_at_alpha": true
+      },
+      {
+        "accepted_w": [
+          "good",
+          "medium"
+        ],
+        "coverage": "2/3",
+        "accepted_loss_numerator": "17/480",
+        "risk": "17/320",
+        "safe_at_alpha": false
+      },
+      {
+        "accepted_w": [
+          "good",
+          "medium",
+          "bad"
+        ],
+        "coverage": "1",
+        "accepted_loss_numerator": "1/10",
+        "risk": "1/10",
+        "safe_at_alpha": false
+      }
+    ],
+    "w_only_randomized_boundary_construction": {
+      "accept_w_good": "1",
+      "accept_w_medium": "1/2",
+      "accept_w_bad": "0",
+      "coverage": "1/2",
+      "accepted_loss_numerator": "1/40",
+      "risk": "1/20",
+      "safe_at_alpha": true
+    },
+    "one_probe_randomized_boundary_construction": {
+      "fully_accepted_states": [
+        "good:0",
+        "medium:0",
+        "medium:1"
+      ],
+      "boundary_state": "bad:0",
+      "boundary_acceptance_probability": "111/1379",
+      "extra_population_mass": "259/15760",
+      "coverage": "5153/7880",
+      "accepted_loss_numerator": "5153/157600",
+      "risk": "1/20",
+      "safe_at_alpha": true
+    },
+    "nulls": {
+      "always": {
+        "coverage": "1",
+        "accepted_loss_numerator": "1/10",
+        "risk": "1/10",
+        "safe_at_alpha": false
+      },
+      "reject_all": {
+        "coverage": "0",
+        "accepted_loss_numerator": "0",
+        "risk": null,
+        "safe_at_alpha": null
+      },
+      "independent_random_positive_coverage_risk": "1/10",
+      "probe_event_positive_only": {
+        "coverage": "1/5",
+        "accepted_loss_numerator": "107/2500",
+        "risk": "107/500",
+        "safe_at_alpha": false
+      }
+    }
+  },
+  "scope": {
+    "exclusion": "Only nonempty GLOBAL deterministic thresholds of q_m=count/(2m) at m=1 are excluded; not all one-probe algorithms, minimax, or LTT certificates.",
+    "strong_null": "Analytic observable-W and W+probe scores are established known-law alternatives, not a new XAI algorithm.",
+    "boundary_constructions": "Randomized known-law population references; no finite-sample statistical certificate. Extra policies/tiers/controllers require explicit registration or separate analytic identity.",
+    "experiments": false,
+    "simulation": false,
+    "native_calls": false,
+    "benchmark_execution": false,
+    "installs": false,
+    "finite_sample_certificate": false,
+    "new_xai_algorithm": false
+  },
+  "cost_requirements_not_measurements": {
+    "W_only": {
+      "sampler_draws": 0,
+      "additional_predictor_queries": 0,
+      "W_feature_reads": 1
+    },
+    "W_plus_one_probe": {
+      "sampler_draws": 1,
+      "indicator_evaluations": 1,
+      "optimized_additional_predictor_queries": 0,
+      "logical_predictor_rows_if_explicitly_called": 1
+    },
+    "sample_mean_m": "m sampler draws and m indicators; public formula permits zero predictor API calls. If called, record requested rows, actual uncached rows, callbacks and duplicates separately.",
+    "runtime_and_actual_float_duplicates": "NOT_MEASURED",
+    "other_costs": "Feature access, sampler, arithmetic, proof/conformance, any B estimation, C if used, and referee cost remain visible."
+  },
+  "registry_audit": {
+    "analytic_W_eligible": true,
+    "analytic_W_plus_probe_eligible": true,
+    "active_M4_family_ids_and_final_allocations_present": false,
+    "native_Bayes_h_B_posterior_applicable_to_supplied_M4": false,
+    "native_max_families": 17,
+    "threshold_cap_per_family": 9,
+    "risk_plus_coverage_events_in_full_native_cell": 306,
+    "per_event_cutoff": "1/3060",
+    "joint_error_scope": "1/10 per declared cell, not studywide",
+    "needed": "Freeze supplied-bank IDs and distinguish W-only/W+probe, known/estimated law, fixed m, grid and controller before C; explicitly budget additional variants/randomization and cross-cell inference.",
+    "known_law_analytic_regime": "Safety proof plus conformance may need no C; separate from score+HB calibration and its multiplicity."
+  }
+}

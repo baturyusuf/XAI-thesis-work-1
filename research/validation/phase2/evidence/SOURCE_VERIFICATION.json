@@ -1,0 +1,224 @@
+{
+  "agent3_phase2_commit": "e5c9bca028ca465c3d35221a5dca9f1257b3fdd5",
+  "agent5_base": "32ed345318f15e0d316835e362fcbc78b16a4cda",
+  "agent4_implementation": "57d703699e7c7d1c323c251c4cac9bd0ca163634",
+  "agent4_handoff": "61206e3f1532f241109320e359df1a136a7250cc",
+  "files": [
+    {
+      "path": "research/benchmark/phase2/ADMISSION_AND_POWER_GATES.md",
+      "bytes": 13607,
+      "sha256": "a1088369250c77fad8d265e8193463f558c554e04a86cb6a21447102fd7ca134",
+      "git_blob": "0bb2e775d3ce765bc1dd63ed4d637d3fea67fd54"
+    },
+    {
+      "path": "research/benchmark/phase2/AGENT4_IMPLEMENTATION_HANDOFF.md",
+      "bytes": 7556,
+      "sha256": "8d6330706efc2f5d17f81792ba85b307190b1eee14db60c01a37d2b0e4642e4f",
+      "git_blob": "63eb47781170bc363dbedad8d9c3e0235445a92d"
+    },
+    {
+      "path": "research/benchmark/phase2/AGENT5_REVIEW_REQUIREMENTS.md",
+      "bytes": 5932,
+      "sha256": "1c2ef3b33b341668f63acc9cee92e87bda5483acd973353d84db9bf4b8d88890",
+      "git_blob": "9d3711fcda97a37533c1c71bfe71086e98dc889e"
+    },
+    {
+      "path": "research/benchmark/phase2/BASELINE_COMPARABILITY.md",
+      "bytes": 13876,
+      "sha256": "4bcfe9c45f069db78fda8e308b06f90a497bf3c95c1ed7f92eea6bd5dbb1c730",
+      "git_blob": "92de987a00007ba2f6625f90d01d9604c79dce59"
+    },
+    {
+      "path": "research/benchmark/phase2/COST_AND_QUERY_POLICY.md",
+      "bytes": 9631,
+      "sha256": "4ba79e79dc7873bd9fbdbcbaa6cd297248229b2a6a703647b9eb6f7ff5632e57",
+      "git_blob": "4a5086bb88f82d7370aa850400acce9ff32aa238"
+    },
+    {
+      "path": "research/benchmark/phase2/DISCRIMINATIVE_MECHANISMS.md",
+      "bytes": 17804,
+      "sha256": "54ad543bc72f3773a6d1174e4f9c4cdf7edb281be06c192b46e50e069e2ce09d",
+      "git_blob": "df953d67f9d6c1b19171bc97f9adedadd3fd3a95"
+    },
+    {
+      "path": "research/benchmark/phase2/EXPERIMENT_CONTRACTS.md",
+      "bytes": 9903,
+      "sha256": "6ce25d732c4c1c9e84f6a3526c8302f64bb3a0721b51bdee152087c1257ad2cd",
+      "git_blob": "64ab19d3d37a900ad3e9c6be60b746645df6e616"
+    },
+    {
+      "path": "research/benchmark/phase2/FALSIFICATION_AND_NEGATIVE_CONTROLS.md",
+      "bytes": 7289,
+      "sha256": "3df01736d1fee9e66fc7fa5c38ab51eeb34571a7a70be9d37698c82b67c452a9",
+      "git_blob": "3f7943ef95cf727de87fcb5b63c113aee0754fa3"
+    },
+    {
+      "path": "research/benchmark/phase2/OPEN_DECISIONS.md",
+      "bytes": 6274,
+      "sha256": "c7b6d911787c1d15cac28ce05b912ec9facee89743e5193d0a23dbdf2ed1f05c",
+      "git_blob": "c0af613d3cbaba3559ccd84c395ac4be80c87848"
+    },
+    {
+      "path": "research/benchmark/phase2/POWER_AND_EFFECT_PLANNING.md",
+      "bytes": 9955,
+      "sha256": "0063b903b00e99ef94f8a951287f2fce59c13aa1b6ca9987d9642b57f1647ca3",
+      "git_blob": "4a792232cfc99cdc444295445f794fafae299014"
+    },
+    {
+      "path": "research/benchmark/phase2/REVIEW_REPORT.md",
+      "bytes": 14308,
+      "sha256": "677cb0cca27dece82431de196fec6a94e3917ec114a4aed79719889b328de8fa",
+      "git_blob": "68fd5ae43e285fca0f1639e767bceb2dd0607f49"
+    },
+    {
+      "path": "research/benchmark/phase2/REVIEW_REVISION_LOG.md",
+      "bytes": 5791,
+      "sha256": "638652c8c4411a181d092aabc3fe02dd3be38d3069df06df00cd11755b83d2d9",
+      "git_blob": "008352a217d30d8a2a248a8c29918ad8c5f91933"
+    },
+    {
+      "path": "research/benchmark/phase2/RISK_COVERAGE_STATISTICAL_PLAN.md",
+      "bytes": 9721,
+      "sha256": "dddc03baa0f5b5755bdba3d64d62b624135063cbc1ec1521aa9e52265a0a0166",
+      "git_blob": "8f78616bfc21c93bf32808cbbb842dabf904668a"
+    },
+    {
+      "path": "research/benchmark/phase2/SOURCE_GATE_CLOSURE.md",
+      "bytes": 4194,
+      "sha256": "84e0a86a408758da3443685aada4377c0d7b451f52bbb2efc351e42d4530c9da",
+      "git_blob": "964fb77a2e5355d76aa634526e240a050c42b0c7"
+    },
+    {
+      "path": "research/benchmark/phase2/evidence/DELIVERABLE_MANIFEST.csv",
+      "bytes": 1887,
+      "sha256": "6c4848ff363285886e06911edb65ce4b10f4dad0156a7a0b963f6748dfd089d6",
+      "git_blob": "200557161207020138e406af74206ce6e0ee5daf"
+    },
+    {
+      "path": "research/benchmark/phase2/evidence/PLANNING_ARITHMETIC.json",
+      "bytes": 6120,
+      "sha256": "d938bbe7d47d276d162a9deb1a0216d2db489d45ae516411c2506b0929c91e4c",
+      "git_blob": "51e328f76f508dd5a25c8a6652f1a37b57dece53"
+    },
+    {
+      "path": "research/benchmark/phase2/evidence/REVIEW_VALIDATION.json",
+      "bytes": 836,
+      "sha256": "5dccb9fef4e9ce4fdffd834f0906468457c8a1bb6e16ae90b90c9af6d54a7360",
+      "git_blob": "8484ca6eabad07ce7732022f1eac5ef3cedb4bc6"
+    },
+    {
+      "path": "research/benchmark/phase2/evidence/REVISION_ARITHMETIC.json",
+      "bytes": 3782,
+      "sha256": "4cf7bfbed192cb9a959b0bbfedf947dccc53b9bf74c11fba5e46916a1a0415f4",
+      "git_blob": "0fccd75d22ce49570f43b53d71c8855957d5c9b3"
+    },
+    {
+      "path": "research/benchmark/phase2/evidence/REVISION_PUBLICATION_MANIFEST.csv",
+      "bytes": 3044,
+      "sha256": "2d2bf3a3e693f8de04786e74c5d2ed57339fc02cfac2f1541c43082e6725ed75",
+      "git_blob": "fb70177a1a22327a8877469a75cc687069387073"
+    },
+    {
+      "path": "research/benchmark/phase2/evidence/REVISION_SOURCE_MAP.json",
+      "bytes": 5224,
+      "sha256": "1c5572a393a32796433709638096afd1a3159f24521feef8768a69515002a506",
+      "git_blob": "24d136a51a345f6923c8cc804797ce476d287655"
+    },
+    {
+      "path": "research/benchmark/phase2/evidence/REVISION_VALIDATION.json",
+      "bytes": 1580,
+      "sha256": "2a0ce1e9156ac1f1ac697f8d5aa6e42a170e3938c9c0aa4ff544c86602e530f4",
+      "git_blob": "b8bdcca3eb8a1ffe4cbe06db133f43d51cc03fa4"
+    },
+    {
+      "path": "research/benchmark/phase2/evidence/REVISION_WHITELIST.txt",
+      "bytes": 1396,
+      "sha256": "007a318c60f5c12401221583232e3c66b8fe8b7848baa2ec00cdb92c8eec1152",
+      "git_blob": "690c994d6ad60bcadae5e5e6288c1ab9be2d9064"
+    },
+    {
+      "path": "research/benchmark/phase2/evidence/SOURCE_README.md",
+      "bytes": 1258,
+      "sha256": "58a9f247fbf1edb98279bac0e3a26b5d98f07df095cb9d75c5f9b2426e9bf64d",
+      "git_blob": "82d6813c71d5da0807c0f9085b031b7f211e652a"
+    },
+    {
+      "path": "research/benchmark/phase2/evidence/SOURCE_VERIFICATION.json",
+      "bytes": 5711,
+      "sha256": "56d1de633f7f494eec8d14849e7e5815578be0b03b14101aac1432f36e7cb0da",
+      "git_blob": "1b334c20013e8425d4d47871070c031d6ecf02c7"
+    },
+    {
+      "path": "research/benchmark/phase2/evidence/SUBAGENT_TASK_LOG.md",
+      "bytes": 2977,
+      "sha256": "310aa50ee810eb1bd31f197f5da59ca26a48f9bcf3e9b99fe3cec1e973756bcc",
+      "git_blob": "03de0ddb07cddbfb4eca8a4df019e1fa2f4ae547"
+    }
+  ],
+  "manifest_checks": [
+    {
+      "path": "research/benchmark/phase2/evidence/DELIVERABLE_MANIFEST.csv",
+      "rows": 15,
+      "matched_current_payloads": 0,
+      "mismatched_current_payloads": [
+        "research/benchmark/phase2/AGENT4_IMPLEMENTATION_HANDOFF.md",
+        "research/benchmark/phase2/AGENT5_REVIEW_REQUIREMENTS.md",
+        "research/benchmark/phase2/BASELINE_COMPARABILITY.md",
+        "research/benchmark/phase2/COST_AND_QUERY_POLICY.md",
+        "research/benchmark/phase2/DISCRIMINATIVE_MECHANISMS.md",
+        "research/benchmark/phase2/evidence/PLANNING_ARITHMETIC.json",
+        "research/benchmark/phase2/evidence/SOURCE_README.md",
+        "research/benchmark/phase2/evidence/SOURCE_VERIFICATION.json",
+        "research/benchmark/phase2/evidence/SUBAGENT_TASK_LOG.md",
+        "research/benchmark/phase2/EXPERIMENT_CONTRACTS.md",
+        "research/benchmark/phase2/FALSIFICATION_AND_NEGATIVE_CONTROLS.md",
+        "research/benchmark/phase2/OPEN_DECISIONS.md",
+        "research/benchmark/phase2/POWER_AND_EFFECT_PLANNING.md",
+        "research/benchmark/phase2/REVIEW_REPORT.md",
+        "research/benchmark/phase2/RISK_COVERAGE_STATISTICAL_PLAN.md"
+      ],
+      "scope": "EXPLICITLY_HISTORICAL_PRE_REVISION",
+      "interpretation": "Current revision manifest verified; historical mismatches expected after documented revisions, not corruption"
+    },
+    {
+      "path": "research/benchmark/phase2/evidence/REVISION_PUBLICATION_MANIFEST.csv",
+      "rows": 24,
+      "matched_current_payloads": 24,
+      "mismatched_current_payloads": [],
+      "scope": "CURRENT_UTF8_LF_PUBLICATION",
+      "interpretation": "Current revision manifest verified; historical mismatches expected after documented revisions, not corruption"
+    }
+  ],
+  "source": "Immutable Git blobs only; no live Agent3/4 files",
+  "agent5_published_source_gate": "CLOSED_AT_32ed345",
+  "independence_disclosure": "Parent conversation contributed earlier Agent3 draft. Fresh reference arithmetic can be implementation-independent but not a personnel-independent signoff; separate uninvolved reviewer needed for strict independent acceptance",
+  "source_executed": false,
+  "experiments": 0,
+  "phase1_publication_map_independently_verified": [
+    {
+      "commit": "32ed345318f15e0d316835e362fcbc78b16a4cda",
+      "path": "research/validation/PHASE1_INDEPENDENT_AUDIT_REPORT.md",
+      "sha256": "15c3a0fa513af65fe29fa269fd23e3cd130d2941f28f3f1b42ce48b1476853d7"
+    },
+    {
+      "commit": "32ed345318f15e0d316835e362fcbc78b16a4cda",
+      "path": "research/validation/DISCRIMINATIVE_BENCHMARK_REQUIREMENTS.md",
+      "sha256": "829ff05867ca051c3ee56a15d17e550beb4fae3dfe92f8b514c8695326a38a65"
+    },
+    {
+      "commit": "32ed345318f15e0d316835e362fcbc78b16a4cda",
+      "path": "research/validation/PHASE1_H2_STATISTICAL_AUDIT.md",
+      "sha256": "eacc8e9e9967499d1fe579fcf7390ebf8cc9f2437f7a2d93990ab8d22da255a9"
+    },
+    {
+      "commit": "32ed345318f15e0d316835e362fcbc78b16a4cda",
+      "path": "research/validation/PHASE1_LOSS_AND_CLIPPING_AUDIT.md",
+      "sha256": "3071a5b08b8c742c226f5d7b66495f3cfb8d275247094b7fcd4b2478fda2d6d8"
+    },
+    {
+      "commit": "32ed345318f15e0d316835e362fcbc78b16a4cda",
+      "path": "research/validation/PHASE1_COST_AUDIT.md",
+      "sha256": "22d2c69ee9fabbe5b5674ee1d55ea46db03563e187a8305f00e0d3d3bf632c68"
+    }
+  ]
+}

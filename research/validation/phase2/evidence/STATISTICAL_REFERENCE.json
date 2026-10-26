@@ -1,0 +1,64 @@
+{
+  "scope": "independent formula evaluation; no Agent3 helper or numerical JSON used; ideal IID fixed policies only; no simulations",
+  "arithmetic": {
+    "families": 17,
+    "thresholds_per_family": 9,
+    "risk_and_coverage_events": 2,
+    "reserved_threshold_slots": 153,
+    "events": 306,
+    "per_event_delta": "1/3060",
+    "per_cell_joint_delta": "1/10",
+    "risk_budget": "1/20",
+    "coverage_budget": "1/20",
+    "log_3060_approx": "8.026170194946426456475248667860718720559785751220271920920634315618247"
+  },
+  "zero_loss": {
+    "p_formula": "(19/20)^K; strict p < 1/3060",
+    "first_risk_only_K": 157,
+    "K156_rejects": false,
+    "K157_rejects": true,
+    "coverage_LCB_formula": "max(0,K/n-sqrt(ln(3060)/(2*n)))",
+    "c_min": "1/10",
+    "minimum_K_n512": 97,
+    "minimum_K_n4096": 538,
+    "LCB_at_K157_n512_approx": "0.2181078241237012224932337926319127578390822465085780784743774493305757",
+    "LCB_at_K157_n4096_approx": "0.00702900619646540870560445003382180766444173627697705835914633027840137"
+  },
+  "generic_calibration": {
+    "gamma": "1/40",
+    "coverage": "2/3",
+    "beta_loss": "1/20",
+    "beta_count": "1/20",
+    "eta_formula": "gamma*sqrt(ln20)/(sqrt(ln3060)+sqrt(ln20))",
+    "accepted_k0_formula": "ceil((sqrt(ln3060)+sqrt(ln20))^2/(2*gamma^2))",
+    "accepted_k0_sufficient": 16664,
+    "minimum_n_satisfying_both_count_and_coverage_sufficient_inequalities": 25288,
+    "not_necessary_or_native_power": true
+  },
+  "test_precision": {
+    "policies": 17,
+    "beta_CI": "1/20",
+    "two_sided_halfwidth": "1/50",
+    "accepted_K_formula": "ceil(ln(2*17/(1/20))/(2*(1/50)^2))",
+    "accepted_K_sufficient": 8153,
+    "beta_count": "1/20",
+    "count_sufficient_T_at_c_1_10": 85101,
+    "count_sufficient_T_at_c_1_2": 16622,
+    "CI_coverage_conditional_on_K": "at least 0.95 for fixed T-independent policies; not a 0.95 joint precision-attainment claim"
+  },
+  "m2": {
+    "exact_real_lower_bound": "9(2+sqrt(3))/640",
+    "lower_bound_approx": "0.05248196448143733694022971417742633016013319888170847758203478564854281",
+    "gap_above_alpha_approx": "0.00248196448143733694022971417742633016013319888170847758203478564854281",
+    "single_policy_one_sided_95_percent_hoeffding_precision_count": "ceil(ln20/(2*gap^2))",
+    "count": 243155,
+    "not_actual_native_risk_or_high_power": true
+  },
+  "classification": {
+    "rational_counts_and_allocations": "EXACT under declared registry",
+    "population_M2_bound": "BOUNDED exact-real under Q_J premises",
+    "integer_log_sizing": "SUFFICIENT ceilings under IID, fixed-policy and bounded-loss premises",
+    "decimal_values": "NUMERICALLY_APPROXIMATED using 70-digit Decimal",
+    "J1000_R64": "ONLY_PROPOSED; no native power verified"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "status": "PASS_PARENT_DETERMINISTIC_REDERIVATION",
+  "no_Agent3_helpers_imported": true,
+  "m4_zero_score": [
+    {
+      "m": 1,
+      "coverage": "4/5",
+      "numerator": "143/2500",
+      "risk": "143/2000"
+    },
+    {
+      "m": 4,
+      "coverage": "1772147/3125000",
+      "numerator": "44587/2500000",
+      "risk": "222935/7088588"
+    }
+  ],
+  "observable_one_probe": {
+    "coverage": "51/80",
+    "risk": "1201/25500",
+    "policy": "W=medium OR (W=good AND event=0)",
+    "finite_sample_certificate": false
+  },
+  "risk_zero_count": 157,
+  "coverage_count": {
+    "512": 97,
+    "4096": 538
+  },
+  "generic_accepted_count": 16664,
+  "generic_C": 25288,
+  "T_accepted_precision": 8153,
+  "T_at_c01": 85101,
+  "M2_bound_approx": "0.0524819644814373369402297141774263301601331988817084775820347856485428080502800005214536183",
+  "M2_gap_approx": "0.0024819644814373369402297141774263301601331988817084775820347856485428080502800005214536183",
+  "M2_gap_precision_sufficient_n": 243155,
+  "D1_source_two_bank_both_grid_rows": 39040,
+  "D1_recommended_LIME_only_both_grid_rows": 19520,
+  "experiments": 0,
+  "native_calls": 0,
+  "scope": "Exact rational identities and90digit Decimal planning, not native risk/power measurement"
+}

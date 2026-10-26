@@ -1,0 +1,456 @@
+{
+  "schema": "m2_mathematical_consultant_reference_v1",
+  "review_date": "2026-10-23",
+  "authority": {
+    "role": "fresh mathematical consultant, not final Agent5 authority",
+    "parent_contributed_to_earlier_agent3_draft": true,
+    "personnel_independent_signoff": false,
+    "final_acceptance": "PENDING_DISTINCT_AUTHORIZED_REVIEWER"
+  },
+  "custody": {
+    "source_commit": "e5c9bca028ca465c3d35221a5dca9f1257b3fdd5",
+    "branch_verified_before_write": "research/independent-validation",
+    "head_verified_before_write": "32ed345318f15e0d316835e362fcbc78b16a4cda",
+    "snapshot_root_project_relative": "research/validation/phase2/evidence/source_snapshot/research/benchmark/phase2",
+    "source_file_count": 25,
+    "all_files_byte_identical_to_git_blobs": true,
+    "planning_arithmetic_or_original_helpers_used": false,
+    "json_sources_hashed_as_opaque_bytes_only": true,
+    "files": [
+      {
+        "source_path": "research/benchmark/phase2/ADMISSION_AND_POWER_GATES.md",
+        "git_blob": "0bb2e775d3ce765bc1dd63ed4d637d3fea67fd54",
+        "sha256": "a1088369250c77fad8d265e8193463f558c554e04a86cb6a21447102fd7ca134",
+        "bytes": 13607
+      },
+      {
+        "source_path": "research/benchmark/phase2/AGENT4_IMPLEMENTATION_HANDOFF.md",
+        "git_blob": "63eb47781170bc363dbedad8d9c3e0235445a92d",
+        "sha256": "8d6330706efc2f5d17f81792ba85b307190b1eee14db60c01a37d2b0e4642e4f",
+        "bytes": 7556
+      },
+      {
+        "source_path": "research/benchmark/phase2/AGENT5_REVIEW_REQUIREMENTS.md",
+        "git_blob": "9d3711fcda97a37533c1c71bfe71086e98dc889e",
+        "sha256": "1c2ef3b33b341668f63acc9cee92e87bda5483acd973353d84db9bf4b8d88890",
+        "bytes": 5932
+      },
+      {
+        "source_path": "research/benchmark/phase2/BASELINE_COMPARABILITY.md",
+        "git_blob": "92de987a00007ba2f6625f90d01d9604c79dce59",
+        "sha256": "4bcfe9c45f069db78fda8e308b06f90a497bf3c95c1ed7f92eea6bd5dbb1c730",
+        "bytes": 13876
+      },
+      {
+        "source_path": "research/benchmark/phase2/COST_AND_QUERY_POLICY.md",
+        "git_blob": "4a5086bb88f82d7370aa850400acce9ff32aa238",
+        "sha256": "4ba79e79dc7873bd9fbdbcbaa6cd297248229b2a6a703647b9eb6f7ff5632e57",
+        "bytes": 9631
+      },
+      {
+        "source_path": "research/benchmark/phase2/DISCRIMINATIVE_MECHANISMS.md",
+        "git_blob": "df953d67f9d6c1b19171bc97f9adedadd3fd3a95",
+        "sha256": "54ad543bc72f3773a6d1174e4f9c4cdf7edb281be06c192b46e50e069e2ce09d",
+        "bytes": 17804
+      },
+      {
+        "source_path": "research/benchmark/phase2/EXPERIMENT_CONTRACTS.md",
+        "git_blob": "64ab19d3d37a900ad3e9c6be60b746645df6e616",
+        "sha256": "6ce25d732c4c1c9e84f6a3526c8302f64bb3a0721b51bdee152087c1257ad2cd",
+        "bytes": 9903
+      },
+      {
+        "source_path": "research/benchmark/phase2/FALSIFICATION_AND_NEGATIVE_CONTROLS.md",
+        "git_blob": "3f7943ef95cf727de87fcb5b63c113aee0754fa3",
+        "sha256": "3df01736d1fee9e66fc7fa5c38ab51eeb34571a7a70be9d37698c82b67c452a9",
+        "bytes": 7289
+      },
+      {
+        "source_path": "research/benchmark/phase2/OPEN_DECISIONS.md",
+        "git_blob": "c0af613d3cbaba3559ccd84c395ac4be80c87848",
+        "sha256": "c7b6d911787c1d15cac28ce05b912ec9facee89743e5193d0a23dbdf2ed1f05c",
+        "bytes": 6274
+      },
+      {
+        "source_path": "research/benchmark/phase2/POWER_AND_EFFECT_PLANNING.md",
+        "git_blob": "4a792232cfc99cdc444295445f794fafae299014",
+        "sha256": "0063b903b00e99ef94f8a951287f2fce59c13aa1b6ca9987d9642b57f1647ca3",
+        "bytes": 9955
+      },
+      {
+        "source_path": "research/benchmark/phase2/REVIEW_REPORT.md",
+        "git_blob": "68fd5ae43e285fca0f1639e767bceb2dd0607f49",
+        "sha256": "677cb0cca27dece82431de196fec6a94e3917ec114a4aed79719889b328de8fa",
+        "bytes": 14308
+      },
+      {
+        "source_path": "research/benchmark/phase2/REVIEW_REVISION_LOG.md",
+        "git_blob": "008352a217d30d8a2a248a8c29918ad8c5f91933",
+        "sha256": "638652c8c4411a181d092aabc3fe02dd3be38d3069df06df00cd11755b83d2d9",
+        "bytes": 5791
+      },
+      {
+        "source_path": "research/benchmark/phase2/RISK_COVERAGE_STATISTICAL_PLAN.md",
+        "git_blob": "8f78616bfc21c93bf32808cbbb842dabf904668a",
+        "sha256": "dddc03baa0f5b5755bdba3d64d62b624135063cbc1ec1521aa9e52265a0a0166",
+        "bytes": 9721
+      },
+      {
+        "source_path": "research/benchmark/phase2/SOURCE_GATE_CLOSURE.md",
+        "git_blob": "964fb77a2e5355d76aa634526e240a050c42b0c7",
+        "sha256": "84e0a86a408758da3443685aada4377c0d7b451f52bbb2efc351e42d4530c9da",
+        "bytes": 4194
+      },
+      {
+        "source_path": "research/benchmark/phase2/evidence/DELIVERABLE_MANIFEST.csv",
+        "git_blob": "200557161207020138e406af74206ce6e0ee5daf",
+        "sha256": "6c4848ff363285886e06911edb65ce4b10f4dad0156a7a0b963f6748dfd089d6",
+        "bytes": 1887
+      },
+      {
+        "source_path": "research/benchmark/phase2/evidence/PLANNING_ARITHMETIC.json",
+        "git_blob": "51e328f76f508dd5a25c8a6652f1a37b57dece53",
+        "sha256": "d938bbe7d47d276d162a9deb1a0216d2db489d45ae516411c2506b0929c91e4c",
+        "bytes": 6120
+      },
+      {
+        "source_path": "research/benchmark/phase2/evidence/REVIEW_VALIDATION.json",
+        "git_blob": "8484ca6eabad07ce7732022f1eac5ef3cedb4bc6",
+        "sha256": "5dccb9fef4e9ce4fdffd834f0906468457c8a1bb6e16ae90b90c9af6d54a7360",
+        "bytes": 836
+      },
+      {
+        "source_path": "research/benchmark/phase2/evidence/REVISION_ARITHMETIC.json",
+        "git_blob": "0fccd75d22ce49570f43b53d71c8855957d5c9b3",
+        "sha256": "4cf7bfbed192cb9a959b0bbfedf947dccc53b9bf74c11fba5e46916a1a0415f4",
+        "bytes": 3782
+      },
+      {
+        "source_path": "research/benchmark/phase2/evidence/REVISION_PUBLICATION_MANIFEST.csv",
+        "git_blob": "fb70177a1a22327a8877469a75cc687069387073",
+        "sha256": "2d2bf3a3e693f8de04786e74c5d2ed57339fc02cfac2f1541c43082e6725ed75",
+        "bytes": 3044
+      },
+      {
+        "source_path": "research/benchmark/phase2/evidence/REVISION_SOURCE_MAP.json",
+        "git_blob": "24d136a51a345f6923c8cc804797ce476d287655",
+        "sha256": "1c5572a393a32796433709638096afd1a3159f24521feef8768a69515002a506",
+        "bytes": 5224
+      },
+      {
+        "source_path": "research/benchmark/phase2/evidence/REVISION_VALIDATION.json",
+        "git_blob": "b8bdcca3eb8a1ffe4cbe06db133f43d51cc03fa4",
+        "sha256": "2a0ce1e9156ac1f1ac697f8d5aa6e42a170e3938c9c0aa4ff544c86602e530f4",
+        "bytes": 1580
+      },
+      {
+        "source_path": "research/benchmark/phase2/evidence/REVISION_WHITELIST.txt",
+        "git_blob": "690c994d6ad60bcadae5e5e6288c1ab9be2d9064",
+        "sha256": "007a318c60f5c12401221583232e3c66b8fe8b7848baa2ec00cdb92c8eec1152",
+        "bytes": 1396
+      },
+      {
+        "source_path": "research/benchmark/phase2/evidence/SOURCE_README.md",
+        "git_blob": "82d6813c71d5da0807c0f9085b031b7f211e652a",
+        "sha256": "58a9f247fbf1edb98279bac0e3a26b5d98f07df095cb9d75c5f9b2426e9bf64d",
+        "bytes": 1258
+      },
+      {
+        "source_path": "research/benchmark/phase2/evidence/SOURCE_VERIFICATION.json",
+        "git_blob": "1b334c20013e8425d4d47871070c031d6ecf02c7",
+        "sha256": "56d1de633f7f494eec8d14849e7e5815578be0b03b14101aac1432f36e7cb0da",
+        "bytes": 5711
+      },
+      {
+        "source_path": "research/benchmark/phase2/evidence/SUBAGENT_TASK_LOG.md",
+        "git_blob": "03de0ddb07cddbfb4eca8a4df019e1fa2f4ae547",
+        "sha256": "310aa50ee810eb1bd31f197f5da59ca26a48f9bcf3e9b99fe3cec1e973756bcc",
+        "bytes": 2977
+      }
+    ],
+    "allowed_written_paths": [
+      "research/validation/phase2/M2_MATHEMATICAL_AUDIT.md",
+      "research/validation/phase2/evidence/M2_REFERENCE.json"
+    ]
+  },
+  "status_axes": {
+    "truth": [
+      "EXACT",
+      "BOUNDED",
+      "APPROXIMATE",
+      "UNVERIFIED",
+      "PROPOSED_NOT_AUTHORIZED"
+    ],
+    "evidence": [
+      "DERIVED",
+      "VERIFIED_BYTES",
+      "NOT_EXECUTED"
+    ],
+    "rounded_displays_are_certificates": false
+  },
+  "integer_square_certificate": {
+    "denominator": "1000000000000000000000000000000000000000000000000000000000000",
+    "k": "1732050807568877293527446341505872366942805253810380628055806",
+    "inequality": "k^2 < 3*n^2 < (k+1)^2",
+    "sqrt3_lower": "866025403784438646763723170752936183471402626905190314027903/500000000000000000000000000000000000000000000000000000000000",
+    "sqrt3_upper": "1732050807568877293527446341505872366942805253810380628055807/1000000000000000000000000000000000000000000000000000000000000",
+    "lower_square_gap_integer": "3392921023113669593089025538641708385089774041413344549690364",
+    "upper_square_gap_integer": "71180592024084993965867144370036348795836466207416706421249",
+    "source_printed_B_lower": "6717691453623979128349403414709/128000000000000000000000000000000",
+    "source_printed_B_upper": "16794228634059947820873508536777/320000000000000000000000000000000",
+    "source_printed_enclosure_independently_verified": true,
+    "proof": "source_lower < derived_lower < B < derived_upper < source_upper",
+    "truth": "EXACT",
+    "evidence": "DERIVED"
+  },
+  "QJ_reference": {
+    "theta": "pi/12",
+    "cos_theta_squared": "(2+sqrt(3))/4",
+    "bad_loss_lower": "9*(2+sqrt(3))/320",
+    "always_risk_lower": "9*(2+sqrt(3))/640",
+    "bound_enclosure": {
+      "lower_rational": "16794228634059947820873508536776425651242623642146712826251127/320000000000000000000000000000000000000000000000000000000000000",
+      "upper_rational": "33588457268119895641747017073552851302485247284293425652502263/640000000000000000000000000000000000000000000000000000000000000",
+      "lower_decimal_outward": "0.052481964481437336940229714177426330160133198881708477582034",
+      "upper_decimal_outward": "0.052481964481437336940229714177426330160133198881708477582035",
+      "status": "EXACT_RATIONAL_ENCLOSURE"
+    },
+    "display_approximate": "0.05248196448143733694",
+    "display_status": "APPROXIMATE",
+    "alpha": "1/20",
+    "gap": "(9*sqrt(3)-14)/640",
+    "gap_enclosure": {
+      "lower_rational": "794228634059947820873508536776425651242623642146712826251127/320000000000000000000000000000000000000000000000000000000000000",
+      "upper_rational": "1588457268119895641747017073552851302485247284293425652502263/640000000000000000000000000000000000000000000000000000000000000",
+      "lower_decimal_outward": "0.002481964481437336940229714177426330160133198881708477582034",
+      "upper_decimal_outward": "0.002481964481437336940229714177426330160133198881708477582035",
+      "status": "EXACT_RATIONAL_ENCLOSURE"
+    },
+    "stronger_integrated_lower": "(9/160)*(sin(pi/12)/(pi/12))^2",
+    "actual_native_integral": "UNVERIFIED; bounds are not equality claims",
+    "illustrative_h0": "1/4",
+    "illustrative_h1": "1/2",
+    "illustrative_pair_actual_ideal_risk": "(9/40)*(sin(pi/12)/(pi/12))^2",
+    "illustrative_pair_asserted_native_output": false,
+    "truth": "BOUNDED",
+    "evidence": "DERIVED"
+  },
+  "uniform_output_error_budget": {
+    "strict_sufficient_condition": "epsilon+eta < (9*sqrt(3)-14)/80",
+    "enclosure": {
+      "lower_rational": "794228634059947820873508536776425651242623642146712826251127/40000000000000000000000000000000000000000000000000000000000000",
+      "upper_rational": "1588457268119895641747017073552851302485247284293425652502263/80000000000000000000000000000000000000000000000000000000000000",
+      "lower_decimal_outward": "0.019855715851498695521837713419410641281065591053667820656278",
+      "upper_decimal_outward": "0.019855715851498695521837713419410641281065591053667820656279",
+      "status": "EXACT_RATIONAL_ENCLOSURE"
+    },
+    "is_aggregate_quadrature_risk_error_budget": false,
+    "implementation_certificates": "UNVERIFIED"
+  },
+  "definitions": {
+    "context": "observed Bernoulli(1/2), frozen in closure; not perturbed",
+    "f0": "1/4",
+    "f1": "1/2+(9/20)*sin(omega*z1)*sin(omega*z2)",
+    "omega": "positive",
+    "target": "fixed class 1 in (1-f,f)",
+    "h": "complete affine a+b1*z1+b2*z2 in original coordinates",
+    "loss": "E_Q abs(f-clip(h,0,1))",
+    "generation": "native instance-centered Gaussian, conformance unverified; neither Q4 nor QJ",
+    "Q4": {
+      "r": "pi/(2*omega)",
+      "support": "(s*r,t*r)",
+      "signs": "independent uniform signs"
+    },
+    "QJ": {
+      "support": "(s*r+J1,t*r+J2)",
+      "jitter": "independent Uniform[-pi/(12*omega),pi/(12*omega)] coordinates, independent of signs"
+    }
+  },
+  "affine_parity": {
+    "identity": "h++ + h-- = h+- + h-+ = 2*a+2*b1*j1+2*b2*j2",
+    "target": "1/2+s*t*A(j)",
+    "A": "(9/20)*cos(omega*j1)*cos(omega*j2)",
+    "raw_four_sign_mean_lower": "A(j)",
+    "clipped_four_sign_mean_lower": "A(j)/4",
+    "ties": "midpoint ties have error A(j); some loss >= A(j)",
+    "clipped_values_satisfy_affine_identity": false,
+    "truth": "BOUNDED",
+    "evidence": "DERIVED"
+  },
+  "raw_to_clip_counterexample": {
+    "h": "19/20+(9/(20*r))*z1-(9/(20*r))*z2",
+    "corner_order": [
+      "++",
+      "+-",
+      "-+",
+      "--"
+    ],
+    "target": [
+      "19/20",
+      "1/20",
+      "1/20",
+      "19/20"
+    ],
+    "raw_h": [
+      "19/20",
+      "37/20",
+      "1/20",
+      "19/20"
+    ],
+    "clipped_h": [
+      "19/20",
+      "1",
+      "1/20",
+      "19/20"
+    ],
+    "raw_mean_loss": "9/20",
+    "clipped_mean_loss": "19/80",
+    "strong_raw_bound_transfers": false,
+    "truth": "EXACT",
+    "evidence": "DERIVED"
+  },
+  "Q4_reference": {
+    "raw_bad_loss_lower": "9/20",
+    "raw_always_risk_lower": "9/40",
+    "clipped_bad_loss_lower": "9/80",
+    "clipped_always_risk_lower": "9/160",
+    "clipped_bound_claimed_sharp": false,
+    "truth": "BOUNDED",
+    "evidence": "DERIVED"
+  },
+  "ridge_constant_response": {
+    "candidate": "a=1/4,b=0",
+    "objective": "0",
+    "conditions": [
+      "all fitted responses exactly 1/4",
+      "finite design, nonnegative weights, positive weight sum",
+      "fitted unpenalized intercept",
+      "positive-semidefinite slope penalty",
+      "exact minimizer and correct reconstruction"
+    ],
+    "unique_constant_solution_iff": "Xc^T diag(w) Xc + lambda*P is positive definite",
+    "sufficient": "positive penalty on every slope, or full weighted affine-design rank when unpenalized",
+    "rank_deficient_unpenalized_caveat": "constant minimizer exists but others may differ off training support",
+    "native_float_zero_loss": "UNVERIFIED; require certified upper tau0",
+    "truth": "EXACT",
+    "evidence": "DERIVED"
+  },
+  "bayes_intercept": {
+    "inherits_lime_zero_loss": false,
+    "centered_design_example": {
+      "a": "W*k/(W+lambda_a)",
+      "b": "0 is minimizing",
+      "loss": "k*lambda_a/(W+lambda_a)>0 for k=1/4, lambda_a>0"
+    },
+    "example_is_native_prior_normalization_claim": false,
+    "native_safe_frontier": "UNVERIFIED",
+    "evidence": "DERIVED"
+  },
+  "float_error": {
+    "epsilon": "certified uniform upper abs(f_computed-f_ideal)",
+    "eta": "certified uniform upper abs(g_computed-clip(h_affine))",
+    "Q4_always_lower": "max(0,9/20-epsilon-eta)/8",
+    "QJ_always_lower": "max(0,9*(2+sqrt(3))/80-epsilon-eta)/8",
+    "aggregate_risk_error_uses_factor_one_not_one_eighth": true,
+    "context_only_risk_upper": "tau0, not tau0/2",
+    "directions": {
+      "unsafety": "risk lower > alpha upper",
+      "safety": "risk upper <= alpha lower",
+      "risk_lower_errors": "subtract certified upper errors"
+    },
+    "implementation_certificates": "UNVERIFIED",
+    "truth": "BOUNDED",
+    "evidence": "DERIVED"
+  },
+  "quadrature": {
+    "agreement_or_convergence_is_absolute_error_certificate": false,
+    "general_no_go": "min(1,K*distance(z,N)) vanishes on finite node union N yet has positive integral; general Lipschitz class, not asserted M2 family",
+    "M2_h_half_example": {
+      "midpoint": "(9/20)*[sin(theta)/(m*sin(theta/m))]^2",
+      "integral": "(9/20)*[sin(theta)/theta]^2",
+      "direction": "midpoint strictly exceeds integral for every finite m"
+    },
+    "lipschitz_max": "(a_z/m)*(P1+P2+abs(b1)+abs(b2))",
+    "lipschitz_uniform_mean_refinement": "(a_z/(2*m))*(P1+P2+abs(b1)+abs(b2))",
+    "P_bad_global": "(9/20)*omega",
+    "P_bad_box_refined": "(9/20)*omega*sin(pi/12)",
+    "P_good": "0",
+    "global_predictor_only_max_term": "3*pi/(40*m)",
+    "certified_point_interval_combination": "[max(0,sum(w_i*l_i)-delta),min(1,sum(w_i*u_i)+delta)] with normalized positive weights and applicable certified delta",
+    "eligible_options": [
+      "finite-support computational exact enumeration",
+      "validated whole-cell interval integration",
+      "validated analytic/root partition",
+      "preapproved adaptive certified integration"
+    ],
+    "unit_quadrature_integrates_native_population": false,
+    "D1_accuracy": "UNVERIFIED; finite cap and grid agreement insufficient",
+    "truth": "BOUNDED",
+    "evidence": "DERIVED"
+  },
+  "D1_projected_counts": {
+    "status": "EXACT_PROJECTION_NOT_MEASURED_NOT_AUTHORIZED",
+    "fits": 32,
+    "units_per_bank": 16,
+    "per_context_per_bank": 8,
+    "generation_rows": 4096,
+    "Q4_rows": 128,
+    "QJ_m4_rows": 2048,
+    "QJ_m16_rows": 32768,
+    "m4_total": 6272,
+    "m16_replacement_total": 36992,
+    "both_grid_total": 39040,
+    "conditional_bayes_posterior_draws": 160000,
+    "cold_public_f_cache_upper_counts": {
+      "Q4": 8,
+      "QJ_m4": 128,
+      "QJ_m16": 2048,
+      "QJ_both_non_nested": 2176
+    },
+    "independent_validation_overhead_included": false,
+    "runtime_memory_measured": false
+  },
+  "scientific_disposition": {
+    "ideal_context_policy": {
+      "policy": "accept iff observed context=0",
+      "coverage": "1/2",
+      "risk": "0 under conforming ideal LIME conditions",
+      "extra_scoring_model_queries": 0
+    },
+    "known_law_proven_policy_requires_HB_calibration": false,
+    "uses": [
+      "correctness and representation obstruction",
+      "feasible selection versus unsafe always-accept",
+      "strong-null adequacy control"
+    ],
+    "guaranteed_ranking_of_strong_context_direct_learned_bayes_scores": false,
+    "practical_margins_and_new_algorithm_necessity": "UNVERIFIED",
+    "analytic_design": "ACCEPT_CONDITIONALLY_AS_MATHEMATICAL_REFERENCE",
+    "numerical_design": "SPECIFY_CERTIFIED_ERROR_CONTRACT_BEFORE_FUTURE_APPROVAL",
+    "native_or_confirmatory_execution": "NOT_AUTHORIZED",
+    "final_signoff": "PENDING_DISTINCT_REVIEWER"
+  },
+  "validation": {
+    "performed": [
+      "read-only branch/head and tracked-clean checks",
+      "all 25 snapshot files matched immutable Git blobs",
+      "exact Fraction raw/clipped counterexample and Q4 constants",
+      "integer-square rational B/gap/error-budget certificates",
+      "containment in source printed B interval",
+      "exact D1 workload projections"
+    ],
+    "not_performed": [
+      "native conformance",
+      "predictor/model evaluation",
+      "test suite",
+      "simulation",
+      "installation",
+      "SOLVE",
+      "commit",
+      "push"
+    ],
+    "numeric_algebra": "stdlib integer/isqrt/Fraction/Decimal only; no transcendental numerical integration",
+    "encoding": "UTF-8 without BOM; LF; final newline",
+    "personal_absolute_paths_persisted": false
+  }
+}
