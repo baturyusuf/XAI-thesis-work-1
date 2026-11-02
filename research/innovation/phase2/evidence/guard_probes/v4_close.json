@@ -1,0 +1,21 @@
+{
+  "mode": "close",
+  "controller_pid": 6844,
+  "native_imports": 0,
+  "native_fit_attempts": 0,
+  "limits_are_selftest_values": true,
+  "production_private_commit_cap": 2147483648,
+  "max_processes": 2,
+  "monitor_interval_target_seconds": 0.005,
+  "monitor_max_gap_cap_seconds": 0.05,
+  "OS_job_limit_flags": 8712,
+  "OS_job_private_commit_limit": 2147483648,
+  "controller_in_job": true,
+  "worker_pid": 34352,
+  "worker_in_same_job": true,
+  "suspended_usercode_sentinel_absent": true,
+  "status": "INTENTIONAL_LAST_JOB_HANDLE_CLOSE",
+  "before_close_seconds": 0.07631540001602843,
+  "working_set_sample_count": 8,
+  "monitor_max_gap": 0.005539499979931861
+}

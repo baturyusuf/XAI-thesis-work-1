@@ -1,0 +1,42 @@
+{
+  "contract_remote_ref": "refs/heads/research/benchmark-methodology",
+  "remote_verified_commit": "8d1377313b856782d870ee9b854f7a8b840231f9",
+  "immutable_contracts": [
+    {
+      "commit": "8d1377313b856782d870ee9b854f7a8b840231f9",
+      "path": "research/benchmark/phase2/D1A_LIME_ONLY_CONTRACT.md",
+      "git_blob": "2f013a75e2b978a29ab3fd5b92b1cb93c65f974d",
+      "sha256": "98fadf099f71c858b95249604ecb80acb6f72a7a227006918fbaf452224f8f13",
+      "local": "evidence/contracts/D1A_LIME_ONLY_CONTRACT.md"
+    },
+    {
+      "commit": "8d1377313b856782d870ee9b854f7a8b840231f9",
+      "path": "research/benchmark/phase2/D1A_RESOURCE_AND_NUMERICAL_GATES.md",
+      "git_blob": "23869e536b14314023ee778780f5f79d6ebdaaf9",
+      "sha256": "55a42be0aa6bfd153403227d7bdb148bd6dfc64a0fb606dac73940ece490e7d1",
+      "local": "evidence/contracts/D1A_RESOURCE_AND_NUMERICAL_GATES.md"
+    },
+    {
+      "commit": "8d1377313b856782d870ee9b854f7a8b840231f9",
+      "path": "research/benchmark/phase2/REVIEWER_RECONCILIATION.md",
+      "git_blob": "705e8d198e3daa70faf874ef09a807b44de87d64",
+      "sha256": "7c5e6d185863ddf6451e1b911db88bd7440649f0ebc34d78bc657772ec718bbb",
+      "local": "evidence/contracts/REVIEWER_RECONCILIATION.md"
+    },
+    {
+      "commit": "8d1377313b856782d870ee9b854f7a8b840231f9",
+      "path": "research/benchmark/phase2/BAYES_SCORE_IDENTITY_CORRECTION.md",
+      "git_blob": "ba1e571cd73100d8293b4608a78929f4c2b64a33",
+      "sha256": "067a174a16e59a15a823c927cc38013efc4df2e4ed33c5e9754b10c211f255af",
+      "local": "evidence/contracts/BAYES_SCORE_IDENTITY_CORRECTION.md"
+    }
+  ],
+  "Phase1_implementation": "57d703699e7c7d1c323c251c4cac9bd0ca163634",
+  "Phase1_handoff": "61206e3f1532f241109320e359df1a136a7250cc",
+  "Agent1_review": "6a010862cc4cbf97886b19095a030e3db077a638",
+  "Agent5_review": "a96ec5315de98b57848a659083b2fd3028775ba3",
+  "phase": "GUARD_SELF_TEST_ONLY",
+  "native_imports": 0,
+  "native_fit_attempts": 0,
+  "commit_push_merge_authorized": false
+}

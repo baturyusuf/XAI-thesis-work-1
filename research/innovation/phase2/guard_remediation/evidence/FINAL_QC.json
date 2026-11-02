@@ -1,0 +1,11 @@
+{
+  "branch": "research/xai-innovation",
+  "HEAD": "61206e3f1532f241109320e359df1a136a7250cc",
+  "origin": "https://github.com/baturyusuf/XAI-thesis-work-1.git",
+  "tracked_worktree_diff": [],
+  "staged_diff": [],
+  "sensitivity_scan_files": 410,
+  "sensitivity_findings": [],
+  "sensitivity_scope": "Pattern scan of new guard files only; not a complete secret audit",
+  "commit_push_merge_performed": false
+}

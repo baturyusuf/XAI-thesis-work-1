@@ -1,0 +1,14 @@
+{
+  "child_attempts": [
+    {
+      "breakaway": false,
+      "denied": true,
+      "error": 1816
+    },
+    {
+      "breakaway": true,
+      "denied": true,
+      "error": 5
+    }
+  ]
+}

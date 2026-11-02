@@ -1,0 +1,18 @@
+{
+  "preserved_source_snapshot": "40db2254a8ce42fd74ee089102262344e80d8eca1fac2f5145ca6d54fae33c77",
+  "after_attempt": 14,
+  "defects": [
+    "Initial controller-start to first-sample delay omitted from maximum; several old cases exceed50ms on that definition",
+    "Monitor exception ended watchdog; failed direct termination could then leave worker alive"
+  ],
+  "changes": [
+    "Capture pre-job process sample, include launch-to-first gap and fail closed",
+    "Immediate whole-job/owner-exit escalation after monitor failure or failed direct termination"
+  ],
+  "authorized_corrective_cases": [
+    "containment_natural",
+    "monitor_failure"
+  ],
+  "remaining_invocations": 2,
+  "no_limit_change": true
+}

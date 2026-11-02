@@ -1,0 +1,39 @@
+{
+  "scope": "Static publication checks only; no tests, guard jobs or scientific imports executed",
+  "base_commit": "61206e3f1532f241109320e359df1a136a7250cc",
+  "contract_commit": "8d1377313b856782d870ee9b854f7a8b840231f9",
+  "source_snapshot_sha256": "f802ab1e7d10371c0cd47535a535ab0ad8b6a706fa1ca96919a26d8a00f142b8",
+  "source_snapshot_is_git_commit": false,
+  "payload_files": 467,
+  "payload_bytes": 1077098,
+  "largest_payload_file_bytes": 106816,
+  "manifest_checks": [
+    {
+      "path": "research/innovation/phase2/DELIVERABLE_MANIFEST.csv",
+      "entries": 52,
+      "sha256": "18fed668e7ab83e2c7f831df20313be58f33e1800870632ad19f8798ab3e2169"
+    },
+    {
+      "path": "research/innovation/phase2/D1A_SOURCE_AND_EVIDENCE_MANIFEST.csv",
+      "entries": 40,
+      "sha256": "70788ad7fbb47f915cc888990bc0e381f2a618a3db06c4bd914dc4c8e6e4ac8f"
+    },
+    {
+      "path": "research/innovation/phase2/guard_remediation/SOURCE_SNAPSHOT_MANIFEST.csv",
+      "entries": 14,
+      "sha256": "f802ab1e7d10371c0cd47535a535ab0ad8b6a706fa1ca96919a26d8a00f142b8"
+    },
+    {
+      "path": "research/innovation/phase2/guard_remediation/DELIVERABLE_MANIFEST.csv",
+      "entries": 412,
+      "sha256": "3d7720f87fbd85a7103b0f0d3dea52a6a496aa700e79fcecc3169e71c169bd58"
+    }
+  ],
+  "manifest_mismatches": [],
+  "sensitivity_pattern_findings": [],
+  "sensitivity_limits": "Heuristic text scan and scoped source review, not a proof that arbitrary secrets cannot occur",
+  "all_payload_text_utf8": true,
+  "native_jobs_executed_in_publication": 0,
+  "experiments_or_tests_rerun": false,
+  "guard_decision": "RESOURCE_GUARD_BLOCKED"
+}

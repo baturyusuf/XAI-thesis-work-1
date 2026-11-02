@@ -1,0 +1,62 @@
+{
+  "qpc": 1019018.1298518,
+  "pid": 29892,
+  "inherited_exact_job": true,
+  "private_before_explicit_admit": {
+    "private_commit": 380928,
+    "working_set": 2060288,
+    "OS_process_peak_working_set": 2060288,
+    "OS_process_peak_pagefile": 380928
+  },
+  "user_entry_seen": false,
+  "job": {
+    "qpc": 1019018.1299555,
+    "limits": {
+      "flags": 8712,
+      "active_process_limit": 2,
+      "JobMemoryLimit": 2147483648,
+      "PeakProcessMemoryUsed": 12521472,
+      "PeakJobMemoryUsed": 12902400,
+      "raw_class9": {
+        "ok": true,
+        "error_if_failed": null,
+        "returned_length": 144,
+        "supplied_length": 144,
+        "raw_hex": "00000000000000000000000000000000082200000000000000000000000000000000000000000000020000000000000000000000000000002000000005000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000000000010bf000000000000e0c40000000000"
+      },
+      "independent_uint64_decode_job_limit": 2147483648
+    },
+    "processes": [
+      {
+        "pid": 28412,
+        "private_commit": 12521472,
+        "working_set": 18980864,
+        "OS_process_peak_working_set": 18980864,
+        "OS_process_peak_pagefile": 12521472
+      },
+      {
+        "pid": 29892,
+        "private_commit": 380928,
+        "working_set": 2060288,
+        "OS_process_peak_working_set": 2060288,
+        "OS_process_peak_pagefile": 380928
+      }
+    ],
+    "sampled_sum_private_commit": 12902400,
+    "sampled_sum_working_set": 21041152,
+    "global_available_commit_bytes": 20496699392,
+    "global_total_commit_limit_bytes": 35767832576,
+    "optional_class28": {
+      "ok": true,
+      "error_if_failed": null,
+      "returned_length": 16,
+      "supplied_length": 16,
+      "raw_hex": "00e0c4000000000000e0c40000000000",
+      "tentative_private_header_words": [
+        12902400,
+        12902400
+      ],
+      "scope": "UNDOCUMENTED_TARGET_BUILD_DIAGNOSTIC_ONLY; not admission/enforcement authority"
+    }
+  }
+}

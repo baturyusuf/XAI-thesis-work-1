@@ -1,0 +1,62 @@
+{
+  "qpc": 1019092.1827326,
+  "pid": 32548,
+  "inherited_exact_job": true,
+  "private_before_explicit_admit": {
+    "private_commit": 385024,
+    "working_set": 2060288,
+    "OS_process_peak_working_set": 2060288,
+    "OS_process_peak_pagefile": 385024
+  },
+  "user_entry_seen": false,
+  "job": {
+    "qpc": 1019092.182836,
+    "limits": {
+      "flags": 8712,
+      "active_process_limit": 2,
+      "JobMemoryLimit": 2147483648,
+      "PeakProcessMemoryUsed": 12099584,
+      "PeakJobMemoryUsed": 12484608,
+      "raw_class9": {
+        "ok": true,
+        "error_if_failed": null,
+        "returned_length": 144,
+        "supplied_length": 144,
+        "raw_hex": "000000000000000000000000000000000822000000000000000000000000000000000000000000000200000000000000000000000000000020000000050000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000a0b800000000000080be0000000000"
+      },
+      "independent_uint64_decode_job_limit": 2147483648
+    },
+    "processes": [
+      {
+        "pid": 34708,
+        "private_commit": 12099584,
+        "working_set": 18935808,
+        "OS_process_peak_working_set": 18935808,
+        "OS_process_peak_pagefile": 12320768
+      },
+      {
+        "pid": 32548,
+        "private_commit": 385024,
+        "working_set": 2060288,
+        "OS_process_peak_working_set": 2060288,
+        "OS_process_peak_pagefile": 385024
+      }
+    ],
+    "sampled_sum_private_commit": 12484608,
+    "sampled_sum_working_set": 20996096,
+    "global_available_commit_bytes": 20518313984,
+    "global_total_commit_limit_bytes": 35767832576,
+    "optional_class28": {
+      "ok": true,
+      "error_if_failed": null,
+      "returned_length": 16,
+      "supplied_length": 16,
+      "raw_hex": "0080be00000000000080be0000000000",
+      "tentative_private_header_words": [
+        12484608,
+        12484608
+      ],
+      "scope": "UNDOCUMENTED_TARGET_BUILD_DIAGNOSTIC_ONLY; not admission/enforcement authority"
+    }
+  }
+}

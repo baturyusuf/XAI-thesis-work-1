@@ -1,0 +1,26 @@
+{
+  "qpc": 1018972.1141196,
+  "reason": null,
+  "limit_readback": {
+    "flags": 8712,
+    "active_process_limit": 2,
+    "JobMemoryLimit": 100663296,
+    "PeakProcessMemoryUsed": 65208320,
+    "PeakJobMemoryUsed": 119308288,
+    "raw_class9": {
+      "ok": true,
+      "error_if_failed": null,
+      "returned_length": 144,
+      "supplied_length": 144,
+      "raw_hex": "00000000000000000000000000000000082200000000000000000000000000000000000000000000020000000000000000000000000000002000000005000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006000000000000e3030000000000801c0700000000"
+    },
+    "independent_uint64_decode_job_limit": 100663296
+  },
+  "handles_before_job_close": 124,
+  "expected_job_handles_remaining": 1,
+  "baseline_handles": 120,
+  "all_worker_handles_closed": true,
+  "native_imports": 0,
+  "model_callbacks": 0,
+  "native_fits": 0
+}

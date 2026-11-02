@@ -1,0 +1,239 @@
+{
+  "samples": [
+    {
+      "qpc": 1019273.8032261,
+      "pids": [
+        3416
+      ],
+      "processes": [
+        {
+          "pid": 3416,
+          "private_commit": 12283904,
+          "working_set": 18477056,
+          "OS_process_peak_working_set": 18862080,
+          "OS_process_peak_pagefile": 12283904
+        }
+      ],
+      "scope": "PRE_JOB_NO_ENFORCEMENT_YET",
+      "sampled_sum_private_commit": 12283904,
+      "sampled_sum_working_set": 18477056
+    },
+    {
+      "qpc": 1019273.8083963,
+      "pids": [
+        3416
+      ],
+      "processes": [
+        {
+          "pid": 3416,
+          "private_commit": 12357632,
+          "working_set": 18677760,
+          "OS_process_peak_working_set": 18862080,
+          "OS_process_peak_pagefile": 12357632
+        }
+      ],
+      "sampled_sum_private_commit": 12357632,
+      "sampled_sum_working_set": 18677760
+    },
+    {
+      "qpc": 1019273.8274677,
+      "pids": [
+        3416,
+        15640
+      ],
+      "processes": [
+        {
+          "pid": 3416,
+          "private_commit": 12357632,
+          "working_set": 18993152,
+          "OS_process_peak_working_set": 18993152,
+          "OS_process_peak_pagefile": 12357632
+        },
+        {
+          "pid": 15640,
+          "private_commit": 5599232,
+          "working_set": 10379264,
+          "OS_process_peak_working_set": 10461184,
+          "OS_process_peak_pagefile": 5681152
+        }
+      ],
+      "sampled_sum_private_commit": 17956864,
+      "sampled_sum_working_set": 29372416
+    },
+    {
+      "qpc": 1019273.8428576,
+      "pids": [
+        3416,
+        15640
+      ],
+      "processes": [
+        {
+          "pid": 3416,
+          "private_commit": 12357632,
+          "working_set": 18993152,
+          "OS_process_peak_working_set": 18993152,
+          "OS_process_peak_pagefile": 12357632
+        },
+        {
+          "pid": 15640,
+          "private_commit": 8728576,
+          "working_set": 15777792,
+          "OS_process_peak_working_set": 15777792,
+          "OS_process_peak_pagefile": 8728576
+        }
+      ],
+      "sampled_sum_private_commit": 21086208,
+      "sampled_sum_working_set": 34770944
+    },
+    {
+      "qpc": 1019273.8584329,
+      "pids": [
+        3416,
+        15640
+      ],
+      "processes": [
+        {
+          "pid": 3416,
+          "private_commit": 12357632,
+          "working_set": 18997248,
+          "OS_process_peak_working_set": 18997248,
+          "OS_process_peak_pagefile": 12357632
+        },
+        {
+          "pid": 15640,
+          "private_commit": 11816960,
+          "working_set": 18780160,
+          "OS_process_peak_working_set": 18780160,
+          "OS_process_peak_pagefile": 11816960
+        }
+      ],
+      "sampled_sum_private_commit": 24174592,
+      "sampled_sum_working_set": 37777408
+    },
+    {
+      "qpc": 1019273.874042,
+      "pids": [
+        3416,
+        15640
+      ],
+      "processes": [
+        {
+          "pid": 3416,
+          "private_commit": 12357632,
+          "working_set": 18997248,
+          "OS_process_peak_working_set": 18997248,
+          "OS_process_peak_pagefile": 12357632
+        },
+        {
+          "pid": 15640,
+          "private_commit": 14336000,
+          "working_set": 22347776,
+          "OS_process_peak_working_set": 22347776,
+          "OS_process_peak_pagefile": 14336000
+        }
+      ],
+      "sampled_sum_private_commit": 26693632,
+      "sampled_sum_working_set": 41345024
+    },
+    {
+      "qpc": 1019273.8894665,
+      "pids": [
+        3416,
+        15640
+      ],
+      "processes": [
+        {
+          "pid": 3416,
+          "private_commit": 12357632,
+          "working_set": 18997248,
+          "OS_process_peak_working_set": 18997248,
+          "OS_process_peak_pagefile": 12357632
+        },
+        {
+          "pid": 15640,
+          "private_commit": 14417920,
+          "working_set": 22880256,
+          "OS_process_peak_working_set": 24043520,
+          "OS_process_peak_pagefile": 15679488
+        }
+      ],
+      "sampled_sum_private_commit": 26775552,
+      "sampled_sum_working_set": 41877504
+    },
+    {
+      "qpc": 1019273.9048738,
+      "pids": [
+        3416,
+        15640
+      ],
+      "processes": [
+        {
+          "pid": 3416,
+          "private_commit": 12357632,
+          "working_set": 18997248,
+          "OS_process_peak_working_set": 18997248,
+          "OS_process_peak_pagefile": 12357632
+        },
+        {
+          "pid": 15640,
+          "private_commit": 14422016,
+          "working_set": 22990848,
+          "OS_process_peak_working_set": 24043520,
+          "OS_process_peak_pagefile": 15679488
+        }
+      ],
+      "sampled_sum_private_commit": 26779648,
+      "sampled_sum_working_set": 41988096
+    },
+    {
+      "qpc": 1019273.920025,
+      "pids": [
+        3416,
+        15640
+      ],
+      "processes": [
+        {
+          "pid": 3416,
+          "private_commit": 12357632,
+          "working_set": 19005440,
+          "OS_process_peak_working_set": 19005440,
+          "OS_process_peak_pagefile": 12357632
+        },
+        {
+          "pid": 15640,
+          "private_commit": 13692928,
+          "working_set": 22126592,
+          "OS_process_peak_working_set": 24043520,
+          "OS_process_peak_pagefile": 15679488
+        }
+      ],
+      "sampled_sum_private_commit": 26050560,
+      "sampled_sum_working_set": 41132032
+    }
+  ],
+  "events": [
+    {
+      "received_qpc": 1019273.8085431,
+      "message": 6,
+      "key": 53669,
+      "parameter_PID_or_null": 3416
+    },
+    {
+      "received_qpc": 1019273.8276818,
+      "message": 6,
+      "key": 53669,
+      "parameter_PID_or_null": 15640
+    },
+    {
+      "received_qpc": 1019273.9201304,
+      "message": 3,
+      "key": 53669,
+      "parameter_PID_or_null": null
+    }
+  ],
+  "max_gap_seconds": 0.04389390000142157,
+  "initial_gap_seconds": 0.04389390000142157,
+  "maximum_allowed_gap_seconds": 0.05,
+  "error": null,
+  "measurement_scope": "Sampled sequential per-process current values; not simultaneous/instantaneous peak"
+}

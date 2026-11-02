@@ -1,0 +1,10 @@
+{
+  "observed_qpc": 1019019.2115984,
+  "exit_code": 90,
+  "times": {
+    "creation_filetime100ns": 134380810840684848,
+    "exit_filetime100ns": 134380810843235289,
+    "kernel100ns": 468750,
+    "user100ns": 312500
+  }
+}

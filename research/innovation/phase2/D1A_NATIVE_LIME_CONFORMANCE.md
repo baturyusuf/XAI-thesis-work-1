@@ -1,0 +1,7 @@
+# Native LIME conformance - BLOCKED, not native failure
+
+D1a native imports0, fits0. Static provenance ONLY: actual lime0.2.0.1release SHA25676960e4f055feb53e89b5022383bafc87b63f25bac6265984b0a333d1a57f781;19installedPythonfiles byte-match archive, BSD2. No GitHEAD substitution, install or source patch. Existing Phase1 Python3.11 package files untouched. Direct-base -I -S guard launch is NOT validated as an isolated native package environment; no native import was tried to settle that after guard failure.
+
+Future M2 differs from Phase1 tanh/background: fixed context closure, two numeric features, center0, background{-sqrt(3/2),0,sqrt(3/2)}^2, fixedclass1/vector(1-p,p), float64 omega=0x1.921fb54442d18p+0 and declared operation order. c0=.25; c1=.5+((float64(9/20)*sin(omega*z1))*sin(omega*z2)). Full affine Ridge must preserve unpenalized intercept, actual scaler/featureorder. No output/coefficient repair. Native Gaussian law is NOT Q4/QJ. Explicit num_samples128 is the resource setting, NOT release default5000. Default/capture comparison replay would count another fit and is forbidden here; a capture hook may record/call native fit once.
+
+No actual M2 background/scaler/design/coefficients or probability outputs produced. Phase1 prior conformance is historical, not replayed or automatically transferred to M2. All Bayes routes excluded. Native conformance remains unverified until admission genuinely passes.

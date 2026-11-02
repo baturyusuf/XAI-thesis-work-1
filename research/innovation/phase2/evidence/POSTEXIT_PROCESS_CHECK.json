@@ -1,0 +1,66 @@
+{
+  "scope": "External guard-selftest cleanup observation only; no scientific work, no kills; PID reuse not excluded",
+  "known_PID_checks": [
+    {
+      "pid": 2888,
+      "state": "NOT_FOUND"
+    },
+    {
+      "pid": 6844,
+      "state": "NOT_FOUND"
+    },
+    {
+      "pid": 14304,
+      "state": "NOT_FOUND"
+    },
+    {
+      "pid": 16208,
+      "state": "NOT_FOUND"
+    },
+    {
+      "pid": 18244,
+      "state": "NOT_FOUND"
+    },
+    {
+      "pid": 18556,
+      "state": "NOT_FOUND"
+    },
+    {
+      "pid": 19600,
+      "state": "NOT_FOUND"
+    },
+    {
+      "pid": 20084,
+      "state": "NOT_FOUND"
+    },
+    {
+      "pid": 23932,
+      "state": "NOT_FOUND"
+    },
+    {
+      "pid": 25884,
+      "state": "NOT_FOUND"
+    },
+    {
+      "pid": 26528,
+      "state": "NOT_FOUND"
+    },
+    {
+      "pid": 34352,
+      "state": "NOT_FOUND"
+    },
+    {
+      "pid": 35064,
+      "state": "NOT_FOUND"
+    },
+    {
+      "pid": 35632,
+      "state": "NOT_FOUND"
+    },
+    {
+      "pid": 36228,
+      "state": "NOT_FOUND"
+    }
+  ],
+  "no_known_PID_observed_live": true
+}

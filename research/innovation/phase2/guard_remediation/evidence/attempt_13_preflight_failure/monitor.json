@@ -1,0 +1,33 @@
+{
+  "samples": [
+    {
+      "qpc": 1019093.3171701,
+      "pids": [
+        32312
+      ],
+      "processes": [
+        {
+          "pid": 32312,
+          "private_commit": 12386304,
+          "working_set": 19177472,
+          "OS_process_peak_working_set": 19177472,
+          "OS_process_peak_pagefile": 12386304
+        }
+      ],
+      "sampled_sum_private_commit": 12386304,
+      "sampled_sum_working_set": 19177472
+    }
+  ],
+  "events": [
+    {
+      "received_qpc": 1019093.3172241,
+      "message": 6,
+      "key": 53669,
+      "parameter_PID_or_null": 32312
+    }
+  ],
+  "max_gap_seconds": 0.0,
+  "maximum_allowed_gap_seconds": 0.05,
+  "error": null,
+  "measurement_scope": "Sampled sequential per-process current values; not simultaneous/instantaneous peak"
+}

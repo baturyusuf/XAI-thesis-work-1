@@ -1,0 +1,6 @@
+{
+  "preserved_source_snapshot": "b72b3ee14c607e742cdca036e7fdb377454efc668cbca9053aac8a132ecf0e65",
+  "after_attempt": 8,
+  "reason": "Release completed Python Thread object before pre-close handle count; retain full lifecycle-termination monitor trace and independent worker exit code. No limit or architecture change.",
+  "corrective_launches_used": 0
+}

@@ -1,0 +1,5 @@
+{
+  "qpc": 1019092.5209209,
+  "action": "CloseHandle; controller is member so OS kills it",
+  "expected_exit_code": "OS_DEFINED"
+}

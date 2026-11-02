@@ -1,0 +1,16 @@
+[
+  {
+    "stage": "Documentation preparation",
+    "error": "bash unexpected EOF while looking for matching double quote",
+    "exit_code": 2,
+    "controlled_launches": 0,
+    "preservation": "Tool transcript; no Python/source write ran; split command succeeded"
+  },
+  {
+    "stage": "Administrative sensitivity QC",
+    "error": "re.PatternError unterminated character set at position10",
+    "exit_code": 1,
+    "controlled_launches": 0,
+    "remediation": "Normalize path separators before simple forward-slash regex; successful scan separately recorded"
+  }
+]

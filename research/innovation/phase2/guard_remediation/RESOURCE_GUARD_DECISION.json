@@ -1,0 +1,22 @@
+{
+  "status": "RESOURCE_GUARD_BLOCKED",
+  "contract": "8d1377313b856782d870ee9b854f7a8b840231f9",
+  "source_snapshot": "f802ab1e7d10371c0cd47535a535ab0ad8b6a706fa1ca96919a26d8a00f142b8",
+  "guard_tests_passed": 19,
+  "guard_tests_run": 19,
+  "controlled_invocations": 16,
+  "controlled_invocation_ceiling": 16,
+  "automatic_retries": 0,
+  "native_scientific_imports": 0,
+  "native_fits": 0,
+  "predictor_callbacks": 0,
+  "unattempted_native_slots": 16,
+  "science_execution_authorized": false,
+  "remaining_blockers": [
+    "Full monitoring coverage not verified on final revision across all failure paths; initial gaps omitted in old revision",
+    "Scaled lifecycle test exceeded400ms ceiling by13.9134ms",
+    "Residual handle count differences not attributed",
+    "Failed termination API fallback branches source-reviewed but not dynamically verified",
+    "Production native admission connector not qualified; physical600/605s run not performed"
+  ]
+}

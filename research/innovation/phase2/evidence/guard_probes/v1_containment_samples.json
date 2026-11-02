@@ -1,0 +1,18 @@
+[
+  {
+    "t": 0.09026729996548966,
+    "gap": 6.00004568696022e-07,
+    "processes": [
+      {
+        "pid": 20084,
+        "working_set": 18108416,
+        "private_commit": 10661888,
+        "OS_lifetime_peak_working_set": 18108416,
+        "OS_lifetime_peak_pagefile": 10661888
+      }
+    ],
+    "aggregate_working_set": 18108416,
+    "aggregate_private_commit": 10661888,
+    "OS_peak_job_commit": 10661888
+  }
+]

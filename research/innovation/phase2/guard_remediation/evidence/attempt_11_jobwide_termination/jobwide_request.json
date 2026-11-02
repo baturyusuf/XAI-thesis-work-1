@@ -1,0 +1,9 @@
+{
+  "qpc": 1019092.7375824,
+  "pids": [
+    29076,
+    33952
+  ],
+  "action": "TerminateJobObject",
+  "exit_code": 93
+}

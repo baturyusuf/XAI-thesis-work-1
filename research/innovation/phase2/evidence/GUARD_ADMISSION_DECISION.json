@@ -1,0 +1,53 @@
+{
+  "version": "d1a-guard-qualification-v1",
+  "status": "RESOURCE_GUARD_BLOCKED",
+  "native_execution_allowed": false,
+  "reasons": [
+    "DIRECT_BASE_ISOLATED_PACKAGE_PATH_NOT_VERIFIED_FOR_NATIVE",
+    "JOB_PEAK_EXCEEDS_CONFIGURED_LIMIT_SEMANTICS_UNRESOLVED",
+    "PHASE_WATCHDOGS_NOT_IMPLEMENTED_OR_SELFTESTED",
+    "WORKER_STOP_TIMESTAMPS_MISSING"
+  ],
+  "probe_checks": [
+    {
+      "mode": "containment",
+      "raw_probe_status": "SELFTEST_PASSED"
+    },
+    {
+      "mode": "memory",
+      "raw_probe_status": "SELFTEST_PASSED"
+    },
+    {
+      "mode": "deadline",
+      "raw_probe_status": "SELFTEST_PASSED"
+    },
+    {
+      "mode": "close",
+      "raw_probe_status": "INTENTIONAL_LAST_JOB_HANDLE_CLOSE"
+    }
+  ],
+  "production_caps": {
+    "total_fits": 16,
+    "fits_per_context": 8,
+    "generation_rows_per_fit": 128,
+    "logical_predictor_rows": 19520,
+    "predictor_callbacks": 64,
+    "batch_rows": 1024,
+    "real_proxy_operations": 17472,
+    "job_seconds": 600,
+    "shutdown_only_seconds": 5,
+    "lifecycle_seconds": 605,
+    "private_commit_bytes": 2147483648,
+    "monitor_gap_seconds": 0.05,
+    "processes": 2,
+    "setup_seconds": 60,
+    "math_seconds": 30,
+    "fit_seconds": 60,
+    "postfit_seconds": 20,
+    "retries": 0,
+    "replacement_fits": 0
+  },
+  "memory_scope": "Peak discrepancy is unresolved accounting/enforcement, not proof of an OS defect",
+  "native_fit_attempts": 0,
+  "native_XAI_imports": 0
+}

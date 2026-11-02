@@ -1,0 +1,53 @@
+{
+  "job": {
+    "qpc": 1018972.0758773,
+    "limits": {
+      "flags": 8712,
+      "active_process_limit": 2,
+      "JobMemoryLimit": 100663296,
+      "PeakProcessMemoryUsed": 54099968,
+      "PeakJobMemoryUsed": 85688320,
+      "raw_class9": {
+        "ok": true,
+        "error_if_failed": null,
+        "returned_length": 144,
+        "supplied_length": 144,
+        "raw_hex": "0000000000000000000000000000000008220000000000000000000000000000000000000000000002000000000000000000000000000000200000000500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000600000000008039030000000000801b0500000000"
+      },
+      "independent_uint64_decode_job_limit": 100663296
+    },
+    "processes": [
+      {
+        "pid": 11624,
+        "private_commit": 54099968,
+        "working_set": 19066880,
+        "OS_process_peak_working_set": 19066880,
+        "OS_process_peak_pagefile": 54099968
+      },
+      {
+        "pid": 17636,
+        "private_commit": 31588352,
+        "working_set": 23199744,
+        "OS_process_peak_working_set": 23998464,
+        "OS_process_peak_pagefile": 31588352
+      }
+    ],
+    "sampled_sum_private_commit": 85688320,
+    "sampled_sum_working_set": 42266624,
+    "global_available_commit_bytes": 20458848256,
+    "global_total_commit_limit_bytes": 35767832576,
+    "optional_class28": {
+      "ok": true,
+      "error_if_failed": null,
+      "returned_length": 16,
+      "supplied_length": 16,
+      "raw_hex": "00801b050000000000801b0500000000",
+      "tentative_private_header_words": [
+        85688320,
+        85688320
+      ],
+      "scope": "UNDOCUMENTED_TARGET_BUILD_DIAGNOSTIC_ONLY; not admission/enforcement authority"
+    }
+  },
+  "events": []
+}

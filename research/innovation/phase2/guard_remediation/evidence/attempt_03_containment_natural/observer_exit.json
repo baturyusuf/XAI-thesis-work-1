@@ -1,0 +1,26 @@
+{
+  "controller_pid": 28412,
+  "controller_signaled": true,
+  "controller_exit_code": 0,
+  "controller_times": {
+    "creation_filetime100ns": 134380810831952145,
+    "exit_filetime100ns": 134380810833735381,
+    "kernel100ns": 156250,
+    "user100ns": 468750
+  },
+  "worker": {
+    "pid": 29892,
+    "signaled": true,
+    "times": {
+      "creation_filetime100ns": 134380810832448455,
+      "exit_filetime100ns": 134380810833612511,
+      "kernel100ns": 156250,
+      "user100ns": 781250
+    }
+  },
+  "observed_qpc": 1019018.2609343,
+  "external_elapsed_seconds": 0.1818421999923885,
+  "controller_OS_lifetime_seconds": 0.1783236,
+  "emergency_observer_stop": false,
+  "observer_handles_before": 126
+}

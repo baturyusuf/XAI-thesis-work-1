@@ -1,0 +1,25 @@
+{
+  "branch": "research/xai-innovation",
+  "HEAD_unchanged": "61206e3f1532f241109320e359df1a136a7250cc",
+  "latest_Agent3_remote_verified": "8d1377313b856782d870ee9b854f7a8b840231f9",
+  "frozen_manifests": [
+    {
+      "manifest": "research/innovation/evidence/publication/SOURCE_SNAPSHOT_MANIFEST.csv",
+      "files": 127,
+      "sha256": "9c5b2eca9453937c58075fccde067cc764469eae40c0381d36749012f482a6c0",
+      "status": "MATCH"
+    },
+    {
+      "manifest": "research/innovation/phase1/SOURCE_MANIFEST.csv",
+      "files": 25,
+      "sha256": "07e537056c4121fcad23cedcfd06b1fb9ca32549fdea6ac4bdc46a30956f80e1",
+      "status": "MATCH"
+    }
+  ],
+  "frozen_SIS_source_and_failure_test": "unchanged via original127file manifest; NOT_RERUN",
+  "all_current_phase2_python_files_parse": 12,
+  "staged_changes": false,
+  "commit_push_merge": false,
+  "native_imports_fits_or_scientific_queries": 0,
+  "native_admission": "RESOURCE_GUARD_BLOCKED"
+}

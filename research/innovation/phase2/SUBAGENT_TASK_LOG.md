@@ -1,0 +1,4 @@
+# D1a guard-review consultation
+Models enumerated; read-only native GPT delegate used openai-subscribed/gpt-6-luna, sessiona5a54108-c22c-4bc6-a8fb-6e5a53c35b8b. Reasoning-level control not exposed/claimed; no local model.
+
+Initial task: immutable D1a contract resource checklist only, no writes/process launch/native imports. Delegate noted that the contract is on anotherbranch; parent verified/read its fixedGitobjects as requested, so no merge/worktree mismatch blocker was invented. Later scoped reviews examined guard failures and resource records: venv-only hypothesis initially uncertain; v3conhost observed; v4containmentpositive; memorypeak discrepancy and missingphase/timestamp/pinnedpath prerequisites justify BLOCKED, not OS/XAI failure. Parent independently inspected records, kept raw statuses and made the final admission decision. Delegate ran no tests/experiments or file edits. Consultation is not Agent5 personnel-independent scientific signoff.

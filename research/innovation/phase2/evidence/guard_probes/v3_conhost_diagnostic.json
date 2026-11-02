@@ -1,0 +1,37 @@
+{
+  "mode": "containment",
+  "controller_pid": 2888,
+  "native_imports": 0,
+  "native_fit_attempts": 0,
+  "limits_are_selftest_values": true,
+  "production_private_commit_cap": 2147483648,
+  "max_processes": 2,
+  "monitor_interval_target_seconds": 0.005,
+  "monitor_max_gap_cap_seconds": 0.05,
+  "OS_job_limit_flags": 8712,
+  "OS_job_private_commit_limit": 2147483648,
+  "controller_in_job": true,
+  "worker_pid": 14304,
+  "worker_in_same_job": true,
+  "suspended_usercode_sentinel_absent": true,
+  "worker_exit_code": 84,
+  "worker_result": null,
+  "status": "RESOURCE_GUARD_BLOCKED",
+  "reasons": [
+    "AssertionError:{'reason': 'UNEXPECTED_CHILD', 'assigned': 3, 'listed': 3, 'accounting_active': 3, 'accounting_total': 3, 'processes': [{'pid': 2888, 'image_basename': 'python.exe', 'exit_code_observed': 259, 'member_of_same_job': True}, {'pid': 14304, 'image_basename': 'python.exe', 'exit_code_observed': 259, 'member_of_same_job': True}, {'pid': 16208, 'image_basename': 'conhost.exe', 'exit_code_observed': 259, 'member_of_same_job': True}]}",
+    "CHILD_OR_BREAKAWAY_NOT_DENIED"
+  ],
+  "stop_events": [
+    "AssertionError:{'reason': 'UNEXPECTED_CHILD', 'assigned': 3, 'listed': 3, 'accounting_active': 3, 'accounting_total': 3, 'processes': [{'pid': 2888, 'image_basename': 'python.exe', 'exit_code_observed': 259, 'member_of_same_job': True}, {'pid': 14304, 'image_basename': 'python.exe', 'exit_code_observed': 259, 'member_of_same_job': True}, {'pid': 16208, 'image_basename': 'conhost.exe', 'exit_code_observed': 259, 'member_of_same_job': True}]}",
+    "CHILD_OR_BREAKAWAY_NOT_DENIED"
+  ],
+  "working_set_sample_count": 1,
+  "monitor_max_gap": 5.00003807246685e-07,
+  "sampled_peak_aggregate_working_set": 18132992,
+  "sampled_peak_aggregate_private_commit": 10756096,
+  "OS_peak_job_commit": 12083200,
+  "OS_process_working_set_peaks_observed_until_exit": {
+    "2888": 18132992
+  },
+  "controlled_elapsed_before_final_flush": 0.052931200072634965
+}

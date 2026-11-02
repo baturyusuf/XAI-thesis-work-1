@@ -1,0 +1,7 @@
+# Numerical audit - NOT_RUN_RESOURCE_GUARD_BLOCKED
+
+No native h was generated; Q4/QJ evaluation, affine reconstruction and numerical intervals do not exist. Real-proxy operations0, additional predictor callbacks0. Loss/radius/endpoints null with reason, never a zero-loss or failure score. NUMERICAL_UNRESOLVED is for an attempted numerical/precision contract, not this upstream resource blockage.
+
+The pinned contract distinguishes ideal-real parity, exact aggregation of stored Q4 binary floats, continuous QJ expectation of the rounded program, and the separate real-affine/sine proxy. Future grids onlym4,m16, no extra nodes. With realized original-coordinate slopes, preselected directed bound delta=(a_z/(2m))*(2P+abs(b1)+abs(b2)), a_z=1/6; P0 forcontext0, certified upper(9/20)*(pi/2)*sin(pi/12) forcontext1. Independent reference-centered interval must add proved quadrature and uniform computational-transfer terms once; production-grid-centered shortcuts generally need twice transfer. Grid agreement/spot checks do not prove uniform transfer.
+
+Desired computed-loss radius<=1e-3, no adaptive refinement/retries. REAL_REFERENCE_ONLY and computed NUMERICAL_UNRESOLVED stay separate where only proxy bounds exist. THRESHOLD_ADJACENT is a separate flag, not a retuning or safe-policy permission. Ideal source bounds9/80 and9(2+sqrt3)/640 are not measured native results now. No numerical helper or M2 scientific job was run after the failed resource gate.

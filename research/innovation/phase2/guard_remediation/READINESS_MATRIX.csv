@@ -1,0 +1,13 @@
+gate,status,evidence_and_limits
+Guard unit regressions,GUARD_TEST_PASSED,19/19; no scientific validity/readiness claim
+OS job hard commit,OS_LIMIT_VERIFIED_BOUNDED_TEST,"96MiB denied allocation/event10/positive control; other cases2GiB readback, not2GiB stress"
+x64 API measurement scopes,VERIFIED_WITH_CAVEATS,Raw/class9 offsets checked; class28 diagnostic only
+Two-process containment,TESTED_SUPPORTED,03/15 thirdchild1816 breakaway5; suspended exact membership
+Process exits,TESTED_SUPPORTED,16 controller and15 worker retained handles signaled; raw exit times
+Monitor coverage,UNRESOLVED,"Old initial gaps exceed50ms; corrected15 includes43.8939ms,16 tail trace missing"
+Watchdog,PARTIALLY_VERIFIED,Phase stop reasons and fake-clock600/605 boundaries; short lifecycle overshoot
+Fail-closed,PARTIALLY_VERIFIED,Corrected monitor failure exits98/90; failed OS termination branches untested
+Handle identities,UNRESOLVED,Observer126->128; controller extra counts not classified
+Python3.11 isolation,VERIFIED_GUARD_ONLY,-I -S -B; exact interpreter hash; private metadata; no scientific imports
+Production wiring,UNRESOLVED,Guard-only harness does not expose native admission
+Native admission,RESOURCE_GUARD_BLOCKED,All mandatory gates must close; budget exhausted

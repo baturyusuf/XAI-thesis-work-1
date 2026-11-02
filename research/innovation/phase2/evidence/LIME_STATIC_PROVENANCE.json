@@ -1,0 +1,13 @@
+{
+  "release": "0.2.0.1",
+  "sdist_sha256": "76960e4f055feb53e89b5022383bafc87b63f25bac6265984b0a333d1a57f781",
+  "installed_python_files_matching_archive": 19,
+  "license": "BSD-2-Clause",
+  "source_execution": "NOT_RUN_D1A_RESOURCE_GUARD_BLOCKED",
+  "native_imports": 0,
+  "Python311_environment": "Existing Phase1 pins retained; direct-base isolated package path not admitted for native use",
+  "explicit_num_samples": 128,
+  "release_default_num_samples": 5000,
+  "no_installs_or_source_patches": true,
+  "scope": "Static byte inspection only, not runtime conformance; not counted as a scientific native attempt"
+}

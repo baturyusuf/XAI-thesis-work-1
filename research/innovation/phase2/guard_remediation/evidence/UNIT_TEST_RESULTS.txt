@@ -1,0 +1,24 @@
+test_causal_memory_cases_preserved (test_guard_remediation_audit.GuardAuditTests.test_causal_memory_cases_preserved) ... ok
+test_finite_diagnostic_budget_is_exhausted_no_ready_claim (test_guard_remediation_audit.GuardAuditTests.test_finite_diagnostic_budget_is_exhausted_no_ready_claim) ... ok
+test_initial_interval_cannot_hide_behind_steady_gap (test_guard_remediation_audit.GuardAuditTests.test_initial_interval_cannot_hide_behind_steady_gap) ... ok
+test_injected_monitor_error_closes_both_processes (test_guard_remediation_audit.GuardAuditTests.test_injected_monitor_error_closes_both_processes) ... ok
+test_missing_current_is_not_zero (test_guard_remediation_audit.GuardAuditTests.test_missing_current_is_not_zero) ... ok
+test_peak_above_limit_alone_proves_neither_breach_nor_enforcement (test_guard_remediation_audit.GuardAuditTests.test_peak_above_limit_alone_proves_neither_breach_nor_enforcement) ... ok
+test_public_limit_readbacks_match_independent_bytes (test_guard_remediation_audit.GuardAuditTests.test_public_limit_readbacks_match_independent_bytes) ... ok
+test_raw_limit_uses_SIZE_T_not_DWORD (test_guard_remediation_audit.GuardAuditTests.test_raw_limit_uses_SIZE_T_not_DWORD) ... ok
+test_scaled_lifecycle_overshoot_is_not_success (test_guard_remediation_audit.GuardAuditTests.test_scaled_lifecycle_overshoot_is_not_success) ... ok
+test_unordered_measurements_rejected (test_guard_remediation_audit.GuardAuditTests.test_unordered_measurements_rejected) ... ok
+test_x64_ABI_and_fixed_sizes (test_guard_remediation_audit.GuardAuditTests.test_x64_ABI_and_fixed_sizes) ... ok
+test_begin_cannot_escape_expired_previous_phase (test_guard_remediation_policy.PolicyTests.test_begin_cannot_escape_expired_previous_phase) ... ok
+test_explicit_fourteen_case_profiles (test_guard_remediation_policy.PolicyTests.test_explicit_fourteen_case_profiles) ... ok
+test_fixed_profile_and_immutable (test_guard_remediation_policy.PolicyTests.test_fixed_profile_and_immutable) ... ok
+test_global_and_lifecycle_boundaries (test_guard_remediation_policy.PolicyTests.test_global_and_lifecycle_boundaries) ... ok
+test_monotonic_timestamps_and_early_stop_shutdown (test_guard_remediation_policy.PolicyTests.test_monotonic_timestamps_and_early_stop_shutdown) ... ok
+test_phase_boundaries_and_rational_budget_is_cumulative (test_guard_remediation_policy.PolicyTests.test_phase_boundaries_and_rational_budget_is_cumulative) ... ok
+test_slot_budget_reentry_and_stop_is_stable (test_guard_remediation_policy.PolicyTests.test_slot_budget_reentry_and_stop_is_stable) ... ok
+test_source_role_caps (test_guard_remediation_policy.PolicyTests.test_source_role_caps) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.020s
+
+OK

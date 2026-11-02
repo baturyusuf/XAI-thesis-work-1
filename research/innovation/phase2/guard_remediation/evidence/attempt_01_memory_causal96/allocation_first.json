@@ -1,0 +1,19 @@
+{
+  "requested_bytes": 16777216,
+  "begin_qpc": 1018972.0742709,
+  "end_qpc": 1018972.0742766,
+  "success": true,
+  "error_if_failed": null,
+  "process_before": {
+    "private_commit": 14778368,
+    "working_set": 23199744,
+    "OS_process_peak_working_set": 23998464,
+    "OS_process_peak_pagefile": 15466496
+  },
+  "process_after": {
+    "private_commit": 31588352,
+    "working_set": 23199744,
+    "OS_process_peak_working_set": 23998464,
+    "OS_process_peak_pagefile": 31588352
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "pid": 31068,
+  "qpc": 1019018.6475674,
+  "process_times": {
+    "creation_filetime100ns": 134380810836970760,
+    "exit_filetime100ns": 0,
+    "kernel100ns": 625000,
+    "user100ns": 0
+  },
+  "science_imports": 0,
+  "fits": 0
+}

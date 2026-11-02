@@ -1,0 +1,17 @@
+{
+  "controller_pid": 32312,
+  "controller_signaled": true,
+  "controller_exit_code": 0,
+  "controller_times": {
+    "creation_filetime100ns": 134380811583817611,
+    "exit_filetime100ns": 134380811584430263,
+    "kernel100ns": 625000,
+    "user100ns": 0
+  },
+  "worker": null,
+  "observed_qpc": 1019093.3293739,
+  "external_elapsed_seconds": 0.06372899992857128,
+  "controller_OS_lifetime_seconds": 0.0612652,
+  "emergency_observer_stop": false,
+  "observer_handles_before": 126
+}

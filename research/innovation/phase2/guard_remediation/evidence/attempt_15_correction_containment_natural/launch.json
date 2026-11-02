@@ -1,0 +1,15 @@
+{
+  "case": "containment_natural",
+  "label": "correction_containment_natural",
+  "source_sha256": {
+    "src/innovation/phase2/guard_remediation_v1/api.py": "6d1b0a52575b151abbbfc17e55da6ca4ee8d0713b871108cb1d0161b60cde3d5",
+    "src/innovation/phase2/guard_remediation_v1/controller.py": "ab3cd9d00695681545538c1b41ff2dbc25a3beeb39743127ac6822e8c9f01e9d",
+    "src/innovation/phase2/guard_remediation_v1/policy.py": "836f738957eb57e5a87322faa8fc6e9318e9ef9bcfa72f26391e1c675e52bb1a",
+    "src/innovation/phase2/guard_remediation_v1/probe.py": "1cb8040a1f214c0ae971f823b42d40577fc6904573305d6e41b8ef67b49915ea",
+    "src/innovation/phase2/guard_remediation_v1/records.py": "d66e6b17ece48e928616324d54dab6c59d17c4fbea8bf308d573d68a8c171436",
+    "src/innovation/phase2/guard_remediation_v1/worker.py": "6fb075883878e78f92a4311960e97e19d247f415af8a8db76d9ea7242814b53c",
+    "src/innovation/phase2/guard_remediation_v1/__init__.py": "b9a820e27be9ae58175fa48bc19ba2b6869a1a515757c4a7cce0811f3b98bb6b"
+  },
+  "observer_scope": "External dummy-test invoker only; excluded from production topology",
+  "native_imports": 0
+}

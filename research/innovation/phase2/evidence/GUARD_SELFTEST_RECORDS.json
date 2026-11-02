@@ -1,0 +1,305 @@
+[
+  {
+    "case": "v1_containment",
+    "data": {
+      "mode": "containment",
+      "controller_pid": 20084,
+      "native_imports": 0,
+      "native_fit_attempts": 0,
+      "limits_are_selftest_values": true,
+      "production_private_commit_cap": 2147483648,
+      "max_processes": 2,
+      "monitor_interval_target_seconds": 0.005,
+      "monitor_max_gap_cap_seconds": 0.05,
+      "OS_job_limit_flags": 8712,
+      "OS_job_private_commit_limit": 2147483648,
+      "controller_in_job": true,
+      "worker_pid": 25884,
+      "worker_in_same_job": true,
+      "suspended_usercode_sentinel_absent": true,
+      "worker_exit_code": 84,
+      "worker_result": null,
+      "status": "RESOURCE_GUARD_BLOCKED",
+      "reasons": [
+        "AssertionError:UNEXPECTED_CHILD",
+        "CHILD_OR_BREAKAWAY_NOT_DENIED"
+      ],
+      "stop_events": [
+        "AssertionError:UNEXPECTED_CHILD",
+        "CHILD_OR_BREAKAWAY_NOT_DENIED"
+      ],
+      "working_set_sample_count": 1,
+      "monitor_max_gap": 6.00004568696022e-07,
+      "sampled_peak_aggregate_working_set": 18108416,
+      "sampled_peak_aggregate_private_commit": 10661888,
+      "OS_peak_job_commit": 11931648,
+      "OS_process_working_set_peaks_observed_until_exit": {
+        "20084": 18108416
+      },
+      "controlled_elapsed_before_final_flush": 0.10090779996244237
+    },
+    "controller_record_sha256": "f6e5873efee6dfd57e5120eec05f3408bd4a734356cb915027056b8f0790c172"
+  },
+  {
+    "case": "v2_syntax",
+    "data": {
+      "status": "ERROR_GUARD_HARNESS_SYNTAX",
+      "exception": "IndentationError",
+      "relative_source": "guard_probe_v2.py",
+      "line": 24,
+      "native_XAI_imports": 0,
+      "native_fit_attempts": 0,
+      "OS_metrics": "NOT_MEASURED; controller module did not start"
+    },
+    "controller_record_sha256": null
+  },
+  {
+    "case": "v2_containment_fixed",
+    "data": {
+      "mode": "containment",
+      "controller_pid": 23932,
+      "native_imports": 0,
+      "native_fit_attempts": 0,
+      "limits_are_selftest_values": true,
+      "production_private_commit_cap": 2147483648,
+      "max_processes": 2,
+      "monitor_interval_target_seconds": 0.005,
+      "monitor_max_gap_cap_seconds": 0.05,
+      "OS_job_limit_flags": 8712,
+      "OS_job_private_commit_limit": 2147483648,
+      "controller_in_job": true,
+      "worker_pid": 18556,
+      "worker_in_same_job": true,
+      "suspended_usercode_sentinel_absent": true,
+      "worker_exit_code": 84,
+      "worker_result": null,
+      "status": "RESOURCE_GUARD_BLOCKED",
+      "reasons": [
+        "AssertionError:UNEXPECTED_CHILD: assigned=3, listed=3, pids=(23932, 18556, 18116)",
+        "CHILD_OR_BREAKAWAY_NOT_DENIED"
+      ],
+      "stop_events": [
+        "AssertionError:UNEXPECTED_CHILD: assigned=3, listed=3, pids=(23932, 18556, 18116)",
+        "CHILD_OR_BREAKAWAY_NOT_DENIED"
+      ],
+      "working_set_sample_count": 1,
+      "monitor_max_gap": 6.00004568696022e-07,
+      "sampled_peak_aggregate_working_set": 18022400,
+      "sampled_peak_aggregate_private_commit": 10641408,
+      "OS_peak_job_commit": 11890688,
+      "OS_process_working_set_peaks_observed_until_exit": {
+        "23932": 18022400
+      },
+      "controlled_elapsed_before_final_flush": 0.05173320003086701
+    },
+    "controller_record_sha256": "8068a0fb4c8302c7eb182720151d7f719b8bf3ffd0d34fdee68e769cff607697"
+  },
+  {
+    "case": "v3_conhost_diagnostic",
+    "data": {
+      "mode": "containment",
+      "controller_pid": 2888,
+      "native_imports": 0,
+      "native_fit_attempts": 0,
+      "limits_are_selftest_values": true,
+      "production_private_commit_cap": 2147483648,
+      "max_processes": 2,
+      "monitor_interval_target_seconds": 0.005,
+      "monitor_max_gap_cap_seconds": 0.05,
+      "OS_job_limit_flags": 8712,
+      "OS_job_private_commit_limit": 2147483648,
+      "controller_in_job": true,
+      "worker_pid": 14304,
+      "worker_in_same_job": true,
+      "suspended_usercode_sentinel_absent": true,
+      "worker_exit_code": 84,
+      "worker_result": null,
+      "status": "RESOURCE_GUARD_BLOCKED",
+      "reasons": [
+        "AssertionError:{'reason': 'UNEXPECTED_CHILD', 'assigned': 3, 'listed': 3, 'accounting_active': 3, 'accounting_total': 3, 'processes': [{'pid': 2888, 'image_basename': 'python.exe', 'exit_code_observed': 259, 'member_of_same_job': True}, {'pid': 14304, 'image_basename': 'python.exe', 'exit_code_observed': 259, 'member_of_same_job': True}, {'pid': 16208, 'image_basename': 'conhost.exe', 'exit_code_observed': 259, 'member_of_same_job': True}]}",
+        "CHILD_OR_BREAKAWAY_NOT_DENIED"
+      ],
+      "stop_events": [
+        "AssertionError:{'reason': 'UNEXPECTED_CHILD', 'assigned': 3, 'listed': 3, 'accounting_active': 3, 'accounting_total': 3, 'processes': [{'pid': 2888, 'image_basename': 'python.exe', 'exit_code_observed': 259, 'member_of_same_job': True}, {'pid': 14304, 'image_basename': 'python.exe', 'exit_code_observed': 259, 'member_of_same_job': True}, {'pid': 16208, 'image_basename': 'conhost.exe', 'exit_code_observed': 259, 'member_of_same_job': True}]}",
+        "CHILD_OR_BREAKAWAY_NOT_DENIED"
+      ],
+      "working_set_sample_count": 1,
+      "monitor_max_gap": 5.00003807246685e-07,
+      "sampled_peak_aggregate_working_set": 18132992,
+      "sampled_peak_aggregate_private_commit": 10756096,
+      "OS_peak_job_commit": 12083200,
+      "OS_process_working_set_peaks_observed_until_exit": {
+        "2888": 18132992
+      },
+      "controlled_elapsed_before_final_flush": 0.052931200072634965
+    },
+    "controller_record_sha256": "7ab0dfc90db3ec03267c870145c765302c4e9ee7f3b8ba12a61e8eb4c3e9d7db"
+  },
+  {
+    "case": "v4_containment",
+    "data": {
+      "mode": "containment",
+      "controller_pid": 18244,
+      "native_imports": 0,
+      "native_fit_attempts": 0,
+      "limits_are_selftest_values": true,
+      "production_private_commit_cap": 2147483648,
+      "max_processes": 2,
+      "monitor_interval_target_seconds": 0.005,
+      "monitor_max_gap_cap_seconds": 0.05,
+      "OS_job_limit_flags": 8712,
+      "OS_job_private_commit_limit": 2147483648,
+      "controller_in_job": true,
+      "worker_pid": 35632,
+      "worker_in_same_job": true,
+      "suspended_usercode_sentinel_absent": true,
+      "worker_exit_code": 0,
+      "worker_result": {
+        "mode": "containment",
+        "pid": 35632,
+        "native_imports": 0,
+        "native_fit_attempts": 0,
+        "third_child_attempts": [
+          {
+            "breakaway": false,
+            "denied": true,
+            "winerror": 1816
+          },
+          {
+            "breakaway": true,
+            "denied": true,
+            "winerror": 5
+          }
+        ]
+      },
+      "status": "SELFTEST_PASSED",
+      "reasons": [],
+      "stop_events": [],
+      "working_set_sample_count": 116,
+      "monitor_max_gap": 0.00639459997182712,
+      "sampled_peak_aggregate_working_set": 35627008,
+      "sampled_peak_aggregate_private_commit": 20533248,
+      "OS_peak_job_commit": 20533248,
+      "OS_process_working_set_peaks_observed_until_exit": {
+        "18244": 18571264,
+        "35632": 17076224
+      },
+      "controlled_elapsed_before_final_flush": 0.6899896000395529
+    },
+    "controller_record_sha256": "7a4501db13e6cf6aef2cb6c968a8eefd82f93c72598d29b01d079e75f5b012b3"
+  },
+  {
+    "case": "v4_memory",
+    "data": {
+      "mode": "memory",
+      "controller_pid": 26528,
+      "native_imports": 0,
+      "native_fit_attempts": 0,
+      "limits_are_selftest_values": true,
+      "production_private_commit_cap": 2147483648,
+      "max_processes": 2,
+      "monitor_interval_target_seconds": 0.005,
+      "monitor_max_gap_cap_seconds": 0.05,
+      "OS_job_limit_flags": 8712,
+      "OS_job_private_commit_limit": 100663296,
+      "controller_in_job": true,
+      "parent40MiB_committed": true,
+      "worker_pid": 36228,
+      "worker_in_same_job": true,
+      "suspended_usercode_sentinel_absent": true,
+      "worker_exit_code": 0,
+      "worker_result": {
+        "mode": "memory",
+        "pid": 36228,
+        "native_imports": 0,
+        "native_fit_attempts": 0,
+        "first16MiB_committed": true,
+        "second32MiB_committed": false,
+        "second_error": 1455,
+        "private_commit": 26476544
+      },
+      "status": "SELFTEST_PASSED",
+      "reasons": [],
+      "stop_events": [],
+      "working_set_sample_count": 116,
+      "monitor_max_gap": 0.006528900004923344,
+      "sampled_peak_aggregate_working_set": 34377728,
+      "sampled_peak_aggregate_private_commit": 78311424,
+      "OS_peak_job_commit": 111931392,
+      "OS_process_working_set_peaks_observed_until_exit": {
+        "26528": 17457152,
+        "36228": 16920576
+      },
+      "controlled_elapsed_before_final_flush": 0.6910508000291884
+    },
+    "controller_record_sha256": "90e9a575923603c3791e87f89acbe733b8149c09c7fe00b3f4a41db3c6e96281"
+  },
+  {
+    "case": "v4_deadline",
+    "data": {
+      "mode": "deadline",
+      "controller_pid": 35064,
+      "native_imports": 0,
+      "native_fit_attempts": 0,
+      "limits_are_selftest_values": true,
+      "production_private_commit_cap": 2147483648,
+      "max_processes": 2,
+      "monitor_interval_target_seconds": 0.005,
+      "monitor_max_gap_cap_seconds": 0.05,
+      "OS_job_limit_flags": 8712,
+      "OS_job_private_commit_limit": 2147483648,
+      "controller_in_job": true,
+      "worker_pid": 19600,
+      "worker_in_same_job": true,
+      "suspended_usercode_sentinel_absent": true,
+      "worker_exit_code": 84,
+      "worker_result": {
+        "mode": "deadline",
+        "pid": 19600,
+        "native_imports": 0,
+        "native_fit_attempts": 0
+      },
+      "status": "SELFTEST_PASSED",
+      "reasons": [],
+      "stop_events": [
+        "SELFTEST_DEADLINE"
+      ],
+      "working_set_sample_count": 174,
+      "monitor_max_gap": 0.006299900007434189,
+      "sampled_peak_aggregate_working_set": 34512896,
+      "sampled_peak_aggregate_private_commit": 19562496,
+      "OS_peak_job_commit": 19574784,
+      "OS_process_working_set_peaks_observed_until_exit": {
+        "35064": 17584128,
+        "19600": 16945152
+      },
+      "controlled_elapsed_before_final_flush": 1.0148069999995641
+    },
+    "controller_record_sha256": "eb5337c46716ff01cd39ea819283583c876d713c108076dfa5749ddd4dd2b002"
+  },
+  {
+    "case": "v4_close",
+    "data": {
+      "mode": "close",
+      "controller_pid": 6844,
+      "native_imports": 0,
+      "native_fit_attempts": 0,
+      "limits_are_selftest_values": true,
+      "production_private_commit_cap": 2147483648,
+      "max_processes": 2,
+      "monitor_interval_target_seconds": 0.005,
+      "monitor_max_gap_cap_seconds": 0.05,
+      "OS_job_limit_flags": 8712,
+      "OS_job_private_commit_limit": 2147483648,
+      "controller_in_job": true,
+      "worker_pid": 34352,
+      "worker_in_same_job": true,
+      "suspended_usercode_sentinel_absent": true,
+      "status": "INTENTIONAL_LAST_JOB_HANDLE_CLOSE",
+      "before_close_seconds": 0.07631540001602843,
+      "working_set_sample_count": 8,
+      "monitor_max_gap": 0.005539499979931861
+    },
+    "controller_record_sha256": "f84d6cb604571c135718e3aae6a2426eb385fe5d0d968e20fc3ecc7004b0b3a3"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "path": "research/innovation/phase2/D1A_SOURCE_AND_EVIDENCE_MANIFEST.csv",
+    "files": 40,
+    "sha256": "70788ad7fbb47f915cc888990bc0e381f2a618a3db06c4bd914dc4c8e6e4ac8f"
+  },
+  {
+    "path": "research/innovation/phase2/DELIVERABLE_MANIFEST.csv",
+    "files": 52,
+    "sha256": "18fed668e7ab83e2c7f831df20313be58f33e1800870632ad19f8798ab3e2169"
+  },
+  {
+    "path": "research/innovation/phase1/SOURCE_MANIFEST.csv",
+    "files": 25,
+    "sha256": "07e537056c4121fcad23cedcfd06b1fb9ca32549fdea6ac4bdc46a30956f80e1"
+  },
+  {
+    "path": "research/innovation/evidence/publication/SOURCE_SNAPSHOT_MANIFEST.csv",
+    "files": 127,
+    "sha256": "9c5b2eca9453937c58075fccde067cc764469eae40c0381d36749012f482a6c0"
+  }
+]

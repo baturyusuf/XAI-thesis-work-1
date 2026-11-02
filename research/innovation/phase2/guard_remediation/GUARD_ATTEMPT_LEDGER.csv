@@ -1,0 +1,17 @@
+attempt,case,controller_lifetime_seconds,lifecycle_ceiling_seconds,lifecycle_overshoot_seconds,controller_exit_code,worker_exit_code,stop_reason,sampled_peak_private,sampled_peak_WS,native_admission
+attempt_01_memory_causal96,memory_causal96,0.2495986,4.5,0.0,0,0,,85688320,42569728,BLOCKED
+attempt_02_memory_preassignment96,memory_preassignment96,0.1952233,4.5,0.0,0,0,,68968448,42201088,BLOCKED
+attempt_03_containment_natural,containment_natural,0.1783236,4.5,0.0,0,0,,27942912,42561536,BLOCKED
+attempt_04_setup_deadline,setup_deadline,0.1635323,2.3,0.0,0,90,setup_deadline,26435584,41914368,BLOCKED
+attempt_05_rational_deadline,rational_deadline,0.3131957,2.3,0.0,0,90,rational_deadline,27361280,42287104,BLOCKED
+attempt_06_native_dummy_deadline,native_dummy_deadline,0.3216288,2.3,0.0,0,90,native_deadline,26902528,41861120,BLOCKED
+attempt_07_postfit_deadline,postfit_deadline,0.3190744,2.3,0.0,0,90,postfit_deadline,26963968,41975808,BLOCKED
+attempt_08_global_deadline,global_deadline,0.2665502,0.4,0.0,0,90,science_deadline,27897856,43278336,BLOCKED
+attempt_09_worker_exception,worker_exception,0.1742977,4.5,0.0,0,43,WORKER_EXCEPTION_OR_EXIT,26927104,42278912,BLOCKED
+attempt_10_controller_exception,controller_exception,0.1620676,4.5,0.0,0,90,CONTROLLER_ERROR,26742784,41832448,BLOCKED
+attempt_11_jobwide_termination,jobwide_termination,0.1606802,4.5,0.0,93,93,,,,BLOCKED
+attempt_12_shutdown_stall,shutdown_stall,0.4139134,0.4,0.013913399999999965,92,92,science_deadline,27312128,42426368,BLOCKED
+attempt_13_preflight_failure,preflight_failure,0.0612652,4.5,0.0,0,,CONTROLLER_ERROR,12386304,19177472,BLOCKED
+attempt_14_monitor_failure,monitor_failure,0.1818757,4.5,0.0,0,90,MONITOR_ERROR,27983872,42708992,BLOCKED
+attempt_15_correction_containment_natural,containment_natural,0.1775424,4.5,0.0,0,0,,26779648,41988096,BLOCKED
+attempt_16_correction_monitor_failure,monitor_failure,0.1670358,4.5,0.0,98,90,MONITOR_ERROR,,,BLOCKED

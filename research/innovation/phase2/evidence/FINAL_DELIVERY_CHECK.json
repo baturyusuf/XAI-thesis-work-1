@@ -1,0 +1,36 @@
+{
+  "branch": "research/xai-innovation",
+  "HEAD": "61206e3f1532f241109320e359df1a136a7250cc",
+  "status": "RESOURCE_GUARD_BLOCKED",
+  "new_worktree_status": [
+    "?? research/innovation/phase2/",
+    "?? src/innovation/phase2/",
+    "?? tests/phase2/"
+  ],
+  "phase1_tracked_files_unchanged": true,
+  "source_evidence_manifest_files": 40,
+  "source_evidence_manifest_sha256": "70788ad7fbb47f915cc888990bc0e381f2a618a3db06c4bd914dc4c8e6e4ac8f",
+  "required_reports_present": [
+    "D1A_SOLVE_REPORT.md",
+    "D1A_RE_REVIEW_REPORT.md",
+    "D1A_RESOURCE_LEDGER.csv",
+    "D1A_NUMERICAL_AUDIT.md",
+    "D1A_NATIVE_LIME_CONFORMANCE.md",
+    "D1A_ATTEMPT_LOG.md",
+    "AGENT5_D1A_AUDIT_HANDOFF.md"
+  ],
+  "new_guard_qualification_tests": "7pass; resource/logging only",
+  "guard_invocations": 8,
+  "native_fits_attempted_completed_failed": [
+    0,
+    0,
+    0
+  ],
+  "planned_native_slots_skipped": 16,
+  "scientific_predictor_rows_and_callbacks": 0,
+  "M1_M4_M2_Q4_QJ": "NOT_RUN_RESOURCE_GUARD_BLOCKED",
+  "numerical_interval": null,
+  "original_suites": "NOT_RERUN",
+  "sensitive_pattern_matches": [],
+  "staged_committed_pushed_merged": false
+}

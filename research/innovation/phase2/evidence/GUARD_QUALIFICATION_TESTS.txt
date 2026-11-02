@@ -1,0 +1,12 @@
+test_failed_guard_syntax_attempt_is_retained (test_guard_qualification.GuardQualificationTests.test_failed_guard_syntax_attempt_is_retained) ... ok
+test_memory_discrepancy_blocks_even_other_gates_declared (test_guard_qualification.GuardQualificationTests.test_memory_discrepancy_blocks_even_other_gates_declared) ... ok
+test_missing_probe_and_monitor_failure_fail_closed (test_guard_qualification.GuardQualificationTests.test_missing_probe_and_monitor_failure_fail_closed) ... ok
+test_missing_stage_watchdog_is_not_filled_by_one_second_test (test_guard_qualification.GuardQualificationTests.test_missing_stage_watchdog_is_not_filled_by_one_second_test) ... ok
+test_missing_worker_result_stays_blocked_not_zero_cost (test_guard_qualification.GuardQualificationTests.test_missing_worker_result_stays_blocked_not_zero_cost) ... ok
+test_original_memory_pass_is_not_admission (test_guard_qualification.GuardQualificationTests.test_original_memory_pass_is_not_admission) ... ok
+test_production_caps_match_source_not_selftest_scales (test_guard_qualification.GuardQualificationTests.test_production_caps_match_source_not_selftest_scales) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK

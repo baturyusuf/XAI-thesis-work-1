@@ -1,0 +1,49 @@
+{
+  "mode": "containment",
+  "controller_pid": 18244,
+  "native_imports": 0,
+  "native_fit_attempts": 0,
+  "limits_are_selftest_values": true,
+  "production_private_commit_cap": 2147483648,
+  "max_processes": 2,
+  "monitor_interval_target_seconds": 0.005,
+  "monitor_max_gap_cap_seconds": 0.05,
+  "OS_job_limit_flags": 8712,
+  "OS_job_private_commit_limit": 2147483648,
+  "controller_in_job": true,
+  "worker_pid": 35632,
+  "worker_in_same_job": true,
+  "suspended_usercode_sentinel_absent": true,
+  "worker_exit_code": 0,
+  "worker_result": {
+    "mode": "containment",
+    "pid": 35632,
+    "native_imports": 0,
+    "native_fit_attempts": 0,
+    "third_child_attempts": [
+      {
+        "breakaway": false,
+        "denied": true,
+        "winerror": 1816
+      },
+      {
+        "breakaway": true,
+        "denied": true,
+        "winerror": 5
+      }
+    ]
+  },
+  "status": "SELFTEST_PASSED",
+  "reasons": [],
+  "stop_events": [],
+  "working_set_sample_count": 116,
+  "monitor_max_gap": 0.00639459997182712,
+  "sampled_peak_aggregate_working_set": 35627008,
+  "sampled_peak_aggregate_private_commit": 20533248,
+  "OS_peak_job_commit": 20533248,
+  "OS_process_working_set_peaks_observed_until_exit": {
+    "18244": 18571264,
+    "35632": 17076224
+  },
+  "controlled_elapsed_before_final_flush": 0.6899896000395529
+}
