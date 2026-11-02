@@ -1,0 +1,312 @@
+{
+  "status": "VERIFIED_STATIC_SOURCE_HASHES_NOT_DYNAMIC_REPRODUCTION",
+  "own_base": "a96ec5315de98b57848a659083b2fd3028775ba3",
+  "implementation": "bf040de8c567aeed5cd2c30470414a297cba8014",
+  "handoff": "b79d674373caacfa986708c378c617de5537e5cd",
+  "contract": {
+    "contract_commit": "8d1377313b856782d870ee9b854f7a8b840231f9",
+    "path": "research/benchmark/phase2/D1A_RESOURCE_AND_NUMERICAL_GATES.md",
+    "bytes": 14105,
+    "sha256": "55a42be0aa6bfd153403227d7bdb148bd6dfc64a0fb606dac73940ece490e7d1",
+    "git_blob_id": "23869e536b14314023ee778780f5f79d6ebdaaf9"
+  },
+  "remote_identity_method": "GitHub origin git ls-remote; anonymous contents API404; Git remote succeeds",
+  "handoff_delta": "Only publication/AGENT5_IMMUTABLE_GUARD_HANDOFF.md added; older handoff historical",
+  "manifest_checks": [
+    {
+      "path": "research/innovation/phase2/D1A_SOURCE_AND_EVIDENCE_MANIFEST.csv",
+      "rows": 40,
+      "sha256": "70788ad7fbb47f915cc888990bc0e381f2a618a3db06c4bd914dc4c8e6e4ac8f",
+      "mismatches": []
+    },
+    {
+      "path": "research/innovation/phase2/DELIVERABLE_MANIFEST.csv",
+      "rows": 52,
+      "sha256": "18fed668e7ab83e2c7f831df20313be58f33e1800870632ad19f8798ab3e2169",
+      "mismatches": []
+    },
+    {
+      "path": "research/innovation/phase2/guard_remediation/SOURCE_SNAPSHOT_MANIFEST.csv",
+      "rows": 14,
+      "sha256": "f802ab1e7d10371c0cd47535a535ab0ad8b6a706fa1ca96919a26d8a00f142b8",
+      "mismatches": []
+    },
+    {
+      "path": "research/innovation/phase2/guard_remediation/DELIVERABLE_MANIFEST.csv",
+      "rows": 412,
+      "sha256": "3d7720f87fbd85a7103b0f0d3dea52a6a496aa700e79fcecc3169e71c169bd58",
+      "mismatches": []
+    },
+    {
+      "path": "research/innovation/phase2/guard_remediation/publication/CONTENT_MANIFEST.csv",
+      "rows": 467,
+      "sha256": "8900a0b59f4068b79431b0233e8da63f7ca29d023e38ef0cb5933b206bf63793",
+      "mismatches": []
+    }
+  ],
+  "source_files": [
+    {
+      "path": "src/innovation/phase2/guard_remediation_v1/__init__.py",
+      "bytes": 83,
+      "sha256": "b9a820e27be9ae58175fa48bc19ba2b6869a1a515757c4a7cce0811f3b98bb6b",
+      "git_blob": "ffc6365ac7dde899165463a85ba9e204c145b809"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v1/api.py",
+      "bytes": 8640,
+      "sha256": "6d1b0a52575b151abbbfc17e55da6ca4ee8d0713b871108cb1d0161b60cde3d5",
+      "git_blob": "8bf82f582f948cd520790fb9a556a6320c92c450"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v1/audit.py",
+      "bytes": 4570,
+      "sha256": "aa751a271ef11233b0df7aa9716a8d4015961b91f761623c3ddf2dfb78bdfce6",
+      "git_blob": "158a9bf15a19defc9789b9a4c5d9cfff0d17fb3f"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v1/controller.py",
+      "bytes": 11956,
+      "sha256": "ab3cd9d00695681545538c1b41ff2dbc25a3beeb39743127ac6822e8c9f01e9d",
+      "git_blob": "76d397c9a13e5068bf2d02f4d57d09305b53fe22"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v1/policy.py",
+      "bytes": 6026,
+      "sha256": "836f738957eb57e5a87322faa8fc6e9318e9ef9bcfa72f26391e1c675e52bb1a",
+      "git_blob": "795302d22998d02d19efee64cce5a0181b7bd16c"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v1/probe.py",
+      "bytes": 4765,
+      "sha256": "1cb8040a1f214c0ae971f823b42d40577fc6904573305d6e41b8ef67b49915ea",
+      "git_blob": "77daa3b1af38cb94bb0cdd98003dbd9a8bd19800"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v1/records.py",
+      "bytes": 835,
+      "sha256": "d66e6b17ece48e928616324d54dab6c59d17c4fbea8bf308d573d68a8c171436",
+      "git_blob": "b0fe9f6fc44b31f1e12bb7f3e66961eb5a71ea19"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v1/worker.py",
+      "bytes": 5743,
+      "sha256": "6fb075883878e78f92a4311960e97e19d247f415af8a8db76d9ea7242814b53c",
+      "git_blob": "9ce4bdb89bdac2b6d306250cb55a41a6516ad578"
+    },
+    {
+      "path": "src/innovation/phase2/winjob_v4.py",
+      "bytes": 7886,
+      "sha256": "0104bb2321a6645a28d18df70712cde519b2865b67488725f20f13ede99fcfd2",
+      "git_blob": "bec5bbdcee125df11661685b3f0a03c2cb169916"
+    },
+    {
+      "path": "tests/phase2/test_guard_remediation_audit.py",
+      "bytes": 4347,
+      "sha256": "c3aa1aaad3627279cab512183d1135ae21c2b7675fd94aa488061bbc1b0b8962",
+      "git_blob": "db74326220a5084866ccb7175fe861773a814dc1"
+    },
+    {
+      "path": "tests/phase2/test_guard_remediation_policy.py",
+      "bytes": 5650,
+      "sha256": "be086657a60a35e890a58f3ca19c0bd8cf6b6f05b7eebd7350625bc68e94c621",
+      "git_blob": "c707236d642ef4dc99a769ae785214be7e3c33be"
+    }
+  ],
+  "dependency_provenance": "winjob_v4 newly published in bf040de; matches earlier40-file and current14-file manifests, not present at prior published61206e base",
+  "decision": "REMEDIATION_REQUIRED",
+  "new_workers": 0,
+  "new_tests": 0,
+  "native_imports": 0,
+  "commit_or_push": false,
+  "preparation_notes": [
+    "Oversized read-only verification command failed shell parsing before execution; no controlled job/file write",
+    "Rejected erroneous premise that winjob_v4 already existed in prior published61206e; historical source manifest is the correct unchanged-source comparator",
+    "Long git-show source path hit Windows filename limit; blob-ID cat-file verified archived sources without checkout",
+    "Initial log-pattern assertion assumed LF; raw test log is CRLF. splitlines recovered19 entries without altering frozen bytes",
+    "Oversized documentation-write command failed shell parsing before writing; shortened version succeeded, no test/job launch"
+  ],
+  "runtime_source_map_matches": 112,
+  "runtime_controller_sources": {
+    "attempt_01_memory_causal96": "b72b3ee14c607e742cdca036e7fdb377454efc668cbca9053aac8a132ecf0e65",
+    "attempt_02_memory_preassignment96": "b72b3ee14c607e742cdca036e7fdb377454efc668cbca9053aac8a132ecf0e65",
+    "attempt_03_containment_natural": "b72b3ee14c607e742cdca036e7fdb377454efc668cbca9053aac8a132ecf0e65",
+    "attempt_04_setup_deadline": "b72b3ee14c607e742cdca036e7fdb377454efc668cbca9053aac8a132ecf0e65",
+    "attempt_05_rational_deadline": "b72b3ee14c607e742cdca036e7fdb377454efc668cbca9053aac8a132ecf0e65",
+    "attempt_06_native_dummy_deadline": "b72b3ee14c607e742cdca036e7fdb377454efc668cbca9053aac8a132ecf0e65",
+    "attempt_07_postfit_deadline": "b72b3ee14c607e742cdca036e7fdb377454efc668cbca9053aac8a132ecf0e65",
+    "attempt_08_global_deadline": "b72b3ee14c607e742cdca036e7fdb377454efc668cbca9053aac8a132ecf0e65",
+    "attempt_09_worker_exception": "40db2254a8ce42fd74ee089102262344e80d8eca1fac2f5145ca6d54fae33c77",
+    "attempt_10_controller_exception": "40db2254a8ce42fd74ee089102262344e80d8eca1fac2f5145ca6d54fae33c77",
+    "attempt_11_jobwide_termination": "40db2254a8ce42fd74ee089102262344e80d8eca1fac2f5145ca6d54fae33c77",
+    "attempt_12_shutdown_stall": "40db2254a8ce42fd74ee089102262344e80d8eca1fac2f5145ca6d54fae33c77",
+    "attempt_13_preflight_failure": "40db2254a8ce42fd74ee089102262344e80d8eca1fac2f5145ca6d54fae33c77",
+    "attempt_14_monitor_failure": "40db2254a8ce42fd74ee089102262344e80d8eca1fac2f5145ca6d54fae33c77",
+    "attempt_15_correction_containment_natural": "final_revision03",
+    "attempt_16_correction_monitor_failure": "final_revision03"
+  },
+  "test_record": {
+    "tests_run": 19,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "guard_scope_only": true,
+    "controlled_job_launches": 0
+  },
+  "source_test_definitions": 19,
+  "log_ok_entries": 19,
+  "test_status": "REPORTED_AGENT4_RUN; COUNTS_SOURCE_LOG_VERIFIED; NOT_RERUN_BY_AGENT5",
+  "memory_reconciliation": [
+    {
+      "attempt": "attempt_01_memory_causal96",
+      "limit": 100663296,
+      "before_current": 85688320,
+      "after_current": 85688320,
+      "historical_peak": 119308288,
+      "requested": 33554432,
+      "success": false,
+      "error": 1455,
+      "event10": true,
+      "positive_success": true,
+      "global_commit_headroom": 20458848256,
+      "peak_minus_current_minus_request": 65536
+    },
+    {
+      "attempt": "attempt_02_memory_preassignment96",
+      "limit": 100663296,
+      "before_current": 85782528,
+      "after_current": 85782528,
+      "historical_peak": 119402496,
+      "requested": 33554432,
+      "success": false,
+      "error": 1455,
+      "event10": true,
+      "positive_success": true,
+      "global_commit_headroom": 20427743232,
+      "peak_minus_current_minus_request": 65536
+    }
+  ],
+  "independent_raw_class9_readbacks": [
+    {
+      "attempt": "attempt_01_memory_causal96",
+      "flags": 8712,
+      "active_process_limit": 2,
+      "commit_limit": 100663296,
+      "raw_bytes": 144
+    },
+    {
+      "attempt": "attempt_02_memory_preassignment96",
+      "flags": 8712,
+      "active_process_limit": 2,
+      "commit_limit": 100663296,
+      "raw_bytes": 144
+    },
+    {
+      "attempt": "attempt_03_containment_natural",
+      "flags": 8712,
+      "active_process_limit": 2,
+      "commit_limit": 2147483648,
+      "raw_bytes": 144
+    },
+    {
+      "attempt": "attempt_04_setup_deadline",
+      "flags": 8712,
+      "active_process_limit": 2,
+      "commit_limit": 2147483648,
+      "raw_bytes": 144
+    },
+    {
+      "attempt": "attempt_05_rational_deadline",
+      "flags": 8712,
+      "active_process_limit": 2,
+      "commit_limit": 2147483648,
+      "raw_bytes": 144
+    },
+    {
+      "attempt": "attempt_06_native_dummy_deadline",
+      "flags": 8712,
+      "active_process_limit": 2,
+      "commit_limit": 2147483648,
+      "raw_bytes": 144
+    },
+    {
+      "attempt": "attempt_07_postfit_deadline",
+      "flags": 8712,
+      "active_process_limit": 2,
+      "commit_limit": 2147483648,
+      "raw_bytes": 144
+    },
+    {
+      "attempt": "attempt_08_global_deadline",
+      "flags": 8712,
+      "active_process_limit": 2,
+      "commit_limit": 2147483648,
+      "raw_bytes": 144
+    },
+    {
+      "attempt": "attempt_09_worker_exception",
+      "flags": 8712,
+      "active_process_limit": 2,
+      "commit_limit": 2147483648,
+      "raw_bytes": 144
+    },
+    {
+      "attempt": "attempt_10_controller_exception",
+      "flags": 8712,
+      "active_process_limit": 2,
+      "commit_limit": 2147483648,
+      "raw_bytes": 144
+    },
+    {
+      "attempt": "attempt_11_jobwide_termination",
+      "flags": 8712,
+      "active_process_limit": 2,
+      "commit_limit": 2147483648,
+      "raw_bytes": 144
+    },
+    {
+      "attempt": "attempt_12_shutdown_stall",
+      "flags": 8712,
+      "active_process_limit": 2,
+      "commit_limit": 2147483648,
+      "raw_bytes": 144
+    },
+    {
+      "attempt": "attempt_13_preflight_failure",
+      "flags": 8712,
+      "active_process_limit": 2,
+      "commit_limit": 2147483648,
+      "raw_bytes": 144
+    },
+    {
+      "attempt": "attempt_14_monitor_failure",
+      "flags": 8712,
+      "active_process_limit": 2,
+      "commit_limit": 2147483648,
+      "raw_bytes": 144
+    },
+    {
+      "attempt": "attempt_15_correction_containment_natural",
+      "flags": 8712,
+      "active_process_limit": 2,
+      "commit_limit": 2147483648,
+      "raw_bytes": 144
+    },
+    {
+      "attempt": "attempt_16_correction_monitor_failure",
+      "flags": 8712,
+      "active_process_limit": 2,
+      "commit_limit": 2147483648,
+      "raw_bytes": 144
+    }
+  ],
+  "consultant_review": {
+    "win32_session": "d3d6dcd1-f9df-457e-a2fb-9267ca0faff8",
+    "watchdog_session": "e43d2f39-3dc9-4898-b473-03100abb518c",
+    "scope": "Read-only source review; no writes or execution",
+    "parent_corrections": [
+      "Removed unsupported unchecked-TerminateJobObject-return finding after api.py133 check",
+      "Observed containment denials are genuine; successful-creation cleanup cannot mask them",
+      "Error1816 is insufficient quota, not ERROR_NOT_ENOUGH_MEMORY"
+    ]
+  }
+}
