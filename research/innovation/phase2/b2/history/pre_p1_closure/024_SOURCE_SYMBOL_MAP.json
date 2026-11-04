@@ -1,0 +1,622 @@
+{
+  "budget.py:Slot": {
+    "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "start": 13,
+    "end": 16
+  },
+  "budget.py:Ticket": {
+    "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "start": 19,
+    "end": 27
+  },
+  "budget.py:BudgetError": {
+    "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "start": 29,
+    "end": 30
+  },
+  "budget.py:BudgetLedger": {
+    "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "start": 39,
+    "end": 204
+  },
+  "budget.py:BudgetLedger.__init__": {
+    "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "start": 41,
+    "end": 55
+  },
+  "budget.py:BudgetLedger._check": {
+    "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "start": 57,
+    "end": 58
+  },
+  "budget.py:BudgetLedger._stop": {
+    "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "start": 60,
+    "end": 83
+  },
+  "budget.py:BudgetLedger.reserve": {
+    "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "start": 85,
+    "end": 126
+  },
+  "budget.py:BudgetLedger.mark_consumed": {
+    "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "start": 128,
+    "end": 140
+  },
+  "budget.py:BudgetLedger.complete": {
+    "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "start": 142,
+    "end": 190
+  },
+  "budget.py:BudgetLedger.abort_inflight": {
+    "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "start": 192,
+    "end": 195
+  },
+  "budget.py:BudgetLedger.snapshot": {
+    "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "start": 197,
+    "end": 204
+  },
+  "budget.py:snapshot_digest": {
+    "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "start": 207,
+    "end": 217
+  },
+  "channel.py:Cancelled": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 14,
+    "end": 15
+  },
+  "channel.py:Channel": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 17,
+    "end": 173
+  },
+  "channel.py:Channel.__init__": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 18,
+    "end": 52
+  },
+  "channel.py:Channel.create": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 56,
+    "end": 57
+  },
+  "channel.py:Channel._atomic": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 59,
+    "end": 68
+  },
+  "channel.py:Channel.reason_code": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 70,
+    "end": 71
+  },
+  "channel.py:Channel.stopped": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 73,
+    "end": 74
+  },
+  "channel.py:Channel.cancel": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 76,
+    "end": 88
+  },
+  "channel.py:Channel._write": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 90,
+    "end": 104
+  },
+  "channel.py:Channel._read": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 106,
+    "end": 121
+  },
+  "channel.py:Channel.publish_header": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 123,
+    "end": 129
+  },
+  "channel.py:Channel.header": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 131,
+    "end": 138
+  },
+  "channel.py:Channel.ask": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 140,
+    "end": 164
+  },
+  "channel.py:Channel.take": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 166,
+    "end": 167
+  },
+  "channel.py:Channel.answer": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 169,
+    "end": 173
+  },
+  "config.py:AdmissionError": {
+    "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+    "start": 13,
+    "end": 14
+  },
+  "config.py:ProductionProfile": {
+    "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+    "start": 17,
+    "end": 26
+  },
+  "config.py:DiagnosticProposal": {
+    "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+    "start": 31,
+    "end": 45
+  },
+  "config.py:ApprovedRun": {
+    "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+    "start": 48,
+    "end": 60
+  },
+  "config.py:sha256": {
+    "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+    "start": 63,
+    "end": 64
+  },
+  "config.py:inside": {
+    "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+    "start": 67,
+    "end": 74
+  },
+  "config.py:read_json": {
+    "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+    "start": 77,
+    "end": 82
+  },
+  "config.py:authority_only": {
+    "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+    "start": 85,
+    "end": 98
+  },
+  "config.py:profile_payload": {
+    "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+    "start": 101,
+    "end": 104
+  },
+  "config.py:verify_bound_run": {
+    "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+    "start": 107,
+    "end": 159
+  },
+  "controller.py:Controller": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 14,
+    "end": 301
+  },
+  "controller.py:Controller.__init__": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 15,
+    "end": 43
+  },
+  "controller.py:Controller.__call__": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 45,
+    "end": 46
+  },
+  "controller.py:Controller.request_stop": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 48,
+    "end": 56
+  },
+  "controller.py:Controller.fatal_stop": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 58,
+    "end": 63
+  },
+  "controller.py:Controller.submit": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 65,
+    "end": 69
+  },
+  "controller.py:Controller.cleanup_done": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 71,
+    "end": 72
+  },
+  "controller.py:Controller._owner": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 74,
+    "end": 75
+  },
+  "controller.py:Controller._stop": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 77,
+    "end": 100
+  },
+  "controller.py:Controller._admission": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 102,
+    "end": 111
+  },
+  "controller.py:Controller._launch": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 113,
+    "end": 160
+  },
+  "controller.py:Controller._message": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 162,
+    "end": 226
+  },
+  "controller.py:Controller._run": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 228,
+    "end": 249
+  },
+  "controller.py:Controller._tick": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 251,
+    "end": 301
+  },
+  "entry.py:execute_approved": {
+    "path": "src/innovation/phase2/guard_remediation_v2/entry.py",
+    "start": 3,
+    "end": 75
+  },
+  "gate.py:GateDenied": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 19,
+    "end": 20
+  },
+  "gate.py:GateStopped": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 22,
+    "end": 23
+  },
+  "gate.py:Grant": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 26,
+    "end": 39
+  },
+  "gate.py:Grant.payload": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 36,
+    "end": 39
+  },
+  "gate.py:word": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 42,
+    "end": 51
+  },
+  "gate.py:AdmissionGate": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 54,
+    "end": 237
+  },
+  "gate.py:AdmissionGate.__init__": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 55,
+    "end": 66
+  },
+  "gate.py:AdmissionGate.read": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 69,
+    "end": 77
+  },
+  "gate.py:AdmissionGate.stopped": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 79,
+    "end": 80
+  },
+  "gate.py:AdmissionGate.commit_stop": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 82,
+    "end": 87
+  },
+  "gate.py:AdmissionGate._swap": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 89,
+    "end": 107
+  },
+  "gate.py:AdmissionGate.open_after_arm": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 109,
+    "end": 112
+  },
+  "gate.py:AdmissionGate.bind_creator": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 114,
+    "end": 119
+  },
+  "gate.py:AdmissionGate.bind": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 121,
+    "end": 128
+  },
+  "gate.py:AdmissionGate._budget": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 130,
+    "end": 145
+  },
+  "gate.py:AdmissionGate._token": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 147,
+    "end": 156
+  },
+  "gate.py:AdmissionGate._validate": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 158,
+    "end": 168
+  },
+  "gate.py:AdmissionGate._issue": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 170,
+    "end": 175
+  },
+  "gate.py:AdmissionGate._consume": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 177,
+    "end": 180
+  },
+  "gate.py:AdmissionGate._finish": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 182,
+    "end": 185
+  },
+  "gate.py:AdmissionGate.issue_create": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 187,
+    "end": 188
+  },
+  "gate.py:AdmissionGate.consume_create": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 189,
+    "end": 190
+  },
+  "gate.py:AdmissionGate.finish_create": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 191,
+    "end": 192
+  },
+  "gate.py:AdmissionGate.issue_resume": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 193,
+    "end": 194
+  },
+  "gate.py:AdmissionGate.consume_resume": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 195,
+    "end": 196
+  },
+  "gate.py:AdmissionGate.finish_resume": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 197,
+    "end": 198
+  },
+  "gate.py:AdmissionGate.offer_import": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 199,
+    "end": 200
+  },
+  "gate.py:AdmissionGate.enter_import": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 201,
+    "end": 202
+  },
+  "gate.py:AdmissionGate.finish_import": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 203,
+    "end": 204
+  },
+  "gate.py:AdmissionGate.offer_rational": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 205,
+    "end": 206
+  },
+  "gate.py:AdmissionGate.enter_rational": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 207,
+    "end": 208
+  },
+  "gate.py:AdmissionGate.finish_rational": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 209,
+    "end": 210
+  },
+  "gate.py:AdmissionGate.offer_unit": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 211,
+    "end": 212
+  },
+  "gate.py:AdmissionGate.enter_unit": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 213,
+    "end": 214
+  },
+  "gate.py:AdmissionGate.enter_callback": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 215,
+    "end": 220
+  },
+  "gate.py:AdmissionGate.finish_callback": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 221,
+    "end": 224
+  },
+  "gate.py:AdmissionGate.finish_unit": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 225,
+    "end": 231
+  },
+  "gate.py:AdmissionGate.require_completed": {
+    "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "start": 232,
+    "end": 237
+  },
+  "os_api.py:noninherited": {
+    "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+    "start": 23,
+    "end": 26
+  },
+  "os_api.py:signaled": {
+    "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+    "start": 29,
+    "end": 32
+  },
+  "os_api.py:OwnedJob": {
+    "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+    "start": 35,
+    "end": 128
+  },
+  "os_api.py:OwnedJob.__init__": {
+    "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+    "start": 37,
+    "end": 47
+  },
+  "os_api.py:OwnedJob.verify_owner": {
+    "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+    "start": 49,
+    "end": 52
+  },
+  "os_api.py:OwnedJob.create_suspended": {
+    "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+    "start": 54,
+    "end": 78
+  },
+  "os_api.py:OwnedJob.resume_retained": {
+    "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+    "start": 80,
+    "end": 105
+  },
+  "os_api.py:OwnedJob.request_worker_kill": {
+    "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+    "start": 107,
+    "end": 112
+  },
+  "os_api.py:OwnedJob.fatal_owner": {
+    "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+    "start": 114,
+    "end": 119
+  },
+  "os_api.py:OwnedJob.close_owner_and_exit": {
+    "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+    "start": 121,
+    "end": 128
+  },
+  "os_api.py:thread_creation": {
+    "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+    "start": 141,
+    "end": 144
+  },
+  "os_api.py:kernel_identity": {
+    "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+    "start": 147,
+    "end": 152
+  },
+  "os_api.py:current_worker_identity": {
+    "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+    "start": 155,
+    "end": 156
+  },
+  "telemetry.py:EvidenceBus": {
+    "path": "src/innovation/phase2/guard_remediation_v2/telemetry.py",
+    "start": 8,
+    "end": 88
+  },
+  "telemetry.py:EvidenceBus.__init__": {
+    "path": "src/innovation/phase2/guard_remediation_v2/telemetry.py",
+    "start": 9,
+    "end": 14
+  },
+  "telemetry.py:EvidenceBus.offer": {
+    "path": "src/innovation/phase2/guard_remediation_v2/telemetry.py",
+    "start": 16,
+    "end": 24
+  },
+  "telemetry.py:EvidenceBus.start_writer": {
+    "path": "src/innovation/phase2/guard_remediation_v2/telemetry.py",
+    "start": 26,
+    "end": 44
+  },
+  "telemetry.py:EvidenceBus.start_sampler": {
+    "path": "src/innovation/phase2/guard_remediation_v2/telemetry.py",
+    "start": 46,
+    "end": 80
+  },
+  "telemetry.py:EvidenceBus.tail": {
+    "path": "src/innovation/phase2/guard_remediation_v2/telemetry.py",
+    "start": 82,
+    "end": 88
+  },
+  "worker.py:OperationPermit": {
+    "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+    "start": 14,
+    "end": 74
+  },
+  "worker.py:OperationPermit.__init__": {
+    "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+    "start": 16,
+    "end": 25
+  },
+  "worker.py:OperationPermit.check": {
+    "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+    "start": 27,
+    "end": 29
+  },
+  "worker.py:OperationPermit.predict": {
+    "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+    "start": 31,
+    "end": 54
+  },
+  "worker.py:OperationPermit.reference": {
+    "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+    "start": 56,
+    "end": 68
+  },
+  "worker.py:OperationPermit.finish": {
+    "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+    "start": 70,
+    "end": 74
+  },
+  "worker.py:RationalPermit": {
+    "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+    "start": 77,
+    "end": 98
+  },
+  "worker.py:RationalPermit.__init__": {
+    "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+    "start": 79,
+    "end": 81
+  },
+  "worker.py:RationalPermit.check": {
+    "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+    "start": 82,
+    "end": 84
+  },
+  "worker.py:RationalPermit.record_check": {
+    "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+    "start": 85,
+    "end": 90
+  },
+  "worker.py:RationalPermit.predict": {
+    "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+    "start": 91,
+    "end": 93
+  },
+  "worker.py:RationalPermit.finish": {
+    "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+    "start": 94,
+    "end": 98
+  },
+  "worker.py:verify_environment": {
+    "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+    "start": 101,
+    "end": 123
+  },
+  "worker.py:main": {
+    "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+    "start": 128,
+    "end": 190
+  }
+}

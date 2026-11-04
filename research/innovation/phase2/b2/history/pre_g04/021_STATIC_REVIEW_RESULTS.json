@@ -1,0 +1,183 @@
+{
+  "scope": "Source parsing/compile-to-code-object/literal-config inspection ONLY; code objects not executed",
+  "files": [
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/__init__.py",
+      "bytes": 135,
+      "sha256": "28994de41eae21b85d2c488a3a708bbc23b787c3441ddcda81f3a1556575a074",
+      "grammar": "Python3.11",
+      "parsed": true,
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+      "bytes": 9992,
+      "sha256": "7738bd1396be0ea61a8a77818abf9e7668b2c314039f49e7040c7049934aa75a",
+      "grammar": "Python3.11",
+      "parsed": true,
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+      "bytes": 4485,
+      "sha256": "f98506d8ca93bf91c58f6d874d9038db83db3b63537963af6f1f1a5a547ed3f1",
+      "grammar": "Python3.11",
+      "parsed": true,
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+      "bytes": 6402,
+      "sha256": "39ebbd260ef915f5857bc962f65d862b8ba9177d36eaca0dec79e3dca820cf09",
+      "grammar": "Python3.11",
+      "parsed": true,
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+      "bytes": 12856,
+      "sha256": "3db833ea3cadd77d4f27f4fa12b8d5b93e0dd199f4176f5fc56ac0cb87b4d4e8",
+      "grammar": "Python3.11",
+      "parsed": true,
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/entry.py",
+      "bytes": 3966,
+      "sha256": "c238f09b5c74b7e65532af74681bbcf13e34660b3b070bf3a6b23e487660739e",
+      "grammar": "Python3.11",
+      "parsed": true,
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+      "bytes": 3767,
+      "sha256": "557afad4f7ea016fa6034fcf81b9f074e579c8526b1f5c9c6c5faf6ec95d84e0",
+      "grammar": "Python3.11",
+      "parsed": true,
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/telemetry.py",
+      "bytes": 4196,
+      "sha256": "9cbc9ea46198cb709debba45ae3a8706bc4d5d4bfa8efab8efb6b3747d58dfc0",
+      "grammar": "Python3.11",
+      "parsed": true,
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+      "bytes": 7418,
+      "sha256": "bbf4ee0d05a6833bbb1385adf9b020c67672b9ecabf98f30d7f5b34062af7d44",
+      "grammar": "Python3.11",
+      "parsed": true,
+      "compiled_not_executed": true
+    }
+  ],
+  "imports_found": [
+    ".",
+    "..guard_remediation_v1",
+    ".budget",
+    ".channel",
+    ".config",
+    ".controller",
+    ".telemetry",
+    "collections",
+    "csv",
+    "ctypes",
+    "dataclasses",
+    "hashlib",
+    "importlib",
+    "json",
+    "mmap",
+    "os",
+    "pathlib",
+    "queue",
+    "re",
+    "sys",
+    "threading",
+    "time",
+    "typing",
+    "uuid"
+  ],
+  "literal_profile": {
+    "identity": "B2_PRODUCTION_V1",
+    "job_commit": 2147483648,
+    "active_processes": 2,
+    "stop_seconds": 600.0,
+    "shutdown_target": 5.0,
+    "lifecycle_target": 605.0,
+    "sample_target": 0.05,
+    "control_poll_target": 0.005,
+    "phase_targets": [
+      60.0,
+      30.0,
+      60.0,
+      20.0
+    ]
+  },
+  "literal_budget": {
+    "ROLES": [
+      [
+        "generation",
+        128,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        "q4",
+        4,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        "qj4",
+        64,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        "qj16",
+        1024,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        "reference",
+        0,
+        0,
+        1092,
+        1088,
+        1
+      ]
+    ],
+    "CAPS": {
+      "logical_rows": 19520,
+      "callbacks": 64,
+      "fits": 16,
+      "context_fits": 8,
+      "reference_nodes": 17472,
+      "reference_cells": 17408,
+      "saved_solves": 16,
+      "max_batch": 1024
+    }
+  },
+  "module_imports_executed": 0,
+  "job_objects_created": 0,
+  "dummy_workers_created": 0,
+  "native_fits": 0,
+  "predictor_callbacks": 0,
+  "tests_executed": 0,
+  "static_grammar_all_passed": true,
+  "source_decision": "SOURCE_REMEDIATION_REQUIRED",
+  "open_source_gate": "G04 request-latch-to-ResumeThread race",
+  "native_admission": "RESOURCE_GUARD_BLOCKED"
+}

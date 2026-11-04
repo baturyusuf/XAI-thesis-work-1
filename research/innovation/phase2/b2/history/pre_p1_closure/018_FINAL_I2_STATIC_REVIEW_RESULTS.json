@@ -1,0 +1,83 @@
+{
+  "scope": "AST/source/config and unexecuted compilation only",
+  "source_version": "B2-source-v2-i2-8325-r1",
+  "amendment": "8325d9911556855ea7966e112e91a80d786a393d",
+  "files": [
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/__init__.py",
+      "bytes": 146,
+      "sha256": "a5ec4d99f89e12a1f6358949a6b8512fe91ff31936d44eda4300c33af390f712",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+      "bytes": 10781,
+      "sha256": "89fcb6aefa68cd8e8a9fa9fadafd0fd9cabeac24e3e7cd4bd588d56853ce509a",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+      "bytes": 8203,
+      "sha256": "5cdac1286c479239d74e0087a062fa671f59d66cd09c76597a59d578bdc8c6f2",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+      "bytes": 7187,
+      "sha256": "b13b0f33c5da62cd6cd780752233419e3dd7dfaf90bc58f0b87723683008fe7a",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+      "bytes": 15828,
+      "sha256": "811934597a31d7e25e280b8a3096cb3a785492285dca917fad9dfd1bd993e920",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/entry.py",
+      "bytes": 3969,
+      "sha256": "3dad494e83cc7ef3d9390f0fffbe014e2b2c8657557ce789b46e924db0047a1f",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+      "bytes": 10517,
+      "sha256": "96cdaaea3582a57326ab589aeed77d4f3a867be073ebc16d941c430f395ebf93",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+      "bytes": 8140,
+      "sha256": "1bcc5503f572787d695fe7ef9b3f393c6a0dfe3544fe49f94edf78eeed539156",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/telemetry.py",
+      "bytes": 4196,
+      "sha256": "9cbc9ea46198cb709debba45ae3a8706bc4d5d4bfa8efab8efb6b3747d58dfc0",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+      "bytes": 10692,
+      "sha256": "2470c9e2e1547bc4e1d4c2448632f7a0fb4decddd898ee1f06ba911e6921f642",
+      "compiled_not_executed": true
+    }
+  ],
+  "source_manifest_sha256": "5e92d0e7bf87a7d34c9f219c3aaab0c9d2d3f5ab799c3563c5a946d4df2d5822",
+  "snapshot_is_git_commit": false,
+  "source_status": "SOURCE_REMEDIATION_REQUIRED",
+  "core_I2": "CONDITIONAL_SOURCE_JUSTIFICATION",
+  "I1_I3": "NOT_REQUIRED_NOT_CLAIMED",
+  "test_plan_status": "TEST_PLAN_FEASIBILITY_BLOCKED",
+  "P1": "Actual reviewed scientific backend and whole-chain predictor callback coverage missing",
+  "execution_authorized": false,
+  "project_imports": 0,
+  "tests_executed": 0,
+  "job_objects_created": 0,
+  "workers_created": 0,
+  "scientific_native_imports": 0,
+  "native_fits": 0,
+  "predictor_callbacks": 0,
+  "commit_push_merge": false
+}

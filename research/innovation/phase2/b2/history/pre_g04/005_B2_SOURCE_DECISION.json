@@ -1,0 +1,27 @@
+{
+  "source_status": "SOURCE_REMEDIATION_REQUIRED",
+  "native_status": "RESOURCE_GUARD_BLOCKED",
+  "contract_commit": "841ded9c3544e259fd638003350d31e7cae23686",
+  "audit_commit": "f32686c2c7e08bdf872a8469609120ee3dfc5441",
+  "base_guard_commit": "bf040de8c567aeed5cd2c30470414a297cba8014",
+  "own_HEAD": "b79d674373caacfa986708c378c617de5537e5cd",
+  "source_manifest_sha256": "7338a018695665960cc41a2b57632421954b9678fef26e6a3c86284190c43809",
+  "snapshot_is_git_commit": false,
+  "open_source_findings": [
+    "G04 request latch may set between final check and ResumeThread"
+  ],
+  "unavailable_release_artifacts": [
+    "Concrete reviewed scientific adapter and active production approval",
+    "Qualified test-observer/harness source",
+    "Independent new source review and approved Q1-Q6 dynamic budget",
+    "Human native release"
+  ],
+  "dynamic_guard_tests": 0,
+  "job_objects_created": 0,
+  "worker_processes_created": 0,
+  "native_imports_executed": 0,
+  "native_fits": 0,
+  "predictor_callbacks": 0,
+  "tests_executed": 0,
+  "commit_push_merge_performed": false
+}

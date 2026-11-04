@@ -1,0 +1,51 @@
+[
+  {
+    "source_commit": "841ded9c3544e259fd638003350d31e7cae23686",
+    "path": "research/benchmark/phase2/AGENT4_RESOURCE_REMEDIATION_HANDOFF.md",
+    "local_path": "research/innovation/phase2/b2/source_contracts/AGENT4_RESOURCE_REMEDIATION_HANDOFF.md",
+    "bytes": 5861,
+    "sha256": "364bb32944b4a244605682dd0bacfe50ecc8a05d6f49ecdbc030180d4ed2f7b5"
+  },
+  {
+    "source_commit": "841ded9c3544e259fd638003350d31e7cae23686",
+    "path": "research/benchmark/phase2/D1A_RESOURCE_CONTRACT_V2_PROPOSAL.md",
+    "local_path": "research/innovation/phase2/b2/source_contracts/D1A_RESOURCE_CONTRACT_V2_PROPOSAL.md",
+    "bytes": 11037,
+    "sha256": "0c71530edb5bea0fea6f440ad6ba874d618577cf77da8d412b16917ed49945a4"
+  },
+  {
+    "source_commit": "841ded9c3544e259fd638003350d31e7cae23686",
+    "path": "research/benchmark/phase2/D1A_V2_ADMISSION_REQUIREMENTS.md",
+    "local_path": "research/innovation/phase2/b2/source_contracts/D1A_V2_ADMISSION_REQUIREMENTS.md",
+    "bytes": 12357,
+    "sha256": "3400c1681d3785740cff3736f8b74b66bc14a5ef2392f81317109956ae7f5d20"
+  },
+  {
+    "source_commit": "841ded9c3544e259fd638003350d31e7cae23686",
+    "path": "research/benchmark/phase2/STRICT_VS_EXPLORATORY_DECISION.md",
+    "local_path": "research/innovation/phase2/b2/source_contracts/STRICT_VS_EXPLORATORY_DECISION.md",
+    "bytes": 11682,
+    "sha256": "961e43c3546609ac0b73a9ee9571dd627131342540d972b7ee9a131fa08a87b3"
+  },
+  {
+    "source_commit": "f32686c2c7e08bdf872a8469609120ee3dfc5441",
+    "path": "research/validation/phase2/resource_guard/FINDINGS_AND_REMEDIATION.md",
+    "local_path": "research/innovation/phase2/b2/source_contracts/FINDINGS_AND_REMEDIATION.md",
+    "bytes": 6248,
+    "sha256": "eedcd30463516bcf3e245a55573b65c068bac233ffae648cc78247078373168e"
+  },
+  {
+    "source_commit": "f32686c2c7e08bdf872a8469609120ee3dfc5441",
+    "path": "research/validation/phase2/resource_guard/INDEPENDENT_RESOURCE_GUARD_AUDIT.md",
+    "local_path": "research/innovation/phase2/b2/source_contracts/INDEPENDENT_RESOURCE_GUARD_AUDIT.md",
+    "bytes": 6173,
+    "sha256": "70504b6a977a7b85a2568539e9b3a5861a9e416ccba7b64c6a999937dc01a851"
+  },
+  {
+    "source_commit": "f32686c2c7e08bdf872a8469609120ee3dfc5441",
+    "path": "research/validation/phase2/resource_guard/EXPLORATORY_CONTRACT_COMPARISON.md",
+    "local_path": "research/innovation/phase2/b2/source_contracts/EXPLORATORY_CONTRACT_COMPARISON.md",
+    "bytes": 5986,
+    "sha256": "4adce5ca136b8b7037a2db30f31808290aea39974f521998785033fb2904fe87"
+  }
+]

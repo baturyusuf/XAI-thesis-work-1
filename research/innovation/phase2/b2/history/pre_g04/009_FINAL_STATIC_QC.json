@@ -1,0 +1,46 @@
+{
+  "scope": "Static final integrity/grammar/privacy checks; no generated module imported/executed",
+  "old_manifest_checks": [
+    {
+      "path": "research/innovation/phase2/guard_remediation/SOURCE_SNAPSHOT_MANIFEST.csv",
+      "entries": 14,
+      "mismatches": 0
+    },
+    {
+      "path": "research/innovation/phase2/guard_remediation/publication/CONTENT_MANIFEST.csv",
+      "entries": 467,
+      "mismatches": 0
+    },
+    {
+      "path": "research/innovation/phase2/guard_remediation/DELIVERABLE_MANIFEST.csv",
+      "entries": 412,
+      "mismatches": 0
+    },
+    {
+      "path": "research/innovation/phase2/DELIVERABLE_MANIFEST.csv",
+      "entries": 52,
+      "mismatches": 0
+    },
+    {
+      "path": "research/innovation/phase1/SOURCE_MANIFEST.csv",
+      "entries": 25,
+      "mismatches": 0
+    }
+  ],
+  "old_mismatches": [],
+  "new_source_manifest_sha256": "7338a018695665960cc41a2b57632421954b9678fef26e6a3c86284190c43809",
+  "new_source_mismatches": [],
+  "source_files_parsed": 9,
+  "tests_executed": 0,
+  "dynamic_guard_invocations": 0,
+  "source_status": "SOURCE_REMEDIATION_REQUIRED",
+  "native_status": "RESOURCE_GUARD_BLOCKED",
+  "sensitivity_pattern_findings": [],
+  "sensitivity_limit": "Heuristic scan only",
+  "tracked_diff": [],
+  "staged_diff": [],
+  "remote_heads": [
+    "841ded9c3544e259fd638003350d31e7cae23686\trefs/heads/research/benchmark-methodology",
+    "b79d674373caacfa986708c378c617de5537e5cd\trefs/heads/research/xai-innovation"
+  ]
+}

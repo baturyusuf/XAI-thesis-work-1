@@ -1,0 +1,228 @@
+{
+  "prior_source_manifest_sha256": "5e92d0e7bf87a7d34c9f219c3aaab0c9d2d3f5ab799c3563c5a946d4df2d5822",
+  "files": [
+    {
+      "original_path": "research/innovation/phase2/b2/AGENT3_G04_CONTRACT_REVISION_REQUEST.md",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/000_AGENT3_G04_CONTRACT_REVISION_REQUEST.md",
+      "bytes": 1373,
+      "sha256": "22426cfc909e599ccc8db3554c0a52cff9315390ff1fc23fddd6c56854fafcf5"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/AGENT5_B2_SOURCE_AUDIT_HANDOFF.md",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/001_AGENT5_B2_SOURCE_AUDIT_HANDOFF.md",
+      "bytes": 1706,
+      "sha256": "4661691faf478d8410a3a66e58496ddbeb7a90afd02b331149ccd7e41fed0fdf"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/AGENT5_FINAL_B2_SOURCE_HANDOFF.md",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/002_AGENT5_FINAL_B2_SOURCE_HANDOFF.md",
+      "bytes": 6004,
+      "sha256": "63f49d3c06404c43e05187ed70c85b2fd73aece1838768f36ca78c1f5be71d21"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/B2_DELIVERABLE_MANIFEST.csv",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/003_B2_DELIVERABLE_MANIFEST.csv",
+      "bytes": 18212,
+      "sha256": "92f7262df98cffce54cc3fa2803a809ebf73a9e7c75ebf1194a305c0b9ff9d3f"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/B2_G04_FINAL_SOURCE_REVIEW.md",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/004_B2_G04_FINAL_SOURCE_REVIEW.md",
+      "bytes": 5563,
+      "sha256": "29e2406c82c5a82c1bf86a7efa818353d7da629d903a740646b20b82515bfd9f"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/B2_G04_RACE_AND_LINEARIZATION_AUDIT.md",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/005_B2_G04_RACE_AND_LINEARIZATION_AUDIT.md",
+      "bytes": 4643,
+      "sha256": "e63dc3cb075b4156133f16c76110a26f5381df347ff4b3d277c8d7fd35161d50"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/B2_GUARD_ONLY_VALIDATION_PLAN.md",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/006_B2_GUARD_ONLY_VALIDATION_PLAN.md",
+      "bytes": 5707,
+      "sha256": "6f58de41c923895c6ad4a40e3fcea599a25ab6f2b23a006fd4e196fe02bd5683"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/B2_I2_LINEARIZATION_PROOF_OBLIGATIONS.md",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/007_B2_I2_LINEARIZATION_PROOF_OBLIGATIONS.md",
+      "bytes": 5633,
+      "sha256": "8a19ba607fbe0047dab213edec29e10c2580aea83c0b7366b26d98e280a54805"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/B2_IMPLEMENTATION_REPORT.md",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/008_B2_IMPLEMENTATION_REPORT.md",
+      "bytes": 3815,
+      "sha256": "5bc232596fbff0921c1d370fc028fcabf31d4d280f1b65588d8c6c369057ef02"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/B2_PROFILE_SOURCE_ONLY.json",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/009_B2_PROFILE_SOURCE_ONLY.json",
+      "bytes": 1262,
+      "sha256": "27226d8bfbc62c2c1a6d53933d2dd844c590da192ac5bc375f30fded28b1da50"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/B2_SCIENTIFIC_UNIT_MAP.csv",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/010_B2_SCIENTIFIC_UNIT_MAP.csv",
+      "bytes": 2202,
+      "sha256": "b1bcdffcf8a765fb655a0d5f17cc5dda4e6fad3d9fb48f40ba7af52e37ab4c32"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/B2_SECURITY_AND_LIFECYCLE_REVIEW.md",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/011_B2_SECURITY_AND_LIFECYCLE_REVIEW.md",
+      "bytes": 4300,
+      "sha256": "3ea9deb2a33818bf4744082eaef58ab0a2bc5f1f291962927546a78cd98065fb"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/B2_SEVEN_CASE_RESOURCE_FEASIBILITY.md",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/012_B2_SEVEN_CASE_RESOURCE_FEASIBILITY.md",
+      "bytes": 5518,
+      "sha256": "0f64d4256e430e7abb70d85237c89f0922d9f5eb828ce4524fb631a58682cc20"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/B2_SOURCE_DECISION.json",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/013_B2_SOURCE_DECISION.json",
+      "bytes": 3187,
+      "sha256": "491b3ad7f94da5f8e01a9747017af2f3e0ef112af6855b03e9d037c00a1b6748"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/B2_SOURCE_DIFF_AND_TRACEABILITY.md",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/014_B2_SOURCE_DIFF_AND_TRACEABILITY.md",
+      "bytes": 3900,
+      "sha256": "2cca348b16304492a298bd395273ecc76e2f16472601a4b61fc952a7a48b2cd1"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/B2_SOURCE_MANIFEST.csv",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/015_B2_SOURCE_MANIFEST.csv",
+      "bytes": 4185,
+      "sha256": "5e92d0e7bf87a7d34c9f219c3aaab0c9d2d3f5ab799c3563c5a946d4df2d5822"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/B2_SOURCE_SNAPSHOT_ID.txt",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/016_B2_SOURCE_SNAPSHOT_ID.txt",
+      "bytes": 66,
+      "sha256": "d56fa0d08444a21271911abbf740947f76b971d2464784babf35d706a734514d"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/FINAL_I2_SOURCE_REVIEW_LOG.md",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/017_FINAL_I2_SOURCE_REVIEW_LOG.md",
+      "bytes": 4997,
+      "sha256": "cd0ee71550355dfab767bd1edaf3c89f872dcbfdb084a3f9755172927e523d63"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/FINAL_I2_STATIC_REVIEW_RESULTS.json",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/018_FINAL_I2_STATIC_REVIEW_RESULTS.json",
+      "bytes": 3187,
+      "sha256": "491b3ad7f94da5f8e01a9747017af2f3e0ef112af6855b03e9d037c00a1b6748"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/FINAL_STATIC_QC.json",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/019_FINAL_STATIC_QC.json",
+      "bytes": 5176,
+      "sha256": "a445ad82ec13b4f532c0bc4872e2d81170424381c42dd98a037cceb4e230d932"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/G04_SOURCE_REVIEW_LOG.md",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/020_G04_SOURCE_REVIEW_LOG.md",
+      "bytes": 4127,
+      "sha256": "770a5ec6ef7283907a06f2009b2c9250b9f847c1a10e0b63c69c079108a4a495"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/G04_STATIC_REVIEW_RESULTS.json",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/021_G04_STATIC_REVIEW_RESULTS.json",
+      "bytes": 452,
+      "sha256": "e1b547619786c7d1b52c212cbce970d0f71344c417fb23dd002019b29c548a15"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/SOURCE_READ_REGISTRY.json",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/022_SOURCE_READ_REGISTRY.json",
+      "bytes": 4003,
+      "sha256": "15afcbe356d2a299ba17508ce7edfd0ca33aa9e054cd578652a43695c1ead7b7"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/SOURCE_REVIEW_LOG.md",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/023_SOURCE_REVIEW_LOG.md",
+      "bytes": 3497,
+      "sha256": "3b8923e432af84783a98c6198eff2352812227d04882ac5cb1de6c09236e5be0"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/SOURCE_SYMBOL_MAP.json",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/024_SOURCE_SYMBOL_MAP.json",
+      "bytes": 18198,
+      "sha256": "7d74f5d90ffc603c2262a9e276db243118cf98677ba4a85a73ff72a3d248e417"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/STATIC_PARSE_ATTEMPT_01.json",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/025_STATIC_PARSE_ATTEMPT_01.json",
+      "bytes": 469,
+      "sha256": "6f3b14c1168ceaf9a2f3486255b0e2684a9d6e0054ebdedb8d0c9da0d0550efb"
+    },
+    {
+      "original_path": "research/innovation/phase2/b2/STATIC_REVIEW_RESULTS.json",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/026_STATIC_REVIEW_RESULTS.json",
+      "bytes": 3187,
+      "sha256": "491b3ad7f94da5f8e01a9747017af2f3e0ef112af6855b03e9d037c00a1b6748"
+    },
+    {
+      "original_path": "src/innovation/phase2/guard_remediation_v2/__init__.py",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/027___init__.py",
+      "bytes": 146,
+      "sha256": "a5ec4d99f89e12a1f6358949a6b8512fe91ff31936d44eda4300c33af390f712"
+    },
+    {
+      "original_path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/028_budget.py",
+      "bytes": 10781,
+      "sha256": "89fcb6aefa68cd8e8a9fa9fadafd0fd9cabeac24e3e7cd4bd588d56853ce509a"
+    },
+    {
+      "original_path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/029_channel.py",
+      "bytes": 8203,
+      "sha256": "5cdac1286c479239d74e0087a062fa671f59d66cd09c76597a59d578bdc8c6f2"
+    },
+    {
+      "original_path": "src/innovation/phase2/guard_remediation_v2/config.py",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/030_config.py",
+      "bytes": 7187,
+      "sha256": "b13b0f33c5da62cd6cd780752233419e3dd7dfaf90bc58f0b87723683008fe7a"
+    },
+    {
+      "original_path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/031_controller.py",
+      "bytes": 15828,
+      "sha256": "811934597a31d7e25e280b8a3096cb3a785492285dca917fad9dfd1bd993e920"
+    },
+    {
+      "original_path": "src/innovation/phase2/guard_remediation_v2/entry.py",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/032_entry.py",
+      "bytes": 3969,
+      "sha256": "3dad494e83cc7ef3d9390f0fffbe014e2b2c8657557ce789b46e924db0047a1f"
+    },
+    {
+      "original_path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/033_gate.py",
+      "bytes": 10517,
+      "sha256": "96cdaaea3582a57326ab589aeed77d4f3a867be073ebc16d941c430f395ebf93"
+    },
+    {
+      "original_path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/034_os_api.py",
+      "bytes": 8140,
+      "sha256": "1bcc5503f572787d695fe7ef9b3f393c6a0dfe3544fe49f94edf78eeed539156"
+    },
+    {
+      "original_path": "src/innovation/phase2/guard_remediation_v2/telemetry.py",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/035_telemetry.py",
+      "bytes": 4196,
+      "sha256": "9cbc9ea46198cb709debba45ae3a8706bc4d5d4bfa8efab8efb6b3747d58dfc0"
+    },
+    {
+      "original_path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+      "archive_path": "research/innovation/phase2/b2/history/pre_p1_closure/036_worker.py",
+      "bytes": 10692,
+      "sha256": "2470c9e2e1547bc4e1d4c2448632f7a0fb4decddd898ee1f06ba911e6921f642"
+    }
+  ],
+  "older_history_and_immutable_contracts_retained_in_place": true
+}

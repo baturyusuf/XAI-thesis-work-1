@@ -1,0 +1,362 @@
+{
+  "budget.py:Slot": {
+    "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "start": 13,
+    "end": 16
+  },
+  "budget.py:Ticket": {
+    "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "start": 19,
+    "end": 27
+  },
+  "budget.py:BudgetError": {
+    "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "start": 29,
+    "end": 30
+  },
+  "budget.py:BudgetLedger": {
+    "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "start": 39,
+    "end": 190
+  },
+  "budget.py:BudgetLedger.__init__": {
+    "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "start": 41,
+    "end": 55
+  },
+  "budget.py:BudgetLedger._check": {
+    "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "start": 57,
+    "end": 58
+  },
+  "budget.py:BudgetLedger._stop": {
+    "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "start": 60,
+    "end": 83
+  },
+  "budget.py:BudgetLedger.reserve": {
+    "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "start": 85,
+    "end": 126
+  },
+  "budget.py:BudgetLedger.complete": {
+    "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "start": 128,
+    "end": 176
+  },
+  "budget.py:BudgetLedger.abort_inflight": {
+    "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "start": 178,
+    "end": 181
+  },
+  "budget.py:BudgetLedger.snapshot": {
+    "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "start": 183,
+    "end": 190
+  },
+  "budget.py:snapshot_digest": {
+    "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "start": 193,
+    "end": 203
+  },
+  "channel.py:Cancelled": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 14,
+    "end": 15
+  },
+  "channel.py:Channel": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 17,
+    "end": 113
+  },
+  "channel.py:Channel.__init__": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 18,
+    "end": 31
+  },
+  "channel.py:Channel.create": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 34,
+    "end": 35
+  },
+  "channel.py:Channel.reason_code": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 37,
+    "end": 41
+  },
+  "channel.py:Channel.stopped": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 43,
+    "end": 44
+  },
+  "channel.py:Channel.cancel": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 46,
+    "end": 52
+  },
+  "channel.py:Channel._write": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 54,
+    "end": 61
+  },
+  "channel.py:Channel._read": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 63,
+    "end": 69
+  },
+  "channel.py:Channel.publish_header": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 71,
+    "end": 72
+  },
+  "channel.py:Channel.header": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 74,
+    "end": 75
+  },
+  "channel.py:Channel.ask": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 77,
+    "end": 102
+  },
+  "channel.py:Channel.take": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 104,
+    "end": 107
+  },
+  "channel.py:Channel.answer": {
+    "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "start": 109,
+    "end": 113
+  },
+  "config.py:AdmissionError": {
+    "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+    "start": 12,
+    "end": 13
+  },
+  "config.py:ProductionProfile": {
+    "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+    "start": 16,
+    "end": 25
+  },
+  "config.py:DiagnosticProposal": {
+    "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+    "start": 30,
+    "end": 38
+  },
+  "config.py:ApprovedRun": {
+    "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+    "start": 41,
+    "end": 53
+  },
+  "config.py:sha256": {
+    "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+    "start": 56,
+    "end": 57
+  },
+  "config.py:inside": {
+    "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+    "start": 60,
+    "end": 67
+  },
+  "config.py:read_json": {
+    "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+    "start": 70,
+    "end": 75
+  },
+  "config.py:authority_only": {
+    "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+    "start": 78,
+    "end": 91
+  },
+  "config.py:profile_payload": {
+    "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+    "start": 94,
+    "end": 97
+  },
+  "config.py:verify_bound_run": {
+    "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+    "start": 100,
+    "end": 148
+  },
+  "controller.py:Controller": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 13,
+    "end": 243
+  },
+  "controller.py:Controller.__init__": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 14,
+    "end": 36
+  },
+  "controller.py:Controller.__call__": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 38,
+    "end": 39
+  },
+  "controller.py:Controller.request_stop": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 41,
+    "end": 49
+  },
+  "controller.py:Controller.submit": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 51,
+    "end": 55
+  },
+  "controller.py:Controller.cleanup_done": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 57,
+    "end": 58
+  },
+  "controller.py:Controller._owner": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 60,
+    "end": 61
+  },
+  "controller.py:Controller._stop": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 63,
+    "end": 86
+  },
+  "controller.py:Controller._admission": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 88,
+    "end": 97
+  },
+  "controller.py:Controller._launch": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 99,
+    "end": 130
+  },
+  "controller.py:Controller._message": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 132,
+    "end": 175
+  },
+  "controller.py:Controller._run": {
+    "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "start": 177,
+    "end": 243
+  },
+  "entry.py:execute_approved": {
+    "path": "src/innovation/phase2/guard_remediation_v2/entry.py",
+    "start": 3,
+    "end": 75
+  },
+  "os_api.py:noninherited": {
+    "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+    "start": 23,
+    "end": 26
+  },
+  "os_api.py:signaled": {
+    "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+    "start": 29,
+    "end": 32
+  },
+  "os_api.py:OwnedJob": {
+    "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+    "start": 35,
+    "end": 86
+  },
+  "os_api.py:OwnedJob.__init__": {
+    "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+    "start": 37,
+    "end": 45
+  },
+  "os_api.py:OwnedJob.verify_owner": {
+    "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+    "start": 47,
+    "end": 50
+  },
+  "os_api.py:OwnedJob.create_suspended": {
+    "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+    "start": 52,
+    "end": 63
+  },
+  "os_api.py:OwnedJob.request_worker_kill": {
+    "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+    "start": 65,
+    "end": 70
+  },
+  "os_api.py:OwnedJob.fatal_owner": {
+    "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+    "start": 72,
+    "end": 77
+  },
+  "os_api.py:OwnedJob.close_owner_and_exit": {
+    "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+    "start": 79,
+    "end": 86
+  },
+  "telemetry.py:EvidenceBus": {
+    "path": "src/innovation/phase2/guard_remediation_v2/telemetry.py",
+    "start": 8,
+    "end": 88
+  },
+  "telemetry.py:EvidenceBus.__init__": {
+    "path": "src/innovation/phase2/guard_remediation_v2/telemetry.py",
+    "start": 9,
+    "end": 14
+  },
+  "telemetry.py:EvidenceBus.offer": {
+    "path": "src/innovation/phase2/guard_remediation_v2/telemetry.py",
+    "start": 16,
+    "end": 24
+  },
+  "telemetry.py:EvidenceBus.start_writer": {
+    "path": "src/innovation/phase2/guard_remediation_v2/telemetry.py",
+    "start": 26,
+    "end": 44
+  },
+  "telemetry.py:EvidenceBus.start_sampler": {
+    "path": "src/innovation/phase2/guard_remediation_v2/telemetry.py",
+    "start": 46,
+    "end": 80
+  },
+  "telemetry.py:EvidenceBus.tail": {
+    "path": "src/innovation/phase2/guard_remediation_v2/telemetry.py",
+    "start": 82,
+    "end": 88
+  },
+  "worker.py:OperationPermit": {
+    "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+    "start": 13,
+    "end": 55
+  },
+  "worker.py:OperationPermit.__init__": {
+    "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+    "start": 15,
+    "end": 20
+  },
+  "worker.py:OperationPermit.check": {
+    "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+    "start": 22,
+    "end": 24
+  },
+  "worker.py:OperationPermit.predict": {
+    "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+    "start": 26,
+    "end": 38
+  },
+  "worker.py:OperationPermit.reference": {
+    "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+    "start": 40,
+    "end": 50
+  },
+  "worker.py:OperationPermit.finish": {
+    "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+    "start": 52,
+    "end": 55
+  },
+  "worker.py:verify_environment": {
+    "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+    "start": 58,
+    "end": 80
+  },
+  "worker.py:main": {
+    "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+    "start": 85,
+    "end": 132
+  }
+}

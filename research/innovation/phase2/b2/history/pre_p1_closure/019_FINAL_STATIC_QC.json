@@ -1,0 +1,136 @@
+{
+  "scope": "Static AST/source/config/hash checks only; compilation without execution",
+  "source_status": "SOURCE_REMEDIATION_REQUIRED",
+  "core_I2": "CONDITIONAL_SOURCE_JUSTIFICATION",
+  "I1_I3": "NOT_REQUIRED_NOT_CLAIMED",
+  "test_plan_status": "TEST_PLAN_FEASIBILITY_BLOCKED",
+  "native_status": "RESOURCE_GUARD_BLOCKED",
+  "source_manifest_sha256": "5e92d0e7bf87a7d34c9f219c3aaab0c9d2d3f5ab799c3563c5a946d4df2d5822",
+  "source_manifest_is_git_commit": false,
+  "source_entries_verified": 31,
+  "source_files_parsed": [
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/__init__.py",
+      "bytes": 146,
+      "sha256": "a5ec4d99f89e12a1f6358949a6b8512fe91ff31936d44eda4300c33af390f712"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+      "bytes": 10781,
+      "sha256": "89fcb6aefa68cd8e8a9fa9fadafd0fd9cabeac24e3e7cd4bd588d56853ce509a"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+      "bytes": 8203,
+      "sha256": "5cdac1286c479239d74e0087a062fa671f59d66cd09c76597a59d578bdc8c6f2"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+      "bytes": 7187,
+      "sha256": "b13b0f33c5da62cd6cd780752233419e3dd7dfaf90bc58f0b87723683008fe7a"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+      "bytes": 15828,
+      "sha256": "811934597a31d7e25e280b8a3096cb3a785492285dca917fad9dfd1bd993e920"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/entry.py",
+      "bytes": 3969,
+      "sha256": "3dad494e83cc7ef3d9390f0fffbe014e2b2c8657557ce789b46e924db0047a1f"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+      "bytes": 10517,
+      "sha256": "96cdaaea3582a57326ab589aeed77d4f3a867be073ebc16d941c430f395ebf93"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+      "bytes": 8140,
+      "sha256": "1bcc5503f572787d695fe7ef9b3f393c6a0dfe3544fe49f94edf78eeed539156"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/telemetry.py",
+      "bytes": 4196,
+      "sha256": "9cbc9ea46198cb709debba45ae3a8706bc4d5d4bfa8efab8efb6b3747d58dfc0"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+      "bytes": 10692,
+      "sha256": "2470c9e2e1547bc4e1d4c2448632f7a0fb4decddd898ee1f06ba911e6921f642"
+    }
+  ],
+  "symbol_ranges_verified": 124,
+  "production_config_literal_check": "MATCH",
+  "ledger_caps_literal_check": "MATCH",
+  "diagnostic_proposal_check": "DATA_ONLY_MATCH",
+  "execution_authorized": false,
+  "entry_launch_worker_brakes": "PRESENT_IN_SOURCE",
+  "project_imports": 0,
+  "tests_executed": 0,
+  "job_objects_created": 0,
+  "worker_processes_created": 0,
+  "native_imports": 0,
+  "fits": 0,
+  "predictor_callbacks": 0,
+  "commit_push_merge": false,
+  "old_manifest_checks": [
+    {
+      "path": "research/innovation/phase2/guard_remediation/SOURCE_SNAPSHOT_MANIFEST.csv",
+      "entries": 14,
+      "mismatches": 0,
+      "manifest_sha256": "f802ab1e7d10371c0cd47535a535ab0ad8b6a706fa1ca96919a26d8a00f142b8"
+    },
+    {
+      "path": "research/innovation/phase2/guard_remediation/publication/CONTENT_MANIFEST.csv",
+      "entries": 467,
+      "mismatches": 0,
+      "manifest_sha256": "8900a0b59f4068b79431b0233e8da63f7ca29d023e38ef0cb5933b206bf63793"
+    },
+    {
+      "path": "research/innovation/phase2/guard_remediation/DELIVERABLE_MANIFEST.csv",
+      "entries": 412,
+      "mismatches": 0,
+      "manifest_sha256": "3d7720f87fbd85a7103b0f0d3dea52a6a496aa700e79fcecc3169e71c169bd58"
+    },
+    {
+      "path": "research/innovation/phase1/SOURCE_MANIFEST.csv",
+      "entries": 25,
+      "mismatches": 0,
+      "manifest_sha256": "07e537056c4121fcad23cedcfd06b1fb9ca32549fdea6ac4bdc46a30956f80e1"
+    }
+  ],
+  "archive_checks": [
+    {
+      "folder": "history/pre_g04",
+      "archived_files_verified": 32,
+      "prior_source_entries_verified": 23,
+      "mismatches": 0,
+      "prior_source_manifest_sha256": "7338a018695665960cc41a2b57632421954b9678fef26e6a3c86284190c43809"
+    },
+    {
+      "folder": "history/pre_amendment_8325",
+      "archived_files_verified": 37,
+      "prior_source_entries_verified": 24,
+      "mismatches": 0,
+      "prior_source_manifest_sha256": "71018d2241ea2bfbfb3ae9eb90b8d317c8a638b83281176ecf9a8085cf464c3d"
+    }
+  ],
+  "HEAD": "b79d674373caacfa986708c378c617de5537e5cd",
+  "tracked_diff": [],
+  "staged_diff": [],
+  "scoped_text_files_checked": 119,
+  "unexpected_file_types": [],
+  "sensitivity_pattern_findings": [],
+  "pattern_scan_not_complete_secret_proof": true,
+  "all_scoped_files_utf8_text": true,
+  "contract_registry_git_objects_verified": 11,
+  "branch": "research/xai-innovation",
+  "working_tree_status": [
+    "?? research/innovation/phase2/b2/",
+    "?? src/innovation/phase2/guard_remediation_v2/"
+  ],
+  "deliverable_manifest_entries": 127,
+  "deliverable_manifest_excludes_itself": true,
+  "deliverable_manifest_contains_frozen_source_dependencies": true
+}

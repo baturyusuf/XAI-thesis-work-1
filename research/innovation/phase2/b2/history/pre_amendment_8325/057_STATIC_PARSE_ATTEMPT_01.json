@@ -1,0 +1,13 @@
+{
+  "scope": "AST parse only; project modules not imported or executed",
+  "errors": [
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/telemetry.py",
+      "line": 36,
+      "error": "unterminated string literal (detected at line 36)",
+      "source_sha256": "c0d317c371ad4e27498e804ff4622d650148b0198483c43a25a893de7e13082c",
+      "source_line": "f.write(json.dumps(record, default=str, allow_nan=False)+'"
+    }
+  ],
+  "dynamic_jobs": 0
+}

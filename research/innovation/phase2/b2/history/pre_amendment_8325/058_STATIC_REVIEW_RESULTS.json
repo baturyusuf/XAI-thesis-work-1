@@ -1,0 +1,79 @@
+{
+  "scope": "Python3.11 AST and unexecuted compile/source literals ONLY",
+  "files": [
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/__init__.py",
+      "bytes": 142,
+      "sha256": "89f7acb094629d022fd52a7727afc8786d930b66a646d08832b958061040770d",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+      "bytes": 9992,
+      "sha256": "7738bd1396be0ea61a8a77818abf9e7668b2c314039f49e7040c7049934aa75a",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+      "bytes": 4894,
+      "sha256": "4188151a5ee637c5ba264f5d6aeb1288f22f558cf3ad8b842639199234e5bb81",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+      "bytes": 6402,
+      "sha256": "39ebbd260ef915f5857bc962f65d862b8ba9177d36eaca0dec79e3dca820cf09",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+      "bytes": 14656,
+      "sha256": "81b79c2511ff8f12c99531c717571b8c8d265100f895d6fd8fa22612df4e5f83",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/entry.py",
+      "bytes": 3969,
+      "sha256": "3dad494e83cc7ef3d9390f0fffbe014e2b2c8657557ce789b46e924db0047a1f",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+      "bytes": 5747,
+      "sha256": "8c18a283ac1ba6ba96d80f5f2472aacfd67e0bda6c45bd9a2d91827f6688cb45",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+      "bytes": 3767,
+      "sha256": "557afad4f7ea016fa6034fcf81b9f074e579c8526b1f5c9c6c5faf6ec95d84e0",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/telemetry.py",
+      "bytes": 4196,
+      "sha256": "9cbc9ea46198cb709debba45ae3a8706bc4d5d4bfa8efab8efb6b3747d58dfc0",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+      "bytes": 8627,
+      "sha256": "7a3410377eab664384e9e599f3edd2620513bf45fc38e7467e016428ed309c52",
+      "compiled_not_executed": true
+    }
+  ],
+  "source_file_count": 10,
+  "project_modules_imported": 0,
+  "tests_executed": 0,
+  "job_objects_created": 0,
+  "workers_created": 0,
+  "native_imports": 0,
+  "native_fits": 0,
+  "predictor_callbacks": 0,
+  "model_checks_or_schedule_simulations": 0,
+  "source_status": "SOURCE_REMEDIATION_REQUIRED",
+  "I1_physical": "OPEN",
+  "I2_logical_admission": "CONDITIONAL_SOURCE_ARGUMENT",
+  "I2_physical_entry": "NOT_PROVEN",
+  "execution_authorized": false
+}

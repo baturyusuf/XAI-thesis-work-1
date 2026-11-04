@@ -1,0 +1,11 @@
+operation,grant_kind,ordinal,finite_scope,issuer_source,physical_frontier_source,backend_status
+create,create,0,1 suspended result;0 science,src/innovation/phase2/guard_remediation_v2/controller.py:113-160,src/innovation/phase2/guard_remediation_v2/os_api.py:54-78,BOUND_GUARD_ONLY
+resume/control entry,resume,0,1 retained thread;stdlib/OS bootstrap only,src/innovation/phase2/guard_remediation_v2/controller.py:113-160,src/innovation/phase2/guard_remediation_v2/os_api.py:80-105,BOUND_GUARD_ONLY
+scientific import,import,0,native imports/adapter construction;ZERO fits/model calls,src/innovation/phase2/guard_remediation_v2/controller.py:162-226,src/innovation/phase2/guard_remediation_v2/worker.py:128-190,BACKEND_UNBOUND
+M1/M4,rational,0,2 named exact checks;ZERO samples/fits/callbacks,src/innovation/phase2/guard_remediation_v2/controller.py:162-226,src/innovation/phase2/guard_remediation_v2/worker.py:77-98,BACKEND_UNBOUND
+native fit + Gaussian generation,unit,5*k,"1 attempted fit,128 rows,max1 separate callback",src/innovation/phase2/guard_remediation_v2/gate.py:211-212,src/innovation/phase2/guard_remediation_v2/worker.py:128-190,BACKEND_UNBOUND
+Q4,unit,5*k+1,"4 rows,max1 separate callback",src/innovation/phase2/guard_remediation_v2/gate.py:211-212,src/innovation/phase2/guard_remediation_v2/worker.py:128-190,BACKEND_UNBOUND
+QJ m4,unit,5*k+2,"64 rows,max1 separate callback",src/innovation/phase2/guard_remediation_v2/gate.py:211-212,src/innovation/phase2/guard_remediation_v2/worker.py:128-190,BACKEND_UNBOUND
+QJ m16,unit,5*k+3,"1024 rows,max1 separate callback",src/innovation/phase2/guard_remediation_v2/gate.py:211-212,src/innovation/phase2/guard_remediation_v2/worker.py:128-190,BACKEND_UNBOUND
+independent reference,unit,5*k+4,"1092nodes,1088cells,1solve;ZERO callbacks",src/innovation/phase2/guard_remediation_v2/gate.py:211-212,src/innovation/phase2/guard_remediation_v2/worker.py:56-68,BACKEND_UNBOUND
+every predictor callback,callback,parent ordinal/callback0,same exact rows;1 callback;parent never suffices,src/innovation/phase2/guard_remediation_v2/gate.py:215-220,src/innovation/phase2/guard_remediation_v2/worker.py:31-54,GUARD_BOUND_NATIVE_COVERAGE_UNVERIFIED

@@ -1,0 +1,159 @@
+{
+  "scope": "STATIC_FILES_AST_COMPILE_WITHOUT_EXEC_ONLY",
+  "source_version": "B2-source-v2-i2-native-connector-r2",
+  "source_status": "SOURCE_REMEDIATION_REQUIRED",
+  "P1_A": "CONCRETE_NATIVE_SOURCE_SUPPLIED_FOR_REVIEW_NOT_RUNTIME_QUALIFIED",
+  "P1_B": "ACTUAL_TEST_OS_CONNECTOR_EXIT_AND_INJECTIONS_ABSENT",
+  "core_I2": "CONDITIONAL_SOURCE_JUSTIFICATION",
+  "I1_I3": "NOT_REQUIRED_NOT_CLAIMED",
+  "test_plan_status": "TEST_PLAN_FEASIBILITY_BLOCKED",
+  "native_status": "RESOURCE_GUARD_BLOCKED",
+  "source_manifest_sha256": "8fce8d9ca826715ab38c26dd14bd79ee817ab4be7d04a09ad93a2ab296d0f105",
+  "source_manifest_is_git_commit": false,
+  "source_entries": 39,
+  "parsed_modules": [
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/__init__.py",
+      "sha256": "9e9e84dff0fcba90e95e9ed94b4993936f7b1776a64a597438bcf99fd7f09ada"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+      "sha256": "89fcb6aefa68cd8e8a9fa9fadafd0fd9cabeac24e3e7cd4bd588d56853ce509a"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+      "sha256": "5cdac1286c479239d74e0087a062fa671f59d66cd09c76597a59d578bdc8c6f2"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+      "sha256": "c85b1f8db2d5c2e3e75a7cf8220e7e6cd5921898e18bfd64afd363f5a815cee5"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+      "sha256": "811934597a31d7e25e280b8a3096cb3a785492285dca917fad9dfd1bd993e920"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/dummy_connector.py",
+      "sha256": "3d0d7d85bb33896713190ced99e9c655de97a1aea7373220425576d62107e0a1"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/entry.py",
+      "sha256": "3dad494e83cc7ef3d9390f0fffbe014e2b2c8657557ce789b46e924db0047a1f"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+      "sha256": "e5115dbb94972a8f6d0971d23c82042ceed237305089ffb2f1f18b19747af523"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/native_lime_connector.py",
+      "sha256": "44ec8a4ff8129e9976e3e096a261b99464cf937f5c13c29a8fca07714a8317dd"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+      "sha256": "1bcc5503f572787d695fe7ef9b3f393c6a0dfe3544fe49f94edf78eeed539156"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/reference_arithmetic.py",
+      "sha256": "eb45d9db16c3dd6c24bc7a50cde27124984524e5515fb1df65395e04320f013f"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/telemetry.py",
+      "sha256": "9cbc9ea46198cb709debba45ae3a8706bc4d5d4bfa8efab8efb6b3747d58dfc0"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/test_observer.py",
+      "sha256": "fe8124a8549da409263b5d700d56d88725167e319872cda976fa5964983dea7a"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+      "sha256": "81f8d0b8d5dc5fda34fc4c6b55396d8efcfa05ad50d660365a4c1b2b47403a80"
+    }
+  ],
+  "symbol_ranges": 176,
+  "frozen_checks": [
+    {
+      "path": "research/innovation/phase2/guard_remediation/SOURCE_SNAPSHOT_MANIFEST.csv",
+      "entries": 14,
+      "mismatches": 0,
+      "manifest_sha256": "f802ab1e7d10371c0cd47535a535ab0ad8b6a706fa1ca96919a26d8a00f142b8"
+    },
+    {
+      "path": "research/innovation/phase2/guard_remediation/publication/CONTENT_MANIFEST.csv",
+      "entries": 467,
+      "mismatches": 0,
+      "manifest_sha256": "8900a0b59f4068b79431b0233e8da63f7ca29d023e38ef0cb5933b206bf63793"
+    },
+    {
+      "path": "research/innovation/phase2/guard_remediation/DELIVERABLE_MANIFEST.csv",
+      "entries": 412,
+      "mismatches": 0,
+      "manifest_sha256": "3d7720f87fbd85a7103b0f0d3dea52a6a496aa700e79fcecc3169e71c169bd58"
+    },
+    {
+      "path": "research/innovation/phase1/SOURCE_MANIFEST.csv",
+      "entries": 25,
+      "mismatches": 0,
+      "manifest_sha256": "07e537056c4121fcad23cedcfd06b1fb9ca32549fdea6ac4bdc46a30956f80e1"
+    }
+  ],
+  "archive_checks": [
+    {
+      "folder": "pre_g04",
+      "files": 32,
+      "prior_source": {
+        "path": "research/innovation/phase2/b2/history/pre_g04/007_B2_SOURCE_MANIFEST.csv",
+        "entries": 23,
+        "mismatches": 0,
+        "manifest_sha256": "7338a018695665960cc41a2b57632421954b9678fef26e6a3c86284190c43809"
+      }
+    },
+    {
+      "folder": "pre_amendment_8325",
+      "files": 37,
+      "prior_source": {
+        "path": "research/innovation/phase2/b2/history/pre_amendment_8325/009_B2_SOURCE_MANIFEST.csv",
+        "entries": 24,
+        "mismatches": 0,
+        "manifest_sha256": "71018d2241ea2bfbfb3ae9eb90b8d317c8a638b83281176ecf9a8085cf464c3d"
+      }
+    },
+    {
+      "folder": "pre_p1_closure",
+      "files": 37,
+      "prior_source": {
+        "path": "research/innovation/phase2/b2/history/pre_p1_closure/015_B2_SOURCE_MANIFEST.csv",
+        "entries": 31,
+        "mismatches": 0,
+        "manifest_sha256": "5e92d0e7bf87a7d34c9f219c3aaab0c9d2d3f5ab799c3563c5a946d4df2d5822"
+      }
+    }
+  ],
+  "native_release_manifest_sha256": "15dfda532bedc7fbdfee75ad418b634c82f2d62469c33181872368a477ba70fb",
+  "native_package_source_files": 19,
+  "scientific_results": "NOT_COMPUTED_THIS_TURN",
+  "execution_authorized": false,
+  "test_execution_authorized": false,
+  "guard_tests_executed": 0,
+  "guard_functions_executed": 0,
+  "job_objects_created": 0,
+  "workers_created": 0,
+  "guard_or_native_imports": 0,
+  "native_fits": 0,
+  "predictor_callbacks": 0,
+  "scientific_M1_M2_M4_calculations": 0,
+  "commit_push_merge": false,
+  "sensitivity_scope": "B2 packet/history plus active v2 source text only",
+  "scoped_text_files": 173,
+  "sensitivity_pattern_findings": [],
+  "heuristic_not_complete_secret_proof": true,
+  "unexpected_file_types": [],
+  "HEAD": "b79d674373caacfa986708c378c617de5537e5cd",
+  "branch": "research/xai-innovation",
+  "tracked_diff": [],
+  "staged_diff": [],
+  "working_tree_status": [
+    "?? research/innovation/phase2/b2/",
+    "?? src/innovation/phase2/guard_remediation_v2/"
+  ],
+  "immutable_copies_verified": 13
+}

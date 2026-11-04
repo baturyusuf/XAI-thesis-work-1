@@ -1,0 +1,56 @@
+{
+  "scope": "Static source/data/hash review only; no project imports or dynamic execution",
+  "source_status": "SOURCE_REMEDIATION_REQUIRED",
+  "native_status": "RESOURCE_GUARD_BLOCKED",
+  "source_manifest_sha256": "71018d2241ea2bfbfb3ae9eb90b8d317c8a638b83281176ecf9a8085cf464c3d",
+  "source_manifest_is_git_commit": false,
+  "source_files_parsed": [
+    "__init__.py",
+    "budget.py",
+    "channel.py",
+    "config.py",
+    "controller.py",
+    "entry.py",
+    "gate.py",
+    "os_api.py",
+    "telemetry.py",
+    "worker.py"
+  ],
+  "source_mismatches": [],
+  "old_manifest_checks": [
+    {
+      "path": "research/innovation/phase2/guard_remediation/SOURCE_SNAPSHOT_MANIFEST.csv",
+      "entries": 14,
+      "mismatches": 0
+    },
+    {
+      "path": "research/innovation/phase2/guard_remediation/publication/CONTENT_MANIFEST.csv",
+      "entries": 467,
+      "mismatches": 0
+    },
+    {
+      "path": "research/innovation/phase2/guard_remediation/DELIVERABLE_MANIFEST.csv",
+      "entries": 412,
+      "mismatches": 0
+    },
+    {
+      "path": "research/innovation/phase1/SOURCE_MANIFEST.csv",
+      "entries": 25,
+      "mismatches": 0
+    }
+  ],
+  "sensitivity_pattern_findings": [],
+  "pattern_scan_not_complete_secret_proof": true,
+  "tests_executed": 0,
+  "job_objects_created": 0,
+  "worker_processes_created": 0,
+  "native_imports": 0,
+  "fits": 0,
+  "predictor_callbacks": 0,
+  "commit_push_merge": false,
+  "HEAD": "b79d674373caacfa986708c378c617de5537e5cd",
+  "tracked_diff": [],
+  "staged_diff": [],
+  "execution_authorized": false,
+  "source_only_brake_enabled": true
+}
