@@ -4,7 +4,7 @@
 
 Amendment8325d9911556855ea7966e112e91a80d786a393d + B2 base841ded9c3544e259fd638003350d31e7cae23686. Older auditf32686c2c7e08bdf872a8469609120ee3dfc5441 concernedbf040de8c567aeed5cd2c30470414a297cba8014. Original D1a/mechanism source8d1377313b856782d870ee9b854f7a8b840231f9 retained. SOURCE_READ_REGISTRY.json pins13 exact copies.
 
-Local branch research/xai-innovation; unchanged HEADb79d674373caacfa986708c378c617de5537e5cd. New revision B2-source-v2-i2-native-connector-r2 is UNCOMMITTED; no new implementation Git SHA exists. Current source-manifest SHA-256 (NOT Git commit):
+Local branch research/xai-innovation. Implementation/evidence revision B2-source-v2-i2-native-connector-r2 is frozen at commit 1bd1210a6601f5d82a5b288fe995a63aaada552a (parent b79d674373caacfa986708c378c617de5537e5cd). This documentation-only handoff revision refers to that fixed source, not a moving branch. Current source-manifest SHA-256 (NOT Git commit):
 
 8fce8d9ca826715ab38c26dd14bd79ee817ab4be7d04a09ad93a2ab296d0f105
 
@@ -39,4 +39,20 @@ From the own research/xai-innovation worktree run ONLY the file/AST auditor:
 
 It imports stdlib only, checks files/AST/config/hashes and compiles guard ASTs without exec/eval/import. It does NOT launch workers, call Win32, import native packages or evaluate M1/M2/M4. Four frozen manifests14/467/412/25 entries and prior archives32/37/37 files were checked, zero mismatches. Current14 guard modules/176 symbols/39 source entries matched. This is not a guard regression pass, native conformance run or qualification.
 
-Q1,Q2-U,Q2-C,Q3,Q4,Q5,Q6 all NOT_RUN.0 Job Objects, worker/process tests, guard/native imports, native fits/predictor calls and scientific calculations. No frozen suite rerun. No commit/push/merge. Keep implementation content unchanged during independent audit; report findings separately. Smallest next human source decision: supply the bounded missing TEST OS/exit connector and inspect optional reference rule; do not increase budgets or run tests automatically.
+Q1,Q2-U,Q2-C,Q3,Q4,Q5,Q6 all NOT_RUN.0 Job Objects, worker/process tests, guard/native imports, native fits/predictor calls and scientific calculations. No frozen suite rerun. Publication-only Git commits do not change these execution results. Keep implementation content unchanged during independent audit; report findings separately. Smallest next human source decision: supply the bounded missing TEST OS/exit connector and inspect optional reference rule; do not increase budgets or run tests automatically.
+
+## Publication boundary and independent audit priorities
+
+This publication freezes sources for independent examination; it does NOT validate them. Read implementation/evidence from commit 1bd1210a6601f5d82a5b288fe995a63aaada552a. Agent5 MUST NOT change that implementation snapshot; write findings separately. The documentation commit supplies this handoff and publication record only; every source-manifest entry remains unchanged. Earlier static QC/log HEAD, untracked-state and no-commit fields describe their pre-publication observation, not the current Git delivery. B2_PUBLICATION_RECORD.md explains publication-only checks.
+
+Prioritize these four areas:
+1. I2 interprocess linearization, all ISSUE/CONSUME/STOP writers, stale/reused-token denial, exact run/epoch and actual shared-memory/ABI premises.
+2. Complete coverage of pinned LIME predict_fn paths by per-callback child admission; distinguish native surrogate predict/score from frozen-predictor queries and finite in-flight generation internals.
+3. Pending process/thread kernel-object identity and handle lifetime, retained actual exits, logging-independent STOP/termination and fallback failure paths.
+4. Missing outer Job/test observer connector, nested profile/injections and controller-plus-late-worker exit proof; propose the smallest implementable correction within15 nominal starts/18 maximum,3 TEST processes and120 nominal seconds, not automatic cap increases.
+
+Prepared in source: I2 protocol, native public API connector, callback-specific wrapper, common ledger, dummy connector and reference arithmetic scaffolding. NOT validated or missing: real native LIME callback execution; all runtime interleavings; OS/nested Job behavior; outer Job/test observer connector; real process exits; Q5/Q6 injections; M1/M4 and M2 numerical/transfer results; scientific D1a admission. All seven cases NOT_RUN. SOURCE_REMEDIATION_REQUIRED, TEST_PLAN_FEASIBILITY_BLOCKED and RESOURCE_GUARD_BLOCKED unchanged. EXECUTION_AUTHORIZED=False remains at entry/launch/worker; no I1/I3 claim.
+
+Immutable implementation tree: https://github.com/baturyusuf/XAI-thesis-work-1/tree/1bd1210a6601f5d82a5b288fe995a63aaada552a/src/innovation/phase2/guard_remediation_v2
+
+This publication performed no automatic tests, auditor execution, guard/native imports, Job Objects, workers, fits, model calls or scientific calculations. Git source/byte/manifest inspection only; normal branch-only push, no main merge or force push.
