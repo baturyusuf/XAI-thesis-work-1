@@ -1,0 +1,220 @@
+diff --git a/src/innovation/phase2/guard_remediation_v2/__init__.py b/src/innovation/phase2/guard_remediation_v2/__init__.py
+index ee5d1c6..50bf1d3 100644
+--- a/src/innovation/phase2/guard_remediation_v2/__init__.py
++++ b/src/innovation/phase2/guard_remediation_v2/__init__.py
+@@ -1,3 +1,3 @@
+ """B2 source-only guard revision. Importing this package launches nothing."""
+-VERSION = 'B2-source-v2-i2-native-connector-r2'
++VERSION = 'B2-source-v2-i2-native-connector-l01-r3'
+ EXECUTION_AUTHORIZED = False
+diff --git a/src/innovation/phase2/guard_remediation_v2/controller.py b/src/innovation/phase2/guard_remediation_v2/controller.py
+index ce08bf5..3545e1d 100644
+--- a/src/innovation/phase2/guard_remediation_v2/controller.py
++++ b/src/innovation/phase2/guard_remediation_v2/controller.py
+@@ -9,8 +9,9 @@ from .config import PRODUCTION, ROOT
+ from .budget import BudgetLedger, Slot, snapshot_digest
+ from .channel import Channel
+ from . import os_api as O
+ from .gate import GateStopped
++from .independent_termination import IndependentTerminator
+ 
+ class Controller:
+     def __init__(self, job, launch, bus):
+         self.job, self.launch, self.bus = job, launch, bus
+@@ -40,15 +41,21 @@ class Controller:
+         self.stop_prior_gate_word = None
+         self.resume_result = None
+         self.boundaries = dict(t_launch=launch, t_job=time.perf_counter())
+         self.thread = threading.Thread(target=self._run, daemon=True, name='B2-control-enforcer')
++        self.terminator = IndependentTerminator(job, self.channel.gate, launch)
++
++    def start(self):
++        # Independent requester is live BEFORE actor arming, OPEN or worker creation.
++        self.terminator.start()
++        self.thread.start()
+ 
+     def __call__(self):
+         return self.worker
+ 
+     def request_stop(self, reason):
+         """Any thread may latch a REQUEST, never mutate control actor state."""
+-        # Shared atomic category only; no cross-thread actor-state writes.
++        # S is observed directly by the independent killer, not via actor queue.
+         code = {'CONTROLLER_MAIN_ERROR': 2, 'OBSERVED_WS_RESOURCE_LIMIT': 3,
+                 'WRONG_ACTUAL_PROFILE': 4}.get(reason, 1)
+         try:
+             self.channel.cancel(code)
+@@ -100,8 +107,9 @@ class Controller:
+                        origin=self.launch, status='PARTIAL', exit='NOT_MEASURED')
+ 
+     def _admission(self):
+         self._owner()
++        self.terminator.require_live()
+         if self.state in ('CANCELLING', 'DRAINING'):
+             return False
+         if self.channel.stopped() or time.perf_counter() >= self.launch+PRODUCTION.stop_seconds:
+             reason = ('STOP_LATCH_CODE_'+str(self.channel.reason_code())
+@@ -227,8 +235,9 @@ class Controller:
+ 
+     def _run(self):
+         try:
+             self.owner = threading.get_ident()
++            self.terminator.require_live()
+             self.job.verify_owner()
+             O.require(O.B.belongs(O.B.current(), self.job.handle), 'Controller job assignment absent')
+             self.channel.header()
+             self.state = 'ARMED'
+@@ -249,8 +258,9 @@ class Controller:
+                 self.fatal_stop(99)
+ 
+     def _tick(self):
+         now = time.perf_counter()
++        self.terminator.require_live()
+         if self.state not in ('CANCELLING', 'DRAINING'):
+             self._admission()
+         while True:
+             try:
+@@ -276,8 +286,9 @@ class Controller:
+         members = set(self.job.pids())
+         expected = {os.getpid()} | ({int(self.worker.pid)} if self.worker else set())
+         O.require(members <= expected and os.getpid() in members, 'Unknown job member')
+         if self.worker is not None and self.exit_evidence is None and O.signaled(self.worker.hProcess):
++            self.terminator.begin_cleanup(time.perf_counter())
+             self.exit_evidence = dict(observed_qpc=time.perf_counter(),
+                 process_times=O.A.process_times(self.worker.hProcess), exit_code=O.B.code(self.worker))
+             self.boundaries['worker_exit_observed'] = self.exit_evidence['observed_qpc']
+             if self.state != 'CANCELLING':
+@@ -292,9 +303,9 @@ class Controller:
+         shutdown_at = min(self.launch+PRODUCTION.lifecycle_target,
+                           self.stop_qpc+PRODUCTION.shutdown_target if self.stop_qpc is not None else float('inf'))
+         if self.cleanup_complete and self.exit_evidence is not None:
+             # No disarm/join/gc or further blocking main-thread cleanup before exit.
+-            self.bus.offer('owner_close_request', tail=self.bus.tail(time.perf_counter()),
++            self.bus.offer('owner_exit_request', tail=self.bus.tail(time.perf_counter()),
+                            actual_controller_exit='NOT_MEASURED')
+             self.job.close_owner_and_exit(0 if self.finished and self.pending_reason is None else 91)
+         if time.perf_counter() >= shutdown_at:
+             self.fatal_stop(92)
+diff --git a/src/innovation/phase2/guard_remediation_v2/entry.py b/src/innovation/phase2/guard_remediation_v2/entry.py
+index c30d428..2cff9d8 100644
+--- a/src/innovation/phase2/guard_remediation_v2/entry.py
++++ b/src/innovation/phase2/guard_remediation_v2/entry.py
+@@ -30,9 +30,9 @@ def execute_approved(approval_relative, evidence_relative):
+         from .telemetry import EvidenceBus
+         from .controller import Controller
+         bus = EvidenceBus()
+         actor = Controller(job, launch, bus)
+-        actor.thread.start()
++        actor.start()  # Arms the independent termination path before actor/OPEN.
+         actor.armed.wait()  # Enforcer failure calls fatal owner exit, never silent return.
+         if actor.channel.stopped():
+             raise PermissionError('STOP before full source/config admission')
+         # All potentially blocking source/package/durable work is AFTER t_arm.
+diff --git a/src/innovation/phase2/guard_remediation_v2/independent_termination.py b/src/innovation/phase2/guard_remediation_v2/independent_termination.py
+new file mode 100644
+index 0000000..01e453b
+--- /dev/null
++++ b/src/innovation/phase2/guard_remediation_v2/independent_termination.py
+@@ -0,0 +1,71 @@
++# L01: a controller thread, not a third process or an actor-queue consumer.
++import os
++import threading
++import time
++from .config import PRODUCTION
++
++
++class IndependentTerminator:
++    def __init__(self, job, gate, launch):
++        # Strong references live until owner exit; no explicit handle close/unmap.
++        self.job, self.gate, self.launch = job, gate, launch
++        self.ready = threading.Event()
++        self.started = False
++        self._cleanup_deadline = None
++        self.thread = threading.Thread(target=self._run, daemon=True,
++                                       name='B2-L01-independent-termination')
++
++    def start(self):
++        from . import EXECUTION_AUTHORIZED
++        if EXECUTION_AUTHORIZED is not True:
++            raise PermissionError('L01 source-only revision cannot start a thread')
++        if self.started:
++            raise RuntimeError('Independent terminator may start only once')
++        self.started = True
++        self.thread.start()
++        # Startup only: no worker/grant/OPEN exists before this readiness wait.
++        self.ready.wait()
++        self.require_live()
++
++    def require_live(self):
++        if not self.ready.is_set() or not self.thread.is_alive():
++            self.terminate_now(98)
++
++    def begin_cleanup(self, worker_signal_observed_qpc):
++        # One actor writer, immutable float references; timing hint, NOT I2 authority.
++        candidate = min(self.launch+PRODUCTION.lifecycle_target,
++                        worker_signal_observed_qpc+PRODUCTION.shutdown_target)
++        prior = self._cleanup_deadline
++        if prior is None or candidate < prior:
++            self._cleanup_deadline = candidate  # Never extend a published target.
++
++    def terminate_now(self, code):
++        # No worker snapshot, logging, ACK, fsync, queue, actor lock or join.
++        try:
++            self.gate.commit_stop()
++        finally:
++            try:
++                self.job.fatal_owner(code)  # Checked whole-job API, then owner exit.
++            finally:
++                os._exit(code)  # Also fail closed if the wrapper unexpectedly returns.
++
++    def _run(self):
++        try:
++            # Validate the actual shared word before advertising readiness.
++            if self.gate.stopped() or time.perf_counter() >= self.launch+PRODUCTION.stop_seconds:
++                self.terminate_now(93)
++            self.ready.set()
++            while True:
++                if self.gate.stopped():
++                    self.terminate_now(93)
++                now = time.perf_counter()
++                if now >= self.launch+PRODUCTION.stop_seconds:
++                    self.terminate_now(92)
++                cleanup = self._cleanup_deadline
++                if cleanup is not None and now >= cleanup:
++                    self.terminate_now(94)
++                # A scheduling target only; no hard deadline or GIL/kernel theorem.
++                time.sleep(PRODUCTION.control_poll_target)
++        finally:
++            # No normal disarm/return/join. Exceptions and unexpected return revoke/kill.
++            self.terminate_now(99)
+diff --git a/src/innovation/phase2/guard_remediation_v2/os_api.py b/src/innovation/phase2/guard_remediation_v2/os_api.py
+index dafcab5..33250a6 100644
+--- a/src/innovation/phase2/guard_remediation_v2/os_api.py
++++ b/src/innovation/phase2/guard_remediation_v2/os_api.py
+@@ -117,18 +117,22 @@ class OwnedJob(A.Job):
+             self.terminate(code)  # Checked TerminateJobObject; owner is a member too.
+         finally:
+             os._exit(code)  # Always owner-exit on returned/failed job kill; last-close.
+ 
++    def close_job(self):
++        # A numeric shared handle must not be closed/reused under pending borrowers.
++        raise A.GuardError('L01: shared job handle is released by owner exit only')
++
+     def close_owner_and_exit(self, code):
+-        """Only after retained worker exit. Owner exit closes any stuck auxiliaries."""
++        # No CloseHandle/verify-query/join: owner exit stops threads, then reclaims
++        # the sole noninherited job handle. Never assert exit from this request.
+         try:
+-            self.verify_owner()
+-            self.closed = True
+-            self.close_job()  # Last close normally terminates this member owner.
++            require(os.getpid() == self.owner_pid, 'Wrong owner exit caller')
+         finally:
+             os._exit(code)
+ 
+ 
++
+ # Named shared backing handle is retained in each view; peer only opens existing.
+ create_mapping = B.bind(B.K, 'CreateFileMappingW', [W.HANDLE, C.c_void_p, W.DWORD, W.DWORD, W.DWORD, W.LPCWSTR], W.HANDLE)
+ open_mapping = B.bind(B.K, 'OpenFileMappingW', [W.DWORD, W.BOOL, W.LPCWSTR], W.HANDLE)
+ get_thread_times = B.bind(B.K, 'GetThreadTimes', [W.HANDLE]+[C.POINTER(W.FILETIME)]*4, W.BOOL)

@@ -1,0 +1,373 @@
+{
+  "scope": "L01_DELTA_STATIC_SOURCE_ONLY; NO_MODULE_IMPORT_EXECUTION_OR_DYNAMIC_QUALIFICATION",
+  "own_base": "b8016f1d000e280ce93fdaffa122ef9b8b053eb5",
+  "implementation": "d51652e340fd99f533cc07cef910f90acd660baa",
+  "handoff": "fb4231e1b77915be070fbc77fa8966edda9e9218",
+  "baseline": "1bd1210a6601f5d82a5b288fe995a63aaada552a",
+  "amendment": "8325d9911556855ea7966e112e91a80d786a393d",
+  "source_manifest_sha256": "e42cd223fecc239a4d683ef35ae52dbcae5f94110a4a2356e525744cf75e6456",
+  "manifest_is_git_commit": false,
+  "source_entries": [
+    {
+      "path": "research/innovation/phase1/ENVIRONMENT_FREEZE.txt",
+      "bytes": 461,
+      "sha256": "1f8bc2a1a7dfdc23d290ec5c6bfca398db51badc26502720ba3d043f9057ad67",
+      "git_blob": "299cdf96c4126c1a1291edb07a7d40e7d45bdbc4"
+    },
+    {
+      "path": "research/innovation/phase2/b2/B2_L01_PROFILE_SOURCE_ONLY.json",
+      "bytes": 1745,
+      "sha256": "c0317962ac070af34118479bdcb97c3d0f0ce55470cbaf8ba50d51f914676e43",
+      "git_blob": "2edc5711b5716442c6a6c82f8590ed4c1691aaf1"
+    },
+    {
+      "path": "research/innovation/phase2/b2/B2_L01_SOURCE_REGISTRY.json",
+      "bytes": 7054,
+      "sha256": "8f3777abbb362e2d025f73454549a560fa4bbcae90e1fb333361c5697d5a1104",
+      "git_blob": "21603c4e9170c8bff0b89dd487107b07e7cf2338"
+    },
+    {
+      "path": "research/innovation/phase2/b2/NATIVE_LIME_RELEASE_MANIFEST.json",
+      "bytes": 3569,
+      "sha256": "15dfda532bedc7fbdfee75ad418b634c82f2d62469c33181872368a477ba70fb",
+      "git_blob": "9e4813071df02d3bfe626e5bd4017e2196c56701"
+    },
+    {
+      "path": "research/innovation/phase2/b2/l01_sources/B2_FINDINGS.csv",
+      "bytes": 5186,
+      "sha256": "f1d8c9e468b7794771bf13f33d870afa6cb9b5bbaf71ae398f06ca9c6ba73382",
+      "git_blob": "2a3f23d3aeeac07a2e2f5baff69c61fbbd4394cd"
+    },
+    {
+      "path": "research/innovation/phase2/b2/l01_sources/B2_I2_PROTOCOL_AUDIT.md",
+      "bytes": 5845,
+      "sha256": "ef0440939aefe1a9c67be16e05675c6950c86ab3f34e9eed2343918287c9d09d",
+      "git_blob": "79d23b81340e8028814ab3ed1ab1047b5685639d"
+    },
+    {
+      "path": "research/innovation/phase2/b2/l01_sources/B2_INDEPENDENT_SOURCE_AUDIT.md",
+      "bytes": 7375,
+      "sha256": "018cc6b3e19e44daa847b2dc023a4a9b5f9bf5641eee62dec5e31061b04ea6c9",
+      "git_blob": "2028ca8745416f5539b66baf932e51b5018cdb16"
+    },
+    {
+      "path": "research/innovation/phase2/b2/l01_sources/B2_LIFECYCLE_AND_HANDLE_AUDIT.md",
+      "bytes": 6833,
+      "sha256": "959d7856bcd3f3ea7a60840445378f794b4d9e1f5f60be89737d5e409408fa56",
+      "git_blob": "035f29f9fc9393c27434fe7f1f86e3e743cabb8b"
+    },
+    {
+      "path": "research/innovation/phase2/b2/l01_sources/B2_MINIMUM_REMEDIATION_DECISION.md",
+      "bytes": 5524,
+      "sha256": "141926c5373153b1f4a4507e8f1f3170ba9873323038c80fa7a1b7eb39197656",
+      "git_blob": "799e802472c9b10ca6334ddd0d99b5a40573a07c"
+    },
+    {
+      "path": "research/innovation/phase2/b2/source_contracts/AGENT4_G04_REVISED_REQUIREMENTS.md",
+      "bytes": 13746,
+      "sha256": "c0c957c097ba09573c17d04b867a81d2423695259685090ec7c98dfcd8d0f7da",
+      "git_blob": "e8bb2bb85f91fbe6095c6f515b84e526bff91be8"
+    },
+    {
+      "path": "research/innovation/phase2/b2/source_contracts/AGENT4_RESOURCE_REMEDIATION_HANDOFF.md",
+      "bytes": 5861,
+      "sha256": "364bb32944b4a244605682dd0bacfe50ecc8a05d6f49ecdbc030180d4ed2f7b5",
+      "git_blob": "315bcf1020dc9fef78712ae44bd075b7b4ff91f5"
+    },
+    {
+      "path": "research/innovation/phase2/b2/source_contracts/B2_G04_CONTRACT_AMENDMENT_PROPOSAL.md",
+      "bytes": 11495,
+      "sha256": "315a9fa8e24e384d146c36a9760e40daef4d30bc717adf8ce5fdf8f73c386138",
+      "git_blob": "722b4c205ca8e4006ee290795c70c55982073542"
+    },
+    {
+      "path": "research/innovation/phase2/b2/source_contracts/B2_G04_INVARIANT_REVIEW.md",
+      "bytes": 9695,
+      "sha256": "8db97a65e09e66c7be1e6b83d50e3c1257900fca911dfc545ef1213dff626e9f",
+      "git_blob": "7939d61c3eb8cb09742f6d54d80ec7d90f917334"
+    },
+    {
+      "path": "research/innovation/phase2/b2/source_contracts/B2_G04_SAFETY_AND_RESIDUAL_RISKS.md",
+      "bytes": 11810,
+      "sha256": "9efb9efd74be8bc75b4e4e1e203108bf1a1f9bf2152f9d9167748f2b97719bd8",
+      "git_blob": "8cf28a6f05bdcca1510ce642716e8db22fbbb9f7"
+    },
+    {
+      "path": "research/innovation/phase2/b2/source_contracts/D1A_RESOURCE_CONTRACT_V2_PROPOSAL.md",
+      "bytes": 11037,
+      "sha256": "0c71530edb5bea0fea6f440ad6ba874d618577cf77da8d412b16917ed49945a4",
+      "git_blob": "ce1570f08e9e9701bf87363ac7087a6222498e8e"
+    },
+    {
+      "path": "research/innovation/phase2/b2/source_contracts/D1A_V2_ADMISSION_REQUIREMENTS.md",
+      "bytes": 12357,
+      "sha256": "3400c1681d3785740cff3736f8b74b66bc14a5ef2392f81317109956ae7f5d20",
+      "git_blob": "fb613dfd38d3a4a7da2f39d47444ed7da4ffccfa"
+    },
+    {
+      "path": "research/innovation/phase2/b2/source_contracts/DISCRIMINATIVE_MECHANISMS.md",
+      "bytes": 17804,
+      "sha256": "54ad543bc72f3773a6d1174e4f9c4cdf7edb281be06c192b46e50e069e2ce09d",
+      "git_blob": "df953d67f9d6c1b19171bc97f9adedadd3fd3a95"
+    },
+    {
+      "path": "research/innovation/phase2/b2/source_contracts/EXPERIMENT_CONTRACTS.md",
+      "bytes": 9903,
+      "sha256": "6ce25d732c4c1c9e84f6a3526c8302f64bb3a0721b51bdee152087c1257ad2cd",
+      "git_blob": "64ab19d3d37a900ad3e9c6be60b746645df6e616"
+    },
+    {
+      "path": "research/innovation/phase2/b2/source_contracts/EXPLORATORY_CONTRACT_COMPARISON.md",
+      "bytes": 5986,
+      "sha256": "4adce5ca136b8b7037a2db30f31808290aea39974f521998785033fb2904fe87",
+      "git_blob": "abddb25604cc644dfbf0112d6454a6c30aca479c"
+    },
+    {
+      "path": "research/innovation/phase2/b2/source_contracts/FINDINGS_AND_REMEDIATION.md",
+      "bytes": 6248,
+      "sha256": "eedcd30463516bcf3e245a55573b65c068bac233ffae648cc78247078373168e",
+      "git_blob": "181002f9afe985ccaefea4db28ed8a0f60caca78"
+    },
+    {
+      "path": "research/innovation/phase2/b2/source_contracts/INDEPENDENT_RESOURCE_GUARD_AUDIT.md",
+      "bytes": 6173,
+      "sha256": "70504b6a977a7b85a2568539e9b3a5861a9e416ccba7b64c6a999937dc01a851",
+      "git_blob": "004ecaf2d26ecc10a88a3b01ab1b3ea2d45c883e"
+    },
+    {
+      "path": "research/innovation/phase2/b2/source_contracts/STRICT_VS_EXPLORATORY_DECISION.md",
+      "bytes": 11682,
+      "sha256": "961e43c3546609ac0b73a9ee9571dd627131342540d972b7ee9a131fa08a87b3",
+      "git_blob": "bc6e8aa8d58a9cafed6c5a7c537d1142b7d7e6c2"
+    },
+    {
+      "path": "research/innovation/phase2/evidence/D1A_PLANNED_SLOT_REGISTRY.json",
+      "bytes": 6288,
+      "sha256": "6e10b9b0147b5517bca7569339d803c8a93c3bb2083060961aa47a56f77a3735",
+      "git_blob": "1f5be907cf1fb0bd2be6ed393d57a0015661c40a"
+    },
+    {
+      "path": "research/innovation/phase2/evidence/contracts/D1A_LIME_ONLY_CONTRACT.md",
+      "bytes": 8867,
+      "sha256": "98fadf099f71c858b95249604ecb80acb6f72a7a227006918fbaf452224f8f13",
+      "git_blob": "2f013a75e2b978a29ab3fd5b92b1cb93c65f974d"
+    },
+    {
+      "path": "research/innovation/phase2/evidence/contracts/D1A_RESOURCE_AND_NUMERICAL_GATES.md",
+      "bytes": 14105,
+      "sha256": "55a42be0aa6bfd153403227d7bdb148bd6dfc64a0fb606dac73940ece490e7d1",
+      "git_blob": "23869e536b14314023ee778780f5f79d6ebdaaf9"
+    },
+    {
+      "path": "src/innovation/__init__.py",
+      "bytes": 72,
+      "sha256": "6aa31e47946cd7cd2466c01701d1ee2a26325585ea4fa7cb939ce6241e2228a2",
+      "git_blob": "302e209cdd071088349d22588a1d90d73f965007"
+    },
+    {
+      "path": "src/innovation/phase2/__init__.py",
+      "bytes": 61,
+      "sha256": "bc07777ce19b1006ea8cb9c766148645a7fe9b21b657791755f4e3d0644a947b",
+      "git_blob": "69d08eebff3265e04f909aeed991fb8239723e8d"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v1/__init__.py",
+      "bytes": 83,
+      "sha256": "b9a820e27be9ae58175fa48bc19ba2b6869a1a515757c4a7cce0811f3b98bb6b",
+      "git_blob": "ffc6365ac7dde899165463a85ba9e204c145b809"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v1/api.py",
+      "bytes": 8640,
+      "sha256": "6d1b0a52575b151abbbfc17e55da6ca4ee8d0713b871108cb1d0161b60cde3d5",
+      "git_blob": "8bf82f582f948cd520790fb9a556a6320c92c450"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/__init__.py",
+      "bytes": 162,
+      "sha256": "2f55e7f5ac7f0d3ba89187b5508f0ee9bae200d1d2289407f0c1c809d746b66a",
+      "git_blob": "50bf1d3078fbfc76649cb13f0b2063d367cf7305"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+      "bytes": 10781,
+      "sha256": "89fcb6aefa68cd8e8a9fa9fadafd0fd9cabeac24e3e7cd4bd588d56853ce509a",
+      "git_blob": "6cab758cab7f4b8854efad6bc0cfffa022161760"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+      "bytes": 8203,
+      "sha256": "5cdac1286c479239d74e0087a062fa671f59d66cd09c76597a59d578bdc8c6f2",
+      "git_blob": "f66402a216e6e8660c04c83d869ae685d3214f0d"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+      "bytes": 9237,
+      "sha256": "c85b1f8db2d5c2e3e75a7cf8220e7e6cd5921898e18bfd64afd363f5a815cee5",
+      "git_blob": "b648462340772f6d55ba2aedd3dc0e469289cffa"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+      "bytes": 16335,
+      "sha256": "048e90b6a0807313a11cb31f3a8ea2a38b26c75435307e86a7d96ce85e9b36f4",
+      "git_blob": "3545e1d711ed97e85f62924d5eaf39024f0035cb"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/dummy_connector.py",
+      "bytes": 1423,
+      "sha256": "3d0d7d85bb33896713190ced99e9c655de97a1aea7373220425576d62107e0a1",
+      "git_blob": "35e5d7cadced664bc52e350fa56b1c1dfe6d2ca6"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/entry.py",
+      "bytes": 4022,
+      "sha256": "61001cedcdad0d4a534304f8731258bb0dc5bab84fc47aaa52375fbe738f1f41",
+      "git_blob": "2cff9d8134e919d62deffb413cdc03e7df11fc93"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+      "bytes": 10670,
+      "sha256": "e5115dbb94972a8f6d0971d23c82042ceed237305089ffb2f1f18b19747af523",
+      "git_blob": "34d0218282eada790caffee67632cdfa4ee25b72"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/independent_termination.py",
+      "bytes": 3122,
+      "sha256": "46c1d870fecc83ba029a9d08ebf1490967105e001574e64c3d28e1833152b879",
+      "git_blob": "01e453be67cbad5e9eeb575055fd651055e6a7d6"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/native_lime_connector.py",
+      "bytes": 10209,
+      "sha256": "44ec8a4ff8129e9976e3e096a261b99464cf937f5c13c29a8fca07714a8317dd",
+      "git_blob": "388e752d7c10c26e072dcf1a2523568b42d43a94"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+      "bytes": 8350,
+      "sha256": "b2cfbdfb18c887bd1832ef2bc58ab82f441a66e2adf0f0e56b3e0afc5595c7c2",
+      "git_blob": "33250a6cc726e6956726d7023f1bd26f040c7236"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/reference_arithmetic.py",
+      "bytes": 10351,
+      "sha256": "eb45d9db16c3dd6c24bc7a50cde27124984524e5515fb1df65395e04320f013f",
+      "git_blob": "0119ed4c7ed95a230f8299e0b084554a78f43117"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/telemetry.py",
+      "bytes": 4196,
+      "sha256": "9cbc9ea46198cb709debba45ae3a8706bc4d5d4bfa8efab8efb6b3747d58dfc0",
+      "git_blob": "88cf30260d5aed95ead6b100390ee448d52f1005"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/test_observer.py",
+      "bytes": 3266,
+      "sha256": "fe8124a8549da409263b5d700d56d88725167e319872cda976fa5964983dea7a",
+      "git_blob": "18fa2024d6335db199b8b57c452078e5d74ab1bd"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+      "bytes": 16596,
+      "sha256": "81f8d0b8d5dc5fda34fc4c6b55396d8efcfa05ad50d660365a4c1b2b47403a80",
+      "git_blob": "aa20d09269a6d2ab8596ecce7ddba4180d5b01c7"
+    },
+    {
+      "path": "src/innovation/phase2/winjob_v4.py",
+      "bytes": 7886,
+      "sha256": "0104bb2321a6645a28d18df70712cde519b2865b67488725f20f13ede99fcfd2",
+      "git_blob": "bec5bbdcee125df11661685b3f0a03c2cb169916"
+    }
+  ],
+  "verified_authority_audit_copies": 18,
+  "source_delta": [
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/__init__.py",
+      "status": "MODIFIED",
+      "before_bytes": 158,
+      "before_sha256": "9e9e84dff0fcba90e95e9ed94b4993936f7b1776a64a597438bcf99fd7f09ada",
+      "before_blob": "ee5d1c637d05b9822cc129d209371c897715d0ca",
+      "after_bytes": 162,
+      "after_sha256": "2f55e7f5ac7f0d3ba89187b5508f0ee9bae200d1d2289407f0c1c809d746b66a",
+      "after_blob": "50bf1d3078fbfc76649cb13f0b2063d367cf7305"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+      "status": "MODIFIED",
+      "before_bytes": 15828,
+      "before_sha256": "811934597a31d7e25e280b8a3096cb3a785492285dca917fad9dfd1bd993e920",
+      "before_blob": "ce08bf57f99625b44846e2305316d1af07c94a61",
+      "after_bytes": 16335,
+      "after_sha256": "048e90b6a0807313a11cb31f3a8ea2a38b26c75435307e86a7d96ce85e9b36f4",
+      "after_blob": "3545e1d711ed97e85f62924d5eaf39024f0035cb"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/entry.py",
+      "status": "MODIFIED",
+      "before_bytes": 3969,
+      "before_sha256": "3dad494e83cc7ef3d9390f0fffbe014e2b2c8657557ce789b46e924db0047a1f",
+      "before_blob": "c30d42880521d59ea69f5c77c478b4e0b13c944a",
+      "after_bytes": 4022,
+      "after_sha256": "61001cedcdad0d4a534304f8731258bb0dc5bab84fc47aaa52375fbe738f1f41",
+      "after_blob": "2cff9d8134e919d62deffb413cdc03e7df11fc93"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/independent_termination.py",
+      "status": "ADDED",
+      "before_bytes": null,
+      "before_sha256": null,
+      "before_blob": null,
+      "after_bytes": 3122,
+      "after_sha256": "46c1d870fecc83ba029a9d08ebf1490967105e001574e64c3d28e1833152b879",
+      "after_blob": "01e453be67cbad5e9eeb575055fd651055e6a7d6"
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+      "status": "MODIFIED",
+      "before_bytes": 8140,
+      "before_sha256": "1bcc5503f572787d695fe7ef9b3f393c6a0dfe3544fe49f94edf78eeed539156",
+      "before_blob": "dafcab530b92ec30f9513fd31fadaa4161af9722",
+      "after_bytes": 8350,
+      "after_sha256": "b2cfbdfb18c887bd1832ef2bc58ab82f441a66e2adf0f0e56b3e0afc5595c7c2",
+      "after_blob": "33250a6cc726e6956726d7023f1bd26f040c7236"
+    }
+  ],
+  "exact_diff_sha256": "056023504a93cebf8f654ffb19ef9a1b8a6fae3bec4fe74387aa157562492ced",
+  "exact_diff_bytes": 11147,
+  "unchanged_v2_modules": [
+    "src/innovation/phase2/guard_remediation_v2/budget.py",
+    "src/innovation/phase2/guard_remediation_v2/channel.py",
+    "src/innovation/phase2/guard_remediation_v2/config.py",
+    "src/innovation/phase2/guard_remediation_v2/dummy_connector.py",
+    "src/innovation/phase2/guard_remediation_v2/gate.py",
+    "src/innovation/phase2/guard_remediation_v2/native_lime_connector.py",
+    "src/innovation/phase2/guard_remediation_v2/reference_arithmetic.py",
+    "src/innovation/phase2/guard_remediation_v2/telemetry.py",
+    "src/innovation/phase2/guard_remediation_v2/test_observer.py",
+    "src/innovation/phase2/guard_remediation_v2/worker.py"
+  ],
+  "unchanged_shared_manifest_dependencies": 33,
+  "old_generic_manifest": "Unchanged historical input; verify at baseline, not against new intentional delta",
+  "unexecuted_AST_grammar": "Python3.11 on five delta files only",
+  "authorization_flags": {
+    "src/innovation/phase2/guard_remediation_v2/__init__.py:EXECUTION_AUTHORIZED": false,
+    "src/innovation/phase2/guard_remediation_v2/test_observer.py:EXECUTION_AUTHORIZED": false,
+    "src/innovation/phase2/guard_remediation_v2/test_observer.py:TEST_EXECUTION_AUTHORIZED": false
+  },
+  "decision": "L01_SOURCE_REVIEW_PASSED_WITH_RUNTIME_GATES",
+  "general_decisions": [
+    "SOURCE_REMEDIATION_REQUIRED",
+    "TEST_PLAN_FEASIBILITY_BLOCKED",
+    "RESOURCE_GUARD_BLOCKED"
+  ],
+  "new_guard_threads": 0,
+  "new_job_objects": 0,
+  "new_workers": 0,
+  "new_tests": 0,
+  "native_import_fit_predictor": 0,
+  "scientific_work": 0,
+  "commit_push_merge": false,
+  "consultant_session": "afe86947-ded0-4ef0-b311-c9fed9de3f14",
+  "consultant_scope": "Read-only thread/readiness/failure delta; parent independently checked exact lines and inherited handle paths",
+  "independence": "Prior benchmark-design author overlap remains disclosed; no L01 guard-source authorship overlap identified; no scientific personnel-independent signoff"
+}
