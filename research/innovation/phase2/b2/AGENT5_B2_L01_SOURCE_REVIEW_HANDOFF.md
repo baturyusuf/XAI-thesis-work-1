@@ -1,10 +1,10 @@
-# Agent5 B2-L01 source-review handoff — LOCAL / NO EXECUTION
+# Agent5 B2-L01 source-review handoff — IMMUTABLE SOURCE / NO EXECUTION
 
 ## Identity and orthogonal decisions
 
 Latest published Agent5 audit: b8016f1d000e280ce93fdaffa122ef9b8b053eb5, verified by GitHub origin ls-remote on research/independent-validation and read from immutable Git objects. Raw five-document copies plus thirteen inherited authority pins are in B2_L01_SOURCE_REGISTRY.json/l01_sources. Baseline implementation1bd1210a6601f5d82a5b288fe995a63aaada552a; amendment8325d9911556855ea7966e112e91a80d786a393d over B2 base841ded9c3544e259fd638003350d31e7cae23686.
 
-Own branch research/xai-innovation remains at b6fd3190b183c2fba1ac46140ecbf44e435e30db. New version B2-source-v2-i2-native-connector-l01-r3 is UNCOMMITTED/LOCAL ONLY; no new implementation Git SHA exists. New45-entry B2_L01_SOURCE_MANIFEST.csv SHA-256 (NOT Git commit):
+L01 implementation source is frozen at commit d51652e340fd99f533cc07cef910f90acd660baa on research/xai-innovation (parent b6fd3190b183c2fba1ac46140ecbf44e435e30db). Version B2-source-v2-i2-native-connector-l01-r3 is the ONLY implementation snapshot to use for this L01 audit; do not substitute the prior1bd1210 baseline or a moving branch. This documentation-only revision binds that source. The45-entry B2_L01_SOURCE_MANIFEST.csv SHA-256 is NOT a Git commit:
 
 e42cd223fecc239a4d683ef35ae52dbcae5f94110a4a2356e525744cf75e6456
 
@@ -34,6 +34,18 @@ Verify the L01 manifest sizes/hashes and snapshot ID BEFORE review; copy/pin tho
 
 Only static reading, Python3.11 grammar AST and compile-to-UNEXECUTED code objects, literal profile/cap checks, raw size/SHA-256 comparison and read-only Git inspection were used.15 modules/185 symbol ranges/45 source entries checked;18 copied authority/audit documents matched Git bytes. Frozen manifests14/467/412/25 entries matched, no changes. Source-mapped queries of pending API/kill call sites are reasoning, not simulated schedules.
 
-No project/native imports, guard threads, Jobs, worker processes, Q1-Q6 execution, scheduling tests, scientific M1/M2/M4 calculation, native fit/predictor call, commit/push/merge. Existing7 guard cases all NOT_RUN; their plan/topology/budget is unchanged. Native/reference/scientific unresolveds and B2-L02 marker scope remain outside this assignment.
+The source-remediation phase performed no project/native imports, guard threads, Jobs, worker processes, Q1-Q6 execution, scheduling tests, scientific M1/M2/M4 calculation, native fit/predictor call or Git publication. The separately authorized publication performs Git source/manifest operations only, not new validation or execution. Existing7 guard cases all NOT_RUN; their plan/topology/budget is unchanged. Native/reference/scientific unresolveds and B2-L02 marker scope remain outside this assignment.
 
 No known remaining L01 source P1 under stated premises; actual platform paths remain UNVERIFIED. P0 prevent false authority/handle reuse/exit/I1/I3/READY claims. P1 TEST outer/nested/exit/profile/injection source still absent; no attempt to implement it here. P2 actual GIL/Win32/OS/last-close/marker/numerical evidence remains separate. Smallest next step is independent Agent5 SOURCE review of this local delta; TEST source work and any later bounded dynamic qualification require separate human direction. Do not start a guard-only/native run from this handoff.
+
+## Publication boundary — required audit source
+
+Agent5 MUST examine implementation commit d51652e340fd99f533cc07cef910f90acd660baa without editing that snapshot. This documentation-only handoff revision changes no source-manifest entry. Current publication details/full path scope are in B2_L01_PUBLICATION_RECORD.md. Earlier QC/log HEAD, LOCAL/uncommitted and no-commit statements describe their frozen pre-publication phase, not the current Git delivery. Original source/evidence remains available at its fixed commit; historical B2/Phase1/archives were not rewritten.
+
+The publication read-only source inspection found no new hard source defect in the accepted delta: independent readiness is required before actor OPEN/worker; direct terminal-gate read reaches whole-job kill without actorqueue/pending_worker/create-resume return; explicit shared-job close is refused; checked concurrent/failure escalation and target finally remain; cleanup does not disarm/join the independent requester. These are SOURCE observations only, not observed readiness, API calls or exits.
+
+UNVERIFIED runtime premises: thread scheduling/GIL and ordinary WinDLL progress; actual shared mapping/ABI; OS job inheritance/nesting and late-child containment; API returns and kernel/owner-exit/last-close progress; retained worker/controller exit evidence; actual timing/monitoring. S/termination request/API return/exit remain separate. I1/I3 and physical hard-deadline guarantees are not claimed. L01 adds independent termination initiation, not a replacement or validation of the unchanged I2 protocol.
+
+Decisions remain L01_SOURCE_READY_FOR_INDEPENDENT_REVIEW, SOURCE_REMEDIATION_REQUIRED, TEST_PLAN_FEASIBILITY_BLOCKED, RESOURCE_GUARD_BLOCKED. EXECUTION_AUTHORIZED=False and TEST_EXECUTION_AUTHORIZED=False remain. This publication is NOT L01 verification, guard-only permission or native D1a admission. No audit helper, guard/native module, thread, Job, worker, fit, predictor or scientific calculation was executed for publication. TEST outer/exit/profile/injection gaps remain outside this delta.
+
+Immutable L01 source tree: https://github.com/baturyusuf/XAI-thesis-work-1/tree/d51652e340fd99f533cc07cef910f90acd660baa/src/innovation/phase2/guard_remediation_v2
