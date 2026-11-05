@@ -10,6 +10,7 @@ from .budget import BudgetLedger, Slot, snapshot_digest
 from .channel import Channel
 from . import os_api as O
 from .gate import GateStopped
+from .independent_termination import IndependentTerminator
 
 class Controller:
     def __init__(self, job, launch, bus):
@@ -41,13 +42,19 @@ class Controller:
         self.resume_result = None
         self.boundaries = dict(t_launch=launch, t_job=time.perf_counter())
         self.thread = threading.Thread(target=self._run, daemon=True, name='B2-control-enforcer')
+        self.terminator = IndependentTerminator(job, self.channel.gate, launch)
+
+    def start(self):
+        # Independent requester is live BEFORE actor arming, OPEN or worker creation.
+        self.terminator.start()
+        self.thread.start()
 
     def __call__(self):
         return self.worker
 
     def request_stop(self, reason):
         """Any thread may latch a REQUEST, never mutate control actor state."""
-        # Shared atomic category only; no cross-thread actor-state writes.
+        # S is observed directly by the independent killer, not via actor queue.
         code = {'CONTROLLER_MAIN_ERROR': 2, 'OBSERVED_WS_RESOURCE_LIMIT': 3,
                 'WRONG_ACTUAL_PROFILE': 4}.get(reason, 1)
         try:
@@ -101,6 +108,7 @@ class Controller:
 
     def _admission(self):
         self._owner()
+        self.terminator.require_live()
         if self.state in ('CANCELLING', 'DRAINING'):
             return False
         if self.channel.stopped() or time.perf_counter() >= self.launch+PRODUCTION.stop_seconds:
@@ -228,6 +236,7 @@ class Controller:
     def _run(self):
         try:
             self.owner = threading.get_ident()
+            self.terminator.require_live()
             self.job.verify_owner()
             O.require(O.B.belongs(O.B.current(), self.job.handle), 'Controller job assignment absent')
             self.channel.header()
@@ -250,6 +259,7 @@ class Controller:
 
     def _tick(self):
         now = time.perf_counter()
+        self.terminator.require_live()
         if self.state not in ('CANCELLING', 'DRAINING'):
             self._admission()
         while True:
@@ -277,6 +287,7 @@ class Controller:
         expected = {os.getpid()} | ({int(self.worker.pid)} if self.worker else set())
         O.require(members <= expected and os.getpid() in members, 'Unknown job member')
         if self.worker is not None and self.exit_evidence is None and O.signaled(self.worker.hProcess):
+            self.terminator.begin_cleanup(time.perf_counter())
             self.exit_evidence = dict(observed_qpc=time.perf_counter(),
                 process_times=O.A.process_times(self.worker.hProcess), exit_code=O.B.code(self.worker))
             self.boundaries['worker_exit_observed'] = self.exit_evidence['observed_qpc']
@@ -293,7 +304,7 @@ class Controller:
                           self.stop_qpc+PRODUCTION.shutdown_target if self.stop_qpc is not None else float('inf'))
         if self.cleanup_complete and self.exit_evidence is not None:
             # No disarm/join/gc or further blocking main-thread cleanup before exit.
-            self.bus.offer('owner_close_request', tail=self.bus.tail(time.perf_counter()),
+            self.bus.offer('owner_exit_request', tail=self.bus.tail(time.perf_counter()),
                            actual_controller_exit='NOT_MEASURED')
             self.job.close_owner_and_exit(0 if self.finished and self.pending_reason is None else 91)
         if time.perf_counter() >= shutdown_at:

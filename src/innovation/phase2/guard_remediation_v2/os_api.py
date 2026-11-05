@@ -118,14 +118,18 @@ class OwnedJob(A.Job):
         finally:
             os._exit(code)  # Always owner-exit on returned/failed job kill; last-close.
 
+    def close_job(self):
+        # A numeric shared handle must not be closed/reused under pending borrowers.
+        raise A.GuardError('L01: shared job handle is released by owner exit only')
+
     def close_owner_and_exit(self, code):
-        """Only after retained worker exit. Owner exit closes any stuck auxiliaries."""
+        # No CloseHandle/verify-query/join: owner exit stops threads, then reclaims
+        # the sole noninherited job handle. Never assert exit from this request.
         try:
-            self.verify_owner()
-            self.closed = True
-            self.close_job()  # Last close normally terminates this member owner.
+            require(os.getpid() == self.owner_pid, 'Wrong owner exit caller')
         finally:
             os._exit(code)
+
 
 
 # Named shared backing handle is retained in each view; peer only opens existing.

@@ -1,0 +1,13 @@
+{
+  "L01_status": "L01_SOURCE_READY_FOR_INDEPENDENT_REVIEW",
+  "source_status": "SOURCE_REMEDIATION_REQUIRED",
+  "test_plan_status": "TEST_PLAN_FEASIBILITY_BLOCKED",
+  "native_status": "RESOURCE_GUARD_BLOCKED",
+  "source_version": "B2-source-v2-i2-native-connector-l01-r3",
+  "source_manifest_sha256": "e42cd223fecc239a4d683ef35ae52dbcae5f94110a4a2356e525744cf75e6456",
+  "snapshot_is_git_commit": false,
+  "new_audit_commit": "b8016f1d000e280ce93fdaffa122ef9b8b053eb5",
+  "execution_authorized": false,
+  "test_execution_authorized": false,
+  "commit_push_merge": false
+}

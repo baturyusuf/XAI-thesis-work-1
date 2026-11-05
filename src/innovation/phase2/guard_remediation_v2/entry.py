@@ -31,7 +31,7 @@ def execute_approved(approval_relative, evidence_relative):
         from .controller import Controller
         bus = EvidenceBus()
         actor = Controller(job, launch, bus)
-        actor.thread.start()
+        actor.start()  # Arms the independent termination path before actor/OPEN.
         actor.armed.wait()  # Enforcer failure calls fatal owner exit, never silent return.
         if actor.channel.stopped():
             raise PermissionError('STOP before full source/config admission')

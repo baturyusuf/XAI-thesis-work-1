@@ -1,0 +1,46 @@
+{
+  "contract_commit": "841ded9c3544e259fd638003350d31e7cae23686",
+  "purpose": "implementation_only",
+  "profile": {
+    "identity": "B2_I2_PRODUCTION_8325_V1",
+    "job_commit": 2147483648,
+    "active_processes": 2,
+    "stop_seconds": 600.0,
+    "shutdown_target": 5.0,
+    "lifecycle_target": 605.0,
+    "sample_target": 0.05,
+    "control_poll_target": 0.005,
+    "phase_targets": [
+      60.0,
+      30.0,
+      60.0,
+      20.0
+    ]
+  },
+  "source_review_accepted": false,
+  "qualification_reviewed": false,
+  "human_native_release": false,
+  "release_record": null,
+  "immutable_review_commit": null,
+  "source_manifest_path": "research/innovation/phase2/b2/B2_L01_SOURCE_MANIFEST.csv",
+  "source_manifest_sha256": null,
+  "python_executable_sha256": null,
+  "private_site": ".cache/innovation/phase1/venv/Lib/site-packages",
+  "adapter_module": "innovation.phase2.guard_remediation_v2.native_lime_connector",
+  "adapter_file": "src/innovation/phase2/guard_remediation_v2/native_lime_connector.py",
+  "scientific_identity": {
+    "target_class": 1,
+    "output_scale": "probability",
+    "num_samples": 128,
+    "frozen_predictor_id": "A3-D1A-M2-numpy64-ordered-v1",
+    "slot_registry_sha256": "6e10b9b0147b5517bca7569339d803c8a93c3bb2083060961aa47a56f77a3735"
+  },
+  "execution_authorized": false,
+  "amendment_commit": "8325d9911556855ea7966e112e91a80d786a393d",
+  "backend_mode": "native",
+  "record_directory": ".cache/innovation/phase2/b2/records",
+  "source_revision": "B2-source-v2-i2-native-connector-l01-r3",
+  "implementation_base": "1bd1210a6601f5d82a5b288fe995a63aaada552a",
+  "audit_source": "b8016f1d000e280ce93fdaffa122ef9b8b053eb5",
+  "test_execution_authorized": false
+}

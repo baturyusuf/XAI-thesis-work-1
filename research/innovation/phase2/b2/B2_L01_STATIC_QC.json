@@ -1,0 +1,175 @@
+{
+  "scope": "STATIC_AST_SOURCE_CONFIG_BYTE_CHECKS_ONLY",
+  "L01_status": "L01_SOURCE_READY_FOR_INDEPENDENT_REVIEW",
+  "source_status": "SOURCE_REMEDIATION_REQUIRED",
+  "test_plan_status": "TEST_PLAN_FEASIBILITY_BLOCKED",
+  "native_status": "RESOURCE_GUARD_BLOCKED",
+  "source_version": "B2-source-v2-i2-native-connector-l01-r3",
+  "source_manifest_sha256": "e42cd223fecc239a4d683ef35ae52dbcae5f94110a4a2356e525744cf75e6456",
+  "snapshot_is_git_commit": false,
+  "source_entries": 45,
+  "source_files": [
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/__init__.py",
+      "bytes": 162,
+      "sha256": "2f55e7f5ac7f0d3ba89187b5508f0ee9bae200d1d2289407f0c1c809d746b66a",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/budget.py",
+      "bytes": 10781,
+      "sha256": "89fcb6aefa68cd8e8a9fa9fadafd0fd9cabeac24e3e7cd4bd588d56853ce509a",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/channel.py",
+      "bytes": 8203,
+      "sha256": "5cdac1286c479239d74e0087a062fa671f59d66cd09c76597a59d578bdc8c6f2",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/config.py",
+      "bytes": 9237,
+      "sha256": "c85b1f8db2d5c2e3e75a7cf8220e7e6cd5921898e18bfd64afd363f5a815cee5",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/controller.py",
+      "bytes": 16335,
+      "sha256": "048e90b6a0807313a11cb31f3a8ea2a38b26c75435307e86a7d96ce85e9b36f4",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/dummy_connector.py",
+      "bytes": 1423,
+      "sha256": "3d0d7d85bb33896713190ced99e9c655de97a1aea7373220425576d62107e0a1",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/entry.py",
+      "bytes": 4022,
+      "sha256": "61001cedcdad0d4a534304f8731258bb0dc5bab84fc47aaa52375fbe738f1f41",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/gate.py",
+      "bytes": 10670,
+      "sha256": "e5115dbb94972a8f6d0971d23c82042ceed237305089ffb2f1f18b19747af523",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/independent_termination.py",
+      "bytes": 3122,
+      "sha256": "46c1d870fecc83ba029a9d08ebf1490967105e001574e64c3d28e1833152b879",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/native_lime_connector.py",
+      "bytes": 10209,
+      "sha256": "44ec8a4ff8129e9976e3e096a261b99464cf937f5c13c29a8fca07714a8317dd",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/os_api.py",
+      "bytes": 8350,
+      "sha256": "b2cfbdfb18c887bd1832ef2bc58ab82f441a66e2adf0f0e56b3e0afc5595c7c2",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/reference_arithmetic.py",
+      "bytes": 10351,
+      "sha256": "eb45d9db16c3dd6c24bc7a50cde27124984524e5515fb1df65395e04320f013f",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/telemetry.py",
+      "bytes": 4196,
+      "sha256": "9cbc9ea46198cb709debba45ae3a8706bc4d5d4bfa8efab8efb6b3747d58dfc0",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/test_observer.py",
+      "bytes": 3266,
+      "sha256": "fe8124a8549da409263b5d700d56d88725167e319872cda976fa5964983dea7a",
+      "compiled_not_executed": true
+    },
+    {
+      "path": "src/innovation/phase2/guard_remediation_v2/worker.py",
+      "bytes": 16596,
+      "sha256": "81f8d0b8d5dc5fda34fc4c6b55396d8efcfa05ad50d660365a4c1b2b47403a80",
+      "compiled_not_executed": true
+    }
+  ],
+  "symbol_ranges": 185,
+  "no_actor_queue_worker_or_logging_dependency_in_new_loop": true,
+  "no_explicit_shared_job_close_call_in_active_source": true,
+  "execution_authorized": false,
+  "test_execution_authorized": false,
+  "guard_or_native_imports": 0,
+  "guard_threads_started": 0,
+  "job_objects_created": 0,
+  "worker_processes_created": 0,
+  "tests_executed": 0,
+  "scheduling_tests": 0,
+  "native_fits": 0,
+  "predictor_callbacks": 0,
+  "scientific_calculations": 0,
+  "runtime_measurements": "NOT_MEASURED",
+  "future_exit_evidence_requirement": "EXIT_UNVERIFIED_UNTIL_RETAINED_PROOF",
+  "I1_I3": "NOT_REQUIRED_NOT_CLAIMED",
+  "commit_push_merge": false,
+  "immutable_audit_documents_verified": 18,
+  "new_audit_commit": "b8016f1d000e280ce93fdaffa122ef9b8b053eb5",
+  "immutable_baseline_manifest_entries_verified": 39,
+  "baseline_sha256": "8fce8d9ca826715ab38c26dd14bd79ee817ab4be7d04a09ad93a2ab296d0f105",
+  "protected_runtime_modules_byte_unchanged": [
+    "gate.py",
+    "budget.py",
+    "config.py",
+    "worker.py",
+    "native_lime_connector.py",
+    "dummy_connector.py",
+    "reference_arithmetic.py",
+    "test_observer.py",
+    "channel.py",
+    "telemetry.py"
+  ],
+  "frozen_checks": [
+    {
+      "path": "research/innovation/phase2/guard_remediation/SOURCE_SNAPSHOT_MANIFEST.csv",
+      "entries": 14,
+      "mismatches": 0
+    },
+    {
+      "path": "research/innovation/phase2/guard_remediation/publication/CONTENT_MANIFEST.csv",
+      "entries": 467,
+      "mismatches": 0
+    },
+    {
+      "path": "research/innovation/phase2/guard_remediation/DELIVERABLE_MANIFEST.csv",
+      "entries": 412,
+      "mismatches": 0
+    },
+    {
+      "path": "research/innovation/phase1/SOURCE_MANIFEST.csv",
+      "entries": 25,
+      "mismatches": 0
+    }
+  ],
+  "HEAD": "b6fd3190b183c2fba1ac46140ecbf44e435e30db",
+  "branch": "research/xai-innovation",
+  "tracked_delta": [
+    "src/innovation/phase2/guard_remediation_v2/__init__.py",
+    "src/innovation/phase2/guard_remediation_v2/controller.py",
+    "src/innovation/phase2/guard_remediation_v2/entry.py",
+    "src/innovation/phase2/guard_remediation_v2/os_api.py"
+  ],
+  "staged_delta": [],
+  "source_interleavings": "9_ANALYZED_NOT_EXECUTED_NOT_A_NEW_TEST_PLAN",
+  "guard_only_cases": "ALL7_NOT_RUN",
+  "scoped_utf8_files_checked": 56,
+  "sensitivity_pattern_findings": [],
+  "heuristic_scan_not_complete_secret_proof": true,
+  "deliverable_entries": 56,
+  "no_existing_B2_evidence_file_changed": true
+}
