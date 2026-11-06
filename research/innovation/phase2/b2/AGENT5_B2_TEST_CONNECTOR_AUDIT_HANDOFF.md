@@ -7,11 +7,14 @@
 - B2 base: 841ded9c3544e259fd638003350d31e7cae23686.
 - Agent 5 publication, GitHub branch ref verified: 6b04559e96b0ebf5ac1e9f13d5c0e2f5eb8324dd.
   Its L01_SOURCE_REVIEW_PASSED_WITH_RUNTIME_GATES verdict is not runtime qualification.
-- Local parent HEAD: fb4231e1b77915be070fbc77fa8966edda9e9218, unchanged. New files are uncommitted.
+- Preparation parent: fb4231e1b77915be070fbc77fa8966edda9e9218.
+- Frozen TEST implementation/evidence: 84d7edcf34c2d3f41ebc4b825f44402f7cb6b184.
+- This revision is a documentation-only child, not a new source implementation.
 - EXECUTION_AUTHORIZED=False and TEST_EXECUTION_AUTHORIZED=False. Native status: RESOURCE_GUARD_BLOCKED.
 
 This is source-only evidence. No Job, worker, dummy/native run, scheduling test,
-scientific calculation, frozen suite, commit or push was performed. OS limits,
+scientific calculation or frozen suite was performed. Git-only publication is
+separate from those prohibited runtime operations. OS limits,
 actual exits, monitoring, injection and timing remain UNVERIFIED / NOT_RUN.
 Original B2/L01/v1/Phase 1 evidence and verdicts are not rewritten.
 Source identity: B2_TEST_CONNECTOR_SOURCE_SNAPSHOT_ID.txt (SHA-256 of the source
@@ -20,14 +23,21 @@ manifest, NOT a Git commit). Symbol/line authority: B2_TEST_CONNECTOR_SOURCE_CRO
 ## Exact candidate to review
 
 Source manifest SHA-256: 66ad5ba4b8076ca3b31fbcf0cb88b029db51edfc221c131131cc62566920856f.
-This is a local source identity, NOT a Git commit and NOT an immutable published
-implementation. No implementation/handoff commit was created this turn. Review
-all listed bytes and the delivery manifest before relying on line references.
+This SHA-256 is a file identity, NOT a Git commit. The exact immutable source is
+implementation/evidence commit 84d7edcf34c2d3f41ebc4b825f44402f7cb6b184.
+Review source/code and the original delivery manifest AT THAT COMMIT. The latter
+binds its preparation-time handoff, not this later documentation revision.
+B2_TEST_CONNECTOR_PUBLICATION_HANDOFF_MANIFEST.csv binds the revised handoff and
+publication receipt separately. No source or source-manifest byte is changed.
 Do not confuse this candidate with parent fb4231e1b77915be070fbc77fa8966edda9e9218
 or frozen L01 d51652e340fd99f533cc07cef910f90acd660baa.
 
-Candidate decisions: TEST_CONNECTOR_SOURCE_READY_FOR_INDEPENDENT_REVIEW;
-general SOURCE_READY_FOR_INDEPENDENT_REVIEW (local source proposal only).
+Retained Agent 4 candidate label: TEST_CONNECTOR_SOURCE_READY_FOR_INDEPENDENT_REVIEW.
+It means publication FOR independent audit, not source acceptance. General source
+acceptance and qualification remain OPEN. Publication review found unremediated
+P1 PUB-Q1-01: Q1 unexpected/ambiguous probe creation lacks complete retained
+containment/exit evidence. Do not repeat the older no-known-P1 conclusion.
+Read B2_TEST_CONNECTOR_PUBLICATION_QC.md before the preparation reports.
 Native remains RESOURCE_GUARD_BLOCKED. These are not Agent 5 audit outcomes.
 Existing published blocked decisions and earlier failed evidence remain intact.
 Both execution flags remain False; no approval fixture granting release exists.
@@ -48,23 +58,30 @@ Both execution flags remain False; no approval fixture granting release exists.
 7. Copied immutable L01 audit in test_connector_sources and fixed 45-entry L01
    manifest (e42cd223fecc239a4d683ef35ae52dbcae5f94110a4a2356e525744cf75e6456).
 
-## Audit priorities
+## Seven mandatory independent audit priorities
 
-- Interprocess terminal I2 still resides only in unchanged baseline gate word.
-  TEST metadata/fault/ACK flags must not replace science permission. Inspect
-  subclass dispatch and the denial-only observer ISSUE-CAS probe after S.
-- Every common dummy callback still consumes its own same-word child grant.
-  No LIME/native predictor API is run by any TEST role; production remains fenced.
-- Requester armed BEFORE inherited OPEN/worker launch. STOP/kill independent
-  of actor CreateProcess/ResumeThread, optional logs, ACK and cleanup. No early
-  handle close, duplicate inner handle or normal disarm; inspect owner teardown.
-- Verify real nested Job and observer scope source gates, error fail-closed paths,
-  retained PID+creation reuse handling, unpublished-worker abort and no bool/PID
-  substitute for true PROCESS exits.
-- Inspect Q5 narrow injected boundary and Q6 last-close candidate: do not infer
-  OS failure or successful fallback just from flags. No outer rescue as success.
-- Budget includes bootstrap/setup/cleanup and failed operations, not success-only
-  totals. No retry, STOP reset, replacement, extra observer or time allocation.
+1. Outer/inner Job ownership, observer self-membership, parent-first nesting,
+   2 GiB/active3 outer and active2/96MiB-or-2GiB inner API setup and readback.
+   Observer must not retain the inner Job handle and defeat last-close fallback.
+2. Q1's two negative creation attempts versus 15 nominal instances and 18 total /
+   3 concurrent limits. OPEN P1 PUB-Q1-01: fixtures.py:20-36 has an error-return
+   record or a kill request, not complete per-probe retained containment/exit
+   proof. Expected OSError is not automatically no-child evidence. In particular
+   inspect unexpected successful breakaway. No corrective code was added.
+3. Controller and late-worker retained PROCESS identity/real exits; PID+creation
+   keys, unresolved CreateProcess tails, EXIT_UNVERIFIED and no next lifecycle.
+4. One observer with seven fresh run/epoch terminal S lifecycles. No grant/STOP
+   reset, replacement, unknown child or previous-case identity substitution.
+5. Q5/Q6 injected versus real API failures; all-requester Q6 injection, no masking
+   direct kill/cooperative self-exit, logging-independent L01 and handle lifetime.
+6. One original-process 120-second nominal campaign origin including Q1 attempts,
+   bootstrap/setup/cleanup and failures; no fresh clock, retries or hidden budget.
+7. Frozen I2/L01, callback-specific same-word grants, production limits and both
+   false execution brakes remain identical. Denial-only observer CAS must not
+   become positive authority. No physical I1/I3 or runtime READY inference.
+
+The prior label is an audit candidate only. P1 remains OPEN; all seven guard
+cases (Q1,Q2-U,Q2-C,Q3,Q4,Q5,Q6) remain NOT_RUN. Publication is not remediation.
 
 ## Static reproduction only
 
