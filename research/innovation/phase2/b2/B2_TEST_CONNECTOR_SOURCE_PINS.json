@@ -1,0 +1,61 @@
+{
+  "baseline": "d51652e340fd99f533cc07cef910f90acd660baa",
+  "local_head": "fb4231e1b77915be070fbc77fa8966edda9e9218",
+  "b2": "841ded9c3544e259fd638003350d31e7cae23686",
+  "amendment": "8325d9911556855ea7966e112e91a80d786a393d",
+  "agent5_publication": "6b04559e96b0ebf5ac1e9f13d5c0e2f5eb8324dd",
+  "github_ref_observation": "6b04559e96b0ebf5ac1e9f13d5c0e2f5eb8324dd refs/heads/research/independent-validation",
+  "agent5_verdict": "L01_SOURCE_REVIEW_PASSED_WITH_RUNTIME_GATES",
+  "checked_contracts": [
+    {
+      "commit": "841ded9c3544e259fd638003350d31e7cae23686",
+      "source": "research/benchmark/phase2/AGENT4_RESOURCE_REMEDIATION_HANDOFF.md",
+      "sha256": "364bb32944b4a244605682dd0bacfe50ecc8a05d6f49ecdbc030180d4ed2f7b5"
+    },
+    {
+      "commit": "841ded9c3544e259fd638003350d31e7cae23686",
+      "source": "research/benchmark/phase2/D1A_RESOURCE_CONTRACT_V2_PROPOSAL.md",
+      "sha256": "0c71530edb5bea0fea6f440ad6ba874d618577cf77da8d412b16917ed49945a4"
+    },
+    {
+      "commit": "841ded9c3544e259fd638003350d31e7cae23686",
+      "source": "research/benchmark/phase2/D1A_V2_ADMISSION_REQUIREMENTS.md",
+      "sha256": "3400c1681d3785740cff3736f8b74b66bc14a5ef2392f81317109956ae7f5d20"
+    },
+    {
+      "commit": "841ded9c3544e259fd638003350d31e7cae23686",
+      "source": "research/benchmark/phase2/STRICT_VS_EXPLORATORY_DECISION.md",
+      "sha256": "961e43c3546609ac0b73a9ee9571dd627131342540d972b7ee9a131fa08a87b3"
+    },
+    {
+      "commit": "8325d9911556855ea7966e112e91a80d786a393d",
+      "source": "research/benchmark/phase2/AGENT4_G04_REVISED_REQUIREMENTS.md",
+      "sha256": "c0c957c097ba09573c17d04b867a81d2423695259685090ec7c98dfcd8d0f7da"
+    },
+    {
+      "commit": "8325d9911556855ea7966e112e91a80d786a393d",
+      "source": "research/benchmark/phase2/B2_G04_CONTRACT_AMENDMENT_PROPOSAL.md",
+      "sha256": "315a9fa8e24e384d146c36a9760e40daef4d30bc717adf8ce5fdf8f73c386138"
+    },
+    {
+      "commit": "8325d9911556855ea7966e112e91a80d786a393d",
+      "source": "research/benchmark/phase2/B2_G04_INVARIANT_REVIEW.md",
+      "sha256": "8db97a65e09e66c7be1e6b83d50e3c1257900fca911dfc545ef1213dff626e9f"
+    },
+    {
+      "commit": "8325d9911556855ea7966e112e91a80d786a393d",
+      "source": "research/benchmark/phase2/B2_G04_SAFETY_AND_RESIDUAL_RISKS.md",
+      "sha256": "9efb9efd74be8bc75b4e4e1e203108bf1a1f9bf2152f9d9167748f2b97719bd8"
+    }
+  ],
+  "windows_documentation": [
+    "https://learn.microsoft.com/en-us/windows/win32/procthread/nested-jobs",
+    "https://learn.microsoft.com/en-us/windows/win32/api/jobapi2/nf-jobapi2-assignprocesstojobobject",
+    "https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-getprocesstimes"
+  ],
+  "windows_boundary": "Nested-jobs page read as text; other URLs are API review references, not additional runtime evidence",
+  "execution_authorized": false,
+  "test_execution_authorized": false,
+  "package": "src/innovation/phase2/test_os_connector_v1",
+  "production_modified": false
+}

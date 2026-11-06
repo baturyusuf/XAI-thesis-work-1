@@ -1,0 +1,22 @@
+{
+  "test_connector": "TEST_CONNECTOR_SOURCE_READY_FOR_INDEPENDENT_REVIEW",
+  "general_local_candidate": "SOURCE_READY_FOR_INDEPENDENT_REVIEW",
+  "historical_published_source_status": "SOURCE_REMEDIATION_REQUIRED",
+  "historical_published_test_plan_status": "TEST_PLAN_FEASIBILITY_BLOCKED",
+  "runtime_test_plan_feasibility": "UNVERIFIED",
+  "native": "RESOURCE_GUARD_BLOCKED",
+  "source_manifest_sha256": "66ad5ba4b8076ca3b31fbcf0cb88b029db51edfc221c131131cc62566920856f",
+  "identity_kind": "SHA256_NOT_GIT_COMMIT",
+  "head_unchanged": "fb4231e1b77915be070fbc77fa8966edda9e9218",
+  "EXECUTION_AUTHORIZED": false,
+  "TEST_EXECUTION_AUTHORIZED": false,
+  "guard_cases_run": 0,
+  "test_program_instances_started": 0,
+  "jobs_created": 0,
+  "native_fits": 0,
+  "predictor_callbacks": 0,
+  "commit_created": false,
+  "pushed": false,
+  "agent5_new_source_acceptance": "PENDING",
+  "runtime_claims": "NONE"
+}

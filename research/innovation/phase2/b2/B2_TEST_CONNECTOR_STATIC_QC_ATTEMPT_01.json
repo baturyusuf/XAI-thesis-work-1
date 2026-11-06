@@ -1,0 +1,8 @@
+{
+  "kind": "STATIC_CHECKER_SYNTAX_FAILURE_NOT_GUARD_TEST",
+  "exit_code": 1,
+  "line": 100,
+  "error": "SyntaxError: unterminated string literal; generated checker newline escaping",
+  "dynamic_work": "NONE",
+  "source_snapshot_before_checker_fix": "78b76c4940ea28889b9aba97431ecf833f27190993c82307586a4ce975aebdc1"
+}

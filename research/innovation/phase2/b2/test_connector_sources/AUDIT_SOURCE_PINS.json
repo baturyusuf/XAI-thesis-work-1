@@ -1,0 +1,20 @@
+[
+  {
+    "commit": "6b04559e96b0ebf5ac1e9f13d5c0e2f5eb8324dd",
+    "source": "research/validation/phase2/b2/l01_review/L01_INDEPENDENT_SOURCE_REVIEW.md",
+    "copy": "research/innovation/phase2/b2/test_connector_sources/L01_INDEPENDENT_SOURCE_REVIEW.md",
+    "sha256": "4b2ec341705fa797d8b25afa7222e49423aa465d74644b5134fa5e8599c7447a"
+  },
+  {
+    "commit": "6b04559e96b0ebf5ac1e9f13d5c0e2f5eb8324dd",
+    "source": "research/validation/phase2/b2/l01_review/L01_FINDINGS_AND_MINIMUM_REMEDIATION.md",
+    "copy": "research/innovation/phase2/b2/test_connector_sources/L01_FINDINGS_AND_MINIMUM_REMEDIATION.md",
+    "sha256": "669b87f2f12dee364d2772577e1b1250f77c3090fa744aed69183ffb66d1d61d"
+  },
+  {
+    "commit": "6b04559e96b0ebf5ac1e9f13d5c0e2f5eb8324dd",
+    "source": "research/validation/phase2/b2/l01_review/L01_JOB_HANDLE_OWNERSHIP_AUDIT.md",
+    "copy": "research/innovation/phase2/b2/test_connector_sources/L01_JOB_HANDLE_OWNERSHIP_AUDIT.md",
+    "sha256": "19235d2624c7a3fc4a47247e86d4333199c6315b1ef947c5eeb109bc0122bdaa"
+  }
+]

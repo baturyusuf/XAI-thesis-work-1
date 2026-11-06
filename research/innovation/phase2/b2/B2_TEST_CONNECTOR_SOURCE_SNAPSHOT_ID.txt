@@ -1,0 +1,2 @@
+66ad5ba4b8076ca3b31fbcf0cb88b029db51edfc221c131131cc62566920856f
+SHA-256 of source manifest, NOT a Git commit SHA.

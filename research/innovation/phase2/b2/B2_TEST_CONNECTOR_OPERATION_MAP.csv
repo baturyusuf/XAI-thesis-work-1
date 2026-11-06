@@ -1,0 +1,12 @@
+operation,path,symbol,line,end_line,permission_or_quota,runtime
+Observer controller creation,src/innovation/phase2/test_os_connector_v1/observer.py,Observer.one,69,171,Campaign pre-reserved creation attempt; control-only,NOT_RUN
+Worker creation and resume,src/innovation/phase2/test_os_connector_v1/actor.py,TestController._launch,155,208,unchanged create/resume ISSUE+CONSUME; exact retained target,NOT_RUN
+Worker dummy import,src/innovation/phase2/test_os_connector_v1/roles.py,worker_main,67,114,unchanged import grant; dummy only,NOT_RUN
+Dummy shared finite ledger,src/innovation/phase2/guard_remediation_v2/worker.py,run_frozen_roles,217,249,80 unit reservations;16 simulated fits;19520 simulated rows;64 simulated callbacks,NOT_RUN
+Every simulated callback,src/innovation/phase2/guard_remediation_v2/worker.py,OperationPermit._callback,76,105,same-word callback ISSUE+CONSUME; no real model call,NOT_RUN
+No new grant after S,src/innovation/phase2/guard_remediation_v2/gate.py,AdmissionGate._swap,89,107,terminal same-word S; no I1/I3 claim,NOT_RUN
+Independent inner termination,src/innovation/phase2/guard_remediation_v2/independent_termination.py,IndependentTerminator.terminate_now,42,50,unchanged L01 no actor/ACK/log dependency,NOT_RUN
+Independent outer termination,src/innovation/phase2/test_os_connector_v1/campaign.py,Campaign._enforce,42,55,campaign cutoff and<=20 per-case emergency; best effort,NOT_RUN
+Actual process exit,src/innovation/phase2/test_os_connector_v1/os_api.py,RetainedProcess.exit_evidence,39,49,retained object signaled+creation+exit FILETIME+checked exit code,NOT_RUN
+Q5/Q6 test failure,src/innovation/phase2/test_os_connector_v1/ipc.py,FaultControl.consume,98,105,TEST case-bound atomic fault origin; no science authority,NOT_RUN
+Next-case admission,src/innovation/phase2/test_os_connector_v1/campaign.py,Campaign.complete,81,91,both retained exits+S+no pending+outer only observer,NOT_RUN
