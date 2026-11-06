@@ -5,13 +5,14 @@ import mmap
 from .os_api import bindings
 
 SIZE = 32768
-SCHEMA = 'B2-TEST-OS-EXIT-1'
-OFFSETS = {'header': 0, 'observer': 4096, 'controller': 8192, 'worker': 12288}
+SCHEMA = 'B2-TEST-OS-EXIT-3-DENIAL'
+OFFSETS = {'header': 0, 'observer': 4096, 'controller': 8192, 'worker': 12288, 'probe0': 20480, 'probe1': 24576}
+CAPACITY = {role:(4080 if role in ('probe0','probe1') else 3072) for role in OFFSETS}
 FLAGS = {name: 16384+4*i for i, name in enumerate((
     'worker_ack', 'peer_ack', 'resume_release', 'phase', 'create_pending',
     'probe_pending', 'direct_fault', 'job_fault', 'cleanup_block', 'controller_done',
     'fixture_error', 'resume_consumed', 'resume_return', 'probe_bits',
-    'memory_control', 'dummy_finish', 'logging_block', 'os_memory_event'))}
+    'memory_control', 'dummy_finish', 'logging_block', 'os_memory_event', 'probe_claim0', 'probe_claim1', 'probe_accept0', 'probe_accept1'))}
 
 
 class CaseBoard:
@@ -57,9 +58,11 @@ class CaseBoard:
 
     def publish(self, role, value):
         offset = OFFSETS[role]
+        if role in ('probe0', 'probe1') and self.atomic(offset) != 0:
+            raise ValueError('Probe return/custody frames are write-once, never overwritten')
         body = dict(run=self.run, epoch=self.epoch, schema=SCHEMA, body=value)
         raw = json.dumps(body, allow_nan=False, separators=(',', ':')).encode()
-        if len(raw) > 3072:
+        if len(raw) > CAPACITY[role]:
             raise ValueError('TEST frame too large')
         version = self.versions[role]+1
         if version > 1000000:
@@ -80,7 +83,7 @@ class CaseBoard:
         if version <= 0:
             return None
         n = int.from_bytes(self.memory[offset+4:offset+8], 'little')
-        if not 0 < n <= 3072:
+        if not 0 < n <= CAPACITY[role]:
             raise ValueError('Bad TEST frame length')
         raw = self.memory[offset+8:offset+8+n]
         if self.atomic(offset) != version:

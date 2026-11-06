@@ -212,3 +212,121 @@ def make_inner_job(case, faults, before_physical_resume=None):
                 raise InjectedTerminationError(5, 'Injected INNER TerminateJobObject failure')
             return O.A.Job.terminate(self, code)
     return InnerJob()
+
+
+# PUB-Q1-01 raw capture: no checked-return wrapper discards PROCESS_INFORMATION.
+def raw_probe_create(argv, breakaway, pi, board, ordinal, cancelled, admit):
+    import subprocess
+    import time
+    O = bindings()
+    O.require(len(argv) == 6 and argv[0] == sys.executable and
+              argv[1:5] == ['-I', '-S', '-B', '-c'] and argv[5] == 'raise SystemExit(89)',
+              'Only the fixed suspended Q1 negative image/role')
+    O.require(isinstance(pi, O.B.Process) and type(breakaway) is bool, 'Q1 raw output block')
+    startup = O.B.Startup()
+    startup.cb = C.sizeof(startup)
+    command = C.create_unicode_buffer(subprocess.list2cmdline(argv))
+    flags = 0x4 | 0x8 | (0x01000000 if breakaway else 0)
+    if cancelled():
+        O.require(board.cas('probe_claim'+str(ordinal), 1, 5) == 1, 'Cancelled probe state')
+        raise RuntimeError('CANCELLED_BEFORE_OBSERVED_API_INVOCATION')
+    O.require(board.cas('probe_claim'+str(ordinal), 1, 2) == 1, 'Probe call already entered/replayed')
+    import threading
+    from .probe_protocol import VARIANT
+    O.require(bool(O.B.create_process._flags_ & 16), 'Pinned use_last_error binding')
+    try:
+        admission = admit()  # Same-word OPEN check; no lock held over native call.
+        if cancelled():
+            raise RuntimeError('STOP_OBSERVED_AFTER_ADMISSION_BEFORE_API')
+    except BaseException:
+        board.cas('probe_claim'+str(ordinal),2,5)
+        raise
+    thread = threading.get_ident()
+    before = time.perf_counter()  # Not physical callee entry; I3 scheduling window remains.
+    C.set_last_error(0)
+    value = int(O.B.create_process(argv[0], command, None, None, False, flags,
+                                   None, None, C.byref(startup), C.byref(pi)))
+    error = int(C.get_last_error()) if value == 0 else None
+    after = time.perf_counter()
+    return dict(api='CreateProcessW', origin='REAL_OS_API', raw_return=value,
+        completed=True, admission=admission, request_variant=VARIANT,
+        error_origin='SAME_THREAD_CTYPES_USE_LAST_ERROR_IMMEDIATE',
+        thread_before=thread,thread_after=threading.get_ident(),
+        abi=[C.sizeof(C.c_void_p),C.sizeof(startup),C.sizeof(pi)], explicit_application=True,
+        mutable_unicode=True,default_security_environment_cwd=True,
+        no_attributes_or_replacement_parent=True,injected=False,
+        win32_error_if_failed=error, precall_observed_qpc=before,
+        return_observed_qpc=after, flags=flags, inherit_handles=False,
+        output=dict(process_handle=int(pi.hProcess or 0), thread_handle=int(pi.hThread or 0),
+                    pid=int(pi.pid), tid=int(pi.tid)),
+        output_handle_validity='SUCCESS_RETURN_ONLY' if value else 'UNSPECIFIED_ON_FALSE',
+        callee_entry='NOT_MEASURED')
+
+
+def delegate_probe_process(process, header, keep):
+    O = bindings()
+    peer = O.checked(O.B.open_process(0x40 | 0x1000, False, header['observer_pid']),
+                     'Open exact observer for PROCESS duplication')
+    keep.append(peer)  # No close/reuse while a transfer can be pending.
+    RetainedProcess(peer, header['observer_pid'], header['observer_created'])
+    duplicate = O.B.bind(O.B.K, 'DuplicateHandle', [W.HANDLE, W.HANDLE, W.HANDLE,
+        C.POINTER(W.HANDLE), W.DWORD, W.BOOL, W.DWORD], W.BOOL)
+    target = W.HANDLE()
+    O.checked(duplicate(O.B.current(), process.handle, peer, C.byref(target),
+                        0x100000 | 0x1000 | 1, False, 0), 'Duplicate Q1 PROCESS to observer')
+    return int(target.value)  # Numeric handle is owned by OBSERVER, not creator.
+
+
+def kill_probe(handle, owner):
+    import time
+    O = bindings()
+    request = time.perf_counter()
+    C.set_last_error(0)
+    ok = bool(O.B.kill(handle, 89))
+    error = None if ok else int(C.get_last_error())
+    return dict(api='TerminateProcess', origin='REAL_OS_API', owner=owner,
+                request_observed_qpc=request, raw_return=ok, win32_error_if_failed=error,
+                return_observed_qpc=time.perf_counter(), actual_exit='NOT_ESTABLISHED_BY_RETURN')
+
+
+def primary_token_identity():
+    # Existing-role evidence only; never creates/restricts a token or child.
+    O = bindings()
+    api = C.WinDLL('advapi32', use_last_error=True)
+    open_token = O.B.bind(api, 'OpenProcessToken', [W.HANDLE,W.DWORD,C.POINTER(W.HANDLE)], W.BOOL)
+    info = O.B.bind(api, 'GetTokenInformation', [W.HANDLE,C.c_int,C.c_void_p,W.DWORD,C.POINTER(W.DWORD)], W.BOOL)
+    class Luid(C.Structure):
+        _fields_ = [('lo',W.DWORD),('hi',W.LONG)]
+    class Stats(C.Structure):
+        _fields_ = [('id',Luid),('auth',Luid),('expiry',C.c_longlong),
+            ('type',C.c_int),('level',C.c_int),('charged',W.DWORD),('available',W.DWORD),
+            ('groups',W.DWORD),('privileges',W.DWORD),('modified',Luid)]
+    O.require(C.sizeof(Stats) == 56 and Stats.modified.offset == 48, 'TOKEN_STATISTICS ABI')
+    token, returned = W.HANDLE(), W.DWORD()
+    O.checked(open_token(O.B.current(), 8, C.byref(token)), 'Query current primary token')
+    try:
+        stat, restricted = Stats(), W.DWORD()
+        O.checked(info(token, 10, C.byref(stat), C.sizeof(stat), C.byref(returned)), 'TokenStatistics')
+        O.require(returned.value == 56 and stat.type == 1, 'Exact primary token statistics')
+        O.checked(info(token, 21, C.byref(restricted), 4, C.byref(returned)), 'TokenHasRestrictions')
+        O.require(returned.value == 4, 'Token restriction ABI')
+        encode = lambda v: format(((int(v.hi) & 0xffffffff)<<32)|int(v.lo), '016x')
+        return dict(id=encode(stat.id), auth=encode(stat.auth), mod=encode(stat.modified),
+                    primary=True, restricted=bool(restricted.value))
+    finally:
+        O.checked(O.B.close(token), 'Close query-only TOKEN after synchronous queries')
+
+
+def launch_fingerprint():
+    import hashlib
+    import json
+    from pathlib import Path
+    O = bindings()
+    image = Path(sys.executable).resolve()
+    O.require(image.is_file() and image == Path(sys._base_executable).resolve(), 'Existing direct interpreter image')
+    digest = lambda b: hashlib.sha256(b).hexdigest()
+    environment = {k:os.environ.get(k) for k in ('PATH','SYSTEMROOT','WINDIR')}
+    return dict(image=digest(image.read_bytes()), path=digest(str(image).casefold().encode()),
+        cwd=digest(str(Path.cwd().resolve()).casefold().encode()),
+        env=digest(json.dumps(environment,sort_keys=True,separators=(',',':')).encode()),
+        token=primary_token_identity(), direct=True, python=sys.version.split()[0])

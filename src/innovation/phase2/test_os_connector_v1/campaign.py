@@ -80,6 +80,11 @@ class Campaign:
 
     def complete(self, case, controller, worker, board, channel, outer_members):
         self.check()
+        if case.name == 'Q1':
+            from .probe_protocol import next_case_admissible
+            header = board.read('header')
+            if header is None or not next_case_admissible(board, header):
+                self.abort('EXIT_UNVERIFIED_PROBE_CANNOT_BE_DISCHARGED_BY_PAIR_EXITS')
         # Derive exit evidence here from retained kernel objects, not caller booleans.
         ce, we = controller.exit_evidence(), worker.exit_evidence()
         if (case is not self.active or ce is None or we is None or not channel.gate.stopped()

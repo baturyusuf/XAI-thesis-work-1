@@ -1,0 +1,19 @@
+{
+  "version": "PUB-Q1-01-local-source-r1",
+  "implementation": "84d7edcf34c2d3f41ebc4b825f44402f7cb6b184",
+  "handoff_parent": "7087da0b3d3e2bdc4093a6a6f4def749998a8799",
+  "frozen_l01": "d51652e340fd99f533cc07cef910f90acd660baa",
+  "g04": "8325d9911556855ea7966e112e91a80d786a393d",
+  "b2": "841ded9c3544e259fd638003350d31e7cae23686",
+  "audit": "6454fd8c4c33cbc2854a5342f9e43e4c2dd43a19",
+  "audit_github_ref_verified": true,
+  "old_source_manifest_sha256": "66ad5ba4b8076ca3b31fbcf0cb88b029db51edfc221c131131cc62566920856f",
+  "api_documentation": {
+    "url": "https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw",
+    "read_as_text": true,
+    "scope": "Nonzero success; zero failure; GetLastError; handles on success. No universal no-child or valid false-output handle claim."
+  },
+  "source_decision": "Q1_SOURCE_REMEDIATION_REQUIRED",
+  "accepted_api_no_child_evidence_rule": false,
+  "dynamic_work": "NONE"
+}

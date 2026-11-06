@@ -1,0 +1,25 @@
+{
+  "version": "PUB-Q1-01-local-r2-API-DENIAL",
+  "api_denial_evidence_standard_implementation": "PASS",
+  "api_pass_scope": "STATIC_E1_E8_WIRING_UNDER_DECLARED_SOURCE_PREMISES_NOT_RUNTIME",
+  "unexpected_success_retained_containment_exit": "SOURCE_BLOCKED",
+  "q1": "Q1_SOURCE_REMEDIATION_REQUIRED",
+  "general": "SOURCE_REMEDIATION_REQUIRED",
+  "test_plan": "TEST_PLAN_FEASIBILITY_BLOCKED",
+  "native": "RESOURCE_GUARD_BLOCKED",
+  "guard_cases": "7/7 NOT_RUN",
+  "standard": "576283e769a13ae460713cff995ca994b18e9318",
+  "EXECUTION_AUTHORIZED": false,
+  "TEST_EXECUTION_AUTHORIZED": false,
+  "open_p1": [
+    "PRE_CUSTODY_PRODUCER_DEATH_CAN_LOSE_ESCAPED_CHILD_CUSTODY",
+    "UNPUBLISHED_REMOTE_DUPLICATE_CANNOT_PROVE_EXIT"
+  ],
+  "conditional_errors": [
+    5,
+    1816
+  ],
+  "error_scope": "CONSERVATIVE_ELIGIBLE_SET_NOT_EXHAUSTIVE_OS_SPEC_NOT_CAUSAL_PROOF",
+  "no_child_ever": "NOT_CLAIMED",
+  "commit_push_merge": "NOT_AUTHORIZED_NOT_DONE"
+}

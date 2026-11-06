@@ -1,0 +1,61 @@
+{
+  "kind": "READ_ONLY_STATIC_SCOPE_AND_MAP_REVIEW_NOT_RUNTIME",
+  "checks": {
+    "__init__.py_unchanged": true,
+    "config.py_unchanged": true,
+    "entry.py_unchanged": true,
+    "roles.py_unchanged": true,
+    "existing_os_api_prefix_unchanged": true,
+    "q1_memory_unchanged": true,
+    "crosswalk_exact": true,
+    "B2_TEST_CONNECTOR_SOURCE_MANIFEST.csv_historical_bytes_unchanged": true,
+    "B2_TEST_CONNECTOR_STATIC_QC_ATTEMPT_01.json_historical_bytes_unchanged": true,
+    "B2_TEST_CONNECTOR_STATIC_QC.json_historical_bytes_unchanged": true
+  },
+  "crosswalk_symbols": 100,
+  "metadata_mapping_bytes": 32768,
+  "claim_flag_count": 20,
+  "nonoverlapping_ranges": [
+    [
+      "header",
+      0,
+      3080
+    ],
+    [
+      "observer",
+      4096,
+      7176
+    ],
+    [
+      "controller",
+      8192,
+      11272
+    ],
+    [
+      "worker",
+      12288,
+      15368
+    ],
+    [
+      "probe0",
+      20480,
+      23560
+    ],
+    [
+      "probe1",
+      24576,
+      27656
+    ],
+    [
+      "flags",
+      16384,
+      16464
+    ]
+  ],
+  "pointer_abi": "REQUIRED_WINDOWS_X64_NOT_EXECUTED",
+  "source_decision": "Q1_SOURCE_REMEDIATION_REQUIRED",
+  "guard_cases": "7/7 NOT_RUN",
+  "assisted_review": "In-flight/unknown distinction reviewed; no Agent5 acceptance of new delta",
+  "new_commits": false,
+  "staged": false
+}

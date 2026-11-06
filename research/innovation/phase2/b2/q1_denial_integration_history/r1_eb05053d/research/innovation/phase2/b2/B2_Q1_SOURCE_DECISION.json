@@ -1,0 +1,20 @@
+{
+  "q1": "Q1_SOURCE_REMEDIATION_REQUIRED",
+  "general": "SOURCE_REMEDIATION_REQUIRED",
+  "test_connector": "TEST_CONNECTOR_SOURCE_REMEDIATION_REQUIRED",
+  "test_plan": "TEST_PLAN_FEASIBILITY_BLOCKED",
+  "native": "RESOURCE_GUARD_BLOCKED",
+  "guard_cases": "7/7 NOT_RUN",
+  "source_version": "PUB-Q1-01-local-r1",
+  "head": "7087da0b3d3e2bdc4093a6a6f4def749998a8799",
+  "audit": "6454fd8c4c33cbc2854a5342f9e43e4c2dd43a19",
+  "EXECUTION_AUTHORIZED": false,
+  "TEST_EXECUTION_AUTHORIZED": false,
+  "source_fix": "Partial; original-handle custody and scoped API/error/exit records added",
+  "open_p1": [
+    "No accepted independent false-return/no-child evidence rule",
+    "Pre-custody producer preemption can leave an uncontained child EXIT_UNVERIFIED"
+  ],
+  "normal_denial_behavior": "Terminal unverified after first result; second fixed prepaid slot NOT_STARTED, not removed/refunded",
+  "commit_push_merge": "NOT_AUTHORIZED_NOT_DONE"
+}

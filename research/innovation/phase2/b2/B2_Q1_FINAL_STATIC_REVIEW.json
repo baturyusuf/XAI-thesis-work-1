@@ -1,0 +1,88 @@
+{
+  "kind": "READ_ONLY_STATIC_SCOPE_AST_LAYOUT_REVIEW_NOT_RUNTIME",
+  "checks": {
+    "__init__.py_unchanged": true,
+    "entry.py_unchanged": true,
+    "roles.py_unchanged": true,
+    "config_changed_only_in_TEST": true,
+    "existing_os_api_prefix_unchanged": true,
+    "q1_memory_unchanged": true,
+    "crosswalk_exact": true,
+    "B2_TEST_CONNECTOR_SOURCE_MANIFEST.csv_historical_bytes_unchanged": true,
+    "B2_TEST_CONNECTOR_STATIC_QC_ATTEMPT_01.json_historical_bytes_unchanged": true,
+    "B2_TEST_CONNECTOR_STATIC_QC.json_historical_bytes_unchanged": true,
+    "mapping_size_and_flags": true,
+    "mapping_nonoverlap_and_alignment": true
+  },
+  "crosswalk_symbols": 113,
+  "metadata_mapping_bytes": 32768,
+  "claim_and_acceptance_flag_count": 22,
+  "per_role_payload_capacity": {
+    "header": 3072,
+    "observer": 3072,
+    "controller": 3072,
+    "worker": 3072,
+    "probe0": 4080,
+    "probe1": 4080
+  },
+  "nonoverlapping_ranges": [
+    [
+      "header",
+      0,
+      3080
+    ],
+    [
+      "observer",
+      4096,
+      7176
+    ],
+    [
+      "controller",
+      8192,
+      11272
+    ],
+    [
+      "worker",
+      12288,
+      15368
+    ],
+    [
+      "flags",
+      16384,
+      16472
+    ],
+    [
+      "probe0",
+      20480,
+      24568
+    ],
+    [
+      "probe1",
+      24576,
+      28664
+    ]
+  ],
+  "capacity_delta": "Probe payload3072->4080 only; existing32768 allocation unchanged",
+  "pointer_abi": "REQUIRED_WINDOWS_X64_NOT_EXECUTED",
+  "api_denial_integration": "CONDITIONAL_STATIC_WIRING_ONLY",
+  "source_decision": "Q1_SOURCE_REMEDIATION_REQUIRED",
+  "unexpected_success": "SOURCE_BLOCKED",
+  "guard_cases": "7/7 NOT_RUN",
+  "project_imports": "NONE",
+  "dynamic_validation": "NOT_RUN",
+  "assisted_review": "Not Agent5 acceptance; runtime context and interleavings UNVERIFIED",
+  "new_commits": false,
+  "staged": false,
+  "delivery_safety": {
+    "scope": "Explicit8 source paths,17 document paths and3 evidence/archive directories",
+    "changed_files": 59,
+    "utf8_only": true,
+    "no_binary_nulls": true,
+    "no_personal_absolute_paths_detected": true,
+    "no_common_credential_patterns_detected": true,
+    "scope_limit": "Pattern/static review, not proof of absence of all secrets",
+    "branch": "research/xai-innovation",
+    "head": "7087da0b3d3e2bdc4093a6a6f4def749998a8799",
+    "index_empty": true
+  }
+}

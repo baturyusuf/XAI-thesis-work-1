@@ -15,6 +15,8 @@ class Observer:
     def __init__(self, campaign, approved):
         self.campaign, self.outer, self.approved = campaign, campaign.outer, approved
         self.retained = {}  # Across cases: no handle close/numeric handle reuse.
+        self.probe_owners = {}
+        self.probe_observations = {}
         self.resources = []
         self.events = []
         self.sample_gaps = []
@@ -66,6 +68,165 @@ class Observer:
         # Working set/private commit are observations, not enforcement.
         return members, memory
 
+    def _prepare_probe_policy(self,board,header,channel,controller,worker):
+        if worker is None or channel is None or channel.stopped():
+            return
+        from .probe_protocol import plan
+        request = (board.read('worker') or {}).get('probe_request')
+        old = (board.values['observer'] or {}).get('probe_policy')
+        if not request or (old and old['attempt'] == request['attempt']):
+            return
+        O = bindings()
+        i = request['ordinal']
+        O.require(type(i) is int and i in (0,1), 'Outer context ordinal')
+        O.require(request['attempt'] == plan(board.run,board.epoch,header)[i]['attempt_id'], 'Outer context attempt')
+        if board.flag('probe_claim'+str(i)) != 1:
+            return
+        caller = [worker.pid,worker.created]
+        O.require(request['caller'] == caller, 'Exact retained caller generation')
+        limits = self.outer.verify()
+        members = sorted(self.outer.pids())
+        O.require(set(members) == {os.getpid(),controller.pid,worker.pid}, 'Exact outer nominal trio')
+        context = dict(attempt=request['attempt'],caller=caller,
+            owner=[os.getpid(),header['observer_created'],int(self.outer.handle)],
+            controller=[controller.pid,controller.created],
+            policy=dict(active=limits['active'],mem=limits['commit'],flags=limits['flags'],ui=limits['UI']),
+            members=members,member=bool(self.outer.belongs(worker.handle) and self.outer.belongs(controller.handle)
+                                      and self.outer.belongs(O.B.current())),
+            live=not O.signaled(worker.handle) and not O.signaled(controller.handle),
+            stable='OWNER_TO_EXIT_NO_POLICY_MUTATION',qpc=time.perf_counter())
+        board.publish('observer',dict(board.values['observer'] or {},probe_policy=context))
+
+    def _q1_probe_cleanup(self, board, header, channel, controller, worker):
+        from .probe_protocol import checked_return, plan, evaluate_denial
+        from .os_api import RetainedProcess, kill_probe
+        terminal = False
+        for i, attempt in enumerate(plan(board.run, board.epoch, header)):
+            claimed = board.flag('probe_claim'+str(i))
+            row = checked_return(board, i, header)
+            if row is None:
+                lost = claimed and ((channel is not None and channel.gate.stopped()) or
+                    controller.exit_evidence() is not None or
+                    (worker is not None and worker.exit_evidence() is not None))
+                if lost:
+                    terminal = True
+                    detail = dict(attempt=attempt, api=None,
+                        result='LOST_OR_PENDING_CREATE_RESULT', identity=None,
+                        inner_membership='UNVERIFIED', outer_membership=None,
+                        containment='HARD_FAILURE_UNCONTAINED_OR_UNVERIFIED', qualification=False,
+                        exit_status='EXIT_UNVERIFIED', exit=None,
+                        kill=dict(status='NOT_MEASURED_NO_RETAINED_PROBE_OBJECT'))
+                    if channel is not None:
+                        before = time.perf_counter()
+                        prior = channel.gate.commit_stop()
+                        detail['stop'] = dict(prior_word=prior, before_qpc=before,
+                                             after_qpc=time.perf_counter())
+                    self.probe_observations[attempt['attempt_id']] = detail
+                continue
+            key = attempt['attempt_id']
+            evaluation = evaluate_denial(row,header)
+            if evaluation['creation_outcome'] == 'API_REJECTED':
+                cached = self.probe_observations.get(key)
+                if cached and cached.get('classification') == 'API_LEVEL_DENIAL_ACCEPTED':
+                    continue  # Historical evidence, not reusable permission after S.
+                accepted = (evaluation['accepted'] and channel is not None and not channel.stopped()
+                    and controller.exit_evidence() is None and worker is not None and worker.exit_evidence() is None)
+                if accepted:
+                    try:
+                        from ..guard_remediation_v2.gate import word, IDLE
+                        state = word(0,IDLE)
+                        channel.gate._swap(state,state)  # No change to science phase or STOP.
+                    except BaseException:
+                        accepted = False
+                if accepted:
+                    self.probe_observations[key] = dict(attempt=attempt,api=row['api'],evaluation=evaluation,
+                        classification='API_LEVEL_DENIAL_ACCEPTED',exit_status='NOT_APPLICABLE_NO_RETURNED_OBJECT',
+                        physical_no_child_ever='NOT_CLAIMED')
+                    board.mark('probe_accept'+str(i))  # Receipt ACK, not a probe2 grant.
+                    continue
+                terminal = True
+                self.probe_observations[key] = dict(attempt=attempt,api=row['api'],evaluation=evaluation,
+                    classification='DENIAL_OBSERVED_CAUSE_UNVERIFIED',
+                    exit_status='NOT_APPLICABLE_NO_RETURNED_OBJECT',physical_no_child_ever='NOT_CLAIMED',
+                    control_open_at_first_acceptance=False if evaluation['accepted'] else 'NOT_ESTABLISHED')
+                continue
+            terminal = True  # Nonzero/unknown is terminal, never normalized into denial.
+
+            if key not in self.probe_observations or (
+                    self.probe_observations[key].get('identity') is None and row['identity'] is not None):
+                detail = dict(attempt=attempt, api=row['api'], identity=row['identity'],
+                    inner_membership='UNVERIFIED', outer_membership=None,
+                    result=row['interpretation'], stop='NOT_MEASURED', kill=None,
+                    exit_status='EXIT_UNVERIFIED', exit=None)
+                self.probe_observations[key] = detail
+                identity, handle = row['identity'], row.get('observer_process_handle')
+                if identity is not None and handle:
+                    try:
+                        O = bindings()
+                        if row['observer_pid'] != os.getpid() or row['observer_created'] != header['observer_created']:
+                            raise ValueError('Probe handle targets a different observer generation')
+                        process = RetainedProcess(handle, identity['pid'], identity['created'])
+                        self.probe_owners[key] = process  # Before membership query/STOP.
+                        detail['outer_exit_signaled_before'] = bindings().signaled(process.handle)
+                        detail['outer_membership'] = bool(self.outer.belongs(process.handle))
+                        detail['outer_membership_observed_qpc'] = time.perf_counter()
+                        detail['outer_exit_signaled_after'] = bindings().signaled(process.handle)
+                    except BaseException as error:
+                        detail['retention_or_membership_error'] = type(error).__name__
+                try:
+                    if channel is not None:
+                        before = time.perf_counter()
+                        prior = channel.gate.commit_stop()
+                        detail['stop'] = dict(prior_word=prior, before_qpc=before,
+                                             after_qpc=time.perf_counter())
+                finally:
+                    # No outer-only rescue assumption for a possibly escaped child.
+                    process = self.probe_owners.get(key)
+                    if process is not None:
+                        try:
+                            detail['kill'] = kill_probe(process.handle, 'OBSERVER_PROCESS_OWNER')
+                        except BaseException as error:
+                            detail['kill'] = dict(status='REQUEST_OR_RETURN_UNVERIFIED',error=type(error).__name__)
+            detail = self.probe_observations[key]
+            frame = board.read('controller') or {}
+            detail['inner_membership'] = frame.get('probe_inner', {}).get(key, 'UNVERIFIED')
+            inner = detail['inner_membership']
+            detail['containment'] = ('CHECKED_BOTH_EXACT_JOBS' if
+                detail['outer_membership'] is True and
+                detail.get('outer_exit_signaled_before') is False and detail.get('outer_exit_signaled_after') is False and
+                isinstance(inner, dict) and inner.get('inner') is True and
+                inner.get('exit_signaled_before') is False and inner.get('exit_signaled_after') is False
+                else 'HARD_FAILURE_UNCONTAINED_OR_UNVERIFIED')
+            detail['qualification'] = False
+            process = self.probe_owners.get(key)
+            if process is not None:
+                try:
+                    detail['exit'] = process.exit_evidence()
+                    if detail['exit'] is not None:
+                        detail['exit_status'] = 'EXIT_CONFIRMED_RETAINED_OBJECT'
+                except BaseException as error:
+                    detail['exit_query_error'] = type(error).__name__
+        return terminal
+
+    def _q1_failure_record(self, case, board, header, controller, worker, suffix):
+        from .probe_protocol import snapshot, case_clock
+        records = [r for k, r in self.probe_observations.items()
+                   if k.startswith(case.run+':'+case.epoch+':')]
+        record = dict(case=case.name, run=case.run, epoch=case.epoch,
+            status='FAILED_OR_UNRESOLVED_NEGATIVE_CONTROL_NEVER_QUALIFIED',
+            case_header=header, clock=case_clock(header),
+            record_observed_qpc=time.perf_counter(),
+            probe_evidence=snapshot(board, header), probe_observer_cleanup=records,
+            controller_exit=controller.exit_evidence(),
+            worker_exit=worker.exit_evidence() if worker is not None else 'EXIT_UNVERIFIED',
+            shared_cache_or_pair_exits_discharge_probe=False,
+            attempts_reserved=self.campaign.attempts_reserved,
+            completeness='PARTIAL_UNTIL_PERSISTED', observer_actual_exit='NOT_MEASURED')
+        self.records.append(record)
+        # Only AFTER S/direct probe kill. Independent enforcers never wait for this.
+        with (self.directory/('Q1_probe_'+suffix+'.json')).open('x', encoding='utf-8') as stream:
+            json.dump(record, stream, allow_nan=False)
+
     def one(self, name):
         from .actor import TestChannel
         from ..guard_remediation_v2.gate import GateStopped, word, SUSPENDED, RESUME_R
@@ -74,9 +235,18 @@ class Observer:
         board.publish('header', dict(case=name, ordinal=case.ordinal, profile=TEST_PROFILE,
             case_start=case.start, case_deadline=case.deadline,
             campaign_origin=self.campaign.origin, campaign_cutoff=self.campaign.cutoff,
+            run=case.run, epoch=case.epoch,
+            denial_standard=self.approved.denial_standard,
+            source_manifest_sha256=self.approved.manifest_sha256,
             worker_attempt_reserved=case.worker_attempt_reserved,
             probe_attempts_reserved=case.probe_attempts_reserved,
-            approval_sha256=self.approved.digest))
+            approval_sha256=self.approved.digest,
+            attempts_reserved_before_launch=self.campaign.attempts_reserved,
+            observer_pid=os.getpid(),
+            observer_created=bindings().A.process_times(bindings().B.current())['creation_filetime100ns'],
+            probe_image=dict(role='APPROVED_DIRECT_PYTHON_NO_RESUME',
+                basename=Path(self.approved.interpreter).name,
+                sha256=__import__('hashlib').sha256(Path(self.approved.interpreter).read_bytes()).hexdigest())))
         self.resources.append(board)
         # Actual attempt precharged in reserve_case, even if CreateProcessW fails.
         launch = create_suspended(argv_for('controller', case.run, case.epoch, self.approved.relative))
@@ -95,7 +265,29 @@ class Observer:
         denial = None
         samples = []
         frame = None
+        q1_partial_recorded = False
         while True:
+            self.campaign.check()
+            header = board.read('header')
+            if name == 'Q1':
+                self._prepare_probe_policy(board,header,channel,controller,worker)
+            if name == 'Q1' and self._q1_probe_cleanup(board, header, channel, controller, worker):
+                if channel is not None:
+                    channel.gate.commit_stop()
+                if not q1_partial_recorded:
+                    self._q1_failure_record(case, board, header, controller, worker, 'partial')
+                    q1_partial_recorded = True
+                current = [k for k in self.probe_owners if k.startswith(case.run+':'+case.epoch+':')]
+                pending = any(self.probe_observations[k]['exit_status'] == 'EXIT_UNVERIFIED' for k in current)
+                from .probe_protocol import RETURN_FRAMES
+                inflight = any(board.flag('probe_claim'+str(i)) in (1, 2, 3) and
+                               board.read(RETURN_FRAMES[i]) is None for i in range(2))
+                creator_alive = worker is not None and worker.exit_evidence() is None
+                if (pending or (inflight and creator_alive)) and time.perf_counter() < min(case.deadline, self.campaign.cutoff):
+                    time.sleep(POLL_TARGET)
+                    continue  # Cleanup only; no case completion/admission or kill retry.
+                self._q1_failure_record(case, board, header, controller, worker, 'final')
+                self.campaign.abort('Q1_PROBE_FAILED_OR_EXIT_UNVERIFIED_NO_NEXT_CASE')
             members, memory = self.observe_outer()
             if len(samples) >= 4096:
                 self.campaign.abort('BOUNDED_TEST_SAMPLER_EXHAUSTED')
@@ -159,7 +351,11 @@ class Observer:
         checks = self.case_checks(name, board, frame, denial)
         if not all(checks.values()):
             self.campaign.abort('CASE_COVERAGE_PARTIAL_NO_NEXT_LIFECYCLE')
+        from .probe_protocol import case_clock
         record = dict(self.campaign.completed[-1], checks=checks, controller_frame=frame,
+            case_header=header, clock=case_clock(header), record_observed_qpc=time.perf_counter(),
+            max_sample_gap_scope='CAMPAIGN_OBSERVATIONS_INCLUDING_INTERCASE_SETUP',
+            observer_actual_exit='NOT_MEASURED',
             worker_frame=board.read('worker'), events=list(self.events), samples=samples,
             max_sample_gap_seconds=max(self.sample_gaps), monitoring_target_seconds=.05,
             tail_gap_seconds=time.perf_counter()-self.last_sample,
@@ -172,8 +368,9 @@ class Observer:
 
     def case_checks(self, name, board, frame, denial):
         if name == 'Q1':
+            from .probe_protocol import next_case_admissible
             return dict(common_ledger_dummy_complete=board.flag('dummy_finish') == 1,
-                        two_fixed_creation_denials=board.flag('probe_bits') == 3,
+                        probe_continuation_supported=next_case_admissible(board, board.read('header')),
                         real_allocation_rejected=board.flag('memory_control') == 1,
                         inner_os_memory_event=board.flag('os_memory_event') == 1)
         if name == 'Q2-U':

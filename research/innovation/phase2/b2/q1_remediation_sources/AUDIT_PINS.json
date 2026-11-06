@@ -1,0 +1,16 @@
+[
+  {
+    "commit": "6454fd8c4c33cbc2854a5342f9e43e4c2dd43a19",
+    "source": "research/validation/phase2/b2/test_connector_review/B2_PUB_Q1_01_SOURCE_FINDING.md",
+    "copy": "research/innovation/phase2/b2/q1_remediation_sources/B2_PUB_Q1_01_SOURCE_FINDING.md",
+    "bytes": 8596,
+    "sha256": "a1e667f8650a332a684ba9f6a9812e2e4a84f326d29689474d7ac8ef2af97efe"
+  },
+  {
+    "commit": "6454fd8c4c33cbc2854a5342f9e43e4c2dd43a19",
+    "source": "research/validation/phase2/b2/test_connector_review/B2_TEST_MINIMUM_REMEDIATION.md",
+    "copy": "research/innovation/phase2/b2/q1_remediation_sources/B2_TEST_MINIMUM_REMEDIATION.md",
+    "bytes": 5405,
+    "sha256": "fe5f795f12f785053446303df784acf3806018e3b801c964473ab6f071504898"
+  }
+]

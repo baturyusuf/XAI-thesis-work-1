@@ -51,12 +51,17 @@ class Approval:
     digest: str
     interpreter: str
     record_root: str
+    manifest_sha256: str
+    denial_standard: str
 
 
 def verify_approval(relative):
     require_test_execution()  # Before any OS binding, source import or child.
     path = inside(relative)
     data = json.loads(path.read_text(encoding='utf-8'))
+    from .probe_protocol import STANDARD_COMMIT
+    if data.get('q1_denial_standard_commit') != STANDARD_COMMIT:
+        raise TestBlocked('Exact reviewed Q1 evidence-standard pin required; no execution release implied')
     if data.get('purpose') != 'guard_only' or data.get('profile') != TEST_PROFILE:
         raise TestBlocked('TEST cannot authorize native/production work')
     if data.get('baseline') != BASELINE or data.get('amendment') != AMENDMENT:
@@ -96,4 +101,5 @@ def verify_approval(relative):
     record_root = inside(data['record_root'])
     if not record_root.is_relative_to(inside('.cache/innovation/phase2/test_connector')):
         raise TestBlocked('Dedicated exclusive-create evidence root required')
-    return Approval(relative, sha(path), sys.executable, str(record_root))
+    return Approval(relative, sha(path), sys.executable, str(record_root),
+                    data['manifest_sha256'], STANDARD_COMMIT)

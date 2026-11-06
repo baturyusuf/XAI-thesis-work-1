@@ -1,0 +1,9 @@
+gate,path,function,line,end_line,scope
+E1,src/innovation/phase2/test_os_connector_v1/probe_protocol.py,evaluate_denial,102,103,CONDITIONAL_SOURCE_PREDICATE_NOT_EXECUTED
+E2,src/innovation/phase2/test_os_connector_v1/probe_protocol.py,evaluate_denial,104,107,CONDITIONAL_SOURCE_PREDICATE_NOT_EXECUTED
+E3,src/innovation/phase2/test_os_connector_v1/probe_protocol.py,evaluate_denial,108,115,CONDITIONAL_SOURCE_PREDICATE_NOT_EXECUTED
+E4,src/innovation/phase2/test_os_connector_v1/probe_protocol.py,evaluate_denial,116,116,CONDITIONAL_SOURCE_PREDICATE_NOT_EXECUTED
+E5,src/innovation/phase2/test_os_connector_v1/probe_protocol.py,evaluate_denial,117,120,CONDITIONAL_SOURCE_PREDICATE_NOT_EXECUTED
+E6,src/innovation/phase2/test_os_connector_v1/probe_protocol.py,evaluate_denial,121,124,CONDITIONAL_SOURCE_PREDICATE_NOT_EXECUTED
+E7,src/innovation/phase2/test_os_connector_v1/probe_protocol.py,evaluate_denial,125,128,CONDITIONAL_SOURCE_PREDICATE_NOT_EXECUTED
+E8,src/innovation/phase2/test_os_connector_v1/fixtures.py,q1_denied_creations.admit,104,114,"Fresh same-word CAS, first accepted receipt+observer ACK, quota/time; OS scheduling unproved"

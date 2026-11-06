@@ -1,0 +1,30 @@
+[
+  {
+    "commit": "576283e769a13ae460713cff995ca994b18e9318",
+    "source": "research/benchmark/phase2/B2_Q1_API_DENIAL_EVIDENCE_STANDARD.md",
+    "copy": "research/innovation/phase2/b2/q1_denial_standard_sources/B2_Q1_API_DENIAL_EVIDENCE_STANDARD.md",
+    "bytes": 8841,
+    "sha256": "bb78944ed03daf010b5a6e50eeae68119be67fcecb52b662caa00068bb91e6ac"
+  },
+  {
+    "commit": "576283e769a13ae460713cff995ca994b18e9318",
+    "source": "research/benchmark/phase2/B2_Q1_PRE_CUSTODY_WINDOWS_CONTRACT.md",
+    "copy": "research/innovation/phase2/b2/q1_denial_standard_sources/B2_Q1_PRE_CUSTODY_WINDOWS_CONTRACT.md",
+    "bytes": 10818,
+    "sha256": "d8628db288e65b8fb2c5e61eb2ae576c88a5259134a66824729257b01acd9310"
+  },
+  {
+    "commit": "576283e769a13ae460713cff995ca994b18e9318",
+    "source": "research/benchmark/phase2/AGENT4_Q1_MINIMAL_FOLLOWUP_REQUIREMENTS.md",
+    "copy": "research/innovation/phase2/b2/q1_denial_standard_sources/AGENT4_Q1_MINIMAL_FOLLOWUP_REQUIREMENTS.md",
+    "bytes": 7532,
+    "sha256": "5decea46171b68354d3014855f3b8464588d1b055908244d8a0e3196bf2dc991"
+  },
+  {
+    "commit": "576283e769a13ae460713cff995ca994b18e9318",
+    "source": "research/benchmark/phase2/B2_Q1_ACCEPTANCE_DECISION.md",
+    "copy": "research/innovation/phase2/b2/q1_denial_standard_sources/B2_Q1_ACCEPTANCE_DECISION.md",
+    "bytes": 9201,
+    "sha256": "983791377439cfd6ed9d367b94852959b0e120c9f23fd64eb914718b74f0df71"
+  }
+]

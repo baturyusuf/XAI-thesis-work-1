@@ -93,6 +93,12 @@ class TestController(Controller):
         self.pending_reason = self.request_qpc = self.stop_qpc = None
         self.ledger = self.active_ticket = self.snapshot = self.exit_evidence = None
         self.reference_actual = []
+        self.probe_objects = {}
+        self.probe_inner = {}
+        self.probe_policy_id = None
+        self.nominal_fp = None
+        self.denial_standard = approved.denial_standard
+        self.source_manifest_sha256 = approved.manifest_sha256
         self.finished = self.import_granted = self.rational_granted = self.rational_completed = False
         self.last_sequence = self.next_unit = 0
         self.stop_prior_gate_word = self.resume_result = None
@@ -152,6 +158,76 @@ class TestController(Controller):
                 raise GateStopped('Positive TEST admission revoked')
             time.sleep(POLL_TARGET)
 
+    def _prepare_probe_policy(self):
+        if self.case != 'Q1' or self.worker is None or self.channel.stopped():
+            return
+        from .probe_protocol import plan
+        from .os_api import ui_zero
+        O = bindings()
+        request = (self.board.read('worker') or {}).get('probe_request')
+        if not request or request.get('attempt') == self.probe_policy_id:
+            return
+        i = request['ordinal']
+        O.require(type(i) is int and i in (0,1), 'Typed context ordinal')
+        expected = plan(self.board.run,self.board.epoch,self.board.read('header'))[i]
+        O.require(request['attempt'] == expected['attempt_id'], 'Context attempt')
+        if self.board.flag('probe_claim'+str(i)) != 1:
+            return
+        caller = [int(self.worker.pid),O.A.process_times(self.worker.hProcess)['creation_filetime100ns']]
+        O.require(request['caller'] == caller and self.nominal_fp is not None, 'Nominal worker/context identity')
+        limits = self.job.verify_owner()
+        ui_zero(O,self.job.handle)
+        members = sorted(self.job.pids())
+        O.require(set(members) == {os.getpid(),caller[0]}, 'Exact inner nominal pair')
+        context = dict(attempt=request['attempt'], caller=caller,
+            owner=[os.getpid(),O.A.process_times(O.B.current())['creation_filetime100ns'],int(self.job.handle)],
+            policy=dict(active=limits['active_process_limit'],mem=limits['JobMemoryLimit'],flags=limits['flags'],ui=0),
+            members=members, member=bool(O.B.belongs(self.worker.hProcess,self.job.handle) and
+                                        O.B.belongs(O.B.current(),self.job.handle)),
+            live=not O.signaled(self.worker.hProcess), nominal=self.nominal_fp,
+            stable='OWNER_TO_EXIT_NO_POLICY_MUTATION', qpc=time.perf_counter())
+        self._publish(probe_policy=context)
+        self.probe_policy_id = request['attempt']
+
+    def _probe_memberships(self):
+        if self.case != 'Q1':
+            return
+        from .probe_protocol import checked_return
+        from .os_api import RetainedProcess
+        O = bindings()
+        header = self.board.read('header')
+        for i in range(2):
+            row = checked_return(self.board, i, header)
+            if row is None or row.get('identity') is None:
+                continue
+            attempt = row['attempt']['attempt_id']
+            if attempt in self.probe_inner:
+                continue
+            evidence = dict(status='UNVERIFIED', inner=None, owner='CONTROLLER_EXACT_INNER_JOB')
+            try:
+                identity = row['identity']
+                handle = O.checked(O.B.open_process(0x100000 | 0x1000, False, identity['pid']),
+                                   'Open Q1 probe for exact inner membership')
+                self.probe_objects[attempt] = handle  # Retained to controller exit.
+                process = RetainedProcess(handle, identity['pid'], identity['created'])
+                before_exit = O.signaled(handle)
+                member = bool(O.B.belongs(handle, self.job.handle))
+                evidence.update(identity=process.identity, inner=member,
+                    observed_qpc=time.perf_counter(), status='CHECKED_EXACT_INNER_MEMBERSHIP',
+                    exit_signaled_before=before_exit, exit_signaled_after=O.signaled(handle),
+                    source_resume_requested=False)
+            except BaseException as error:
+                evidence['error'] = type(error).__name__
+            self.probe_inner[attempt] = evidence
+        if self.probe_inner:
+            self._publish(probe_inner=dict(self.probe_inner))
+
+    def _tick(self):
+        # Only an optional membership witness; L01 never waits for this actor.
+        self._prepare_probe_policy()
+        self._probe_memberships()
+        return super()._tick()
+
     def _launch(self, approved):
         require_test_execution()
         O = bindings()
@@ -163,6 +239,8 @@ class TestController(Controller):
         self._wait_positive('peer_ack')  # Only positive launch waits; L01 never waits.
         from .entry import argv_for
         argv = argv_for('worker', self.board.run, self.board.epoch, approved.approval_path)
+        from .os_api import launch_fingerprint
+        self.nominal_fp = launch_fingerprint()  # Existing nominal create, never an extra positive child.
         token = self.channel.gate.consume_create(self.channel.gate.issue_create())
         if not self._admission():
             return

@@ -1,0 +1,22 @@
+{
+  "kind": "STATIC_EDIT_COMMAND_HISTORY_NOT_GUARD_TEST",
+  "records": [
+    {
+      "id": "REPORT_REFRESH_01",
+      "operation": "Edit dedicated static source checker",
+      "status": "FAILED_BEFORE_PAYLOAD_EXECUTION",
+      "exit_code": 1,
+      "error": "SyntaxError: invalid syntax",
+      "location": "command string line30, old= assignment; nested shell quoting",
+      "project_executed": false,
+      "source_writes": false
+    },
+    {
+      "id": "REPORT_REFRESH_02",
+      "operation": "Retry static checker text edit with corrected quoting; AST parse only",
+      "status": "AST_PARSE_PASSED_NOT_RUNTIME_TEST",
+      "project_executed": false
+    }
+  ],
+  "prior_history": "Preserved immutable TEST QC failure and complete archived r1 delivery; this record does not supersede them"
+}

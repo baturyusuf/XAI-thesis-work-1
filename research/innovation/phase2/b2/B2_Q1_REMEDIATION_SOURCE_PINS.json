@@ -1,0 +1,26 @@
+{
+  "version": "PUB-Q1-01-local-r2-API-DENIAL",
+  "implementation": "84d7edcf34c2d3f41ebc4b825f44402f7cb6b184",
+  "handoff_parent": "7087da0b3d3e2bdc4093a6a6f4def749998a8799",
+  "frozen_l01": "d51652e340fd99f533cc07cef910f90acd660baa",
+  "g04": "8325d9911556855ea7966e112e91a80d786a393d",
+  "b2": "841ded9c3544e259fd638003350d31e7cae23686",
+  "audit": "6454fd8c4c33cbc2854a5342f9e43e4c2dd43a19",
+  "audit_github_ref_verified": true,
+  "old_source_manifest_sha256": "66ad5ba4b8076ca3b31fbcf0cb88b029db51edfc221c131131cc62566920856f",
+  "api_documentation": {
+    "url": "https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw",
+    "read_as_text": true,
+    "scope": "Nonzero success; zero failure; GetLastError; handles on success. No universal no-child or valid false-output handle claim."
+  },
+  "source_decision": "Q1_SOURCE_REMEDIATION_REQUIRED",
+  "dynamic_work": "NONE",
+  "agent3_standard": "576283e769a13ae460713cff995ca994b18e9318",
+  "prior_local_source_manifest": "eb05053d9557d193c561c41604c3b71acbbb17838f278a71e026c7c808bfefef",
+  "prior_local_archive": "research/innovation/phase2/b2/q1_denial_integration_history/r1_eb05053d",
+  "api_denial_standard_implementation": "PASS_SOURCE_CONDITIONAL",
+  "unexpected_success_containment_exit": "SOURCE_BLOCKED",
+  "conditional_api_denial_rule_implemented": true,
+  "physical_no_child_ever_claim": false,
+  "context_assumptions": "Exact existing nominal fingerprint; stable reviewed launch/security context; token equality may conservatively reject duplicated tokens"
+}
