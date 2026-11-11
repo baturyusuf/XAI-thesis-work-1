@@ -1,0 +1,10 @@
+[
+  {
+    "url": "https://api.crossref.org/journals/1016-2364/works?query=explainable&rows=3",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://api.crossref.org/journals/1335-9150/works?query=explainable&rows=3",
+    "papers": []
+  }
+]

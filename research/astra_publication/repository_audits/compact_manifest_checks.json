@@ -1,0 +1,29 @@
+{
+  "source_sha": "176e8b1cd78d9af84aaf069fab0f683682885c58",
+  "checks": [
+    {
+      "package": "reports/research_log/major_revision_v3/phase1b_ordinal_benchmark",
+      "run_id": "phase1b_v3_20260903T130912Z_dc5cb8b",
+      "payloads_checked": 8,
+      "mismatches": []
+    },
+    {
+      "package": "reports/research_log/major_revision_v3/phase1c_repeated_nested_cv",
+      "run_id": "phase1c_v3_20260903T215015Z_78649c4",
+      "payloads_checked": 8,
+      "mismatches": []
+    },
+    {
+      "package": "reports/research_log/major_revision_v3/phase2a_shap_stability_faithfulness",
+      "run_id": "phase2a_v3_20260904T073008Z_6e52de7",
+      "payloads_checked": 7,
+      "mismatches": []
+    },
+    {
+      "package": "reports/research_log/major_revision_v3/phase2b_calibration_diagnostics",
+      "run_id": "phase2b_v3_20260904T120838Z_21d1aec",
+      "payloads_checked": 12,
+      "mismatches": []
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "source_name": "Beyond Predictive Accuracy A Reproducible Leakage-Aware XAI Audit Protocol for Ordinal Employee Performance Prediction (2).docx",
+  "sha256": "b3af0e4dabbfb009bdd12c5e1da60a0b14a0117423acfc3a76705ddfa7910f01",
+  "size": 5165358,
+  "paragraphs": 636,
+  "tables": 26,
+  "media": [
+    "word/media/image1.png",
+    "word/media/image2.png",
+    "word/media/image3.png",
+    "word/media/image4.png",
+    "word/media/image5.png",
+    "word/media/image6.png",
+    "word/media/image7.png",
+    "word/media/image8.png",
+    "word/media/image9.png"
+  ],
+  "core": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<cp:coreProperties xmlns:cp=\"http://schemas.openxmlformats.org/package/2006/metadata/core-properties\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:dcmitype=\"http://purl.org/dc/dcmitype/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><dc:title>Beyond Predictive Accuracy: A Reproducible Leakage-Aware XAI Audit Protocol for Ordinal Employee Performance Prediction</dc:title><dc:subject>Submission manuscript for Information</dc:subject><dc:creator></dc:creator><dc:description>Working draft generated from the validated repository evidence contract; exact canonical numerical tables require local-package insertion.</dc:description><cp:lastModifiedBy>MUHAMMED YUSUF BATUR</cp:lastModifiedBy><cp:revision>5</cp:revision><dcterms:created xsi:type=\"dcterms:W3CDTF\">2026-06-15T08:01:00Z</dcterms:created><dcterms:modified xsi:type=\"dcterms:W3CDTF\">2026-07-17T08:44:00Z</dcterms:modified><dc:language>en-US</dc:language></cp:coreProperties>",
+  "identity": "provisional; attachment not available; same-title local candidate"
+}

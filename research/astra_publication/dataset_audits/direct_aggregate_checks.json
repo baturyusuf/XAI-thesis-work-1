@@ -1,0 +1,302 @@
+[
+  {
+    "dataset": "inx_employee_performance",
+    "manifest": {
+      "local_path": "data/raw/inx_employee_performance.csv",
+      "expected_sha256": "b8deac0a615b97076622ae540f4cfd0d3c3f1e7acb83ba3ff6560470a9ccf60a",
+      "expected_rows": 1200,
+      "expected_column_count": 28,
+      "format": "csv",
+      "delimiter": ";",
+      "encoding": "utf-8-sig",
+      "target_profiles": {
+        "performance": {
+          "raw_target": "PerformanceRating",
+          "expected_distribution": {
+            "2": 194,
+            "3": 874,
+            "4": 132
+          }
+        }
+      },
+      "acquisition_method": "user_provided_local_file",
+      "source_status": "repository_local_copy_upstream_source_unverified",
+      "licence_status": "manual_review_required",
+      "recorded_unverified_url": null,
+      "approved_download_url": null,
+      "automatic_download_allowed": false
+    },
+    "local_exists": true,
+    "actual_sha256": "b8deac0a615b97076622ae540f4cfd0d3c3f1e7acb83ba3ff6560470a9ccf60a",
+    "expected_hash_matches": true,
+    "rows": 1200,
+    "columns": 28,
+    "exact_duplicate_excess": 0,
+    "missing_counts": {
+      "EmpNumber": 0,
+      "Age": 0,
+      "Gender": 0,
+      "EducationBackground": 0,
+      "MaritalStatus": 0,
+      "EmpDepartment": 0,
+      "EmpJobRole": 0,
+      "BusinessTravelFrequency": 0,
+      "DistanceFromHome": 0,
+      "EmpEducationLevel": 0,
+      "EmpEnvironmentSatisfaction": 0,
+      "EmpHourlyRate": 0,
+      "EmpJobInvolvement": 0,
+      "EmpJobLevel": 0,
+      "EmpJobSatisfaction": 0,
+      "NumCompaniesWorked": 0,
+      "OverTime": 0,
+      "EmpLastSalaryHikePercent": 0,
+      "EmpRelationshipSatisfaction": 0,
+      "TotalWorkExperienceInYears": 0,
+      "TrainingTimesLastYear": 0,
+      "EmpWorkLifeBalance": 0,
+      "ExperienceYearsAtThisCompany": 0,
+      "ExperienceYearsInCurrentRole": 0,
+      "YearsSinceLastPromotion": 0,
+      "YearsWithCurrManager": 0,
+      "Attrition": 0,
+      "PerformanceRating": 0
+    },
+    "id_counts": {
+      "EmpNumber": 1200
+    },
+    "targets": {
+      "PerformanceRating": {
+        "3": 874,
+        "4": 132,
+        "2": 194
+      }
+    }
+  },
+  {
+    "dataset": "hrdataset_v14",
+    "manifest": {
+      "local_path": "data/external/hrdataset_v14/raw.csv",
+      "expected_sha256": "cb19996755c93c0a8d6527f59da4701c80aef65eff854906546dce286249813c",
+      "expected_rows": 311,
+      "expected_column_count": 36,
+      "format": "csv",
+      "delimiter": ",",
+      "encoding": "utf-8-sig",
+      "target_profiles": {
+        "performance": {
+          "raw_target": "PerformanceScore",
+          "expected_distribution": {
+            "Exceeds": 37,
+            "Fully Meets": 243,
+            "Needs Improvement": 18,
+            "PIP": 13
+          }
+        }
+      },
+      "acquisition_method": "user_provided_local_file",
+      "source_status": "public_mirror_recorded_upstream_authenticity_unverified",
+      "licence_status": "manual_review_required",
+      "recorded_unverified_url": "https://raw.githubusercontent.com/pouyasattari/HR-Dataset-Analysis/main/HRDataset_v14.csv",
+      "approved_download_url": null,
+      "automatic_download_allowed": false
+    },
+    "local_exists": true,
+    "actual_sha256": "cb19996755c93c0a8d6527f59da4701c80aef65eff854906546dce286249813c",
+    "expected_hash_matches": true,
+    "rows": 311,
+    "columns": 36,
+    "exact_duplicate_excess": 0,
+    "missing_counts": {
+      "Employee_Name": 0,
+      "EmpID": 0,
+      "MarriedID": 0,
+      "MaritalStatusID": 0,
+      "GenderID": 0,
+      "EmpStatusID": 0,
+      "DeptID": 0,
+      "PerfScoreID": 0,
+      "FromDiversityJobFairID": 0,
+      "Salary": 0,
+      "Termd": 0,
+      "PositionID": 0,
+      "Position": 0,
+      "State": 0,
+      "Zip": 0,
+      "DOB": 0,
+      "Sex": 0,
+      "MaritalDesc": 0,
+      "CitizenDesc": 0,
+      "HispanicLatino": 0,
+      "RaceDesc": 0,
+      "DateofHire": 0,
+      "DateofTermination": 207,
+      "TermReason": 0,
+      "EmploymentStatus": 0,
+      "Department": 0,
+      "ManagerName": 0,
+      "ManagerID": 8,
+      "RecruitmentSource": 0,
+      "PerformanceScore": 0,
+      "EngagementSurvey": 0,
+      "EmpSatisfaction": 0,
+      "SpecialProjectsCount": 0,
+      "LastPerformanceReview_Date": 0,
+      "DaysLateLast30": 0,
+      "Absences": 0
+    },
+    "id_counts": {
+      "EmpID": 311
+    },
+    "targets": {
+      "PerformanceScore": {
+        "Exceeds": 37,
+        "Fully Meets": 243,
+        "Needs Improvement": 18,
+        "PIP": 13
+      }
+    }
+  },
+  {
+    "dataset": "ibm_hr_analytics",
+    "manifest": {
+      "local_path": "data/external/ibm_hr_analytics/raw.csv",
+      "expected_sha256": "a5c31e38bd7fafc9bc333884eb181b06b41b8e5e488e8f7ccb27199fb3be7659",
+      "expected_rows": 1470,
+      "expected_column_count": 35,
+      "format": "csv",
+      "delimiter": ",",
+      "encoding": "utf-8-sig",
+      "target_profiles": {
+        "performance": {
+          "raw_target": "PerformanceRating",
+          "expected_distribution": {
+            "3": 1244,
+            "4": 226
+          }
+        },
+        "attrition": {
+          "raw_target": "Attrition",
+          "expected_distribution": {
+            "No": 1233,
+            "Yes": 237
+          }
+        }
+      },
+      "acquisition_method": "user_provided_local_file",
+      "source_status": "public_mirror_recorded_upstream_authenticity_unverified",
+      "licence_status": "manual_review_required",
+      "recorded_unverified_url": "https://raw.githubusercontent.com/nelson-wu/employee-attrition-ml/master/WA_Fn-UseC_-HR-Employee-Attrition.csv",
+      "approved_download_url": null,
+      "automatic_download_allowed": false
+    },
+    "local_exists": true,
+    "actual_sha256": "a5c31e38bd7fafc9bc333884eb181b06b41b8e5e488e8f7ccb27199fb3be7659",
+    "expected_hash_matches": true,
+    "rows": 1470,
+    "columns": 35,
+    "exact_duplicate_excess": 0,
+    "missing_counts": {
+      "Age": 0,
+      "Attrition": 0,
+      "BusinessTravel": 0,
+      "DailyRate": 0,
+      "Department": 0,
+      "DistanceFromHome": 0,
+      "Education": 0,
+      "EducationField": 0,
+      "EmployeeCount": 0,
+      "EmployeeNumber": 0,
+      "EnvironmentSatisfaction": 0,
+      "Gender": 0,
+      "HourlyRate": 0,
+      "JobInvolvement": 0,
+      "JobLevel": 0,
+      "JobRole": 0,
+      "JobSatisfaction": 0,
+      "MaritalStatus": 0,
+      "MonthlyIncome": 0,
+      "MonthlyRate": 0,
+      "NumCompaniesWorked": 0,
+      "Over18": 0,
+      "OverTime": 0,
+      "PercentSalaryHike": 0,
+      "PerformanceRating": 0,
+      "RelationshipSatisfaction": 0,
+      "StandardHours": 0,
+      "StockOptionLevel": 0,
+      "TotalWorkingYears": 0,
+      "TrainingTimesLastYear": 0,
+      "WorkLifeBalance": 0,
+      "YearsAtCompany": 0,
+      "YearsInCurrentRole": 0,
+      "YearsSinceLastPromotion": 0,
+      "YearsWithCurrManager": 0
+    },
+    "id_counts": {
+      "EmployeeNumber": 1470
+    },
+    "targets": {
+      "PerformanceRating": {
+        "3": 1244,
+        "4": 226
+      },
+      "Attrition": {
+        "Yes": 237,
+        "No": 1233
+      }
+    }
+  },
+  {
+    "dataset": "employee_turnover",
+    "manifest": {
+      "local_path": "data/external/employee_turnover/raw.csv",
+      "expected_sha256": "2510e274a90547f34c7b0db5a4ab70282c2710eb54252f14921bf980b81a928c",
+      "expected_rows": 14999,
+      "expected_column_count": 10,
+      "format": "csv",
+      "delimiter": ",",
+      "encoding": "utf-8",
+      "target_profiles": {
+        "turnover": {
+          "raw_target": "left",
+          "expected_distribution": {
+            "0": 11428,
+            "1": 3571
+          }
+        }
+      },
+      "acquisition_method": "user_provided_local_file",
+      "source_status": "public_mirror_recorded_upstream_authenticity_unverified",
+      "licence_status": "manual_review_required",
+      "recorded_unverified_url": "https://raw.githubusercontent.com/ucg8j/kaggle_HR/master/HR_comma_sep.csv",
+      "approved_download_url": null,
+      "automatic_download_allowed": false
+    },
+    "local_exists": true,
+    "actual_sha256": "2510e274a90547f34c7b0db5a4ab70282c2710eb54252f14921bf980b81a928c",
+    "expected_hash_matches": true,
+    "rows": 14999,
+    "columns": 10,
+    "exact_duplicate_excess": 3008,
+    "missing_counts": {
+      "satisfaction_level": 0,
+      "last_evaluation": 0,
+      "number_project": 0,
+      "average_montly_hours": 0,
+      "time_spend_company": 0,
+      "Work_accident": 0,
+      "left": 0,
+      "promotion_last_5years": 0,
+      "sales": 0,
+      "salary": 0
+    },
+    "id_counts": {},
+    "targets": {
+      "left": {
+        "1": 3571,
+        "0": 11428
+      }
+    }
+  }
+]

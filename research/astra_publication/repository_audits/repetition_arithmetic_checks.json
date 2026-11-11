@@ -1,0 +1,258 @@
+{
+  "source_sha": "176e8b1cd78d9af84aaf069fab0f683682885c58",
+  "checks": [
+    {
+      "model": "cumulative_threshold_xgboost",
+      "metric": "balanced_accuracy",
+      "n": 5,
+      "mean_abs_error": 0.0,
+      "sd_abs_error": 8.673617379884035e-19
+    },
+    {
+      "model": "cumulative_threshold_xgboost",
+      "metric": "macro_f1",
+      "n": 5,
+      "mean_abs_error": 0.0,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "cumulative_threshold_xgboost",
+      "metric": "ordinal_mae",
+      "n": 5,
+      "mean_abs_error": 0.0,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "cumulative_threshold_xgboost",
+      "metric": "quadratic_weighted_kappa",
+      "n": 5,
+      "mean_abs_error": 1.1102230246251565e-16,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "lightgbm",
+      "metric": "balanced_accuracy",
+      "n": 5,
+      "mean_abs_error": 0.0,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "lightgbm",
+      "metric": "macro_f1",
+      "n": 5,
+      "mean_abs_error": 1.1102230246251565e-16,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "lightgbm",
+      "metric": "ordinal_mae",
+      "n": 5,
+      "mean_abs_error": 0.0,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "lightgbm",
+      "metric": "quadratic_weighted_kappa",
+      "n": 5,
+      "mean_abs_error": 1.1102230246251565e-16,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "balanced_accuracy",
+      "n": 5,
+      "mean_abs_error": 0.0,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "macro_f1",
+      "n": 5,
+      "mean_abs_error": 1.1102230246251565e-16,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "ordinal_mae",
+      "n": 5,
+      "mean_abs_error": 5.551115123125783e-17,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "logistic_regression",
+      "metric": "quadratic_weighted_kappa",
+      "n": 5,
+      "mean_abs_error": 0.0,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "majority_baseline",
+      "metric": "balanced_accuracy",
+      "n": 5,
+      "mean_abs_error": 0.0,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "majority_baseline",
+      "metric": "macro_f1",
+      "n": 5,
+      "mean_abs_error": 0.0,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "majority_baseline",
+      "metric": "ordinal_mae",
+      "n": 5,
+      "mean_abs_error": 0.0,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "majority_baseline",
+      "metric": "quadratic_weighted_kappa",
+      "n": 5,
+      "mean_abs_error": 0.0,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "ordinal_median_baseline",
+      "metric": "balanced_accuracy",
+      "n": 5,
+      "mean_abs_error": 0.0,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "ordinal_median_baseline",
+      "metric": "macro_f1",
+      "n": 5,
+      "mean_abs_error": 0.0,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "ordinal_median_baseline",
+      "metric": "ordinal_mae",
+      "n": 5,
+      "mean_abs_error": 0.0,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "ordinal_median_baseline",
+      "metric": "quadratic_weighted_kappa",
+      "n": 5,
+      "mean_abs_error": 0.0,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "proportional_odds_logistic",
+      "metric": "balanced_accuracy",
+      "n": 5,
+      "mean_abs_error": 1.1102230246251565e-16,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "proportional_odds_logistic",
+      "metric": "macro_f1",
+      "n": 5,
+      "mean_abs_error": 0.0,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "proportional_odds_logistic",
+      "metric": "ordinal_mae",
+      "n": 5,
+      "mean_abs_error": 0.0,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "proportional_odds_logistic",
+      "metric": "quadratic_weighted_kappa",
+      "n": 5,
+      "mean_abs_error": 0.0,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "random_forest",
+      "metric": "balanced_accuracy",
+      "n": 5,
+      "mean_abs_error": 1.1102230246251565e-16,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "random_forest",
+      "metric": "macro_f1",
+      "n": 5,
+      "mean_abs_error": 0.0,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "random_forest",
+      "metric": "ordinal_mae",
+      "n": 5,
+      "mean_abs_error": 0.0,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "random_forest",
+      "metric": "quadratic_weighted_kappa",
+      "n": 5,
+      "mean_abs_error": 0.0,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "stratified_baseline",
+      "metric": "balanced_accuracy",
+      "n": 5,
+      "mean_abs_error": 0.0,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "stratified_baseline",
+      "metric": "macro_f1",
+      "n": 5,
+      "mean_abs_error": 5.551115123125783e-17,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "stratified_baseline",
+      "metric": "ordinal_mae",
+      "n": 5,
+      "mean_abs_error": 5.551115123125783e-17,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "stratified_baseline",
+      "metric": "quadratic_weighted_kappa",
+      "n": 5,
+      "mean_abs_error": 0.0,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "xgboost",
+      "metric": "balanced_accuracy",
+      "n": 5,
+      "mean_abs_error": 0.0,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "xgboost",
+      "metric": "macro_f1",
+      "n": 5,
+      "mean_abs_error": 0.0,
+      "sd_abs_error": 1.734723475976807e-18
+    },
+    {
+      "model": "xgboost",
+      "metric": "ordinal_mae",
+      "n": 5,
+      "mean_abs_error": 2.7755575615628914e-17,
+      "sd_abs_error": 0.0
+    },
+    {
+      "model": "xgboost",
+      "metric": "quadratic_weighted_kappa",
+      "n": 5,
+      "mean_abs_error": 1.1102230246251565e-16,
+      "sd_abs_error": 0.0
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,28 @@
+# Güncel literatür: kaynak ve inceleme derinliği
+
+Erişim 2026-11-11. Hedefli, sistematik olmayan tarama. ArXiv/Crossref/OpenAlex, resmî proceedings, yayıncı ve proje sayfaları. 2024–2026 kaynaklarına öncelik verildi; temel yöntemler daha eski. Hiçbir sonuç bulunamaması yokluk kanıtı değildir. Tüm alıntı sonuçları yazarların raporudur, bu oturumda yeniden üretilmedi.
+
+| Çalışma | Birincil bağlantı | İnceleme ve bilimsel ilişki |
+|---|---|---|
+| Kapoor vd., REFORMS (Science Advances, 2024) | https://doi.org/10.1126/sciadv.adk3452 ; https://reforms.cs.princeton.edu/ | Astra proje sayfası ve 32 maddelik/8 bölümlük çerçeveyi okudu; dergi PDF'si okunmadı. Tasarım, leakage, veri, metrik, uncertainty ve reproducibility zaten birlikte ele alınıyor. Entegrasyon tek başına boşluk değil. |
+| Saadatfar vd., US-LIME (Neurocomputing, 2024) | https://doi.org/10.1016/j.neucom.2024.127969 | Crossref kimliği Astra, yayıncı abstract/highlights ajan tarafından kontrol edildi. Instance ve sınır yakınlığına göre sampling; fidelity/stability/runtime iddiaları. Tamtext/numerik sonuç doğrulanmadı. |
+| Bora vd., BELIEF (UAI2025) | https://proceedings.mlr.press/v286/bora25a.html | Resmî abstract/metadata; Sign Entropy prior ile sign flip, sparsity ve ranking consistency. Fulltext inceleme yok. Yeni stability regularizer iddiasının yakın rakibi. |
+| Li/Qiu/Zhao/Wen, Tilia (CIKM2025) | https://doi.org/10.1145/3746252.3761130 | Crossref exact title, venue ve author metadata. Fulltext yok. Komşu EAGLE kaynağındaki Ventura/Cerquitelli IUI atfıyla uyuşmaz; citation audit gerekli. Başlıktan yöntem üstünlüğü çıkarılmadı. |
+| Chugh/Prasad/Shah, EAGLE (2026) | https://arxiv.org/html/2603.14894v2 ; https://arxiv.org/abs/2603.14894 | Astra HTML yöntem, teori varsayımları ve sonuç tablolarını okudu. Bayesian surrogate, locality-weighted posterior variance/EIG ile aktif query seçimi. 4 tabular+2 image; 50 instance/dataset, 500 query budget. Table1 German Jaccard 0.775 EAGLE, 0.645 LIME; ImageNet'te GLIME0.920>EAGLE0.825. Evrensel üstünlük değil. ArXiv güncel arama kaydı ECML PKDD2026 kabulünü bildiriyor; proceedings bağımsız doğrulanmadı, incelenen içerik v2 ile sınırlı. |
+| Vaduva/Oprea/Bara, CIES (2026) | https://arxiv.org/abs/2603.05024 ; https://arxiv.org/pdf/2603.05024 | Astra 29 sayfalık PDF'ye erişti; yöntem ve sonuç bölümlerini hedefli okudu. 3 business dataset, 4 model, 2 balancing durumu; rank-weighted attribution değişimi, multiplicative Gaussian noise epsilon0.03, sensitivity0.01/0.03/0.05/0.10. IBM attrition içerir; ordinal performance değil. Stability indeksi, doğruluk ölçümü değil. Peer-review durumu doğrulanmadı. |
+| Vijayan, Mitigating Attrition (arXiv2025) | https://arxiv.org/abs/2502.17865 ; https://arxiv.org/pdf/2502.17865 | Astra 7 sayfalık PDF ve yöntem anlatımını inceledi. PDF üstbilgisi IJFMR Volume1 Issue1 July-August2019; arXiv tarihiyle yayın yılı ayrılmalı. Kılavuz/proposal dili ampirik başarıyla karıştırılmamalı. |
+| Mohiuddin vd., Retention Is All You Need (CIKM2023) | https://arxiv.org/pdf/2304.03103 ; https://doi.org/10.1145/3583780.3615497 | Astra 7 sayfalık PDF, veri/yöntem bölümleri:1470 synthetic IBM satırı, 8 model, SHAP, natural-language/what-if. Doğrudan HR-XAI öncülü, farklı binary hedef. Kaynakçada yalnız arXiv yerine yayımlanan sürüm kullanılabilir. |
+| Tan/Tian/Li, GLIME (NeurIPS2023) | https://arxiv.org/abs/2311.15722 | ArXiv metadata ve abstract doğrulandı. Regularization/small weights ve reference-biased sampling sorunları; local distribution çözümü. Fulltext okunmadı. Daha eski gLIME2107.09927 ile karıştırılmamalı. |
+| Gaudel vd., s-LIME (IDA2022) | https://arxiv.org/abs/2208.01510 | Abstract: çok dar bandwidth ile surrogate degeneration; locality/fidelity uzlaştırması. S-LIME stabilized2021 ve SLIME linguistic2024 farklı işler. |
+| Angelopoulos vd., Learn then Test (2021/2022) | https://arxiv.org/abs/2110.01052 | Astra abstract ve sürüm geçmişi. Risk kontrolünü multiple testing olarak kurar. Mevcut risk-controller kullanımı yeni XAI teoremi değildir. Explanation-specific loss ve koşullar ayrıca kanıtlanmalı. |
+| Agarwal vd., Rethinking Stability (2022) | https://arxiv.org/abs/2203.06877 | Ajan abstract: input/representation/output değişimine göre relative stability. Faithfulness ile eşitlenemez. |
+
+## Bağımsız sentez
+
+Word katkısı algoritmik değil, deneysel/protokol düzeyinde konumlandırılmalı. Savunulabilir boşluk adayı: aynı evaluated model/case/policy altında birden fazla audit sonucunun nasıl çatıştığını ve yanlış audit bağlantılarının nasıl saptandığını ölçmek. Bu bir araştırma önerisidir, literatürde ilk olduğu kanıtlanmış değildir.
+
+Tez için yalnız stable LIME veya Bayesian+selection bileşimi yetersiz. EAGLE/US-LIME/BELIEF aktif örnekleme ve tutarlılık alanını dolduruyor. Farklı katkı adayı: sabit perturbation-law ve toplam query budget altında held-out fidelity riskine göre kabul/ret; güçlü context-only ve direct-estimation null'larını yenebiliyor mu? Henüz kanıt yok.
+
+EAGLE teorisi yerel lineer üretim ve tasarım matrisi koşullarına bağlı; arbitrary gerçek black-box için koşulsuz faithfulness garantisi olarak aktarılamaz. CIES'de noise altında kararlılık yüksekliği gerçek dünya açıklama doğruluğu veya HR faydası değildir. Başka makalelerin aşırı yorumları bizim iddialarımıza dayanak olmamalı.
+
+Sorgular: GLIME; SLIME explanation; Bayesian Sign Entropy; US-LIME increasing fidelity uncertainty sampling; explanation stability faithfulness XAI; employee manuscript içindeki üç yakın kaynağın ID araması. İleri tarama: Scopus/WoS başlık-özet, ordinal tabular audit, prediction-time feature availability, explanation abstention/risk, aynı veri setlerinin kullanım taraması. Bu oturum meta-analiz veya exhaustive novelty clearance sağlamaz.
