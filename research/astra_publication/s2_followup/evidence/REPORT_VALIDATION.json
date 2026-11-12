@@ -1,0 +1,296 @@
+{
+  "utc": "2026-11-12T07:14:39.280312+00:00",
+  "scope": "Report JSON/links/allowlist/secret-pattern scan and read-only worktree state; no model or scientific experiment",
+  "file_count": 21,
+  "json_parse": "PASS",
+  "broken_local_links": [],
+  "secret_pattern_hits": [],
+  "unexpected_file_types": [],
+  "worktree_state": [
+    {
+      "path": "C:/Users/Yusuf/Documents/GitHub/XAI-thesis-work-1",
+      "same_head": true,
+      "same_status": true,
+      "is_astra": false
+    },
+    {
+      "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/benchmark-methodology",
+      "same_head": true,
+      "same_status": true,
+      "is_astra": false
+    },
+    {
+      "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/dataset-validity",
+      "same_head": true,
+      "same_status": true,
+      "is_astra": false
+    },
+    {
+      "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/independent-validation",
+      "same_head": true,
+      "same_status": true,
+      "is_astra": false
+    },
+    {
+      "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/literature-novelty",
+      "same_head": true,
+      "same_status": true,
+      "is_astra": false
+    },
+    {
+      "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/west-drake/XAI-thesis-work-1",
+      "same_head": true,
+      "same_status": true,
+      "is_astra": false
+    },
+    {
+      "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/west-drake/XAI-thesis-work-1-astra-scie-q4",
+      "same_head": true,
+      "same_status": false,
+      "is_astra": true
+    },
+    {
+      "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/xai-innovation",
+      "same_head": true,
+      "same_status": true,
+      "is_astra": false
+    }
+  ],
+  "private_local_ignored": "research/astra_publication/s2_followup/local/visual/accessible_latest_word.pdf",
+  "allowlist": [
+    {
+      "path": "research/astra_publication/s2_followup/.gitignore",
+      "bytes": 8,
+      "sha256": "c3f36cc0ab3d06240e971cc563a55d911b6e95471796450951b6a5a6f86f2817"
+    },
+    {
+      "path": "research/astra_publication/s2_followup/DECISION_REPORT_TR.md",
+      "bytes": 9993,
+      "sha256": "9d8c1540de4833e27da53ac55f7ff2e0dd69edf43dfdee1f71671f63ac1b33a9"
+    },
+    {
+      "path": "research/astra_publication/s2_followup/EVIDENCE_REUSE_TR.md",
+      "bytes": 7326,
+      "sha256": "37ed96b3c04ac2251e8999f2de77c219d3fe4e3e64e03dca96a11f5a91b0b89b"
+    },
+    {
+      "path": "research/astra_publication/s2_followup/IMPLEMENTATION_PLAN_TR.md",
+      "bytes": 5818,
+      "sha256": "4cd83e2a9b9fb26097cf6f7142affbf75ff542761e9dfb9370dc104b539a6f17"
+    },
+    {
+      "path": "research/astra_publication/s2_followup/JOURNALS_TR.md",
+      "bytes": 7046,
+      "sha256": "03fc57373d0ca0370c15b8ac00f192cd297c6500f9a52f2b4e083c7ab593e4ee"
+    },
+    {
+      "path": "research/astra_publication/s2_followup/LITERATURE_POSITION_TR.md",
+      "bytes": 5402,
+      "sha256": "b5e4643c380e6bece0fdd24d9f877952eb8cce9c54a82f598eb386f33cb8249f"
+    },
+    {
+      "path": "research/astra_publication/s2_followup/PROTOCOL_TR.md",
+      "bytes": 16502,
+      "sha256": "caabbdb1ebe227496a79094e5930b0cb76c4c7d3a2878ff9c300d9c1c9149d70"
+    },
+    {
+      "path": "research/astra_publication/s2_followup/WORD_AND_VISUAL_TR.md",
+      "bytes": 7219,
+      "sha256": "496518a5c3bb44607f362cd68a8ad1bc6faf481e33eb278d1b5e5264450cddcc"
+    },
+    {
+      "path": "research/astra_publication/s2_followup/agent_reports/citation_corrections.md",
+      "bytes": 10420,
+      "sha256": "9b355fabf0cd30600790d973bc421209e2250baa4257d90fd2f1f7823417c735"
+    },
+    {
+      "path": "research/astra_publication/s2_followup/agent_reports/evidence_latest.md",
+      "bytes": 9944,
+      "sha256": "b06e62a1113ea0909dcd17b1d2dfbb9bfc9f6707bd680f5f8d8df56a7a64fe36"
+    },
+    {
+      "path": "research/astra_publication/s2_followup/agent_reports/evidence_reuse.md",
+      "bytes": 12099,
+      "sha256": "51c6cf194c14e9f8bf92b4dfe0447843f7808b570bfc61adb9b252b3f631a49c"
+    },
+    {
+      "path": "research/astra_publication/s2_followup/agent_reports/INDEX.md",
+      "bytes": 1857,
+      "sha256": "b444ea7518b43fec346a1c1226ff164c0a45589991747d7bf16daf5526c1670e"
+    },
+    {
+      "path": "research/astra_publication/s2_followup/agent_reports/journals_primary.md",
+      "bytes": 7083,
+      "sha256": "13d0425605da41edb1a9489ce6adcd3729867dd5567f0a3fcb29f2765d3bc330"
+    },
+    {
+      "path": "research/astra_publication/s2_followup/agent_reports/method_review.md",
+      "bytes": 1127,
+      "sha256": "90543a0c42b67fa7c067542ef0dffa39057899f8b28f59724c1da23e3eac7626"
+    },
+    {
+      "path": "research/astra_publication/s2_followup/agent_reports/nearest_prior_art.md",
+      "bytes": 14104,
+      "sha256": "380a85850cde22e36825142332d1ca7d18a411f71231fb5189a7006568741480"
+    },
+    {
+      "path": "research/astra_publication/s2_followup/evidence/current_word_render.json",
+      "bytes": 9655,
+      "sha256": "84a6caa918cc4108f42bb1b862337762631e9c8b78baba68d4d6904a4828fe8a"
+    },
+    {
+      "path": "research/astra_publication/s2_followup/evidence/direct_latest_checks.json",
+      "bytes": 15275,
+      "sha256": "1ca590cfae19aefeb1c5a13900be8aaeaee071e7944f2c2587eeff0b18d87699"
+    },
+    {
+      "path": "research/astra_publication/s2_followup/evidence/initial_snapshot.json",
+      "bytes": 2702,
+      "sha256": "7899b155da293b00eb8301cb80d88f9f23fb2896db21856593ac87fb3f598b90"
+    },
+    {
+      "path": "research/astra_publication/s2_followup/evidence/version_comparison.json",
+      "bytes": 2373,
+      "sha256": "be8da1a5cd672a7b8a44872a76383d383cd2ca43ed0f1923a6baf53461fae0e7"
+    },
+    {
+      "path": "research/astra_publication/s2_followup/evidence/word_git_binding.json",
+      "bytes": 282,
+      "sha256": "70389ce2f6f815b780210e7d6832617664e6e50b8d3bb0ec306d94c2299fa82d"
+    },
+    {
+      "path": "research/astra_publication/s2_followup/evidence/word_inventory.json",
+      "bytes": 44455,
+      "sha256": "f8b05a9900716c3804955db1e0e72fae1bbeeee0128366b2cf1e12a4f9c03f88"
+    }
+  ],
+  "hash_basis": "allowlist sha256 values are pre-stage local working-tree bytes; staged_payloads below record index blobs separately; validation file excludes itself",
+  "staged_payloads": [
+    {
+      "path": "research/astra_publication/s2_followup/.gitignore",
+      "git_index_sha256": "a7d8bdcefba82a95ebc021d87c629fdea21f13af953bf01e28b7cf8b0eeceb41",
+      "matches_local_bytes": false,
+      "equal_after_eol_normalization": true
+    },
+    {
+      "path": "research/astra_publication/s2_followup/DECISION_REPORT_TR.md",
+      "git_index_sha256": "adac17d138b40dbfc42b09189953b61816810680c5417a4ef4e2d55f34f0cf34",
+      "matches_local_bytes": false,
+      "equal_after_eol_normalization": true
+    },
+    {
+      "path": "research/astra_publication/s2_followup/EVIDENCE_REUSE_TR.md",
+      "git_index_sha256": "5842a95495386edc48567b32af64024576b75b30d11dc07c74a39fb6c4c1c927",
+      "matches_local_bytes": false,
+      "equal_after_eol_normalization": true
+    },
+    {
+      "path": "research/astra_publication/s2_followup/IMPLEMENTATION_PLAN_TR.md",
+      "git_index_sha256": "b1f8df902d9078dc7bf18004a9f5298f45979fe28a7a06c5e647d81cc0fc0301",
+      "matches_local_bytes": false,
+      "equal_after_eol_normalization": true
+    },
+    {
+      "path": "research/astra_publication/s2_followup/JOURNALS_TR.md",
+      "git_index_sha256": "8c8739339405f41cd416f544a581074bd21651a6a4c191dbb07e46d6fc715b67",
+      "matches_local_bytes": false,
+      "equal_after_eol_normalization": true
+    },
+    {
+      "path": "research/astra_publication/s2_followup/LITERATURE_POSITION_TR.md",
+      "git_index_sha256": "4ae29a3906a3309c3984f70271578176123006864f307ba7a01c7033c0647da7",
+      "matches_local_bytes": false,
+      "equal_after_eol_normalization": true
+    },
+    {
+      "path": "research/astra_publication/s2_followup/PROTOCOL_TR.md",
+      "git_index_sha256": "93f8c8d639bc56ef500363207eb03425a01f7ae44ec85cd12a49a3e6217692ed",
+      "matches_local_bytes": false,
+      "equal_after_eol_normalization": true
+    },
+    {
+      "path": "research/astra_publication/s2_followup/WORD_AND_VISUAL_TR.md",
+      "git_index_sha256": "dd6a85a64876e5b6671ef8f8d668194970fda72b07383a4f3a12ace938b56d0f",
+      "matches_local_bytes": false,
+      "equal_after_eol_normalization": true
+    },
+    {
+      "path": "research/astra_publication/s2_followup/agent_reports/citation_corrections.md",
+      "git_index_sha256": "9b355fabf0cd30600790d973bc421209e2250baa4257d90fd2f1f7823417c735",
+      "matches_local_bytes": true,
+      "equal_after_eol_normalization": true
+    },
+    {
+      "path": "research/astra_publication/s2_followup/agent_reports/evidence_latest.md",
+      "git_index_sha256": "7df11a872679ba371d4cc242d92d934ba948622a8ffb75207cd8b94e1a966590",
+      "matches_local_bytes": false,
+      "equal_after_eol_normalization": true
+    },
+    {
+      "path": "research/astra_publication/s2_followup/agent_reports/evidence_reuse.md",
+      "git_index_sha256": "be4cf6d75b1d0174e566ec7120b15045c8a3b694913a975d5bea97bedeae9e4a",
+      "matches_local_bytes": false,
+      "equal_after_eol_normalization": true
+    },
+    {
+      "path": "research/astra_publication/s2_followup/agent_reports/INDEX.md",
+      "git_index_sha256": "95e8ca3db87c47f577f64c40dd6069a4c693e6026c1eadc0257df6b1ec17b13b",
+      "matches_local_bytes": false,
+      "equal_after_eol_normalization": true
+    },
+    {
+      "path": "research/astra_publication/s2_followup/agent_reports/journals_primary.md",
+      "git_index_sha256": "c3766be927f75a80b0614dc9f474b2ee951606d8f8966e4284c20ee0667cb87a",
+      "matches_local_bytes": false,
+      "equal_after_eol_normalization": true
+    },
+    {
+      "path": "research/astra_publication/s2_followup/agent_reports/method_review.md",
+      "git_index_sha256": "6eaa445cb00aa957122f4a450f4dad6aa0d2e345fcd9f0fe92130082ba7517ad",
+      "matches_local_bytes": false,
+      "equal_after_eol_normalization": true
+    },
+    {
+      "path": "research/astra_publication/s2_followup/agent_reports/nearest_prior_art.md",
+      "git_index_sha256": "6bc8a3b06597c4646d658d314d33b03aaa634bd173ab406f3a24baf9a1911666",
+      "matches_local_bytes": false,
+      "equal_after_eol_normalization": true
+    },
+    {
+      "path": "research/astra_publication/s2_followup/evidence/current_word_render.json",
+      "git_index_sha256": "a0e6acb82cb716ce1da998d80c87c0e85433576e9ca52a35447c8598c664e20d",
+      "matches_local_bytes": false,
+      "equal_after_eol_normalization": true
+    },
+    {
+      "path": "research/astra_publication/s2_followup/evidence/direct_latest_checks.json",
+      "git_index_sha256": "2b339ab8e55c70cce217f940e96ad212246aa553700cf9971325da72a0b1b85c",
+      "matches_local_bytes": false,
+      "equal_after_eol_normalization": true
+    },
+    {
+      "path": "research/astra_publication/s2_followup/evidence/initial_snapshot.json",
+      "git_index_sha256": "31bf40c8fabb6c2c1e43b0821110edbefe02d21a3a31cad898fdf18817b4c276",
+      "matches_local_bytes": false,
+      "equal_after_eol_normalization": true
+    },
+    {
+      "path": "research/astra_publication/s2_followup/evidence/version_comparison.json",
+      "git_index_sha256": "8d5be2759015d0f1f93066d9f1792a3a3b4f1e21eccae21b2618afac35de0547",
+      "matches_local_bytes": false,
+      "equal_after_eol_normalization": true
+    },
+    {
+      "path": "research/astra_publication/s2_followup/evidence/word_git_binding.json",
+      "git_index_sha256": "020f700e9d446845d21444adb0a9b51a5654de07f49938d176aacc72be0a8888",
+      "matches_local_bytes": false,
+      "equal_after_eol_normalization": true
+    },
+    {
+      "path": "research/astra_publication/s2_followup/evidence/word_inventory.json",
+      "git_index_sha256": "c7d7ef26035660f645455dd9fd9a22230f8e2ebe203fb04ef52e629eda47addb",
+      "matches_local_bytes": false,
+      "equal_after_eol_normalization": true
+    }
+  ]
+}

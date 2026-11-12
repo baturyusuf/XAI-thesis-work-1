@@ -1,0 +1,503 @@
+{
+  "source_sha256": "81791e9370e23f75fbb94a0832f53cd4faae7bfd8f08249ba5a5b7a0f2e3cbb6",
+  "pdf_sha256": "679b9e06676b40539c08aee572d1c4dd0311b4281a1e5fc362c24e91600603fb",
+  "render_method": "Microsoft Word COM: local immutable copy opened read-only; original not modified",
+  "visual_inspection": false,
+  "reason": "Image tool rejects Astra sibling worktree; geometry and extracted captions are not visual review",
+  "pages": [
+    {
+      "page": 1,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 2716,
+      "image_count": 0
+    },
+    {
+      "page": 2,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 2785,
+      "image_count": 0
+    },
+    {
+      "page": 3,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 3114,
+      "image_count": 0
+    },
+    {
+      "page": 4,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 3037,
+      "image_count": 0
+    },
+    {
+      "page": 5,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 822,
+      "image_count": 1
+    },
+    {
+      "page": 6,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 2387,
+      "image_count": 0
+    },
+    {
+      "page": 7,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 1891,
+      "image_count": 0
+    },
+    {
+      "page": 8,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 2557,
+      "image_count": 0
+    },
+    {
+      "page": 9,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 1951,
+      "image_count": 1
+    },
+    {
+      "page": 10,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 2211,
+      "image_count": 1
+    },
+    {
+      "page": 11,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 574,
+      "image_count": 2
+    },
+    {
+      "page": 12,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 2057,
+      "image_count": 1
+    },
+    {
+      "page": 13,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 2352,
+      "image_count": 1
+    },
+    {
+      "page": 14,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 1798,
+      "image_count": 0
+    },
+    {
+      "page": 15,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 1709,
+      "image_count": 0
+    },
+    {
+      "page": 16,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 978,
+      "image_count": 0
+    },
+    {
+      "page": 17,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 2469,
+      "image_count": 0
+    },
+    {
+      "page": 18,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 2106,
+      "image_count": 0
+    },
+    {
+      "page": 19,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 2145,
+      "image_count": 0
+    },
+    {
+      "page": 20,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 2052,
+      "image_count": 0
+    },
+    {
+      "page": 21,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 1603,
+      "image_count": 0
+    },
+    {
+      "page": 22,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 1527,
+      "image_count": 0
+    },
+    {
+      "page": 23,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 3055,
+      "image_count": 0
+    },
+    {
+      "page": 24,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 2840,
+      "image_count": 0
+    },
+    {
+      "page": 25,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 2492,
+      "image_count": 0
+    },
+    {
+      "page": 26,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 2436,
+      "image_count": 0
+    },
+    {
+      "page": 27,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 2382,
+      "image_count": 0
+    },
+    {
+      "page": 28,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 2829,
+      "image_count": 0
+    },
+    {
+      "page": 29,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 2677,
+      "image_count": 0
+    },
+    {
+      "page": 30,
+      "size": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "text_chars": 1383,
+      "image_count": 0
+    }
+  ],
+  "placements": [
+    {
+      "page": 5,
+      "width": 1166,
+      "height": 997,
+      "bbox": [
+        70.8499984741211,
+        109.14999389648438,
+        490.83001708984375,
+        468.3500061035156
+      ],
+      "effective_dpi_x": 199.9
+    },
+    {
+      "page": 9,
+      "width": 1166,
+      "height": 594,
+      "bbox": [
+        70.8499984741211,
+        455.2099914550781,
+        490.8399963378906,
+        669.3099975585938
+      ],
+      "effective_dpi_x": 199.9
+    },
+    {
+      "page": 10,
+      "width": 1166,
+      "height": 431,
+      "bbox": [
+        70.8499984741211,
+        316.80999755859375,
+        490.760009765625,
+        472.05999755859375
+      ],
+      "effective_dpi_x": 199.9
+    },
+    {
+      "page": 11,
+      "width": 1166,
+      "height": 798,
+      "bbox": [
+        70.8499984741211,
+        138.44000244140625,
+        490.82000732421875,
+        425.7900085449219
+      ],
+      "effective_dpi_x": 199.9
+    },
+    {
+      "page": 11,
+      "width": 1166,
+      "height": 463,
+      "bbox": [
+        70.8499984741211,
+        471.09002685546875,
+        490.82000732421875,
+        637.8900146484375
+      ],
+      "effective_dpi_x": 199.9
+    },
+    {
+      "page": 12,
+      "width": 1166,
+      "height": 491,
+      "bbox": [
+        70.8499984741211,
+        193.83001708984375,
+        490.77001953125,
+        370.7300109863281
+      ],
+      "effective_dpi_x": 199.9
+    },
+    {
+      "page": 13,
+      "width": 1166,
+      "height": 480,
+      "bbox": [
+        70.8499984741211,
+        378.61004638671875,
+        490.80999755859375,
+        551.6600341796875
+      ],
+      "effective_dpi_x": 199.9
+    }
+  ],
+  "caption_starts": [
+    {
+      "page": 5,
+      "text": "Figure 1. Audit protocol and evidence-identity flow. Training-only operations remain "
+    },
+    {
+      "page": 5,
+      "text": "Table 1. Operational audit gates and permitted claims "
+    },
+    {
+      "page": 7,
+      "text": "Table 2. Dataset roles, target mappings, and aggregate audit status "
+    },
+    {
+      "page": 7,
+      "text": "Table 3. P0–P5 information policies "
+    },
+    {
+      "page": 9,
+      "text": "Figure 2. Nine-system ordinal benchmark. Metric-specific leaders are shown under the "
+    },
+    {
+      "page": 10,
+      "text": "Figure 3. Nominal-XGBoost information-policy sensitivity under fixed and independently "
+    },
+    {
+      "page": 11,
+      "text": "Figure 4. Global grouped exact-fold TreeSHAP attribution. Magnitudes are raw-margin "
+    },
+    {
+      "page": 11,
+      "text": "Figure 5. SHAP ranking stability across folds, model seeds, and outer-training resamples. "
+    },
+    {
+      "page": 12,
+      "text": "Figure 6. Raw and cross-fitted sigmoid calibration diagnostics. Reliability curves retain bin "
+    },
+    {
+      "page": 13,
+      "text": "Figure 7. Partial cross-dataset protocol replication on HRDataset_v14 with the retained "
+    },
+    {
+      "page": 14,
+      "text": "Table 4. Nine-system exactly-once OOF benchmark under P3 "
+    },
+    {
+      "page": 15,
+      "text": "Table 5. Selection-objective sensitivity for the four leading trained systems "
+    },
+    {
+      "page": 17,
+      "text": "Table 6. Five-repetition nested-CV summaries "
+    },
+    {
+      "page": 17,
+      "text": "Table 7. Fixed-schedule and independently retuned policy results "
+    },
+    {
+      "page": 18,
+      "text": "Table 8. SHAP and probability-quality diagnostics "
+    },
+    {
+      "page": 19,
+      "text": "Table 9. P3 descriptive subgroup gaps at support threshold 30 "
+    },
+    {
+      "page": 20,
+      "text": "Table 10. Proxy-use and reconstructability diagnostics "
+    },
+    {
+      "page": 20,
+      "text": "Table 11. HR target-mapping and CV-design sensitivity "
+    },
+    {
+      "page": 21,
+      "text": "Table 12. HR target-alias sensitivity in the first repeated 5×5 design with matched "
+    }
+  ]
+}

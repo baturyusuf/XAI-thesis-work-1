@@ -1,0 +1,5 @@
+# Independent protocol review: recorded output summary
+
+Session79db6422-93d4-4933-9acf-1dd6bc157afe. Astra recorded this summary of the returned agent review; it is not a new experiment. Reviewer used configured default model; exact model ID not independently recorded. Read-only review of Astra-authored uncommitted PROTOCOL_TR.md and DECISION_REPORT_TR.md on research/astra-scie-q4-publication HEAD e35424e1de0e354009c945ad0cf22e4a90745f7c. No literature/source experiments, writes or commits. Final strategy remained with Astra.
+
+Review found no directly inconsistent decision thresholds, but requested five operational clarifications: (1) fixed-family conditional CI scope and independence; (2)80clusters can be underpowered and inconclusive is not no effect; (3)binary clean-cluster alarm definition; (4)G1 coverage table with covered/missing/unverified and no experiment if unresolved; (5)freeze critical/no-op labels and map missed critical cases to G4, clean alerts to G3. Astra adopted them in protocol section8. This is a methods critique, not independent confirmation of any efficacy or implementation success.

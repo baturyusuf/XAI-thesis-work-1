@@ -1,0 +1,1299 @@
+[
+  {
+    "id": "word_01",
+    "filename": "AI_Society_Anonymous_Manuscript.docx",
+    "bytes": 4266334,
+    "sha256": "d3f03eee66e19f4794000d247367887bd5f39f801bde3a734352f31154b1e45c",
+    "text_sha256": "d7f8d4443ea381014dde62d12f7412ce128f13dd36a9b69b9ecc1dfae1836e71",
+    "xml_sha256": "91023a2d97377741e4876494c648d6587c05151c46b45630fdb7328649a02572",
+    "paragraphs": 623,
+    "text_chars": 75002,
+    "tables": 25,
+    "equations": 13,
+    "media": [
+      {
+        "name": "word/media/image1.png",
+        "sha256": "ee61b3bd79a20550be917a763f0d593c6d2db2b16a2d147528762936ed88d96c",
+        "bytes": 1832222
+      },
+      {
+        "name": "word/media/image6.png",
+        "sha256": "50c00728fe2d5a76b287b8c74fd72130b855f0034c2a475c369af865a5654f54",
+        "bytes": 405114
+      },
+      {
+        "name": "word/media/image5.png",
+        "sha256": "5ae93ee25008f48f56d5b687e57cc727b747ba6c4c0c63ff42f0ddf567458edb",
+        "bytes": 519234
+      },
+      {
+        "name": "word/media/image4.png",
+        "sha256": "7962dc6d1c17d2aaa6a0dc795d2767d747ad5a72db74cd81f8290c52eca38cde",
+        "bytes": 443513
+      },
+      {
+        "name": "word/media/image3.png",
+        "sha256": "18077a91a7226d0e4ac03bb8ecc6a37198a0c8e50de0b19e025c9411853a0da0",
+        "bytes": 559406
+      },
+      {
+        "name": "word/media/image2.png",
+        "sha256": "27f2334b5a30ca8076a18bc7de414154bf0982bbdd72334e1458b767f49203b9",
+        "bytes": 352930
+      },
+      {
+        "name": "word/media/image7.png",
+        "sha256": "c198a1c78076a7f1eced9c8f27108e2b3db39626c79acc21008ed958a226a9f8",
+        "bytes": 972287
+      }
+    ],
+    "indicators": {
+      "canonical_v2": 1,
+      "0.6210": 7,
+      "0.6288": 0,
+      "0.6249": 0,
+      "ordinal baseline": 0,
+      "proportional odds": 0,
+      "repeated": 0,
+      "0.6664": 5,
+      "RPS": 0,
+      "faithfulness": 0,
+      "S2": 0
+    },
+    "document_title": "Auditing Employee-Performance Prediction Beyond Accuracy: A Reproducible Leakage-Aware XAI Protocol for Responsible Workplace AI",
+    "core_created": "2026-06-15T08:01:00Z",
+    "core_modified": "2026-07-17T08:44:00Z",
+    "location_group": "Downloads root"
+  },
+  {
+    "id": "word_02",
+    "filename": "anonymous_manuscript.docx",
+    "bytes": 881566,
+    "sha256": "81791e9370e23f75fbb94a0832f53cd4faae7bfd8f08249ba5a5b7a0f2e3cbb6",
+    "text_sha256": "15318bd1382fa893aff676e02a85d194a137471748f933944b90c5afb50177fd",
+    "xml_sha256": "ef41b4fded3fda443953e661a6aa514d99bec592ab395715824055ca0755d923",
+    "paragraphs": 722,
+    "text_chars": 62992,
+    "tables": 12,
+    "equations": 0,
+    "media": [
+      {
+        "name": "word/media/rId18.png",
+        "sha256": "5442628fe45546167a45cbcb07c92240bb6199d2e5056eeeab54c1961c9d66b3",
+        "bytes": 252329
+      },
+      {
+        "name": "word/media/rId25.png",
+        "sha256": "99adf7e3bb74830b258280c8278af818f6627ce082b7d4cf36d5843aea9a5685",
+        "bytes": 144697
+      },
+      {
+        "name": "word/media/rId30.png",
+        "sha256": "10737b5f979cf22ccd9d19d38b9fec895a443651c1cb6d87e50ceede4d09324d",
+        "bytes": 140160
+      },
+      {
+        "name": "word/media/rId34.png",
+        "sha256": "f383e206b54776375b9e3495838291d3ad65dd2dd06b21b97959b79ae8825a07",
+        "bytes": 208602
+      },
+      {
+        "name": "word/media/rId37.png",
+        "sha256": "db42c2339e71ac46b843cdb14205db0c0e51550f748030da502735b29ccc439a",
+        "bytes": 53402
+      },
+      {
+        "name": "word/media/rId41.png",
+        "sha256": "49da44d57ec794b76b7fd9f0d395077ed029923d62303a088721fd020b948896",
+        "bytes": 100564
+      },
+      {
+        "name": "word/media/rId46.png",
+        "sha256": "6bdc394633892b834ae9f156848f18c87e5b0b45b87f15ba5d7185504800b880",
+        "bytes": 70248
+      }
+    ],
+    "indicators": {
+      "canonical_v2": 0,
+      "0.6210": 6,
+      "0.6288": 4,
+      "0.6249": 2,
+      "ordinal baseline": 0,
+      "proportional odds": 0,
+      "repeated": 12,
+      "0.6664": 0,
+      "RPS": 16,
+      "faithfulness": 1,
+      "S2": 2
+    },
+    "document_title": "Auditing Intelligent Employee-Performance Prediction Systems Beyond Accuracy: A Traceable XAI Protocol",
+    "core_created": "2026-09-09T17:57:29Z",
+    "core_modified": "2026-09-09T17:57:29Z",
+    "location_group": "Downloads root"
+  },
+  {
+    "id": "word_03",
+    "filename": "Beyond Predictive Accuracy A Reproducible Leakage-Aware XAI Audit Protocol for Ordinal Employee Performance Prediction (2).docx",
+    "bytes": 5165358,
+    "sha256": "b3af0e4dabbfb009bdd12c5e1da60a0b14a0117423acfc3a76705ddfa7910f01",
+    "text_sha256": "9a029e03ad1b2060f708ac24dbe7530446435bc41a329832ba7355714f7963a3",
+    "xml_sha256": "7e817071f5259515e80e57fd4dbf69e391b9f4df885c1830c1bc8f7e401734ad",
+    "paragraphs": 636,
+    "text_chars": 73171,
+    "tables": 26,
+    "equations": 13,
+    "media": [
+      {
+        "name": "word/media/image1.png",
+        "sha256": "ee61b3bd79a20550be917a763f0d593c6d2db2b16a2d147528762936ed88d96c",
+        "bytes": 1832222
+      },
+      {
+        "name": "word/media/image2.png",
+        "sha256": "27f2334b5a30ca8076a18bc7de414154bf0982bbdd72334e1458b767f49203b9",
+        "bytes": 352930
+      },
+      {
+        "name": "word/media/image3.png",
+        "sha256": "18077a91a7226d0e4ac03bb8ecc6a37198a0c8e50de0b19e025c9411853a0da0",
+        "bytes": 559406
+      },
+      {
+        "name": "word/media/image4.png",
+        "sha256": "7962dc6d1c17d2aaa6a0dc795d2767d747ad5a72db74cd81f8290c52eca38cde",
+        "bytes": 443513
+      },
+      {
+        "name": "word/media/image5.png",
+        "sha256": "5ae93ee25008f48f56d5b687e57cc727b747ba6c4c0c63ff42f0ddf567458edb",
+        "bytes": 519234
+      },
+      {
+        "name": "word/media/image6.png",
+        "sha256": "50c00728fe2d5a76b287b8c74fd72130b855f0034c2a475c369af865a5654f54",
+        "bytes": 405114
+      },
+      {
+        "name": "word/media/image7.png",
+        "sha256": "c198a1c78076a7f1eced9c8f27108e2b3db39626c79acc21008ed958a226a9f8",
+        "bytes": 972287
+      },
+      {
+        "name": "word/media/image8.png",
+        "sha256": "2e8650b996c8ab9dce47162cd30d333c27575216305d7b964e789a69901e022f",
+        "bytes": 3788
+      },
+      {
+        "name": "word/media/image9.png",
+        "sha256": "f39d779e7e1c91c6f0b0970f3a6e322fba3387dd781fa6d08992ddac325cf278",
+        "bytes": 2032
+      }
+    ],
+    "indicators": {
+      "canonical_v2": 2,
+      "0.6210": 7,
+      "0.6288": 0,
+      "0.6249": 0,
+      "ordinal baseline": 0,
+      "proportional odds": 0,
+      "repeated": 0,
+      "0.6664": 5,
+      "RPS": 0,
+      "faithfulness": 0,
+      "S2": 0
+    },
+    "document_title": "Beyond Predictive Accuracy: A Reproducible Leakage-Aware XAI Audit Protocol for Ordinal Employee Performance Prediction",
+    "core_created": "2026-06-15T08:01:00Z",
+    "core_modified": "2026-07-17T08:44:00Z",
+    "location_group": "Downloads root"
+  },
+  {
+    "id": "word_04",
+    "filename": "Employee_Performance_XAI_Manuscript_v2.docx",
+    "bytes": 323471,
+    "sha256": "da18ff213f9a46f2d085f70498e7ace15d8a00999dc3b248663aeebff70602bd",
+    "text_sha256": "d243565844665746acfa418293e94a36e611e2d61256ce40fa5a20ff237bab6d",
+    "xml_sha256": "74bfd52f16b95e09b7f9f132e425d6243dddd47036d434cee3958aeff7db5537",
+    "paragraphs": 523,
+    "text_chars": 40548,
+    "tables": 14,
+    "equations": 0,
+    "media": [
+      {
+        "name": "word/media/image1.png",
+        "sha256": "34b0bc177f85cd3567a1c1c851219664b9be3893f7840f4b9f3e77e1dbaaf284",
+        "bytes": 75161
+      },
+      {
+        "name": "word/media/image2.png",
+        "sha256": "e435aef27dc6d713402b6620ca312fff05df94fc325768dfc4f3c65348e0f18c",
+        "bytes": 74714
+      },
+      {
+        "name": "word/media/image3.png",
+        "sha256": "c12d1c9464f31dd4d7472b0ff50b5f54ba9c50c3ac1b6e31b85b580e3aa6f335",
+        "bytes": 55719
+      },
+      {
+        "name": "word/media/image4.png",
+        "sha256": "becd0a9470e6fc368c85e065e592ff30d72292d681587bedcdce6593737a8604",
+        "bytes": 46134
+      },
+      {
+        "name": "word/media/image5.png",
+        "sha256": "d6bab68cbcb3c0f5f5aeb9c56616cead67221cc7c8103746fd4fd8bfce31fbfe",
+        "bytes": 41460
+      },
+      {
+        "name": "word/media/image6.png",
+        "sha256": "5c17f62065c798162c2d02bcd613e705da475e6d00e948b00a914036cfb97a3a",
+        "bytes": 44211
+      }
+    ],
+    "indicators": {
+      "canonical_v2": 0,
+      "0.6210": 0,
+      "0.6288": 0,
+      "0.6249": 0,
+      "ordinal baseline": 0,
+      "proportional odds": 0,
+      "repeated": 0,
+      "0.6664": 0,
+      "RPS": 0,
+      "faithfulness": 0,
+      "S2": 0
+    },
+    "document_title": null,
+    "core_created": "2013-12-23T23:15:00Z",
+    "core_modified": "2013-12-23T23:15:00Z",
+    "location_group": "Downloads root"
+  },
+  {
+    "id": "word_05",
+    "filename": "Employee_Performance_XAI_Q1_Style_Manuscript_Draft.docx",
+    "bytes": 4051659,
+    "sha256": "50b6fb5c819a9c2a1f7ff7d91de5852c666dd0c9a2ddbf0618252c29175e7e34",
+    "text_sha256": "9717c3962ed576463dd49217a6abedceee72bc4bfbe45811b0895c6eb3c7037e",
+    "xml_sha256": "c156fd6ac854d67f0e56585e419f180aaf457b1394e5f406fdeede53691b3245",
+    "paragraphs": 503,
+    "text_chars": 32727,
+    "tables": 9,
+    "equations": 0,
+    "media": [
+      {
+        "name": "word/media/image1.png",
+        "sha256": "c0d7b970067dc15cc29d8963820a6e98c0f3da52c5471e0ef7141d130235fc4b",
+        "bytes": 187218
+      },
+      {
+        "name": "word/media/image2.png",
+        "sha256": "e2f5fd2550cac2b15b1e063640415b25ea302ed5d4ad0eda0e576f8005bda87d",
+        "bytes": 84842
+      },
+      {
+        "name": "word/media/image3.png",
+        "sha256": "5f99422c504e63b65c9c857d9f067647febe98416830b46c8e5b1cc610d657e3",
+        "bytes": 137307
+      },
+      {
+        "name": "word/media/image4.png",
+        "sha256": "82eb8e11c3d680cd6fad8a62cc0104bbca6826ae3aed3c352b51a2c9548e1cff",
+        "bytes": 138743
+      },
+      {
+        "name": "word/media/image5.png",
+        "sha256": "268f379d08b1c4118d34cdf9f2bf6bcf649462884bc564ef92e50f6c651f7c30",
+        "bytes": 83589
+      },
+      {
+        "name": "word/media/image6.png",
+        "sha256": "26f8067fc4c295dbe7e0f706b5dc3c7a251dbb316b6acc202469d30d378f56f7",
+        "bytes": 459686
+      },
+      {
+        "name": "word/media/image7.png",
+        "sha256": "c0302112305a4f09c162a1e162f2daf298ee8a799ae1c5e32d14c30099989322",
+        "bytes": 584146
+      },
+      {
+        "name": "word/media/image8.png",
+        "sha256": "15c598fff3da31241a46a0d6435d5deacc9434dc39e8277630402046374caa76",
+        "bytes": 535950
+      },
+      {
+        "name": "word/media/image9.png",
+        "sha256": "eeb9a6e73026294809df0cbf698971f74b835f1c0ee22523a502546328b6a953",
+        "bytes": 451089
+      },
+      {
+        "name": "word/media/image10.png",
+        "sha256": "3557abfa89760c2f9225a2ab1064c31c0745eaee59750ba1eb1ec3da202bd1ce",
+        "bytes": 587524
+      },
+      {
+        "name": "word/media/image11.png",
+        "sha256": "dae4351c649e4c6f1383501ff8ba821a06766c62516b92ef4fde0a6eb332a013",
+        "bytes": 526608
+      },
+      {
+        "name": "word/media/image12.png",
+        "sha256": "6d6227e8d3273bc7d68688dfc421df623fc8a793b0f00abfa641a6297f4cacbc",
+        "bytes": 101923
+      },
+      {
+        "name": "word/media/image13.png",
+        "sha256": "2f6c84e8623e49beba4217ab1ca8c04092ca0a18f80b25b5b0a21fd758b7b47f",
+        "bytes": 122836
+      }
+    ],
+    "indicators": {
+      "canonical_v2": 0,
+      "0.6210": 0,
+      "0.6288": 0,
+      "0.6249": 0,
+      "ordinal baseline": 0,
+      "proportional odds": 0,
+      "repeated": 0,
+      "0.6664": 0,
+      "RPS": 0,
+      "faithfulness": 0,
+      "S2": 0
+    },
+    "document_title": null,
+    "core_created": "2013-12-23T23:15:00Z",
+    "core_modified": "2026-04-30T12:06:00Z",
+    "location_group": "Downloads root"
+  },
+  {
+    "id": "word_06",
+    "filename": "employee_performance_xai_remediation_plan.docx",
+    "bytes": 59538,
+    "sha256": "42a1284568c30d3f79ed52c1ad4eef866b996ceb1e376daf4041994d1c641ca4",
+    "text_sha256": "c0d57edc4065bae6b9227b5ed4cf8dfb8a4108db20e8cc917be7d5d477d76643",
+    "xml_sha256": "aae7ba16ab83e8787771a5bfcd2a1f80f7f321b2c2c9956a146956171891dd12",
+    "paragraphs": 361,
+    "text_chars": 45992,
+    "tables": 14,
+    "equations": 0,
+    "media": [],
+    "indicators": {
+      "canonical_v2": 0,
+      "0.6210": 0,
+      "0.6288": 0,
+      "0.6249": 0,
+      "ordinal baseline": 0,
+      "proportional odds": 0,
+      "repeated": 0,
+      "0.6664": 0,
+      "RPS": 0,
+      "faithfulness": 1,
+      "S2": 0
+    },
+    "document_title": null,
+    "core_created": "2013-12-23T23:15:00Z",
+    "core_modified": "2013-12-23T23:15:00Z",
+    "location_group": "Downloads root"
+  },
+  {
+    "id": "word_07",
+    "filename": "employee_performance_xai_technical_documentation.docx",
+    "bytes": 49554,
+    "sha256": "1a6de78a187b019209221ad6b7a800c5afeff0177cbf78554cd0bb41c6cf06da",
+    "text_sha256": "17a2d6bb438c6c656c418681a798657c093b357de0bd790f009372fa0db07d37",
+    "xml_sha256": "154ccd24b3886efe74f80da62ccefa24190c43525f0fb4297b4e00afa40b370b",
+    "paragraphs": 428,
+    "text_chars": 23634,
+    "tables": 10,
+    "equations": 0,
+    "media": [],
+    "indicators": {
+      "canonical_v2": 0,
+      "0.6210": 0,
+      "0.6288": 0,
+      "0.6249": 0,
+      "ordinal baseline": 0,
+      "proportional odds": 0,
+      "repeated": 0,
+      "0.6664": 0,
+      "RPS": 0,
+      "faithfulness": 0,
+      "S2": 0
+    },
+    "document_title": null,
+    "core_created": "2013-12-23T23:15:00Z",
+    "core_modified": "2013-12-23T23:15:00Z",
+    "location_group": "Downloads root"
+  },
+  {
+    "id": "word_08",
+    "filename": "hr_xai_mdpi_information_manuscript.docx",
+    "bytes": 830772,
+    "sha256": "3742e2fedbdb20566dd9d2250d60a31bb56c301803185b3ba9837204c5ecfd48",
+    "text_sha256": "8cc7ece6a68d355a92a9d15fd0fc49cfda4f299d76d7b9643d268b52c1d75948",
+    "xml_sha256": "2491fef759406cc7b94ca2202e6e98c32ffe4a8e7f72b97f51952ac331ec1849",
+    "paragraphs": 382,
+    "text_chars": 46836,
+    "tables": 5,
+    "equations": 0,
+    "media": [
+      {
+        "name": "word/media/image1.png",
+        "sha256": "31a3956839c1af21b8d6b2611c4aafd2bb0701ce3b1dbe62985f37d4b8724c71",
+        "bytes": 202696
+      },
+      {
+        "name": "word/media/image2.png",
+        "sha256": "7097b8b0e277d89523d2613a1615bce560c984cd6ed3a9d6e20b3a3a26322da6",
+        "bytes": 154215
+      },
+      {
+        "name": "word/media/image3.png",
+        "sha256": "6ae0a8f7e417b15b31f5c1adcf5aed913c129e2e81a3dd7c2a0b630d6a3f279b",
+        "bytes": 138372
+      },
+      {
+        "name": "word/media/image4.png",
+        "sha256": "4520a5122c2b466bd52e91968d90debbf6479bf4c3828c5328ec86b6d79a64d9",
+        "bytes": 115514
+      },
+      {
+        "name": "word/media/image5.png",
+        "sha256": "4d4b06f96d4d509abf4cde742d2c01bb019d44a8d00cb207c68a167387327be0",
+        "bytes": 206424
+      },
+      {
+        "name": "word/media/image6.png",
+        "sha256": "ee460fbbf3735579ac98f50e0652771191a6649615c50a8122cff651d7bbe6dc",
+        "bytes": 141611
+      }
+    ],
+    "indicators": {
+      "canonical_v2": 0,
+      "0.6210": 0,
+      "0.6288": 0,
+      "0.6249": 0,
+      "ordinal baseline": 0,
+      "proportional odds": 0,
+      "repeated": 1,
+      "0.6664": 0,
+      "RPS": 0,
+      "faithfulness": 5,
+      "S2": 0
+    },
+    "document_title": "Beyond Accuracy in HR Analytics",
+    "core_created": "2013-12-23T23:15:00Z",
+    "core_modified": "2013-12-23T23:15:00Z",
+    "location_group": "Downloads root"
+  },
+  {
+    "id": "word_09",
+    "filename": "hr_xai_mdpi_information_manuscript_editable_final.docx",
+    "bytes": 730139,
+    "sha256": "f442b2da3887902ed52da103013b49ff179ebf038ff0160859867943d0681cff",
+    "text_sha256": "ebbb706345dadf96c0e7996f2b30b7db1ae6427d32e92fc07c5ff60e0f6f2103",
+    "xml_sha256": "7ed1eb08d65478541ff56171087e37a069f8ea89a5d267afbc4102fb63bb97b2",
+    "paragraphs": 517,
+    "text_chars": 46948,
+    "tables": 17,
+    "equations": 0,
+    "media": [
+      {
+        "name": "word/media/image1.png",
+        "sha256": "a566204eb706c927f311a299ebfe87e85f1f149453b8876472d4e271f6f7f10b",
+        "bytes": 184302
+      },
+      {
+        "name": "word/media/image2.png",
+        "sha256": "86ee91f2e054092eeab0c12c097ddd854eff71d7ae65af2f7a3bd29e7a4dcbda",
+        "bytes": 136929
+      },
+      {
+        "name": "word/media/image3.png",
+        "sha256": "6d5d7c48c996748dc1e6b988e71b4fc0d6a3a641cfb03b51df9b4f5cc0f0ed15",
+        "bytes": 150465
+      },
+      {
+        "name": "word/media/image4.png",
+        "sha256": "788d3dc4542f257f31f03e07b31a7c8dc660ed61abf4a9382154dbbae46a0060",
+        "bytes": 125438
+      },
+      {
+        "name": "word/media/image5.png",
+        "sha256": "9a2091d5828da78bc31d0a14c302d064a4b77c6ccb88f949d796f447b325ecaf",
+        "bytes": 197058
+      },
+      {
+        "name": "word/media/image6.png",
+        "sha256": "f5a2cf148777e95b418d22eabc4ac85a64bdb5fccd092092422e9bb408a9f16b",
+        "bytes": 119903
+      }
+    ],
+    "indicators": {
+      "canonical_v2": 0,
+      "0.6210": 0,
+      "0.6288": 0,
+      "0.6249": 0,
+      "ordinal baseline": 0,
+      "proportional odds": 0,
+      "repeated": 1,
+      "0.6664": 0,
+      "RPS": 0,
+      "faithfulness": 5,
+      "S2": 0
+    },
+    "document_title": null,
+    "core_created": "2013-12-23T23:15:00Z",
+    "core_modified": "2013-12-23T23:15:00Z",
+    "location_group": "Downloads root"
+  },
+  {
+    "id": "word_10",
+    "filename": "Information_employee_performance_XAI_manuscript_draft.docx",
+    "bytes": 373341,
+    "sha256": "ee1ef4b40ed9507bafbd8d4ef4ac0c84443d016a6140af181ce1c679bdb7dfcb",
+    "text_sha256": "4ba5a40953cb779e733e134aa171ba89033d0b055be16fb700998437a5046169",
+    "xml_sha256": "5396a20cb76bb45936ee1e7655465ec02b453c2ce3dbf592b65ff0088b5b6815",
+    "paragraphs": 479,
+    "text_chars": 69279,
+    "tables": 23,
+    "equations": 0,
+    "media": [
+      {
+        "name": "word/media/image1.png",
+        "sha256": "415933d404b79822ef7bc4d73d6ea39c55bfa8e60a1b0ccb29541bce17d69fac",
+        "bytes": 299770
+      },
+      {
+        "name": "word/media/image2.png",
+        "sha256": "2e8650b996c8ab9dce47162cd30d333c27575216305d7b964e789a69901e022f",
+        "bytes": 3788
+      },
+      {
+        "name": "word/media/image3.png",
+        "sha256": "f39d779e7e1c91c6f0b0970f3a6e322fba3387dd781fa6d08992ddac325cf278",
+        "bytes": 2032
+      }
+    ],
+    "indicators": {
+      "canonical_v2": 3,
+      "0.6210": 0,
+      "0.6288": 0,
+      "0.6249": 0,
+      "ordinal baseline": 0,
+      "proportional odds": 0,
+      "repeated": 0,
+      "0.6664": 0,
+      "RPS": 0,
+      "faithfulness": 0,
+      "S2": 0
+    },
+    "document_title": "Beyond Predictive Accuracy: A Reproducible Leakage-Aware XAI Audit Protocol for Ordinal Employee Performance Prediction",
+    "core_created": "2026-06-15T08:01:00Z",
+    "core_modified": "2026-07-16T12:51:00Z",
+    "location_group": "Downloads root"
+  },
+  {
+    "id": "word_11",
+    "filename": "TASLAK - Beyond Predictive Accuracy A Reproducible Leakage-Aware XAI Audit Protocol for Ordinal Employee Performance Prediction  (1).docx",
+    "bytes": 5165358,
+    "sha256": "b3af0e4dabbfb009bdd12c5e1da60a0b14a0117423acfc3a76705ddfa7910f01",
+    "text_sha256": "9a029e03ad1b2060f708ac24dbe7530446435bc41a329832ba7355714f7963a3",
+    "xml_sha256": "7e817071f5259515e80e57fd4dbf69e391b9f4df885c1830c1bc8f7e401734ad",
+    "paragraphs": 636,
+    "text_chars": 73171,
+    "tables": 26,
+    "equations": 13,
+    "media": [
+      {
+        "name": "word/media/image1.png",
+        "sha256": "ee61b3bd79a20550be917a763f0d593c6d2db2b16a2d147528762936ed88d96c",
+        "bytes": 1832222
+      },
+      {
+        "name": "word/media/image2.png",
+        "sha256": "27f2334b5a30ca8076a18bc7de414154bf0982bbdd72334e1458b767f49203b9",
+        "bytes": 352930
+      },
+      {
+        "name": "word/media/image3.png",
+        "sha256": "18077a91a7226d0e4ac03bb8ecc6a37198a0c8e50de0b19e025c9411853a0da0",
+        "bytes": 559406
+      },
+      {
+        "name": "word/media/image4.png",
+        "sha256": "7962dc6d1c17d2aaa6a0dc795d2767d747ad5a72db74cd81f8290c52eca38cde",
+        "bytes": 443513
+      },
+      {
+        "name": "word/media/image5.png",
+        "sha256": "5ae93ee25008f48f56d5b687e57cc727b747ba6c4c0c63ff42f0ddf567458edb",
+        "bytes": 519234
+      },
+      {
+        "name": "word/media/image6.png",
+        "sha256": "50c00728fe2d5a76b287b8c74fd72130b855f0034c2a475c369af865a5654f54",
+        "bytes": 405114
+      },
+      {
+        "name": "word/media/image7.png",
+        "sha256": "c198a1c78076a7f1eced9c8f27108e2b3db39626c79acc21008ed958a226a9f8",
+        "bytes": 972287
+      },
+      {
+        "name": "word/media/image8.png",
+        "sha256": "2e8650b996c8ab9dce47162cd30d333c27575216305d7b964e789a69901e022f",
+        "bytes": 3788
+      },
+      {
+        "name": "word/media/image9.png",
+        "sha256": "f39d779e7e1c91c6f0b0970f3a6e322fba3387dd781fa6d08992ddac325cf278",
+        "bytes": 2032
+      }
+    ],
+    "indicators": {
+      "canonical_v2": 2,
+      "0.6210": 7,
+      "0.6288": 0,
+      "0.6249": 0,
+      "ordinal baseline": 0,
+      "proportional odds": 0,
+      "repeated": 0,
+      "0.6664": 5,
+      "RPS": 0,
+      "faithfulness": 0,
+      "S2": 0
+    },
+    "document_title": "Beyond Predictive Accuracy: A Reproducible Leakage-Aware XAI Audit Protocol for Ordinal Employee Performance Prediction",
+    "core_created": "2026-06-15T08:01:00Z",
+    "core_modified": "2026-07-17T08:44:00Z",
+    "location_group": "Downloads root"
+  },
+  {
+    "id": "word_12",
+    "filename": "TASLAK - Beyond Predictive Accuracy A Reproducible Leakage-Aware XAI Audit Protocol for Ordinal Employee Performance Prediction  (2).docx",
+    "bytes": 5165358,
+    "sha256": "b3af0e4dabbfb009bdd12c5e1da60a0b14a0117423acfc3a76705ddfa7910f01",
+    "text_sha256": "9a029e03ad1b2060f708ac24dbe7530446435bc41a329832ba7355714f7963a3",
+    "xml_sha256": "7e817071f5259515e80e57fd4dbf69e391b9f4df885c1830c1bc8f7e401734ad",
+    "paragraphs": 636,
+    "text_chars": 73171,
+    "tables": 26,
+    "equations": 13,
+    "media": [
+      {
+        "name": "word/media/image1.png",
+        "sha256": "ee61b3bd79a20550be917a763f0d593c6d2db2b16a2d147528762936ed88d96c",
+        "bytes": 1832222
+      },
+      {
+        "name": "word/media/image2.png",
+        "sha256": "27f2334b5a30ca8076a18bc7de414154bf0982bbdd72334e1458b767f49203b9",
+        "bytes": 352930
+      },
+      {
+        "name": "word/media/image3.png",
+        "sha256": "18077a91a7226d0e4ac03bb8ecc6a37198a0c8e50de0b19e025c9411853a0da0",
+        "bytes": 559406
+      },
+      {
+        "name": "word/media/image4.png",
+        "sha256": "7962dc6d1c17d2aaa6a0dc795d2767d747ad5a72db74cd81f8290c52eca38cde",
+        "bytes": 443513
+      },
+      {
+        "name": "word/media/image5.png",
+        "sha256": "5ae93ee25008f48f56d5b687e57cc727b747ba6c4c0c63ff42f0ddf567458edb",
+        "bytes": 519234
+      },
+      {
+        "name": "word/media/image6.png",
+        "sha256": "50c00728fe2d5a76b287b8c74fd72130b855f0034c2a475c369af865a5654f54",
+        "bytes": 405114
+      },
+      {
+        "name": "word/media/image7.png",
+        "sha256": "c198a1c78076a7f1eced9c8f27108e2b3db39626c79acc21008ed958a226a9f8",
+        "bytes": 972287
+      },
+      {
+        "name": "word/media/image8.png",
+        "sha256": "2e8650b996c8ab9dce47162cd30d333c27575216305d7b964e789a69901e022f",
+        "bytes": 3788
+      },
+      {
+        "name": "word/media/image9.png",
+        "sha256": "f39d779e7e1c91c6f0b0970f3a6e322fba3387dd781fa6d08992ddac325cf278",
+        "bytes": 2032
+      }
+    ],
+    "indicators": {
+      "canonical_v2": 2,
+      "0.6210": 7,
+      "0.6288": 0,
+      "0.6249": 0,
+      "ordinal baseline": 0,
+      "proportional odds": 0,
+      "repeated": 0,
+      "0.6664": 5,
+      "RPS": 0,
+      "faithfulness": 0,
+      "S2": 0
+    },
+    "document_title": "Beyond Predictive Accuracy: A Reproducible Leakage-Aware XAI Audit Protocol for Ordinal Employee Performance Prediction",
+    "core_created": "2026-06-15T08:01:00Z",
+    "core_modified": "2026-07-17T08:44:00Z",
+    "location_group": "Downloads root"
+  },
+  {
+    "id": "word_13",
+    "filename": "TASLAK - Beyond Predictive Accuracy A Reproducible Leakage-Aware XAI Audit Protocol for Ordinal Employee Performance Prediction  (3).docx",
+    "bytes": 5165358,
+    "sha256": "b3af0e4dabbfb009bdd12c5e1da60a0b14a0117423acfc3a76705ddfa7910f01",
+    "text_sha256": "9a029e03ad1b2060f708ac24dbe7530446435bc41a329832ba7355714f7963a3",
+    "xml_sha256": "7e817071f5259515e80e57fd4dbf69e391b9f4df885c1830c1bc8f7e401734ad",
+    "paragraphs": 636,
+    "text_chars": 73171,
+    "tables": 26,
+    "equations": 13,
+    "media": [
+      {
+        "name": "word/media/image1.png",
+        "sha256": "ee61b3bd79a20550be917a763f0d593c6d2db2b16a2d147528762936ed88d96c",
+        "bytes": 1832222
+      },
+      {
+        "name": "word/media/image2.png",
+        "sha256": "27f2334b5a30ca8076a18bc7de414154bf0982bbdd72334e1458b767f49203b9",
+        "bytes": 352930
+      },
+      {
+        "name": "word/media/image3.png",
+        "sha256": "18077a91a7226d0e4ac03bb8ecc6a37198a0c8e50de0b19e025c9411853a0da0",
+        "bytes": 559406
+      },
+      {
+        "name": "word/media/image4.png",
+        "sha256": "7962dc6d1c17d2aaa6a0dc795d2767d747ad5a72db74cd81f8290c52eca38cde",
+        "bytes": 443513
+      },
+      {
+        "name": "word/media/image5.png",
+        "sha256": "5ae93ee25008f48f56d5b687e57cc727b747ba6c4c0c63ff42f0ddf567458edb",
+        "bytes": 519234
+      },
+      {
+        "name": "word/media/image6.png",
+        "sha256": "50c00728fe2d5a76b287b8c74fd72130b855f0034c2a475c369af865a5654f54",
+        "bytes": 405114
+      },
+      {
+        "name": "word/media/image7.png",
+        "sha256": "c198a1c78076a7f1eced9c8f27108e2b3db39626c79acc21008ed958a226a9f8",
+        "bytes": 972287
+      },
+      {
+        "name": "word/media/image8.png",
+        "sha256": "2e8650b996c8ab9dce47162cd30d333c27575216305d7b964e789a69901e022f",
+        "bytes": 3788
+      },
+      {
+        "name": "word/media/image9.png",
+        "sha256": "f39d779e7e1c91c6f0b0970f3a6e322fba3387dd781fa6d08992ddac325cf278",
+        "bytes": 2032
+      }
+    ],
+    "indicators": {
+      "canonical_v2": 2,
+      "0.6210": 7,
+      "0.6288": 0,
+      "0.6249": 0,
+      "ordinal baseline": 0,
+      "proportional odds": 0,
+      "repeated": 0,
+      "0.6664": 5,
+      "RPS": 0,
+      "faithfulness": 0,
+      "S2": 0
+    },
+    "document_title": "Beyond Predictive Accuracy: A Reproducible Leakage-Aware XAI Audit Protocol for Ordinal Employee Performance Prediction",
+    "core_created": "2026-06-15T08:01:00Z",
+    "core_modified": "2026-07-17T08:44:00Z",
+    "location_group": "Downloads root"
+  },
+  {
+    "id": "word_14",
+    "filename": "TASLAK - Beyond Predictive Accuracy A Reproducible Leakage-Aware XAI Audit Protocol for Ordinal Employee Performance Prediction (1).docx",
+    "bytes": 5165358,
+    "sha256": "b3af0e4dabbfb009bdd12c5e1da60a0b14a0117423acfc3a76705ddfa7910f01",
+    "text_sha256": "9a029e03ad1b2060f708ac24dbe7530446435bc41a329832ba7355714f7963a3",
+    "xml_sha256": "7e817071f5259515e80e57fd4dbf69e391b9f4df885c1830c1bc8f7e401734ad",
+    "paragraphs": 636,
+    "text_chars": 73171,
+    "tables": 26,
+    "equations": 13,
+    "media": [
+      {
+        "name": "word/media/image1.png",
+        "sha256": "ee61b3bd79a20550be917a763f0d593c6d2db2b16a2d147528762936ed88d96c",
+        "bytes": 1832222
+      },
+      {
+        "name": "word/media/image2.png",
+        "sha256": "27f2334b5a30ca8076a18bc7de414154bf0982bbdd72334e1458b767f49203b9",
+        "bytes": 352930
+      },
+      {
+        "name": "word/media/image3.png",
+        "sha256": "18077a91a7226d0e4ac03bb8ecc6a37198a0c8e50de0b19e025c9411853a0da0",
+        "bytes": 559406
+      },
+      {
+        "name": "word/media/image4.png",
+        "sha256": "7962dc6d1c17d2aaa6a0dc795d2767d747ad5a72db74cd81f8290c52eca38cde",
+        "bytes": 443513
+      },
+      {
+        "name": "word/media/image5.png",
+        "sha256": "5ae93ee25008f48f56d5b687e57cc727b747ba6c4c0c63ff42f0ddf567458edb",
+        "bytes": 519234
+      },
+      {
+        "name": "word/media/image6.png",
+        "sha256": "50c00728fe2d5a76b287b8c74fd72130b855f0034c2a475c369af865a5654f54",
+        "bytes": 405114
+      },
+      {
+        "name": "word/media/image7.png",
+        "sha256": "c198a1c78076a7f1eced9c8f27108e2b3db39626c79acc21008ed958a226a9f8",
+        "bytes": 972287
+      },
+      {
+        "name": "word/media/image8.png",
+        "sha256": "2e8650b996c8ab9dce47162cd30d333c27575216305d7b964e789a69901e022f",
+        "bytes": 3788
+      },
+      {
+        "name": "word/media/image9.png",
+        "sha256": "f39d779e7e1c91c6f0b0970f3a6e322fba3387dd781fa6d08992ddac325cf278",
+        "bytes": 2032
+      }
+    ],
+    "indicators": {
+      "canonical_v2": 2,
+      "0.6210": 7,
+      "0.6288": 0,
+      "0.6249": 0,
+      "ordinal baseline": 0,
+      "proportional odds": 0,
+      "repeated": 0,
+      "0.6664": 5,
+      "RPS": 0,
+      "faithfulness": 0,
+      "S2": 0
+    },
+    "document_title": "Beyond Predictive Accuracy: A Reproducible Leakage-Aware XAI Audit Protocol for Ordinal Employee Performance Prediction",
+    "core_created": "2026-06-15T08:01:00Z",
+    "core_modified": "2026-07-17T08:44:00Z",
+    "location_group": "Downloads root"
+  },
+  {
+    "id": "word_15",
+    "filename": "TASLAK - Beyond Predictive Accuracy A Reproducible Leakage-Aware XAI Audit Protocol for Ordinal Employee Performance Prediction .docx",
+    "bytes": 5165358,
+    "sha256": "b3af0e4dabbfb009bdd12c5e1da60a0b14a0117423acfc3a76705ddfa7910f01",
+    "text_sha256": "9a029e03ad1b2060f708ac24dbe7530446435bc41a329832ba7355714f7963a3",
+    "xml_sha256": "7e817071f5259515e80e57fd4dbf69e391b9f4df885c1830c1bc8f7e401734ad",
+    "paragraphs": 636,
+    "text_chars": 73171,
+    "tables": 26,
+    "equations": 13,
+    "media": [
+      {
+        "name": "word/media/image1.png",
+        "sha256": "ee61b3bd79a20550be917a763f0d593c6d2db2b16a2d147528762936ed88d96c",
+        "bytes": 1832222
+      },
+      {
+        "name": "word/media/image2.png",
+        "sha256": "27f2334b5a30ca8076a18bc7de414154bf0982bbdd72334e1458b767f49203b9",
+        "bytes": 352930
+      },
+      {
+        "name": "word/media/image3.png",
+        "sha256": "18077a91a7226d0e4ac03bb8ecc6a37198a0c8e50de0b19e025c9411853a0da0",
+        "bytes": 559406
+      },
+      {
+        "name": "word/media/image4.png",
+        "sha256": "7962dc6d1c17d2aaa6a0dc795d2767d747ad5a72db74cd81f8290c52eca38cde",
+        "bytes": 443513
+      },
+      {
+        "name": "word/media/image5.png",
+        "sha256": "5ae93ee25008f48f56d5b687e57cc727b747ba6c4c0c63ff42f0ddf567458edb",
+        "bytes": 519234
+      },
+      {
+        "name": "word/media/image6.png",
+        "sha256": "50c00728fe2d5a76b287b8c74fd72130b855f0034c2a475c369af865a5654f54",
+        "bytes": 405114
+      },
+      {
+        "name": "word/media/image7.png",
+        "sha256": "c198a1c78076a7f1eced9c8f27108e2b3db39626c79acc21008ed958a226a9f8",
+        "bytes": 972287
+      },
+      {
+        "name": "word/media/image8.png",
+        "sha256": "2e8650b996c8ab9dce47162cd30d333c27575216305d7b964e789a69901e022f",
+        "bytes": 3788
+      },
+      {
+        "name": "word/media/image9.png",
+        "sha256": "f39d779e7e1c91c6f0b0970f3a6e322fba3387dd781fa6d08992ddac325cf278",
+        "bytes": 2032
+      }
+    ],
+    "indicators": {
+      "canonical_v2": 2,
+      "0.6210": 7,
+      "0.6288": 0,
+      "0.6249": 0,
+      "ordinal baseline": 0,
+      "proportional odds": 0,
+      "repeated": 0,
+      "0.6664": 5,
+      "RPS": 0,
+      "faithfulness": 0,
+      "S2": 0
+    },
+    "document_title": "Beyond Predictive Accuracy: A Reproducible Leakage-Aware XAI Audit Protocol for Ordinal Employee Performance Prediction",
+    "core_created": "2026-06-15T08:01:00Z",
+    "core_modified": "2026-07-17T08:44:00Z",
+    "location_group": "Downloads root"
+  },
+  {
+    "id": "word_16",
+    "filename": "TASLAK - Beyond Predictive Accuracy A Reproducible Leakage-Aware XAI Audit Protocol for Ordinal Employee Performance Prediction.docx",
+    "bytes": 5165358,
+    "sha256": "b3af0e4dabbfb009bdd12c5e1da60a0b14a0117423acfc3a76705ddfa7910f01",
+    "text_sha256": "9a029e03ad1b2060f708ac24dbe7530446435bc41a329832ba7355714f7963a3",
+    "xml_sha256": "7e817071f5259515e80e57fd4dbf69e391b9f4df885c1830c1bc8f7e401734ad",
+    "paragraphs": 636,
+    "text_chars": 73171,
+    "tables": 26,
+    "equations": 13,
+    "media": [
+      {
+        "name": "word/media/image1.png",
+        "sha256": "ee61b3bd79a20550be917a763f0d593c6d2db2b16a2d147528762936ed88d96c",
+        "bytes": 1832222
+      },
+      {
+        "name": "word/media/image2.png",
+        "sha256": "27f2334b5a30ca8076a18bc7de414154bf0982bbdd72334e1458b767f49203b9",
+        "bytes": 352930
+      },
+      {
+        "name": "word/media/image3.png",
+        "sha256": "18077a91a7226d0e4ac03bb8ecc6a37198a0c8e50de0b19e025c9411853a0da0",
+        "bytes": 559406
+      },
+      {
+        "name": "word/media/image4.png",
+        "sha256": "7962dc6d1c17d2aaa6a0dc795d2767d747ad5a72db74cd81f8290c52eca38cde",
+        "bytes": 443513
+      },
+      {
+        "name": "word/media/image5.png",
+        "sha256": "5ae93ee25008f48f56d5b687e57cc727b747ba6c4c0c63ff42f0ddf567458edb",
+        "bytes": 519234
+      },
+      {
+        "name": "word/media/image6.png",
+        "sha256": "50c00728fe2d5a76b287b8c74fd72130b855f0034c2a475c369af865a5654f54",
+        "bytes": 405114
+      },
+      {
+        "name": "word/media/image7.png",
+        "sha256": "c198a1c78076a7f1eced9c8f27108e2b3db39626c79acc21008ed958a226a9f8",
+        "bytes": 972287
+      },
+      {
+        "name": "word/media/image8.png",
+        "sha256": "2e8650b996c8ab9dce47162cd30d333c27575216305d7b964e789a69901e022f",
+        "bytes": 3788
+      },
+      {
+        "name": "word/media/image9.png",
+        "sha256": "f39d779e7e1c91c6f0b0970f3a6e322fba3387dd781fa6d08992ddac325cf278",
+        "bytes": 2032
+      }
+    ],
+    "indicators": {
+      "canonical_v2": 2,
+      "0.6210": 7,
+      "0.6288": 0,
+      "0.6249": 0,
+      "ordinal baseline": 0,
+      "proportional odds": 0,
+      "repeated": 0,
+      "0.6664": 5,
+      "RPS": 0,
+      "faithfulness": 0,
+      "S2": 0
+    },
+    "document_title": "Beyond Predictive Accuracy: A Reproducible Leakage-Aware XAI Audit Protocol for Ordinal Employee Performance Prediction",
+    "core_created": "2026-06-15T08:01:00Z",
+    "core_modified": "2026-07-17T08:44:00Z",
+    "location_group": "Downloads root"
+  },
+  {
+    "id": "word_17",
+    "filename": "TUBITAK_1002A_XAI_Employee_Performance_Project_Proposal_EN.docx",
+    "bytes": 50543,
+    "sha256": "289143b8a24448ee6e47748dd6739b4297ca014c95cbebaa582b6057fd9d73be",
+    "text_sha256": "4731939497fc4d17bd9eb50883774cea704f4ab0248718286d9b3bf706ddf56b",
+    "xml_sha256": "7520bba81fd287981ff1790c1d54a958c048f3a676c1c0010176a29fabe8b007",
+    "paragraphs": 237,
+    "text_chars": 26441,
+    "tables": 8,
+    "equations": 0,
+    "media": [],
+    "indicators": {
+      "canonical_v2": 0,
+      "0.6210": 0,
+      "0.6288": 0,
+      "0.6249": 0,
+      "ordinal baseline": 0,
+      "proportional odds": 0,
+      "repeated": 2,
+      "0.6664": 0,
+      "RPS": 0,
+      "faithfulness": 0,
+      "S2": 0
+    },
+    "document_title": null,
+    "core_created": "2013-12-23T23:15:00Z",
+    "core_modified": "2013-12-23T23:15:00Z",
+    "location_group": "Downloads root"
+  },
+  {
+    "id": "word_18",
+    "filename": "AI_Society_Anonymous_Manuscript.docx",
+    "bytes": 4266334,
+    "sha256": "d3f03eee66e19f4794000d247367887bd5f39f801bde3a734352f31154b1e45c",
+    "text_sha256": "d7f8d4443ea381014dde62d12f7412ce128f13dd36a9b69b9ecc1dfae1836e71",
+    "xml_sha256": "91023a2d97377741e4876494c648d6587c05151c46b45630fdb7328649a02572",
+    "paragraphs": 623,
+    "text_chars": 75002,
+    "tables": 25,
+    "equations": 13,
+    "media": [
+      {
+        "name": "word/media/image1.png",
+        "sha256": "ee61b3bd79a20550be917a763f0d593c6d2db2b16a2d147528762936ed88d96c",
+        "bytes": 1832222
+      },
+      {
+        "name": "word/media/image6.png",
+        "sha256": "50c00728fe2d5a76b287b8c74fd72130b855f0034c2a475c369af865a5654f54",
+        "bytes": 405114
+      },
+      {
+        "name": "word/media/image5.png",
+        "sha256": "5ae93ee25008f48f56d5b687e57cc727b747ba6c4c0c63ff42f0ddf567458edb",
+        "bytes": 519234
+      },
+      {
+        "name": "word/media/image4.png",
+        "sha256": "7962dc6d1c17d2aaa6a0dc795d2767d747ad5a72db74cd81f8290c52eca38cde",
+        "bytes": 443513
+      },
+      {
+        "name": "word/media/image3.png",
+        "sha256": "18077a91a7226d0e4ac03bb8ecc6a37198a0c8e50de0b19e025c9411853a0da0",
+        "bytes": 559406
+      },
+      {
+        "name": "word/media/image2.png",
+        "sha256": "27f2334b5a30ca8076a18bc7de414154bf0982bbdd72334e1458b767f49203b9",
+        "bytes": 352930
+      },
+      {
+        "name": "word/media/image7.png",
+        "sha256": "c198a1c78076a7f1eced9c8f27108e2b3db39626c79acc21008ed958a226a9f8",
+        "bytes": 972287
+      }
+    ],
+    "indicators": {
+      "canonical_v2": 1,
+      "0.6210": 7,
+      "0.6288": 0,
+      "0.6249": 0,
+      "ordinal baseline": 0,
+      "proportional odds": 0,
+      "repeated": 0,
+      "0.6664": 5,
+      "RPS": 0,
+      "faithfulness": 0,
+      "S2": 0
+    },
+    "document_title": "Auditing Employee-Performance Prediction Beyond Accuracy: A Reproducible Leakage-Aware XAI Protocol for Responsible Workplace AI",
+    "core_created": "2026-06-15T08:01:00Z",
+    "core_modified": "2026-07-17T08:44:00Z",
+    "location_group": "Downloads archive subfolder"
+  },
+  {
+    "id": "word_19",
+    "filename": "TASLAK - Beyond Predictive Accuracy A Reproducible Leakage-Aware XAI Audit Protocol for Ordinal Employee Performance Prediction .docx",
+    "bytes": 5165358,
+    "sha256": "b3af0e4dabbfb009bdd12c5e1da60a0b14a0117423acfc3a76705ddfa7910f01",
+    "text_sha256": "9a029e03ad1b2060f708ac24dbe7530446435bc41a329832ba7355714f7963a3",
+    "xml_sha256": "7e817071f5259515e80e57fd4dbf69e391b9f4df885c1830c1bc8f7e401734ad",
+    "paragraphs": 636,
+    "text_chars": 73171,
+    "tables": 26,
+    "equations": 13,
+    "media": [
+      {
+        "name": "word/media/image1.png",
+        "sha256": "ee61b3bd79a20550be917a763f0d593c6d2db2b16a2d147528762936ed88d96c",
+        "bytes": 1832222
+      },
+      {
+        "name": "word/media/image2.png",
+        "sha256": "27f2334b5a30ca8076a18bc7de414154bf0982bbdd72334e1458b767f49203b9",
+        "bytes": 352930
+      },
+      {
+        "name": "word/media/image3.png",
+        "sha256": "18077a91a7226d0e4ac03bb8ecc6a37198a0c8e50de0b19e025c9411853a0da0",
+        "bytes": 559406
+      },
+      {
+        "name": "word/media/image4.png",
+        "sha256": "7962dc6d1c17d2aaa6a0dc795d2767d747ad5a72db74cd81f8290c52eca38cde",
+        "bytes": 443513
+      },
+      {
+        "name": "word/media/image5.png",
+        "sha256": "5ae93ee25008f48f56d5b687e57cc727b747ba6c4c0c63ff42f0ddf567458edb",
+        "bytes": 519234
+      },
+      {
+        "name": "word/media/image6.png",
+        "sha256": "50c00728fe2d5a76b287b8c74fd72130b855f0034c2a475c369af865a5654f54",
+        "bytes": 405114
+      },
+      {
+        "name": "word/media/image7.png",
+        "sha256": "c198a1c78076a7f1eced9c8f27108e2b3db39626c79acc21008ed958a226a9f8",
+        "bytes": 972287
+      },
+      {
+        "name": "word/media/image8.png",
+        "sha256": "2e8650b996c8ab9dce47162cd30d333c27575216305d7b964e789a69901e022f",
+        "bytes": 3788
+      },
+      {
+        "name": "word/media/image9.png",
+        "sha256": "f39d779e7e1c91c6f0b0970f3a6e322fba3387dd781fa6d08992ddac325cf278",
+        "bytes": 2032
+      }
+    ],
+    "indicators": {
+      "canonical_v2": 2,
+      "0.6210": 7,
+      "0.6288": 0,
+      "0.6249": 0,
+      "ordinal baseline": 0,
+      "proportional odds": 0,
+      "repeated": 0,
+      "0.6664": 5,
+      "RPS": 0,
+      "faithfulness": 0,
+      "S2": 0
+    },
+    "document_title": "Beyond Predictive Accuracy: A Reproducible Leakage-Aware XAI Audit Protocol for Ordinal Employee Performance Prediction",
+    "core_created": "2026-06-15T08:01:00Z",
+    "core_modified": "2026-07-17T08:44:00Z",
+    "location_group": "Downloads archive subfolder"
+  },
+  {
+    "id": "word_20",
+    "filename": "TASLAK - Beyond Predictive Accuracy A Reproducible Leakage-Aware XAI Audit Protocol for Ordinal Employee Performance Prediction.docx",
+    "bytes": 5165358,
+    "sha256": "b3af0e4dabbfb009bdd12c5e1da60a0b14a0117423acfc3a76705ddfa7910f01",
+    "text_sha256": "9a029e03ad1b2060f708ac24dbe7530446435bc41a329832ba7355714f7963a3",
+    "xml_sha256": "7e817071f5259515e80e57fd4dbf69e391b9f4df885c1830c1bc8f7e401734ad",
+    "paragraphs": 636,
+    "text_chars": 73171,
+    "tables": 26,
+    "equations": 13,
+    "media": [
+      {
+        "name": "word/media/image1.png",
+        "sha256": "ee61b3bd79a20550be917a763f0d593c6d2db2b16a2d147528762936ed88d96c",
+        "bytes": 1832222
+      },
+      {
+        "name": "word/media/image2.png",
+        "sha256": "27f2334b5a30ca8076a18bc7de414154bf0982bbdd72334e1458b767f49203b9",
+        "bytes": 352930
+      },
+      {
+        "name": "word/media/image3.png",
+        "sha256": "18077a91a7226d0e4ac03bb8ecc6a37198a0c8e50de0b19e025c9411853a0da0",
+        "bytes": 559406
+      },
+      {
+        "name": "word/media/image4.png",
+        "sha256": "7962dc6d1c17d2aaa6a0dc795d2767d747ad5a72db74cd81f8290c52eca38cde",
+        "bytes": 443513
+      },
+      {
+        "name": "word/media/image5.png",
+        "sha256": "5ae93ee25008f48f56d5b687e57cc727b747ba6c4c0c63ff42f0ddf567458edb",
+        "bytes": 519234
+      },
+      {
+        "name": "word/media/image6.png",
+        "sha256": "50c00728fe2d5a76b287b8c74fd72130b855f0034c2a475c369af865a5654f54",
+        "bytes": 405114
+      },
+      {
+        "name": "word/media/image7.png",
+        "sha256": "c198a1c78076a7f1eced9c8f27108e2b3db39626c79acc21008ed958a226a9f8",
+        "bytes": 972287
+      },
+      {
+        "name": "word/media/image8.png",
+        "sha256": "2e8650b996c8ab9dce47162cd30d333c27575216305d7b964e789a69901e022f",
+        "bytes": 3788
+      },
+      {
+        "name": "word/media/image9.png",
+        "sha256": "f39d779e7e1c91c6f0b0970f3a6e322fba3387dd781fa6d08992ddac325cf278",
+        "bytes": 2032
+      }
+    ],
+    "indicators": {
+      "canonical_v2": 2,
+      "0.6210": 7,
+      "0.6288": 0,
+      "0.6249": 0,
+      "ordinal baseline": 0,
+      "proportional odds": 0,
+      "repeated": 0,
+      "0.6664": 5,
+      "RPS": 0,
+      "faithfulness": 0,
+      "S2": 0
+    },
+    "document_title": "Beyond Predictive Accuracy: A Reproducible Leakage-Aware XAI Audit Protocol for Ordinal Employee Performance Prediction",
+    "core_created": "2026-06-15T08:01:00Z",
+    "core_modified": "2026-07-17T08:44:00Z",
+    "location_group": "Downloads archive subfolder"
+  }
+]

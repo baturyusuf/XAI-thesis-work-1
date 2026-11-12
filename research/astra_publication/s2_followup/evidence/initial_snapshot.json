@@ -1,0 +1,46 @@
+{
+  "utc": "2026-11-12T06:35:00.032652+00:00",
+  "astra_head": "e35424e1de0e354009c945ad0cf22e4a90745f7c",
+  "worktrees": [
+    {
+      "path": "C:/Users/Yusuf/Documents/GitHub/XAI-thesis-work-1",
+      "head": "1b71d4c45ae1aba771e7c499f87f197f44b3112c",
+      "status": "## main...origin/main\n?? XAI-thesis-work-1-private-data/\n"
+    },
+    {
+      "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/benchmark-methodology",
+      "head": "fb1375be443a87e45ff43328e0ff60fb37d8fe2b",
+      "status": "## research/benchmark-methodology\n"
+    },
+    {
+      "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/dataset-validity",
+      "head": "2a3cc1abc29c823fb6eda26ebf1ed29b064da63c",
+      "status": "## research/dataset-validity...origin/research/dataset-validity\n?? research/datasets/scripts/\n"
+    },
+    {
+      "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/independent-validation",
+      "head": "6412c1970c0c6295dab9ce63e804bcd1e3ee980e",
+      "status": "## research/independent-validation\n"
+    },
+    {
+      "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/literature-novelty",
+      "head": "6a010862cc4cbf97886b19095a030e3db077a638",
+      "status": "## research/literature-novelty...origin/research/literature-novelty\n?? research/literature/phase2/evidence/current_active.json\n?? research/literature/phase2/evidence/current_active_lime.json\n?? research/literature/phase2/evidence/current_quality.json\n?? research/literature/phase2/evidence/current_selective.json\n?? research/literature/phase2/evidence/cvpr_slice_index.json\n?? research/literature/phase2/evidence/glime_crossref.json\n?? research/literature/phase2/evidence/glime_identity.json\n?? research/literature/phase2/evidence/slime_crossref.json\n?? research/literature/phase2/evidence/slime_exact.json\n?? research/literature/phase2/evidence/slime_identity.json\n"
+    },
+    {
+      "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/west-drake/XAI-thesis-work-1",
+      "head": "1b71d4c45ae1aba771e7c499f87f197f44b3112c",
+      "status": "## HEAD (no branch)\n"
+    },
+    {
+      "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/west-drake/XAI-thesis-work-1-astra-scie-q4",
+      "head": "e35424e1de0e354009c945ad0cf22e4a90745f7c",
+      "status": "## research/astra-scie-q4-publication\n?? research/astra_publication/s2_protocol/\n"
+    },
+    {
+      "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/xai-innovation",
+      "head": "38076cc0c09e8c7f721e770c182aa11f66e05ab9",
+      "status": "## research/xai-innovation\n"
+    }
+  ]
+}

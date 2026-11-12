@@ -1,0 +1,75 @@
+{
+  "commit": "c7f7729ff1c944891e66eb2e42b9d1113a179a32",
+  "tracked_documents": {
+    "anonymous_manuscript.docx": {
+      "sha256": "81791e9370e23f75fbb94a0832f53cd4faae7bfd8f08249ba5a5b7a0f2e3cbb6",
+      "bytes": 881566,
+      "same_as_0927ecc": true
+    },
+    "main.md": {
+      "sha256": "beb66da6f8c3030672824b9d63a806e7157c7febced9e19959bea07d7430c90f",
+      "bytes": 59204,
+      "same_as_0927ecc": false
+    },
+    "main.tex": {
+      "sha256": "2f6b5714544068784b9c2cdb8e8c006c21b9aa32bc2f1b11dd19c91b0b5a862e",
+      "bytes": 89928,
+      "same_as_0927ecc": true
+    }
+  },
+  "docx_stale_relative_to_markdown": true,
+  "semantic_deltas": [
+    "Five-repetition objective sensitivity added (92/150 choices)",
+    "HR synthetic teaching-data role made explicit",
+    "P3 nominal-XGBoost subgroup scope explicit",
+    "Ethics/rights/human review unresolved: not-for-submission status"
+  ],
+  "inventory_files": 20,
+  "distinct_binary_versions": 11,
+  "byte_identical_groups": {
+    "d3f03eee66e19f4794000d247367887bd5f39f801bde3a734352f31154b1e45c": [
+      "word_01",
+      "word_18"
+    ],
+    "81791e9370e23f75fbb94a0832f53cd4faae7bfd8f08249ba5a5b7a0f2e3cbb6": [
+      "word_02"
+    ],
+    "b3af0e4dabbfb009bdd12c5e1da60a0b14a0117423acfc3a76705ddfa7910f01": [
+      "word_03",
+      "word_11",
+      "word_12",
+      "word_13",
+      "word_14",
+      "word_15",
+      "word_16",
+      "word_19",
+      "word_20"
+    ],
+    "da18ff213f9a46f2d085f70498e7ace15d8a00999dc3b248663aeebff70602bd": [
+      "word_04"
+    ],
+    "50b6fb5c819a9c2a1f7ff7d91de5852c666dd0c9a2ddbf0618252c29175e7e34": [
+      "word_05"
+    ],
+    "42a1284568c30d3f79ed52c1ad4eef866b996ceb1e376daf4041994d1c641ca4": [
+      "word_06"
+    ],
+    "1a6de78a187b019209221ad6b7a800c5afeff0177cbf78554cd0bb41c6cf06da": [
+      "word_07"
+    ],
+    "3742e2fedbdb20566dd9d2250d60a31bb56c301803185b3ba9837204c5ecfd48": [
+      "word_08"
+    ],
+    "f442b2da3887902ed52da103013b49ff179ebf038ff0160859867943d0681cff": [
+      "word_09"
+    ],
+    "ee1ef4b40ed9507bafbd8d4ef4ac0c84443d016a6140af181ce1c679bdb7dfcb": [
+      "word_10"
+    ],
+    "289143b8a24448ee6e47748dd6739b4297ca014c95cbebaa582b6057fd9d73be": [
+      "word_17"
+    ]
+  },
+  "old_vs_new_identical_media_hash_count": 0,
+  "author_approved_version": "unknown"
+}
