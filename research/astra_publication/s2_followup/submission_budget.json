@@ -1,0 +1,290 @@
+{
+  "created_utc": "2026-11-12T12:47:32.656095+00:00",
+  "source_report_commit": "3dfcad16d8ac9a718beb0b218b12e7aeaf06309c",
+  "source_manuscript_commit": "c7f7729ff1c944891e66eb2e42b9d1113a179a32",
+  "hours_per_person_day": 8,
+  "estimates_not_time_logs": true,
+  "historical_budget_note": "Explicit retrospective planning allocation of earlier top-down 8-15 person-days, not original recorded task estimates; not all still remaining or required",
+  "tasks": [
+    {
+      "id": "T01",
+      "name": "Authoritative source freeze",
+      "historical_comprehensive_allocation_hours": [
+        2,
+        4
+      ],
+      "minimum_remaining_hours": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "T02",
+      "name": "Journal eligibility and fit",
+      "historical_comprehensive_allocation_hours": [
+        4,
+        8
+      ],
+      "minimum_remaining_hours": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "T03",
+      "name": "Data-use rights and provenance",
+      "historical_comprehensive_allocation_hours": [
+        6,
+        12
+      ],
+      "minimum_remaining_hours": [
+        3,
+        5
+      ]
+    },
+    {
+      "id": "T04",
+      "name": "Ethics and consent applicability",
+      "historical_comprehensive_allocation_hours": [
+        2,
+        4
+      ],
+      "minimum_remaining_hours": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "T05",
+      "name": "Code and data availability statement",
+      "historical_comprehensive_allocation_hours": [
+        3,
+        6
+      ],
+      "minimum_remaining_hours": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "T06",
+      "name": "Scientific scope and narrative",
+      "historical_comprehensive_allocation_hours": [
+        10,
+        18
+      ],
+      "minimum_remaining_hours": [
+        3,
+        5
+      ]
+    },
+    {
+      "id": "T07",
+      "name": "Claim and result consistency",
+      "historical_comprehensive_allocation_hours": [
+        10,
+        18
+      ],
+      "minimum_remaining_hours": [
+        3,
+        5
+      ]
+    },
+    {
+      "id": "T08",
+      "name": "Visual inspection and required fixes",
+      "historical_comprehensive_allocation_hours": [
+        6,
+        12
+      ],
+      "minimum_remaining_hours": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "T09",
+      "name": "Key citation correctness",
+      "historical_comprehensive_allocation_hours": [
+        6,
+        10
+      ],
+      "minimum_remaining_hours": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "T10",
+      "name": "Journal-format submission package",
+      "historical_comprehensive_allocation_hours": [
+        8,
+        14
+      ],
+      "minimum_remaining_hours": [
+        3,
+        5
+      ]
+    },
+    {
+      "id": "T11",
+      "name": "Author declarations and portal signoff",
+      "historical_comprehensive_allocation_hours": [
+        3,
+        6
+      ],
+      "minimum_remaining_hours": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "T12",
+      "name": "Optional targeted independent replay",
+      "historical_comprehensive_allocation_hours": [
+        4,
+        8
+      ],
+      "minimum_remaining_hours": [
+        0,
+        0
+      ]
+    }
+  ],
+  "historical_comprehensive_total_hours": [
+    64,
+    120
+  ],
+  "minimum_remaining_total_hours": [
+    23,
+    39
+  ],
+  "minimum_remaining_person_days": [
+    2.875,
+    4.875
+  ],
+  "optional_quick_tasks_hours": {
+    "B1_targeted_contribution_table": [
+      1,
+      2
+    ],
+    "B2_optional_visual_polish": [
+      1,
+      3
+    ],
+    "B3_supplement_navigation": [
+      1,
+      2
+    ]
+  },
+  "all_quick_optionals_total_hours": [
+    3,
+    7
+  ],
+  "recommended_optional_selection": [
+    "B1_targeted_contribution_table",
+    "B3_supplement_navigation"
+  ],
+  "recommended_optional_addition_hours": [
+    2,
+    4
+  ],
+  "minimum_plus_recommended_hours": [
+    25,
+    43
+  ],
+  "external_wait": "Unknown for unresolved rights/institutional/journal evidence; zero critical-path wait only if existing satisfactory records are promptly available",
+  "new_training_runs": 0,
+  "new_experiments_authorized": false,
+  "manuscript_edits_authorized": false,
+  "initial_worktrees": [
+    {
+      "path": "C:/Users/Yusuf/Documents/GitHub/XAI-thesis-work-1",
+      "head": "1b71d4c45ae1aba771e7c499f87f197f44b3112c",
+      "status": "## main...origin/main\n?? XAI-thesis-work-1-private-data/\n"
+    },
+    {
+      "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/benchmark-methodology",
+      "head": "fb1375be443a87e45ff43328e0ff60fb37d8fe2b",
+      "status": "## research/benchmark-methodology\n"
+    },
+    {
+      "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/dataset-validity",
+      "head": "2a3cc1abc29c823fb6eda26ebf1ed29b064da63c",
+      "status": "## research/dataset-validity...origin/research/dataset-validity\n?? research/datasets/scripts/\n"
+    },
+    {
+      "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/independent-validation",
+      "head": "6412c1970c0c6295dab9ce63e804bcd1e3ee980e",
+      "status": "## research/independent-validation\n"
+    },
+    {
+      "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/literature-novelty",
+      "head": "6a010862cc4cbf97886b19095a030e3db077a638",
+      "status": "## research/literature-novelty...origin/research/literature-novelty\n?? research/literature/phase2/evidence/current_active.json\n?? research/literature/phase2/evidence/current_active_lime.json\n?? research/literature/phase2/evidence/current_quality.json\n?? research/literature/phase2/evidence/current_selective.json\n?? research/literature/phase2/evidence/cvpr_slice_index.json\n?? research/literature/phase2/evidence/glime_crossref.json\n?? research/literature/phase2/evidence/glime_identity.json\n?? research/literature/phase2/evidence/slime_crossref.json\n?? research/literature/phase2/evidence/slime_exact.json\n?? research/literature/phase2/evidence/slime_identity.json\n"
+    },
+    {
+      "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/west-drake/XAI-thesis-work-1",
+      "head": "1b71d4c45ae1aba771e7c499f87f197f44b3112c",
+      "status": "## HEAD (no branch)\n"
+    },
+    {
+      "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/west-drake/XAI-thesis-work-1-astra-scie-q4",
+      "head": "3dfcad16d8ac9a718beb0b218b12e7aeaf06309c",
+      "status": "## research/astra-scie-q4-publication\n?? research/astra_publication/s2_protocol/\n"
+    },
+    {
+      "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/xai-innovation",
+      "head": "38076cc0c09e8c7f721e770c182aa11f66e05ab9",
+      "status": "## research/xai-innovation\n"
+    }
+  ],
+  "validation": {
+    "utc": "2026-11-12T13:01:08.930567+00:00",
+    "budget_table_matches_json": true,
+    "card_count": 22,
+    "requested_field_groups_present": true,
+    "local_links_valid": true,
+    "secret_pattern_scan": "no matches",
+    "utf8": "valid",
+    "report_sha256_utf8_lf": "872d1298cb9b708f47c1206686574e51f193b3f7150fe7089e194977e34ed435",
+    "other_worktrees": [
+      {
+        "path": "C:/Users/Yusuf/Documents/GitHub/XAI-thesis-work-1",
+        "same_head": true,
+        "same_status": true
+      },
+      {
+        "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/benchmark-methodology",
+        "same_head": true,
+        "same_status": true
+      },
+      {
+        "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/dataset-validity",
+        "same_head": true,
+        "same_status": true
+      },
+      {
+        "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/independent-validation",
+        "same_head": true,
+        "same_status": true
+      },
+      {
+        "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/literature-novelty",
+        "same_head": true,
+        "same_status": true
+      },
+      {
+        "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/west-drake/XAI-thesis-work-1",
+        "same_head": true,
+        "same_status": true
+      },
+      {
+        "path": "C:/Users/Yusuf/Documents/GitHub/worktrees/XAI-thesis-work-1/xai-innovation",
+        "same_head": true,
+        "same_status": true
+      }
+    ],
+    "scope": "Report arithmetic, structure, privacy-pattern scan and Git state only; no scientific experiment or manuscript edit"
+  }
+}
