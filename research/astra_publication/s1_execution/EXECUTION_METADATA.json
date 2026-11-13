@@ -1,0 +1,37 @@
+{
+  "status": "submission candidate — blocked",
+  "source_repository": "baturyusuf/employee-performance-with-XAI",
+  "source_commit": "c7f7729ff1c944891e66eb2e42b9d1113a179a32",
+  "astra_branch": "research/astra-scie-q4-publication",
+  "astra_base": "bd93c8b8d57572db6ab3374ebacddc8f9e9855ae",
+  "updated_utc": "2026-11-13T07:21:44.680442+00:00",
+  "authorized_estimate_person_hours": [
+    25,
+    43
+  ],
+  "measured_active_person_hours": null,
+  "measured_human_person_hours": null,
+  "new_experiments": 0,
+  "new_publication_repository": false,
+  "portal_submission": false,
+  "public_payload": "safe reports and metadata only; no manuscript/figures/data/code release",
+  "private_artifacts": "local/ (gitignored)",
+  "validation": {
+    "manuscript_tables_preserved": 12,
+    "resolved_citation_keys": 45,
+    "manuscript_pages": 26,
+    "supplement_pages": 11,
+    "embedded_figures": 7,
+    "docx_zip_and_xml_parse": "passed",
+    "pdf_text_page_boundary_flags": 0,
+    "actual_visual_review": "pending",
+    "other_worktree_snapshot_differences": 0,
+    "private_local_ignored": true,
+    "public_token_private_key_scan_matches": 0,
+    "full_scientific_reproduction": "not run"
+  },
+  "pdf_sha256": {
+    "manuscript/manuscript_candidate.pdf": "df106d411260fa5253d4087b8a7673d1fe9d59d6eca424555bc8155673ece55d",
+    "supplement/supplement_candidate.pdf": "d43d4a7d62688917c767c5376f8de1790d78d2b4790047cf48438e0f40aaba4f"
+  }
+}
