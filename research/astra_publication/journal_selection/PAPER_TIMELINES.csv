@@ -1,0 +1,26 @@
+id,journal,doi,received,revised,accepted,published_date_as_reported,online_date_known,special_issue_status,received_to_accepted_days,accepted_to_published_days,timing_note
+AI1,Applied Intelligence,10.1007/s10489-026-07322-x,2025-11-25,NR,2026-05-30,2026-06-12,yes,Unknown/not established,186,13,Dates copied from extraction notes; no revised date displayed
+AI2,Applied Intelligence,10.1007/s10489-025-06974-5,2024-10-19,NR,2025-10-24,2025-11-08,yes,Unknown/not established,370,15,Dates copied from extraction notes; no revised date displayed
+AI3,Applied Intelligence,10.1007/s10489-026-07452-2,2026-02-23,NR,2026-08-25,2026-10-01,yes,Unknown/not established,183,37,Dates copied from extraction notes; no revised date displayed
+AI4,Applied Intelligence,10.1007/s10489-026-07401-z,2025-11-14,NR,2026-07-28,2026-09-17,yes,Unknown/not established,256,51,Dates copied from extraction notes; no revised date displayed
+AI5,Applied Intelligence,10.1007/s10489-024-05953-6,NR,NR,2024-10-09,2025-01-13,yes,Unknown/not established,,96,Dates copied from extraction notes; no revised date displayed
+NCA1,Neural Computing and Applications,10.1007/s00521-024-10724-y,2024-03-20,NR,2024-10-14,2024-12-19,yes,Unknown/not established,208,66,Dates copied from extraction notes; no revised date displayed
+NCA2,Neural Computing and Applications,10.1007/s00521-025-11648-x,2024-09-12,NR,2025-09-03,2025-09-24,yes,Unknown/not established,356,21,Dates copied from extraction notes; no revised date displayed
+NCA3,Neural Computing and Applications,10.1007/s00521-024-10698-x,2023-10-27,NR,2024-10-07,2024-11-20,yes,Unknown/not established,346,44,Dates copied from extraction notes; no revised date displayed
+NCA4,Neural Computing and Applications,10.1007/s00521-026-11933-3,2025-07-20,NR,2026-01-13,2026-03-13,yes,Unknown/not established,177,59,Dates copied from extraction notes; no revised date displayed
+NCA5,Neural Computing and Applications,10.1007/s00521-026-12333-3,2026-02-24,NR,2026-07-12,2026-08-03,yes,Unknown/not established,138,22,Dates copied from extraction notes; no revised date displayed
+SC1,Soft Computing,10.1007/s00500-025-10937-w,2025-07-15,NR,2025-10-02,2025-10-31,yes,Unknown/not established,79,29,Dates from existing note; revised date not displayed
+SC2,Soft Computing,10.1007/s00500-025-10780-z,NR,NR,2025-03-18,2026-05-21,yes,Unknown/not established,,429,Dates from existing note; revised date not displayed
+SC3,Soft Computing,10.1007/s00500-024-09847-0,NR,NR,2024-03-25,2024-07-24,yes,Unknown/not established,,121,Dates from existing note; revised date not displayed
+SC4,Soft Computing,10.1007/s00500-025-11045-5,2025-01-07,NR,2025-12-13,2026-01-29,yes,Unknown/not established,340,47,Dates from existing note; revised date not displayed
+SC5,Soft Computing,10.1007/s00500-024-09884-9,NR,NR,2024-05-22,2024-07-24,yes,Unknown/not established,,63,Dates from existing note; revised date not displayed
+IJAIT1,International Journal on Artificial Intelligence Tools,10.1142/S0218213026500211,NR,NR,NR,2026-09-24,yes,Unknown/not established,,,Dates from existing note; received/revised/accepted unavailable
+IJAIT2,International Journal on Artificial Intelligence Tools,10.1142/S0218213026400038,NR,NR,NR,2026-03-12,yes,Unknown/not established,,,Dates from existing note; received/revised/accepted unavailable
+IJAIT3,International Journal on Artificial Intelligence Tools,10.1142/S0218213026500181,NR,NR,NR,2026-07-18,unknown,Unknown/not established,,,Generic Crossref published date; online-first status unknown; review history unavailable
+IJAIT4,International Journal on Artificial Intelligence Tools,10.1142/S0218213026500326,NR,NR,NR,2026-11-06,unknown,Unknown/not established,,,Generic Crossref published date; online-first status unknown; review history unavailable
+IJAIT5,International Journal on Artificial Intelligence Tools,10.1142/S0218213025400020,NR,NR,NR,2025-07-14,unknown,Unknown/not established,,,Generic Crossref published date; online-first status unknown; review history unavailable
+ESWA1,Expert Systems with Applications,10.1016/j.eswa.2024.123154,NR,NR,NR,2024-07-15,unknown,Unknown/not established,,,Publisher date recorded; online-first status and review-history dates not established
+ESWA2,Expert Systems with Applications,10.1016/j.eswa.2025.126922,NR,NR,NR,2025-05-15,unknown,Unknown/not established,,,Publisher date recorded; online-first status and review-history dates not established
+ESWA3,Expert Systems with Applications,10.1016/j.eswa.2025.126575,NR,NR,NR,2025-05-05,unknown,Unknown/not established,,,Publisher date recorded; online-first status and review-history dates not established
+ESWA4,Expert Systems with Applications,10.1016/j.eswa.2025.130156,NR,NR,NR,2026-03-05,unknown,Unknown/not established,,,Publisher date recorded; online-first status and review-history dates not established
+ESWA5,Expert Systems with Applications,10.1016/j.eswa.2023.122588,NR,NR,NR,2024-05-01,unknown,Unknown/not established,,,Publisher date recorded; online-first status and review-history dates not established

@@ -1,0 +1,176 @@
+{
+  "utc": "2026-11-16T06:47:19.346608+00:00",
+  "files": {
+    "manuscript/main.md": "c17373522f2966422549a63611e8730e2794bb7907200abc252ccdcd5d24924a",
+    "manuscript/manuscript_candidate.pdf": "df106d411260fa5253d4087b8a7673d1fe9d59d6eca424555bc8155673ece55d",
+    "supplement/supplement_candidate.pdf": "d43d4a7d62688917c767c5376f8de1790d78d2b4790047cf48438e0f40aaba4f"
+  },
+  "actual_visually_reviewed_pages": 0,
+  "total_pages": 37,
+  "total_images": 7,
+  "images": [
+    {
+      "document": "manuscript/manuscript_candidate.pdf",
+      "page": 4,
+      "pixels": [
+        1166,
+        997
+      ],
+      "size_inches": [
+        5.833055867089166,
+        4.988889058430989
+      ],
+      "effective_dpi": [
+        199.9,
+        199.8
+      ],
+      "visual_status": "NOT_VIEWED"
+    },
+    {
+      "document": "manuscript/manuscript_candidate.pdf",
+      "page": 7,
+      "pixels": [
+        1166,
+        594
+      ],
+      "size_inches": [
+        5.833194467756483,
+        2.9736111958821616
+      ],
+      "effective_dpi": [
+        199.9,
+        199.8
+      ],
+      "visual_status": "NOT_VIEWED"
+    },
+    {
+      "document": "manuscript/manuscript_candidate.pdf",
+      "page": 8,
+      "pixels": [
+        1166,
+        431
+      ],
+      "size_inches": [
+        5.832083543141683,
+        2.15625
+      ],
+      "effective_dpi": [
+        199.9,
+        199.9
+      ],
+      "visual_status": "NOT_VIEWED"
+    },
+    {
+      "document": "manuscript/manuscript_candidate.pdf",
+      "page": 9,
+      "pixels": [
+        1166,
+        798
+      ],
+      "size_inches": [
+        5.832916842566596,
+        3.9909723069932728
+      ],
+      "effective_dpi": [
+        199.9,
+        200.0
+      ],
+      "visual_status": "NOT_VIEWED"
+    },
+    {
+      "document": "manuscript/manuscript_candidate.pdf",
+      "page": 9,
+      "pixels": [
+        1166,
+        463
+      ],
+      "size_inches": [
+        5.832916842566596,
+        2.316666497124566
+      ],
+      "effective_dpi": [
+        199.9,
+        199.9
+      ],
+      "visual_status": "NOT_VIEWED"
+    },
+    {
+      "document": "manuscript/manuscript_candidate.pdf",
+      "page": 10,
+      "pixels": [
+        1166,
+        491
+      ],
+      "size_inches": [
+        5.832222567664252,
+        2.456944359673394
+      ],
+      "effective_dpi": [
+        199.9,
+        199.8
+      ],
+      "visual_status": "NOT_VIEWED"
+    },
+    {
+      "document": "manuscript/manuscript_candidate.pdf",
+      "page": 11,
+      "pixels": [
+        1166,
+        480
+      ],
+      "size_inches": [
+        5.832777818044026,
+        2.4034722646077475
+      ],
+      "effective_dpi": [
+        199.9,
+        199.7
+      ],
+      "visual_status": "NOT_VIEWED"
+    }
+  ],
+  "vector_asset_structure": [
+    {
+      "file": "figure_01.pdf",
+      "pages": 1,
+      "raster_image_count": 0,
+      "drawing_objects": 32
+    },
+    {
+      "file": "figure_02.pdf",
+      "pages": 1,
+      "raster_image_count": 0,
+      "drawing_objects": 86
+    },
+    {
+      "file": "figure_03.pdf",
+      "pages": 1,
+      "raster_image_count": 0,
+      "drawing_objects": 132
+    },
+    {
+      "file": "figure_05.pdf",
+      "pages": 1,
+      "raster_image_count": 0,
+      "drawing_objects": 53
+    },
+    {
+      "file": "figure_06.pdf",
+      "pages": 1,
+      "raster_image_count": 0,
+      "drawing_objects": 82
+    },
+    {
+      "file": "figure_07.pdf",
+      "pages": 1,
+      "raster_image_count": 0,
+      "drawing_objects": 91
+    }
+  ],
+  "zed_supported_attempts": [
+    "zed --add <authorized Astra worktree> returned success; current tool root did not change",
+    "zed --new <authorized Astra worktree> returned success; current tool root did not change",
+    "read/list sibling project path still rejected on continuation"
+  ],
+  "copied_outside_astra": false
+}

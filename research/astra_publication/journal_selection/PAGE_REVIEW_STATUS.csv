@@ -1,0 +1,38 @@
+document,page,words,captions,text_bbox_outside_page,visual_status,actual_visual_pass
+manuscript/manuscript_candidate.pdf,1,502,,0,NOT_VIEWED,False
+manuscript/manuscript_candidate.pdf,2,478,,0,NOT_VIEWED,False
+manuscript/manuscript_candidate.pdf,3,558,,0,NOT_VIEWED,False
+manuscript/manuscript_candidate.pdf,4,187,Figure 1.; Table 1.,0,NOT_VIEWED,False
+manuscript/manuscript_candidate.pdf,5,421,Table 2.,0,NOT_VIEWED,False
+manuscript/manuscript_candidate.pdf,6,396,Table 3.; Table S2.,0,NOT_VIEWED,False
+manuscript/manuscript_candidate.pdf,7,359,Figure 2.,0,NOT_VIEWED,False
+manuscript/manuscript_candidate.pdf,8,330,Figure 3.,0,NOT_VIEWED,False
+manuscript/manuscript_candidate.pdf,9,104,Figure 4.; Figure 5.,0,NOT_VIEWED,False
+manuscript/manuscript_candidate.pdf,10,390,Figure 6.,0,NOT_VIEWED,False
+manuscript/manuscript_candidate.pdf,11,368,Figure 7.,0,NOT_VIEWED,False
+manuscript/manuscript_candidate.pdf,12,356,Table 4.; Table 5.,0,NOT_VIEWED,False
+manuscript/manuscript_candidate.pdf,13,551,Table S9.; Table 6.,0,NOT_VIEWED,False
+manuscript/manuscript_candidate.pdf,14,428,Table 7.; Table 8.; Table 9.,0,NOT_VIEWED,False
+manuscript/manuscript_candidate.pdf,15,371,Table S6.; Table 10.,0,NOT_VIEWED,False
+manuscript/manuscript_candidate.pdf,16,387,Table 11.; Table 12.,0,NOT_VIEWED,False
+manuscript/manuscript_candidate.pdf,17,496,,0,NOT_VIEWED,False
+manuscript/manuscript_candidate.pdf,18,474,,0,NOT_VIEWED,False
+manuscript/manuscript_candidate.pdf,19,435,,0,NOT_VIEWED,False
+manuscript/manuscript_candidate.pdf,20,240,,0,NOT_VIEWED,False
+manuscript/manuscript_candidate.pdf,21,200,,0,NOT_VIEWED,False
+manuscript/manuscript_candidate.pdf,22,236,,0,NOT_VIEWED,False
+manuscript/manuscript_candidate.pdf,23,220,,0,NOT_VIEWED,False
+manuscript/manuscript_candidate.pdf,24,209,,0,NOT_VIEWED,False
+manuscript/manuscript_candidate.pdf,25,241,,0,NOT_VIEWED,False
+manuscript/manuscript_candidate.pdf,26,41,,0,NOT_VIEWED,False
+supplement/supplement_candidate.pdf,1,248,Table S1.; Table S1a.; Table S1b.,0,NOT_VIEWED,False
+supplement/supplement_candidate.pdf,2,344,Table S2.,0,NOT_VIEWED,False
+supplement/supplement_candidate.pdf,3,266,Table S3.; Table S4.,0,NOT_VIEWED,False
+supplement/supplement_candidate.pdf,4,300,Table S5.,0,NOT_VIEWED,False
+supplement/supplement_candidate.pdf,5,285,Table S6.,0,NOT_VIEWED,False
+supplement/supplement_candidate.pdf,6,267,Table S7.,0,NOT_VIEWED,False
+supplement/supplement_candidate.pdf,7,293,,0,NOT_VIEWED,False
+supplement/supplement_candidate.pdf,8,271,,0,NOT_VIEWED,False
+supplement/supplement_candidate.pdf,9,363,Table S8.,0,NOT_VIEWED,False
+supplement/supplement_candidate.pdf,10,405,Table S9.,0,NOT_VIEWED,False
+supplement/supplement_candidate.pdf,11,264,,0,NOT_VIEWED,False
