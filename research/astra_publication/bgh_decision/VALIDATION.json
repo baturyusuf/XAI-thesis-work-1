@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-16",
+  "source_commit": "2a3cc1abc29c823fb6eda26ebf1ed29b064da63c",
+  "source_count_arithmetic": "PASS",
+  "planned_budget_B_hours": [
+    38,
+    64
+  ],
+  "planned_budget_C_hours": [
+    120,
+    220
+  ],
+  "planned_B_inner_fits": 72,
+  "planned_B_outer_fits": 12,
+  "actual_new_model_fits": 0,
+  "actual_new_experiments": 0,
+  "raw_data_opened_or_moved": false,
+  "candidate_hashes_unchanged": true,
+  "secret_local_path_screen_hits": [],
+  "current_S1_score_unchanged": 70,
+  "current_data_score_unchanged": 8,
+  "BGH_future_score": "not assigned",
+  "actual_active_hours": "not instrumented; estimates not actuals"
+}

@@ -1,0 +1,140 @@
+{
+  "date": "2026-11-16",
+  "evidence_type": "Existing immutable aggregate audit, not newly computed raw-data validation",
+  "branch": "research/dataset-validity",
+  "commit": "2a3cc1abc29c823fb6eda26ebf1ed29b064da63c",
+  "source_path": "research/datasets/evidence/local_audit_summary.json",
+  "aggregate": {
+    "rows": 74071,
+    "columns": 54,
+    "unique_persons": 16133,
+    "missing_person_ids": 0,
+    "duplicate_person_year": 0,
+    "duplicate_rows": 0,
+    "rating_counts": {
+      "1.0": 13994,
+      "2.0": 22756,
+      "3.0": 8455,
+      "4.0": 438,
+      "5.0": 30,
+      "nan": 28398
+    },
+    "year_range_encoded": [
+      69,
+      88
+    ],
+    "rows_by_year": {
+      "69": 1305,
+      "70": 1439,
+      "71": 1556,
+      "72": 1610,
+      "73": 1762,
+      "74": 2049,
+      "75": 2648,
+      "76": 2696,
+      "77": 2941,
+      "78": 3233,
+      "79": 3441,
+      "80": 3699,
+      "81": 4142,
+      "82": 4479,
+      "83": 4705,
+      "84": 5004,
+      "85": 5814,
+      "86": 6178,
+      "87": 6521,
+      "88": 8849
+    },
+    "rating_observed_by_year": {
+      "69": 11,
+      "70": 150,
+      "71": 289,
+      "72": 387,
+      "73": 791,
+      "74": 1680,
+      "75": 2368,
+      "76": 2542,
+      "77": 2787,
+      "78": 2928,
+      "79": 2938,
+      "80": 115,
+      "81": 190,
+      "82": 258,
+      "83": 3893,
+      "84": 4168,
+      "85": 4163,
+      "86": 4730,
+      "87": 4744,
+      "88": 6541
+    },
+    "csv_unique_persons": 9794,
+    "csv_duplicate_person_year": 20494,
+    "csv_duplicate_rows": 1,
+    "csv_dta_id_different_rows_in_file_order": 32054,
+    "csv_dta_schema_equal": true,
+    "csv_dta_target_values_equal": true,
+    "observations_per_person_quantiles": {
+      "0.0": 1.0,
+      "0.25": 1.0,
+      "0.5": 3.0,
+      "0.75": 6.0,
+      "1.0": 20.0
+    },
+    "consecutive_year_next_rating_pairs": 38820,
+    "next_rating_counts_on_consecutive_pairs": {
+      "1.0": 10909,
+      "2.0": 19688,
+      "3.0": 7830,
+      "4.0": 376,
+      "5.0": 17
+    },
+    "perfrat_rating_crosstab": {
+      "1.0": {
+        "1": 13263,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 731
+      },
+      "2.0": {
+        "1": 0,
+        "2": 22314,
+        "3": 0,
+        "4": 442,
+        "5": 0
+      },
+      "3.0": {
+        "1": 0,
+        "2": 0,
+        "3": 8455,
+        "4": 0,
+        "5": 0
+      },
+      "4.0": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 438,
+        "5": 0
+      },
+      "5.0": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 30
+      }
+    }
+  },
+  "derived_from_metadata": {
+    "labeled_rows": 45673,
+    "missing_rating_pct": 38.338891063979155,
+    "class5_pct_labeled": 0.06568432115254089,
+    "class5_pct_nextyear_pairs": 0.04379185986604843,
+    "rating_observed_1980_1982": 563,
+    "total_rows_1980_1982": 12320,
+    "missing_rating_pct_1980_1982": 95.4301948051948
+  },
+  "raw_data_read": false,
+  "model_training": false
+}
