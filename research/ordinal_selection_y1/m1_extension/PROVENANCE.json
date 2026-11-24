@@ -1,0 +1,285 @@
+{
+  "created_utc": "2026-11-24T09:54:12.854346+00:00",
+  "note": "Machine timestamps are local file modification times of the downloads (UTC), not original publication dates. No raw rows are published.",
+  "xlrd_wheel": {
+    "path": "local/m1_extension/tools/wheels/xlrd-2.0.2-py2.py3-none-any.whl",
+    "sha256": "ea762c3d29f4cca48d82df517b6d89fbce4db3107f9d78713e48cd321d5c9aa9",
+    "source": "PyPI xlrd==2.0.2 (pip download, preparation-time xls reader only)"
+  },
+  "sources": {
+    "ctg": {
+      "uci_id": 193,
+      "url": "https://archive.ics.uci.edu/dataset/193/cardiotocography",
+      "doi": "10.24432/C51S4N",
+      "citation": "Campos D, Bernardes J (2000) Cardiotocography [Dataset]. UCI Machine Learning Repository. Reference: Ayres de Campos D et al. (2000) SisPorto 2.0. J Matern Fetal Med 5:311-318.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "sources/uci_193/page.html",
+      "license_text": "UCI page: \"This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.\"",
+      "group": "CTG examination file (Raw Data FileName)",
+      "members": [
+        "CTG.xls"
+      ],
+      "version": "UCI zip 2023-05-22 member; 2,126 segments, 352 examination files",
+      "role": "primary",
+      "archive": "local/m1_extension/sources/uci_193/archive.zip",
+      "archive_sha256": "ba2853564e282779907242b7bd8a83265d9fc4e79bb008573967daa16677bb6c",
+      "downloaded_utc": "2026-11-24T09:39:46.551932+00:00",
+      "uci_page_sha256": "98941a437e7f6bf698b2ad838d0af108f51615b2416d160f9100a12856c325bc",
+      "uci_api_sha256": "78962df4253f7be806016fe732205ea34e17241280fb96936eeb7385b337320b",
+      "page_accessed_utc": "2026-11-24T09:34:14.664489+00:00",
+      "evidence_sha256": {
+        "sources/uci_193/page.html": "98941a437e7f6bf698b2ad838d0af108f51615b2416d160f9100a12856c325bc"
+      },
+      "prepared_table_sha256": "c1dba2fec107ed71465620cfb26ba640a7d7c6098c6c51ec58ce5274cd930a2f",
+      "splits_sha256": "15e18de508cb65d631100f685e537e6063b7c1dad02a97774a2e0bf4e405b0e1"
+    },
+    "hcv": {
+      "uci_id": 571,
+      "url": "https://archive.ics.uci.edu/dataset/571/hcv+data",
+      "doi": "10.24432/C5D612",
+      "citation": "Lichtinghagen R, Klawonn F, Hoffmann G (2020) HCV data [Dataset]. UCI Machine Learning Repository. Hoffmann GF et al. (2018) J Lab Precis Med, doi:10.21037/jlpm.2018.06.01.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "sources/uci_571/page.html",
+      "license_text": "UCI page: \"This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.\"",
+      "group": "patient number (source: instances are patients)",
+      "members": [
+        "hcvdat0.csv"
+      ],
+      "version": "615 rows; 7 suspect-donor rows excluded by protocol",
+      "role": "primary",
+      "archive": "local/m1_extension/sources/uci_571/archive.zip",
+      "archive_sha256": "0fafa2c4ae94db98b95f35cd41e9f4cedbd1e105282ab0cd7b5ed3effe5a05d8",
+      "downloaded_utc": "2026-11-24T09:39:48.723709+00:00",
+      "uci_page_sha256": "67b15a490377a00a831c6a2b5dbf39178aa5fe4260840f88773397c08c7aeee0",
+      "uci_api_sha256": "47a26434288cd00d29cb402dc6cd1ade589095cb9e272ea43983369418dc6aa1",
+      "page_accessed_utc": "2026-11-24T09:34:19.725391+00:00",
+      "evidence_sha256": {
+        "sources/uci_571/page.html": "67b15a490377a00a831c6a2b5dbf39178aa5fe4260840f88773397c08c7aeee0"
+      },
+      "prepared_table_sha256": "5aa85536a126e48f688c722877d8ddcbcbddcd2900d63f6007aa1e710ca46e16",
+      "splits_sha256": "a081e0043467980d484d54efa7954b8e3e06cafbd1799b7c63acc81f6e14a331"
+    },
+    "cirrhosis": {
+      "uci_id": 878,
+      "url": "https://archive.ics.uci.edu/dataset/878/cirrhosis+patient+survival+prediction+dataset-1",
+      "doi": "10.24432/C5R02G",
+      "citation": "Dickson E, Grambsch P, Fleming T, Fisher L, Langworthy A (1989) Cirrhosis Patient Survival Prediction [Dataset]. UCI Machine Learning Repository; Dickson et al. (1989) Hepatology, Prognosis in primary biliary cirrhosis: model for decision making.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "sources/uci_878/page.html",
+      "license_text": "UCI page: \"This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.\"",
+      "group": "patient ID",
+      "members": [
+        "cirrhosis.csv"
+      ],
+      "version": "418 Mayo PBC patients; 6 missing Stage excluded",
+      "role": "primary",
+      "archive": "local/m1_extension/sources/uci_878/archive.zip",
+      "archive_sha256": "f60d6eb4591cd5aa4a65ca6d3f1b054a9b09203ab219730288743cc2103655b8",
+      "downloaded_utc": "2026-11-24T09:39:49.387282+00:00",
+      "uci_page_sha256": "9005533b46cd2f3e5d61639a04f9e5555ccf36a69411a3cc2365b31ea1027764",
+      "uci_api_sha256": "65e8909db86c8490c60fede7aa38d879a87173008b23b893b2a19b48ce17f6a8",
+      "page_accessed_utc": "2026-11-24T09:34:22.515787+00:00",
+      "evidence_sha256": {
+        "sources/uci_878/page.html": "9005533b46cd2f3e5d61639a04f9e5555ccf36a69411a3cc2365b31ea1027764"
+      },
+      "prepared_table_sha256": "d0fe5afc79318de2cb3a92b3375fe238a8ff1bdb243d3d51458d5c1dc26066e7",
+      "splits_sha256": "30246409f9e6de96d57bce4a8f0c61254bad0c0ad54895c0f7807f909f012d4a"
+    },
+    "support2": {
+      "uci_id": 880,
+      "url": "https://archive.ics.uci.edu/dataset/880/support2",
+      "doi": "10.3886/ICPSR02957.v2 (linked by UCI)",
+      "citation": "Knaus WA, Harrell FE, Lynn J et al. (1995) The SUPPORT prognostic model. Ann Intern Med 122:191-203. Data obtained from http://hbiostat.org/data courtesy of the Vanderbilt University Department of Biostatistics (via UCI 880 copy).",
+      "license": "distributor permission (hbiostat.org/data); UCI states no licence",
+      "license_evidence": "sources/hbiostat/data_.html",
+      "license_text": "hbiostat.org/data: \"Permission is granted to anyone wishing to use the data sets provided here.\" Reference original paper and note the Vanderbilt acknowledgement. UCI page: \"See linked dataset for licensing information.\"",
+      "order_evidence": "sources/hbiostat/data_repo_supportdesc.html: \"The ordinal functional disability variable sfdm2 has the following levels (in order)\"; also \"be sure not to use aps, sps, surv2m, surv6m as predictors\".",
+      "group": "patient id",
+      "members": [
+        "data.csv (UCI static/public/880/data.csv)"
+      ],
+      "version": "9,105 patients; 7,705 with sfdm2; hash subsample 5,000",
+      "role": "primary",
+      "archive": "local/m1_extension/sources/uci_880/data.csv",
+      "archive_sha256": "9da794bbd5c3a6a816e677cc17535e58c122d9ef4cbefd404489330a9f9cd2de",
+      "downloaded_utc": "2026-11-24T09:40:02.096406+00:00",
+      "uci_page_sha256": "7b4ca174caf0e5bf858c538abdaeb53956f2d923be974a82b0ac1ebcd4cdc554",
+      "uci_api_sha256": "254355bcbce418924c864aa22a7189900d932e6e3cecd1b497c8d91cfa6a9e1a",
+      "page_accessed_utc": "2026-11-24T09:37:42.222178+00:00",
+      "evidence_sha256": {
+        "sources/hbiostat/data_.html": "b8129d3fea4df3e9383216fe83df41069750f19a1b00af0794d7d0b0402e4360",
+        "sources/hbiostat/data_repo_supportdesc.html": "2f02cabd0a76bf2f2aef4c6bea0ba2c1e9db72229f5402ba558bf55bc27308b7"
+      },
+      "prepared_table_sha256": "c0e70a63f07e83e424de896cc16155e1964907c0f9a345fff04e28cd1f7bf437",
+      "splits_sha256": "5905fed9507bc0bcdcb8b2efb90c0bda56b060231665898f36943fe3f7d96a1a"
+    },
+    "diabetes130": {
+      "uci_id": 296,
+      "url": "https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999-2008",
+      "doi": "10.24432/C5230J",
+      "citation": "Strack B, DeShazo JP, Gennings C, Olmo JL, Ventura S, Cios KJ, Clore JN (2014) Impact of HbA1c measurement on hospital readmission rates. BioMed Research International 2014:781670.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "sources/uci_296/page.html",
+      "license_text": "UCI page: \"This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.\"",
+      "group": "patient_nbr",
+      "members": [
+        "diabetic_data.csv",
+        "IDS_mapping.csv"
+      ],
+      "version": "101,766 encounters; expired/hospice discharges excluded; hash subsample <=5,000 encounters",
+      "role": "control_source_binned",
+      "archive": "local/m1_extension/sources/uci_296/archive.zip",
+      "archive_sha256": "f82ac129da2ddd2299391ff6fbae3a6a58b3edcf59ac9d7bd480c00fe453112a",
+      "downloaded_utc": "2026-11-24T09:39:51.947460+00:00",
+      "uci_page_sha256": "12a216f58c910a2bddf9e6406d62759bf6ce30ea1d37e41d8a1da76213732b8e",
+      "uci_api_sha256": "6e6e0934d175afe24f54f2199f9895eab21844205fe46be7970c106a104725e9",
+      "page_accessed_utc": "2026-11-24T09:34:25.430237+00:00",
+      "evidence_sha256": {
+        "sources/uci_296/page.html": "12a216f58c910a2bddf9e6406d62759bf6ce30ea1d37e41d8a1da76213732b8e"
+      },
+      "prepared_table_sha256": "57ceb8b06c26dc0f3ca4a0cda94f9b2857c8fb2835e8fbb9dbcaaebd5a6b268e",
+      "splits_sha256": "1cd07cf693a0acb93bd7e32073b6dca413c98321cd998450465b7deee378f6d6"
+    },
+    "student_por": {
+      "uci_id": 320,
+      "url": "https://archive.ics.uci.edu/dataset/320/student+performance",
+      "doi": "10.24432/C5TG7T",
+      "citation": "Cortez P, Silva A (2008) Using data mining to predict secondary school student performance. Proc. 5th FUBUTEC, 5-12. UCI Student Performance [Dataset], Cortez P (2008).",
+      "license": "CC-BY-4.0",
+      "license_evidence": "sources/uci_320/page.html",
+      "license_text": "UCI page: \"This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.\"",
+      "group": "exact predictor duplicate (none found)",
+      "order_evidence": "sources/cortez2008/paper.pdf Table 2 (five-level system: I 16-20, II 14-15, III 12-13, IV 10-11, V 0-9); paper from repositorium.uminho.pt handle 1822/8024",
+      "members": [
+        "student.zip/student-por.csv"
+      ],
+      "version": "Portuguese table, 649 students",
+      "role": "control_source_binned",
+      "archive": "local/m1_extension/sources/uci_320/archive.zip",
+      "archive_sha256": "82ae9d66437b9808df42e8c89d2bb179c46e9cfbcf06f38abc1d20b3b747e177",
+      "downloaded_utc": "2026-11-24T09:39:52.971392+00:00",
+      "uci_page_sha256": "bd420959f8d71e1bcdc5b460d9f0e23da3cd24a38948a8dcec90ded48318178d",
+      "uci_api_sha256": "cc52f5ef08ce63f13035d9290ba3c195b89e5bba33bece83288b0d97d421aaca",
+      "page_accessed_utc": "2026-11-24T09:34:30.673470+00:00",
+      "evidence_sha256": {
+        "sources/uci_320/page.html": "bd420959f8d71e1bcdc5b460d9f0e23da3cd24a38948a8dcec90ded48318178d",
+        "sources/cortez2008/paper.pdf": "becfbe09f75e4844fb54c52e2833bad958581e6fe238ee324f6fd1c1505e85a6"
+      },
+      "prepared_table_sha256": "9e67dd1d3d99da8fa7217e793b89448cea69f932b116d379c841ce070b23d568",
+      "splits_sha256": "914a3e34f875c14a59ca9f7953250fccdfb9d2f62b8006ff2da000a1fedc0727"
+    },
+    "npha": {
+      "uci_id": 936,
+      "url": "https://archive.ics.uci.edu/dataset/936/national+poll+on+healthy+aging+(npha)",
+      "doi": "10.3886/ICPSR37305.v1 (original NPHA, linked by UCI)",
+      "citation": "Malani PN, Kullgren J, Solway E. National Poll on Healthy Aging (NPHA), United States, April 2017. ICPSR [distributor] 2019. doi:10.3886/ICPSR37305.v1 (UCI 936 subset).",
+      "license": "CC-BY-4.0",
+      "license_evidence": "sources/uci_936/page.html",
+      "license_text": "UCI page: \"This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.\"",
+      "group": "exact predictor duplicate",
+      "members": [
+        "NPHA-doctor-visits.csv"
+      ],
+      "version": "UCI subset 714 complete-case respondents (donor preprocessing)",
+      "role": "control_source_binned",
+      "archive": "local/m1_extension/sources/uci_936/archive.zip",
+      "archive_sha256": "2696c9b8c15ae5c380f2f360796f64972288f74cdbe142eb14f21e989a1502f1",
+      "downloaded_utc": "2026-11-24T09:39:53.651244+00:00",
+      "uci_page_sha256": "b7a3eed5188e8442fbc2bf17669a09be37de264aa3a48fa57cdf9bddf27936b2",
+      "uci_api_sha256": "41b0f5785a4b16144dfa6ddf3f9a93621a865418e0a0ec7e3a01da41bb68fd24",
+      "page_accessed_utc": "2026-11-24T09:37:44.673627+00:00",
+      "evidence_sha256": {
+        "sources/uci_936/page.html": "b7a3eed5188e8442fbc2bf17669a09be37de264aa3a48fa57cdf9bddf27936b2"
+      },
+      "prepared_table_sha256": "ed701c4abd6cd2d72ed9b7240e9cec0bd5cafe42b19620aa3d57898323ed362b",
+      "splits_sha256": "9446e315b63d87e843cecc2cf2571ad1ca16afcd8ffdbf9c66a0d6a7c46d2c28"
+    }
+  },
+  "blocked": {
+    "maternal_health_risk": {
+      "uci_id": 863,
+      "url": "https://archive.ics.uci.edu/dataset/863/maternal+health+risk",
+      "doi": "10.24432/C5DP5D",
+      "license": "CC-BY-4.0",
+      "archive": "sources/uci_863/archive.zip",
+      "evidence": "sources/uci_863/page.html",
+      "class_counts": {
+        "low risk": 406,
+        "mid risk": 336,
+        "high risk": 272
+      },
+      "reason": "E2/E4/E7: source defines RiskLevel as \"Predicted Risk Intensity Level during pregnancy considering the previous attribute\" (label produced from the predictors by an undocumented process); 1,014 rows vs 1,013 stated; 416 exact-predictor groups, 35 with conflicting labels.",
+      "archive_sha256": "84f0de0d647bb217ff7224ff265afadf27eb65c5483baaf1cfcc59abadeb75b1",
+      "downloaded_utc": "2026-11-24T09:39:47.671233+00:00",
+      "uci_page_sha256": "9695fea147c1d302028fc335a807ff5c1967409d17e735b0a0d25e7c1048ff09",
+      "page_accessed_utc": "2026-11-24T09:34:17.324165+00:00"
+    },
+    "cdc_diabetes_health_indicators": {
+      "uci_id": 891,
+      "url": "https://archive.ics.uci.edu/dataset/891/cdc+diabetes+health+indicators",
+      "doi": "10.24432/C53919",
+      "license": "not stated (UCI: See linked dataset)",
+      "archive": "sources/uci_891/data.csv",
+      "evidence": "sources/uci_891/page.html; CDC https://www.cdc.gov/brfss/annual_data/annual_2014.html (HTTP 403 to curl; read in browser 2026-11-24, no licence statement, 464,664 records)",
+      "class_counts": {
+        "GenHlth 1": 45299,
+        "2": 89084,
+        "3": 75646,
+        "4": 31570,
+        "5": 12081
+      },
+      "reason": "E1: no licence on UCI page; linked CDC 2014 page states none and lists 464,664 records, while UCI table has 253,680 rows of undocumented derivation (UCI also links a Kaggle derivative); GenHlth would be a repurposed feature; survey weights/design absent.",
+      "archive_sha256": "9f71fda9d4ae5f4878c99b9233b6a16accfa9a17c194116a6b78100540934964",
+      "downloaded_utc": "2026-11-24T09:40:31.283336+00:00",
+      "uci_page_sha256": "8529a68474872bd0712712b744417d85fbb5222d7c84ed488984bc08f0d1c940",
+      "page_accessed_utc": "2026-11-24T09:34:27.964227+00:00"
+    },
+    "higher_education_students_performance": {
+      "uci_id": 856,
+      "url": "https://archive.ics.uci.edu/dataset/856/higher+education+students+performance+evaluation",
+      "doi": "10.24432/C51G82",
+      "license": "CC-BY-4.0",
+      "archive": "sources/uci_856/archive.zip",
+      "evidence": "sources/uci_856/page.html",
+      "class_counts": {
+        "0": 8,
+        "1": 35,
+        "2": 24,
+        "3": 21,
+        "4": 10,
+        "5": 17,
+        "6": 13,
+        "7": 17
+      },
+      "reason": "E5: lowest grade (Fail, GRADE 0) has 8 students < 20; no label merging.",
+      "archive_sha256": "bbf757cd90b8312e9bfadb9192b05413f939a7c20e5f880a0d7e97064fecf557",
+      "downloaded_utc": "2026-11-24T09:39:54.311759+00:00",
+      "uci_page_sha256": "16bb6286f3c95a6c969ee2e59c71ae48cd36b683101410f26804910e2aece919",
+      "page_accessed_utc": "2026-11-24T09:37:47.158641+00:00"
+    },
+    "heart_disease": {
+      "uci_id": 45,
+      "url": "https://archive.ics.uci.edu/dataset/45/heart+disease",
+      "doi": "10.24432/C52P4X",
+      "license": "CC-BY-4.0",
+      "archive": "sources/uci_45/archive.zip",
+      "evidence": "sources/uci_45/page.html",
+      "class_counts": {
+        "cleveland num 0": 164,
+        "1": 55,
+        "2": 36,
+        "3": 35,
+        "4": 13
+      },
+      "reason": "E2/E5: source documents only absence (0) vs presence (1-4); order/meaning of 1-4 undocumented; Cleveland endpoint 4 has 13 patients; Hungarian file codes only 0/1, so sites cannot be pooled.",
+      "archive_sha256": "b17cd273da9ce1caa4710fce80227ea454d4dbf9fcbc8e6a9121672751563adc",
+      "downloaded_utc": "2026-11-24T09:47:41.156562+00:00",
+      "uci_page_sha256": "8406d163b74e5bea7ebcd75bc6b5151884afa75af7ff2c6cac90d3638c26b002",
+      "page_accessed_utc": "2026-11-24T09:37:49.693361+00:00"
+    }
+  },
+  "not_used": {
+    "student_performance_raw_G3": "Raw G3 0..20 not used as primary: only the source five-level scheme is used, as a control.",
+    "student_mat": "382 students overlap the Portuguese table; Math table excluded to avoid person overlap."
+  }
+}

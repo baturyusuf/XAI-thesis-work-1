@@ -1,0 +1,867 @@
+{
+  "prepared_utc": "2026-11-24T09:52:39.625333+00:00",
+  "fits": 0,
+  "datasets": {
+    "ctg": {
+      "status": "ELIGIBLE_M1",
+      "role": "primary",
+      "rows": 2126,
+      "groups": 352,
+      "class_counts": [
+        1655,
+        295,
+        176
+      ],
+      "class_groups": [
+        275,
+        123,
+        50
+      ],
+      "endpoint_groups": [
+        275,
+        50
+      ],
+      "missing": {
+        "LB": 0,
+        "AC": 0,
+        "FM": 0,
+        "UC": 0,
+        "DL": 0,
+        "DS": 0,
+        "DP": 0,
+        "ASTV": 0,
+        "MSTV": 0,
+        "ALTV": 0,
+        "MLTV": 0,
+        "Width": 0,
+        "Min": 0,
+        "Max": 0,
+        "Nmax": 0,
+        "Nzeros": 0,
+        "Mode": 0,
+        "Mean": 0,
+        "Median": 0,
+        "Variance": 0,
+        "Tendency": 0
+      },
+      "features": [
+        "LB",
+        "AC",
+        "FM",
+        "UC",
+        "DL",
+        "DS",
+        "DP",
+        "ASTV",
+        "MSTV",
+        "ALTV",
+        "MLTV",
+        "Width",
+        "Min",
+        "Max",
+        "Nmax",
+        "Nzeros",
+        "Mode",
+        "Mean",
+        "Median",
+        "Variance",
+        "Tendency"
+      ],
+      "numeric": [
+        "LB",
+        "AC",
+        "FM",
+        "UC",
+        "DL",
+        "DS",
+        "DP",
+        "ASTV",
+        "MSTV",
+        "ALTV",
+        "MLTV",
+        "Width",
+        "Min",
+        "Max",
+        "Nmax",
+        "Nzeros",
+        "Mode",
+        "Mean",
+        "Median",
+        "Variance",
+        "Tendency"
+      ],
+      "categorical": [],
+      "labels": {
+        "raw": [
+          "1",
+          "2",
+          "3"
+        ],
+        "names": [
+          "normal",
+          "suspect",
+          "pathologic"
+        ],
+        "direction": "NSP 1 normal < 2 suspect < 3 pathologic (expert consensus fetal state)"
+      },
+      "archive_sha256": "ba2853564e282779907242b7bd8a83265d9fc4e79bb008573967daa16677bb6c",
+      "archive": "local/m1_extension/sources/uci_193/archive.zip",
+      "table_sha256": "c1dba2fec107ed71465620cfb26ba640a7d7c6098c6c51ec58ce5274cd930a2f",
+      "splits_sha256": "15e18de508cb65d631100f685e537e6063b7c1dad02a97774a2e0bf4e405b0e1",
+      "effective_split_seeds": [
+        20261124,
+        20261125
+      ]
+    },
+    "hcv": {
+      "status": "ELIGIBLE_M1",
+      "role": "primary",
+      "rows": 608,
+      "groups": 608,
+      "class_counts": [
+        533,
+        24,
+        21,
+        30
+      ],
+      "class_groups": [
+        533,
+        24,
+        21,
+        30
+      ],
+      "endpoint_groups": [
+        533,
+        30
+      ],
+      "missing": {
+        "Age": 0,
+        "ALB": 1,
+        "ALP": 18,
+        "ALT": 1,
+        "AST": 0,
+        "BIL": 0,
+        "CHE": 0,
+        "CHOL": 10,
+        "CREA": 0,
+        "GGT": 0,
+        "PROT": 1,
+        "Sex": 0
+      },
+      "features": [
+        "Age",
+        "ALB",
+        "ALP",
+        "ALT",
+        "AST",
+        "BIL",
+        "CHE",
+        "CHOL",
+        "CREA",
+        "GGT",
+        "PROT",
+        "Sex"
+      ],
+      "numeric": [
+        "Age",
+        "ALB",
+        "ALP",
+        "ALT",
+        "AST",
+        "BIL",
+        "CHE",
+        "CHOL",
+        "CREA",
+        "GGT",
+        "PROT"
+      ],
+      "categorical": [
+        "Sex"
+      ],
+      "labels": {
+        "raw": [
+          "0=Blood Donor",
+          "1=Hepatitis",
+          "2=Fibrosis",
+          "3=Cirrhosis"
+        ],
+        "names": [
+          "blood donor",
+          "hepatitis",
+          "fibrosis",
+          "cirrhosis"
+        ],
+        "direction": "donor < hepatitis < fibrosis < cirrhosis; 0s suspect donor excluded"
+      },
+      "archive_sha256": "0fafa2c4ae94db98b95f35cd41e9f4cedbd1e105282ab0cd7b5ed3effe5a05d8",
+      "archive": "local/m1_extension/sources/uci_571/archive.zip",
+      "table_sha256": "5aa85536a126e48f688c722877d8ddcbcbddcd2900d63f6007aa1e710ca46e16",
+      "splits_sha256": "a081e0043467980d484d54efa7954b8e3e06cafbd1799b7c63acc81f6e14a331",
+      "effective_split_seeds": [
+        20261124,
+        20261125
+      ]
+    },
+    "cirrhosis": {
+      "status": "ELIGIBLE_M1",
+      "role": "primary",
+      "rows": 412,
+      "groups": 412,
+      "class_counts": [
+        21,
+        92,
+        155,
+        144
+      ],
+      "class_groups": [
+        21,
+        92,
+        155,
+        144
+      ],
+      "endpoint_groups": [
+        21,
+        144
+      ],
+      "missing": {
+        "Age": 0,
+        "Bilirubin": 0,
+        "Cholesterol": 128,
+        "Albumin": 0,
+        "Copper": 102,
+        "Alk_Phos": 100,
+        "SGOT": 100,
+        "Tryglicerides": 130,
+        "Platelets": 11,
+        "Prothrombin": 2,
+        "Sex": 0,
+        "Ascites": 100,
+        "Hepatomegaly": 100,
+        "Spiders": 100,
+        "Edema": 0
+      },
+      "features": [
+        "Age",
+        "Bilirubin",
+        "Cholesterol",
+        "Albumin",
+        "Copper",
+        "Alk_Phos",
+        "SGOT",
+        "Tryglicerides",
+        "Platelets",
+        "Prothrombin",
+        "Sex",
+        "Ascites",
+        "Hepatomegaly",
+        "Spiders",
+        "Edema"
+      ],
+      "numeric": [
+        "Age",
+        "Bilirubin",
+        "Cholesterol",
+        "Albumin",
+        "Copper",
+        "Alk_Phos",
+        "SGOT",
+        "Tryglicerides",
+        "Platelets",
+        "Prothrombin"
+      ],
+      "categorical": [
+        "Sex",
+        "Ascites",
+        "Hepatomegaly",
+        "Spiders",
+        "Edema"
+      ],
+      "labels": {
+        "raw": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "names": [
+          "stage 1",
+          "stage 2",
+          "stage 3",
+          "stage 4"
+        ],
+        "direction": "histologic stage 1 < 2 < 3 < 4; missing stage excluded"
+      },
+      "archive_sha256": "f60d6eb4591cd5aa4a65ca6d3f1b054a9b09203ab219730288743cc2103655b8",
+      "archive": "local/m1_extension/sources/uci_878/archive.zip",
+      "table_sha256": "d0fe5afc79318de2cb3a92b3375fe238a8ff1bdb243d3d51458d5c1dc26066e7",
+      "splits_sha256": "30246409f9e6de96d57bce4a8f0c61254bad0c0ad54895c0f7807f909f012d4a",
+      "effective_split_seeds": [
+        20261124,
+        20261125
+      ]
+    },
+    "support2": {
+      "status": "ELIGIBLE_M1",
+      "role": "primary",
+      "rows": 5000,
+      "groups": 5000,
+      "class_counts": [
+        1983,
+        578,
+        357,
+        28,
+        2054
+      ],
+      "class_groups": [
+        1983,
+        578,
+        357,
+        28,
+        2054
+      ],
+      "endpoint_groups": [
+        1983,
+        2054
+      ],
+      "missing": {
+        "age": 0,
+        "num.co": 0,
+        "edu": 710,
+        "scoma": 0,
+        "hday": 0,
+        "diabetes": 0,
+        "dementia": 0,
+        "meanbp": 1,
+        "wblc": 114,
+        "hrt": 1,
+        "resp": 1,
+        "temp": 1,
+        "pafi": 1239,
+        "alb": 1802,
+        "bili": 1387,
+        "crea": 38,
+        "sod": 1,
+        "ph": 1214,
+        "glucose": 2425,
+        "bun": 2364,
+        "urine": 2644,
+        "adlp": 3052,
+        "adls": 1336,
+        "sex": 0,
+        "dzgroup": 0,
+        "dzclass": 0,
+        "income": 1471,
+        "race": 21,
+        "ca": 0
+      },
+      "features": [
+        "age",
+        "num.co",
+        "edu",
+        "scoma",
+        "hday",
+        "diabetes",
+        "dementia",
+        "meanbp",
+        "wblc",
+        "hrt",
+        "resp",
+        "temp",
+        "pafi",
+        "alb",
+        "bili",
+        "crea",
+        "sod",
+        "ph",
+        "glucose",
+        "bun",
+        "urine",
+        "adlp",
+        "adls",
+        "sex",
+        "dzgroup",
+        "dzclass",
+        "income",
+        "race",
+        "ca"
+      ],
+      "numeric": [
+        "age",
+        "num.co",
+        "edu",
+        "scoma",
+        "hday",
+        "diabetes",
+        "dementia",
+        "meanbp",
+        "wblc",
+        "hrt",
+        "resp",
+        "temp",
+        "pafi",
+        "alb",
+        "bili",
+        "crea",
+        "sod",
+        "ph",
+        "glucose",
+        "bun",
+        "urine",
+        "adlp",
+        "adls"
+      ],
+      "categorical": [
+        "sex",
+        "dzgroup",
+        "dzclass",
+        "income",
+        "race",
+        "ca"
+      ],
+      "labels": {
+        "raw": [
+          "no(M2 and SIP pres)",
+          "adl>=4 (>=5 if sur)",
+          "SIP>=30",
+          "Coma or Intub",
+          "<2 mo. follow-up"
+        ],
+        "names": [
+          "no disability",
+          "ADL disability",
+          "SIP>=30",
+          "coma/intubated",
+          "died <2 months"
+        ],
+        "direction": "sfdm2 levels 1..5 in hbiostat documented order; missing excluded"
+      },
+      "archive_sha256": "9da794bbd5c3a6a816e677cc17535e58c122d9ef4cbefd404489330a9f9cd2de",
+      "archive": "local/m1_extension/sources/uci_880/data.csv",
+      "table_sha256": "c0e70a63f07e83e424de896cc16155e1964907c0f9a345fff04e28cd1f7bf437",
+      "splits_sha256": "5905fed9507bc0bcdcb8b2efb90c0bda56b060231665898f36943fe3f7d96a1a",
+      "effective_split_seeds": [
+        20261124,
+        20261125
+      ]
+    },
+    "diabetes130": {
+      "status": "ELIGIBLE_M1",
+      "role": "control_source_binned",
+      "rows": 5000,
+      "groups": 3471,
+      "class_counts": [
+        2564,
+        1796,
+        640
+      ],
+      "class_groups": [
+        2563,
+        1209,
+        476
+      ],
+      "endpoint_groups": [
+        2563,
+        476
+      ],
+      "missing": {
+        "time_in_hospital": 0,
+        "num_lab_procedures": 0,
+        "num_procedures": 0,
+        "num_medications": 0,
+        "number_outpatient": 0,
+        "number_emergency": 0,
+        "number_inpatient": 0,
+        "number_diagnoses": 0,
+        "race": 94,
+        "gender": 0,
+        "age": 0,
+        "admission_type_id": 0,
+        "discharge_disposition_id": 0,
+        "admission_source_id": 0,
+        "max_glu_serum": 0,
+        "A1Cresult": 0,
+        "metformin": 0,
+        "repaglinide": 0,
+        "nateglinide": 0,
+        "chlorpropamide": 0,
+        "glimepiride": 0,
+        "acetohexamide": 0,
+        "glipizide": 0,
+        "glyburide": 0,
+        "tolbutamide": 0,
+        "pioglitazone": 0,
+        "rosiglitazone": 0,
+        "acarbose": 0,
+        "miglitol": 0,
+        "troglitazone": 0,
+        "tolazamide": 0,
+        "examide": 0,
+        "citoglipton": 0,
+        "insulin": 0,
+        "glyburide-metformin": 0,
+        "glipizide-metformin": 0,
+        "glimepiride-pioglitazone": 0,
+        "metformin-rosiglitazone": 0,
+        "metformin-pioglitazone": 0,
+        "change": 0,
+        "diabetesMed": 0
+      },
+      "features": [
+        "time_in_hospital",
+        "num_lab_procedures",
+        "num_procedures",
+        "num_medications",
+        "number_outpatient",
+        "number_emergency",
+        "number_inpatient",
+        "number_diagnoses",
+        "race",
+        "gender",
+        "age",
+        "admission_type_id",
+        "discharge_disposition_id",
+        "admission_source_id",
+        "max_glu_serum",
+        "A1Cresult",
+        "metformin",
+        "repaglinide",
+        "nateglinide",
+        "chlorpropamide",
+        "glimepiride",
+        "acetohexamide",
+        "glipizide",
+        "glyburide",
+        "tolbutamide",
+        "pioglitazone",
+        "rosiglitazone",
+        "acarbose",
+        "miglitol",
+        "troglitazone",
+        "tolazamide",
+        "examide",
+        "citoglipton",
+        "insulin",
+        "glyburide-metformin",
+        "glipizide-metformin",
+        "glimepiride-pioglitazone",
+        "metformin-rosiglitazone",
+        "metformin-pioglitazone",
+        "change",
+        "diabetesMed"
+      ],
+      "numeric": [
+        "time_in_hospital",
+        "num_lab_procedures",
+        "num_procedures",
+        "num_medications",
+        "number_outpatient",
+        "number_emergency",
+        "number_inpatient",
+        "number_diagnoses"
+      ],
+      "categorical": [
+        "race",
+        "gender",
+        "age",
+        "admission_type_id",
+        "discharge_disposition_id",
+        "admission_source_id",
+        "max_glu_serum",
+        "A1Cresult",
+        "metformin",
+        "repaglinide",
+        "nateglinide",
+        "chlorpropamide",
+        "glimepiride",
+        "acetohexamide",
+        "glipizide",
+        "glyburide",
+        "tolbutamide",
+        "pioglitazone",
+        "rosiglitazone",
+        "acarbose",
+        "miglitol",
+        "troglitazone",
+        "tolazamide",
+        "examide",
+        "citoglipton",
+        "insulin",
+        "glyburide-metformin",
+        "glipizide-metformin",
+        "glimepiride-pioglitazone",
+        "metformin-rosiglitazone",
+        "metformin-pioglitazone",
+        "change",
+        "diabetesMed"
+      ],
+      "labels": {
+        "raw": [
+          "NO",
+          ">30",
+          "<30"
+        ],
+        "names": [
+          "no readmission",
+          "readmitted >30 days",
+          "readmitted <30 days"
+        ],
+        "direction": "source-binned days to readmission (control)"
+      },
+      "archive_sha256": "f82ac129da2ddd2299391ff6fbae3a6a58b3edcf59ac9d7bd480c00fe453112a",
+      "archive": "local/m1_extension/sources/uci_296/archive.zip",
+      "table_sha256": "57ceb8b06c26dc0f3ca4a0cda94f9b2857c8fb2835e8fbb9dbcaaebd5a6b268e",
+      "splits_sha256": "1cd07cf693a0acb93bd7e32073b6dca413c98321cd998450465b7deee378f6d6",
+      "effective_split_seeds": [
+        20261124,
+        20261125
+      ]
+    },
+    "student_por": {
+      "status": "ELIGIBLE_M1",
+      "role": "control_source_binned",
+      "rows": 649,
+      "groups": 649,
+      "class_counts": [
+        100,
+        201,
+        154,
+        112,
+        82
+      ],
+      "class_groups": [
+        100,
+        201,
+        154,
+        112,
+        82
+      ],
+      "endpoint_groups": [
+        100,
+        82
+      ],
+      "missing": {
+        "age": 0,
+        "Medu": 0,
+        "Fedu": 0,
+        "traveltime": 0,
+        "studytime": 0,
+        "failures": 0,
+        "famrel": 0,
+        "freetime": 0,
+        "goout": 0,
+        "Dalc": 0,
+        "Walc": 0,
+        "health": 0,
+        "absences": 0,
+        "school": 0,
+        "sex": 0,
+        "address": 0,
+        "famsize": 0,
+        "Pstatus": 0,
+        "Mjob": 0,
+        "Fjob": 0,
+        "reason": 0,
+        "guardian": 0,
+        "schoolsup": 0,
+        "famsup": 0,
+        "paid": 0,
+        "activities": 0,
+        "nursery": 0,
+        "higher": 0,
+        "internet": 0,
+        "romantic": 0
+      },
+      "features": [
+        "age",
+        "Medu",
+        "Fedu",
+        "traveltime",
+        "studytime",
+        "failures",
+        "famrel",
+        "freetime",
+        "goout",
+        "Dalc",
+        "Walc",
+        "health",
+        "absences",
+        "school",
+        "sex",
+        "address",
+        "famsize",
+        "Pstatus",
+        "Mjob",
+        "Fjob",
+        "reason",
+        "guardian",
+        "schoolsup",
+        "famsup",
+        "paid",
+        "activities",
+        "nursery",
+        "higher",
+        "internet",
+        "romantic"
+      ],
+      "numeric": [
+        "age",
+        "Medu",
+        "Fedu",
+        "traveltime",
+        "studytime",
+        "failures",
+        "famrel",
+        "freetime",
+        "goout",
+        "Dalc",
+        "Walc",
+        "health",
+        "absences"
+      ],
+      "categorical": [
+        "school",
+        "sex",
+        "address",
+        "famsize",
+        "Pstatus",
+        "Mjob",
+        "Fjob",
+        "reason",
+        "guardian",
+        "schoolsup",
+        "famsup",
+        "paid",
+        "activities",
+        "nursery",
+        "higher",
+        "internet",
+        "romantic"
+      ],
+      "labels": {
+        "raw": [
+          "V",
+          "IV",
+          "III",
+          "II",
+          "I"
+        ],
+        "names": [
+          "fail 0-9",
+          "sufficient 10-11",
+          "satisfactory 12-13",
+          "good 14-15",
+          "excellent 16-20"
+        ],
+        "direction": "Cortez & Silva 2008 Table 2 five-level G3 scheme (control)"
+      },
+      "archive_sha256": "82ae9d66437b9808df42e8c89d2bb179c46e9cfbcf06f38abc1d20b3b747e177",
+      "archive": "local/m1_extension/sources/uci_320/archive.zip",
+      "table_sha256": "9e67dd1d3d99da8fa7217e793b89448cea69f932b116d379c841ce070b23d568",
+      "splits_sha256": "914a3e34f875c14a59ca9f7953250fccdfb9d2f62b8006ff2da000a1fedc0727",
+      "effective_split_seeds": [
+        20261124,
+        20261125
+      ]
+    },
+    "npha": {
+      "status": "ELIGIBLE_M1",
+      "role": "control_source_binned",
+      "rows": 714,
+      "groups": 634,
+      "class_counts": [
+        131,
+        372,
+        211
+      ],
+      "class_groups": [
+        128,
+        340,
+        204
+      ],
+      "endpoint_groups": [
+        128,
+        204
+      ],
+      "missing": {
+        "Age": 0,
+        "Phyiscal Health": 0,
+        "Mental Health": 0,
+        "Dental Health": 0,
+        "Employment": 0,
+        "Stress Keeps Patient from Sleeping": 0,
+        "Medication Keeps Patient from Sleeping": 0,
+        "Pain Keeps Patient from Sleeping": 0,
+        "Bathroom Needs Keeps Patient from Sleeping": 0,
+        "Uknown Keeps Patient from Sleeping": 0,
+        "Trouble Sleeping": 0,
+        "Prescription Sleep Medication": 0,
+        "Race": 0,
+        "Gender": 0
+      },
+      "features": [
+        "Age",
+        "Phyiscal Health",
+        "Mental Health",
+        "Dental Health",
+        "Employment",
+        "Stress Keeps Patient from Sleeping",
+        "Medication Keeps Patient from Sleeping",
+        "Pain Keeps Patient from Sleeping",
+        "Bathroom Needs Keeps Patient from Sleeping",
+        "Uknown Keeps Patient from Sleeping",
+        "Trouble Sleeping",
+        "Prescription Sleep Medication",
+        "Race",
+        "Gender"
+      ],
+      "numeric": [],
+      "categorical": [
+        "Age",
+        "Phyiscal Health",
+        "Mental Health",
+        "Dental Health",
+        "Employment",
+        "Stress Keeps Patient from Sleeping",
+        "Medication Keeps Patient from Sleeping",
+        "Pain Keeps Patient from Sleeping",
+        "Bathroom Needs Keeps Patient from Sleeping",
+        "Uknown Keeps Patient from Sleeping",
+        "Trouble Sleeping",
+        "Prescription Sleep Medication",
+        "Race",
+        "Gender"
+      ],
+      "labels": {
+        "raw": [
+          "1",
+          "2",
+          "3"
+        ],
+        "names": [
+          "0-1 doctors",
+          "2-3 doctors",
+          "4+ doctors"
+        ],
+        "direction": "source-binned count of doctors visited (control)"
+      },
+      "archive_sha256": "2696c9b8c15ae5c380f2f360796f64972288f74cdbe142eb14f21e989a1502f1",
+      "archive": "local/m1_extension/sources/uci_936/archive.zip",
+      "table_sha256": "ed701c4abd6cd2d72ed9b7240e9cec0bd5cafe42b19620aa3d57898323ed362b",
+      "splits_sha256": "9446e315b63d87e843cecc2cf2571ad1ca16afcd8ffdbf9c66a0d6a7c46d2c28",
+      "effective_split_seeds": [
+        20261124,
+        20261125
+      ]
+    }
+  },
+  "blocked_before_preparation": {
+    "maternal_health_risk": "E2/E4/E7: source defines RiskLevel as \"Predicted Risk Intensity Level during pregnancy considering the previous attribute\" (label produced from the predictors by an undocumented process); 1,014 rows vs 1,013 stated; 416 exact-predictor groups, 35 with conflicting labels.",
+    "cdc_diabetes_health_indicators": "E1: no licence on UCI page; linked CDC 2014 page states none and lists 464,664 records, while UCI table has 253,680 rows of undocumented derivation (UCI also links a Kaggle derivative); GenHlth would be a repurposed feature; survey weights/design absent.",
+    "higher_education_students_performance": "E5: lowest grade (Fail, GRADE 0) has 8 students < 20; no label merging.",
+    "heart_disease": "E2/E5: source documents only absence (0) vs presence (1-4); order/meaning of 1-4 undocumented; Cleveland endpoint 4 has 13 patients; Hungarian file codes only 0/1, so sites cannot be pooled."
+  },
+  "not_used": {
+    "student_performance_raw_G3": "Raw G3 0..20 not used as primary: only the source five-level scheme is used, as a control.",
+    "student_mat": "382 students overlap the Portuguese table; Math table excluded to avoid person overlap."
+  }
+}
