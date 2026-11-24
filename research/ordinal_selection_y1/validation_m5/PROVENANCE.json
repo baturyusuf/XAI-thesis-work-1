@@ -1,0 +1,85 @@
+{
+ "downloaded_utc": "2026-11-24T14:58:46.239105+00:00",
+ "files": {
+  "uci_373/drug+consumption+quantified.zip": {
+   "url": "https://archive.ics.uci.edu/static/public/373/drug+consumption+quantified.zip",
+   "bytes": 346835,
+   "sha256": "0fb006913b8ecde52560dd04e4b8d10c75aad938d337a9e7e11fcab7dd1f6993"
+  },
+  "uci_582/data.csv": {
+   "url": "https://archive.ics.uci.edu/static/public/582/data.csv",
+   "bytes": 54311,
+   "sha256": "24822d2bc9ca1aa62bc7df47f6da5fc2688c65b7d85ec3886b9577cc1622d3e1"
+  },
+  "uci_467/data.csv": {
+   "url": "https://archive.ics.uci.edu/static/public/467/data.csv",
+   "bytes": 15048,
+   "sha256": "58326591a4f1b8837feb5268dd8fa6c1beacf5251f976734d3a0727fb75dfa18"
+  },
+  "uci_397/las+vegas+strip.zip": {
+   "url": "https://archive.ics.uci.edu/static/public/397/las+vegas+strip.zip",
+   "bytes": 60950,
+   "sha256": "9c3cb73b232d11417767395bf299c15804115f7f5e5a8cf03bd5277eb15f1453"
+  },
+  "openml_swd/SWD.arff": {
+   "url": "https://www.openml.org/data/download/53562/SWD.arff",
+   "bytes": 23329,
+   "sha256": "e943b8f9c1ae15f4e5d7042ed695f60494ce27af0e73411d16da0fccaf8343a5"
+  },
+  "openml_lev/LEV.arff": {
+   "url": "https://www.openml.org/data/download/53563/LEV.arff",
+   "bytes": 11235,
+   "sha256": "7f7be1a4e913a959d033b282c445b1ed3ca347a6fca7400f4b674527d8013256"
+  },
+  "openml_era/ERA.arff": {
+   "url": "https://www.openml.org/data/download/53564/ERA.arff",
+   "bytes": 12818,
+   "sha256": "63cbcf3ada57aee50562f197793c94214d1e39a26726cd95549001f18b9227b8"
+  },
+  "openml_esl/ESL.arff": {
+   "url": "https://www.openml.org/data/download/53561/ESL.arff",
+   "bytes": 6107,
+   "sha256": "e48c687b7bbb3b56c0ad9d324c2cae12f3a8645793bedd7877547ba37f648a66"
+  },
+  "nhanes_2017/DEMO_J.XPT": {
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+   "bytes": 3412720,
+   "sha256": "c0b46e0345ea19404928656277c8b0d10b0cca348a9b2fe4fc3c67e8b7ee73ec"
+  },
+  "nhanes_2017/HSQ_J.XPT": {
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HSQ_J.XPT",
+   "bytes": 604400,
+   "sha256": "60d10f50da856e71ba8ab80e5556947b4473bc7ced19e4a582a533a382ea1e70"
+  },
+  "nhanes_2017/BMX_J.XPT": {
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/BMX_J.XPT",
+   "bytes": 1466000,
+   "sha256": "8d675e42d8826ac98714b2c3dd4c5138a5e353fb4424f7eff5e6db4a01ce838a"
+  },
+  "nhanes_2017/BPX_J.XPT": {
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/BPX_J.XPT",
+   "bytes": 1466000,
+   "sha256": "f98f1d9a4c18173e715c749b4294f6f1525140d5ad5751316bb17cc038fb3423"
+  },
+  "nhanes_2017/TCHOL_J.XPT": {
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/TCHOL_J.XPT",
+   "bytes": 179680,
+   "sha256": "0291a6a4f6d82dac8392c8c992b519946824dfeda01647935520cf506ed9f4ab"
+  },
+  "nhanes_2017/HDL_J.XPT": {
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.XPT",
+   "bytes": 179680,
+   "sha256": "9f4eb41b89f0c9f3d6262f873e671eeb2f2eb40581a8426b2a3c8fd4fc19439e"
+  },
+  "nhanes_2017/GHB_J.XPT": {
+   "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GHB_J.XPT",
+   "bytes": 103520,
+   "sha256": "35f07094573a0061a03ed609a5a363b34eb1b1c7065d1623b43d72e132a8a654"
+  },
+  "nhis_2019/adult19csv.zip": {
+   "url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/NHIS/2019/adult19csv.zip",
+   "bytes": 4372417,
+   "sha256": "fc105b045c46d871b029c5e6cefa797450fff9e4610fdc9a29e2af3137f16917"
+  }
+ }
+}

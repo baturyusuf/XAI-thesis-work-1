@@ -1,0 +1,360 @@
+{
+ "prepared_utc": "2026-11-24T15:03:11.740015+00:00",
+ "fits": 0,
+ "datasets": {
+  "drug_alcohol": {
+   "status": "ELIGIBLE",
+   "source": "uci_373",
+   "rows": 1885,
+   "groups": 1885,
+   "k": 7,
+   "class_counts": [
+    34,
+    34,
+    68,
+    198,
+    287,
+    759,
+    505
+   ],
+   "class_groups": [
+    34,
+    34,
+    68,
+    198,
+    287,
+    759,
+    505
+   ],
+   "k_pi_endpoints": [
+    0.12625994694960213,
+    1.8753315649867375
+   ],
+   "features": [
+    "Age",
+    "Gender",
+    "Education",
+    "Country",
+    "Ethnicity",
+    "Nscore",
+    "Escore",
+    "Oscore",
+    "Ascore",
+    "Cscore",
+    "Impulsive",
+    "SS"
+   ],
+   "labels": {
+    "raw": [
+     "CL0",
+     "CL1",
+     "CL2",
+     "CL3",
+     "CL4",
+     "CL5",
+     "CL6"
+    ],
+    "direction": "alcohol use: never < over a decade ago < last decade < last year < last month < last week < last day (UCI 373 documentation)"
+   },
+   "missing": {
+    "Age": 0,
+    "Gender": 0,
+    "Education": 0,
+    "Country": 0,
+    "Ethnicity": 0,
+    "Nscore": 0,
+    "Escore": 0,
+    "Oscore": 0,
+    "Ascore": 0,
+    "Cscore": 0,
+    "Impulsive": 0,
+    "SS": 0
+   },
+   "table_sha256": "b91530b9c40224cf1bbc7aadb5f849bc9bb6856fa977e6861eaa68acea554c09",
+   "splits_sha256": "3f88bd19602e8eff84ccb5d11e4f14058f95c163adb9e82924ae3c32c535bb41",
+   "effective_split_seeds": [
+    20261124,
+    20261125
+   ]
+  },
+  "entrance_exam": {
+   "status": "ELIGIBLE",
+   "source": "uci_582",
+   "rows": 666,
+   "groups": 576,
+   "k": 4,
+   "class_counts": [
+    157,
+    210,
+    198,
+    101
+   ],
+   "class_groups": [
+    152,
+    194,
+    178,
+    98
+   ],
+   "k_pi_endpoints": [
+    0.9429429429429429,
+    0.6066066066066066
+   ],
+   "features": [
+    "Gender",
+    "Caste",
+    "coaching",
+    "time",
+    "Class_ten_education",
+    "twelve_education",
+    "medium",
+    "Class_X_Percentage",
+    "Class_XII_Percentage",
+    "Father_occupation",
+    "Mother_occupation"
+   ],
+   "labels": {
+    "raw": [
+     "Average",
+     "Good",
+     "Vg",
+     "Excellent"
+    ],
+    "direction": "CEE performance Average < Good < Very good < Excellent"
+   },
+   "missing": {
+    "Gender": 0,
+    "Caste": 0,
+    "coaching": 0,
+    "time": 0,
+    "Class_ten_education": 0,
+    "twelve_education": 0,
+    "medium": 0,
+    "Class_X_Percentage": 0,
+    "Class_XII_Percentage": 0,
+    "Father_occupation": 0,
+    "Mother_occupation": 0
+   },
+   "table_sha256": "eec99502c89147f87b6bd067395c1f1113ff890652909a36d048844a29ecb56f",
+   "splits_sha256": "8e6576d315c702b5619d165c574b988defc45aca39c988efb89461b76c2fb993",
+   "effective_split_seeds": [
+    20261124,
+    20261125
+   ]
+  },
+  "nhanes_srh": {
+   "status": "ELIGIBLE",
+   "source": "nhanes_2017",
+   "rows": 4890,
+   "groups": 4890,
+   "k": 5,
+   "class_counts": [
+    419,
+    1172,
+    2056,
+    1083,
+    160
+   ],
+   "class_groups": [
+    419,
+    1172,
+    2056,
+    1083,
+    160
+   ],
+   "k_pi_endpoints": [
+    0.4284253578732106,
+    0.16359918200409
+   ],
+   "features": [
+    "RIDAGEYR",
+    "INDFMPIR",
+    "BMXBMI",
+    "BMXWAIST",
+    "SBP",
+    "DBP",
+    "LBXTC",
+    "LBDHDD",
+    "LBXGH",
+    "RIAGENDR",
+    "RIDRETH3",
+    "DMDEDUC2"
+   ],
+   "labels": {
+    "raw": [
+     "1",
+     "2",
+     "3",
+     "4",
+     "5"
+    ],
+    "direction": "HSD010 general health 1 excellent < ... < 5 poor (source order); 7/9/missing excluded"
+   },
+   "missing": {
+    "RIDAGEYR": 0,
+    "INDFMPIR": 608,
+    "BMXBMI": 60,
+    "BMXWAIST": 209,
+    "SBP": 177,
+    "DBP": 177,
+    "LBXTC": 267,
+    "LBDHDD": 267,
+    "LBXGH": 194,
+    "RIAGENDR": 0,
+    "RIDRETH3": 0,
+    "DMDEDUC2": 0
+   },
+   "table_sha256": "64d264a969be443027feca817c79cbefbb9a31a399fde0304d6702a4a468d9b9",
+   "splits_sha256": "67e52086478d305653f5e0dbd009cd5c6989d6fea4dc3f17cc22d4f58d057dc9",
+   "effective_split_seeds": [
+    20261124,
+    20261125
+   ]
+  },
+  "nhis_srh": {
+   "status": "ELIGIBLE",
+   "source": "nhis_2019",
+   "rows": 5000,
+   "groups": 5000,
+   "k": 5,
+   "class_counts": [
+    1118,
+    1697,
+    1415,
+    581,
+    189
+   ],
+   "class_groups": [
+    1118,
+    1697,
+    1415,
+    581,
+    189
+   ],
+   "k_pi_endpoints": [
+    1.1179999999999999,
+    0.189
+   ],
+   "features": [
+    "AGEP_A",
+    "POVRATTC_A",
+    "SEX_A",
+    "HISPALLP_A",
+    "EDUC_A",
+    "REGION",
+    "URBRRL",
+    "MARITAL_A",
+    "BMICAT_A",
+    "SMKCIGST_A",
+    "HYPEV_A",
+    "CHLEV_A",
+    "CHDEV_A",
+    "MIEV_A",
+    "STREV_A",
+    "ASEV_A",
+    "CANEV_A",
+    "DIBEV_A",
+    "COPDEV_A",
+    "ARTHEV_A",
+    "DEPEV_A",
+    "ANXEV_A"
+   ],
+   "labels": {
+    "raw": [
+     "1",
+     "2",
+     "3",
+     "4",
+     "5"
+    ],
+    "direction": "PHSTAT_A general health 1 excellent < ... < 5 poor (source order); 7/8/9 excluded"
+   },
+   "missing": {
+    "AGEP_A": 16,
+    "POVRATTC_A": 0,
+    "SEX_A": 0,
+    "HISPALLP_A": 0,
+    "EDUC_A": 0,
+    "REGION": 0,
+    "URBRRL": 0,
+    "MARITAL_A": 0,
+    "BMICAT_A": 0,
+    "SMKCIGST_A": 0,
+    "HYPEV_A": 0,
+    "CHLEV_A": 0,
+    "CHDEV_A": 0,
+    "MIEV_A": 0,
+    "STREV_A": 0,
+    "ASEV_A": 0,
+    "CANEV_A": 0,
+    "DIBEV_A": 0,
+    "COPDEV_A": 0,
+    "ARTHEV_A": 0,
+    "DEPEV_A": 0,
+    "ANXEV_A": 0
+   },
+   "table_sha256": "a3811b97a20f11ea13beb4ded800ef2630a6b54049f1f24b1c794065a7cbc865",
+   "splits_sha256": "cbb993ba4b5509c3dda0fa3c41f6b39b050ba4bfbb2914d725aa262194fadeae",
+   "effective_split_seeds": [
+    20261124,
+    20261125
+   ]
+  },
+  "openml_swd": {
+   "status": "BLOCKED",
+   "reason": "E5: unique exact-predictor groups in the lowest/highest class",
+   "rows": 1000,
+   "endpoint_groups": [
+    17,
+    64
+   ]
+  },
+  "openml_lev": {
+   "status": "BLOCKED",
+   "reason": "E5: unique exact-predictor groups in the lowest/highest class",
+   "rows": 1000,
+   "endpoint_groups": [
+    35,
+    14
+   ]
+  },
+  "openml_era": {
+   "status": "BLOCKED",
+   "reason": "E5: unique exact-predictor groups in the lowest/highest class",
+   "rows": 1000,
+   "endpoint_groups": [
+    25,
+    4
+   ]
+  },
+  "openml_esl": {
+   "status": "BLOCKED",
+   "reason": "E5: unique exact-predictor groups in the lowest/highest class",
+   "rows": 488,
+   "endpoint_groups": [
+    2,
+    4
+   ]
+  },
+  "uci_467": {
+   "status": "BLOCKED",
+   "reason": "E5: highest class (Best) has fewer than 20 rows",
+   "class_counts": {
+    "Good": 54,
+    "Vg": 42,
+    "Pass": 27,
+    "Best": 8
+   }
+  },
+  "uci_397": {
+   "status": "BLOCKED",
+   "reason": "E5: lowest score (1) has fewer than 20 reviews",
+   "class_counts": {
+    "1": 11,
+    "2": 30,
+    "3": 72,
+    "4": 164,
+    "5": 227
+   }
+  }
+ }
+}
