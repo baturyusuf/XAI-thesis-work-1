@@ -256,6 +256,7 @@ def text_runs(s, highlight_placeholders=False):
     s = re.sub(r'\\eqref\{([^}]*)\}', lambda m: '(' + LABELS[m.group(1)] + ')', s)
     s = re.sub(r'\\ref\{([^}]*)\}', lambda m: LABELS[m.group(1)], s)
     s = s.replace('\\par', ' ')
+    s = re.sub(r'\\texttt\{([^{}]*)\}', lambda m: m.group(1).replace('\\_', '_'), s)
     # tokenise into math / emph / text
     runs = []
     pos = 0
@@ -343,6 +344,12 @@ HEADERS = {
                          '$\\Delta$AMAE', '$\\Delta$MMAE')],
     'tab_s_sim': [H('Prior', 'Signal', 'Fam.', 'Criterion', 'Same', '$\\Delta R_{\\mathrm{end}}$', 'MC 95% interval',
                     '$\\Delta$QWK', '$\\Delta$AMAE')],
+    'tab_stage4': [H('', 'Prediction', 'Result', 'Supported')],
+    'tab_s_stage4_balance': [H('Family', 'QWK', 'MAE', 'AMAE', 'MMAE', 'Macro-F1', 'RPS', 'QWK-floor')],
+    'tab_s_stage4_regret': [H('Criterion', 'QWK', 'Macro-F1', 'MAE', 'AMAE', 'MMAE', 'RPS', '$R_{\\mathrm{end}}$')],
+    'tab_s_stage4_sim': [H('', '', '', ('Proportional odds', 2), ('Random forest', 2)),
+                         H('$\\lambda$', '$\\pi_0$', '$K\\pi_0$', '$\\Delta_w$ [95% interval]', '$\\Delta_a$',
+                           '$\\Delta_w$ [95% interval]', '$\\Delta_a$')],
     'tab_s_friedman': [H('Evaluation', '$\\chi^2_6$', '$p$', 'QWK', 'MAE', 'AMAE', 'MMAE', 'Macro-F1', 'RPS', 'QWK-floor')],
 }
 
@@ -468,8 +475,8 @@ def parse_main(src):
             elif env == 'equation':
                 B.append({'k': 'eq', 'id': 'qwk', 'num': num})
             elif env == 'proposition':
-                intro, rest = inner.split('\\begin{enumerate}', 1)
-                items = re.split(r'\\item\[([^\]]*)\]', rest.split('\\end{enumerate}')[0])[1:]
+                intro, rest = (inner.split('\\begin{enumerate}', 1) if '\\begin{enumerate}' in inner else (inner, ''))
+                items = re.split(r'\\item\[([^\]]*)\]', rest.split('\\end{enumerate}')[0])[1:] if rest else []
                 blocks = []
                 for lab_, txt in zip(items[0::2], items[1::2]):
                     parts = re.split(r'\\\[(.*?)\\\]', txt, flags=re.S)

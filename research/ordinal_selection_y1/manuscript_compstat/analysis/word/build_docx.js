@@ -105,7 +105,7 @@ function table(b, textWidth, small) {
   const size = small ? 15 : 17;
   const none = { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' };
   const rule = (sz) => ({ style: BorderStyle.SINGLE, size: sz, color: '000000' });
-  const textCols = b.id.startsWith('tab_s_') ? 3 : (['tab_inference', 'tab_controls'].includes(b.id) ? 1 : 2);
+  const textCols = b.id === 'tab_stage4' ? 3 : b.id.startsWith('tab_s_stage4') ? 1 : b.id.startsWith('tab_s_') ? 3 : (['tab_inference', 'tab_controls'].includes(b.id) ? 1 : 2);
   const align = (j) => (j < textCols ? AlignmentType.LEFT : AlignmentType.CENTER);
   const cell = (rs, j, w, borders, span = 1, bold = false) => new TableCell({
     width: { size: w, type: WidthType.DXA }, columnSpan: span > 1 ? span : undefined,

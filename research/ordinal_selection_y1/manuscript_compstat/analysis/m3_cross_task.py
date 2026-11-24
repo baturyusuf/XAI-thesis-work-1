@@ -309,18 +309,72 @@ for _, t in tasks.iterrows():
                             'weight_delta': float(c_[f'recall_{side}_delta'].mean()),
                             'amae_minus_qwk_delta': float(a_[f'recall_{side}_delta'])})
 ep = pd.DataFrame(ep_rows)
+
+
+def rule_agreement(s, col, drop_zeros):
+    """Share of points whose change has the sign predicted by the 1/K rule."""
+    v = s[col].to_numpy()
+    pred = np.where(s.below_uniform.to_numpy(), 1.0, -1.0)
+    keep = np.abs(v) > 1e-9 if drop_zeros else np.ones(len(v), bool)
+    return float(np.mean(np.sign(v[keep]) == pred[keep])) if keep.any() else np.nan
+
+
+def cluster_boot(s, col, drop_zeros, B=2000, seed=20261124):
+    """Task-cluster bootstrap of Spearman rho and of the rule-agreement share."""
+    rng = np.random.default_rng(seed)
+    task_ids = s.task.unique()
+    by_task = {t: s[s.task == t] for t in task_ids}
+    rhos, agr = [], []
+    for _ in range(B):
+        d = pd.concat([by_task[t] for t in rng.choice(task_ids, size=len(task_ids), replace=True)])
+        if d.log_k_share.nunique() > 1 and d[col].nunique() > 1:
+            rhos.append(stats.spearmanr(d.log_k_share, d[col]).statistic)
+        agr.append(rule_agreement(d, col, drop_zeros))
+    q = lambda a: [float(np.nanquantile(a, 0.025)), float(np.nanquantile(a, 0.975))]
+    return q(rhos), q(agr)
+
+
 ep_summary = []
 for role_set, name in ((['primary'], 'primary'), (['primary', 'control'], 'primary+control')):
     s = ep[ep.role.isin(role_set)]
     for col in ('weight_delta', 'amae_minus_qwk_delta'):
         r = stats.spearmanr(s.log_k_share, s[col])
         below, above = s[s.below_uniform][col], s[~s.below_uniform][col]
-        ep_summary.append({'set': name, 'outcome': col, 'points': len(s), 'spearman_rho': float(r.statistic),
-                           'p_value': float(r.pvalue), 'below_n': len(below), 'below_pos': int((below > 1e-9).sum()),
+        dz = col == 'amae_minus_qwk_delta'
+        rho_ci, agr_ci = cluster_boot(s, col, dz)
+        ep_summary.append({'set': name, 'outcome': col, 'points': len(s), 'tasks': s.task.nunique(),
+                           'spearman_rho': float(r.statistic), 'p_value': float(r.pvalue),
+                           'rho_ci_low': rho_ci[0], 'rho_ci_high': rho_ci[1],
+                           'agreement': rule_agreement(s, col, dz), 'agreement_ci_low': agr_ci[0],
+                           'agreement_ci_high': agr_ci[1],
+                           'below_n': len(below), 'below_pos': int((below > 1e-9).sum()),
                            'below_neg': int((below < -1e-9).sum()), 'below_median': float(below.median()),
                            'above_n': len(above), 'above_pos': int((above > 1e-9).sum()),
                            'above_neg': int((above < -1e-9).sum()), 'above_median': float(above.median())})
 ep_summary = pd.DataFrame(ep_summary)
+
+# Prior-correction check (Proposition 2): re-weight the unweighted candidate's outer probabilities by
+# m_c = 1/(K pi_c) and compare the implied endpoint-recall change with the actual balanced-minus-none change.
+pc_rows = []
+for task, (d, source, role, stage) in RUNS.items():
+    if role == 'superseded':
+        continue
+    z = np.load(d / 'predictions.npz', allow_pickle=False)
+    y = z['y']; k = int(y.max()) + 1
+    pi = np.bincount(y, minlength=k) / len(y)
+    mult = 1.0 / (k * pi)
+    for fam in FAMILIES:
+        for h in (0, 1):
+            pn = z[f'candidate__{fam}_{h}_none']; pb = z[f'candidate__{fam}_{h}_balanced']
+            for side, c in (('low', 0), ('high', k - 1)):
+                mask = y == c
+                rec = lambda arr: float(np.mean([(arr[r].argmax(axis=1)[mask] == c).mean() for r in range(arr.shape[0])]))
+                corrected = pn * mult[None, None, :]
+                pc_rows.append({'task': task, 'role': role, 'family': fam, 'h': h, 'endpoint': side, 'share': pi[c],
+                                'k_share': k * pi[c], 'rarest': bool(pi[c] == pi.min()),
+                                'most_frequent': bool(pi[c] == pi.max()),
+                                'delta_actual': rec(pb) - rec(pn), 'delta_prior_corrected': rec(corrected) - rec(pn)})
+pc = pd.DataFrame(pc_rows)
 
 # Prediction-marginal summary of QWK- and AMAE-selected models (mechanism description)
 mech = policies[policies.policy.isin(['qwk', 'amae', 'mmae', 'qwk_recall'])][
@@ -360,6 +414,7 @@ const_ref['candidates_worse_than_constant'] = [
 # ------------------------------------------------------------------ write
 const_ref.to_csv(OUT / 'constant_reference.csv')
 ep.to_csv(OUT / 'endpoint_share_cells.csv', index=False)
+pc.to_csv(OUT / 'prior_correction.csv', index=False)
 ep_summary.to_csv(OUT / 'endpoint_share_summary.csv', index=False)
 ctrl.to_csv(OUT / 'fixed_weight_controls.csv', index=False)
 mech.to_csv(OUT / 'mechanism_marginals.csv', index=False)

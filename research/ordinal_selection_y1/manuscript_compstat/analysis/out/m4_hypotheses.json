@@ -1,0 +1,161 @@
+{
+ "hypotheses": {
+  "H1": {
+   "balanced_fraction": {
+    "amae": 0.8111,
+    "macro_f1": 0.7278,
+    "mae": 0.0389,
+    "mmae": 0.9278,
+    "qwk": 0.6056,
+    "qwk_recall": 0.7444,
+    "rps": 0.0056
+   },
+   "by_family": {
+    "hgb": {
+     "amae": 0.8167,
+     "macro_f1": 0.7333,
+     "mae": 0.05,
+     "mmae": 0.85,
+     "qwk": 0.6167,
+     "qwk_recall": 0.6833,
+     "rps": 0.0167
+    },
+    "po": {
+     "amae": 0.7333,
+     "macro_f1": 0.5667,
+     "mae": 0.0,
+     "mmae": 0.9333,
+     "qwk": 0.45,
+     "qwk_recall": 0.75,
+     "rps": 0.0
+    },
+    "rf": {
+     "amae": 0.8833,
+     "macro_f1": 0.8833,
+     "mae": 0.0667,
+     "mmae": 1.0,
+     "qwk": 0.75,
+     "qwk_recall": 0.8,
+     "rps": 0.0
+    }
+   },
+   "supported": true
+  },
+  "H2": {
+   "points": 60,
+   "zeros": 2,
+   "agreement": 0.9,
+   "agreement_ci": [
+    0.8,
+    0.9833333333333333
+   ],
+   "spearman_rho": -0.5980058965236984,
+   "rho_ci": [
+    -0.7524714051648231,
+    -0.25686031675672627
+   ],
+   "supported": true
+  },
+  "H3": {
+   "points": 60,
+   "zeros": 13,
+   "agreement": 0.8085106382978723,
+   "agreement_ci": [
+    0.6739130434782609,
+    0.928612956810631
+   ],
+   "spearman_rho": -0.6242291828815171,
+   "rho_ci": [
+    -0.7760281463910617,
+    -0.2967831579844015
+   ],
+   "supported": true
+  },
+  "H4": {
+   "cells": 30,
+   "min_delta": -0.08081644523487819,
+   "decreases_any": 5,
+   "decreases_beyond_0.02": 1,
+   "increases": 7,
+   "supported": false
+  },
+  "H5": {
+   "max_regret_other_metric": {
+    "qwk": 0.484505990576222,
+    "mae": 0.7433068125054694,
+    "amae": 0.6290053842996433,
+    "mmae": 0.762737227391559,
+    "macro_f1": 0.5409550267877713,
+    "rps": 0.7715234743940381,
+    "qwk_recall": 0.6191830845757285
+   },
+   "supported": true
+  },
+  "descriptive": {
+   "amae_minus_qwk_endpoint_min": -0.40408727207234296,
+   "amae_minus_qwk_endpoint_max": 0.5527777777777778,
+   "amae_pos": 10,
+   "amae_neg": 17,
+   "decisions": 180,
+   "tasks_all24_worse_than_nu": [
+    "movielens100k",
+    "restaurant",
+    "support2",
+    "sushi"
+   ],
+   "worse_than_nu_by_task": {
+    "wine_red": 0,
+    "wine_white": 0,
+    "restaurant": 24,
+    "sushi": 24,
+    "movielens100k": 24,
+    "skillcraft_survey": 0,
+    "ctg": 0,
+    "hcv": 1,
+    "cirrhosis": 0,
+    "support2": 24
+   },
+   "qwk_amae_agreement": 0.34444444444444444,
+   "qwk_floor_agreement": 0.7555555555555555,
+   "mae_rps_agreement": 0.42777777777777776,
+   "amae_mmae_agreement": 0.4777777777777778
+  }
+ },
+ "simulation": {
+  "S1": {
+   "po@1.0": true,
+   "rf@1.0": true,
+   "po@2.0": true,
+   "rf@2.0": true
+  },
+  "S2": {
+   "po@1.0": -1.0,
+   "rf@1.0": -0.8285714285714287,
+   "po@2.0": -1.0,
+   "rf@2.0": -0.942857142857143
+  },
+  "S3": {
+   "po@1.0": {
+    "consistent": false,
+    "nonzero_levels": 5
+   },
+   "rf@1.0": {
+    "consistent": false,
+    "nonzero_levels": 4
+   },
+   "po@2.0": {
+    "consistent": true,
+    "nonzero_levels": 5
+   },
+   "rf@2.0": {
+    "consistent": true,
+    "nonzero_levels": 5
+   }
+  },
+  "S1_supported": true,
+  "S2_supported": true,
+  "S3_supported": false
+ },
+ "fits_tasks": 6048,
+ "fits_sim": 1440
+}

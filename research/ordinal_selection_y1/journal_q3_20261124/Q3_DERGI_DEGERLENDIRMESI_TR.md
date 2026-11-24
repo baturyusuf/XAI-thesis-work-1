@@ -139,3 +139,33 @@ Bu artışlar kalibre edilmiş değildir. Mantıkları şu: M1, ML dergilerinde 
 - **Kullanıcı kararı.** Gönderim sırası Computational Statistics → PAA → JoC. Zed'deki Astra raporunun üç dergisi, Computational Statistics öne alınarak kullanılıyor. Dergiye özgü değişiklikler `../manuscript_compstat/JOURNAL_CASCADE_TR.md` dosyasında.
 - **M1 makaleye dahil edildi.** Makale artık 10 birincil görev (9 kaynak) ve 4 kontrol görevine dayanıyor. "Nadirlik" yorumunun yerini 1/K kuralı aldı: ağırlıklandırma, payı 1/K'nın altındaki uç sınıflarda recall'u 24/24 durumda artırıyor, üstündekilerde 16 durumun 13'ünde düşürüyor.
 - **Tekrar üretilebilirlik paketi hazır.** PAA'nın kod ve veri erişimi şartı için gerekli tek eksik, `employee-performance-with-XAI` kodunun lisans kararı.
+
+## Ek 3 (2026-11-24): 20–30 saatlik ek çalışmanın kabul şansına etkisi
+
+**Soru.** Makale olduğu gibi mi gönderilmeli, yoksa 20–30 saatlik ek çalışma şansı artırır mı?
+
+**Cevap: artırır, ama her iş değil.** Hakem ve editörün en olası üç itirazı vardı:
+1. aday havuzu küçük;
+2. 1/K kuralı veriye bakıldıktan sonra bulunmuş;
+3. çıkarım az sayıda göreve dayanıyor.
+
+Aynı görevlere daha fazla şekil eklemek bunların hiçbirini kapatmazdı. Bu üç itirazı doğrudan hedefleyen işler yapıldı.
+
+**Yapılanlar:**
+- **Önerme 2 ve prior-düzeltme kontrolü.** 1/K kuralına teorik dayanak eklendi; gerçek eğitimde istisnasız tuttu (32/32, 20/20).
+- **Görev kümesi bootstrap aralıkları.** Kuralın ρ aralığı sıfırı dışlıyor.
+- **Önceden belirlenmiş aşama 4.**
+  - Protokol, ilk fitten önce donduruldu.
+  - 24 aday ve 3 aile (gradient boosting dahil) ile 6.048 fit, kurala özel bir simülasyonda 1.440 fit.
+  - 8 tahminin 6'sı desteklendi.
+  - H4 (recall tabanının bir hücrede AMAE yedeği yüzünden başarısız olması) ve S3 (AMAE kuralının yalnız yüksek sinyalde tutması) açıkça raporlandı.
+
+**Güncellenmiş öznel tahmin.** Kalibre edilmiş bir olasılık değildir.
+
+| Dergi | Önce | Şimdi | Gerekçe |
+|---|---|---|---|
+| Computational Statistics | %35–45 | **%45–55** | "Yalnız benchmark" ve "küçük havuz" itirazları zayıfladı. Önerme 2 ve önceden belirlenmiş testler istatistik okuruna uygun. |
+| PAA | — | %40–50 | Gradient boosting ve önceden belirlenmiş test, PR/ML okuru için önemli. Kod erişimi şartı hâlâ lisans kararına bağlı. |
+| JoC | — | %35–45 | Ordinal okur için güçlü ama çift kör ve uzun süreç; özet 150 kelimeye inmeli. |
+
+**Kalan en büyük risk.** Aşama 4 aynı görevlerde yapıldı ve dış kayıt yok. Yeni görevlerde OSF'ye kayıtlı bir test, bir sonraki revizyon için en değerli iş.

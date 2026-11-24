@@ -53,6 +53,8 @@ All tasks are secondary analyses of publicly documented data. No raw records, id
 
 Splits: stratified group $K$-fold, three outer and two inner folds, two repeats (seeds 20261120/20261121 for the first stage, 20261124/20261125 for the second and third stages); for each seed, the first support-valid assignment among offsets 0--99 was used (all categories present in every partition, no group overlap). Candidates: proportional odds with $C\in\{0.1,1\}$, random forest with depth $\in\{4,\text{unlimited}\}$, each with and without balanced weights. Endpoint-recall floor 0.2 with AMAE fallback; tie tolerance $10^{-12}$. Protocols, configurations, data and split hashes were frozen locally (SHA-256) before the fits of each stage; there was no external registration. An independent re-implementation of the metrics reproduced the stored values (\NRecompute{} comparisons, largest absolute difference \RecomputeMaxDiff{}).
 
+\paragraph{Stage 4 (pre-specified robustness).} The protocol (file \texttt{robustness\_m2/PROTOCOL.md}), the configuration, the runner code and the hashes of the reused split assignments were frozen with SHA-256 hashes and a UTC time stamp before any stage-4 fit; there was no external registration. Part A refits the 14 tasks on the frozen splits of stages 1--3 with 24 candidates: proportional odds with $C\in\{0.01,0.1,1,10\}$ (at most 1000 iterations); random forest with 100 trees, minimum leaf size 2 and depth $\in\{3,6,12,\text{unlimited}\}$; histogram gradient boosting (scikit-learn \texttt{HistGradientBoostingClassifier}) with (learning rate, maximum depth) $\in\{(0.05,3),(0.05,\text{unlimited}),(0.1,3),(0.1,\text{unlimited})\}$, 200 iterations, at most 31 leaves and no early stopping; each with and without balanced weights (\FitsStageFour{} fits). Part B simulates $K=5$ categories from the latent Gaussian model with lowest-category share $\pi_0\in\{0.02,0.05,0.10,0.20,0.30,0.40\}$, highest-category share 0.20, the three middle categories sharing the remainder, $\lambda\in\{0.5,1,2\}$, ten replications (seeds 20261301--20261310) and the original eight candidates (\FitsSimFour{} fits). No candidate, task or criterion was dropped and no fit failed.
+
 \section*{S3 Tables}
 
 {\footnotesize
@@ -115,12 +117,49 @@ Prior & Signal & Fam. & Criterion & Same & $\Delta R_{\mathrm{end}}$ & MC 95\% i
 
 {\footnotesize
 \begin{longtable}{@{}lrr*{7}{r}@{}}
-\caption{Friedman tests and mean ranks of the seven criteria over the 12 primary task--family cells, for each evaluation metric (rank 1 = best; Nemenyi critical difference at $\alpha=0.05$: \NemenyiCD{}).}\label{tab:s-friedman}\\
+\caption{Friedman tests and mean ranks of the seven criteria over the \NCells{} primary task--family cells, for each evaluation metric (rank 1 = best; Nemenyi critical difference at $\alpha=0.05$: \NemenyiCD{}).}\label{tab:s-friedman}\\
 \toprule
 Evaluation & $\chi^2_6$ & $p$ & QWK & MAE & AMAE & MMAE & Macro-F1 & RPS & QWK-floor\\
 \midrule\endfirsthead
 \bottomrule\endfoot
 \input{tab_s_friedman}
+\end{longtable}
+}
+
+{\footnotesize
+\begin{longtable}{@{}l*{7}{r}@{}}
+\caption{Stage 4, expanded pool: fraction of decisions selecting class-balanced weights, by family and criterion (primary tasks; PO: proportional odds, RF: random forest, HGB: histogram gradient boosting).}\label{tab:s-stage4-balance}\\
+\toprule
+Family & QWK & MAE & AMAE & MMAE & Macro-F1 & RPS & QWK-floor\\
+\midrule\endfirsthead
+\bottomrule\endfoot
+\input{tab_s_stage4_balance}
+\end{longtable}
+}
+
+{\footnotesize
+\begin{longtable}{@{}l*{7}{r}@{}}
+\caption{Stage 4, expanded pool: normalized cross-criterion regret (rows: selection criterion; columns: evaluation metric), averaged over the primary task--family cells and two repeats; 0 is the best and 1 the worst of the eight candidates in the family, identified retrospectively.}\label{tab:s-stage4-regret}\\
+\toprule
+Criterion & QWK & Macro-F1 & MAE & AMAE & MMAE & RPS & $R_{\mathrm{end}}$\\
+\midrule\endfirsthead
+\bottomrule\endfoot
+\input{tab_s_stage4_regret}
+\end{longtable}
+}
+
+{\footnotesize
+\begin{longtable}{@{}rrrllll@{}}
+\caption{Stage 4 simulation: change in the recall of the lowest category. $\Delta_w$: balanced minus unweighted training (mean of the two hyperparameter settings) with Monte Carlo 95\% $t$ interval (9 df); $\Delta_a$: AMAE-selected minus QWK-selected model, with the number of replications (of ten) in which it was nonzero.}\label{tab:s-stage4-sim}\\
+\toprule
+& & & \multicolumn{2}{c}{Proportional odds} & \multicolumn{2}{c}{Random forest}\\
+$\lambda$ & $\pi_0$ & $K\pi_0$ & $\Delta_w$ [95\% interval] & $\Delta_a$ & $\Delta_w$ [95\% interval] & $\Delta_a$\\
+\midrule\endfirsthead
+\toprule
+$\lambda$ & $\pi_0$ & $K\pi_0$ & $\Delta_w$ [95\% interval] & $\Delta_a$ & $\Delta_w$ [95\% interval] & $\Delta_a$\\
+\midrule\endhead
+\bottomrule\endfoot
+\input{tab_s_stage4_sim}
 \end{longtable}
 }
 

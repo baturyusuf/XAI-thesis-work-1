@@ -178,4 +178,49 @@ axes[0].set_ylabel('Change in recall of the endpoint')
 axes[0].legend(frameon=False, loc='lower left', fontsize=6.5)
 fig.tight_layout()
 save(fig, 'fig4_endpoint_share')
+
+# ---------------------------------------------------------------- Figure 5: stage 4 (expanded pool, simulation)
+# Slot 3 of the validated palette (aqua) for the third family; the first three slots pass all-pairs CVD checks.
+COL['hgb'], MARK['hgb'], FAM_LABEL['hgb'] = '#1baf7a', '^', 'Gradient boosting'
+e4 = pd.read_csv(OUT / 'm4_endpoint_points.csv')
+s4 = pd.read_csv(OUT / 'm4_simulation_summary.csv')
+fig, axes = plt.subplots(2, 2, figsize=(6.85, 5.4))
+panels = [('delta_weight', '(a) Expanded pool: balanced − unweighted\n(mean of four settings)'),
+          ('delta_amae', '(b) Expanded pool: AMAE − QWK selection\n')]
+for ax, (col, title) in zip(axes[0], panels):
+    for fam in ('po', 'rf', 'hgb'):
+        s = e4[(e4.family == fam) & (e4.role == 'primary')]
+        ax.scatter(s.k_pi, s[col], marker=MARK[fam], s=22, color=COL[fam], edgecolor='white', linewidth=0.5,
+                   label=FAM_LABEL[fam], zorder=3)
+    ax.axhline(0, color=INK2, lw=0.7)
+    ax.axvline(1, color=INK2, lw=0.7, ls=(0, (3, 2)))
+    ax.set_xscale('log')
+    ax.set_xticks([0.01, 0.03, 0.1, 0.3, 1, 3])
+    ax.set_xticklabels(['0.01', '0.03', '0.1', '0.3', '1', '3'])
+    ax.minorticks_off()
+    ax.set_title(title)
+    ax.set_xlabel('Endpoint share × K  (1 = uniform share)')
+    style(ax, 'both')
+axes[0, 0].set_ylabel('Change in recall of the endpoint')
+axes[0, 0].legend(frameon=False, loc='lower left', fontsize=6.5)
+SIG = {0.5: ('#a3a29e', 'o'), 1.0: ('#52514e', 's'), 2.0: ('#0b0b0b', 'D')}
+for ax, fam in zip(axes[1], ('po', 'rf')):
+    for sg, (c, m) in SIG.items():
+        g = s4[(s4.family == fam) & (s4.signal == sg)].sort_values('k_pi0')
+        ax.fill_between(g.k_pi0, g.w_lo, g.w_hi, color=c, alpha=0.15, linewidth=0)
+        ax.plot(g.k_pi0, g.delta_weight, color=c, lw=1.6, marker=m, ms=4.5, label=f'λ = {sg:g}')
+    ax.axhline(0, color=INK2, lw=0.7)
+    ax.axvline(1, color=INK2, lw=0.7, ls=(0, (3, 2)))
+    ax.set_xscale('log')
+    ax.set_xticks([0.1, 0.25, 0.5, 1, 1.5, 2])
+    ax.set_xticklabels(['0.1', '0.25', '0.5', '1', '1.5', '2'])
+    ax.minorticks_off()
+    ax.set_title(f'({"c" if fam == "po" else "d"}) Simulation, {FAM_LABEL[fam].lower()}:\nbalanced − unweighted')
+    ax.set_ylim(-0.45, 0.72)
+    ax.set_xlabel('Lowest-category share × K  (K = 5)')
+    style(ax, 'both')
+axes[1, 0].set_ylabel('Change in recall of the lowest category')
+axes[1, 0].legend(frameon=False, loc='upper right', fontsize=6.5)
+fig.tight_layout()
+save(fig, 'fig5_stage4_robustness')
 print('figures written to', FIG)

@@ -2,7 +2,10 @@
 
 Tarih: 2026-11-24. Branch: `research/q3-journal-selection`. Bu klasör, Y1 çalışmasının Computational Statistics (Springer) için hazırlanmış makalesini içerir. Gönderim sırası Computational Statistics → PAA → JoC; dergi bazlı değişiklikler `JOURNAL_CASCADE_TR.md` dosyasında.
 
-Makale üç aşamanın sonuçlarına dayanıyor: v1, gate-v2 ve M1. M1'in fitleri `research/ordinal-y1-m1-extension` dalında çalıştırıldı; bu dalda yalnızca kayıtlı tahminleri okundu. Makale için yeni model eğitimi yapılmadı.
+Makale dört aşamanın sonuçlarına dayanıyor: v1, gate-v2, M1 ve önceden belirlenmiş sağlamlık aşaması (aşama 4, M2).
+- **M1.** Fitleri `research/ordinal-y1-m1-extension` dalında çalıştırıldı; bu dalda yalnızca kayıtlı tahminleri okundu.
+- **Aşama 4.** Bu dalda `../robustness_m2/` altında çalıştırıldı. Protokol, hipotezler (H1–H5, S1–S3) ve kod, ilk fitten önce SHA-256 ve UTC zaman damgasıyla donduruldu (`FREEZE.json`). Yerel bir dondurma; dış kayıt yok.
+- **Fit sayısı.** 24 aday ve 3 aile (PO, RF, gradient boosting) ile 6.048 gerçek veri fiti, 1.440 simülasyon fiti.
 
 ## Klasör içeriği
 
@@ -10,7 +13,7 @@ Makale üç aşamanın sonuçlarına dayanıyor: v1, gate-v2 ve M1. M1'in fitler
 |---|---|
 | `main.tex` | Ana makale (Springer Nature `sn-jnl` şablonu, yazar-yıl atıf stili `sn-mathphys-ay`) |
 | `supplement.tex` | Ek Bilgiler (standart `article` sınıfı; her LaTeX kurulumunda derlenir) |
-| `refs.bib` | Kaynakça. 42 kayıt; DOI'li olanların hepsi Crossref/DataCite'tan doğrulandı (`analysis/out/crossref_bibliography*.json`) |
+| `refs.bib` | Kaynakça. 43 kayıt; DOI'li olanların hepsi Crossref/DataCite'tan doğrulandı (`analysis/out/crossref_bibliography*.json`) |
 | `numbers.tex` | Metindeki her sayının makrosu. **Elle düzenlemeyin**; `analysis/make_tables.py` üretir |
 | `tables/` | Analiz çıktısından otomatik üretilen tablolar |
 | `figures/` | Şekiller (PDF + PNG) |
@@ -23,15 +26,28 @@ Makale üç aşamanın sonuçlarına dayanıyor: v1, gate-v2 ve M1. M1'in fitler
 
 Makalenin sorusu: aynı aday havuzunda hangi ölçütle model seçildiğinde (QWK, MAE, AMAE, MMAE, macro-F1, RPS, uç sınıf recall tabanlı QWK) uç sınıflara ne oluyor?
 
-Kapsam: **10 birincil görev (9 kaynak)** ve **4 kontrol görevi**. Toplam 2.160 gerçek fit ve 480 simülasyon fiti var; 8 ligli eski SkillCraft "superseded" olarak ek bilgilerde.
+Kapsam: **10 birincil görev (9 kaynak)** ve **4 kontrol görevi**. Aşama 1–3'te 2.160 gerçek fit ve 480 simülasyon fiti var; aşama 4 ile toplam 10.128 fit. 8 ligli eski SkillCraft "superseded" olarak ek bilgilerde.
 
 Ana bulgular:
 1. **Seçim ölçütü sınıf ağırlığını belirliyor.** "Balanced" seçme oranı MAE'de 0,04, RPS'de 0,00, MMAE'de 0,96.
 2. **Sabit hiperparametreli kontroller nedenini gösteriyor.** Ağırlıklandırma 40 karşılaştırmanın 39'unda MAE'yi artırıyor, 38'inde MMAE'yi düşürüyor.
 3. **Yeni mekanizma: uç payı ve 1/K kuralı.** Payı 1/K'nın altındaki uç sınıflarda ağırlıklandırma recall'u 24/24 durumda artırıyor; üstündekilerde 16 durumun 13'ünde düşürüyor. AMAE seçimi de aynı kurala uyuyor. AMAE'nin QWK'ye göre etkisinin −0,40 ile +0,53 arasında yön değiştirmesinin açıklaması bu. M1 görevlerinde kural 16 durumun 15'inde tuttu.
 4. **Analitik sonuç (Önerme 1).** Orta sınıfı sabit tahmin eden kural nAMAE = (K+1)/(4K) alıyor ve uç sınıfları hiç bulmuyor. 4 görevde 8 adayın hepsinden iyi: üç rating görevi ve SUPPORT2.
-5. **QWK + recall alt sınırı.** Hiçbir blokta uç recall'u düşürmedi; 8/18 blokta artırdı (p=0,008). Görev başına en büyük QWK kaybı 0,06.
+5. **QWK + recall alt sınırı.** Ana havuzda hiçbir blokta uç recall'u düşürmedi; 8/18 blokta artırdı (p=0,008). Görev başına en büyük QWK kaybı 0,06.
 6. **Hiçbir ölçüt tüm metriklerde güvenli değil.**
+7. **Önerme 2 (yeni).** Prior düzeltmesi (m_c = 1/(Kπ_c)), en nadir sınıfın recall'unu düşüremez, en sık sınıfınkini artıramaz. Gerçek ağırlıklı eğitimde istisnasız tuttu: 32/32 ve 20/20.
+8. **Aşama 4: önceden belirlenmiş 8 tahminin 6'sı desteklendi.**
+   - Desteklenenler:
+     - H1: ölçüt ağırlığı belirliyor; üç ailenin her birinde.
+     - H2: ağırlıklandırmada 1/K kuralı; uyum 0,90 [0,80; 0,98], ρ = −0,60 [−0,75; −0,26].
+     - H3: AMAE seçiminde 1/K kuralı; uyum 0,81 [0,67; 0,93].
+     - H5: hiçbir ölçüt güvenli değil.
+     - S1, S2: simülasyonda ağırlık etkisi tam Kπ = 1'de işaret değiştiriyor; bu noktada bütün aralıklar sıfırı içeriyor.
+   - Desteklenmeyenler:
+     - **H4.** Recall tabanı MovieLens-100k + gradient boosting hücresinde uç recall'u 0,08 düşürdü. Nedeni: taban iç tahminlerde sağlanamayınca devreye giren AMAE yedeği ağırlıksız modelleri seçti.
+     - **S3.** AMAE kuralı simülasyonda yalnız yüksek sinyalde (λ = 2) tuttu. λ = 1'de π0 = 0,10 için ters işaret çıktı.
+   - Her iki başarısızlık makalede açıkça raporlandı ve tartışmaya eklendi.
+   - Sabit-tahmin sonucu da tekrarlandı: 24 adayın tamamı, aynı 4 görevde sabit kuraldan kötü.
 
 Eski "uç sınıf nadirliği" yorumu M1'de zayıfladı. Bu nedenle makaleden çıkarıldı; yerini daha genel ve test edilebilir 1/K kuralı aldı.
 
@@ -43,10 +59,10 @@ Dergi Word dosyasını da kabul ediyor. `word/` klasöründe dört öğe var:
 
 | Dosya | İçerik |
 |---|---|
-| `manuscript.docx` | Ana makale, 19 sayfa |
-| `supplementary_information.docx` | Ek Bilgiler; geniş tablolar nedeniyle yatay sayfa, 10 sayfa |
+| `manuscript.docx` | Ana makale, 27 sayfa |
+| `supplementary_information.docx` | Ek Bilgiler; geniş tablolar nedeniyle yatay sayfa, 19 sayfa |
 | `cover_letter.docx` | Editöre ön yazı |
-| `figures/Fig1–Fig4` (.pdf ve .png) | Şekiller, makaledeki numaralarıyla; dergi ayrı şekil dosyası isterse |
+| `figures/Fig1–Fig5` (.pdf ve .png) | Şekiller, makaledeki numaralarıyla; dergi ayrı şekil dosyası isterse |
 
 Word dosyalarının özellikleri:
 - **Aynı kaynaktan üretiliyor.** Word dosyaları LaTeX kaynağından otomatik oluşturuluyor, bu yüzden sayılar ve metin iki sürümde birebir aynı.
@@ -62,7 +78,7 @@ powershell -File analysis/word/build_word.ps1 -Python <numpy/pandas olan python>
 
 ## Derleme (bu bilgisayarda LaTeX yok)
 
-LaTeX dağıtımı kurulu olmadığı için PDF burada derlenmedi. Yerine statik kontroller çalıştırıldı ve hepsi geçti: tanımsız makro yok, eksik dosya veya atıf yok, ayraç/ortam/`$` dengeli, özet 226 kelime (sınır 150–250), 6 anahtar kelime (sınır 4–6).
+LaTeX dağıtımı kurulu olmadığı için PDF burada derlenmedi. Yerine statik kontroller çalıştırıldı ve hepsi geçti: tanımsız makro yok, eksik dosya veya atıf yok, ayraç/ortam/`$` dengeli, özet 247 kelime (sınır 150–250), 6 anahtar kelime (sınır 4–6).
 
 Overleaf'te derlemek için:
 1. Overleaf → New Project → Templates → "Springer Nature LaTeX Template" projesini açın.
@@ -96,10 +112,11 @@ Overleaf'te derlemek için:
 | Olası eleştiri | Durum |
 |---|---|
 | Görev sayısı (10 birincil, 9 kaynak) | M1 makaleye dahil edildi. Daha fazlası istenirse aynı altyapıyla yeni görevler eklenebilir. |
-| Küçük aday havuzu | Sınırlılıklarda açıkça yazıldı; büyük revizyonda grid genişletilebilir (M2). |
+| Küçük aday havuzu | Aşama 4'te 24 aday ve 3 aileyle (gradient boosting dahil) sınandı; ana bulgular tekrarlandı. |
 | Zayıf sinyalli rating görevleri | Önerme 1 ve Tablo 5 bunu bir bulguya çevirdi; sınırlılıklarda da var. |
-| İki tekrar, koşullu bootstrap | Yöntemde ve sınırlılıklarda açıkça belirtildi. |
-| Önceden dış kayıt yok, iki aşamalı tasarım | "Sequence of the study" paragrafında açıkça yazıldı. |
+| İki tekrar, koşullu bootstrap | Yöntemde ve sınırlılıklarda açıkça belirtildi. 1/K kuralı için ayrıca görev kümesi (cluster) bootstrap aralıkları verildi. |
+| 1/K kuralı sonradan bulundu | Önerme 2 ile teorik dayanak eklendi. Aşama 4'te önceden belirlenmiş tahminlerle ve kurala özel bir simülasyonla sınandı. |
+| Önceden dış kayıt yok | Aşama 1–3 keşifsel olarak raporlandı. Aşama 4 yerel olarak donduruldu (dış kayıt değil); bu, sınırlılıklarda açıkça yazıldı. Yeni görevlerde dış kayıtlı bir çalışma hâlâ en güçlü test. |
 
 ## Yeniden üretim
 
@@ -107,7 +124,9 @@ Model eğitimi yapılmaz; yalnız kayıtlı tahminler okunur.
 
 ```powershell
 # 1) M3 analizi: kayıtlı tahminleri okur, yalnız toplu çıktılar yazar
-<Y1 venv python> -B analysis/m3_cross_task.py <Y1 local klasörü> analysis/out
+<Y1 venv python> -B analysis/m3_cross_task.py <Y1 local klasörü> <M1 local klasörü> analysis/out
+# 1b) Aşama 4 hipotez testleri (önce ../robustness_m2/run.py ile fitler; bkz. reproducibility/README.md)
+<Y1 venv python> -B analysis/m4_robustness.py ../local/robustness_m2 ../robustness_m2 analysis/out
 # 2) Şekiller (matplotlib gerekir)
 python analysis/make_figures.py analysis/out figures
 # 3) Tablolar ve sayı makroları

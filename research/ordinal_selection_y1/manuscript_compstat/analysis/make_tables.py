@@ -322,6 +322,23 @@ for o, nm in [('weight_delta', 'W'), ('amae_minus_qwk_delta', 'A')]:
     m(f'Ep{nm}AbovePos', int(r.above_pos), '{}')
     m(f'Ep{nm}AboveNeg', int(r.above_neg), '{}')
     m(f'Ep{nm}AboveMed', r.above_median, '{:+.3f}')
+for o, nm in [('weight_delta', 'W'), ('amae_minus_qwk_delta', 'A')]:
+    r = eps.loc[('primary', o)]
+    m(f'Ep{nm}RhoLo', r.rho_ci_low, '{:.2f}')
+    m(f'Ep{nm}RhoHi', r.rho_ci_high, '{:.2f}')
+    m(f'Ep{nm}Agr', r.agreement, '{:.2f}')
+    m(f'Ep{nm}AgrLo', r.agreement_ci_low, '{:.2f}')
+    m(f'Ep{nm}AgrHi', r.agreement_ci_high, '{:.2f}')
+pcd = pd.read_csv(OUT / 'prior_correction.csv')
+pcp = pcd[pcd.role == 'primary']
+rar, frq = pcp[pcp.rarest], pcp[pcp.most_frequent]
+m('PcRarestN', len(rar), '{}')
+m('PcRarestOk', int((rar.delta_actual >= -1e-9).sum()), '{}')
+m('PcFreqN', len(frq), '{}')
+m('PcFreqOk', int((frq.delta_actual <= 1e-9).sum()), '{}')
+both = pcp[(pcp.delta_actual.abs() > 1e-9) & (pcp.delta_prior_corrected.abs() > 1e-9)]
+m('PcAgreeN', len(both), '{}')
+m('PcAgreePct', 100 * float((np.sign(both.delta_actual) == np.sign(both.delta_prior_corrected)).mean()), '{:.0f}')
 epc = pd.read_csv(OUT / 'endpoint_share_cells.csv')
 s3 = epc[epc.task.isin(STAGE3)]
 cons = ((s3.below_uniform & (s3.weight_delta > 1e-9)) | (~s3.below_uniform & (s3.weight_delta < -1e-9)))
@@ -356,6 +373,117 @@ simx = sim[sim.policy_minus_qwk == 'amae'].set_index(['cell', 'family'])
 for (cell, fam, nm) in [('asym__2.0', 'po', 'SimAsymPo'), ('symrare__2.0', 'rf', 'SimSymHiRf'), ('symrare__0.5', 'rf', 'SimSymLoRf')]:
     m(nm + 'Low', simx.loc[(cell, fam)].recall_low_delta, '{:+.3f}')
     m(nm + 'High', simx.loc[(cell, fam)].recall_high_delta, '{:+.3f}')
+
+# ------------------------------------------------------------------ stage 4 (pre-specified robustness)
+import json as _json
+R4 = _json.loads((OUT / 'm4_hypotheses.json').read_text(encoding='utf-8'))
+H4_, S4_ = R4['hypotheses'], R4['simulation']
+d4 = H4_['descriptive']
+ss4 = pd.read_csv(OUT / 'm4_simulation_summary.csv')
+reg4 = pd.read_csv(OUT / 'm4_regret_matrix.csv', index_col=0)
+pol4 = pd.read_csv(OUT / 'm4_policy_metrics.csv')
+m('FitsStageFour', f"{R4['fits_tasks']:,}")
+m('FitsSimFour', f"{R4['fits_sim']:,}")
+m('FitsTotalAll', f"{int(macros['NRealFits'].replace(',', '')) + 480 + R4['fits_tasks'] + R4['fits_sim']:,}"
+  if 'NRealFits' in macros else '')
+m('DecFour', d4['decisions'], '{}')
+b1 = H4_['H1']['balanced_fraction']
+for k_, nm in (('mae', 'Mae'), ('rps', 'Rps'), ('mmae', 'Mmae'), ('amae', 'Amae'), ('qwk', 'Qwk')):
+    m('BalFour' + nm, b1[k_])
+for hyp in ('H2', 'H3'):
+    nm = 'W' if hyp == 'H2' else 'A'
+    h = H4_[hyp]
+    m(f'Hf{nm}Agr', h['agreement']); m(f'Hf{nm}AgrLo', h['agreement_ci'][0]); m(f'Hf{nm}AgrHi', h['agreement_ci'][1])
+    m(f'Hf{nm}Rho', h['spearman_rho']); m(f'Hf{nm}RhoLo', h['rho_ci'][0]); m(f'Hf{nm}RhoHi', h['rho_ci'][1])
+    m(f'Hf{nm}Points', h['points'], '{}'); m(f'Hf{nm}Zeros', h['zeros'], '{}')
+m('HfFloorMin', H4_['H4']['min_delta'], '{:+.3f}')
+m('HfFloorDec', H4_['H4']['decreases_any'], '{}')
+m('HfFloorInc', H4_['H4']['increases'], '{}')
+m('HfFloorCells', H4_['H4']['cells'], '{}')
+mr = H4_['H5']['max_regret_other_metric']
+m('HfRegMinMax', min(mr.values()))
+m('HfRegMinMaxPol', POL[min(mr, key=mr.get)])
+m('HfAmaeMin', d4['amae_minus_qwk_endpoint_min'], '{:+.2f}')
+m('HfAmaeMax', d4['amae_minus_qwk_endpoint_max'], '{:+.2f}')
+m('HfAmaePos', d4['amae_pos'], '{}'); m('HfAmaeNeg', d4['amae_neg'], '{}')
+m('HfAgrQwkAmae', d4['qwk_amae_agreement']); m('HfAgrQwkCon', d4['qwk_floor_agreement'])
+m('HfAgrMaeRps', d4['mae_rps_agreement']); m('HfAgrAmaeMmae', d4['amae_mmae_agreement'])
+m('HfConstTasks', len(d4['tasks_all24_worse_than_nu']), '{}')
+m('HfConstTaskList', ', '.join(TASK[t] for t in d4['tasks_all24_worse_than_nu']))
+m('SfOneOk', sum(S4_['S1'].values()), '{}'); m('SfCells', len(S4_['S1']), '{}')
+m('SfTwoMax', max(S4_['S2'].values())); m('SfTwoMin', min(S4_['S2'].values()))
+m('SfThreeOk', sum(v['consistent'] for v in S4_['S3'].values()), '{}')
+e4 = pd.read_csv(OUT / 'm4_endpoint_points.csv')
+e4p = e4[e4.role == 'primary']
+exc_w = e4p[(e4p.delta_weight.abs() > 1e-9) & ((e4p.delta_weight > 0) != (e4p.k_pi < 1))]
+m('HfWExcN', len(exc_w), '{}'); m('HfWExcLo', exc_w.k_pi.min()); m('HfWExcHi', exc_w.k_pi.max())
+m('HfANonzero', int((e4p.delta_amae.abs() > 1e-9).sum()), '{}')
+nz4 = e4p[e4p.delta_amae.abs() > 1e-9]
+exc_a = nz4[(nz4.delta_amae > 0) != (nz4.k_pi < 1)]
+zw = e4p[e4p.delta_weight.abs() <= 1e-9]
+fl4 = pol4[pol4.role == 'primary'].pivot_table(index=['task', 'family'], columns='policy', values='recall_extreme')
+dfl4 = (fl4['qwk_recall'] - fl4['qwk']).sort_values()
+worst4 = dfl4.index[0]
+fb4 = pol4[(pol4.task == worst4[0]) & (pol4.family == worst4[1]) & (pol4.policy == 'qwk_recall')].fallbacks.iloc[0]
+m('HfFloorMinAbs', abs(dfl4.iloc[0])); m('HfFloorWorstFallbacks', int(fb4), '{}')
+m('HfFloorSmallMax', abs(dfl4.iloc[1]), '{:.3f}')
+dec4 = pd.read_csv(OUT / 'm4_decisions.csv')
+cm4 = pd.read_csv(OUT / 'm4_candidate_metrics.csv').set_index(['task', 'family', 'candidate']).sort_index()
+wd = dec4[(dec4.task == worst4[0]) & (dec4.family == worst4[1])].pivot_table(
+    index=['repeat', 'fold'], columns='policy', values='candidate', aggfunc='first')
+wf = dec4[(dec4.task == worst4[0]) & (dec4.family == worst4[1]) & (dec4.policy == 'qwk_recall')].set_index(['repeat', 'fold']).fallback
+differ = wd.index[wd['qwk_recall'] != wd['qwk']]
+floor_worst_ok = (len(differ) == 2 and len(wd) == 6 and set(differ) == set(wf.index[wf]) and all(c_.endswith('_none') for c_ in wd.loc[differ, 'qwk_recall'])
+                  and all(cm4.loc[(worst4[0], worst4[1], c_), 'recall_low'] < 0.05 for c_ in wd.loc[differ, 'qwk_recall']))
+m('HfFloorDiffer', len(differ), '{}')
+k1 = ss4[ss4.pi0 == 0.2]
+m('SfKOneMax', k1.delta_weight.abs().max(), '{:.3f}')
+s3f = ss4[(ss4.signal == 1.0) & (ss4.pi0 == 0.10)].set_index('family')
+m('SfThreePo', s3f.loc['po', 'delta_amae'], '{:+.2f}'); m('SfThreeRf', s3f.loc['rf', 'delta_amae'], '{:+.2f}')
+lo5 = ss4[(ss4.signal == 0.5) & (ss4.pi0 <= 0.10)]
+m('SfLowSigAmin', lo5.delta_amae.min(), '{:+.2f}'); m('SfLowSigAmax', lo5.delta_amae.max(), '{:+.2f}')
+yes = lambda b: 'Yes' if b else '\\textbf{No}'
+nsupp = sum(H4_[h]['supported'] for h in ('H1', 'H2', 'H3', 'H4', 'H5'))
+ssupp = sum(S4_[f'{s}_supported'] for s in ('S1', 'S2', 'S3'))
+m('HfSupported', nsupp, '{}'); m('SfSupported', ssupp, '{}')
+s1txt = '; '.join(f"{'PO' if c.startswith('po') else 'RF'}, $\\lambda={float(c.split('@')[1]):g}$: {'yes' if v else 'no'}"
+                  for c, v in S4_['S1'].items())
+rows = [
+    f"H1 & Balanced weights chosen in $<0.20$ of decisions by MAE and RPS, $>0.80$ by MMAE; MAE and RPS below MMAE in every family "
+    f"& MAE {f2(b1['mae'])}, RPS {f2(b1['rps'])}, MMAE {f2(b1['mmae'])} & {yes(H4_['H1']['supported'])}\\\\",
+    f"H2 & Weighting raises endpoints with $K\\pi<1$ and lowers those with $K\\pi>1$: agreement interval above 0.5, $\\rho$ interval below 0 "
+    f"& agreement {f2(H4_['H2']['agreement'])} [{f2(H4_['H2']['agreement_ci'][0])}, {f2(H4_['H2']['agreement_ci'][1])}]; "
+    f"$\\rho={macros['HfWRho']}$ [{macros['HfWRhoLo']}, {macros['HfWRhoHi']}] & {yes(H4_['H2']['supported'])}\\\\",
+    f"H3 & As H2 for AMAE$-$QWK selection (zeros excluded from agreement) "
+    f"& agreement {f2(H4_['H3']['agreement'])} [{f2(H4_['H3']['agreement_ci'][0])}, {f2(H4_['H3']['agreement_ci'][1])}]; "
+    f"$\\rho={macros['HfARho']}$ [{macros['HfARhoLo']}, {macros['HfARhoHi']}]; {H4_['H3']['zeros']} zeros & {yes(H4_['H3']['supported'])}\\\\",
+    f"H4 & \\QWKF{{}}$-$QWK in $R_{{\\mathrm{{end}}}}\\ge-0.02$ in every task--family cell "
+    f"& minimum {macros['HfFloorMin']}; {H4_['H4']['decreases_any']} decreases, {H4_['H4']['increases']} increases in {H4_['H4']['cells']} cells & {yes(H4_['H4']['supported'])}\\\\",
+    f"H5 & Every criterion has regret $\\ge0.30$ on some other metric "
+    f"& smallest maximum {f2(min(mr.values()))} ({POL[min(mr, key=mr.get)]}) & {yes(H4_['H5']['supported'])}\\\\",
+    '\\midrule',
+    f"S1 & $\\Delta_w>0$ for $\\pi_0\\le0.10$ and $<0$ for $\\pi_0\\ge0.30$ ($\\lambda\\in\\{{1,2\\}}$, each family) "
+    f"& {sum(S4_['S1'].values())} of {len(S4_['S1'])} family--signal cells & {yes(S4_['S1_supported'])}\\\\",
+    f"S2 & Spearman $\\rho(\\Delta_w,\\pi_0)<0$ & $\\rho$ from {macros['SfTwoMin']} to {macros['SfTwoMax']} & {yes(S4_['S2_supported'])}\\\\",
+    f"S3 & Same sign pattern for $\\Delta_a$ where nonzero & {sum(v['consistent'] for v in S4_['S3'].values())} of {len(S4_['S3'])} family--signal cells & {yes(S4_['S3_supported'])}\\\\",
+]
+write('tab_stage4.tex', '\n'.join(rows) + '\n')
+# Supplementary: balanced fraction by family, regret matrix, simulation summary
+bf = pol4[pol4.role == 'primary'].groupby(['family', 'policy']).balanced_fraction.mean().unstack()[list(POL)]
+rows = [f"{ {'po': 'PO', 'rf': 'RF', 'hgb': 'HGB'}[f_]} & " + ' & '.join(f2(bf.loc[f_, p_]) for p_ in POL) + '\\\\'
+        for f_ in ('po', 'rf', 'hgb')]
+write('tab_s_stage4_balance.tex', '\n'.join(rows) + '\n')
+rows = [f'{POL[p_]} & ' + ' & '.join(f2(reg4.loc[p_, e_]) for e_ in reg4.columns) + '\\\\' for p_ in POL]
+write('tab_s_stage4_regret.tex', '\n'.join(rows) + '\n')
+rows = []
+for (sg, p0), g in ss4.sort_values(['signal', 'pi0']).groupby(['signal', 'pi0'], sort=False):
+    cells = []
+    for f_ in ('po', 'rf'):
+        r_ = g[g.family == f_].iloc[0]
+        cells += [f"{signed(r_.delta_weight, 3)} [{signed(r_.w_lo, 3)}, {signed(r_.w_hi, 3)}]",
+                  f"{signed(r_.delta_amae, 3)} ({int(r_.amae_nonzero_reps)})"]
+    rows.append(f'{sg:g} & {p0:.2f} & {5 * p0:.2f} & ' + ' & '.join(cells) + '\\\\')
+write('tab_s_stage4_sim.tex', '\n'.join(rows) + '\n')
 
 # ------------------------------------------------------------------ claim guards
 # Qualitative statements in main.tex that are not plain numbers. If a re-run of the
@@ -411,6 +539,10 @@ guards = {
     'SUPPORT2 QWK moderate and endpoints the two largest classes':
         p.loc[('support2', 'po', 'qwk')].qwk > 0.3
         and sorted(json.loads(tasks.loc['support2', 'class_counts']))[-2:] == sorted([json.loads(tasks.loc['support2', 'class_counts'])[i] for i in (0, -1)]),
+    'Proposition 2 held without exception in weighted training (primary)':
+        int((rar.delta_actual >= -1e-9).sum()) == len(rar) and int((frq.delta_actual <= 1e-9).sum()) == len(frq),
+    'cluster CIs of the rule exclude zero':
+        eps.loc[('primary', 'weight_delta')].rho_ci_high < 0 and eps.loc[('primary', 'amae_minus_qwk_delta')].rho_ci_high < 0,
     'NPHA: AMAE lowered endpoint recall in both families':
         c.loc[('npha', 'po', 'amae')].endpoint_recall_delta < -0.1 and c.loc[('npha', 'rf', 'amae')].endpoint_recall_delta < -0.1,
     'TAE: no criterion reduced endpoint recall': (tae.endpoint_recall_delta >= -1e-12).all(),
@@ -421,6 +553,37 @@ guards = {
         p.loc[('movielens100k', 'po', 'qwk')].balanced_fraction == 1 and p.loc[('movielens100k', 'po', 'amae')].balanced_fraction == 0,
     'wine red PO: QWK unweighted, AMAE balanced':
         p.loc[('wine_red', 'po', 'qwk')].balanced_fraction == 0 and p.loc[('wine_red', 'po', 'amae')].balanced_fraction == 1,
+    'stage 4: H1, H2, H3, H5 supported; H4 not supported':
+        [H4_[h]['supported'] for h in ('H1', 'H2', 'H3', 'H4', 'H5')] == [True, True, True, False, True],
+    'stage 4: S1 and S2 supported; S3 not supported':
+        [S4_[f'{s}_supported'] for s in ('S1', 'S2', 'S3')] == [True, True, False],
+    'stage 4: H1 ordering holds in every family (MAE, RPS < 0.2 < 0.8 < MMAE)':
+        all(H4_['H1']['by_family'][f_]['mae'] < .2 and H4_['H1']['by_family'][f_]['rps'] < .2
+            and H4_['H1']['by_family'][f_]['mmae'] > .8 for f_ in ('po', 'rf', 'hgb')),
+    'stage 4: same four tasks with all candidates worse than constant': set(d4['tasks_all24_worse_than_nu']) == set(LOWSIG),
+    'stage 4: weighting-rule exceptions are just above Kpi = 1 (nonzero)': exc_w.k_pi.min() > 1 and exc_w.k_pi.max() < 1.5,
+    'stage 4: AMAE exceptions led by MovieLens lowest category in all families':
+        set(e4p[(e4p.task == 'movielens100k') & (e4p.endpoint == 'low')].delta_amae.lt(-0.2)) == {True}
+        and set(exc_a.sort_values('delta_amae').head(3).task) == {'movielens100k'}
+        and set(exc_a.sort_values('delta_amae').head(3).endpoint) == {'low'},
+    'stage 4: the two zero weighting changes are HGB on the rarest wine category, never predicted':
+        sorted(zw.task) == ['wine_red', 'wine_white'] and set(zw.family) == {'hgb'}
+        and all(json.loads(tasks.loc[t, 'class_counts'])[0 if ep_ == 'low' else -1] == min(json.loads(tasks.loc[t, 'class_counts']))
+                for t, ep_ in zip(zw.task, zw.endpoint))
+        and all((cm4.loc[(t, 'hgb')].filter(like='hgb_', axis=0)[f'recall_{ep_}'] == 0).all() for t, ep_ in zip(zw.task, zw.endpoint)),
+    'stage 4: worst floor cell is MovieLens HGB with fallbacks; all other decreases <= 0.012':
+        worst4 == ('movielens100k', 'hgb') and fb4 > 0 and abs(dfl4.iloc[1]) <= 0.012 and dfl4.iloc[0] < -0.02
+        and H4_['H4']['decreases_any'] == 5 and H4_['H4']['decreases_beyond_0.02'] == 1,
+    'stage 4: in the worst floor cell, floor differs from QWK only in fallback decisions, choosing unweighted '
+    'candidates with lowest-category recall < 0.05': floor_worst_ok,
+    'stage 4 simulation: at K pi = 1 every weighting interval contains zero': ((k1.w_lo < 0) & (k1.w_hi > 0)).all(),
+    'stage 4 simulation: S3 fails only at lambda = 1, pi0 = 0.10, in both families':
+        [c for c, v in S4_['S3'].items() if not v['consistent']] == ['po@1.0', 'rf@1.0']
+        and (s3f.delta_amae < 0).all() and (s3f.a_hi > 0).all(),
+    'stage 4 simulation: at lambda = 0.5 AMAE lowers rare-endpoint recall, weighting raises it':
+        (lo5.delta_amae < 0).all() and (lo5.delta_weight > 0).all(),
+    'stage 4 simulation: weighting sign as predicted at every share level incl. lambda 0.5':
+        ((ss4[ss4.pi0 < 0.2].delta_weight > 0).all() and (ss4[ss4.pi0 > 0.2].delta_weight < 0).all()),
     'simulation: largest |effect| is RF and rare endpoints have opposite signs':
         simr.abs().idxmax()[1] == 'rf' and simr[('symrare__0.5', 'rf')] < 0 < simr[('symrare__2.0', 'rf')],
 }
