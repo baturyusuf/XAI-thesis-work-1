@@ -1,0 +1,190 @@
+{
+  "created_utc": "2026-11-24T09:56:40.427976+00:00",
+  "elapsed_seconds": 10.040872999990825,
+  "status": "PASS",
+  "datasets": [
+    "ctg",
+    "hcv",
+    "cirrhosis",
+    "support2",
+    "diabetes130",
+    "student_por",
+    "npha"
+  ],
+  "totals": {
+    "pass": 3516,
+    "fail": 0
+  },
+  "checks": {
+    "freeze_digest_matches_prefit_record": {
+      "pass": 1,
+      "fail": 0
+    },
+    "listed_frozen_files": {
+      "pass": 61,
+      "fail": 0
+    },
+    "runtime_versions": {
+      "pass": 1,
+      "fail": 0
+    },
+    "candidate_grid": {
+      "pass": 1,
+      "fail": 0
+    },
+    "all_configured_sources_eligible": {
+      "pass": 1,
+      "fail": 0
+    },
+    "run_complete_and_144_fits": {
+      "pass": 7,
+      "fail": 0
+    },
+    "run_freeze": {
+      "pass": 7,
+      "fail": 0
+    },
+    "run_grid": {
+      "pass": 7,
+      "fail": 0
+    },
+    "run_single_thread": {
+      "pass": 7,
+      "fail": 0
+    },
+    "prepared_table_hash": {
+      "pass": 7,
+      "fail": 0
+    },
+    "full_label_support": {
+      "pass": 7,
+      "fail": 0
+    },
+    "endpoint_group_support": {
+      "pass": 7,
+      "fail": 0
+    },
+    "row_cap": {
+      "pass": 7,
+      "fail": 0
+    },
+    "splits_hash": {
+      "pass": 7,
+      "fail": 0
+    },
+    "repeat_structure": {
+      "pass": 7,
+      "fail": 0
+    },
+    "schedule_cardinality": {
+      "pass": 7,
+      "fail": 0
+    },
+    "inner_score_cardinality": {
+      "pass": 7,
+      "fail": 0
+    },
+    "summary_dataset": {
+      "pass": 7,
+      "fail": 0
+    },
+    "npz_keys": {
+      "pass": 7,
+      "fail": 0
+    },
+    "npz_labels_groups": {
+      "pass": 7,
+      "fail": 0
+    },
+    "prediction_shapes_probabilities": {
+      "pass": 154,
+      "fail": 0
+    },
+    "outer_fold_count": {
+      "pass": 14,
+      "fail": 0
+    },
+    "outer_partition": {
+      "pass": 42,
+      "fail": 0
+    },
+    "outer_group_disjoint": {
+      "pass": 42,
+      "fail": 0
+    },
+    "outer_all_class_support": {
+      "pass": 42,
+      "fail": 0
+    },
+    "inner_fold_count": {
+      "pass": 42,
+      "fail": 0
+    },
+    "inner_partition": {
+      "pass": 84,
+      "fail": 0
+    },
+    "inner_group_disjoint": {
+      "pass": 84,
+      "fail": 0
+    },
+    "inner_all_class_support": {
+      "pass": 84,
+      "fail": 0
+    },
+    "inner_full_oof_coverage": {
+      "pass": 42,
+      "fail": 0
+    },
+    "inner_metric_support_is_training_partition": {
+      "pass": 336,
+      "fail": 0
+    },
+    "selector_replay": {
+      "pass": 588,
+      "fail": 0
+    },
+    "selected_matches_candidate_fold": {
+      "pass": 588,
+      "fail": 0
+    },
+    "outer_full_oof_coverage": {
+      "pass": 14,
+      "fail": 0
+    },
+    "summary_metric_keys": {
+      "pass": 7,
+      "fail": 0
+    },
+    "recomputed_summary_metrics": {
+      "pass": 308,
+      "fail": 0
+    },
+    "independent_qwk_formula": {
+      "pass": 308,
+      "fail": 0
+    },
+    "independent_endpoint_recall": {
+      "pass": 308,
+      "fail": 0
+    },
+    "selection_count_summary": {
+      "pass": 98,
+      "fail": 0
+    },
+    "contrast_count": {
+      "pass": 7,
+      "fail": 0
+    },
+    "bootstrap_summary_replay": {
+      "pass": 126,
+      "fail": 0
+    },
+    "fixed_weight_contrast_scores": {
+      "pass": 28,
+      "fail": 0
+    }
+  },
+  "failed_categories": [],
+  "limits": "No fits; fit count is run metadata, not independently counted. Selector replay uses saved inner metrics; model fitting and inner predictions not independently reproduced. Metric and bootstrap replay uses original functions except independent QWK formula, endpoint recall and label mapping. Hashes are post-run, not pre-fit evidence, except the freeze digest committed before fitting."
+}

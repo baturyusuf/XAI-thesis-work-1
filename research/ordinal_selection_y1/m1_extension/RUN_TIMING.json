@@ -1,0 +1,109 @@
+{
+  "generated_utc": "2026-11-24T09:57:05.460321+00:00",
+  "branch": "research/ordinal-y1-m1-extension",
+  "parallel_processes": 7,
+  "fit_threads_per_fit": 1,
+  "logical_cpus": 16,
+  "batch_start_utc": "2026-11-24T09:55:16.768520+00:00",
+  "batch_end_utc": "2026-11-24T09:55:49.598943+00:00",
+  "batch_wall_seconds": 32.830423,
+  "total_fits": 1008,
+  "summed_run_wall_seconds": 118.35727320000296,
+  "summed_fit_predict_seconds": 105.32668789972377,
+  "runs": {
+    "ctg": {
+      "role": "primary",
+      "fits": 144,
+      "wall_seconds": 13.268457600002876,
+      "fit_predict_seconds": 12.493563500000164,
+      "fit_predict_median_seconds": 0.09215170000243234,
+      "fit_predict_max_seconds": 0.2246865000051912,
+      "started_utc": "2026-11-24T09:55:18.251281+00:00",
+      "finished_utc": "2026-11-24T09:55:31.519724+00:00"
+    },
+    "hcv": {
+      "role": "primary",
+      "fits": 144,
+      "wall_seconds": 10.373487399992882,
+      "fit_predict_seconds": 9.413450099978945,
+      "fit_predict_median_seconds": 0.08721164999587927,
+      "fit_predict_max_seconds": 0.1325770000112243,
+      "started_utc": "2026-11-24T09:55:18.221905+00:00",
+      "finished_utc": "2026-11-24T09:55:28.595380+00:00"
+    },
+    "cirrhosis": {
+      "role": "primary",
+      "fits": 144,
+      "wall_seconds": 10.723823099993751,
+      "fit_predict_seconds": 10.01907929997833,
+      "fit_predict_median_seconds": 0.08969314999558264,
+      "fit_predict_max_seconds": 0.13472270000784192,
+      "started_utc": "2026-11-24T09:55:18.222312+00:00",
+      "finished_utc": "2026-11-24T09:55:28.946122+00:00"
+    },
+    "support2": {
+      "role": "primary",
+      "fits": 144,
+      "wall_seconds": 29.12858220000635,
+      "fit_predict_seconds": 23.928465799879632,
+      "fit_predict_median_seconds": 0.12117500000022119,
+      "fit_predict_max_seconds": 0.5954273999959696,
+      "started_utc": "2026-11-24T09:55:18.270268+00:00",
+      "finished_utc": "2026-11-24T09:55:47.398827+00:00"
+    },
+    "diabetes130": {
+      "role": "control_source_binned",
+      "fits": 144,
+      "wall_seconds": 31.042412299997522,
+      "fit_predict_seconds": 27.43876509994152,
+      "fit_predict_median_seconds": 0.16793460000189953,
+      "fit_predict_max_seconds": 0.48961299999791663,
+      "started_utc": "2026-11-24T09:55:18.360605+00:00",
+      "finished_utc": "2026-11-24T09:55:49.403003+00:00"
+    },
+    "student_por": {
+      "role": "control_source_binned",
+      "fits": 144,
+      "wall_seconds": 12.542717200005427,
+      "fit_predict_seconds": 11.624068699922645,
+      "fit_predict_median_seconds": 0.09456099999806611,
+      "fit_predict_max_seconds": 0.16971680001006462,
+      "started_utc": "2026-11-24T09:55:18.254320+00:00",
+      "finished_utc": "2026-11-24T09:55:30.797023+00:00"
+    },
+    "npha": {
+      "role": "control_source_binned",
+      "fits": 144,
+      "wall_seconds": 11.277793400004157,
+      "fit_predict_seconds": 10.409295400022529,
+      "fit_predict_median_seconds": 0.08681074999913108,
+      "fit_predict_max_seconds": 0.15086670000164304,
+      "started_utc": "2026-11-24T09:55:18.279538+00:00",
+      "finished_utc": "2026-11-24T09:55:29.557319+00:00"
+    }
+  },
+  "versions": {
+    "python": "3.13.15",
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "threadpoolctl": "3.8.0"
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "validator": {
+    "status": "PASS",
+    "totals": {
+      "pass": 3516,
+      "fail": 0
+    },
+    "elapsed_seconds": 10.040872999990825
+  },
+  "unit_tests_prefit": "15 passed in 6.09s",
+  "freeze_sha256": "83814c61bdfd75f7c7d4f043cd8eae85462aaf7893e0ad2d247e7ee072ee26c0",
+  "human_hours": "not measured",
+  "agent_hours": "not instrumented",
+  "raw_data_publication": false,
+  "push": false,
+  "full_benchmark": false
+}
