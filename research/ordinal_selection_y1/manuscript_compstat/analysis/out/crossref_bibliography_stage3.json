@@ -1,0 +1,278 @@
+{
+ "10.21037/jlpm.2018.06.01": {
+  "title": "Using machine learning techniques to generate laboratory diagnostic pathways—a case study",
+  "authors": [
+   [
+    "Hoffmann",
+    "Georg"
+   ],
+   [
+    "Bietenbeck",
+    "Andreas"
+   ],
+   [
+    "Lichtinghagen",
+    "Ralf"
+   ],
+   [
+    "Klawonn",
+    "Frank"
+   ]
+  ],
+  "year": 2018,
+  "container": "Journal of Laboratory and Precision Medicine",
+  "volume": "3",
+  "issue": null,
+  "page": "58-58"
+ },
+ "10.1155/2014/781670": {
+  "title": "Impact of HbA1c Measurement on Hospital Readmission Rates: Analysis of 70,000 Clinical Database Patient Records",
+  "authors": [
+   [
+    "Strack",
+    "Beata"
+   ],
+   [
+    "DeShazo",
+    "Jonathan P."
+   ],
+   [
+    "Gennings",
+    "Chris"
+   ],
+   [
+    "Olmo",
+    "Juan L."
+   ],
+   [
+    "Ventura",
+    "Sebastian"
+   ],
+   [
+    "Cios",
+    "Krzysztof J."
+   ],
+   [
+    "Clore",
+    "John N."
+   ]
+  ],
+  "year": 2014,
+  "container": "BioMed Research International",
+  "volume": "2014",
+  "issue": null,
+  "page": "1-11"
+ },
+ "10.7326/0003-4819-122-3-199502010-00007": {
+  "title": "The SUPPORT Prognostic Model: Objective Estimates of Survival for Seriously Ill Hospitalized Adults",
+  "authors": [
+   [
+    "Knaus",
+    "William A."
+   ],
+   [
+    "Harrell",
+    "Frank E."
+   ],
+   [
+    "Lynn",
+    "Joanne"
+   ],
+   [
+    "Goldman",
+    "Lee"
+   ],
+   [
+    "Phillips",
+    "Russell S."
+   ],
+   [
+    "Connors",
+    "Alfred F."
+   ],
+   [
+    "Dawson",
+    "Neal V."
+   ],
+   [
+    "Fulkerson",
+    "William J."
+   ],
+   [
+    "Califf",
+    "Robert M."
+   ],
+   [
+    "Desbiens",
+    "Norman"
+   ],
+   [
+    "Layde",
+    "Peter"
+   ],
+   [
+    "Oye",
+    "Robert K."
+   ],
+   [
+    "Bellamy",
+    "Paul E."
+   ],
+   [
+    "Hakim",
+    "Rosemarie B."
+   ],
+   [
+    "Wagner",
+    "Douglas P."
+   ]
+  ],
+  "year": 1995,
+  "container": "Annals of Internal Medicine",
+  "volume": "122",
+  "issue": "3",
+  "page": "191-203"
+ },
+ "10.1002/hep.1840100102": {
+  "title": "Prognosis in primary biliary cirrhosis: Model for decision making",
+  "authors": [
+   [
+    "Dickson",
+    "Rolland E."
+   ],
+   [
+    "Grambsch",
+    "Patricia M."
+   ],
+   [
+    "Fleming",
+    "Thomas R."
+   ],
+   [
+    "Fisher",
+    "Lloyd D."
+   ],
+   [
+    "Langworthy",
+    "Alice"
+   ]
+  ],
+  "year": 1989,
+  "container": "Hepatology",
+  "volume": "10",
+  "issue": "1",
+  "page": "1-7"
+ },
+ "10.1002/1520-6661(200009/10)9:5<311::AID-MFM12>3.0.CO;2-9": {
+  "title": "Sisporto 2.0: A program for automated analysis of cardiotocograms",
+  "authors": [
+   [
+    "Ayres-de-Campos",
+    "Diogo"
+   ],
+   [
+    "Bernardes",
+    "Jo�o"
+   ],
+   [
+    "Garrido",
+    "Antonio"
+   ],
+   [
+    "Marques-de-S�",
+    "Joaquim"
+   ],
+   [
+    "Pereira-Leite",
+    "Luis"
+   ]
+  ],
+  "year": 2000,
+  "container": "The Journal of Maternal-Fetal Medicine",
+  "volume": "9",
+  "issue": "5",
+  "page": "311-318"
+ },
+ "10.24432/C51S4N": {
+  "title": "Cardiotocography",
+  "creators": [
+   "D. Campos, J. Bernardes"
+  ],
+  "year": 2000,
+  "publisher": "UCI Machine Learning Repository"
+ },
+ "10.24432/C5D612": {
+  "title": "HCV data",
+  "creators": [
+   "Unknown"
+  ],
+  "year": 2020,
+  "publisher": "UCI Machine Learning Repository"
+ },
+ "10.24432/C5R02G": {
+  "title": "Cirrhosis Patient Survival Prediction",
+  "creators": [
+   "E. Dickson, P. Grambsch"
+  ],
+  "year": 1989,
+  "publisher": "UCI Machine Learning Repository"
+ },
+ "10.24432/C5230J": {
+  "title": "Diabetes 130-US Hospitals for Years 1999-2008",
+  "creators": [
+   "John Clore, Krzysztof Cios"
+  ],
+  "year": 2014,
+  "publisher": "UCI Machine Learning Repository"
+ },
+ "10.24432/C5TG7T": {
+  "title": "Student Performance",
+  "creators": [
+   "Cortez, Paulo"
+  ],
+  "year": 2008,
+  "publisher": "UCI Machine Learning Repository"
+ },
+ "10.24432/C52P4X": {
+  "title": "Heart Disease",
+  "creators": [
+   "Andras Janosi, William Steinbrunn"
+  ],
+  "year": 1989,
+  "publisher": "UCI Machine Learning Repository"
+ },
+ "10.24432/C53919": {
+  "title": "CDC Diabetes Health Indicators",
+  "creators": [
+   "Unknown"
+  ],
+  "year": 2017,
+  "publisher": "UCI Machine Learning Repository"
+ },
+ "10.24432/C51G82": {
+  "title": "Higher Education Students Performance Evaluation",
+  "creators": [
+   "Nevriye Yilmaz, Boran Şekeroğlu"
+  ],
+  "year": 2019,
+  "publisher": "UCI Machine Learning Repository"
+ },
+ "10.24432/C5DP5D": {
+  "title": "Maternal Health Risk",
+  "creators": [
+   "Ahmed, Marzia"
+  ],
+  "year": 2020,
+  "publisher": "UCI Machine Learning Repository"
+ },
+ "10.3886/ICPSR37305.v1": {
+  "title": "National Poll on Healthy Aging (NPHA), [United States], April 2017",
+  "creators": [
+   "Malani, Preeti N.",
+   "Kullgren, Jeffrey",
+   "Solway, Erica"
+  ],
+  "year": 2019,
+  "publisher": "ICPSR - Interuniversity Consortium for Political and Social Research"
+ }
+}

@@ -31,7 +31,9 @@ plt.rcParams.update({
 })
 
 TASK_LABEL = {'wine_red': 'Wine (red)', 'wine_white': 'Wine (white)', 'skillcraft_survey': 'SkillCraft',
-              'restaurant': 'Restaurant', 'sushi': 'Sushi', 'movielens100k': 'MovieLens-100k', 'tae': 'TAE (control)'}
+              'restaurant': 'Restaurant', 'sushi': 'Sushi', 'movielens100k': 'MovieLens-100k', 'ctg': 'CTG',
+              'hcv': 'HCV', 'cirrhosis': 'Cirrhosis', 'support2': 'SUPPORT2', 'tae': 'TAE (control)',
+              'diabetes130': 'Diabetes130 (control)', 'student_por': 'Student (control)', 'npha': 'NPHA (control)'}
 POL_LABEL = {'qwk': 'QWK', 'mae': 'MAE', 'amae': 'AMAE', 'mmae': 'MMAE', 'macro_f1': 'Macro-F1',
              'rps': 'RPS', 'qwk_recall': 'QWK + recall floor'}
 EVAL_LABEL = {'qwk': 'QWK', 'macro_f1': 'Macro-F1', 'normalized_mae': 'MAE', 'normalized_amae': 'AMAE',
@@ -59,22 +61,24 @@ def style(ax, grid_axis='x'):
 
 
 # ---------------------------------------------------------------- Figure 1: forest plot
-order = ['wine_white', 'wine_red', 'skillcraft_survey', 'movielens100k', 'sushi', 'restaurant', 'tae']  # by endpoint rarity
+tt = tasks[tasks.role.isin(['primary', 'control'])].sort_values(['role', 'p_endpoint_min'], ascending=[False, True])
+order = tt.task.tolist()  # primary first, each block ordered by the share of the rarer endpoint
+n_primary = int((tt.role == 'primary').sum())
 prev = tasks.set_index('task')['p_endpoint_min']
-fig, axes = plt.subplots(1, 3, figsize=(6.85, 3.3), sharey=True)
+fig, axes = plt.subplots(1, 3, figsize=(6.85, 4.9), sharey=True)
 for ax, p in zip(axes, ['amae', 'macro_f1', 'qwk_recall']):
     sub = contr[contr.policy_minus_qwk == p].set_index(['task', 'family'])
     for i, t in enumerate(order):
         for j, fam in enumerate(('po', 'rf')):
             r = sub.loc[(t, fam)]
             yv = i + (-0.17 if fam == 'po' else 0.17)
-            alpha = 0.55 if t == 'tae' else 1.0
+            alpha = 0.55 if i >= n_primary else 1.0
             ax.plot([r.endpoint_ci_low, r.endpoint_ci_high], [yv, yv], color=COL[fam], lw=1.2, alpha=alpha,
                     solid_capstyle='round')
             ax.plot(r.endpoint_recall_delta, yv, MARK[fam], ms=4.5, color=COL[fam], mec='white', mew=0.6, alpha=alpha,
                     label=FAM_LABEL[fam] if (i == 0 and p == 'amae') else None)
     ax.axvline(0, color=INK2, lw=0.7)
-    ax.axhline(len(order) - 1.5, color=GRID, lw=0.8, ls=(0, (2, 2)))
+    ax.axhline(n_primary - 0.5, color=GRID, lw=0.8, ls=(0, (2, 2)))
     ax.set_title(f'{POL_LABEL[p]} − QWK')
     style(ax)
     ax.set_xlim(-0.5, 0.8)
@@ -148,25 +152,30 @@ style(ax2)
 fig.tight_layout()
 save(fig, 'fig3_agreement_weighting')
 
-# ---------------------------------------------------------------- Figure 4: endpoint rarity
-mod = pd.read_csv(OUT / 'moderator_cells.csv')
-fig, ax = plt.subplots(figsize=(4.2, 3.0))
-for fam in ('po', 'rf'):
-    s = mod[mod.family == fam]
-    ax.scatter(s.p_endpoint_min * 100, s.endpoint_recall_delta, marker=MARK[fam], s=28, color=COL[fam],
-               edgecolor='white', linewidth=0.6, label=FAM_LABEL[fam], zorder=3)
-lab = mod.groupby('task').agg(x=('p_endpoint_min', 'first'), y=('endpoint_recall_delta', 'max')).reset_index()
-for _, r in lab.iterrows():
-    ax.annotate(TASK_LABEL[r.task], (r.x * 100, r.y), xytext=(4, 4), textcoords='offset points', fontsize=6.5, color=INK2)
-ax.axhline(0, color=INK2, lw=0.7)
-ax.set_xscale('log')
-ax.set_xticks([0.1, 0.3, 1, 3, 10, 30])
-ax.set_xticklabels(['0.1', '0.3', '1', '3', '10', '30'])
-ax.minorticks_off()
-ax.set_xlabel('Prevalence of the rarer endpoint class (%, log scale)')
-ax.set_ylabel('AMAE − QWK: mean endpoint recall')
-style(ax, 'both')
-ax.legend(frameon=False, loc='lower left')
+# ---------------------------------------------------------------- Figure 4: endpoint share relative to 1/K
+ep = pd.read_csv(OUT / 'endpoint_share_cells.csv')
+fig, axes = plt.subplots(1, 2, figsize=(6.85, 3.0), sharey=True)
+panels = [('weight_delta', '(a) Balanced − unweighted training\n(same hyperparameters)'),
+          ('amae_minus_qwk_delta', '(b) AMAE − QWK selection')]
+for ax, (col, title) in zip(axes, panels):
+    for fam in ('po', 'rf'):
+        s = ep[(ep.family == fam) & (ep.role == 'primary')]
+        ax.scatter(s.k * s.share, s[col], marker=MARK[fam], s=24, color=COL[fam], edgecolor='white', linewidth=0.5,
+                   label=FAM_LABEL[fam] + ' (primary)', zorder=3)
+        c_ = ep[(ep.family == fam) & (ep.role == 'control')]
+        ax.scatter(c_.k * c_.share, c_[col], marker=MARK[fam], s=22, facecolor='none', edgecolor=INK2, linewidth=0.7,
+                   label='Control task' if fam == 'po' else None, zorder=2)
+    ax.axhline(0, color=INK2, lw=0.7)
+    ax.axvline(1, color=INK2, lw=0.7, ls=(0, (3, 2)))
+    ax.set_xscale('log')
+    ax.set_xticks([0.01, 0.03, 0.1, 0.3, 1, 3])
+    ax.set_xticklabels(['0.01', '0.03', '0.1', '0.3', '1', '3'])
+    ax.minorticks_off()
+    ax.set_title(title)
+    ax.set_xlabel('Endpoint share × K  (1 = uniform share)')
+    style(ax, 'both')
+axes[0].set_ylabel('Change in recall of the endpoint')
+axes[0].legend(frameon=False, loc='lower left', fontsize=6.5)
 fig.tight_layout()
-save(fig, 'fig4_endpoint_rarity')
+save(fig, 'fig4_endpoint_share')
 print('figures written to', FIG)

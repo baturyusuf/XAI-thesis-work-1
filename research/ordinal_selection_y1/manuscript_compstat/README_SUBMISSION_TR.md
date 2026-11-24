@@ -1,6 +1,8 @@
 # Computational Statistics gönderim paketi (Y1)
 
-Tarih: 2026-11-24. Branch: `research/q3-journal-selection`. Bu klasör, Y1 çalışmasının Computational Statistics (Springer) için hazırlanmış makale taslağını içerir. Taslak, mevcut sonuçlara ve M3 analizine dayanır; yeni model eğitimi yapılmadı. M1 veri genişletmesi ayrı bir oturumda, ayrı bir branch'te yürüyor ve bu taslağa dahil değil.
+Tarih: 2026-11-24. Branch: `research/q3-journal-selection`. Bu klasör, Y1 çalışmasının Computational Statistics (Springer) için hazırlanmış makalesini içerir. Gönderim sırası Computational Statistics → PAA → JoC; dergi bazlı değişiklikler `JOURNAL_CASCADE_TR.md` dosyasında.
+
+Makale üç aşamanın sonuçlarına dayanıyor: v1, gate-v2 ve M1. M1'in fitleri `research/ordinal-y1-m1-extension` dalında çalıştırıldı; bu dalda yalnızca kayıtlı tahminleri okundu. Makale için yeni model eğitimi yapılmadı.
 
 ## Klasör içeriği
 
@@ -8,7 +10,7 @@ Tarih: 2026-11-24. Branch: `research/q3-journal-selection`. Bu klasör, Y1 çal�
 |---|---|
 | `main.tex` | Ana makale (Springer Nature `sn-jnl` şablonu, yazar-yıl atıf stili `sn-mathphys-ay`) |
 | `supplement.tex` | Ek Bilgiler (standart `article` sınıfı; her LaTeX kurulumunda derlenir) |
-| `refs.bib` | Kaynakça. 32 kayıt; DOI'li olanların hepsi Crossref/DataCite'tan doğrulandı (`analysis/out/crossref_bibliography.json`) |
+| `refs.bib` | Kaynakça. 42 kayıt; DOI'li olanların hepsi Crossref/DataCite'tan doğrulandı (`analysis/out/crossref_bibliography*.json`) |
 | `numbers.tex` | Metindeki her sayının makrosu. **Elle düzenlemeyin**; `analysis/make_tables.py` üretir |
 | `tables/` | Analiz çıktısından otomatik üretilen tablolar |
 | `figures/` | Şekiller (PDF + PNG) |
@@ -21,15 +23,19 @@ Tarih: 2026-11-24. Branch: `research/q3-journal-selection`. Bu klasör, Y1 çal�
 
 Makalenin sorusu: aynı aday havuzunda hangi ölçütle model seçildiğinde (QWK, MAE, AMAE, MMAE, macro-F1, RPS, uç sınıf recall tabanlı QWK) uç sınıflara ne oluyor?
 
-Ana bulgular:
-1. **Seçim ölçütü, sınıf ağırlığının seçilip seçilmeyeceğini büyük ölçüde belirliyor.** MAE ve RPS hiç "balanced" seçmiyor; MMAE %93, recall tabanlı QWK %99 oranında seçiyor.
-2. **Mekanizma, sabit hiperparametreli kontrollerde net görünüyor.** Ağırlıklandırma 24/24 karşılaştırmada MAE'yi artırıyor, 22/24'te en kötü sınıf hatasını (MMAE) düşürüyor.
-3. **Hiçbir ölçüt tüm metriklerde güvenli değil** (çapraz-ölçüt pişmanlık matrisi).
-4. **Yeni analitik sonuç (Önerme 1).** Orta sınıfı sabit tahmin eden bilgisiz kural, veriden bağımsız olarak nAMAE = (K+1)/(4K) değerini alıyor; uç sınıf recall'u ise 0. Üç zayıf sinyalli görevde (Restaurant, Sushi, MovieLens) 8 adayın hepsi bu sabit kuraldan daha kötü AMAE'ye sahip.
-5. **AMAE'nin QWK'ye göre etkisi görevden göreve yön değiştiriyor** (−0,40 ile +0,53 arası). MMAE ve recall alt sınırı, uç sınıfları daha tutarlı koruyor; maliyeti medyan yaklaşık 0,02 QWK.
-6. **Uç sınıf nadirliğiyle ilişki** (Spearman −0,64) açıkça keşifsel ve sonradan fark edilmiş bir bulgu olarak sunuldu.
+Kapsam: **10 birincil görev (9 kaynak)** ve **4 kontrol görevi**. Toplam 2.160 gerçek fit ve 480 simülasyon fiti var; 8 ligli eski SkillCraft "superseded" olarak ek bilgilerde.
 
-Önceki Q3 raporunda "4 kaynak" yazmıştım. Makale aslında v1 ve gate-v2 koşularının birleşimiyle **6 birincil görev / 5 kaynak ailesi** kullanıyor. TAE kontrol görevi, eski 8 ligli SkillCraft ise "superseded" olarak ek bilgilerde raporlandı.
+Ana bulgular:
+1. **Seçim ölçütü sınıf ağırlığını belirliyor.** "Balanced" seçme oranı MAE'de 0,04, RPS'de 0,00, MMAE'de 0,96.
+2. **Sabit hiperparametreli kontroller nedenini gösteriyor.** Ağırlıklandırma 40 karşılaştırmanın 39'unda MAE'yi artırıyor, 38'inde MMAE'yi düşürüyor.
+3. **Yeni mekanizma: uç payı ve 1/K kuralı.** Payı 1/K'nın altındaki uç sınıflarda ağırlıklandırma recall'u 24/24 durumda artırıyor; üstündekilerde 16 durumun 13'ünde düşürüyor. AMAE seçimi de aynı kurala uyuyor. AMAE'nin QWK'ye göre etkisinin −0,40 ile +0,53 arasında yön değiştirmesinin açıklaması bu. M1 görevlerinde kural 16 durumun 15'inde tuttu.
+4. **Analitik sonuç (Önerme 1).** Orta sınıfı sabit tahmin eden kural nAMAE = (K+1)/(4K) alıyor ve uç sınıfları hiç bulmuyor. 4 görevde 8 adayın hepsinden iyi: üç rating görevi ve SUPPORT2.
+5. **QWK + recall alt sınırı.** Hiçbir blokta uç recall'u düşürmedi; 8/18 blokta artırdı (p=0,008). Görev başına en büyük QWK kaybı 0,06.
+6. **Hiçbir ölçüt tüm metriklerde güvenli değil.**
+
+Eski "uç sınıf nadirliği" yorumu M1'de zayıfladı. Bu nedenle makaleden çıkarıldı; yerini daha genel ve test edilebilir 1/K kuralı aldı.
+
+Tekrar üretilebilirlik paketi `reproducibility/` klasöründe: kaynak, DOI, lisans ve hash tablosu ile adım adım yeniden üretim rehberi.
 
 ## Word sürümü (`word/`)
 
@@ -56,7 +62,7 @@ powershell -File analysis/word/build_word.ps1 -Python <numpy/pandas olan python>
 
 ## Derleme (bu bilgisayarda LaTeX yok)
 
-LaTeX dağıtımı kurulu olmadığı için PDF burada derlenmedi. Yerine statik kontroller çalıştırıldı ve hepsi geçti: tanımsız makro yok, eksik dosya veya atıf yok, ayraç/ortam/`$` dengeli, özet 241 kelime (sınır 150–250), 6 anahtar kelime (sınır 4–6).
+LaTeX dağıtımı kurulu olmadığı için PDF burada derlenmedi. Yerine statik kontroller çalıştırıldı ve hepsi geçti: tanımsız makro yok, eksik dosya veya atıf yok, ayraç/ortam/`$` dengeli, özet 226 kelime (sınır 150–250), 6 anahtar kelime (sınır 4–6).
 
 Overleaf'te derlemek için:
 1. Overleaf → New Project → Templates → "Springer Nature LaTeX Template" projesini açın.
@@ -89,7 +95,7 @@ Overleaf'te derlemek için:
 
 | Olası eleştiri | Durum |
 |---|---|
-| Az görev (6 görev, 5 aile) | M1 oturumu 6–8 yeni veri setini aynı tasarımla çalıştırıyor. Nadirlik hipotezi fit öncesinde önceden kayda geçirilmesi istendi; büyük revizyonda bağımsız sınama olarak eklenebilir. |
+| Görev sayısı (10 birincil, 9 kaynak) | M1 makaleye dahil edildi. Daha fazlası istenirse aynı altyapıyla yeni görevler eklenebilir. |
 | Küçük aday havuzu | Sınırlılıklarda açıkça yazıldı; büyük revizyonda grid genişletilebilir (M2). |
 | Zayıf sinyalli rating görevleri | Önerme 1 ve Tablo 5 bunu bir bulguya çevirdi; sınırlılıklarda da var. |
 | İki tekrar, koşullu bootstrap | Yöntemde ve sınırlılıklarda açıkça belirtildi. |
@@ -110,4 +116,4 @@ python analysis/make_tables.py analysis/out ../gate_v2/MECHANISM_CONTRASTS.csv .
 python analysis/check_and_package.py .
 ```
 
-Bağımsız yeniden hesaplama, kayıtlı özetlerle 1.120 karşılaştırmada birebir tutuyor (en büyük fark 1,7×10⁻¹⁶). Ham veri, kimlikler ve satır düzeyindeki tahminler Git'e girmedi.
+Bağımsız yeniden hesaplama, kayıtlı özetlerle 2.100 karşılaştırmada birebir tutuyor (en büyük fark 2,2×10⁻¹⁶). Ham veri, kimlikler ve satır düzeyindeki tahminler Git'e girmedi.

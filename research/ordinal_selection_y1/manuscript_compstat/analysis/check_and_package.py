@@ -25,7 +25,7 @@ multicolumn includegraphics item backmatter bmhead bibliography le ge ne to inft
 mathbf boldsymbol bar hat top sqrt varepsilon lambda nu rho chi propto mid dots in qquad quad cdot times setlength
 tabcolsep renewcommand thetable arabic LTcapwidth date endfirsthead endhead endfoot addlinespace large hidelinks
 small normalsize ensuremath sum_ alpha ldots tfrac widehat left right lvert rvert QWKF textbackslash Pr
-Delta beta sim bigl bigr
+Delta beta sim bigl bigr log pi scriptsize
 '''.split())
 
 def strip_comments(t):

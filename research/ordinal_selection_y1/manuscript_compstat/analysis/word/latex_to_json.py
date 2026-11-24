@@ -38,7 +38,8 @@ def parse_bib(text):
 
 def tex_accents(s):
     rep = {r"{\'i}": 'í', r"{\'a}": 'á', r"{\'e}": 'é', r"{\'o}": 'ó', r"{\'E}": 'É', r'{\v{s}}': 'š', r'{\u{a}}': 'ă',
-           r'{\"e}': 'ë', r"\'i": 'í', r"\'a": 'á', r"\'e": 'é', r"\'o": 'ó', r'\&': '&'}
+           r'{\"e}': 'ë', r'{\~a}': 'ã', r"\'i": 'í', r"\'a": 'á', r"\'e": 'é', r"\'o": 'ó', r'\&': '&', '---': '—',
+           '--': '–'}
     for a, b in rep.items():
         s = s.replace(a, b)
     return s.replace('{', '').replace('}', '')
@@ -93,11 +94,12 @@ def cite(kind, pre, post, keys):
 
 
 # ------------------------------------------------------------------ inline math
-GREEK = {'nu': 'ν', 'rho': 'ρ', 'lambda': 'λ', 'beta': 'β', 'varepsilon': 'ε', 'chi': 'χ', 'Delta': 'Δ', 'alpha': 'α'}
+GREEK = {'nu': 'ν', 'rho': 'ρ', 'lambda': 'λ', 'beta': 'β', 'varepsilon': 'ε', 'chi': 'χ', 'Delta': 'Δ', 'alpha': 'α',
+         'pi': 'π'}
 SYMS = {'le': '≤', 'ge': '≥', 'in': '∈', 'times': '×', 'to': '→', 'infty': '∞', 'sim': '∼', 'propto': '∝', 'mid': ' | ',
         'dots': '…', 'ldots': '…', 'sum': '∑', 'cdot': '·', 'qquad': '    ', 'quad': '  ', 'ne': '≠', 'top': '⊤', 'equiv': '≡',
         '|': '‖', 'lvert': '|', 'rvert': '|', ',': ' ', ' ': ' '}
-ROMAN_FUN = {'Pr', 'max', 'min', 'arg'}
+ROMAN_FUN = {'Pr', 'max', 'min', 'arg', 'log'}
 
 
 def math_tokens(s):
@@ -326,7 +328,8 @@ def H(*cells):
 
 
 HEADERS = {
-    'tab_data': [H('Task', '$n$', 'Groups (unit)', '$K$', '$p$', 'Class counts', 'Rarer endpoint (%)', 'Endpoint groups', 'Terms')],
+    'tab_data': [H('Task', 'Stage', '$n$', 'Groups (unit)', '$K$', '$p$', 'Class counts', 'Endpoint shares (%)',
+                   'Endpoint groups', 'Terms')],
     'tab_endpoint': [H('', '', ('QWK selection', 2), ('$\\Delta R_{\\mathrm{end}}$ relative to QWK', 3), '$\\Delta$QWK'),
                      H('Task', 'Family', '$R_0$', '$R_{K-1}$', 'AMAE', 'MMAE', 'QWK-floor', 'QWK-floor')],
     'tab_inference': [H('', ('$\\Delta R_{\\mathrm{end}}$', 6), ('$\\Delta$QWK', 2)),

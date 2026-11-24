@@ -133,3 +133,9 @@ Bu artışlar kalibre edilmiş değildir. Mantıkları şu: M1, ML dergilerinde 
 - **Yeni analitik katkı.** Orta sınıfı sabit tahmin eden kural, veriden bağımsız olarak nAMAE = (K+1)/(4K) değerini alıyor. Zayıf sinyalli 3 görevde 8 adayın hepsi bu değerden daha kötü. Bu sonuç, Computational Statistics editörünün makaleyi "yalnızca benchmark" olarak görme riskini azaltıyor.
 - **Güncellenmiş tahmin.** Bu iki nedenle Computational Statistics için öznel kabul tahminimi %30–40'tan **%35–45**'e çekiyorum (B0 ve M3 tamamlandı). Bu da kalibre edilmiş bir olasılık değildir.
 - **Makale paketi:** `../manuscript_compstat/` (ayrıntılar için `README_SUBMISSION_TR.md`). M1 veri genişletmesi ayrı bir oturumda ve ayrı bir branch'te yürüyor.
+
+## Ek 2 (2026-11-24): kesinleşen plan
+
+- **Kullanıcı kararı.** Gönderim sırası Computational Statistics → PAA → JoC. Zed'deki Astra raporunun üç dergisi, Computational Statistics öne alınarak kullanılıyor. Dergiye özgü değişiklikler `../manuscript_compstat/JOURNAL_CASCADE_TR.md` dosyasında.
+- **M1 makaleye dahil edildi.** Makale artık 10 birincil görev (9 kaynak) ve 4 kontrol görevine dayanıyor. "Nadirlik" yorumunun yerini 1/K kuralı aldı: ağırlıklandırma, payı 1/K'nın altındaki uç sınıflarda recall'u 24/24 durumda artırıyor, üstündekilerde 16 durumun 13'ünde düşürüyor.
+- **Tekrar üretilebilirlik paketi hazır.** PAA'nın kod ve veri erişimi şartı için gerekli tek eksik, `employee-performance-with-XAI` kodunun lisans kararı.

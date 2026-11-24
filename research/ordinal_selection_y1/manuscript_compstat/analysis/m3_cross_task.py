@@ -6,7 +6,7 @@ metrics with an independent implementation, cross-checks them against the
 stored run summaries, and writes aggregate tables only (no row-level data).
 
 Usage:
-    python -B m3_cross_task.py <Y1 local dir> <output dir>
+    python -B m3_cross_task.py <Y1 local dir> <M1 local dir> <output dir>
 """
 import json
 import sys
@@ -17,20 +17,28 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 
-LOCAL = Path(sys.argv[1])
-OUT = Path(sys.argv[2])
+Y1LOCAL = Path(sys.argv[1])
+M1LOCAL = Path(sys.argv[2])
+OUT = Path(sys.argv[3])
 OUT.mkdir(parents=True, exist_ok=True)
 
 RUNS = {
-    # name: (directory, source family, role)
-    'wine_red': ('runs/wine_red', 'wine', 'primary'),
-    'wine_white': ('runs/wine_white', 'wine', 'primary'),
-    'skillcraft_survey': ('gate_v2/skillcraft_survey/run', 'skillcraft', 'primary'),
-    'restaurant': ('gate_v2/real_extension/runs/restaurant', 'restaurant', 'primary'),
-    'sushi': ('gate_v2/real_extension/runs/sushi', 'sushi', 'primary'),
-    'movielens100k': ('gate_v2/real_extension/runs/movielens100k', 'movielens', 'primary'),
-    'tae': ('runs/tae', 'tae', 'control'),
-    'skillcraft_v1': ('runs/skillcraft', 'skillcraft', 'superseded'),
+    # name: (directory, source family, role, stage)
+    'wine_red': (Y1LOCAL / 'runs/wine_red', 'wine', 'primary', 'stage 1'),
+    'wine_white': (Y1LOCAL / 'runs/wine_white', 'wine', 'primary', 'stage 1'),
+    'skillcraft_survey': (Y1LOCAL / 'gate_v2/skillcraft_survey/run', 'skillcraft', 'primary', 'stage 2'),
+    'restaurant': (Y1LOCAL / 'gate_v2/real_extension/runs/restaurant', 'restaurant', 'primary', 'stage 2'),
+    'sushi': (Y1LOCAL / 'gate_v2/real_extension/runs/sushi', 'sushi', 'primary', 'stage 2'),
+    'movielens100k': (Y1LOCAL / 'gate_v2/real_extension/runs/movielens100k', 'movielens', 'primary', 'stage 2'),
+    'ctg': (M1LOCAL / 'm1_extension/runs/ctg', 'ctg', 'primary', 'stage 3'),
+    'hcv': (M1LOCAL / 'm1_extension/runs/hcv', 'hcv', 'primary', 'stage 3'),
+    'cirrhosis': (M1LOCAL / 'm1_extension/runs/cirrhosis', 'cirrhosis', 'primary', 'stage 3'),
+    'support2': (M1LOCAL / 'm1_extension/runs/support2', 'support2', 'primary', 'stage 3'),
+    'tae': (Y1LOCAL / 'runs/tae', 'tae', 'control', 'stage 1'),
+    'diabetes130': (M1LOCAL / 'm1_extension/runs/diabetes130', 'diabetes130', 'control', 'stage 3'),
+    'student_por': (M1LOCAL / 'm1_extension/runs/student_por', 'student', 'control', 'stage 3'),
+    'npha': (M1LOCAL / 'm1_extension/runs/npha', 'npha', 'control', 'stage 3'),
+    'skillcraft_v1': (Y1LOCAL / 'runs/skillcraft', 'skillcraft', 'superseded', 'stage 1'),
 }
 POLICIES = ['qwk', 'mae', 'amae', 'mmae', 'macro_f1', 'rps', 'qwk_recall']
 FAMILIES = ['po', 'rf']
@@ -129,14 +137,13 @@ rng = np.random.default_rng(RNG_SEED)
 policy_rows, cand_rows, contrast_rows, decision_rows, check_rows, task_rows = [], [], [], [], [], []
 regret_rows = []
 
-for task, (rel, source, role) in RUNS.items():
-    d = LOCAL / rel
+for task, (d, source, role, stage) in RUNS.items():
     z = np.load(d / 'predictions.npz', allow_pickle=False)
     y, groups = z['y'], z['groups']
     k = int(y.max()) + 1
     prev = np.bincount(y, minlength=k) / len(y)
     endpoint_groups = [len(np.unique(groups[y == c])) for c in (0, k - 1)]
-    task_rows.append({'task': task, 'source_family': source, 'role': role, 'n': len(y), 'groups': len(np.unique(groups)),
+    task_rows.append({'task': task, 'source_family': source, 'role': role, 'stage': stage, 'n': len(y), 'groups': len(np.unique(groups)),
                       'k': k, 'p_low': prev[0], 'p_high': prev[-1], 'p_endpoint_min': min(prev[0], prev[-1]),
                       'endpoint_groups_low': endpoint_groups[0], 'endpoint_groups_high': endpoint_groups[1],
                       'class_counts': json.dumps(np.bincount(y, minlength=k).tolist())})
@@ -287,6 +294,34 @@ for (task, fam), g in candidates.groupby(['task', 'family']):
                          'normalized_mmae', 'macro_f1', 'rps', 'pred_var', 'pred_endpoint_share')}})
 ctrl = pd.DataFrame(ctrl).merge(tasks[['task', 'role']], on='task')
 
+# Per-endpoint mechanism check (Remark on class weighting): balanced weights and AMAE give every
+# class weight 1/K, so an endpoint whose share is below 1/K is up-weighted and one above 1/K is
+# down-weighted. Relate the per-endpoint recall change to log(K * share). Descriptive.
+ep_rows = []
+for _, t in tasks.iterrows():
+    for side, share in (('low', t.p_low), ('high', t.p_high)):
+        rel = float(np.log(t.k * share))
+        for fam in FAMILIES:
+            c_ = ctrl[(ctrl.task == t.task) & (ctrl.family == fam)]
+            a_ = contr[(contr.task == t.task) & (contr.family == fam) & (contr.policy_minus_qwk == 'amae')].iloc[0]
+            ep_rows.append({'task': t.task, 'role': t.role, 'family': fam, 'endpoint': side, 'share': share, 'k': t.k,
+                            'log_k_share': rel, 'below_uniform': share < 1 / t.k,
+                            'weight_delta': float(c_[f'recall_{side}_delta'].mean()),
+                            'amae_minus_qwk_delta': float(a_[f'recall_{side}_delta'])})
+ep = pd.DataFrame(ep_rows)
+ep_summary = []
+for role_set, name in ((['primary'], 'primary'), (['primary', 'control'], 'primary+control')):
+    s = ep[ep.role.isin(role_set)]
+    for col in ('weight_delta', 'amae_minus_qwk_delta'):
+        r = stats.spearmanr(s.log_k_share, s[col])
+        below, above = s[s.below_uniform][col], s[~s.below_uniform][col]
+        ep_summary.append({'set': name, 'outcome': col, 'points': len(s), 'spearman_rho': float(r.statistic),
+                           'p_value': float(r.pvalue), 'below_n': len(below), 'below_pos': int((below > 1e-9).sum()),
+                           'below_neg': int((below < -1e-9).sum()), 'below_median': float(below.median()),
+                           'above_n': len(above), 'above_pos': int((above > 1e-9).sum()),
+                           'above_neg': int((above < -1e-9).sum()), 'above_median': float(above.median())})
+ep_summary = pd.DataFrame(ep_summary)
+
 # Prediction-marginal summary of QWK- and AMAE-selected models (mechanism description)
 mech = policies[policies.policy.isin(['qwk', 'amae', 'mmae', 'qwk_recall'])][
     ['task', 'role', 'family', 'policy', 'qwk', 'qwk_observed', 'qwk_expected', 'pred_var', 'label_var',
@@ -295,8 +330,8 @@ mech = policies[policies.policy.isin(['qwk', 'amae', 'mmae', 'qwk_recall'])][
 # Constant-prediction references: every constant class m, scored on the observed labels.
 # AMAE of a constant prediction depends only on K (data-independent); QWK of any constant is 0.
 const_rows = []
-for task, (rel, source, role) in RUNS.items():
-    y = np.load(LOCAL / rel / 'predictions.npz', allow_pickle=False)['y']
+for task, (d, source, role, stage) in RUNS.items():
+    y = np.load(d / 'predictions.npz', allow_pickle=False)['y']
     k = int(y.max()) + 1
     for m in range(k):
         p = np.zeros((len(y), k)); p[:, m] = 1.0
@@ -324,6 +359,8 @@ const_ref['candidates_worse_than_constant'] = [
 
 # ------------------------------------------------------------------ write
 const_ref.to_csv(OUT / 'constant_reference.csv')
+ep.to_csv(OUT / 'endpoint_share_cells.csv', index=False)
+ep_summary.to_csv(OUT / 'endpoint_share_summary.csv', index=False)
 ctrl.to_csv(OUT / 'fixed_weight_controls.csv', index=False)
 mech.to_csv(OUT / 'mechanism_marginals.csv', index=False)
 tasks.to_csv(OUT / 'tasks.csv', index=False)

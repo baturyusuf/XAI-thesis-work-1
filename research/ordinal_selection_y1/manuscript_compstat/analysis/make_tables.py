@@ -16,9 +16,15 @@ TAB = MS / 'tables'
 TAB.mkdir(parents=True, exist_ok=True)
 
 TASK = {'wine_red': 'Wine (red)', 'wine_white': 'Wine (white)', 'skillcraft_survey': 'SkillCraft',
-        'restaurant': 'Restaurant', 'sushi': 'Sushi', 'movielens100k': 'MovieLens-100k', 'tae': 'TAE (control)',
+        'restaurant': 'Restaurant', 'sushi': 'Sushi', 'movielens100k': 'MovieLens-100k', 'ctg': 'CTG', 'hcv': 'HCV',
+        'cirrhosis': 'Cirrhosis', 'support2': 'SUPPORT2', 'tae': 'TAE (control)',
+        'diabetes130': 'Diabetes130 (control)', 'student_por': 'Student (control)', 'npha': 'NPHA (control)',
         'skillcraft_v1': 'SkillCraft, 8 leagues (superseded)'}
-PRIMARY = ['wine_red', 'wine_white', 'skillcraft_survey', 'restaurant', 'sushi', 'movielens100k']
+PRIMARY = ['wine_red', 'wine_white', 'skillcraft_survey', 'restaurant', 'sushi', 'movielens100k',
+           'ctg', 'hcv', 'cirrhosis', 'support2']
+CONTROLS = ['tae', 'diabetes130', 'student_por', 'npha']
+RATING = ['restaurant', 'sushi', 'movielens100k']
+STAGE3 = ['ctg', 'hcv', 'cirrhosis', 'support2']
 POL = {'qwk': 'QWK', 'mae': 'MAE', 'amae': 'AMAE', 'mmae': 'MMAE', 'macro_f1': 'Macro-F1', 'rps': 'RPS',
        'qwk_recall': 'QWK+floor'}
 FAM = {'po': 'PO', 'rf': 'RF'}
@@ -76,19 +82,22 @@ def write(name, body):
 
 
 # ------------------------------------------------------------------ Table 1: data
-lic = {'wine_red': 'CC BY 4.0', 'wine_white': 'CC BY 4.0', 'skillcraft_survey': 'CC BY 4.0',
-       'restaurant': 'CC BY 4.0', 'sushi': 'research use', 'movielens100k': 'research use', 'tae': 'CC BY 4.0'}
-unit = {'wine_red': 'predictor duplicates', 'wine_white': 'predictor duplicates',
-        'skillcraft_survey': 'predictor duplicates', 'restaurant': 'user', 'sushi': 'user',
-        'movielens100k': 'user', 'tae': 'instructor'}
+lic = {'wine_red': 'CC BY', 'wine_white': 'CC BY', 'skillcraft_survey': 'CC BY', 'restaurant': 'CC BY',
+       'sushi': 'research', 'movielens100k': 'research', 'ctg': 'CC BY', 'hcv': 'CC BY', 'cirrhosis': 'CC BY',
+       'support2': 'research', 'tae': 'CC BY', 'diabetes130': 'CC BY', 'student_por': 'CC BY', 'npha': 'CC BY'}
+unit = {'wine_red': 'duplicates', 'wine_white': 'duplicates', 'skillcraft_survey': 'duplicates', 'restaurant': 'user',
+        'sushi': 'user', 'movielens100k': 'user', 'ctg': 'exam file', 'hcv': 'patient', 'cirrhosis': 'patient',
+        'support2': 'patient', 'tae': 'instructor', 'diabetes130': 'patient', 'student_por': 'duplicates',
+        'npha': 'duplicates'}
 feats = {'wine_red': 11, 'wine_white': 11, 'skillcraft_survey': 18, 'restaurant': 12, 'sushi': 4,
-         'movielens100k': 21, 'tae': 4}
+         'movielens100k': 21, 'ctg': 21, 'hcv': 12, 'cirrhosis': 15, 'support2': 29, 'tae': 4, 'diabetes130': 41,
+         'student_por': 30, 'npha': 14}
 rows = []
-for t in PRIMARY + ['tae']:
+for t in PRIMARY + CONTROLS:
     r = tasks.loc[t]
     counts = r.class_counts.strip('[]').replace(' ', '').replace(',', ', ')
-    rows.append(f"{TASK[t]} & {int(r.n):,} & {int(r.groups):,} ({unit[t]}) & {int(r.k)} & {feats[t]} & {counts} & "
-                f"{100 * r.p_endpoint_min:.1f} & {int(r.endpoint_groups_low)}/{int(r.endpoint_groups_high)} & {lic[t]} \\\\")
+    rows.append(f"{TASK[t]} & {r.stage.split()[-1]} & {int(r.n):,} & {int(r.groups):,} ({unit[t]}) & {int(r.k)} & {feats[t]} & {counts} & "
+                f"{100 * r.p_low:.1f} / {100 * r.p_high:.1f} & {int(r.endpoint_groups_low)}/{int(r.endpoint_groups_high)} & {lic[t]} \\\\")
 rows.insert(len(PRIMARY), '\\midrule')
 write('tab_data.tex', '\n'.join(rows) + '\n')
 
@@ -137,7 +146,7 @@ write('tab_controls.tex', '\n'.join(rows) + '\n')
 
 # ------------------------------------------------------------------ Table 5: constant reference
 rows = []
-for t in PRIMARY + ['tae']:
+for t in PRIMARY + CONTROLS:
     r = const.loc[t]
     q = p.loc[(t, 'po', 'qwk')].qwk, p.loc[(t, 'rf', 'qwk')].qwk
     rows.append(f"{TASK[t]} & {int(r.k)} & {f3(r.constant_namae)} & {f3(r.best_candidate_namae)} & "
@@ -149,7 +158,7 @@ write('tab_constant.tex', '\n'.join(rows) + '\n')
 # ------------------------------------------------------------------ Supplement tables
 # S1: all policies, all tasks
 rows = []
-order = PRIMARY + ['tae', 'skillcraft_v1']
+order = PRIMARY + CONTROLS + ['skillcraft_v1']
 for t in order:
     for fam in ('po', 'rf'):
         for k_ in POL:
@@ -280,17 +289,73 @@ for t, nm in [('movielens100k', 'Ml'), ('wine_red', 'Wr'), ('skillcraft_survey',
             m('Nmmae' + tag, r.normalized_mmae, '{:.3f}')
         m('LabVar' + nm, r.label_var)
         m('LabEnd' + nm, r.label_endpoint_share)
-for t, nm in [('movielens100k', 'Ml'), ('restaurant', 'Re'), ('sushi', 'Su')]:
+for t, nm in [('movielens100k', 'Ml'), ('restaurant', 'Re'), ('sushi', 'Su'), ('support2', 'Sp')]:
     m('ConstNamae' + nm, const.loc[t, 'constant_namae'], '{:.3f}')
     m('BestCandNamae' + nm, const.loc[t, 'best_candidate_namae'], '{:.3f}')
     m('ConstNmae' + nm, const.loc[t, 'constant_nmae'], '{:.3f}')
-m('QwkRangeLow', pp[(pp.policy == 'qwk') & pp.task.isin(['restaurant', 'sushi', 'movielens100k'])].qwk.min())
-m('QwkRangeHigh', pp[(pp.policy == 'qwk') & pp.task.isin(['restaurant', 'sushi', 'movielens100k'])].qwk.max())
+LOWSIG = RATING + ['support2']
+m('QwkRangeLow', pp[(pp.policy == 'qwk') & pp.task.isin(LOWSIG)].qwk.min())
+m('QwkRangeHigh', pp[(pp.policy == 'qwk') & pp.task.isin(LOWSIG)].qwk.max())
+m('QwkInformedLow', pp[(pp.policy == 'qwk') & pp.task.isin([t for t in PRIMARY if t not in LOWSIG])].qwk.min())
+# study size
+m('NPrimary', len(PRIMARY), '{}')
+m('NControls', len(CONTROLS), '{}')
+m('NFamiliesPrimary', tasks.loc[PRIMARY, 'source_family'].nunique(), '{}')
+m('NCells', 2 * len(PRIMARY), '{}')
+m('NBlocks', int(ie.loc['amae', 'blocks']), '{}')
+m('NBlocksFam', int(ie.loc['amae', 'blocks']) // 2, '{}')
+m('NRealFits', 144 * (len(PRIMARY) + len(CONTROLS) + 1), '{:,}')
+m('QwkCostPosCon', int(iq.loc['qwk_recall', 'positive']), '{}')
+m('ConNonzero', int(ie.loc['qwk_recall', 'nonzero_blocks']), '{}')
+# per-endpoint share mechanism
+eps = pd.read_csv(OUT / 'endpoint_share_summary.csv').set_index(['set', 'outcome'])
+for o, nm in [('weight_delta', 'W'), ('amae_minus_qwk_delta', 'A')]:
+    r = eps.loc[('primary', o)]
+    m(f'Ep{nm}Rho', r.spearman_rho)
+    m(f'Ep{nm}P', '\\ensuremath{<}0.001' if r.p_value < 0.001 else f'{r.p_value:.3f}')
+    m(f'Ep{nm}Points', int(r.points), '{}')
+    m(f'Ep{nm}BelowN', int(r.below_n), '{}')
+    m(f'Ep{nm}BelowPos', int(r.below_pos), '{}')
+    m(f'Ep{nm}BelowNeg', int(r.below_neg), '{}')
+    m(f'Ep{nm}BelowMed', r.below_median, '{:+.3f}')
+    m(f'Ep{nm}AboveN', int(r.above_n), '{}')
+    m(f'Ep{nm}AbovePos', int(r.above_pos), '{}')
+    m(f'Ep{nm}AboveNeg', int(r.above_neg), '{}')
+    m(f'Ep{nm}AboveMed', r.above_median, '{:+.3f}')
+epc = pd.read_csv(OUT / 'endpoint_share_cells.csv')
+s3 = epc[epc.task.isin(STAGE3)]
+cons = ((s3.below_uniform & (s3.weight_delta > 1e-9)) | (~s3.below_uniform & (s3.weight_delta < -1e-9)))
+m('SThreeWCons', int(cons.sum()), '{}')
+m('SThreeWN', len(s3), '{}')
+consa = ((s3.below_uniform & (s3.amae_minus_qwk_delta > 1e-9)) | (~s3.below_uniform & (s3.amae_minus_qwk_delta < -1e-9)))
+m('SThreeACons', int(consa.sum()), '{}')
+m('SThreeANonzero', int((s3.amae_minus_qwk_delta.abs() > 1e-9).sum()), '{}')
+lowsig_all8 = [t for t in PRIMARY if const.loc[t, 'candidates_worse_than_constant'] == 8]
+m('NConstWorseTasks', len(lowsig_all8), '{}')
+m('ConZero', int(ie.loc['qwk_recall', 'blocks'] - ie.loc['qwk_recall', 'nonzero_blocks']), '{}')
+m('NphaConstWorse', int(const.loc['npha', 'candidates_worse_than_constant']), '{}')
+for fam in ('po', 'rf'):
+    m('NphaAmae' + FAM[fam].capitalize(), c.loc[('npha', fam, 'amae')].endpoint_recall_delta, '{:+.2f}')
+m('NphaQwkLow', min(p.loc[('npha', f, 'qwk')].qwk for f in ('po', 'rf')))
+m('NphaQwkHigh', max(p.loc[('npha', f, 'qwk')].qwk for f in ('po', 'rf')))
+m('RankQwkCon', fr.loc['qwk', 'avg_rank_qwk_recall'])
+cqp = con[(con.policy_minus_qwk == 'qwk_recall') & con.task.isin(PRIMARY)]
+m('ConQwkCostMax', cqp.qwk_delta.min(), '{:+.3f}')
+m('ConQwkCostMaxAbs', abs(cqp.qwk_delta.min()), '{:.2f}')
+ctl = con[con.task.isin(CONTROLS)]
+ipf = inf[(inf.metric == 'endpoint_recall_delta') & inf.model_family.isin(['po', 'rf']) & inf.policy_minus_qwk.isin(['amae', 'macro_f1', 'qwk_recall'])]
+fcd = fr.loc['recall_extreme']
+cd = fr.loc['qwk', 'nemenyi_cd_0.05']
+sep = {(a, b): fcd['avg_rank_' + b] - fcd['avg_rank_' + a] > cd for a in ('qwk_recall', 'mmae') for b in ('mae', 'rps')}
 s = sim[sim.policy_minus_qwk == 'amae']
 m('SimAmaeMin', s.recall_extreme_delta.min(), '{:+.3f}')
 m('SimAmaeMax', s.recall_extreme_delta.max(), '{:+.3f}')
 m('SimAmaeAbsSmall', int((s.recall_extreme_delta.abs() < 0.02).sum()), '{}')
 m('SimCells', len(s), '{}')
+simx = sim[sim.policy_minus_qwk == 'amae'].set_index(['cell', 'family'])
+for (cell, fam, nm) in [('asym__2.0', 'po', 'SimAsymPo'), ('symrare__2.0', 'rf', 'SimSymHiRf'), ('symrare__0.5', 'rf', 'SimSymLoRf')]:
+    m(nm + 'Low', simx.loc[(cell, fam)].recall_low_delta, '{:+.3f}')
+    m(nm + 'High', simx.loc[(cell, fam)].recall_high_delta, '{:+.3f}')
 
 # ------------------------------------------------------------------ claim guards
 # Qualitative statements in main.tex that are not plain numbers. If a re-run of the
@@ -303,18 +368,51 @@ sc_v2 = c.loc[('skillcraft_survey', 'rf', 'amae')].endpoint_recall_delta
 simr = sim[sim.policy_minus_qwk == 'amae'].set_index(['cell', 'family']).recall_extreme_delta
 guards = {
     'QWK-floor never reduced endpoint recall (blocks)': ie.loc['qwk_recall', 'negative'] == 0,
-    'QWK-floor never raised QWK (blocks)': iq.loc['qwk_recall', 'positive'] == 0,
-    'all QWK-floor fallbacks in wine': int(fb.fallbacks.sum()) == int(fb[fb.task.str.startswith('wine')].fallbacks.sum()),
-    'MAE and RPS never selected balanced weights': balp['mae'] == 0 and balp['rps'] == 0,
-    'all 8 candidates worse than constant in the 3 rating tasks':
-        all(const.loc[t, 'candidates_worse_than_constant'] == 8 for t in ('restaurant', 'sushi', 'movielens100k')),
-    'no candidate worse than constant in wine/SkillCraft':
-        all(const.loc[t, 'candidates_worse_than_constant'] == 0 for t in ('wine_red', 'wine_white', 'skillcraft_survey')),
-    'balanced weights increased MAE in all controls': (cp.normalized_mae_delta > 0).all(),
-    'clearly positive AMAE-QWK only where rarer endpoint <= ~1%':
-        (amae_cells[amae_cells.endpoint_recall_delta > 0.05].p_endpoint_min <= 0.011).all(),
-    'clearly negative AMAE-QWK only in MovieLens':
-        set(amae_cells[amae_cells.endpoint_recall_delta < -0.05].task) == {'movielens100k'},
+    'most QWK-floor fallbacks in wine': int(fb[fb.task.str.startswith('wine')].fallbacks.sum()) >= int(fb.fallbacks.sum()) - 1,
+    'MAE and RPS almost never selected balanced weights; MMAE almost always':
+        balp['mae'] < 0.1 and balp['rps'] < 0.1 and balp['mmae'] > 0.9,
+    'all 8 candidates worse than constant in the 3 rating tasks and SUPPORT2': set(lowsig_all8) == set(LOWSIG),
+    'MAE: balanced weights increased MAE in nearly all controls': (cp.normalized_mae_delta > 0).mean() >= 0.9,
+    'endpoint-share rule: weighting raised every below-uniform endpoint (primary)':
+        eps.loc[('primary', 'weight_delta')].below_neg == 0,
+    'endpoint-share rule: weighting lowered most above-uniform endpoints (primary)':
+        eps.loc[('primary', 'weight_delta')].above_neg > eps.loc[('primary', 'weight_delta')].above_pos,
+    'endpoint-share rule: AMAE-QWK sign pattern (primary)':
+        eps.loc[('primary', 'amae_minus_qwk_delta')].below_pos > eps.loc[('primary', 'amae_minus_qwk_delta')].below_neg
+        and eps.loc[('primary', 'amae_minus_qwk_delta')].above_neg > eps.loc[('primary', 'amae_minus_qwk_delta')].above_pos,
+    'AMAE-QWK changes sign across tasks': amae_c.endpoint_recall_delta.min() < -0.1 < 0.1 < amae_c.endpoint_recall_delta.max(),
+    'Friedman endpoint: QWK-floor and MMAE best two, MAE and RPS worst two':
+        set(fcd[[f'avg_rank_{k_}' for k_ in POL]].sort_values().index[:2]) == {'avg_rank_qwk_recall', 'avg_rank_mmae'}
+        and set(fcd[[f'avg_rank_{k_}' for k_ in POL]].sort_values().index[-2:]) == {'avg_rank_mae', 'avg_rank_rps'},
+    'Nemenyi: QWK-floor separated from MAE and RPS; MMAE from RPS but not from MAE':
+        sep[('qwk_recall', 'mae')] and sep[('qwk_recall', 'rps')] and sep[('mmae', 'rps')] and not sep[('mmae', 'mae')],
+    'MMAE endpoint effect is mixed (not significant)': ie.loc['mmae', 'negative'] >= 3 and ie.loc['mmae', 'wilcoxon_exact_p'] > 0.1,
+    'MAE and RPS lower endpoint recall in most blocks':
+        ie.loc['mae', 'negative'] > 2 * ie.loc['mae', 'positive'] and ie.loc['rps', 'negative'] > 2 * ie.loc['rps', 'positive'],
+    'QWK-floor QWK change: more decreases than increases among differing blocks':
+        iq.loc['qwk_recall', 'negative'] > iq.loc['qwk_recall', 'positive'] > 0,
+    'per-family primary contrasts: none significant after Holm': (ipf.holm_p_primary > 0.05).all(),
+    'every non-floor criterion lowered QWK in most blocks':
+        all(iq.loc[k_, 'negative'] > 2 * iq.loc[k_, 'positive'] for k_ in ('amae', 'macro_f1', 'mmae', 'mae', 'rps')),
+    'controls: QWK-floor never reduced endpoint recall':
+        (ctl[ctl.policy_minus_qwk == 'qwk_recall'].endpoint_recall_delta >= -1e-12).all(),
+    'controls: AMAE loss largest in NPHA':
+        ctl[ctl.policy_minus_qwk == 'amae'].sort_values('endpoint_recall_delta').task.iloc[0] == 'npha',
+    'endpoints above 1/K: CTG low, HCV low, SUPPORT2 both, Restaurant high, Sushi high':
+        all(json.loads(tasks.loc[t, 'class_counts'])[i] / tasks.loc[t, 'n'] * tasks.loc[t, 'k'] > 1
+            for t, i in (('ctg', 0), ('hcv', 0), ('support2', 0), ('support2', -1), ('restaurant', -1), ('sushi', -1))),
+    'wine and SkillCraft: both endpoints below 1/K':
+        all(json.loads(tasks.loc[t, 'class_counts'])[i] / tasks.loc[t, 'n'] * tasks.loc[t, 'k'] < 1
+            for t in ('wine_red', 'wine_white', 'skillcraft_survey') for i in (0, -1)),
+    'simulation per-endpoint pattern as described':
+        simx.loc[('asym__2.0', 'po')].recall_low_delta < 0 < simx.loc[('asym__2.0', 'po')].recall_high_delta
+        and simx.loc[('symrare__2.0', 'rf')].recall_low_delta > 0 and simx.loc[('symrare__2.0', 'rf')].recall_high_delta > 0
+        and simx.loc[('symrare__0.5', 'rf')].recall_low_delta < 0 and simx.loc[('symrare__0.5', 'rf')].recall_high_delta < 0,
+    'SUPPORT2 QWK moderate and endpoints the two largest classes':
+        p.loc[('support2', 'po', 'qwk')].qwk > 0.3
+        and sorted(json.loads(tasks.loc['support2', 'class_counts']))[-2:] == sorted([json.loads(tasks.loc['support2', 'class_counts'])[i] for i in (0, -1)]),
+    'NPHA: AMAE lowered endpoint recall in both families':
+        c.loc[('npha', 'po', 'amae')].endpoint_recall_delta < -0.1 and c.loc[('npha', 'rf', 'amae')].endpoint_recall_delta < -0.1,
     'TAE: no criterion reduced endpoint recall': (tae.endpoint_recall_delta >= -1e-12).all(),
     'superseded SkillCraft RF AMAE positive and smaller than survey task': 0 < sc_v1 < sc_v2,
     'wine PO: QWK chose unweighted in every decision':
@@ -325,8 +423,6 @@ guards = {
         p.loc[('wine_red', 'po', 'qwk')].balanced_fraction == 0 and p.loc[('wine_red', 'po', 'amae')].balanced_fraction == 1,
     'simulation: largest |effect| is RF and rare endpoints have opposite signs':
         simr.abs().idxmax()[1] == 'rf' and simr[('symrare__0.5', 'rf')] < 0 < simr[('symrare__2.0', 'rf')],
-    'restaurant and sushi: upper endpoint most frequent class':
-        all(json.loads(tasks.loc[t, 'class_counts'])[-1] == max(json.loads(tasks.loc[t, 'class_counts'])) for t in ('restaurant', 'sushi')),
 }
 failed = [k_ for k_, ok in guards.items() if not ok]
 if failed:
