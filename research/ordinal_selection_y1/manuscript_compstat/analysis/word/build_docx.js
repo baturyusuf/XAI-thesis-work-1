@@ -97,7 +97,8 @@ function table(b, textWidth, small) {
   // column width heuristic: proportional to the longest text in each column (bounded)
   const len = new Array(ncol).fill(4);
   const txt = (rs) => (rs || []).map((r) => r.t).join('');
-  for (const row of b.rows) row.forEach((c, j) => { len[j] = Math.max(len[j], Math.min(txt(c).length, 24)); });
+  const isSpan = (r) => r.length === 1 && r[0] && r[0].span;
+  for (const row of b.rows) if (!isSpan(row)) row.forEach((c, j) => { len[j] = Math.max(len[j], Math.min(txt(c).length, 24)); });
   b.header[b.header.length - 1].forEach((c, j) => { len[j] = Math.max(len[j], Math.min(txt(c.runs).length, 14)); });
   const total = len.reduce((a, x) => a + x, 0);
   const widths = len.map((x) => Math.floor(textWidth * x / total));
@@ -105,7 +106,7 @@ function table(b, textWidth, small) {
   const size = small ? 15 : 17;
   const none = { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' };
   const rule = (sz) => ({ style: BorderStyle.SINGLE, size: sz, color: '000000' });
-  const textCols = b.id === 'tab_stage4' ? 3 : b.id.startsWith('tab_s_stage4') ? 1 : b.id.startsWith('tab_s_') ? 3 : (['tab_inference', 'tab_controls'].includes(b.id) ? 1 : 2);
+  const textCols = (b.id === 'tab_stage4' || b.id === 'tab_stage5') ? 3 : b.id === 'tab_s_stage5_tasks' ? 1 : b.id.startsWith('tab_s_stage4') ? 1 : b.id.startsWith('tab_s_') ? 3 : (['tab_inference', 'tab_controls'].includes(b.id) ? 1 : 2);
   const align = (j) => (j < textCols ? AlignmentType.LEFT : AlignmentType.CENTER);
   const cell = (rs, j, w, borders, span = 1, bold = false) => new TableCell({
     width: { size: w, type: WidthType.DXA }, columnSpan: span > 1 ? span : undefined,
@@ -131,6 +132,15 @@ function table(b, textWidth, small) {
   const midrules = new Set(b.seps.filter((s) => s > 0));
   b.rows.forEach((r, i) => {
     const borders = { top: midrules.has(i) ? rule(4) : undefined, bottom: i === b.rows.length - 1 ? rule(12) : undefined };
+    if (isSpan(r)) {
+      const sc = new TableCell({ width: { size: textWidth, type: WidthType.DXA }, columnSpan: r[0].span,
+        borders: { left: none, right: none, top: borders.top || none, bottom: borders.bottom || none },
+        margins: { top: 60, bottom: 30, left: 60, right: 60 },
+        children: [new Paragraph({ alignment: AlignmentType.LEFT, spacing: { before: 0, after: 0, line: 240 },
+          children: runs(r[0].runs, { size }) })] });
+      rows.push(new TableRow({ cantSplit: true, children: [sc] }));
+      return;
+    }
     rows.push(new TableRow({ cantSplit: true, children: r.map((c, j) => cell(c, j, widths[j], borders)) }));
   });
   return new Table({ width: { size: textWidth, type: WidthType.DXA }, columnWidths: widths, rows,

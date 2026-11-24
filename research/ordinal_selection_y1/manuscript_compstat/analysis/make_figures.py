@@ -223,4 +223,33 @@ axes[1, 0].set_ylabel('Change in recall of the lowest category')
 axes[1, 0].legend(frameon=False, loc='upper right', fontsize=6.5)
 fig.tight_layout()
 save(fig, 'fig5_stage4_robustness')
+
+# ---------------------------------------------------------------- Figure 6: stage 5 (pre-registered validation)
+# Slot 4 of the validated palette (yellow) would sit beside orange; the ordinal family is drawn in ink
+# with its own marker instead, so identity never rests on colour alone.
+COL['fh'], MARK['fh'], FAM_LABEL['fh'] = INK, 'D', 'Frank–Hall (ordinal)'
+e5 = pd.read_csv(OUT / 'm5_endpoint_points.csv')
+fig, axes = plt.subplots(1, 3, figsize=(6.85, 2.75), sharey=True)
+panels = [(e5[e5.new & (e5.decoding == 'argmax')], 'delta_weight', '(a) New sources:\nbalanced − unweighted'),
+          (e5[e5.new & (e5.decoding == 'argmax')], 'delta_amae', '(b) New sources:\nAMAE − QWK selection'),
+          (e5[(e5.role == 'primary') & (e5.decoding == 'median')], 'delta_weight',
+           '(c) All primary tasks, median\ndecoding: balanced − unweighted')]
+for ax, (s, col, title) in zip(axes, panels):
+    for fam in ('po', 'rf', 'hgb', 'fh'):
+        q = s[s.family == fam]
+        ax.scatter(q.k_pi, q[col], marker=MARK[fam], s=20, color=COL[fam], edgecolor='white', linewidth=0.5,
+                   label=FAM_LABEL[fam], zorder=3)
+    ax.axhline(0, color=INK2, lw=0.7)
+    ax.axvline(1, color=INK2, lw=0.7, ls=(0, (3, 2)))
+    ax.set_xscale('log')
+    ax.set_xticks([0.01, 0.1, 1, 3])
+    ax.set_xticklabels(['0.01', '0.1', '1', '3'])
+    ax.minorticks_off()
+    ax.set_title(title)
+    ax.set_xlabel('Endpoint share × K')
+    style(ax, 'both')
+axes[0].set_ylabel('Change in recall of the endpoint')
+axes[0].legend(frameon=False, loc='lower left', fontsize=6)
+fig.tight_layout()
+save(fig, 'fig6_stage5_validation')
 print('figures written to', FIG)

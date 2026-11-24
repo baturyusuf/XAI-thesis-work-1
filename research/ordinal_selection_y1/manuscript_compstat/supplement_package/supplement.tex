@@ -49,11 +49,19 @@ All tasks are secondary analyses of publicly documented data. No raw records, id
 
 \paragraph{Item overlap.} In the three rating tasks, items recur across users: roughly 99--100\% of test ratings concern items that also occur in the training partition. Results therefore refer to new users on the observed item pool.
 
+\paragraph{Stage 5: Drug consumption (alcohol).} UCI 373 Drug Consumption (Quantified), DOI 10.24432/C5TC7S, CC BY 4.0 (Fehrman et al.\ 2017). 1,885 respondents, one row each; group = respondent ID. Target: alcohol use CL0 never used $<$ CL1 over a decade ago $<$ CL2 in the last decade $<$ CL3 last year $<$ CL4 last month $<$ CL5 last week $<$ CL6 last day. Alcohol was fixed before any outcome was seen as the first substance in the source's variable list. Predictors: the 12 quantified attributes (age, gender, education, country, ethnicity, five NEO-FFI-R scores, impulsivity, sensation seeking). The other 17 substances and the fictitious control drug are excluded.
+\paragraph{Stage 5: Entrance examination.} UCI 582 Student Performance on an Entrance Examination, DOI 10.24432/C58D0H, CC BY 4.0. 666 candidates; target: performance Average $<$ Good $<$ Very good $<$ Excellent; predictors: the 11 categorical attributes; groups: identical predictor vectors (576 groups).
+\paragraph{Stage 5: NHANES self-rated health.} NHANES 2017--2018 public-use files DEMO\_J, HSQ\_J, BMX\_J, BPX\_J, TCHOL\_J, HDL\_J and GHB\_J, merged by SEQN, used under the NCHS Data User Agreement (statistical analysis only, no re-identification, no linkage with identifiable data). Adults aged 20 or more with HSD010 between 1 (excellent) and 5 (poor); refusals and unknowns are excluded (4,890 adults). Predictors: age, sex, race/ethnicity, education, income-to-poverty ratio, BMI, waist circumference, mean systolic and diastolic blood pressure, total cholesterol, HDL cholesterol and HbA1c.
+\paragraph{Stage 5: NHIS self-rated health.} NHIS 2019 sample adult file, same agreement. PHSTAT\_A from 1 (excellent) to 5 (poor); codes 7--9 are excluded; one sample adult per household (group = HHX); outcome-blind hash subsample of 5,000 adults. Predictors: age, poverty ratio, sex, Hispanic origin and race, education, region, urbanicity, marital status, BMI category, smoking status and twelve ever-diagnosed conditions. Survey weights are not used.
+\paragraph{Stage 5: blocked sources.} Three sources failed the rules before download: GSS 2018 (no stated terms of use), OpenML eucalyptus (rating determined from measured predictors) and UCI thyroid (nominal coding). Six failed the endpoint-support rule after download: OpenML SWD (17 groups in the lowest class), LEV (14 in the highest), ERA (4) and ESL (2), UCI 467 (8 students in the highest class) and UCI 397 (11 reviews with score 1).
+
 \section*{S2 Protocol and verification}
 
 Splits: stratified group $K$-fold, three outer and two inner folds, two repeats (seeds 20261120/20261121 for the first stage, 20261124/20261125 for the second and third stages); for each seed, the first support-valid assignment among offsets 0--99 was used (all categories present in every partition, no group overlap). Candidates: proportional odds with $C\in\{0.1,1\}$, random forest with depth $\in\{4,\text{unlimited}\}$, each with and without balanced weights. Endpoint-recall floor 0.2 with AMAE fallback; tie tolerance $10^{-12}$. Protocols, configurations, data and split hashes were frozen locally (SHA-256) before the fits of each stage; there was no external registration. An independent re-implementation of the metrics reproduced the stored values (\NRecompute{} comparisons, largest absolute difference \RecomputeMaxDiff{}).
 
 \paragraph{Stage 4 (pre-specified robustness).} The protocol (file \texttt{robustness\_m2/PROTOCOL.md}), the configuration, the runner code and the hashes of the reused split assignments were frozen with SHA-256 hashes and a UTC time stamp before any stage-4 fit; there was no external registration. Part A refits the 14 tasks on the frozen splits of stages 1--3 with 24 candidates: proportional odds with $C\in\{0.01,0.1,1,10\}$ (at most 1000 iterations); random forest with 100 trees, minimum leaf size 2 and depth $\in\{3,6,12,\text{unlimited}\}$; histogram gradient boosting (scikit-learn \texttt{HistGradientBoostingClassifier}) with (learning rate, maximum depth) $\in\{(0.05,3),(0.05,\text{unlimited}),(0.1,3),(0.1,\text{unlimited})\}$, 200 iterations, at most 31 leaves and no early stopping; each with and without balanced weights (\FitsStageFour{} fits). Part B simulates $K=5$ categories from the latent Gaussian model with lowest-category share $\pi_0\in\{0.02,0.05,0.10,0.20,0.30,0.40\}$, highest-category share 0.20, the three middle categories sharing the remainder, $\lambda\in\{0.5,1,2\}$, ten replications (seeds 20261301--20261310) and the original eight candidates (\FitsSimFour{} fits). No candidate, task or criterion was dropped and no fit failed.
+
+\paragraph{Stage 5 (pre-registered validation).} The protocol (\texttt{validation\_m5/PROTOCOL.md}), configuration, code, file hashes, eligibility audit and split assignments were frozen and pushed to the public repository before any stage-5 fit. Candidates: the 24 stage-4 candidates and a Frank--Hall family ($K-1$ binary histogram gradient-boosting models for $P(y>k)$ with the four stage-4 settings, class probabilities by differences, clipped at zero and renormalized; balanced weights $n/(K n_y)$ passed to every binary model). Seeds 20261124/20261125 for the new tasks; the frozen splits of stages 1--3 for the others (\FitsStageFive{} fits). Median decoding predicts the smallest $k$ with cumulative probability at least 0.5. Floor with max--min fallback: the largest inner QWK among candidates with both inner endpoint recalls at least 0.2; if none, the largest smaller inner endpoint recall, then the larger inner QWK, then candidate order. The 24 stage-4 candidates were reproduced exactly on the 14 earlier tasks.
 
 \section*{S3 Tables}
 
@@ -160,6 +168,17 @@ $\lambda$ & $\pi_0$ & $K\pi_0$ & $\Delta_w$ [95\% interval] & $\Delta_a$ & $\Del
 \midrule\endhead
 \bottomrule\endfoot
 \input{tab_s_stage4_sim}
+\end{longtable}
+}
+
+{\footnotesize
+\begin{longtable}{@{}lrrll@{}}
+\caption{Stage 5: new primary tasks. $K\pi$: share of the lowest/highest category times $K$; best QWK: highest outer QWK of the 32 candidates (mean of two repeats).}\label{tab:s-stage5-tasks}\\
+\toprule
+Task & $n$ & $K$ & $K\pi$ (low / high) & Best QWK\\
+\midrule\endfirsthead
+\bottomrule\endfoot
+\input{tab_s_stage5_tasks}
 \end{longtable}
 }
 

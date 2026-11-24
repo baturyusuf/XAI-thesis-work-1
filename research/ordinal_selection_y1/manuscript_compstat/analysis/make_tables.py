@@ -485,6 +485,123 @@ for (sg, p0), g in ss4.sort_values(['signal', 'pi0']).groupby(['signal', 'pi0'],
     rows.append(f'{sg:g} & {p0:.2f} & {5 * p0:.2f} & ' + ' & '.join(cells) + '\\\\')
 write('tab_s_stage4_sim.tex', '\n'.join(rows) + '\n')
 
+# ------------------------------------------------------------------ stage 5 (pre-registered validation)
+R5 = _json.loads((OUT / 'm5_hypotheses.json').read_text(encoding='utf-8'))
+H5_, D5_ = R5['hypotheses'], R5['descriptive']
+t5 = pd.read_csv(OUT / 'm5_tasks.csv')
+NEW5 = ['drug_alcohol', 'entrance_exam', 'nhanes_srh', 'nhis_srh']
+TASK.update({'drug_alcohol': 'Drug consumption (alcohol)', 'entrance_exam': 'Entrance examination',
+             'nhanes_srh': 'NHANES self-rated health', 'nhis_srh': 'NHIS self-rated health'})
+m('FitsStageFive', f"{R5['fits']:,}")
+m('FitsTotalAllFive', f"{int(macros['FitsTotalAll'].replace(',', '')) + R5['fits']:,}")
+VERD5 = ['V1', 'V2', 'V2b', 'V3', 'V4', 'V5', 'F1', 'F2', 'D1', 'D2']
+sup5 = {h: H5_[h]['supported'] for h in VERD5}
+m('FiveSupported', sum(1 for v in sup5.values() if v is True), '{}')
+m('FiveTotal', len(VERD5), '{}')
+m('FiveNotTestable', sum(1 for v in sup5.values() if v is None), '{}')
+for h in ('V2', 'F2', 'D1'):
+    nm = {'V2': 'Vtwo', 'F2': 'Ftwo', 'D1': 'Done'}[h]
+    x_ = H5_[h]
+    m(nm + 'Agr', x_['agreement']); m(nm + 'AgrLo', x_['agreement_ci'][0]); m(nm + 'AgrHi', x_['agreement_ci'][1])
+    m(nm + 'Rho', x_['spearman_rho']); m(nm + 'RhoLo', x_['rho_ci'][0]); m(nm + 'RhoHi', x_['rho_ci'][1])
+    m(nm + 'Points', x_['points'], '{}'); m(nm + 'Sources', x_['sources'], '{}')
+for h, nm in (('V1', 'Vone'), ('F1', 'Fone'), ('D2', 'Dtwo')):
+    bf_ = H5_[h]['balanced_fraction']
+    for k_, kn in (('mae', 'Mae'), ('rps', 'Rps'), ('mmae', 'Mmae')):
+        m(nm + 'Bal' + kn, bf_[k_])
+m('VtwobN', H5_['V2b']['comparisons'], '{}'); m('VtwobOk', H5_['V2b']['nonnegative'], '{}')
+m('VthreeN', H5_['V3']['qualifying_nonzero_points'], '{}')
+if H5_['V3']['agreement'] is not None:
+    m('VthreeAgr', H5_['V3']['agreement'])
+m('VfourMin', H5_['V4']['min_delta'], '{:+.3f}'); m('VfourCells', H5_['V4']['cells'], '{}')
+m('VfourOrigMin', H5_['V4']['original_floor_min_delta_new'], '{:+.3f}')
+m('VfourOldMin', H5_['V4']['secondary_old_min_delta'], '{:+.3f}'); m('VfourOldCells', H5_['V4']['secondary_old_cells'], '{}')
+m('VfourOldOrigMin', H5_['V4']['secondary_old_original_floor_min'], '{:+.3f}')
+m('VfourQwkCost', H5_['V4']['max_qwk_cost_new'], '{:.3f}')
+mr5 = H5_['V5']['max_regret_other_metric']
+m('VfiveMinMax', min(mr5.values())); m('VfiveMinMaxPol', POL[min(mr5, key=mr5.get)])
+m('RoneTasks', H5_['R1']['tasks'], '{}')
+m('RoneDiff', H5_['R1']['max_abs_diff'], '{:.1g}')
+pa = D5_['pooled_all_primary_weighting_argmax_3fam']
+m('PoolWAgr', pa['agreement']); m('PoolWAgrLo', pa['agreement_ci'][0]); m('PoolWAgrHi', pa['agreement_ci'][1])
+m('PoolWRho', pa['spearman_rho']); m('PoolWRhoLo', pa['rho_ci'][0]); m('PoolWRhoHi', pa['rho_ci'][1])
+m('PoolWSources', pa['sources'], '{}'); m('PoolWPoints', pa['points'], '{}')
+yes5 = lambda b: 'Not testable' if b is None else ('Yes' if b else '\\textbf{No}')
+rng5 = lambda x_: f"[{f2(x_[0])}, {f2(x_[1])}]"
+rhs = lambda x_: f"$\\rho={macros_val(x_['spearman_rho'])}$ {rng5s(x_['rho_ci'])}"
+
+
+def macros_val(v):
+    s_ = f'{v:.2f}'
+    return ('\\ensuremath{-}' + s_[1:]) if s_.startswith('-') else s_
+
+
+def rng5s(ci):
+    return f"[{macros_val(ci[0])}, {macros_val(ci[1])}]"
+
+
+b1_, bF_, bD_ = H5_['V1']['balanced_fraction'], H5_['F1']['balanced_fraction'], H5_['D2']['balanced_fraction']
+v3 = H5_['V3']
+rows = [
+    '\\multicolumn{4}{@{}l}{\\emph{Part A: four new sources; PO, RF and HGB unless stated}}\\\\',
+    f"V1 & Balanced weights chosen in $<0.20$ of decisions by MAE and RPS, $>0.80$ by MMAE & MAE {f2(b1_['mae'])}, RPS {f2(b1_['rps'])}, MMAE {f2(b1_['mmae'])} & {yes5(sup5['V1'])}\\\\",
+    f"V2 & Weighting rule: agreement $\\ge0.75$ and $\\rho<0$ ({H5_['V2']['points']} points) & agreement {f2(H5_['V2']['agreement'])} {rng5(H5_['V2']['agreement_ci'])}; {rhs(H5_['V2'])} & {yes5(sup5['V2'])}\\\\",
+    f"V2b & Proposition~2: weighting never lowers the recall of a rarest category (four families) & {H5_['V2b']['nonnegative']} of {H5_['V2b']['comparisons']} comparisons & {yes5(sup5['V2b'])}\\\\",
+    f"V3 & AMAE rule where QWK of the QWK-selected model $\\ge0.30$: agreement $\\ge0.75$ & {v3['qualifying_nonzero_points']} qualifying points" + (f"; agreement {f2(v3['agreement'])}" if v3['agreement'] is not None else '') + f" & {yes5(sup5['V3'])}\\\\",
+    f"V4 & Recall floor with max--min fallback: $\\Delta R_{{\\mathrm{{end}}}}\\ge-0.02$ in every cell (four families) & minimum {signed(H5_['V4']['min_delta'], 3)} in {H5_['V4']['cells']} cells & {yes5(sup5['V4'])}\\\\",
+    f"V5 & Every criterion has regret $\\ge0.30$ on some other metric & smallest maximum {f2(min(mr5.values()))} ({POL[min(mr5, key=mr5.get)]}) & {yes5(sup5['V5'])}\\\\",
+    '\\midrule',
+    '\\multicolumn{4}{@{}l}{\\emph{Part B: Frank--Hall ordinal family, all primary tasks}}\\\\',
+    f"F1 & As V1 within the ordinal family & MAE {f2(bF_['mae'])}, RPS {f2(bF_['rps'])}, MMAE {f2(bF_['mmae'])} & {yes5(sup5['F1'])}\\\\",
+    f"F2 & Weighting rule; agreement interval above 0.5, $\\rho$ interval below 0 & agreement {f2(H5_['F2']['agreement'])} {rng5(H5_['F2']['agreement_ci'])}; {rhs(H5_['F2'])} & {yes5(sup5['F2'])}\\\\",
+    '\\midrule',
+    '\\multicolumn{4}{@{}l}{\\emph{Part C: median decoding, all primary tasks, four families}}\\\\',
+    f"D1 & Weighting rule with median-decoded recall & agreement {f2(H5_['D1']['agreement'])} {rng5(H5_['D1']['agreement_ci'])}; {rhs(H5_['D1'])} & {yes5(sup5['D1'])}\\\\",
+    f"D2 & Selection with median decoding: balanced in $<0.20$ (MAE) and $>0.80$ (MMAE) of decisions & MAE {f2(bD_['mae'])}, MMAE {f2(bD_['mmae'])} & {yes5(sup5['D2'])}\\\\",
+]
+rows[5] = rows[5].replace(f"in {H5_['V4']['cells']} cells", f"in {H5_['V4']['cells']} cells (AMAE fallback: {signed(H5_['V4']['original_floor_min_delta_new'], 3)})")
+write('tab_stage5.tex', '\n'.join(rows) + '\n')
+# extra stage-5 numbers quoted in the text
+p5 = pd.read_csv(OUT / 'm5_endpoint_points.csv')
+f5 = pd.read_csv(OUT / 'm5_floor.csv')
+pA = p5[p5.new & p5.family.isin(['po', 'rf', 'hgb']) & (p5.decoding == 'argmax')]
+excA = pA[np.sign(pA.delta_weight) != np.where(pA.below_uniform, 1, -1)]
+m('VtwoExcN', len(excA), '{}')
+m('VtwoAlcHighShare', 100 * (t5.set_index('task').loc['drug_alcohol', 'kpi_high'] / 7), '{:.0f}')
+_cc = _json.loads((MS / '..' / 'validation_m5' / 'AUDIT_SUMMARY.json').read_text(encoding='utf-8'))['datasets']['drug_alcohol']['class_counts']
+m('VtwoAlcNbrShare', 100 * _cc[-2] / sum(_cc), '{:.0f}')
+m('VthreeOk', int(round(H5_['V3']['agreement'] * H5_['V3']['qualifying_nonzero_points'])), '{}')
+rngA = D5_['new_amae_minus_qwk_endpoint_range']
+m('FiveAmaeMin', rngA[0], '{:+.2f}'); m('FiveAmaeMax', rngA[1], '{:+.2f}')
+_pm5 = pd.read_csv(OUT / 'm5_policy_metrics.csv')
+_pm5 = _pm5[_pm5.task.isin(NEW5) & _pm5.family.isin(['po', 'rf', 'hgb']) & (_pm5.decoding == 'argmax')]
+_pv5 = _pm5.pivot_table(index=['task', 'family'], columns='policy', values='recall_extreme')
+amae5 = _pv5['amae'] - _pv5['qwk']
+m('FiveAmaeNeg', int((amae5 < -1e-9).sum()), '{}'); m('FiveAmaeCells', len(amae5), '{}')
+m('FiveConstDrug', D5_['new_tasks_all_candidates_worse_than_nu']['drug_alcohol'], '{}')
+m('FiveDrugBestQwk', D5_['new_task_best_qwk']['drug_alcohol'])
+fo = f5[~f5.new & (f5.role == 'primary')]
+m('VfourOldBeyond', int((fo.delta_floor_star < -0.02).sum()), '{}')
+m('VfourAllCells', len(f5[f5.role == 'primary']), '{}')
+m('VfourAllMinStar', f5[f5.role == 'primary'].delta_floor_star.min(), '{:+.2f}')
+m('VfourAllMinOrig', f5[f5.role == 'primary'].delta_floor_amae.min(), '{:+.2f}')
+m('VfourAllMinOrigAbs', abs(f5[f5.role == 'primary'].delta_floor_amae.min()))
+m('VfourOldMinAbs', abs(fo.delta_floor_star.min()))
+m('FtwoZeros', H5_['F2']['zeros'], '{}')
+pF = p5[(p5.role == 'primary') & (p5.family == 'fh') & (p5.decoding == 'argmax')]
+excF = pF[(pF.delta_weight.abs() > 1e-9) & (np.sign(pF.delta_weight) != np.where(pF.below_uniform, 1, -1))]
+m('FtwoExcN', len(excF), '{}')
+qf = D5_['fh_vs_hgb_qwk_of_qwk_selected_primary']
+m('FhQwk', qf['fh']); m('HgbQwk', qf['hgb'])
+m('SchedMismatch', H5_['schedule_reselection_mismatches'], '{}')
+m('PredAllN', 8 + len(VERD5), '{}')
+m('PredAllOk', 6 + sum(1 for v in sup5.values() if v is True), '{}')
+rows = []
+for t_ in NEW5:
+    r_ = t5.set_index('task').loc[t_]
+    rows.append(f"{TASK[t_]} & {int(r_.n):,} & {int(r_.k)} & {f2(r_.kpi_low)} / {f2(r_.kpi_high)} & {f2(r_.qwk_best_candidate)}\\\\")
+write('tab_s_stage5_tasks.tex', '\n'.join(rows) + '\n')
+
 # ------------------------------------------------------------------ claim guards
 # Qualitative statements in main.tex that are not plain numbers. If a re-run of the
 # analysis changes any of them, stop so the text is revised instead of silently wrong.
@@ -584,6 +701,30 @@ guards = {
         (lo5.delta_amae < 0).all() and (lo5.delta_weight > 0).all(),
     'stage 4 simulation: weighting sign as predicted at every share level incl. lambda 0.5':
         ((ss4[ss4.pi0 < 0.2].delta_weight > 0).all() and (ss4[ss4.pi0 > 0.2].delta_weight < 0).all()),
+    'stage 5 verdicts: V3 and F2 not supported, all other eight supported, R1 passed':
+        [k_ for k_ in VERD5 if sup5[k_] is not True] == ['V3', 'F2'] and H5_['R1']['passed'],
+    'stage 5: V2 exceptions are the high alcohol category (neighbour more frequent) and NHIS low (Kpi just above 1)':
+        set(zip(excA.task, excA.endpoint)) == {('drug_alcohol', 'high'), ('nhis_srh', 'low')}
+        and 1 < t5.set_index('task').loc['nhis_srh', 'kpi_low'] < 1.2,
+    'stage 5: in V3 AMAE mostly lowered endpoint recall; new-task AMAE-QWK range max is near zero':
+        H5_['V3']['agreement'] < 0.5 and rngA[1] < 0.02 and rngA[0] < -0.3,
+    'stage 5: drug alcohol low signal and almost all candidates worse than constant':
+        D5_['new_tasks_all_candidates_worse_than_nu']['drug_alcohol'] >= 30 and D5_['new_task_best_qwk']['drug_alcohol'] < 0.2
+        and all(D5_['new_tasks_all_candidates_worse_than_nu'][t_] == 0 for t_ in ('entrance_exam', 'nhanes_srh', 'nhis_srh')),
+    'stage 5: floor* never lowered R_end on new tasks; AMAE fallback lost >0.1 there; floor* lost >0.02 in two old cells':
+        H5_['V4']['decreases_any'] == 0 and H5_['V4']['original_floor_min_delta_new'] < -0.1 and len(fo[fo.delta_floor_star < -0.02]) == 2,
+    'stage 5: FH exceptions are nonzero points just above Kpi = 1 (NHIS low, MovieLens high); zeros are wine':
+        set(zip(excF.task, excF.endpoint)) == {('nhis_srh', 'low'), ('movielens100k', 'high')}
+        and set(pF[pF.delta_weight.abs() <= 1e-9].task) <= {'wine_red', 'wine_white'},
+    'stage 5: FH QWK comparable to HGB (within 0.03)': abs(qf['fh'] - qf['hgb']) < 0.03,
+    'stage 5: counts written as words (six V2 exceptions, three FH zeros, two other FH exceptions, two old floor* cells)':
+        len(excA) == 6 and H5_['F2']['zeros'] == 3 and len(excF) == 2 and int((fo.delta_floor_star < -0.02).sum()) == 2,
+    'stage 5: best QWK above 0.5 for entrance exam and NHIS, 0.3-0.5 for NHANES':
+        D5_['new_task_best_qwk']['entrance_exam'] > .5 and D5_['new_task_best_qwk']['nhis_srh'] > .5
+        and .3 < D5_['new_task_best_qwk']['nhanes_srh'] < .5,
+    'stage 5: AMAE lowered R_end relative to QWK in most new cells; NHANES endpoints lowered (PO, HGB)':
+        int((amae5 < -1e-9).sum()) > len(amae5) / 2
+        and (pA[(pA.task == 'nhanes_srh') & pA.family.isin(['po', 'hgb'])].delta_amae < 0).all(),
     'simulation: largest |effect| is RF and rare endpoints have opposite signs':
         simr.abs().idxmax()[1] == 'rf' and simr[('symrare__0.5', 'rf')] < 0 < simr[('symrare__2.0', 'rf')],
 }

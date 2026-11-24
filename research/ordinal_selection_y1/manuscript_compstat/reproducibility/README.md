@@ -13,6 +13,7 @@ It explains how every result in the paper can be regenerated from the original d
 | simulation | latent Gaussian model, 6 cells × 10 replications | 480 | same branch: `research/ordinal_selection_y1/gate_v2/mechanism/` |
 | 3 | CTG, HCV, Cirrhosis, SUPPORT2; Diabetes130, Student, NPHA (controls) | 1,008 | `research/ordinal-y1-m1-extension`: `research/ordinal_selection_y1/m1_extension/` (pre-fit freeze commit `2f5533e`) |
 | 4 (pre-specified) | the 14 tasks above (not the superseded one) with 24 candidates; simulation with 6 shares × 3 signals × 10 replications | 6,048 + 1,440 | `research/q3-journal-selection`: `research/ordinal_selection_y1/robustness_m2/{PROTOCOL.md, config.json, FREEZE.json, run.py}` |
+| 5 (pre-registered) | 4 new sources (Drug Consumption alcohol, Entrance Exam, NHANES 2017–18 and NHIS 2019 self-rated health) and the 14 earlier tasks; 32 candidates incl. a Frank–Hall ordinal family; median decoding | 10,368 | `research/q3-journal-selection`: `research/ordinal_selection_y1/validation_m5/{PROTOCOL.md, config.json, FREEZE.json, fetch.py, data.py, run.py}` (pushed before any fit, commit `66e426e`) |
 | analysis | cross-task analysis, tables, figures, manuscript | 0 | `research/q3-journal-selection`: `research/ordinal_selection_y1/manuscript_compstat/` |
 
 Every stage has a `PROTOCOL.md`, a `config.json` and a `FREEZE.json`.
@@ -36,6 +37,24 @@ python -B robustness_m2/run.py sim    --y1 <stage 1-2 dir> --m1 <stage 3 dir> --
 ```
 
 The runs took about 10 minutes on 12 cores. Outputs go to `local/robustness_m2/` (not in Git) and are never overwritten.
+
+## Stage 5 (pre-registered validation)
+
+`validation_m5/PROTOCOL.md` states predictions V1–V5 (new sources), F1–F2 (Frank–Hall ordinal family) and D1–D2 (median decoding), with their decision rules. Before any stage-5 fit, the protocol, code, data hashes (`PROVENANCE.json`), the eligibility audit (`AUDIT_SUMMARY.json`) and `FREEZE.json` were committed and pushed to the public repository (commit `66e426e`).
+
+- **Data.** `fetch.py` downloads the approved files into `local/validation_m5/raw/<source>/` and records their SHA-256 hashes.
+  - NHANES and NHIS files are used under the NCHS Data User Agreement: statistical analysis only, no re-identification, no linkage with identifiable data.
+- **Run.** From `research/ordinal_selection_y1/`:
+
+```
+python -I -B validation_m5/fetch.py
+python -B validation_m5/run.py prepare --y1 <stage 1-2 dir> --m1 <stage 3 dir>
+python -B validation_m5/run.py verify  --y1 <stage 1-2 dir> --m1 <stage 3 dir>
+python -B validation_m5/run.py tasks   --y1 <stage 1-2 dir> --m1 <stage 3 dir> --workers 12
+```
+
+- **Outputs.** Inner out-of-fold probabilities are saved, so `m5_validation.py` can repeat every selection with median decoding and with the max–min floor fallback without refitting.
+- **Check.** Rerunning the 14 earlier tasks reproduces the stage-4 predictions of the 24 shared candidates exactly.
 
 ## Design shared by stages 1–3
 
@@ -68,6 +87,7 @@ Run these from `research/ordinal_selection_y1/manuscript_compstat/`:
 ```
 python -B analysis/m3_cross_task.py <stage 1-2 local dir> <stage 3 local dir> analysis/out
 python -B analysis/m4_robustness.py ../local/robustness_m2 ../robustness_m2 analysis/out
+python -B analysis/m5_validation.py ../local/validation_m5 ../local/robustness_m2 ../validation_m5 analysis/out
 python analysis/make_figures.py analysis/out figures
 python analysis/make_tables.py analysis/out ../gate_v2/MECHANISM_CONTRASTS.csv .
 python analysis/check_and_package.py .

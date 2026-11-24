@@ -1,0 +1,318 @@
+{
+ "hypotheses": {
+  "V1": {
+   "balanced_fraction": {
+    "amae": 0.7639,
+    "floor_star": 0.9444,
+    "macro_f1": 0.6389,
+    "mae": 0.0,
+    "mmae": 1.0,
+    "qwk": 0.9028,
+    "qwk_recall": 0.9167,
+    "rps": 0.0
+   },
+   "supported": true
+  },
+  "V2": {
+   "points": 24,
+   "zeros": 0,
+   "nonzero": 24,
+   "agreement": 0.75,
+   "agreement_ci": [
+    0.5,
+    1.0
+   ],
+   "spearman_rho": -0.2180438790594845,
+   "rho_ci": [
+    -0.5469437569371748,
+    -0.021591675854376526
+   ],
+   "sources": 4,
+   "supported": true,
+   "exceptions": [
+    {
+     "task": "drug_alcohol",
+     "family": "po",
+     "endpoint": "high",
+     "k_pi": 1.8753315649867375,
+     "delta_weight": 0.33094059405940596
+    },
+    {
+     "task": "drug_alcohol",
+     "family": "rf",
+     "endpoint": "high",
+     "k_pi": 1.8753315649867375,
+     "delta_weight": 0.08292079207920791
+    },
+    {
+     "task": "drug_alcohol",
+     "family": "hgb",
+     "endpoint": "high",
+     "k_pi": 1.8753315649867375,
+     "delta_weight": 0.012623762376237607
+    },
+    {
+     "task": "nhis_srh",
+     "family": "po",
+     "endpoint": "low",
+     "k_pi": 1.1179999999999999,
+     "delta_weight": 0.23110465116279072
+    },
+    {
+     "task": "nhis_srh",
+     "family": "rf",
+     "endpoint": "low",
+     "k_pi": 1.1179999999999999,
+     "delta_weight": 0.4354874776386405
+    },
+    {
+     "task": "nhis_srh",
+     "family": "hgb",
+     "endpoint": "low",
+     "k_pi": 1.1179999999999999,
+     "delta_weight": 0.11806797853309482
+    }
+   ]
+  },
+  "V2b": {
+   "comparisons": 64,
+   "nonnegative": 64,
+   "min_delta": 0.0,
+   "most_frequent_endpoints_new": 0,
+   "supported": true,
+   "failures": []
+  },
+  "V3": {
+   "qualifying_nonzero_points": 14,
+   "agreement": 0.2857142857142857,
+   "qualifying_cells": [
+    "entrance_exam/hgb",
+    "entrance_exam/po",
+    "entrance_exam/rf",
+    "nhanes_srh/hgb",
+    "nhanes_srh/po",
+    "nhanes_srh/rf",
+    "nhis_srh/hgb",
+    "nhis_srh/po",
+    "nhis_srh/rf"
+   ],
+   "low_signal_points": [
+    {
+     "task": "drug_alcohol",
+     "family": "po",
+     "endpoint": "low",
+     "k_pi": 0.12625994694960213,
+     "delta_amae": 0.0,
+     "qwk_of_qwk_selected": 0.0816241820027061
+    },
+    {
+     "task": "drug_alcohol",
+     "family": "po",
+     "endpoint": "high",
+     "k_pi": 1.8753315649867375,
+     "delta_amae": 0.004950495049504955,
+     "qwk_of_qwk_selected": 0.0816241820027061
+    },
+    {
+     "task": "drug_alcohol",
+     "family": "rf",
+     "endpoint": "low",
+     "k_pi": 0.12625994694960213,
+     "delta_amae": 0.08823529411764708,
+     "qwk_of_qwk_selected": 0.13061351857328435
+    },
+    {
+     "task": "drug_alcohol",
+     "family": "rf",
+     "endpoint": "high",
+     "k_pi": 1.8753315649867375,
+     "delta_amae": -0.18712871287128718,
+     "qwk_of_qwk_selected": 0.13061351857328435
+    },
+    {
+     "task": "drug_alcohol",
+     "family": "hgb",
+     "endpoint": "low",
+     "k_pi": 0.12625994694960213,
+     "delta_amae": 0.029411764705882346,
+     "qwk_of_qwk_selected": 0.08804404867907528
+    },
+    {
+     "task": "drug_alcohol",
+     "family": "hgb",
+     "endpoint": "high",
+     "k_pi": 1.8753315649867375,
+     "delta_amae": -0.006930693069306881,
+     "qwk_of_qwk_selected": 0.08804404867907528
+    }
+   ],
+   "testable": true,
+   "supported": false
+  },
+  "V4": {
+   "cells": 16,
+   "min_delta": 0.0,
+   "decreases_any": 0,
+   "beyond_0.02": 0,
+   "supported": true,
+   "original_floor_min_delta_new": -0.1575104415274463,
+   "secondary_old_cells": 40,
+   "secondary_old_min_delta": -0.03823781009409749,
+   "secondary_old_beyond_0.02": 2,
+   "secondary_old_original_floor_min": -0.08081644523487819,
+   "max_qwk_cost_new": 0.03807763409486076
+  },
+  "V5": {
+   "max_regret_other_metric": {
+    "qwk": 0.6758604234459201,
+    "mae": 0.8516528976047663,
+    "amae": 0.5989245033363614,
+    "mmae": 0.8224568121664148,
+    "macro_f1": 0.43935271321150665,
+    "rps": 0.8430328391323084,
+    "qwk_recall": 0.7257125713398814
+   },
+   "supported": true
+  },
+  "F1": {
+   "balanced_fraction": {
+    "amae": 0.869,
+    "floor_star": 0.8452,
+    "macro_f1": 0.7143,
+    "mae": 0.0952,
+    "mmae": 0.9405,
+    "qwk": 0.7976,
+    "qwk_recall": 0.8214,
+    "rps": 0.0
+   },
+   "supported": true
+  },
+  "F2": {
+   "points": 28,
+   "zeros": 3,
+   "nonzero": 25,
+   "agreement": 0.8214285714285714,
+   "agreement_ci": [
+    0.625,
+    1.0
+   ],
+   "spearman_rho": -0.3587076112936719,
+   "rho_ci": [
+    -0.6860239396406235,
+    0.15155132474673444
+   ],
+   "sources": 13,
+   "supported": false
+  },
+  "D1": {
+   "points": 112,
+   "zeros": 8,
+   "nonzero": 104,
+   "agreement": 0.8571428571428571,
+   "agreement_ci": [
+    0.734375,
+    0.9807692307692307
+   ],
+   "spearman_rho": -0.5545387798022531,
+   "rho_ci": [
+    -0.7746422403072643,
+    -0.15511511319797244
+   ],
+   "sources": 13,
+   "supported": true
+  },
+  "D2": {
+   "balanced_fraction": {
+    "amae": 0.9345,
+    "macro_f1": 0.6696,
+    "mae": 0.0685,
+    "mmae": 0.9018,
+    "qwk": 0.6577,
+    "qwk_recall": 0.7857,
+    "rps": 0.003
+   },
+   "supported": true
+  },
+  "R1": {
+   "tasks": 14,
+   "max_abs_diff": 0.0,
+   "passed": true
+  },
+  "schedule_reselection_mismatches": 1
+ },
+ "descriptive": {
+  "new_task_kpi": {
+   "drug_alcohol": {
+    "kpi_low": 0.126,
+    "kpi_high": 1.875
+   },
+   "entrance_exam": {
+    "kpi_low": 0.943,
+    "kpi_high": 0.607
+   },
+   "nhanes_srh": {
+    "kpi_low": 0.428,
+    "kpi_high": 0.164
+   },
+   "nhis_srh": {
+    "kpi_low": 1.118,
+    "kpi_high": 0.189
+   }
+  },
+  "new_task_best_qwk": {
+   "drug_alcohol": 0.15,
+   "entrance_exam": 0.616,
+   "nhanes_srh": 0.38,
+   "nhis_srh": 0.548
+  },
+  "new_tasks_all_candidates_worse_than_nu": {
+   "drug_alcohol": 31,
+   "entrance_exam": 0,
+   "nhanes_srh": 0,
+   "nhis_srh": 0
+  },
+  "new_amae_minus_qwk_endpoint_range": [
+   -0.41789230310262526,
+   0.011240535818287711
+  ],
+  "fh_vs_hgb_qwk_of_qwk_selected_primary": {
+   "fh": 0.4488,
+   "hgb": 0.4346,
+   "po": 0.4255,
+   "rf": 0.4572
+  },
+  "pooled_all_primary_weighting_argmax_3fam": {
+   "points": 84,
+   "zeros": 2,
+   "nonzero": 82,
+   "agreement": 0.8571428571428571,
+   "agreement_ci": [
+    0.7555555555555555,
+    0.9615384615384616
+   ],
+   "spearman_rho": -0.5030923617259263,
+   "rho_ci": [
+    -0.7177607494922698,
+    -0.16149670392136806
+   ],
+   "sources": 13
+  },
+  "pooled_all_primary_amae_argmax_3fam": {
+   "points": 84,
+   "zeros": 18,
+   "nonzero": 66,
+   "agreement": 0.696969696969697,
+   "agreement_ci": [
+    0.485703781512605,
+    0.8656716417910447
+   ],
+   "spearman_rho": -0.5656645818156701,
+   "rho_ci": [
+    -0.7258435370907446,
+    -0.20788826381691836
+   ],
+   "sources": 13
+  }
+ },
+ "fits": 10368
+}

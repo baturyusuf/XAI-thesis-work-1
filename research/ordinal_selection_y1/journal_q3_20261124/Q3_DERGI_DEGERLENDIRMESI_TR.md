@@ -169,3 +169,29 @@ Aynı görevlere daha fazla şekil eklemek bunların hiçbirini kapatmazdı. Bu 
 | JoC | — | %35–45 | Ordinal okur için güçlü ama çift kör ve uzun süreç; özet 150 kelimeye inmeli. |
 
 **Kalan en büyük risk.** Aşama 4 aynı görevlerde yapıldı ve dış kayıt yok. Yeni görevlerde OSF'ye kayıtlı bir test, bir sonraki revizyon için en değerli iş.
+
+## Ek 4 (2026-11-24): aşama 5 sonrası
+
+**Yapılan.** Önceden kayda alınmış doğrulama aşaması tamamlandı. Protokol ilk fitten önce public repoya push edildi (commit `66e426e`).
+- 4 yeni kaynak, Frank–Hall ordinal ailesi ve medyan decoding.
+- 10.368 fit.
+- 10 tahminin 8'i desteklendi; iki doğrulama aşamasında toplam 18 tahminin 14'ü.
+
+**Makaleye etkisi.**
+- **İddia daraltıldı.** AMAE kuralı yeni kaynaklarda tutmadığı için ilgili iddia daraltıldı.
+- **Güçlenen bulgular.**
+  - Ölçüt–ağırlık bağı.
+  - Ağırlıklandırmada 1/K kuralı.
+  - Önerme 2.
+  - Medyan decoding altında da geçerlilik.
+  - Recall tabanı için daha güvenli bir yedek kural önerisi.
+
+**Güncellenmiş öznel tahmin.** Kalibre edilmiş bir olasılık değildir.
+
+| Dergi | Ek 3 | Şimdi | Gerekçe |
+|---|---|---|---|
+| Computational Statistics | %45–55 | **%50–60** | "Aynı görevlerde test" itirazı büyük ölçüde kapandı. Açık raporlanan başarısızlıklar güvenilirliği artırıyor. |
+| PAA | %40–50 | %45–55 | Ordinal model ailesi ve decoding kontrolü ML okuru için önemli. Kod erişimi hâlâ lisans kararına bağlı. |
+| JoC | %35–45 | %40–50 | Ordinal okur Frank–Hall ve medyan decoding kontrolünü bekler; özet 150 kelimeye inmeli. |
+
+**Kalan risk.** Yeni kaynak sayısı küçük (4) ve dış kayıt sistemi yok. Bir sonraki revizyonda gerekirse OSF kaydıyla daha fazla kaynak eklenebilir.

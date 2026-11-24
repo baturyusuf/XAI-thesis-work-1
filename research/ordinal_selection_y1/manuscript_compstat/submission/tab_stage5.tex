@@ -1,0 +1,15 @@
+\multicolumn{4}{@{}l}{\emph{Part A: four new sources; PO, RF and HGB unless stated}}\\
+V1 & Balanced weights chosen in $<0.20$ of decisions by MAE and RPS, $>0.80$ by MMAE & MAE 0.00, RPS 0.00, MMAE 1.00 & Yes\\
+V2 & Weighting rule: agreement $\ge0.75$ and $\rho<0$ (24 points) & agreement 0.75 [0.50, 1.00]; $\rho=\ensuremath{-}0.22$ [\ensuremath{-}0.55, \ensuremath{-}0.02] & Yes\\
+V2b & Proposition~2: weighting never lowers the recall of a rarest category (four families) & 64 of 64 comparisons & Yes\\
+V3 & AMAE rule where QWK of the QWK-selected model $\ge0.30$: agreement $\ge0.75$ & 14 qualifying points; agreement 0.29 & \textbf{No}\\
+V4 & Recall floor with max--min fallback: $\Delta R_{\mathrm{end}}\ge-0.02$ in every cell (four families) & minimum 0.000 in 16 cells (AMAE fallback: \ensuremath{-}0.158) & Yes\\
+V5 & Every criterion has regret $\ge0.30$ on some other metric & smallest maximum 0.44 (Macro-F1) & Yes\\
+\midrule
+\multicolumn{4}{@{}l}{\emph{Part B: Frank--Hall ordinal family, all primary tasks}}\\
+F1 & As V1 within the ordinal family & MAE 0.10, RPS 0.00, MMAE 0.94 & Yes\\
+F2 & Weighting rule; agreement interval above 0.5, $\rho$ interval below 0 & agreement 0.82 [0.62, 1.00]; $\rho=\ensuremath{-}0.36$ [\ensuremath{-}0.69, 0.15] & \textbf{No}\\
+\midrule
+\multicolumn{4}{@{}l}{\emph{Part C: median decoding, all primary tasks, four families}}\\
+D1 & Weighting rule with median-decoded recall & agreement 0.86 [0.73, 0.98]; $\rho=\ensuremath{-}0.55$ [\ensuremath{-}0.77, \ensuremath{-}0.16] & Yes\\
+D2 & Selection with median decoding: balanced in $<0.20$ (MAE) and $>0.80$ (MMAE) of decisions & MAE 0.07, MMAE 0.90 & Yes\\

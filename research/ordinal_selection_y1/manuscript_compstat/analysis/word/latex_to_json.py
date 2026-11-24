@@ -69,10 +69,23 @@ def cite_name(key):
     return f'{au[0][0]} et al.'
 
 
+def _suffixes():
+    groups = {}
+    for k in BIB:
+        groups.setdefault((cite_name(k), BIB[k]['year']), []).append(k)
+    out = {}
+    for ks in groups.values():
+        if len(ks) > 1:
+            for i, k in enumerate(sorted(ks, key=lambda k: BIB[k]['title'].lower())):
+                out[k] = 'abcdefghij'[i]
+    return out
+
+
 def cite_year(key):
-    return BIB[key]['year']
+    return BIB[key]['year'] + SUFFIX.get(key, '')
 
 
+SUFFIX = _suffixes()
 CITED = []
 
 
@@ -242,7 +255,7 @@ def expand_macros(s):
 
 def plain_fix(t):
     t = t.replace('---', '—').replace('--', '–').replace('~', '\u00a0').replace("``", '“').replace("''", '”')
-    t = t.replace('\\%', '%').replace('\\&', '&').replace('\\ ', ' ').replace('\\,', '\u2009')
+    t = t.replace('\\%', '%').replace('\\&', '&').replace('\\ ', ' ').replace('\\,', '\u2009').replace('\\_', '_')
     t = re.sub(r'(?<=\w)\\(?=\s)', '', t)
     return t
 
@@ -315,6 +328,10 @@ def table_rows(path):
             seps.append(-len(rows))   # negative = light spacing
             continue
         line = re.sub(r'\\\\\s*$', '', line.rstrip())
+        mc = re.match(r'\\multicolumn\{(\d+)\}\{(?:[^{}]|\{[^{}]*\})*\}\{(.*)\}\s*$', line.strip())
+        if mc:
+            rows.append([{'span': int(mc.group(1)), 'runs': text_runs(mc.group(2))}])
+            continue
         rows.append([text_runs(c.strip()) for c in re.split(r'(?<!\\)&', line)])
     return rows, seps
 
@@ -350,6 +367,8 @@ HEADERS = {
     'tab_s_stage4_sim': [H('', '', '', ('Proportional odds', 2), ('Random forest', 2)),
                          H('$\\lambda$', '$\\pi_0$', '$K\\pi_0$', '$\\Delta_w$ [95% interval]', '$\\Delta_a$',
                            '$\\Delta_w$ [95% interval]', '$\\Delta_a$')],
+    'tab_stage5': [H('', 'Prediction', 'Result', 'Supported')],
+    'tab_s_stage5_tasks': [H('Task', '$n$', '$K$', '$K\\pi$ (low / high)', 'Best QWK')],
     'tab_s_friedman': [H('Evaluation', '$\\chi^2_6$', '$p$', 'QWK', 'MAE', 'AMAE', 'MMAE', 'Macro-F1', 'RPS', 'QWK-floor')],
 }
 
@@ -503,16 +522,16 @@ def parse_main(src):
         return (core.lower(), BIB[k]['year'])
     refs = []
     for k in sorted(CITED, key=sortkey):
-        refs.append(format_ref(BIB[k]))
+        refs.append(format_ref(BIB[k], k))
     doc['references'] = refs
     return doc
 
 
-def format_ref(e):
+def format_ref(e, key=None):
     au = authors_of(e)
     names = ', '.join(f"{last} {''.join(p[0] for p in re.split(r'[\s-]+', first) if p)}".strip() for last, first in au)
     title = tex_accents(e['title'])
-    runs = [{'t': f"{names} ({e['year']}) {title}. "}]
+    runs = [{'t': f"{names} ({e['year']}{SUFFIX.get(key, '')}) {title}. "}]
     typ = e['_type']
     if typ == 'article':
         runs.append({'t': tex_accents(e['journal']), 'i': True})
@@ -525,17 +544,19 @@ def format_ref(e):
         if e.get('pages'):
             tail += (':' if vol else ' ') + e['pages'].replace('--', '–')
         runs.append({'t': tail + '.'})
-    elif typ == 'inproceedings':
+    elif typ in ('inproceedings', 'incollection'):
         runs.append({'t': 'In: '})
         runs.append({'t': tex_accents(e['booktitle']), 'i': True})
+        if e.get('series'):
+            runs.append({'t': ' (' + tex_accents(e['series']) + (' ' + e['volume'] if e.get('volume') else '') + ')'})
         tail = f", pp {e['pages'].replace('--', '–')}" if e.get('pages') else ''
         if e.get('publisher'):
             tail += f", {e['publisher']}"
         runs.append({'t': tail + '.'})
     else:
         runs.append({'t': tex_accents(e.get('howpublished', '')) + ' [dataset].'})
-    if e.get('doi'):
-        url = 'https://doi.org/' + e['doi']
+    url = 'https://doi.org/' + e['doi'] if e.get('doi') else e.get('url')
+    if url:
         runs.append({'t': ' '})
         runs.append({'t': url, 'link': url})
     return runs

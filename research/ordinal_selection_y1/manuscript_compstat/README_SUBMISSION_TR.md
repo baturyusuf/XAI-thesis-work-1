@@ -48,6 +48,24 @@ Ana bulgular:
      - **S3.** AMAE kuralı simülasyonda yalnız yüksek sinyalde (λ = 2) tuttu. λ = 1'de π0 = 0,10 için ters işaret çıktı.
    - Her iki başarısızlık makalede açıkça raporlandı ve tartışmaya eklendi.
    - Sabit-tahmin sonucu da tekrarlandı: 24 adayın tamamı, aynı 4 görevde sabit kuraldan kötü.
+9. **Aşama 5: kamuya açık ön kayıtlı doğrulama, 10 tahminin 8'i desteklendi.** Protokol ilk fitten önce public repoya push edildi (commit `66e426e`).
+   - **Kapsam.**
+     - 4 yeni kaynak: Drug Consumption (alkol), Entrance Exam, NHANES 2017–18 ve NHIS 2019 öz-değerlendirilmiş sağlık.
+     - Frank–Hall ordinal model ailesi (toplam 32 aday).
+     - Medyan decoding.
+     - 18 görevde 10.368 fit.
+   - **Eski görevlerin yeniden çalıştırılması** aşama 4 tahminlerini birebir üretti (fark 0).
+   - **Desteklenenler:**
+     - V1: ölçüt ağırlığı belirliyor (MAE 0,00, MMAE 1,00).
+     - V2: 1/K kuralı, eşikte (0,75).
+     - V2b: Önerme 2, 64/64.
+     - V4: max–min yedekli taban yeni kaynaklarda hiç kayıp vermedi; AMAE yedeği 0,16'ya kadar kaybetti.
+     - V5, F1, D1, D2: medyan decoding ile de bulgular tutuyor.
+   - **Desteklenmeyenler:**
+     - **V3.** AMAE kuralı yeni kaynaklarda tutmadı (14 noktanın yalnız 4'ü).
+     - **F2.** Ordinal ailede ρ aralığı sıfırı içeriyor.
+   - **Makaledeki iddia değişikliği.** "AMAE seçimi de 1/K kuralına uyuyor" iddiası, "orijinal görevlerde uydu, yeni kaynaklarda uymadı" olarak düzeltildi. Özet, giriş, tartışma ve sonuç buna göre güncellendi.
+   - **Toplam.** İki doğrulama aşamasında 18 tahminin 14'ü desteklendi.
 
 Eski "uç sınıf nadirliği" yorumu M1'de zayıfladı. Bu nedenle makaleden çıkarıldı; yerini daha genel ve test edilebilir 1/K kuralı aldı.
 
@@ -59,10 +77,10 @@ Dergi Word dosyasını da kabul ediyor. `word/` klasöründe dört öğe var:
 
 | Dosya | İçerik |
 |---|---|
-| `manuscript.docx` | Ana makale, 27 sayfa |
-| `supplementary_information.docx` | Ek Bilgiler; geniş tablolar nedeniyle yatay sayfa, 19 sayfa |
+| `manuscript.docx` | Ana makale, 31 sayfa |
+| `supplementary_information.docx` | Ek Bilgiler; geniş tablolar nedeniyle yatay sayfa, 20 sayfa |
 | `cover_letter.docx` | Editöre ön yazı |
-| `figures/Fig1–Fig5` (.pdf ve .png) | Şekiller, makaledeki numaralarıyla; dergi ayrı şekil dosyası isterse |
+| `figures/Fig1–Fig6` (.pdf ve .png) | Şekiller, makaledeki numaralarıyla; dergi ayrı şekil dosyası isterse |
 
 Word dosyalarının özellikleri:
 - **Aynı kaynaktan üretiliyor.** Word dosyaları LaTeX kaynağından otomatik oluşturuluyor, bu yüzden sayılar ve metin iki sürümde birebir aynı.
@@ -78,7 +96,7 @@ powershell -File analysis/word/build_word.ps1 -Python <numpy/pandas olan python>
 
 ## Derleme (bu bilgisayarda LaTeX yok)
 
-LaTeX dağıtımı kurulu olmadığı için PDF burada derlenmedi. Yerine statik kontroller çalıştırıldı ve hepsi geçti: tanımsız makro yok, eksik dosya veya atıf yok, ayraç/ortam/`$` dengeli, özet 247 kelime (sınır 150–250), 6 anahtar kelime (sınır 4–6).
+LaTeX dağıtımı kurulu olmadığı için PDF burada derlenmedi. Yerine statik kontroller çalıştırıldı ve hepsi geçti: tanımsız makro yok, eksik dosya veya atıf yok, ayraç/ortam/`$` dengeli, özet 246 kelime (sınır 150–250), 6 anahtar kelime (sınır 4–6).
 
 Overleaf'te derlemek için:
 1. Overleaf → New Project → Templates → "Springer Nature LaTeX Template" projesini açın.
@@ -116,7 +134,8 @@ Overleaf'te derlemek için:
 | Zayıf sinyalli rating görevleri | Önerme 1 ve Tablo 5 bunu bir bulguya çevirdi; sınırlılıklarda da var. |
 | İki tekrar, koşullu bootstrap | Yöntemde ve sınırlılıklarda açıkça belirtildi. 1/K kuralı için ayrıca görev kümesi (cluster) bootstrap aralıkları verildi. |
 | 1/K kuralı sonradan bulundu | Önerme 2 ile teorik dayanak eklendi. Aşama 4'te önceden belirlenmiş tahminlerle ve kurala özel bir simülasyonla sınandı. |
-| Önceden dış kayıt yok | Aşama 1–3 keşifsel olarak raporlandı. Aşama 4 yerel olarak donduruldu (dış kayıt değil); bu, sınırlılıklarda açıkça yazıldı. Yeni görevlerde dış kayıtlı bir çalışma hâlâ en güçlü test. |
+| Önceden dış kayıt yok | Aşama 1–3 keşifsel olarak raporlandı. Aşama 4 yerel olarak donduruldu. Aşama 5, 4 yeni kaynakla, ilk fitten önce public repoya push edilerek ön kayda alındı; bu bir kayıt sistemi (OSF vb.) değil ve sınırlılıklarda böyle yazıldı. |
+| Yalnız argmax decoding, ordinal model yok | Aşama 5'te medyan decoding (D1, D2) ve Frank–Hall ordinal ailesi (F1, F2) ile sınandı. |
 
 ## Yeniden üretim
 
