@@ -141,6 +141,38 @@ Okuma: azınlık-uçlu görevlerde (Cirrhosis düşük uç, Student, NPHA, Diabe
 - **Tekrarlar arası işaret değişimi**: ctg PO macro_f1 (tekrar 0 +0.042, tekrar 1 -0.016); cirrhosis PO macro_f1 (tekrar 0 -0.061, tekrar 1 +0.078); support2 PO amae (tekrar 0 -0.188, tekrar 1 +0.003); npha RF macro_f1 (tekrar 0 +0.005, tekrar 1 -0.001).
 - **gate_v2 ile yön karşılaştırması (betimsel)**: gate_v2'de MovieLens PO −0.403 ve SkillCraft-survey RF +0.187 idi; M1'de de her iki yön görülüyor (örn. NPHA RF −0.335, Cirrhosis RF +0.029). Bu bir test değildir.
 
+## H-M1a/b/c — FIT SONRASI eklendi, ön-tanımlı DEĞİL
+
+Bu hipotezler makale oturumundan, M1 fitlerinin hepsi bittikten (09:55:49Z) ve sonuçlar incelenip `b5b249b` ile raporlandıktan sonra geldi. Bu yüzden M1 bunların prospektif testi değildir. PROTOCOL.md ve FREEZE.json bilerek değiştirilmedi (ayrıntı: `AMENDMENT_POSTRUN_HYPOTHESES.md`). Aşağıdaki hesaplar kaydedilmiş çıktılardan post hoc yapıldı (yeni fit yok), istenen tanımlar değiştirilmeden. Moderatör (uç-sınıf prevalansı) fit öncesi donmuş AUDIT_SUMMARY.json sınıf sayılarından hesaplandı; hipotezin kendisi donmuş değildi.
+
+| Görev | Rol | Düşük uç prevalansı | Yüksek uç prevalansı | min prevalans | Uç sayıları | Uç grup sayıları |
+|---|---|---|---|---|---|---|
+| ctg | birincil | 0.778 | 0.083 | 0.083 | [1655, 176] | [275, 50] |
+| hcv | birincil | 0.877 | 0.049 | 0.049 | [533, 30] | [533, 30] |
+| cirrhosis | birincil | 0.051 | 0.350 | 0.051 | [21, 144] | [21, 144] |
+| support2 | birincil | 0.397 | 0.411 | 0.397 | [1983, 2054] | [1983, 2054] |
+| diabetes130 | KONTROL (kaynak-binli) | 0.513 | 0.128 | 0.128 | [2564, 640] | [2563, 476] |
+| student_por | KONTROL (kaynak-binli) | 0.154 | 0.126 | 0.126 | [100, 82] | [100, 82] |
+| npha | KONTROL (kaynak-binli) | 0.183 | 0.296 | 0.183 | [131, 211] | [128, 204] |
+
+**H-M1a** (AMAE−QWK uç-ortalama farkı, nadir uçta daha büyük; beklenen rho < 0). İstenen ana test, 14 hücre: Spearman rho = -0.540, tek yönlü p = 0.023 (permütasyon p = 0.025). Yön mevcut verideki −0.64 ile aynı. Ancak: (i) PO ve RF hücreleri aynı veriyi paylaşıyor, p bağımsızlık varsayıyor ve iyimser; (ii) ilişki büyük ölçüde KONTROL görevlerinden (özellikle NPHA) geliyor: yalnız 8 birincil hücrede rho = -0.195, p = 0.322; 7 görev ortalamasında rho = -0.607, p = 0.074; (iii) ikincil test tekrarlanmadı: min prevalansı < 0.05 olan tek görev HCV (2 hücre, ortalama -0.097); ≥ 0.05 olan 12 hücrenin ortalaması -0.089. Fark -0.008, yani beklenenin tersi yönde ve çok küçük. Sonuç: kısmi ve kırılgan destek. Ana korelasyon yönle tutarlı, ama en nadir uçlu görev (HCV) hipotezle çelişiyor ve birincil görevlerde ilişki zayıf.
+
+**H-M1b** (kısıtlı QWK − QWK: uç recall ≥ 0, QWK ≤ 0; 14 kaynak × aile bloğu). 11/14 blokta iki politika aynı adayı seçti (fark 0). Sıfır-dışı 3 blokta (cirrhosis PO: recall +0.029, QWK +0.001, cirrhosis RF: recall +0.075, QWK +0.018, npha PO: recall +0.065, QWK +0.009) uç recall farkı 3/3 pozitif: işaret testi p = 0.125, kesin Wilcoxon p = 0.125. Yönle tutarlı, ama 3 blokla anlamlı değil. QWK maliyeti kısmı tekrarlanmadı: 0/3 blokta QWK düştü, 3/3 blokta arttı (medyan +0.009; tek yönlü p = 1.000).
+
+**H-M1c** (balanced seçim oranı MAE/RPS altında MMAE/kısıtlı QWK altındakinden düşük). Seçim kararlarında `balanced` oranı (14 blok × 6 karar = 84):
+
+| Politika | balanced / karar | Oran | PO | RF | Yalnız birincil görevler |
+|---|---|---|---|---|---|
+| qwk | 57/84 | 0.679 | 0.643 | 0.714 | 0.458 |
+| mae | 5/84 | 0.060 | 0.000 | 0.119 | 0.104 |
+| amae | 70/84 | 0.833 | 0.833 | 0.833 | 1.000 |
+| mmae | 83/84 | 0.988 | 1.000 | 0.976 | 1.000 |
+| macro_f1 | 70/84 | 0.833 | 0.762 | 0.905 | 0.729 |
+| rps | 2/84 | 0.024 | 0.000 | 0.048 | 0.000 |
+| qwk_recall | 59/84 | 0.702 | 0.690 | 0.714 | 0.479 |
+
+Havuzda sıra tutuyor (MAE 0.060, RPS 0.024 < MMAE 0.988, kısıtlı QWK 0.702). Blok düzeyinde 11/14 blokta tutuyor; tutmayanlar: ctg RF, hcv PO, support2 RF. Bu üç blokta kısıtlı QWK, QWK ile aynı ve çoğunlukla ağırlıksız adayları seçti (MAE de SUPPORT2 RF'de 1/6 balanced). Kısıtlı QWK oranı (0.70) mevcut verideki %99'dan belirgin düşük, çünkü M1'de 14 bloğun 11'inde kısıtlı QWK QWK ile aynı. MMAE'nin yüksek ve MAE/RPS'nin düşük oranı tekrarlandı.
+
 ## Mekanizma gözlemi (betimsel, test edilmedi)
 
 QWK sabit tahmine 0 verir; AMAE ise K=3'te "hep orta sınıf" tahminine normalize 1/3 verir. Zayıf sinyalli NPHA'da (QWK-seçimi QWK ≈ 0.07–0.10) AMAE seçimi ağırlıksız, büyük ölçüde orta sınıfı tahmin eden modelleri seçti (düşük uç recall 0.000, yüksek uç 0.06–0.13), QWK ise çoğunlukla `balanced` adayları seçti. SUPPORT2'de uçlar çoğunluk olduğundan AMAE'nin sınıf-eşit ağırlığı nadir orta düzeylere kayıyor. Yani "QWK uçları ezer, AMAE korur" genellemesi bu görevlerde desteklenmiyor; seçicinin etkisi sınıf marjinallerine ve sinyal gücüne bağlı görünüyor. Bu yorum ileride önceden tanımlı bir simülasyonla sınanmalı.
@@ -177,4 +209,4 @@ Doğrulama sınırı: modeller ve iç OOF tahminleri bağımsız yeniden üretil
 
 ## Dosyalar
 
-PROTOCOL.md, config.json, data.py, run.py, provenance.py, tests/ (fit öncesi donduruldu); PROVENANCE.json, AUDIT_SUMMARY.json, Y1_DATASET_AUDIT_M1.csv, FREEZE.json, FREEZE_DIGEST.txt, TEST_LOG.txt; REAL_SELECTION_SUMMARY.csv, POLICY_CONTRASTS.csv, FIXED_WEIGHT_CONTROLS.json, RUN_TIMING.json; validation/check_results.py, CHECK_REPORT.json, RUN_HASH_RECEIPT.json, build_report.py, render_report_tr.py.
+PROTOCOL.md, config.json, data.py, run.py, provenance.py, tests/ (fit öncesi donduruldu); PROVENANCE.json, AUDIT_SUMMARY.json, Y1_DATASET_AUDIT_M1.csv, FREEZE.json, FREEZE_DIGEST.txt, TEST_LOG.txt; REAL_SELECTION_SUMMARY.csv, POLICY_CONTRASTS.csv, FIXED_WEIGHT_CONTROLS.json, RUN_TIMING.json; validation/check_results.py, CHECK_REPORT.json, RUN_HASH_RECEIPT.json, build_report.py, render_report_tr.py. Fit sonrası: AMENDMENT_POSTRUN_HYPOTHESES.md, POSTHOC_HYPOTHESES_M1.json, validation/posthoc_hypotheses.py.

@@ -161,6 +161,45 @@ def main():
     w('- **Tekrarlar arası işaret değişimi**: ' + ('; '.join(rep) if rep else 'yok') + '.')
     w('- **gate_v2 ile yön karşılaştırması (betimsel)**: gate_v2\'de MovieLens PO −0.403 ve SkillCraft-survey RF +0.187 idi; M1\'de de her iki yön görülüyor (örn. NPHA RF −0.335, Cirrhosis RF +0.029). Bu bir test değildir.')
     w('')
+    ph_path = M1 / 'POSTHOC_HYPOTHESES_M1.json'
+    if ph_path.exists():
+        ph = json.loads(ph_path.read_text(encoding='utf-8'))
+        a, b, c = ph['H_M1a'], ph['H_M1b'], ph['H_M1c']
+        w('## H-M1a/b/c — FIT SONRASI eklendi, ön-tanımlı DEĞİL')
+        w('')
+        w('Bu hipotezler makale oturumundan, M1 fitlerinin hepsi bittikten (09:55:49Z) ve sonuçlar incelenip `b5b249b` ile raporlandıktan sonra geldi. Bu yüzden M1 bunların prospektif testi değildir. PROTOCOL.md ve FREEZE.json bilerek değiştirilmedi (ayrıntı: `AMENDMENT_POSTRUN_HYPOTHESES.md`). Aşağıdaki hesaplar kaydedilmiş çıktılardan post hoc yapıldı (yeni fit yok), istenen tanımlar değiştirilmeden. Moderatör (uç-sınıf prevalansı) fit öncesi donmuş AUDIT_SUMMARY.json sınıf sayılarından hesaplandı; hipotezin kendisi donmuş değildi.')
+        w('')
+        w('| Görev | Rol | Düşük uç prevalansı | Yüksek uç prevalansı | min prevalans | Uç sayıları | Uç grup sayıları |')
+        w('|---|---|---|---|---|---|---|')
+        for dname, p in ph['endpoint_prevalence_from_frozen_audit'].items():
+            w(f'| {dname} | {ROLE_TR[p["role"]]} | {u(p["low"])} | {u(p["high"])} | {u(p["min"])} | {p["endpoint_counts"]} | {p["endpoint_groups"]} |')
+        w('')
+        pa = a['primary_all_14_cells']; ps = a['sensitivity_primary_tasks_8_cells']; pt = a['sensitivity_task_means_7']; sec = a['secondary_threshold_0_05']
+        w(f'**H-M1a** (AMAE−QWK uç-ortalama farkı, nadir uçta daha büyük; beklenen rho < 0). İstenen ana test, 14 hücre: Spearman rho = {pa["rho"]:+.3f}, tek yönlü p = {pa["p_one_sided_less_scipy"]:.3f} (permütasyon p = {pa["p_one_sided_less_permutation"]:.3f}). '
+          f'Yön mevcut verideki −0.64 ile aynı. Ancak: (i) PO ve RF hücreleri aynı veriyi paylaşıyor, p bağımsızlık varsayıyor ve iyimser; (ii) ilişki büyük ölçüde KONTROL görevlerinden (özellikle NPHA) geliyor: yalnız 8 birincil hücrede rho = {ps["rho"]:+.3f}, p = {ps["p_one_sided_less_scipy"]:.3f}; 7 görev ortalamasında rho = {pt["rho"]:+.3f}, p = {pt["p_one_sided_less_scipy"]:.3f}; '
+          f'(iii) ikincil test tekrarlanmadı: min prevalansı < 0.05 olan tek görev HCV ({sec["rare_cells"]} hücre, ortalama {sec["rare_mean"]:+.3f}); ≥ 0.05 olan {sec["common_cells"]} hücrenin ortalaması {sec["common_mean"]:+.3f}. Fark {sec["difference_rare_minus_common"]:+.3f}, yani beklenenin tersi yönde ve çok küçük. '
+          'Sonuç: kısmi ve kırılgan destek. Ana korelasyon yönle tutarlı, ama en nadir uçlu görev (HCV) hipotezle çelişiyor ve birincil görevlerde ilişki zayıf.')
+        w('')
+        br, bq = b['mean_endpoint_recall_ge_0'], b['qwk_le_0']
+        nz = [r for r in b['blocks'] if r['config_change_vs_qwk'] > 0]
+        w(f'**H-M1b** (kısıtlı QWK − QWK: uç recall ≥ 0, QWK ≤ 0; 14 kaynak × aile bloğu). {br["zero_blocks"]}/14 blokta iki politika aynı adayı seçti (fark 0). Sıfır-dışı {br["nonzero_blocks"]} blokta ('
+          + ', '.join(f'{r["dataset"]} {r["family"].upper()}: recall {n(r["mean_endpoint_recall_delta"])}, QWK {n(r["qwk_delta"])}' for r in nz) +
+          f') uç recall farkı {br["positive"]}/{br["nonzero_blocks"]} pozitif: işaret testi p = {br["sign_test_p"]:.3f}, kesin Wilcoxon p = {br["exact_wilcoxon_p"]:.3f}. Yönle tutarlı, ama 3 blokla anlamlı değil. '
+          f'QWK maliyeti kısmı tekrarlanmadı: {bq["negative"]}/{bq["nonzero_blocks"]} blokta QWK düştü, {bq["positive"]}/{bq["nonzero_blocks"]} blokta arttı (medyan {bq["median_nonzero"]:+.3f}; tek yönlü p = {bq["sign_test_p"]:.3f}).')
+        w('')
+        fr = c['fractions']
+        w('**H-M1c** (balanced seçim oranı MAE/RPS altında MMAE/kısıtlı QWK altındakinden düşük). Seçim kararlarında `balanced` oranı (14 blok × 6 karar = 84):')
+        w('')
+        w('| Politika | balanced / karar | Oran | PO | RF | Yalnız birincil görevler |')
+        w('|---|---|---|---|---|---|')
+        for pol in ['qwk', 'mae', 'amae', 'mmae', 'macro_f1', 'rps', 'qwk_recall']:
+            f = fr[pol]
+            w(f'| {pol} | {f["balanced"]}/{f["decisions"]} | {u(f["fraction"])} | {u(f["by_family"]["po"])} | {u(f["by_family"]["rf"])} | {u(f["primary_tasks"])} |')
+        fails = [f'{blk["dataset"]} {blk["family"].upper()}' for blk in c['per_block_balanced_of_6'] if not max(blk['mae'], blk['rps']) < min(blk['mmae'], blk['qwk_recall'])]
+        w('')
+        w(f'Havuzda sıra tutuyor (MAE {u(fr["mae"]["fraction"])}, RPS {u(fr["rps"]["fraction"])} < MMAE {u(fr["mmae"]["fraction"])}, kısıtlı QWK {u(fr["qwk_recall"]["fraction"])}). Blok düzeyinde {c["blocks_where_max(mae,rps)<min(mmae,qwk_recall)"]}/14 blokta tutuyor; tutmayanlar: {", ".join(fails)}. '
+          'Bu üç blokta kısıtlı QWK, QWK ile aynı ve çoğunlukla ağırlıksız adayları seçti (MAE de SUPPORT2 RF\'de 1/6 balanced). Kısıtlı QWK oranı (0.70) mevcut verideki %99\'dan belirgin düşük, çünkü M1\'de 14 bloğun 11\'inde kısıtlı QWK QWK ile aynı. MMAE\'nin yüksek ve MAE/RPS\'nin düşük oranı tekrarlandı.')
+        w('')
     w('## Mekanizma gözlemi (betimsel, test edilmedi)')
     w('')
     w('QWK sabit tahmine 0 verir; AMAE ise K=3\'te "hep orta sınıf" tahminine normalize 1/3 verir. Zayıf sinyalli NPHA\'da (QWK-seçimi QWK ≈ 0.07–0.10) AMAE seçimi ağırlıksız, büyük ölçüde orta sınıfı tahmin eden modelleri seçti (düşük uç recall 0.000, yüksek uç 0.06–0.13), QWK ise çoğunlukla `balanced` adayları seçti. SUPPORT2\'de uçlar çoğunluk olduğundan AMAE\'nin sınıf-eşit ağırlığı nadir orta düzeylere kayıyor. Yani "QWK uçları ezer, AMAE korur" genellemesi bu görevlerde desteklenmiyor; seçicinin etkisi sınıf marjinallerine ve sinyal gücüne bağlı görünüyor. Bu yorum ileride önceden tanımlı bir simülasyonla sınanmalı.')
@@ -193,7 +232,7 @@ def main():
     w('')
     w('## Dosyalar')
     w('')
-    w('PROTOCOL.md, config.json, data.py, run.py, provenance.py, tests/ (fit öncesi donduruldu); PROVENANCE.json, AUDIT_SUMMARY.json, Y1_DATASET_AUDIT_M1.csv, FREEZE.json, FREEZE_DIGEST.txt, TEST_LOG.txt; REAL_SELECTION_SUMMARY.csv, POLICY_CONTRASTS.csv, FIXED_WEIGHT_CONTROLS.json, RUN_TIMING.json; validation/check_results.py, CHECK_REPORT.json, RUN_HASH_RECEIPT.json, build_report.py, render_report_tr.py.')
+    w('PROTOCOL.md, config.json, data.py, run.py, provenance.py, tests/ (fit öncesi donduruldu); PROVENANCE.json, AUDIT_SUMMARY.json, Y1_DATASET_AUDIT_M1.csv, FREEZE.json, FREEZE_DIGEST.txt, TEST_LOG.txt; REAL_SELECTION_SUMMARY.csv, POLICY_CONTRASTS.csv, FIXED_WEIGHT_CONTROLS.json, RUN_TIMING.json; validation/check_results.py, CHECK_REPORT.json, RUN_HASH_RECEIPT.json, build_report.py, render_report_tr.py. Fit sonrası: AMENDMENT_POSTRUN_HYPOTHESES.md, POSTHOC_HYPOTHESES_M1.json, validation/posthoc_hypotheses.py.')
     (M1 / 'M1_RESULTS_TR.md').write_text('\n'.join(out) + '\n', encoding='utf-8')
     print('wrote M1_RESULTS_TR.md', len(out), 'lines')
 

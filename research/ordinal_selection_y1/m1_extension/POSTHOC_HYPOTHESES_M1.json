@@ -1,0 +1,633 @@
+{
+  "created_utc": "2026-11-24T10:04:16.709278+00:00",
+  "status": "POST_HOC_NOT_PRESPECIFIED",
+  "statement": "Hypotheses received after all M1 fits had finished and after the outcomes had been inspected; see AMENDMENT_POSTRUN_HYPOTHESES.md. Not a prospective test.",
+  "inputs_sha256": {
+    "POLICY_CONTRASTS.csv": "1f57aa819d42609e8e14e35536a7e6dde9bbfd4246fd43758c7f3057a622edbb",
+    "REAL_SELECTION_SUMMARY.csv": "1115730a6e1123b9695871b42e38464538a6a42e0d80167a81ca6cb2fa60c175",
+    "AUDIT_SUMMARY.json": "230731a511068e624328476bccb2e5af76705965ed0a02c3d3571b8a27e3a363"
+  },
+  "endpoint_prevalence_from_frozen_audit": {
+    "ctg": {
+      "low": 0.7784571966133584,
+      "high": 0.08278457196613359,
+      "min": 0.08278457196613359,
+      "endpoint_counts": [
+        1655,
+        176
+      ],
+      "endpoint_groups": [
+        275,
+        50
+      ],
+      "rows": 2126,
+      "role": "primary"
+    },
+    "hcv": {
+      "low": 0.8766447368421053,
+      "high": 0.049342105263157895,
+      "min": 0.049342105263157895,
+      "endpoint_counts": [
+        533,
+        30
+      ],
+      "endpoint_groups": [
+        533,
+        30
+      ],
+      "rows": 608,
+      "role": "primary"
+    },
+    "cirrhosis": {
+      "low": 0.050970873786407765,
+      "high": 0.34951456310679613,
+      "min": 0.050970873786407765,
+      "endpoint_counts": [
+        21,
+        144
+      ],
+      "endpoint_groups": [
+        21,
+        144
+      ],
+      "rows": 412,
+      "role": "primary"
+    },
+    "support2": {
+      "low": 0.3966,
+      "high": 0.4108,
+      "min": 0.3966,
+      "endpoint_counts": [
+        1983,
+        2054
+      ],
+      "endpoint_groups": [
+        1983,
+        2054
+      ],
+      "rows": 5000,
+      "role": "primary"
+    },
+    "diabetes130": {
+      "low": 0.5128,
+      "high": 0.128,
+      "min": 0.128,
+      "endpoint_counts": [
+        2564,
+        640
+      ],
+      "endpoint_groups": [
+        2563,
+        476
+      ],
+      "rows": 5000,
+      "role": "control_source_binned"
+    },
+    "student_por": {
+      "low": 0.15408320493066255,
+      "high": 0.1263482280431433,
+      "min": 0.1263482280431433,
+      "endpoint_counts": [
+        100,
+        82
+      ],
+      "endpoint_groups": [
+        100,
+        82
+      ],
+      "rows": 649,
+      "role": "control_source_binned"
+    },
+    "npha": {
+      "low": 0.18347338935574228,
+      "high": 0.29551820728291317,
+      "min": 0.18347338935574228,
+      "endpoint_counts": [
+        131,
+        211
+      ],
+      "endpoint_groups": [
+        128,
+        204
+      ],
+      "rows": 714,
+      "role": "control_source_binned"
+    }
+  },
+  "H_M1a": {
+    "cells": [
+      {
+        "dataset": "ctg",
+        "family": "po",
+        "role": "primary",
+        "min_endpoint_prevalence": 0.08278457196613359,
+        "amae_minus_qwk_mean_endpoint_recall": 0.03396045042570722
+      },
+      {
+        "dataset": "ctg",
+        "family": "rf",
+        "role": "primary",
+        "min_endpoint_prevalence": 0.08278457196613359,
+        "amae_minus_qwk_mean_endpoint_recall": 0.008169973908266903
+      },
+      {
+        "dataset": "hcv",
+        "family": "po",
+        "role": "primary",
+        "min_endpoint_prevalence": 0.049342105263157895,
+        "amae_minus_qwk_mean_endpoint_recall": -0.14244840525328328
+      },
+      {
+        "dataset": "hcv",
+        "family": "rf",
+        "role": "primary",
+        "min_endpoint_prevalence": 0.049342105263157895,
+        "amae_minus_qwk_mean_endpoint_recall": -0.051156973108192616
+      },
+      {
+        "dataset": "cirrhosis",
+        "family": "po",
+        "role": "primary",
+        "min_endpoint_prevalence": 0.050970873786407765,
+        "amae_minus_qwk_mean_endpoint_recall": 0.03893849206349209
+      },
+      {
+        "dataset": "cirrhosis",
+        "family": "rf",
+        "role": "primary",
+        "min_endpoint_prevalence": 0.050970873786407765,
+        "amae_minus_qwk_mean_endpoint_recall": 0.02901785714285715
+      },
+      {
+        "dataset": "support2",
+        "family": "po",
+        "role": "primary",
+        "min_endpoint_prevalence": 0.3966,
+        "amae_minus_qwk_mean_endpoint_recall": -0.09254908199736711
+      },
+      {
+        "dataset": "support2",
+        "family": "rf",
+        "role": "primary",
+        "min_endpoint_prevalence": 0.3966,
+        "amae_minus_qwk_mean_endpoint_recall": -0.26426438259774787
+      },
+      {
+        "dataset": "diabetes130",
+        "family": "po",
+        "role": "control_source_binned",
+        "min_endpoint_prevalence": 0.128,
+        "amae_minus_qwk_mean_endpoint_recall": 0.0
+      },
+      {
+        "dataset": "diabetes130",
+        "family": "rf",
+        "role": "control_source_binned",
+        "min_endpoint_prevalence": 0.128,
+        "amae_minus_qwk_mean_endpoint_recall": -0.09413087460998443
+      },
+      {
+        "dataset": "student_por",
+        "family": "po",
+        "role": "control_source_binned",
+        "min_endpoint_prevalence": 0.1263482280431433,
+        "amae_minus_qwk_mean_endpoint_recall": -0.04134146341463413
+      },
+      {
+        "dataset": "student_por",
+        "family": "rf",
+        "role": "control_source_binned",
+        "min_endpoint_prevalence": 0.1263482280431433,
+        "amae_minus_qwk_mean_endpoint_recall": -0.05024390243902438
+      },
+      {
+        "dataset": "npha",
+        "family": "po",
+        "role": "control_source_binned",
+        "min_endpoint_prevalence": 0.18347338935574228,
+        "amae_minus_qwk_mean_endpoint_recall": -0.2978727252993741
+      },
+      {
+        "dataset": "npha",
+        "family": "rf",
+        "role": "control_source_binned",
+        "min_endpoint_prevalence": 0.18347338935574228,
+        "amae_minus_qwk_mean_endpoint_recall": -0.335262834195579
+      }
+    ],
+    "primary_all_14_cells": {
+      "n": 14,
+      "rho": -0.5404370578529797,
+      "p_one_sided_less_scipy": 0.023009044777525644,
+      "p_one_sided_less_permutation": 0.025379746202537974
+    },
+    "sensitivity_primary_tasks_8_cells": {
+      "n": 8,
+      "rho": -0.19518001458970666,
+      "p_one_sided_less_scipy": 0.32161276931861515,
+      "p_one_sided_less_permutation": 0.3353766462335377
+    },
+    "sensitivity_task_means_7": {
+      "n": 7,
+      "rho": -0.6071428571428572,
+      "p_one_sided_less_scipy": 0.07411558074058082,
+      "p_one_sided_less_permutation": 0.08409915900840992
+    },
+    "secondary_threshold_0_05": {
+      "rare_cells": 2,
+      "rare_mean": -0.09680268918073795,
+      "rare_datasets": [
+        "hcv"
+      ],
+      "common_cells": 12,
+      "common_mean": -0.08879820758444897,
+      "difference_rare_minus_common": -0.008004481596288984
+    },
+    "expected_direction": "negative rho; larger contrast for rarer endpoints"
+  },
+  "H_M1b": {
+    "blocks": [
+      {
+        "dataset": "ctg",
+        "family": "po",
+        "role": "primary",
+        "mean_endpoint_recall_delta": 0.0,
+        "qwk_delta": 0.0,
+        "config_change_vs_qwk": 0.0,
+        "fallback": 0
+      },
+      {
+        "dataset": "ctg",
+        "family": "rf",
+        "role": "primary",
+        "mean_endpoint_recall_delta": 0.0,
+        "qwk_delta": 0.0,
+        "config_change_vs_qwk": 0.0,
+        "fallback": 0
+      },
+      {
+        "dataset": "hcv",
+        "family": "po",
+        "role": "primary",
+        "mean_endpoint_recall_delta": 0.0,
+        "qwk_delta": 0.0,
+        "config_change_vs_qwk": 0.0,
+        "fallback": 0
+      },
+      {
+        "dataset": "hcv",
+        "family": "rf",
+        "role": "primary",
+        "mean_endpoint_recall_delta": 0.0,
+        "qwk_delta": 0.0,
+        "config_change_vs_qwk": 0.0,
+        "fallback": 0
+      },
+      {
+        "dataset": "cirrhosis",
+        "family": "po",
+        "role": "primary",
+        "mean_endpoint_recall_delta": 0.02876984126984128,
+        "qwk_delta": 0.0014054116684052986,
+        "config_change_vs_qwk": 0.16666666666666666,
+        "fallback": 0
+      },
+      {
+        "dataset": "cirrhosis",
+        "family": "rf",
+        "role": "primary",
+        "mean_endpoint_recall_delta": 0.07514880952380953,
+        "qwk_delta": 0.01762200422077126,
+        "config_change_vs_qwk": 0.3333333333333333,
+        "fallback": 1
+      },
+      {
+        "dataset": "support2",
+        "family": "po",
+        "role": "primary",
+        "mean_endpoint_recall_delta": 0.0,
+        "qwk_delta": 0.0,
+        "config_change_vs_qwk": 0.0,
+        "fallback": 0
+      },
+      {
+        "dataset": "support2",
+        "family": "rf",
+        "role": "primary",
+        "mean_endpoint_recall_delta": 0.0,
+        "qwk_delta": 0.0,
+        "config_change_vs_qwk": 0.0,
+        "fallback": 0
+      },
+      {
+        "dataset": "diabetes130",
+        "family": "po",
+        "role": "control_source_binned",
+        "mean_endpoint_recall_delta": 0.0,
+        "qwk_delta": 0.0,
+        "config_change_vs_qwk": 0.0,
+        "fallback": 0
+      },
+      {
+        "dataset": "diabetes130",
+        "family": "rf",
+        "role": "control_source_binned",
+        "mean_endpoint_recall_delta": 0.0,
+        "qwk_delta": 0.0,
+        "config_change_vs_qwk": 0.0,
+        "fallback": 0
+      },
+      {
+        "dataset": "student_por",
+        "family": "po",
+        "role": "control_source_binned",
+        "mean_endpoint_recall_delta": 0.0,
+        "qwk_delta": 0.0,
+        "config_change_vs_qwk": 0.0,
+        "fallback": 0
+      },
+      {
+        "dataset": "student_por",
+        "family": "rf",
+        "role": "control_source_binned",
+        "mean_endpoint_recall_delta": 0.0,
+        "qwk_delta": 0.0,
+        "config_change_vs_qwk": 0.0,
+        "fallback": 0
+      },
+      {
+        "dataset": "npha",
+        "family": "po",
+        "role": "control_source_binned",
+        "mean_endpoint_recall_delta": 0.06495785246554031,
+        "qwk_delta": 0.00904653045351883,
+        "config_change_vs_qwk": 0.16666666666666666,
+        "fallback": 0
+      },
+      {
+        "dataset": "npha",
+        "family": "rf",
+        "role": "control_source_binned",
+        "mean_endpoint_recall_delta": 0.0,
+        "qwk_delta": 0.0,
+        "config_change_vs_qwk": 0.0,
+        "fallback": 0
+      }
+    ],
+    "mean_endpoint_recall_ge_0": {
+      "blocks": 14,
+      "zero_blocks": 11,
+      "nonzero_blocks": 3,
+      "positive": 3,
+      "negative": 0,
+      "median_nonzero": 0.06495785246554031,
+      "alternative": "greater",
+      "sign_test_p": 0.125,
+      "exact_wilcoxon_p": 0.125
+    },
+    "qwk_le_0": {
+      "blocks": 14,
+      "zero_blocks": 11,
+      "nonzero_blocks": 3,
+      "positive": 3,
+      "negative": 0,
+      "median_nonzero": 0.00904653045351883,
+      "alternative": "less",
+      "sign_test_p": 1.0,
+      "exact_wilcoxon_p": 1.0
+    }
+  },
+  "H_M1c": {
+    "fractions": {
+      "qwk": {
+        "balanced": 57,
+        "decisions": 84,
+        "fraction": 0.6785714285714286,
+        "by_family": {
+          "po": 0.6428571428571429,
+          "rf": 0.7142857142857143
+        },
+        "primary_tasks": 0.4583333333333333
+      },
+      "mae": {
+        "balanced": 5,
+        "decisions": 84,
+        "fraction": 0.05952380952380952,
+        "by_family": {
+          "po": 0.0,
+          "rf": 0.11904761904761904
+        },
+        "primary_tasks": 0.10416666666666667
+      },
+      "amae": {
+        "balanced": 70,
+        "decisions": 84,
+        "fraction": 0.8333333333333334,
+        "by_family": {
+          "po": 0.8333333333333334,
+          "rf": 0.8333333333333334
+        },
+        "primary_tasks": 1.0
+      },
+      "mmae": {
+        "balanced": 83,
+        "decisions": 84,
+        "fraction": 0.9880952380952381,
+        "by_family": {
+          "po": 1.0,
+          "rf": 0.9761904761904762
+        },
+        "primary_tasks": 1.0
+      },
+      "macro_f1": {
+        "balanced": 70,
+        "decisions": 84,
+        "fraction": 0.8333333333333334,
+        "by_family": {
+          "po": 0.7619047619047619,
+          "rf": 0.9047619047619048
+        },
+        "primary_tasks": 0.7291666666666666
+      },
+      "rps": {
+        "balanced": 2,
+        "decisions": 84,
+        "fraction": 0.023809523809523808,
+        "by_family": {
+          "po": 0.0,
+          "rf": 0.047619047619047616
+        },
+        "primary_tasks": 0.0
+      },
+      "qwk_recall": {
+        "balanced": 59,
+        "decisions": 84,
+        "fraction": 0.7023809523809523,
+        "by_family": {
+          "po": 0.6904761904761905,
+          "rf": 0.7142857142857143
+        },
+        "primary_tasks": 0.4791666666666667
+      }
+    },
+    "per_block_balanced_of_6": [
+      {
+        "dataset": "ctg",
+        "family": "po",
+        "qwk": 1,
+        "mae": 0,
+        "amae": 6,
+        "mmae": 6,
+        "macro_f1": 5,
+        "rps": 0,
+        "qwk_recall": 1
+      },
+      {
+        "dataset": "ctg",
+        "family": "rf",
+        "qwk": 0,
+        "mae": 0,
+        "amae": 6,
+        "mmae": 6,
+        "macro_f1": 3,
+        "rps": 0,
+        "qwk_recall": 0
+      },
+      {
+        "dataset": "hcv",
+        "family": "po",
+        "qwk": 0,
+        "mae": 0,
+        "amae": 6,
+        "mmae": 6,
+        "macro_f1": 2,
+        "rps": 0,
+        "qwk_recall": 0
+      },
+      {
+        "dataset": "hcv",
+        "family": "rf",
+        "qwk": 5,
+        "mae": 3,
+        "amae": 6,
+        "mmae": 6,
+        "macro_f1": 6,
+        "rps": 0,
+        "qwk_recall": 5
+      },
+      {
+        "dataset": "cirrhosis",
+        "family": "po",
+        "qwk": 5,
+        "mae": 0,
+        "amae": 6,
+        "mmae": 6,
+        "macro_f1": 5,
+        "rps": 0,
+        "qwk_recall": 6
+      },
+      {
+        "dataset": "cirrhosis",
+        "family": "rf",
+        "qwk": 6,
+        "mae": 1,
+        "amae": 6,
+        "mmae": 6,
+        "macro_f1": 6,
+        "rps": 0,
+        "qwk_recall": 6
+      },
+      {
+        "dataset": "support2",
+        "family": "po",
+        "qwk": 4,
+        "mae": 0,
+        "amae": 6,
+        "mmae": 6,
+        "macro_f1": 2,
+        "rps": 0,
+        "qwk_recall": 4
+      },
+      {
+        "dataset": "support2",
+        "family": "rf",
+        "qwk": 1,
+        "mae": 1,
+        "amae": 6,
+        "mmae": 6,
+        "macro_f1": 6,
+        "rps": 0,
+        "qwk_recall": 1
+      },
+      {
+        "dataset": "diabetes130",
+        "family": "po",
+        "qwk": 6,
+        "mae": 0,
+        "amae": 6,
+        "mmae": 6,
+        "macro_f1": 6,
+        "rps": 0,
+        "qwk_recall": 6
+      },
+      {
+        "dataset": "diabetes130",
+        "family": "rf",
+        "qwk": 6,
+        "mae": 0,
+        "amae": 6,
+        "mmae": 6,
+        "macro_f1": 6,
+        "rps": 0,
+        "qwk_recall": 6
+      },
+      {
+        "dataset": "student_por",
+        "family": "po",
+        "qwk": 6,
+        "mae": 0,
+        "amae": 5,
+        "mmae": 6,
+        "macro_f1": 6,
+        "rps": 0,
+        "qwk_recall": 6
+      },
+      {
+        "dataset": "student_por",
+        "family": "rf",
+        "qwk": 6,
+        "mae": 0,
+        "amae": 5,
+        "mmae": 6,
+        "macro_f1": 5,
+        "rps": 2,
+        "qwk_recall": 6
+      },
+      {
+        "dataset": "npha",
+        "family": "po",
+        "qwk": 5,
+        "mae": 0,
+        "amae": 0,
+        "mmae": 6,
+        "macro_f1": 6,
+        "rps": 0,
+        "qwk_recall": 6
+      },
+      {
+        "dataset": "npha",
+        "family": "rf",
+        "qwk": 6,
+        "mae": 0,
+        "amae": 0,
+        "mmae": 5,
+        "macro_f1": 6,
+        "rps": 0,
+        "qwk_recall": 6
+      }
+    ],
+    "blocks_where_max(mae,rps)<min(mmae,qwk_recall)": 11,
+    "blocks": 14,
+    "pooled_order_holds": true
+  }
+}
