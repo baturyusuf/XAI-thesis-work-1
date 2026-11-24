@@ -1,0 +1,7 @@
+moderator,model_family,cells,spearman_rho,p_value_uncorrected
+p_endpoint_min,po,6,-0.6571428571428573,0.1561749271137024
+p_endpoint_min,rf,6,-0.6,0.208
+p_endpoint_min,both,12,-0.6371930928643098,0.025841890537194174
+p_endpoint_mean,po,6,-0.6571428571428573,0.1561749271137024
+p_endpoint_mean,rf,6,-0.6,0.208
+p_endpoint_mean,both,12,-0.6371930928643098,0.025841890537194174

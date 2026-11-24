@@ -1,0 +1,601 @@
+{
+ "10.1037/h0026256": {
+  "title": "Weighted kappa: Nominal scale agreement provision for scaled disagreement or partial credit.",
+  "authors": [
+   [
+    "Cohen",
+    "Jacob"
+   ]
+  ],
+  "year": 1968,
+  "container": "Psychological Bulletin",
+  "volume": "70",
+  "issue": "4",
+  "page": "213-220",
+  "article": null,
+  "type": "journal-article",
+  "publisher": "American Psychological Association (APA)"
+ },
+ "10.1109/ISDA.2009.230": {
+  "title": "Evaluation Measures for Ordinal Regression",
+  "authors": [
+   [
+    "Baccianella",
+    "Stefano"
+   ],
+   [
+    "Esuli",
+    "Andrea"
+   ],
+   [
+    "Sebastiani",
+    "Fabrizio"
+   ]
+  ],
+  "year": 2009,
+  "container": "2009 Ninth International Conference on Intelligent Systems Design and Applications",
+  "volume": null,
+  "issue": null,
+  "page": "283-287",
+  "article": null,
+  "type": "proceedings-article",
+  "publisher": "IEEE"
+ },
+ "10.1016/j.neucom.2013.05.058": {
+  "title": "Metrics to guide a multi-objective evolutionary algorithm for ordinal classification",
+  "authors": [
+   [
+    "Cruz-Ramírez",
+    "M."
+   ],
+   [
+    "Hervás-Martínez",
+    "C."
+   ],
+   [
+    "Sánchez-Monedero",
+    "J."
+   ],
+   [
+    "Gutiérrez",
+    "P.A."
+   ]
+  ],
+  "year": 2014,
+  "container": "Neurocomputing",
+  "volume": "135",
+  "issue": null,
+  "page": "21-31",
+  "article": null,
+  "type": "journal-article",
+  "publisher": "Elsevier BV"
+ },
+ "10.1109/TKDE.2015.2457911": {
+  "title": "Ordinal Regression Methods: Survey and Experimental Study",
+  "authors": [
+   [
+    "Gutierrez",
+    "Pedro Antonio"
+   ],
+   [
+    "Perez-Ortiz",
+    "Maria"
+   ],
+   [
+    "Sanchez-Monedero",
+    "Javier"
+   ],
+   [
+    "Fernandez-Navarro",
+    "Francisco"
+   ],
+   [
+    "Hervas-Martinez",
+    "Cesar"
+   ]
+  ],
+  "year": 2016,
+  "container": "IEEE Transactions on Knowledge and Data Engineering",
+  "volume": "28",
+  "issue": "1",
+  "page": "127-146",
+  "article": null,
+  "type": "journal-article",
+  "publisher": "Institute of Electrical and Electronics Engineers (IEEE)"
+ },
+ "10.1016/j.patrec.2017.05.018": {
+  "title": "Weighted kappa loss function for multi-class classification of ordinal data in deep learning",
+  "authors": [
+   [
+    "de la Torre",
+    "Jordi"
+   ],
+   [
+    "Puig",
+    "Domenec"
+   ],
+   [
+    "Valls",
+    "Aida"
+   ]
+  ],
+  "year": 2018,
+  "container": "Pattern Recognition Letters",
+  "volume": "105",
+  "issue": null,
+  "page": "144-154",
+  "article": null,
+  "type": "journal-article",
+  "publisher": "Elsevier BV"
+ },
+ "10.1007/s10994-024-06654-4": {
+  "title": "Adapting performance metrics for ordinal classification to interval scale: length matters",
+  "authors": [
+   [
+    "Binotto",
+    "Giulia"
+   ],
+   [
+    "Delgado",
+    "Rosario"
+   ]
+  ],
+  "year": 2025,
+  "container": "Machine Learning",
+  "volume": "114",
+  "issue": "2",
+  "page": null,
+  "article": "41",
+  "type": "journal-article",
+  "publisher": "Springer Science and Business Media LLC"
+ },
+ "10.1007/s10994-026-07023-z": {
+  "title": "Ordinal Classification with Label-Dependent Loss",
+  "authors": [
+   [
+    "Delgado",
+    "Rosario"
+   ]
+  ],
+  "year": 2026,
+  "container": "Machine Learning",
+  "volume": "115",
+  "issue": "3",
+  "page": null,
+  "article": "60",
+  "type": "journal-article",
+  "publisher": "Springer Science and Business Media LLC"
+ },
+ "10.1016/j.asoc.2023.110020": {
+  "title": "Weighted kappa measures for ordinal multi-class classification performance",
+  "authors": [
+   [
+    "Yilmaz",
+    "Ayfer Ezgi"
+   ],
+   [
+    "Demirhan",
+    "Haydar"
+   ]
+  ],
+  "year": 2023,
+  "container": "Applied Soft Computing",
+  "volume": "134",
+  "issue": null,
+  "page": "110020",
+  "article": "110020",
+  "type": "journal-article",
+  "publisher": "Elsevier BV"
+ },
+ "10.1007/s00180-024-01539-5": {
+  "title": "Performance of evaluation metrics for classification in imbalanced data",
+  "authors": [
+   [
+    "de la Cruz Huayanay",
+    "Alex"
+   ],
+   [
+    "Bazán",
+    "Jorge L."
+   ],
+   [
+    "Russo",
+    "Cibele M."
+   ]
+  ],
+  "year": 2024,
+  "container": "Computational Statistics",
+  "volume": null,
+  "issue": null,
+  "page": null,
+  "article": null,
+  "type": "journal-article",
+  "publisher": "Springer Science and Business Media LLC"
+ },
+ "10.1007/s10115-025-02544-w": {
+  "title": "A consistency analysis on four evaluation metrics for classifying imbalanced data",
+  "authors": [
+   [
+    "Wong",
+    "Tzu-Tsung"
+   ],
+   [
+    "Chung",
+    "Pei-Chen"
+   ]
+  ],
+  "year": 2025,
+  "container": "Knowledge and Information Systems",
+  "volume": "67",
+  "issue": "11",
+  "page": "10639-10656",
+  "article": null,
+  "type": "journal-article",
+  "publisher": "Springer Science and Business Media LLC"
+ },
+ "10.1007/s00357-024-09497-9": {
+  "title": "Old but Gold or New and Shiny? Comparing Tree Ensembles for Ordinal Prediction with a Classic Parametric Approach",
+  "authors": [
+   [
+    "Buczak",
+    "Philip"
+   ],
+   [
+    "Horn",
+    "Daniel"
+   ],
+   [
+    "Pauly",
+    "Markus"
+   ]
+  ],
+  "year": 2025,
+  "container": "Journal of Classification",
+  "volume": "42",
+  "issue": "2",
+  "page": "364-390",
+  "article": null,
+  "type": "journal-article",
+  "publisher": "Springer Science and Business Media LLC"
+ },
+ "10.1186/1471-2105-7-91": {
+  "title": "Bias in error estimation when using cross-validation for model selection",
+  "authors": [
+   [
+    "Varma",
+    "Sudhir"
+   ],
+   [
+    "Simon",
+    "Richard"
+   ]
+  ],
+  "year": 2006,
+  "container": "BMC Bioinformatics",
+  "volume": "7",
+  "issue": "1",
+  "page": null,
+  "article": "91",
+  "type": "journal-article",
+  "publisher": "Springer Science and Business Media LLC"
+ },
+ "10.1111/j.2517-6161.1980.tb01109.x": {
+  "title": "Regression Models for Ordinal Data",
+  "authors": [
+   [
+    "McCullagh",
+    "Peter"
+   ]
+  ],
+  "year": 1980,
+  "container": "Journal of the Royal Statistical Society Series B: Statistical Methodology",
+  "volume": "42",
+  "issue": "2",
+  "page": "109-127",
+  "article": null,
+  "type": "journal-article",
+  "publisher": "Oxford University Press (OUP)"
+ },
+ "10.1023/A:1010933404324": {
+  "title": "Random Forests",
+  "authors": [
+   [
+    "Breiman",
+    "Leo"
+   ]
+  ],
+  "year": 2001,
+  "container": "Machine Learning",
+  "volume": "45",
+  "issue": "1",
+  "page": "5-32",
+  "article": null,
+  "type": "journal-article",
+  "publisher": "Springer Science and Business Media LLC"
+ },
+ "10.1175/1520-0450(1969)008<0985:ASSFPF>2.0.CO;2": {
+  "title": "A Scoring System for Probability Forecasts of Ranked Categories",
+  "authors": [
+   [
+    "Epstein",
+    "Edward S."
+   ]
+  ],
+  "year": 1969,
+  "container": "Journal of Applied Meteorology",
+  "volume": "8",
+  "issue": "6",
+  "page": "985-987",
+  "article": null,
+  "type": "journal-article",
+  "publisher": "American Meteorological Society"
+ },
+ "10.1016/j.dss.2009.05.016": {
+  "title": "Modeling wine preferences by data mining from physicochemical properties",
+  "authors": [
+   [
+    "Cortez",
+    "Paulo"
+   ],
+   [
+    "Cerdeira",
+    "António"
+   ],
+   [
+    "Almeida",
+    "Fernando"
+   ],
+   [
+    "Matos",
+    "Telmo"
+   ],
+   [
+    "Reis",
+    "José"
+   ]
+  ],
+  "year": 2009,
+  "container": "Decision Support Systems",
+  "volume": "47",
+  "issue": "4",
+  "page": "547-553",
+  "article": null,
+  "type": "journal-article",
+  "publisher": "Elsevier BV"
+ },
+ "10.1371/journal.pone.0075129": {
+  "title": "Video Game Telemetry as a Critical Tool in the Study of Complex Skill Learning",
+  "authors": [
+   [
+    "Thompson",
+    "Joseph J."
+   ],
+   [
+    "Blair",
+    "Mark R."
+   ],
+   [
+    "Chen",
+    "Lihan"
+   ],
+   [
+    "Henrey",
+    "Andrew J."
+   ]
+  ],
+  "year": 2013,
+  "container": "PLoS ONE",
+  "volume": "8",
+  "issue": "9",
+  "page": "e75129",
+  "article": null,
+  "type": "journal-article",
+  "publisher": "Public Library of Science (PLoS)"
+ },
+ "10.1145/956750.956823": {
+  "title": "Nantonac collaborative filtering",
+  "authors": [
+   [
+    "Kamishima",
+    "Toshihiro"
+   ]
+  ],
+  "year": 2003,
+  "container": "Proceedings of the ninth ACM SIGKDD international conference on Knowledge discovery and data mining",
+  "volume": null,
+  "issue": null,
+  "page": "583-588",
+  "article": null,
+  "type": "proceedings-article",
+  "publisher": "ACM"
+ },
+ "10.1145/2827872": {
+  "title": "The MovieLens Datasets",
+  "authors": [
+   [
+    "Harper",
+    "F. Maxwell"
+   ],
+   [
+    "Konstan",
+    "Joseph A."
+   ]
+  ],
+  "year": 2016,
+  "container": "ACM Transactions on Interactive Intelligent Systems",
+  "volume": "5",
+  "issue": "4",
+  "page": "1-19",
+  "article": null,
+  "type": "journal-article",
+  "publisher": "Association for Computing Machinery (ACM)"
+ },
+ "10.1007/s11336-012-9258-4": {
+  "title": "Some Paradoxical Results for the Quadratically Weighted Kappa",
+  "authors": [
+   [
+    "Warrens",
+    "Matthijs J."
+   ]
+  ],
+  "year": 2012,
+  "container": "Psychometrika",
+  "volume": "77",
+  "issue": "2",
+  "page": "315-323",
+  "article": null,
+  "type": "journal-article",
+  "publisher": "Cambridge University Press (CUP)"
+ },
+ "10.1016/j.eswa.2006.10.022": {
+  "title": "Comparison of classification accuracy using Cohen’s Weighted Kappa",
+  "authors": [
+   [
+    "BENDAVID",
+    "A"
+   ]
+  ],
+  "year": 2008,
+  "container": "Expert Systems with Applications",
+  "volume": "34",
+  "issue": "2",
+  "page": "825-832",
+  "article": null,
+  "type": "journal-article",
+  "publisher": "Elsevier BV"
+ },
+ "10.1198/016214506000001437": {
+  "title": "Strictly Proper Scoring Rules, Prediction, and Estimation",
+  "authors": [
+   [
+    "Gneiting",
+    "Tilmann"
+   ],
+   [
+    "Raftery",
+    "Adrian E"
+   ]
+  ],
+  "year": 2007,
+  "container": "Journal of the American Statistical Association",
+  "volume": "102",
+  "issue": "477",
+  "page": "359-378",
+  "article": null,
+  "type": "journal-article",
+  "publisher": "Informa UK Limited"
+ },
+ "10.1007/s00180-025-01703-5": {
+  "title": "Enhancing univariate time series forecasting: a general tree-based model selection approach",
+  "authors": [
+   [
+    "Stroilă",
+    "Alexandru-Mihail"
+   ]
+  ],
+  "year": 2026,
+  "container": "Computational Statistics",
+  "volume": "41",
+  "issue": "3",
+  "page": null,
+  "article": "46",
+  "type": "journal-article",
+  "publisher": "Springer Science and Business Media LLC"
+ },
+ "10.1371/journal.pone.0094215": {
+  "title": "Over the Hill at 24: Persistent Age-Related Cognitive-Motor Decline in Reaction Times in an Ecologically Valid Video Game Task Begins in Early Adulthood",
+  "authors": [
+   [
+    "Thompson",
+    "Joseph J."
+   ],
+   [
+    "Blair",
+    "Mark R."
+   ],
+   [
+    "Henrey",
+    "Andrew J."
+   ]
+  ],
+  "year": 2014,
+  "container": "PLoS ONE",
+  "volume": "9",
+  "issue": "4",
+  "page": "e94215",
+  "article": null,
+  "type": "journal-article",
+  "publisher": "Public Library of Science (PLoS)"
+ },
+ "10.24432/C56S3T": {
+  "error": "<HTTPError 404: 'Not Found'>"
+ },
+ "10.24432/C5161N": {
+  "error": "<HTTPError 404: 'Not Found'>"
+ },
+ "10.24432/C5DP41": {
+  "error": "<HTTPError 404: 'Not Found'>"
+ },
+ "10.24432/C55P6M": {
+  "error": "<HTTPError 404: 'Not Found'>"
+ },
+ "10.1007/s10994-023-06497-5": {
+  "title": "Empirical analysis of performance assessment for imbalanced classification",
+  "authors": [
+   [
+    "Gaudreault",
+    "Jean-Gabriel"
+   ],
+   [
+    "Branco",
+    "Paula"
+   ]
+  ],
+  "year": 2024,
+  "container": "Machine Learning",
+  "volume": "113",
+  "issue": "8",
+  "page": "5533-5575",
+  "article": null,
+  "type": "journal-article",
+  "publisher": "Springer Science and Business Media LLC"
+ },
+ "10.1016/j.patrec.2005.10.010": {
+  "title": "An introduction to ROC analysis",
+  "authors": [
+   [
+    "Fawcett",
+    "Tom"
+   ]
+  ],
+  "year": 2006,
+  "container": "Pattern Recognition Letters",
+  "volume": "27",
+  "issue": "8",
+  "page": "861-874",
+  "article": null,
+  "type": "journal-article",
+  "publisher": "Elsevier BV"
+ },
+ "10.1186/s12864-019-6413-7": {
+  "title": "The advantages of the Matthews correlation coefficient (MCC) over F1 score and accuracy in binary classification evaluation",
+  "authors": [
+   [
+    "Chicco",
+    "Davide"
+   ],
+   [
+    "Jurman",
+    "Giuseppe"
+   ]
+  ],
+  "year": 2020,
+  "container": "BMC Genomics",
+  "volume": "21",
+  "issue": "1",
+  "page": null,
+  "article": "6",
+  "type": "journal-article",
+  "publisher": "Springer Science and Business Media LLC"
+ }
+}

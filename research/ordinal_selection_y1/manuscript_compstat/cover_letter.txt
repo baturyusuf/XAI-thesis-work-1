@@ -1,0 +1,27 @@
+[Date]
+
+The Editors
+Computational Statistics
+
+Dear Editors,
+
+We submit the manuscript "Which metric should choose the model? Selection criteria, class weighting and endpoint recall in tabular ordinal classification" for consideration as an original research article in Computational Statistics.
+
+Ordinal classifiers are usually tuned by maximizing a single validation criterion, most often the quadratically weighted kappa. The paper asks what that choice does to the extreme categories. On one fixed pool of proportional-odds and random-forest candidates, trained with and without class-balanced weights, seven selection criteria choose from the same saved inner cross-validation predictions on six real tabular ordinal tasks under grouped nested cross-validation. A controlled simulation complements the real-data analysis. The main findings are:
+
+- The selection criterion largely determines whether class weighting is adopted. Fixed-hyperparameter controls explain why: weighting always increases MAE and almost always reduces the worst class-wise error.
+- No criterion is close to optimal on all evaluation metrics, as a cross-criterion regret analysis shows.
+- A constant middle-category prediction attains a data-independent normalized AMAE of (K+1)/(4K) with zero endpoint recall. In three low-signal tasks this level was lower than the AMAE of every fitted candidate.
+- MMAE and an explicit endpoint-recall floor protected the endpoint categories more consistently than AMAE, at a small cost in kappa.
+
+We believe the work fits the journal's interest in computational methodology for statistical learning and in simulation-based assessment of statistical procedures. It continues a line of work published in the journal on how the evaluation metric changes model selection (de la Cruz Huayanay, Bazán and Russo, 2024, https://doi.org/10.1007/s00180-024-01539-5). The paper reports reversals and null results as well as positive findings, and it states explicitly which analyses are exploratory.
+
+All data are publicly documented. Two data sets permit research use but not redistribution, and scripts are provided to recreate them from the original sources. The use of AI-based assistants is declared in the Methods section, as the journal's policy requires.
+
+This manuscript has not been published and is not under consideration elsewhere. All authors have approved the submission. [Confirm: the authors declare no competing interests.]
+
+Yours sincerely,
+
+[Corresponding author name]
+[Affiliation]
+[E-mail]

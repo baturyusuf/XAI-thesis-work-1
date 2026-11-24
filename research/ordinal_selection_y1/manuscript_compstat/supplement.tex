@@ -1,0 +1,115 @@
+%% Supplementary Information for
+%% "Which metric should choose the model? Selection criteria, class weighting and
+%% endpoint recall in tabular ordinal classification".
+%% Standard article class; compiles with any LaTeX distribution. Tables are generated
+%% by analysis/make_tables.py.
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage{booktabs,longtable,array}
+\usepackage{amsmath,amssymb}
+\usepackage[hidelinks]{hyperref}
+\renewcommand{\thetable}{S\arabic{table}}
+\setlength{\LTcapwidth}{\textwidth}
+\input{numbers}
+
+\title{Supplementary Information\\[4pt]\large Which metric should choose the model? Selection criteria, class weighting and endpoint recall in tabular ordinal classification}
+\author{[Authors]}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{S1 Data provenance, features and dependence}
+
+All tasks are secondary analyses of publicly documented data. No raw records, identifiers or row-level predictions are distributed with this article.
+
+\paragraph{Wine (red, white).} UCI Wine Quality (DOI 10.24432/C56S3T, CC BY 4.0; Cortez et al.\ 2009). Response: sensory quality score (red 3--8, white 3--9). Predictors: the 11 physicochemical variables. Groups: identical predictor vectors (1,359 groups for 1,599 red wines; 3,961 for 4,898 white wines). Latent production batches are unknown. The two colours form one source family. Endpoint support is very small (red 10 and 18 cases; white 20 and 5).
+
+\paragraph{SkillCraft.} UCI SkillCraft1 Master Table (DOI 10.24432/C5161N, CC BY 4.0; Thompson et al.\ 2013, 2014). Response: league index 1--7 (Bronze to Grandmaster). League 8 (55 professional games, collected from gaming websites rather than from survey participants) was excluded on provenance grounds, decided before the restricted task was fitted; the original eight-league task is reported below as superseded. Predictors: 18 numeric telemetry and self-report variables (GameID excluded). Groups: identical predictor vectors (3,339 groups for 3,340 records). The source studies report one replay per survey participant; this cannot be verified record by record, so independence of persons is an assumption.
+
+\paragraph{Restaurant.} UCI Restaurant \& consumer data (DOI 10.24432/C5DP41, CC BY 4.0). Response: overall rating 0--2. Predictors (all categorical): restaurant alcohol, dress code, accessibility, price, ambience, franchise, area, other services; user budget, dress preference, ambience, transport. Excluded: food and service ratings, identifiers, names, locations, demographics, religion, marital status and weight. Groups: users (138). The UCI release (1,161 ratings, 138 users) differs from the counts reported in the original paper; we do not claim that they are the same version.
+
+\paragraph{Sushi.} Sushi preference data, 2016 corrected release (Kamishima 2003), research use permitted, redistribution not permitted. Response: score 0 (most disliked) to 4 (most preferred); unrated entries ($-1$) removed. 500 of 5,000 users were selected by the lowest SHA-256 hash of a fixed salt and the user identifier, independently of outcomes; all their observed scores were retained (5,000 scores). Predictors: user age band, item style, major and minor group. Groups: users.
+
+\paragraph{MovieLens-100k.} GroupLens MovieLens-100k (Harper and Konstan 2015), research use with attribution, no redistribution and no endorsement. Response: rating 1--5 mapped to ranks 0--4. 400 of 943 users were selected by the same hash rule; all their ratings were retained (43,699 ratings). Predictors: user age, movie release year and the 19 genre indicators. Excluded: identifiers, gender, occupation, ZIP code, title, URL, timestamp and rating-derived summaries. Groups: users.
+
+\paragraph{TAE (control).} UCI Teaching Assistant Evaluation (DOI 10.24432/C55P6M, CC BY 4.0). Response: low/medium/high, created by the source by binning scores; therefore a control task, not a primary outcome. Predictors: native English speaker, course, summer or regular semester, class size. Groups: course instructor (25 groups).
+
+\paragraph{Item overlap.} In the three rating tasks, items recur across users: roughly 99--100\% of test ratings concern items that also occur in the training partition. Results therefore refer to new users on the observed item pool.
+
+\section*{S2 Protocol and verification}
+
+Splits: stratified group $K$-fold, three outer and two inner folds, two repeats (seeds 20261120/20261121 for the first stage, 20261124/20261125 for the extension); for each seed, the first support-valid assignment among offsets 0--99 was used (all categories present in every partition, no group overlap). Candidates: proportional odds with $C\in\{0.1,1\}$, random forest with depth $\in\{4,\text{unlimited}\}$, each with and without balanced weights. Endpoint-recall floor 0.2 with AMAE fallback; tie tolerance $10^{-12}$. Protocols, configurations, data and split hashes were frozen locally (SHA-256) before the fits of each stage; there was no external registration. An independent re-implementation of the metrics reproduced the stored values (\NRecompute{} comparisons, largest absolute difference \RecomputeMaxDiff{}).
+
+\section*{S3 Tables}
+
+{\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{longtable}{@{}lll*{9}{r}@{}}
+\caption{Outer-test metrics of the policy selected by each criterion (mean of two repeats). Error metrics are normalized by $K-1$. Bal.: fraction of decisions selecting balanced weights.}\label{tab:s-policies}\\
+\toprule
+Task & Fam. & Criterion & QWK & MAE & AMAE & MMAE & Macro-F1 & RPS & $R_0$ & $R_{K-1}$ & Bal.\\
+\midrule\endfirsthead
+\toprule
+Task & Fam. & Criterion & QWK & MAE & AMAE & MMAE & Macro-F1 & RPS & $R_0$ & $R_{K-1}$ & Bal.\\
+\midrule\endhead
+\bottomrule\endfoot
+\input{tables/tab_s_policies}
+\end{longtable}
+}
+
+{\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{@{}lllrlrrrrr@{}}
+\caption{Differences relative to QWK selection. $\Delta R_{\mathrm{end}}$ with 95\% paired group-bootstrap interval (conditional on fitted models), the difference in each repeat, and differences in QWK and normalized MAE, AMAE and MMAE.}\label{tab:s-contrasts}\\
+\toprule
+Task & Fam. & Criterion & $\Delta R_{\mathrm{end}}$ & 95\% interval & Repeat 1 / 2 & $\Delta$QWK & $\Delta$MAE & $\Delta$AMAE & $\Delta$MMAE\\
+\midrule\endfirsthead
+\toprule
+Task & Fam. & Criterion & $\Delta R_{\mathrm{end}}$ & 95\% interval & Repeat 1 / 2 & $\Delta$QWK & $\Delta$MAE & $\Delta$AMAE & $\Delta$MMAE\\
+\midrule\endhead
+\bottomrule\endfoot
+\input{tables/tab_s_contrasts}
+\end{longtable}
+}
+
+{\footnotesize
+\begin{longtable}{@{}llrrrrrr@{}}
+\caption{Fixed-hyperparameter controls: balanced minus unweighted training at the same family, hyperparameter, splits and seeds.}\label{tab:s-controls}\\
+\toprule
+Task & Configuration & $\Delta R_0$ & $\Delta R_{K-1}$ & $\Delta$QWK & $\Delta$MAE & $\Delta$AMAE & $\Delta$MMAE\\
+\midrule\endfirsthead
+\toprule
+Task & Configuration & $\Delta R_0$ & $\Delta R_{K-1}$ & $\Delta$QWK & $\Delta$MAE & $\Delta$AMAE & $\Delta$MMAE\\
+\midrule\endhead
+\bottomrule\endfoot
+\input{tables/tab_s_controls}
+\end{longtable}
+}
+
+{\footnotesize
+\begin{longtable}{@{}lllllrlrr@{}}
+\caption{Controlled simulation: differences relative to QWK selection under the latent Gaussian model (ten replications per cell; Monte Carlo 95\% $t$ intervals, 9 df). Same: fraction of replications in which the two criteria selected the same candidate.}\label{tab:s-sim}\\
+\toprule
+Prior & Signal & Fam. & Criterion & Same & $\Delta R_{\mathrm{end}}$ & MC 95\% interval & $\Delta$QWK & $\Delta$AMAE\\
+\midrule\endfirsthead
+\toprule
+Prior & Signal & Fam. & Criterion & Same & $\Delta R_{\mathrm{end}}$ & MC 95\% interval & $\Delta$QWK & $\Delta$AMAE\\
+\midrule\endhead
+\bottomrule\endfoot
+\input{tables/tab_s_sim}
+\end{longtable}
+}
+
+{\footnotesize
+\begin{longtable}{@{}lrr*{7}{r}@{}}
+\caption{Friedman tests and mean ranks of the seven criteria over the 12 primary task--family cells, for each evaluation metric (rank 1 = best; Nemenyi critical difference at $\alpha=0.05$: \NemenyiCD{}).}\label{tab:s-friedman}\\
+\toprule
+Evaluation & $\chi^2_6$ & $p$ & QWK & MAE & AMAE & MMAE & Macro-F1 & RPS & QWK-floor\\
+\midrule\endfirsthead
+\bottomrule\endfoot
+\input{tables/tab_s_friedman}
+\end{longtable}
+}
+
+\end{document}

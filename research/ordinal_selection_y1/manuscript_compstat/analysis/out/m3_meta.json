@@ -1,0 +1,24 @@
+{
+  "script": "m3_cross_task.py",
+  "model_fits": 0,
+  "bootstrap_draws": 2000,
+  "rng_seed": 20261124,
+  "primary_tasks": [
+    "wine_red",
+    "wine_white",
+    "skillcraft_survey",
+    "restaurant",
+    "sushi",
+    "movielens100k"
+  ],
+  "control_tasks": [
+    "tae"
+  ],
+  "superseded_tasks": [
+    "skillcraft_v1"
+  ],
+  "primary_decisions": 72,
+  "recompute_check_rows": 1120,
+  "recompute_max_abs_diff": 1.6653345369377348e-16,
+  "note": "Aggregate outputs only. Bootstrap intervals are conditional on fitted models (group resampling of fixed predictions). Cross-task tests use source-family blocks; repeats and folds are not independent units. The endpoint-rarity moderator analysis is exploratory and post hoc."
+}
