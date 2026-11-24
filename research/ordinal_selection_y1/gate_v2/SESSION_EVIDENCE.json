@@ -1,0 +1,53 @@
+{
+  "generated_utc": "2026-11-24T07:03:34.952134+00:00",
+  "branch": "research/ordinal-selection-y1",
+  "base_commit": "1b71d4c45ae1aba771e7c499f87f197f44b3112c",
+  "new_real_fits": 576,
+  "new_simulation_fits": 480,
+  "old_real_fits_not_repeated": 576,
+  "summed_real_run_seconds": 104.92379379999966,
+  "simulation_run_seconds": 48.79376400000183,
+  "run_wall_seconds": {
+    "restaurant": 10.655913800000008,
+    "sushi": 14.081146199999921,
+    "movielens100k": 60.2332406999999,
+    "skillcraft_survey": 19.953493099999832,
+    "mechanism": 48.79376400000183
+  },
+  "total_recorded_run_seconds": 153.7175578000015,
+  "unit_tests_passed": 61,
+  "unit_tests_evidence_status": "saved combined test execution; report builder does not run tests",
+  "unit_tests_record": "gate_v2/FINAL_VERIFICATION.json",
+  "unit_tests_record_sha256": "d9828935a7b742ac314439f02729c4954c72b2efb920db74032cfb454d2bd30f",
+  "unit_tests_verified_utc": "2026-11-24T07:02:57.256749+00:00",
+  "real_replay_checks": {
+    "pass": 1740,
+    "fail": 0
+  },
+  "real_validators": {
+    "real_extension": {
+      "status": "PASS",
+      "totals": {
+        "pass": 1292,
+        "fail": 0
+      },
+      "verified_utc": "2026-11-23T11:19:10.084863+00:00"
+    },
+    "skillcraft_survey": {
+      "status": "PASS",
+      "totals": {
+        "pass": 448,
+        "fail": 0
+      },
+      "verified_utc": "2026-11-23T11:39:12.991583+00:00"
+    }
+  },
+  "mechanism_selector_replays": 840,
+  "real_ci_interpretation": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP",
+  "mechanism_ci_interpretation": "MC t95 under fixed synthetic DGP; not comparable to conditional real-data bootstrap or real-world inference",
+  "human_hours": "not measured",
+  "agent_hours": "not instrumented",
+  "raw_data_publication": false,
+  "commit_push": false,
+  "full_benchmark": false
+}

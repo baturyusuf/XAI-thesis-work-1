@@ -1,0 +1,658 @@
+[
+  {
+    "dataset": "restaurant",
+    "family": "po",
+    "fixed_h": 0,
+    "balanced_minus_none": {
+      "qwk": -0.028558579578218946,
+      "macro_f1": -0.015824722746030168,
+      "normalized_mae": 0.0999138673557278,
+      "normalized_amae": 0.0442921691912935,
+      "normalized_mmae": -0.2549212598425197,
+      "rps": 0.013361399186012562,
+      "recall_low": 0.3523622047244095,
+      "recall_high": -0.20679012345679007,
+      "recall_extreme": 0.07278604063380967,
+      "ece": 0.025764821984314405,
+      "cumulative_ece": 0.06815119662904948,
+      "qwk_observed": 0.40826873385012924,
+      "qwk_expected": 0.3994670310797146
+    },
+    "endpoint_ci": {
+      "low": 0.35236220472440943,
+      "high": -0.20679012345679013,
+      "mean": 0.07278604063380965,
+      "low_ci": [
+        0.2602124357876712,
+        0.44264608672659966
+      ],
+      "high_ci": [
+        -0.2605982088181261,
+        -0.16002498786806718
+      ],
+      "mean_ci": [
+        0.019761832223385286,
+        0.12368606164902356
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "restaurant",
+    "family": "po",
+    "fixed_h": 1,
+    "balanced_minus_none": {
+      "qwk": -0.025352278447207166,
+      "macro_f1": -0.005373585982106965,
+      "normalized_mae": 0.09108527131782948,
+      "normalized_amae": 0.03949866272654157,
+      "normalized_mmae": -0.2372047244094488,
+      "rps": 0.01421634536966715,
+      "recall_low": 0.3484251968503937,
+      "recall_high": -0.1831275720164609,
+      "recall_extreme": 0.08264881241696637,
+      "ece": 0.04257479521941279,
+      "cumulative_ece": 0.05966066578271787,
+      "qwk_observed": 0.3923341946597762,
+      "qwk_expected": 0.3828581200233545
+    },
+    "endpoint_ci": {
+      "low": 0.3484251968503937,
+      "high": -0.1831275720164609,
+      "mean": 0.0826488124169664,
+      "low_ci": [
+        0.2643541059751054,
+        0.43141820220632804
+      ],
+      "high_ci": [
+        -0.230291590655662,
+        -0.14054927151701346
+      ],
+      "mean_ci": [
+        0.03365931473633805,
+        0.12952559631399355
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "restaurant",
+    "family": "rf",
+    "fixed_h": 0,
+    "balanced_minus_none": {
+      "qwk": -0.043439572255064896,
+      "macro_f1": 0.01314432809009869,
+      "normalized_mae": 0.08290267011197242,
+      "normalized_amae": 0.01797818676817764,
+      "normalized_mmae": -0.2979569683419202,
+      "rps": 0.010852190341265333,
+      "recall_low": 0.3169291338582677,
+      "recall_high": -0.3518518518518518,
+      "recall_extreme": -0.017461358996792048,
+      "ece": -0.005458513499593205,
+      "cumulative_ece": 0.04654731923165152,
+      "qwk_observed": 0.2993109388458225,
+      "qwk_expected": 0.26687580355228535
+    },
+    "endpoint_ci": {
+      "low": 0.3169291338582677,
+      "high": -0.35185185185185186,
+      "mean": -0.017461358996792076,
+      "low_ci": [
+        0.2208492343365055,
+        0.41631565852444863
+      ],
+      "high_ci": [
+        -0.4241212049335863,
+        -0.2862567128762333
+      ],
+      "mean_ci": [
+        -0.06641250050055568,
+        0.035548734055837306
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "restaurant",
+    "family": "rf",
+    "fixed_h": 1,
+    "balanced_minus_none": {
+      "qwk": 0.04697735123195196,
+      "macro_f1": 0.023897292041525964,
+      "normalized_mae": 0.021963824289405715,
+      "normalized_amae": -0.011991506215530856,
+      "normalized_mmae": -0.19192913385826765,
+      "rps": 0.009311872496818002,
+      "recall_low": 0.2125984251968504,
+      "recall_high": -0.11419753086419754,
+      "recall_extreme": 0.049200447166326405,
+      "ece": -0.0004895379457966059,
+      "cumulative_ece": 0.02177156682374163,
+      "qwk_observed": 0.09474590869939714,
+      "qwk_expected": 0.1580389355162506
+    },
+    "endpoint_ci": {
+      "low": 0.2125984251968504,
+      "high": -0.11419753086419752,
+      "mean": 0.04920044716632644,
+      "low_ci": [
+        0.16258424146831085,
+        0.27143746295198573
+      ],
+      "high_ci": [
+        -0.14989989733059547,
+        -0.07439597583627755
+      ],
+      "mean_ci": [
+        0.019090683167175704,
+        0.07875206871628913
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "sushi",
+    "family": "po",
+    "fixed_h": 0,
+    "balanced_minus_none": {
+      "qwk": 0.07169497366099892,
+      "macro_f1": 0.04657004212723051,
+      "normalized_mae": 0.092175,
+      "normalized_amae": -0.04415841567073467,
+      "normalized_mmae": -0.4193903648838333,
+      "rps": 0.03016979604882579,
+      "recall_low": 0.4577836411609499,
+      "recall_high": -0.3817438692098093,
+      "recall_extreme": 0.038019885975570294,
+      "ece": 0.028518860647846152,
+      "cumulative_ece": 0.15820492811523418,
+      "qwk_observed": 1.3487,
+      "qwk_expected": 1.8953009600000001
+    },
+    "endpoint_ci": {
+      "low": 0.4577836411609499,
+      "high": -0.38174386920980924,
+      "mean": 0.03801988597557032,
+      "low_ci": [
+        0.40378404338873675,
+        0.5106395613281447
+      ],
+      "high_ci": [
+        -0.40188931494600727,
+        -0.36098741938967144
+      ],
+      "mean_ci": [
+        0.010591470554937886,
+        0.06711782890047505
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "sushi",
+    "family": "po",
+    "fixed_h": 1,
+    "balanced_minus_none": {
+      "qwk": 0.06009151973679333,
+      "macro_f1": 0.04547972742850895,
+      "normalized_mae": 0.09367499999999998,
+      "normalized_amae": -0.036602338822606745,
+      "normalized_mmae": -0.40475968864972867,
+      "rps": 0.03004120887024142,
+      "recall_low": 0.449868073878628,
+      "recall_high": -0.3547683923705722,
+      "recall_extreme": 0.047549840754027906,
+      "ece": 0.023428707284882982,
+      "cumulative_ece": 0.15422088868022177,
+      "qwk_observed": 1.3767,
+      "qwk_expected": 1.8838740800000002
+    },
+    "endpoint_ci": {
+      "low": 0.449868073878628,
+      "high": -0.3547683923705722,
+      "mean": 0.04754984075402788,
+      "low_ci": [
+        0.39673549402306146,
+        0.5015657543240062
+      ],
+      "high_ci": [
+        -0.37473275495562525,
+        -0.33562494817840327
+      ],
+      "mean_ci": [
+        0.019749569017580865,
+        0.07649102287533853
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "sushi",
+    "family": "rf",
+    "fixed_h": 0,
+    "balanced_minus_none": {
+      "qwk": 0.1385607932731055,
+      "macro_f1": 0.09624996796662703,
+      "normalized_mae": 0.03890000000000002,
+      "normalized_amae": -0.13419708685365261,
+      "normalized_mmae": -0.5268298907924913,
+      "rps": 0.030876545262699076,
+      "recall_low": 0.3179419525065963,
+      "recall_high": -0.6133514986376022,
+      "recall_extreme": -0.14770477306550292,
+      "ece": 0.015018835880958516,
+      "cumulative_ece": 0.14938429508576415,
+      "qwk_observed": 0.3205999999999998,
+      "qwk_expected": 0.9088601599999993
+    },
+    "endpoint_ci": {
+      "low": 0.3179419525065963,
+      "high": -0.6133514986376022,
+      "mean": -0.14770477306550295,
+      "low_ci": [
+        0.27397426366468425,
+        0.3614877858627859
+      ],
+      "high_ci": [
+        -0.6343591149697088,
+        -0.590364709368714
+      ],
+      "mean_ci": [
+        -0.17214935220903888,
+        -0.12301883754072049
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "sushi",
+    "family": "rf",
+    "fixed_h": 1,
+    "balanced_minus_none": {
+      "qwk": 0.06580637060067701,
+      "macro_f1": 0.029231447777677305,
+      "normalized_mae": 0.08239999999999997,
+      "normalized_amae": -0.060966842270754634,
+      "normalized_mmae": -0.38596137116893015,
+      "rps": 0.029946293450990216,
+      "recall_low": 0.33773087071240104,
+      "recall_high": -0.4239782016348774,
+      "recall_extreme": -0.04312366546123819,
+      "ece": 0.03924367942687044,
+      "cumulative_ece": 0.1364203672021735,
+      "qwk_observed": 1.0944,
+      "qwk_expected": 1.5241718400000002
+    },
+    "endpoint_ci": {
+      "low": 0.33773087071240104,
+      "high": -0.42397820163487737,
+      "mean": -0.043123665461238164,
+      "low_ci": [
+        0.2879972323857773,
+        0.3864279177737577
+      ],
+      "high_ci": [
+        -0.4446582953737489,
+        -0.40297054546983946
+      ],
+      "mean_ci": [
+        -0.07177797306012182,
+        -0.017063555379028667
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "movielens100k",
+    "family": "po",
+    "fixed_h": 0,
+    "balanced_minus_none": {
+      "qwk": 0.05980358209296516,
+      "macro_f1": 0.024894922621745377,
+      "normalized_mae": 0.1485874962813794,
+      "normalized_amae": 0.03096319305159398,
+      "normalized_mmae": -0.28050356959580847,
+      "rps": 0.02269366193381707,
+      "recall_low": 0.519279738086577,
+      "recall_high": 0.287733843537415,
+      "recall_extreme": 0.403506790811996,
+      "ece": 0.045919118877225495,
+      "cumulative_ece": 0.12052943311763231,
+      "qwk_observed": 2.0351609876656216,
+      "qwk_expected": 2.6537522020792434
+    },
+    "endpoint_ci": {
+      "low": 0.5192797380865769,
+      "high": 0.287733843537415,
+      "mean": 0.4035067908119959,
+      "low_ci": [
+        0.4786999343482618,
+        0.57193021389531
+      ],
+      "high_ci": [
+        0.2642812794202634,
+        0.313046414726813
+      ],
+      "mean_ci": [
+        0.38311478028432466,
+        0.4300513185746994
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "movielens100k",
+    "family": "po",
+    "fixed_h": 1,
+    "balanced_minus_none": {
+      "qwk": 0.059804332237338165,
+      "macro_f1": 0.024894039875036675,
+      "normalized_mae": 0.14852742625689375,
+      "normalized_amae": 0.030942859948399987,
+      "normalized_mmae": -0.2805643910324224,
+      "rps": 0.022700975229988207,
+      "recall_low": 0.5190978537650055,
+      "recall_high": 0.2875212585034013,
+      "recall_extreme": 0.4033095561342034,
+      "ece": 0.046020443160856545,
+      "cumulative_ece": 0.12052390204857992,
+      "qwk_observed": 2.0342799606398314,
+      "qwk_expected": 2.653063189873609
+    },
+    "endpoint_ci": {
+      "low": 0.5190978537650055,
+      "high": 0.2875212585034014,
+      "mean": 0.40330955613420344,
+      "low_ci": [
+        0.4783071117225721,
+        0.5716974619680499
+      ],
+      "high_ci": [
+        0.26414231381077935,
+        0.313043742930297
+      ],
+      "mean_ci": [
+        0.3830526851477128,
+        0.4299923242561139
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "movielens100k",
+    "family": "rf",
+    "fixed_h": 0,
+    "balanced_minus_none": {
+      "qwk": 0.17189544724920575,
+      "macro_f1": 0.07711213509355114,
+      "normalized_mae": 0.15198574338085538,
+      "normalized_amae": 0.020614351906534323,
+      "normalized_mmae": -0.3430653479504929,
+      "rps": 0.02068824765037583,
+      "recall_low": 0.4261549654419789,
+      "recall_high": 0.5303996598639455,
+      "recall_extreme": 0.47827731265296225,
+      "ece": 0.028616644034342328,
+      "cumulative_ece": 0.10464338881937427,
+      "qwk_observed": 2.1054829629968648,
+      "qwk_expected": 2.912497269634793
+    },
+    "endpoint_ci": {
+      "low": 0.4261549654419789,
+      "high": 0.5303996598639455,
+      "mean": 0.47827731265296225,
+      "low_ci": [
+        0.3666240266803607,
+        0.4855013079230055
+      ],
+      "high_ci": [
+        0.49614274826274296,
+        0.5649634165877987
+      ],
+      "mean_ci": [
+        0.44705349220792095,
+        0.5068285056135614
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "movielens100k",
+    "family": "rf",
+    "fixed_h": 1,
+    "balanced_minus_none": {
+      "qwk": 0.017354589448144886,
+      "macro_f1": 0.000846771737827684,
+      "normalized_mae": 0.06840259502505779,
+      "normalized_amae": 0.005614101969915408,
+      "normalized_mmae": -0.1978446707893779,
+      "rps": 0.015771723728610937,
+      "recall_low": 0.20498363041105855,
+      "recall_high": 0.0831207482993197,
+      "recall_extreme": 0.14405218935518913,
+      "ece": 0.034667440448527403,
+      "cumulative_ece": 0.041111271726257045,
+      "qwk_observed": 0.9256161468225818,
+      "qwk_expected": 1.219559189582398
+    },
+    "endpoint_ci": {
+      "low": 0.20498363041105858,
+      "high": 0.08312074829931973,
+      "mean": 0.14405218935518915,
+      "low_ci": [
+        0.16897043710013956,
+        0.24677767066256912
+      ],
+      "high_ci": [
+        0.07390603772747312,
+        0.09285007968704723
+      ],
+      "mean_ci": [
+        0.12535378475195974,
+        0.16429311883624861
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "skillcraft_survey",
+    "family": "po",
+    "fixed_h": 0,
+    "balanced_minus_none": {
+      "qwk": 0.018585510858525944,
+      "macro_f1": 0.025717310306666796,
+      "normalized_mae": 0.01571856287425149,
+      "normalized_amae": -0.021693316320291825,
+      "normalized_mmae": -0.05727241966100463,
+      "rps": 0.008425297044537365,
+      "recall_low": 0.3203592814371257,
+      "recall_high": 0.6714285714285715,
+      "recall_extreme": 0.49589392643284863,
+      "ece": 0.04662358102338515,
+      "cumulative_ece": 0.04303303668764905,
+      "qwk_observed": 0.252994011976048,
+      "qwk_expected": 1.1657857936820968
+    },
+    "endpoint_ci": {
+      "low": 0.3203592814371258,
+      "high": 0.6714285714285714,
+      "mean": 0.4958939264328486,
+      "low_ci": [
+        0.2541696549901857,
+        0.3892146915584416
+      ],
+      "high_ci": [
+        0.5151298701298701,
+        0.8275996767241379
+      ],
+      "mean_ci": [
+        0.4115078903654485,
+        0.5785478086062618
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "skillcraft_survey",
+    "family": "po",
+    "fixed_h": 1,
+    "balanced_minus_none": {
+      "qwk": 0.020242656154411343,
+      "macro_f1": 0.03097578694250666,
+      "normalized_mae": 0.014396207584830338,
+      "normalized_amae": -0.022555211944282387,
+      "normalized_mmae": -0.055831245044867,
+      "rps": 0.008465929333674821,
+      "recall_low": 0.3203592814371258,
+      "recall_high": 0.6714285714285715,
+      "recall_extreme": 0.4958939264328486,
+      "ece": 0.041393283836300906,
+      "cumulative_ece": 0.043278592313263024,
+      "qwk_observed": 0.24176646706586824,
+      "qwk_expected": 1.1529155760335614
+    },
+    "endpoint_ci": {
+      "low": 0.3203592814371258,
+      "high": 0.6714285714285714,
+      "mean": 0.4958939264328486,
+      "low_ci": [
+        0.2530435837028825,
+        0.38641883116883113
+      ],
+      "high_ci": [
+        0.5151298701298701,
+        0.8275996767241379
+      ],
+      "mean_ci": [
+        0.41325806348801625,
+        0.577088454784899
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "skillcraft_survey",
+    "family": "rf",
+    "fixed_h": 0,
+    "balanced_minus_none": {
+      "qwk": 0.011926836236923033,
+      "macro_f1": 0.015683713105837105,
+      "normalized_mae": 0.026771457085828336,
+      "normalized_amae": -0.018193658103533267,
+      "normalized_mmae": -0.03806751478547221,
+      "rps": 0.006505538782404452,
+      "recall_low": 0.3532934131736527,
+      "recall_high": 0.5857142857142856,
+      "recall_extreme": 0.4695038494439692,
+      "ece": 0.02698290597534631,
+      "cumulative_ece": 0.03247482745061771,
+      "qwk_observed": 0.451946107784431,
+      "qwk_expected": 1.68261545770734
+    },
+    "endpoint_ci": {
+      "low": 0.3532934131736527,
+      "high": 0.5857142857142857,
+      "mean": 0.4695038494439692,
+      "low_ci": [
+        0.2916666666666667,
+        0.41463593974175034
+      ],
+      "high_ci": [
+        0.4375,
+        0.7321986607142856
+      ],
+      "mean_ci": [
+        0.390621383574589,
+        0.5539572890559733
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "skillcraft_survey",
+    "family": "rf",
+    "fixed_h": 1,
+    "balanced_minus_none": {
+      "qwk": 0.019212999861990043,
+      "macro_f1": 0.02053824794707204,
+      "normalized_mae": 0.006786427145708582,
+      "normalized_amae": -0.011120289270374076,
+      "normalized_mmae": -0.03931525710249398,
+      "rps": 0.0017247237167943644,
+      "recall_low": 0.1497005988023952,
+      "recall_high": 0.14285714285714285,
+      "recall_extreme": 0.14627887082976904,
+      "ece": 0.00912700404742386,
+      "cumulative_ece": 0.014221842274188833,
+      "qwk_observed": 0.10419161676646715,
+      "qwk_expected": 0.6692468356699777
+    },
+    "endpoint_ci": {
+      "low": 0.1497005988023952,
+      "high": 0.14285714285714285,
+      "mean": 0.14627887082976904,
+      "low_ci": [
+        0.10936171343537415,
+        0.19538209323464484
+      ],
+      "high_ci": [
+        0.05172413793103448,
+        0.25
+      ],
+      "mean_ci": [
+        0.09286980917279555,
+        0.20590277777777774
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  }
+]

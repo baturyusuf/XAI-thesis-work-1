@@ -1,0 +1,163 @@
+{
+  "accessed_utc": "2026-11-20T09:27:37.457808+00:00",
+  "datasets": [
+    {
+      "dataset": "wine_red",
+      "source_url": "https://archive.ics.uci.edu/dataset/186/wine+quality",
+      "download_url": "https://archive.ics.uci.edu/static/public/186/wine+quality.zip",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "archive_sha256": "3ed56667f4b828242bd732d7d1dd7f2861e54432239d7fa63877014cbb0304d4",
+      "table_sha256": "d73b81349be9fb18465f19db6b718a9d39322b70695a6cc847c8673da0d4d999",
+      "n": 1599,
+      "features": 11,
+      "target": "quality",
+      "exclude": [],
+      "labels": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "counts": [
+        10,
+        53,
+        681,
+        638,
+        199,
+        18
+      ],
+      "full_duplicate_excess": 240,
+      "predictor_duplicate_excess": 240,
+      "missing_features": 0,
+      "groups": 1359,
+      "grouping": "identical_predictors",
+      "family": "wine_quality",
+      "target_kind": "natural_observed_score",
+      "role": "technical_pilot_conditional_not_confirmatory",
+      "group_limitation": "Latent batch/player/TA identity not fully available; no new-entity claim"
+    },
+    {
+      "dataset": "wine_white",
+      "source_url": "https://archive.ics.uci.edu/dataset/186/wine+quality",
+      "download_url": "https://archive.ics.uci.edu/static/public/186/wine+quality.zip",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "archive_sha256": "3ed56667f4b828242bd732d7d1dd7f2861e54432239d7fa63877014cbb0304d4",
+      "table_sha256": "4c42d9a7afbb7e893bf547c6e00723da993340a5dda8881165057f8c1942b74e",
+      "n": 4898,
+      "features": 11,
+      "target": "quality",
+      "exclude": [],
+      "labels": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "counts": [
+        20,
+        163,
+        1457,
+        2198,
+        880,
+        175,
+        5
+      ],
+      "full_duplicate_excess": 937,
+      "predictor_duplicate_excess": 937,
+      "missing_features": 0,
+      "groups": 3961,
+      "grouping": "identical_predictors",
+      "family": "wine_quality",
+      "target_kind": "natural_observed_score",
+      "role": "technical_pilot_conditional_not_confirmatory",
+      "group_limitation": "Latent batch/player/TA identity not fully available; no new-entity claim"
+    },
+    {
+      "dataset": "skillcraft",
+      "source_url": "https://archive.ics.uci.edu/dataset/272/skillcraft1+master+table+dataset",
+      "download_url": "https://archive.ics.uci.edu/static/public/272/skillcraft1+master+table+dataset.zip",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "archive_sha256": "d6f4f88c2d077a0938cf774ff242df511c9a5801dcc66e4461ffdf893ce23fc2",
+      "table_sha256": "a6027cb2ac3e56f5cededcf8ee422a4051c0ebe976285e9b14b2bfd779fad370",
+      "n": 3395,
+      "features": 18,
+      "target": "LeagueIndex",
+      "exclude": [
+        "GameID"
+      ],
+      "labels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "counts": [
+        167,
+        347,
+        553,
+        811,
+        806,
+        621,
+        35,
+        55
+      ],
+      "full_duplicate_excess": 0,
+      "predictor_duplicate_excess": 1,
+      "missing_features": 168,
+      "groups": 3395,
+      "grouping": "game_id",
+      "family": "skillcraft",
+      "target_kind": "natural_league",
+      "role": "technical_pilot_conditional_not_confirmatory",
+      "group_limitation": "Latent batch/player/TA identity not fully available; no new-entity claim"
+    },
+    {
+      "dataset": "tae",
+      "source_url": "https://archive.ics.uci.edu/dataset/100/teaching+assistant+evaluation",
+      "download_url": "https://archive.ics.uci.edu/static/public/100/teaching+assistant+evaluation.zip",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "archive_sha256": "65f77e4ac3e356db99e8f7c4a06834d06316e9ae040492d31fcc64705d6dd0a0",
+      "table_sha256": "75769114d5a0a63db79c0414733cb060710da70dcbbc1f2fcc3cf6799c21827d",
+      "n": 151,
+      "features": 4,
+      "target": "rating",
+      "exclude": [
+        "instructor"
+      ],
+      "labels": [
+        1,
+        2,
+        3
+      ],
+      "counts": [
+        49,
+        50,
+        52
+      ],
+      "full_duplicate_excess": 41,
+      "predictor_duplicate_excess": 54,
+      "missing_features": 0,
+      "groups": 25,
+      "grouping": "instructor",
+      "family": "teaching_assignments",
+      "target_kind": "source_binned_score_control",
+      "role": "technical_pilot_conditional_not_confirmatory",
+      "group_limitation": "Latent batch/player/TA identity not fully available; no new-entity claim"
+    }
+  ],
+  "rights": "UCI CC-BY4 page verified before download; no raw redistribution in git",
+  "ethics": "Public secondary benchmark only; institutional determination and author review pending"
+}

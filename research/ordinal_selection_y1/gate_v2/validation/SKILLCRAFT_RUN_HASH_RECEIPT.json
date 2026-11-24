@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-11-23T11:39:10.208471+00:00",
+  "kind": "post-run integrity hashes; not pre-fit seal",
+  "freeze_sha256": "10d319c723ceca6d1d9ee644122cff1f88e78f91676d7f4058682329fa7beabc",
+  "files": {
+    "run.json": "90b403304ba305e28509878199c36d4a010b6e66f79078fec753ba2fbb54a9bd",
+    "inner_scores.json": "b1a23e1ec3aa0701237bc7af3f35487ef70186ca0cfed49ca128a49c4efd2165",
+    "schedule.json": "7565eb511fc543d1f261f3601c43f5014c7a823621fe17d5e441974bb2a2f93a",
+    "predictions.npz": "7c7de47ceba2296bb96f4fd989e1fe079a06f3b33a7928c2cb9cbc76a456cefc",
+    "summary.json": "7fc5e55c7d61a0606f6728cb88856fb1f87b4e1da88652bbab8399d7048aa2ba"
+  }
+}

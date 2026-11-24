@@ -1,0 +1,625 @@
+{
+  "restaurant": {
+    "status": "ELIGIBLE_EXTENSION_ONLY",
+    "rows": 1161,
+    "groups": 138,
+    "class_counts": [
+      254,
+      421,
+      486
+    ],
+    "endpoint_groups": [
+      81,
+      111
+    ],
+    "missing": {
+      "alcohol": 0,
+      "dress_code": 0,
+      "accessibility": 0,
+      "price": 0,
+      "Rambience": 0,
+      "franchise": 0,
+      "area": 0,
+      "other_services": 0,
+      "budget": 69,
+      "dress_preference": 51,
+      "ambience": 58,
+      "transport": 54
+    },
+    "features": [
+      "alcohol",
+      "dress_code",
+      "accessibility",
+      "price",
+      "Rambience",
+      "franchise",
+      "area",
+      "other_services",
+      "budget",
+      "dress_preference",
+      "ambience",
+      "transport"
+    ],
+    "labels": {
+      "raw": [
+        0,
+        1,
+        2
+      ],
+      "ranks": [
+        0,
+        1,
+        2
+      ],
+      "direction": "0 dislike, 2 high preference; 1 ordered middle (paper does not name it intermediate)"
+    },
+    "archive_sha256": "dc61ec3779db8d3bd2cde8d65abf87dc07e9b22ae94f9b9ad6375d57f627e333",
+    "archive": "local/gate_v2/restaurant.zip",
+    "item_overlap": [
+      {
+        "repeat": 0,
+        "fold": 0,
+        "outer": {
+          "train_items": 130,
+          "test_items": 117,
+          "shared_items": 117,
+          "test_rows_item_seen_in_train": 1.0
+        },
+        "inner": [
+          {
+            "train_items": 118,
+            "test_items": 118,
+            "shared_items": 106,
+            "test_rows_item_seen_in_train": 0.9224806201550387
+          },
+          {
+            "train_items": 118,
+            "test_items": 118,
+            "shared_items": 106,
+            "test_rows_item_seen_in_train": 0.9329896907216495
+          }
+        ]
+      },
+      {
+        "repeat": 0,
+        "fold": 1,
+        "outer": {
+          "train_items": 130,
+          "test_items": 120,
+          "shared_items": 120,
+          "test_rows_item_seen_in_train": 1.0
+        },
+        "inner": [
+          {
+            "train_items": 117,
+            "test_items": 124,
+            "shared_items": 111,
+            "test_rows_item_seen_in_train": 0.9278350515463918
+          },
+          {
+            "train_items": 124,
+            "test_items": 117,
+            "shared_items": 111,
+            "test_rows_item_seen_in_train": 0.9481865284974094
+          }
+        ]
+      },
+      {
+        "repeat": 0,
+        "fold": 2,
+        "outer": {
+          "train_items": 129,
+          "test_items": 125,
+          "shared_items": 124,
+          "test_rows_item_seen_in_train": 0.9896907216494846
+        },
+        "inner": [
+          {
+            "train_items": 124,
+            "test_items": 120,
+            "shared_items": 115,
+            "test_rows_item_seen_in_train": 0.9667519181585678
+          },
+          {
+            "train_items": 120,
+            "test_items": 124,
+            "shared_items": 115,
+            "test_rows_item_seen_in_train": 0.9502617801047121
+          }
+        ]
+      },
+      {
+        "repeat": 1,
+        "fold": 0,
+        "outer": {
+          "train_items": 130,
+          "test_items": 123,
+          "shared_items": 123,
+          "test_rows_item_seen_in_train": 1.0
+        },
+        "inner": [
+          {
+            "train_items": 124,
+            "test_items": 110,
+            "shared_items": 104,
+            "test_rows_item_seen_in_train": 0.9716494845360825
+          },
+          {
+            "train_items": 110,
+            "test_items": 124,
+            "shared_items": 104,
+            "test_rows_item_seen_in_train": 0.8527131782945736
+          }
+        ]
+      },
+      {
+        "repeat": 1,
+        "fold": 1,
+        "outer": {
+          "train_items": 130,
+          "test_items": 115,
+          "shared_items": 115,
+          "test_rows_item_seen_in_train": 1.0
+        },
+        "inner": [
+          {
+            "train_items": 121,
+            "test_items": 120,
+            "shared_items": 111,
+            "test_rows_item_seen_in_train": 0.9355670103092784
+          },
+          {
+            "train_items": 120,
+            "test_items": 121,
+            "shared_items": 111,
+            "test_rows_item_seen_in_train": 0.9399477806788512
+          }
+        ]
+      },
+      {
+        "repeat": 1,
+        "fold": 2,
+        "outer": {
+          "train_items": 129,
+          "test_items": 117,
+          "shared_items": 116,
+          "test_rows_item_seen_in_train": 0.9896103896103896
+        },
+        "inner": [
+          {
+            "train_items": 119,
+            "test_items": 120,
+            "shared_items": 110,
+            "test_rows_item_seen_in_train": 0.9404145077720207
+          },
+          {
+            "train_items": 120,
+            "test_items": 119,
+            "shared_items": 110,
+            "test_rows_item_seen_in_train": 0.9461538461538461
+          }
+        ]
+      }
+    ]
+  },
+  "sushi": {
+    "status": "ELIGIBLE_EXTENSION_ONLY",
+    "rows": 5000,
+    "groups": 500,
+    "class_counts": [
+      379,
+      461,
+      1184,
+      1141,
+      1835
+    ],
+    "endpoint_groups": [
+      195,
+      470
+    ],
+    "missing": {
+      "age_band": 0,
+      "style": 0,
+      "major_group": 0,
+      "minor_group": 0
+    },
+    "features": [
+      "age_band",
+      "style",
+      "major_group",
+      "minor_group"
+    ],
+    "labels": {
+      "raw": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "ranks": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "direction": "0 most disliked; 4 most preferred; -1 unrated excluded"
+    },
+    "archive_sha256": "4f8bbf3acd6f796cb3d0add6c73c394664982c57d3b48e75e92014e5278558a8",
+    "archive": "local/gate_v2/sushi3-2016.zip",
+    "item_overlap": [
+      {
+        "repeat": 0,
+        "fold": 0,
+        "outer": {
+          "train_items": 100,
+          "test_items": 98,
+          "shared_items": 98,
+          "test_rows_item_seen_in_train": 1.0
+        },
+        "inner": [
+          {
+            "train_items": 98,
+            "test_items": 100,
+            "shared_items": 98,
+            "test_rows_item_seen_in_train": 0.9957575757575757
+          },
+          {
+            "train_items": 100,
+            "test_items": 98,
+            "shared_items": 98,
+            "test_rows_item_seen_in_train": 1.0
+          }
+        ]
+      },
+      {
+        "repeat": 0,
+        "fold": 1,
+        "outer": {
+          "train_items": 100,
+          "test_items": 98,
+          "shared_items": 98,
+          "test_rows_item_seen_in_train": 1.0
+        },
+        "inner": [
+          {
+            "train_items": 98,
+            "test_items": 99,
+            "shared_items": 97,
+            "test_rows_item_seen_in_train": 0.9976047904191617
+          },
+          {
+            "train_items": 99,
+            "test_items": 98,
+            "shared_items": 97,
+            "test_rows_item_seen_in_train": 0.9975903614457832
+          }
+        ]
+      },
+      {
+        "repeat": 0,
+        "fold": 2,
+        "outer": {
+          "train_items": 100,
+          "test_items": 99,
+          "shared_items": 99,
+          "test_rows_item_seen_in_train": 1.0
+        },
+        "inner": [
+          {
+            "train_items": 97,
+            "test_items": 99,
+            "shared_items": 96,
+            "test_rows_item_seen_in_train": 0.9940119760479041
+          },
+          {
+            "train_items": 99,
+            "test_items": 97,
+            "shared_items": 96,
+            "test_rows_item_seen_in_train": 0.9988023952095808
+          }
+        ]
+      },
+      {
+        "repeat": 1,
+        "fold": 0,
+        "outer": {
+          "train_items": 100,
+          "test_items": 100,
+          "shared_items": 100,
+          "test_rows_item_seen_in_train": 1.0
+        },
+        "inner": [
+          {
+            "train_items": 100,
+            "test_items": 97,
+            "shared_items": 97,
+            "test_rows_item_seen_in_train": 1.0
+          },
+          {
+            "train_items": 97,
+            "test_items": 100,
+            "shared_items": 97,
+            "test_rows_item_seen_in_train": 0.9952095808383233
+          }
+        ]
+      },
+      {
+        "repeat": 1,
+        "fold": 1,
+        "outer": {
+          "train_items": 100,
+          "test_items": 97,
+          "shared_items": 97,
+          "test_rows_item_seen_in_train": 1.0
+        },
+        "inner": [
+          {
+            "train_items": 100,
+            "test_items": 98,
+            "shared_items": 98,
+            "test_rows_item_seen_in_train": 1.0
+          },
+          {
+            "train_items": 98,
+            "test_items": 100,
+            "shared_items": 98,
+            "test_rows_item_seen_in_train": 0.9970059880239521
+          }
+        ]
+      },
+      {
+        "repeat": 1,
+        "fold": 2,
+        "outer": {
+          "train_items": 100,
+          "test_items": 97,
+          "shared_items": 97,
+          "test_rows_item_seen_in_train": 1.0
+        },
+        "inner": [
+          {
+            "train_items": 99,
+            "test_items": 99,
+            "shared_items": 98,
+            "test_rows_item_seen_in_train": 0.9987951807228915
+          },
+          {
+            "train_items": 99,
+            "test_items": 99,
+            "shared_items": 98,
+            "test_rows_item_seen_in_train": 0.9982035928143712
+          }
+        ]
+      }
+    ]
+  },
+  "movielens100k": {
+    "status": "ELIGIBLE_EXTENSION_ONLY",
+    "rows": 43699,
+    "groups": 400,
+    "class_counts": [
+      2749,
+      4892,
+      11663,
+      14987,
+      9408
+    ],
+    "endpoint_groups": [
+      308,
+      393
+    ],
+    "missing": {
+      "user_age": 0,
+      "release_year": 3,
+      "genre_unknown": 0,
+      "genre_Action": 0,
+      "genre_Adventure": 0,
+      "genre_Animation": 0,
+      "genre_Children": 0,
+      "genre_Comedy": 0,
+      "genre_Crime": 0,
+      "genre_Documentary": 0,
+      "genre_Drama": 0,
+      "genre_Fantasy": 0,
+      "genre_FilmNoir": 0,
+      "genre_Horror": 0,
+      "genre_Musical": 0,
+      "genre_Mystery": 0,
+      "genre_Romance": 0,
+      "genre_SciFi": 0,
+      "genre_Thriller": 0,
+      "genre_War": 0,
+      "genre_Western": 0
+    },
+    "features": [
+      "user_age",
+      "release_year",
+      "genre_unknown",
+      "genre_Action",
+      "genre_Adventure",
+      "genre_Animation",
+      "genre_Children",
+      "genre_Comedy",
+      "genre_Crime",
+      "genre_Documentary",
+      "genre_Drama",
+      "genre_Fantasy",
+      "genre_FilmNoir",
+      "genre_Horror",
+      "genre_Musical",
+      "genre_Mystery",
+      "genre_Romance",
+      "genre_SciFi",
+      "genre_Thriller",
+      "genre_War",
+      "genre_Western"
+    ],
+    "labels": {
+      "raw": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "ranks": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "direction": "1 lowest to 5 highest rating"
+    },
+    "archive_sha256": "50d2a982c66986937beb9ffb3aa76efe955bf3d5c6b761f4e3a7cd717c6a3229",
+    "archive": "local/gate_v2/real_extension/ml-100k.zip",
+    "item_overlap": [
+      {
+        "repeat": 0,
+        "fold": 0,
+        "outer": {
+          "train_items": 1465,
+          "test_items": 1386,
+          "shared_items": 1290,
+          "test_rows_item_seen_in_train": 0.99160588963809
+        },
+        "inner": [
+          {
+            "train_items": 1354,
+            "test_items": 1298,
+            "shared_items": 1187,
+            "test_rows_item_seen_in_train": 0.9872957011399534
+          },
+          {
+            "train_items": 1298,
+            "test_items": 1354,
+            "shared_items": 1187,
+            "test_rows_item_seen_in_train": 0.9827432719304252
+          }
+        ]
+      },
+      {
+        "repeat": 0,
+        "fold": 1,
+        "outer": {
+          "train_items": 1515,
+          "test_items": 1312,
+          "shared_items": 1266,
+          "test_rows_item_seen_in_train": 0.9958926615553122
+        },
+        "inner": [
+          {
+            "train_items": 1351,
+            "test_items": 1369,
+            "shared_items": 1205,
+            "test_rows_item_seen_in_train": 0.9834904037972071
+          },
+          {
+            "train_items": 1369,
+            "test_items": 1351,
+            "shared_items": 1205,
+            "test_rows_item_seen_in_train": 0.9822729146626357
+          }
+        ]
+      },
+      {
+        "repeat": 0,
+        "fold": 2,
+        "outer": {
+          "train_items": 1486,
+          "test_items": 1350,
+          "shared_items": 1275,
+          "test_rows_item_seen_in_train": 0.9927869753383252
+        },
+        "inner": [
+          {
+            "train_items": 1269,
+            "test_items": 1411,
+            "shared_items": 1194,
+            "test_rows_item_seen_in_train": 0.977849183017707
+          },
+          {
+            "train_items": 1411,
+            "test_items": 1269,
+            "shared_items": 1194,
+            "test_rows_item_seen_in_train": 0.9913193248363762
+          }
+        ]
+      },
+      {
+        "repeat": 1,
+        "fold": 0,
+        "outer": {
+          "train_items": 1465,
+          "test_items": 1378,
+          "shared_items": 1282,
+          "test_rows_item_seen_in_train": 0.9916821337732866
+        },
+        "inner": [
+          {
+            "train_items": 1340,
+            "test_items": 1314,
+            "shared_items": 1189,
+            "test_rows_item_seen_in_train": 0.9856026326614562
+          },
+          {
+            "train_items": 1314,
+            "test_items": 1340,
+            "shared_items": 1189,
+            "test_rows_item_seen_in_train": 0.983935191541947
+          }
+        ]
+      },
+      {
+        "repeat": 1,
+        "fold": 1,
+        "outer": {
+          "train_items": 1511,
+          "test_items": 1311,
+          "shared_items": 1261,
+          "test_rows_item_seen_in_train": 0.9954729405309006
+        },
+        "inner": [
+          {
+            "train_items": 1350,
+            "test_items": 1377,
+            "shared_items": 1216,
+            "test_rows_item_seen_in_train": 0.9831696091227589
+          },
+          {
+            "train_items": 1377,
+            "test_items": 1350,
+            "shared_items": 1216,
+            "test_rows_item_seen_in_train": 0.9848245553800727
+          }
+        ]
+      },
+      {
+        "repeat": 1,
+        "fold": 2,
+        "outer": {
+          "train_items": 1486,
+          "test_items": 1358,
+          "shared_items": 1283,
+          "test_rows_item_seen_in_train": 0.992794894668222
+        },
+        "inner": [
+          {
+            "train_items": 1283,
+            "test_items": 1402,
+            "shared_items": 1199,
+            "test_rows_item_seen_in_train": 0.9808402901327494
+          },
+          {
+            "train_items": 1402,
+            "test_items": 1283,
+            "shared_items": 1199,
+            "test_rows_item_seen_in_train": 0.9900082690187431
+          }
+        ]
+      }
+    ]
+  }
+}

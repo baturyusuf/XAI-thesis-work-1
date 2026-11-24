@@ -1,0 +1,71 @@
+{
+  "created_utc": "2026-11-20T09:33:03.472718+00:00",
+  "scope": "local pre-fit freeze, not OSF",
+  "files": {
+    "bootstrap_source.py": "21cfae769e84e0c63df603828f373a1c1b8b5c29be8101693ce0246c27eb07b0",
+    "DATA_MANIFEST.json": "c6e8851e0dd495a4f9e710716a6baf204bbc7ea33958bf06d929395e68a4b780",
+    "pilot_config.json": "a5d191c078ebc37eb1a3d2e79530af2a92c01db9d0b867f71420be96e4708525",
+    "prepare_data.py": "7592b0bd5a937c77af1f8f3628870e13c9494f07d7ceef751ac31fba12c1b4d7",
+    "requirements.txt": "b6f9c775a8a316aebf0d82283f3f8846974d75063b4e2a5cda27bbad67335608",
+    "run_pilot.py": "13dbe0d96000c01b10f8f4b3e5102cfe7603ef7f53a79ee52efee8787efdbd2f",
+    "SOURCE_MANIFEST.json": "9042c1173eab3ddacc0dbadfbf73ca37520ebb577058fa548b581edaddc3f8e4",
+    "tests/test_contracts.py": "1f33a5c409df4ab14226a017ab1051e2df53a4cd698fd4f1be7088b579472aa4",
+    "y1/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "y1/data.py": "c1f1028c1495fafbd837710fb7055267967484e5bda1a219230a90d78bcb0c1b",
+    "y1/metrics.py": "b381b521453aa5b9a6dcb5f792b27cdfd3311fe2911854771472ba5a152a5ea3",
+    "y1/models.py": "f873f557a07f4852393969f739022336523ea7679d8f345f1e0e6d22f65ea6bb",
+    "y1/source.py": "e7cc35f93a8f6f3b957742f06b191f9ec8f524a353eb638df6114d4db7f52351",
+    "Y1_PILOT_PROTOCOL.md": "ad515a2b4728fc58da544cc22ec9f887f3780259d32a6d8ba1e73f0b9d87de04",
+    "Y1_RESEARCH_PROTOCOL.md": "5dc8f16e1704714d59e80fcc2fc20096df84e89539315d4f70396058c74675f1"
+  },
+  "datasets": {
+    "wine_red": {
+      "status": "READY_TECHNICAL",
+      "split_sha256": "eb78e184eabba117323c9514e81d398a516ff620bd52a00eaa672e02525b0071",
+      "endpoint_unique_groups": [
+        10,
+        17
+      ],
+      "effective_seeds": [
+        20261120,
+        20261121
+      ]
+    },
+    "wine_white": {
+      "status": "READY_TECHNICAL",
+      "split_sha256": "7d14e3a12a97a779424dcda7c8b1252ed420729a1a08b64ef8d1b3661ccf8f0a",
+      "endpoint_unique_groups": [
+        20,
+        5
+      ],
+      "effective_seeds": [
+        20261120,
+        20261121
+      ]
+    },
+    "skillcraft": {
+      "status": "READY_TECHNICAL",
+      "split_sha256": "27eb64393b444f8bc165be458f85e2b03d95640611161ca7bbb1e0fc3bc6ec2d",
+      "endpoint_unique_groups": [
+        167,
+        55
+      ],
+      "effective_seeds": [
+        20261120,
+        20261121
+      ]
+    },
+    "tae": {
+      "status": "READY_TECHNICAL",
+      "split_sha256": "8949a8eba303d3a1425988a80730116b380778f4a51d026b0aea285e14c2f26f",
+      "endpoint_unique_groups": [
+        20,
+        16
+      ],
+      "effective_seeds": [
+        20261120,
+        20261121
+      ]
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "verified_utc": "2026-11-24T07:02:57.256749+00:00",
+  "branch": "research/ordinal-selection-y1",
+  "base_commit": "1b71d4c45ae1aba771e7c499f87f197f44b3112c",
+  "inspected_HEAD": "1b71d4c45ae1aba771e7c499f87f197f44b3112c",
+  "status": "PASS",
+  "pytest": {
+    "returncode": 0,
+    "passed": 61,
+    "reported_seconds": 3.51,
+    "test_directories": [
+      "tests",
+      "gate_v2/mechanism/tests",
+      "gate_v2/real_extension/tests",
+      "gate_v2/skillcraft_survey/tests",
+      "gate_v2/tests"
+    ],
+    "output": ".............................................................            [100%]\n61 passed in 3.51s\n"
+  },
+  "active_freezes": [
+    {
+      "manifest": "PROTOCOL_FREEZE.json",
+      "sha256": "069564744276ddeaa0921b029be595c52cab243f8800fe16de15aa81f8fe8e03",
+      "files_checked": 15,
+      "mismatches": []
+    },
+    {
+      "manifest": "gate_v2/mechanism/FREEZE.json",
+      "sha256": "8d6f3b8f910126ca9a0321ca0f243d25ed65233de857c4314196eb56e4bd536a",
+      "files_checked": 18,
+      "mismatches": []
+    },
+    {
+      "manifest": "gate_v2/real_extension/FREEZE.json",
+      "sha256": "1afac2702c7d72a4a234fce10c6c4136bffb4a737bc1163ec046fdfe0f782f7f",
+      "files_checked": 40,
+      "mismatches": []
+    },
+    {
+      "manifest": "gate_v2/skillcraft_survey/FREEZE.json",
+      "sha256": "10d319c723ceca6d1d9ee644122cff1f88e78f91676d7f4058682329fa7beabc",
+      "files_checked": 31,
+      "mismatches": []
+    }
+  ],
+  "python_syntax_files_checked": 30,
+  "python_file_hashes": {
+    "analyze_pilot.py": "ac621b0f415fd3a5e1ba32b3fc516e6a754ea7c44db54cb15cef126a60228aeb",
+    "bootstrap_source.py": "21cfae769e84e0c63df603828f373a1c1b8b5c29be8101693ce0246c27eb07b0",
+    "build_progress.py": "f7c6a6e4a515f76f88a3d066804760eee192d0f6bbe9a3cba5636fb244269bb1",
+    "gate_v2/build_report.py": "cc36d2fe5a91211122cbd805418a0b489ee001bc590a36600f43adbbf3e17847",
+    "gate_v2/mechanism/run.py": "b398497944203bd52d100c6c19de6fdf64f50bb706fbb6f5b1b69af0a4592096",
+    "gate_v2/mechanism/tests/test_mechanism.py": "e0f68c27bad46edb65b322f43dba1f06ab6551758890bc55a0638bccd5c9e604",
+    "gate_v2/real_extension/data.py": "d1e1d6133215655447d4306b0bbab0a5f2e50d7b100e5e58709f0c9e2acdcf11",
+    "gate_v2/real_extension/run.py": "662916b18dc873499af39f7243aa94b912042f34eea5de77672b76d1b36f3293",
+    "gate_v2/real_extension/tests/test_real_extension.py": "a2731d3c43bb4eb7faf7975dc4d5ce9db87db3073ed7add36cb2b998ea77e3ba",
+    "gate_v2/render_gate_reports.py": "f1ed1b69ef5ed0e06d9e9e629284016d912f66dfc64c040da3828c67dddaaba2",
+    "gate_v2/skillcraft_survey/adapter.py": "7aaf0a3fe5562b21e7779c923e23bd5fadc337fc6ab5a757890d8ba3880301ba",
+    "gate_v2/skillcraft_survey/run.py": "86012e8effe30a81e7ca14ef7da387779ede804bd305f3c3e38f52dca9f00359",
+    "gate_v2/skillcraft_survey/tests/test_survey.py": "f8693aab784f81340cef19d4f75bc73aa1e1cd3a514035c1ff4e90a1b3f64f18",
+    "gate_v2/tests/test_build_report.py": "3dd9daf50b06e0445d3ba08ad95ef655c480a3529660f16d1b57950b0702683e",
+    "gate_v2/validation/check_results.py": "1639ffcccf29ed72ddbfabde1a4429a6bb47f365fe3e5aac9588c8af015b19ea",
+    "gate_v2/validation/check_skillcraft.py": "d739e44e15a40575d82e7d1c258bdca59aadaf39fcae74611bc60f5d61cb2da1",
+    "gate_v2/verify_checkpoint.py": "a3b1fb045c8cd468b5cbd14c606f047ec4908de7cb68f7ace93123dd889c3469",
+    "make_replay.py": "8f8f417d4e1e8935f7eeedd8c4bbf2bab1d9d89c9c11d7050d987e7d7b083ffd",
+    "prepare_data.py": "7592b0bd5a937c77af1f8f3628870e13c9494f07d7ceef751ac31fba12c1b4d7",
+    "refresh_dataset_audit.py": "408a4d329f07747d9a80784da20b7afdd6c165da89b74f5df5d24359d462eb9d",
+    "run_pilot.py": "13dbe0d96000c01b10f8f4b3e5102cfe7603ef7f53a79ee52efee8787efdbd2f",
+    "seal_results.py": "62fb97ee17fa85fea88123f75ae221909571b6b513b8c3a701d1b82becdc114b",
+    "tests/test_analysis.py": "4c9385e05a8fbdea680eca6c9d93f89d2b02e9654ec32f897768f5ab73e36a73",
+    "tests/test_contracts.py": "1f33a5c409df4ab14226a017ab1051e2df53a4cd698fd4f1be7088b579472aa4",
+    "validate_results.py": "39dc1fc587fb4f28a2b524cc6c67d998e853029c64bb956b502b5517fcd346fb",
+    "y1/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "y1/data.py": "c1f1028c1495fafbd837710fb7055267967484e5bda1a219230a90d78bcb0c1b",
+    "y1/metrics.py": "b381b521453aa5b9a6dcb5f792b27cdfd3311fe2911854771472ba5a152a5ea3",
+    "y1/models.py": "f873f557a07f4852393969f739022336523ea7679d8f345f1e0e6d22f65ea6bb",
+    "y1/source.py": "e7cc35f93a8f6f3b957742f06b191f9ec8f524a353eb638df6114d4db7f52351"
+  },
+  "notes": "Unit tests include tiny synthetic estimator checks, not scientific pilot refits. Listed-byte hashes are not external preregistration or model-performance verification."
+}

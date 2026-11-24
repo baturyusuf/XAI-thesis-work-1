@@ -1,0 +1,50 @@
+{
+  "protocol": "Y1-pilot-v1",
+  "datasets": [
+    "wine_red",
+    "wine_white",
+    "skillcraft",
+    "tae"
+  ],
+  "seeds": [
+    20261120,
+    20261121
+  ],
+  "outer_folds": 3,
+  "inner_folds": 2,
+  "split_seed_attempts": 100,
+  "objectives": [
+    "qwk",
+    "mae",
+    "amae",
+    "mmae",
+    "macro_f1",
+    "rps",
+    "qwk_recall"
+  ],
+  "recall_floor": 0.2,
+  "tie_tolerance": 1e-12,
+  "rf_estimators": 100,
+  "rf_depths": [
+    4,
+    null
+  ],
+  "po_C": [
+    0.1,
+    1.0
+  ],
+  "po_max_iter": 1000,
+  "fit_threads": 1,
+  "bootstrap_replicates": 1000,
+  "decision": {
+    "configuration_change_min": 0.1,
+    "extreme_recall_sesoi": 0.05,
+    "qwk_cost_tolerance": 0.02,
+    "normalized_amae_cost_tolerance": 0.02,
+    "minimum_real_datasets": 4,
+    "minimum_source_families": 3,
+    "minimum_endpoint_groups": 20,
+    "minimum_supporting_families": 2
+  },
+  "no_auto_full_run": true
+}

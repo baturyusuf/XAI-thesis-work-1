@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-11-20T09:35:13.994103+00:00",
+  "status": "after fits, before first numerical outcome inspection; implements frozen contrasts",
+  "analysis_sha256": "7d0dc47966cf58391cbdde2ae3865ab0623a774edf9851c0e574cfa7a9825bef",
+  "post_outcome_integrity_amendment": {
+    "time_utc": "2026-11-20T09:39:35.200140+00:00",
+    "sha256": "ac621b0f415fd3a5e1ba32b3fc516e6a754ea7c44db54cb15cef126a60228aeb",
+    "reason": "verify run/freeze/artifact identity and label descriptive source-family aggregation; no selector/fit/split changes"
+  }
+}

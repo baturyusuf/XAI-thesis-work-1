@@ -1,0 +1,212 @@
+{
+  "datasets": {
+    "restaurant": {
+      "status": "ELIGIBLE_EXTENSION_ONLY",
+      "rows": 1161,
+      "groups": 138,
+      "class_counts": [
+        254,
+        421,
+        486
+      ],
+      "endpoint_groups": [
+        81,
+        111
+      ],
+      "missing": {
+        "alcohol": 0,
+        "dress_code": 0,
+        "accessibility": 0,
+        "price": 0,
+        "Rambience": 0,
+        "franchise": 0,
+        "area": 0,
+        "other_services": 0,
+        "budget": 69,
+        "dress_preference": 51,
+        "ambience": 58,
+        "transport": 54
+      },
+      "features": [
+        "alcohol",
+        "dress_code",
+        "accessibility",
+        "price",
+        "Rambience",
+        "franchise",
+        "area",
+        "other_services",
+        "budget",
+        "dress_preference",
+        "ambience",
+        "transport"
+      ],
+      "labels": {
+        "raw": [
+          0,
+          1,
+          2
+        ],
+        "ranks": [
+          0,
+          1,
+          2
+        ],
+        "direction": "0 dislike, 2 high preference; 1 ordered middle (paper does not name it intermediate)"
+      },
+      "archive_sha256": "dc61ec3779db8d3bd2cde8d65abf87dc07e9b22ae94f9b9ad6375d57f627e333",
+      "outer_test_rows_item_seen_in_train_range": [
+        0.9896103896103896,
+        1.0
+      ],
+      "effective_split_seeds": [
+        20261124,
+        20261125
+      ]
+    },
+    "sushi": {
+      "status": "ELIGIBLE_EXTENSION_ONLY",
+      "rows": 5000,
+      "groups": 500,
+      "class_counts": [
+        379,
+        461,
+        1184,
+        1141,
+        1835
+      ],
+      "endpoint_groups": [
+        195,
+        470
+      ],
+      "missing": {
+        "age_band": 0,
+        "style": 0,
+        "major_group": 0,
+        "minor_group": 0
+      },
+      "features": [
+        "age_band",
+        "style",
+        "major_group",
+        "minor_group"
+      ],
+      "labels": {
+        "raw": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "ranks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "direction": "0 most disliked; 4 most preferred; -1 unrated excluded"
+      },
+      "archive_sha256": "4f8bbf3acd6f796cb3d0add6c73c394664982c57d3b48e75e92014e5278558a8",
+      "outer_test_rows_item_seen_in_train_range": [
+        1.0,
+        1.0
+      ],
+      "effective_split_seeds": [
+        20261124,
+        20261125
+      ]
+    },
+    "movielens100k": {
+      "status": "ELIGIBLE_EXTENSION_ONLY",
+      "rows": 43699,
+      "groups": 400,
+      "class_counts": [
+        2749,
+        4892,
+        11663,
+        14987,
+        9408
+      ],
+      "endpoint_groups": [
+        308,
+        393
+      ],
+      "missing": {
+        "user_age": 0,
+        "release_year": 3,
+        "genre_unknown": 0,
+        "genre_Action": 0,
+        "genre_Adventure": 0,
+        "genre_Animation": 0,
+        "genre_Children": 0,
+        "genre_Comedy": 0,
+        "genre_Crime": 0,
+        "genre_Documentary": 0,
+        "genre_Drama": 0,
+        "genre_Fantasy": 0,
+        "genre_FilmNoir": 0,
+        "genre_Horror": 0,
+        "genre_Musical": 0,
+        "genre_Mystery": 0,
+        "genre_Romance": 0,
+        "genre_SciFi": 0,
+        "genre_Thriller": 0,
+        "genre_War": 0,
+        "genre_Western": 0
+      },
+      "features": [
+        "user_age",
+        "release_year",
+        "genre_unknown",
+        "genre_Action",
+        "genre_Adventure",
+        "genre_Animation",
+        "genre_Children",
+        "genre_Comedy",
+        "genre_Crime",
+        "genre_Documentary",
+        "genre_Drama",
+        "genre_Fantasy",
+        "genre_FilmNoir",
+        "genre_Horror",
+        "genre_Musical",
+        "genre_Mystery",
+        "genre_Romance",
+        "genre_SciFi",
+        "genre_Thriller",
+        "genre_War",
+        "genre_Western"
+      ],
+      "labels": {
+        "raw": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "ranks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "direction": "1 lowest to 5 highest rating"
+      },
+      "archive_sha256": "50d2a982c66986937beb9ffb3aa76efe955bf3d5c6b761f4e3a7cd717c6a3229",
+      "outer_test_rows_item_seen_in_train_range": [
+        0.99160588963809,
+        0.9958926615553122
+      ],
+      "effective_split_seeds": [
+        20261124,
+        20261125
+      ]
+    }
+  },
+  "real_model_fits": 0,
+  "full_Y1_GO": false
+}

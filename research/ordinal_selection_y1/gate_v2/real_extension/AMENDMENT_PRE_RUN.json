@@ -1,0 +1,36 @@
+{
+  "amended_utc": "2026-11-23T11:13:35.845877+00:00",
+  "status": "Parent-authorized pre-run technical amendment; zero real-extension model fits; no run directory present",
+  "superseded_freeze_sha256": "d0d4a40185579cd5b5ee8d77c89f4e631b26c11d468fed0260c6c7c4a71c5c11",
+  "archived_freeze": "FREEZE_PRE_REVIEW.json",
+  "changes": [
+    "Serialize saved groups as NumPy Unicode so NPZ loads with allow_pickle=False; regression fixture.",
+    "Reject duplicate (group,item) pairs in preparation before writing a table; rejection fixture and existing-data checks.",
+    "Correct source-coding description: pre-Dec-29-2015 sushi scores were reversed; 2016 uses 0 most disliked and 4 most preferred, as already implemented."
+  ],
+  "unchanged": "No features, selected rows, labels, splits, models, selection policies, fitting budget or scientific estimand changed. Existing prepared CSV/split bytes retained. No model outcomes inspected.",
+  "prepared_file_sha256": {
+    "movielens100k.csv": "1e0bd3d57bcf887a3bf1cf05daa6951707365a6c30a0c8c6c28c22231ffb2545",
+    "movielens100k_splits.json": "ced0e3287fe18cbe40a363d96c1142dd915f0a164f041c731c12c8f312264196",
+    "restaurant.csv": "d96665aa544573b1bbfc6087f3c211adff219b4a97db14099809dad2c08b1d68",
+    "restaurant_splits.json": "9db76db7620d67dba446831376ea22ea7789416b6e3ee204bef1f5b9f76e965a",
+    "sushi.csv": "ccc3c08e5135f13d647e8909a5d76cd096308aba80c0a73b8509116673adbb9c",
+    "sushi_splits.json": "97f40846afce29bf4ca644fa90cfadb710e6139528f12a7a0042c5763b6c4f82"
+  },
+  "duplicate_pair_counts": {
+    "restaurant": {
+      "prepared_duplicate_pairs": 0,
+      "source_selected_duplicate_pairs": 0
+    },
+    "sushi": {
+      "prepared_duplicate_pairs": 0,
+      "source_selected_duplicate_pairs": 0
+    },
+    "movielens100k": {
+      "prepared_duplicate_pairs": 0,
+      "source_selected_duplicate_pairs": 0
+    }
+  },
+  "tests": "11 passed in 1.86s; no model fits",
+  "prepared_csv_and_split_hashes_verified_unchanged": true
+}

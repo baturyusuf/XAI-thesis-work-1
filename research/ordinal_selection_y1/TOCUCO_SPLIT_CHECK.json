@@ -1,0 +1,14 @@
+{
+  "url": "https://www.uco.es/ayrna/tocuco/files/oc05_winequalityRed/train_masks.json",
+  "accessed_utc": "2026-11-20T14:37:32.431003+00:00",
+  "sha256": "184665f6936d9250f5f35ee00681e802425fd2763828f93a0f71dc93e42dbc31",
+  "partition_count": 30,
+  "lengths": [
+    1599
+  ],
+  "value_types": [
+    "bool"
+  ],
+  "unique_masks": 30,
+  "scope": "one mask file verified, not all22; no proof of source-group independence/preprocessing boundary"
+}

@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-11-23T11:19:06.405096+00:00",
+  "kind": "post-run integrity hashes; not a pre-fit seal",
+  "freeze_sha256": "1afac2702c7d72a4a234fce10c6c4136bffb4a737bc1163ec046fdfe0f782f7f",
+  "files": {
+    "restaurant/inner_scores.json": "ceb055b2fa83d0f1e459606357d1716db5a086af0e42d2ae45a3c458496138e1",
+    "restaurant/predictions.npz": "e09bb7983795c9bb84c99339bcbd36e057b0942ada4343aafb34271e250953ac",
+    "restaurant/run.json": "75b6ea4757a0ee10225a18e4eb6925257f978353d3e8686d9fc78d4427b77b7f",
+    "restaurant/schedule.json": "177d70178796fcf1ae0ef4f7674ed6e4fd93a10fbf0c44c8e5460e8e2452825a",
+    "restaurant/summary.json": "cd6488776116e55d234cc092527815f7921a65ffafeac31da83ea7bb3a593c34",
+    "sushi/inner_scores.json": "289c9bab9a9b83db7e5115d636f9648de6d3c6d80d92c78e853006c585966390",
+    "sushi/predictions.npz": "2c51bedbd9aeda0e7d4b652899d0f893d2c67ed578a007f4c6b8d3632d195f19",
+    "sushi/run.json": "a5dfb2fa2c7569f53664c8d39f277c93e548b17a27ea67e884977094556992ed",
+    "sushi/schedule.json": "335e9ceddb77ff77c08ecd7f8e9bad7c58246c13839fb3708f12da558277a64a",
+    "sushi/summary.json": "27988ea5ec4b367a8b6502fec65d04b90ff6e5f43f36cfb56b9acd5859d0e683",
+    "movielens100k/inner_scores.json": "05b3b92ab27d28c508996234c459d32baeba94d1e23c47ce2c4941ef6a30a897",
+    "movielens100k/predictions.npz": "e09dc39b051c9d18a4fd69b52a1be7648a1f6874c79491ac361a0498ba384dfc",
+    "movielens100k/run.json": "5d25620dcb06bc565802dc9b35f2154e2f757dccd15a94afe846b51562864dc8",
+    "movielens100k/schedule.json": "821deab5220f75c77aedbbef63ce040a594e7489a03b2f77b99cee49ef47f6cd",
+    "movielens100k/summary.json": "d31847a4109d2858ca8bdaca4276ded7fe8e74718131a1bfbdbfa3bcdf0496f8"
+  }
+}

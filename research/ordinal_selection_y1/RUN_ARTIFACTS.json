@@ -1,0 +1,34 @@
+{
+  "created_utc": "2026-11-20T09:39:35.198299+00:00",
+  "scope": "post-fit integrity receipt; not a pre-fit seal or external timestamp",
+  "runs": {
+    "wine_red": {
+      "run.json": "41e94ffe413770520919a0cc931108bd8de3194def6f2f724e74602df40736d6",
+      "summary.json": "5e6a08c1cdc6d63576b191038195d4941af0ef12e33fd61f7c8c88ebaa3ae423",
+      "schedule.json": "0d3f3261e8f979deea9f9270cfd3ce175c357d6510f2a51d4f19c63efd458965",
+      "inner_scores.json": "5dc731920323ae6c26b23fab02faf2ef8df49c99a18c92a4ace6e8652a043858",
+      "predictions.npz": "9d93e4f67b3b1c1068f026b15082bf6944ee47aaf07b813af661f98b7643a36b"
+    },
+    "wine_white": {
+      "run.json": "9dac96c0d0ec4e9880f0072c93bd9da972913d0c0c99283d913ea98eefa345fd",
+      "summary.json": "8f784ec4a0c606180157faacaf05d069b3d804eacc47fc451ba434f50285d97a",
+      "schedule.json": "cb89e41ac34f705dadfe0ffb621d600613ada55a5d323efafb013b153643fdfb",
+      "inner_scores.json": "8b2687b20fdb4da08a3a0e011f02b70ee2340a582347979bb22b6de820d416f4",
+      "predictions.npz": "bcf9dee9b80c509c52ef14bca8d35655d0eca1471eae971b8b3659e8d4ae1409"
+    },
+    "skillcraft": {
+      "run.json": "e458907316ab62883125eb03b05fccef8ac2c343649662a213b009382df39088",
+      "summary.json": "0b21472bf5f93595fc1147b4b5e34d9004b11e960168332ef96ae3243dd93546",
+      "schedule.json": "249367da9d2accbcc037deef3ec3f5cb6f8202a33c53b153ebec7a295e2f5cc5",
+      "inner_scores.json": "56111b2867c49db8c4dc85d9bd4985d0706084f59519031a7d1e85a6e71d47f0",
+      "predictions.npz": "a90bdb72da549ae4cda2157a4d4a3497abd0dc2fea4aafbd458d8f2c9a9d408f"
+    },
+    "tae": {
+      "run.json": "5d7d88b329ebe204947beaed404a448ac1e61241971fefb041f803fdb4517a44",
+      "summary.json": "d26781fced8d5031238fc3e5f28576f81d5cffef8415ba2df8e7235be6046fdb",
+      "schedule.json": "aa10a7902553917f6276971205648875dfe13c4842d901fddb69545b7f320b6f",
+      "inner_scores.json": "6644bd8d400c0bace3b5d5f25a678ca97d403769c17a4bb2a05d88c6e8fba6ff",
+      "predictions.npz": "333b7ea3efac8ec248933ea5d56c66ff6f01931a7bc46ab15e5998e915f153d6"
+    }
+  }
+}

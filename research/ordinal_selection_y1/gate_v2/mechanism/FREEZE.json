@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-11-20T15:18:00.102846+00:00",
+  "scope": "Prospective mechanism experiment after earlier real pilot; not study preregistration",
+  "versions": {
+    "python": "3.13.15",
+    "numpy": "2.5.5",
+    "scipy": "1.18.1",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1",
+    "threadpoolctl": "3.8.0"
+  },
+  "files": {
+    "gate_v2/mechanism/config.json": "979ffaf4b25af186ae9e2559a43fa36e2a3fab29f1b8b5b59d859c298c167016",
+    "gate_v2/mechanism/PROTOCOL.md": "1cc5d1a3c22403cd48195e603bfd62889dc678ea24606e2e44608311a299f145",
+    "gate_v2/mechanism/run.py": "b398497944203bd52d100c6c19de6fdf64f50bb706fbb6f5b1b69af0a4592096",
+    "gate_v2/mechanism/tests/test_mechanism.py": "e0f68c27bad46edb65b322f43dba1f06ab6551758890bc55a0638bccd5c9e604",
+    "local/source/src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "local/source/src/models/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "local/source/src/models/canonical_models.py": "c1161f50cc3193461390b38407df77d4cf71e1924c9f295a47849923c0f6d874",
+    "local/source/src/models/evaluate.py": "3dc16655c669cb71700c1c9354eacd02a1849d16e9b5c810089483fcf5664bd8",
+    "local/source/src/models/ordinal_evaluation_v3.py": "bc546632454696d96c64ec60285b31f729319405a645b97d89da9fe27daefb4e",
+    "local/source/src/models/ordinal_models_v3.py": "8df4bc881662fda56f56288da314c826733bda3fb72c658d6f2465d3464b7a8d",
+    "local/source/src/models/task_schema.py": "e826ea0491e7021f5e718c85e7b858f02afdec338578a7fd391512e273c575e7",
+    "requirements.txt": "b6f9c775a8a316aebf0d82283f3f8846974d75063b4e2a5cda27bbad67335608",
+    "SOURCE_MANIFEST.json": "9042c1173eab3ddacc0dbadfbf73ca37520ebb577058fa548b581edaddc3f8e4",
+    "y1/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "y1/data.py": "c1f1028c1495fafbd837710fb7055267967484e5bda1a219230a90d78bcb0c1b",
+    "y1/metrics.py": "b381b521453aa5b9a6dcb5f792b27cdfd3311fe2911854771472ba5a152a5ea3",
+    "y1/models.py": "f873f557a07f4852393969f739022336523ea7679d8f345f1e0e6d22f65ea6bb",
+    "y1/source.py": "e7cc35f93a8f6f3b957742f06b191f9ec8f524a353eb638df6114d4db7f52351"
+  }
+}

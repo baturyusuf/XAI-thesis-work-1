@@ -1,0 +1,380 @@
+[
+  {
+    "DOI": "10.1016/j.patrec.2017.05.018",
+    "title": [
+      "Weighted kappa loss function for multi-class classification of ordinal data in deep learning"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-8142-7983",
+        "authenticated-orcid": false,
+        "given": "Jordi",
+        "family": "de la Torre",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Domenec",
+        "family": "Puig",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3616-7809",
+        "authenticated-orcid": false,
+        "given": "Aida",
+        "family": "Valls",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          4
+        ]
+      ]
+    },
+    "container-title": [
+      "Pattern Recognition Letters"
+    ],
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0167865517301666"
+      }
+    }
+  },
+  {
+    "DOI": "10.1016/j.asoc.2023.110020",
+    "title": [
+      "Weighted kappa measures for ordinal multi-class classification performance"
+    ],
+    "author": [
+      {
+        "given": "Ayfer Ezgi",
+        "family": "Yilmaz",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Haydar",
+        "family": "Demirhan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          2
+        ]
+      ]
+    },
+    "container-title": [
+      "Applied Soft Computing"
+    ],
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1568494623000388"
+      }
+    }
+  },
+  {
+    "DOI": "10.1016/j.neucom.2013.05.058",
+    "title": [
+      "Metrics to guide a multi-objective evolutionary algorithm for ordinal classification"
+    ],
+    "author": [
+      {
+        "given": "M.",
+        "family": "Cruz-Ramírez",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "C.",
+        "family": "Hervás-Martínez",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "J.",
+        "family": "Sánchez-Monedero",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "P.A.",
+        "family": "Gutiérrez",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2014,
+          7
+        ]
+      ]
+    },
+    "container-title": [
+      "Neurocomputing"
+    ],
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0925231213011399"
+      }
+    }
+  },
+  {
+    "DOI": "10.1109/tkde.2015.2457911",
+    "title": [
+      "Ordinal Regression Methods: Survey and Experimental Study"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-2657-776X",
+        "authenticated-orcid": false,
+        "given": "Pedro Antonio",
+        "family": "Gutierrez",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Maria",
+        "family": "Perez-Ortiz",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Javier",
+        "family": "Sanchez-Monedero",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Francisco",
+        "family": "Fernandez-Navarro",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Cesar",
+        "family": "Hervas-Martinez",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          1,
+          1
+        ]
+      ]
+    },
+    "container-title": [
+      "IEEE Transactions on Knowledge and Data Engineering"
+    ],
+    "resource": {
+      "primary": {
+        "URL": "http://ieeexplore.ieee.org/document/7161338/"
+      }
+    }
+  },
+  {
+    "DOI": "10.1109/isda.2009.230",
+    "title": [
+      "Evaluation Measures for Ordinal Regression"
+    ],
+    "author": [
+      {
+        "given": "Stefano",
+        "family": "Baccianella",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andrea",
+        "family": "Esuli",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Fabrizio",
+        "family": "Sebastiani",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2009
+        ]
+      ]
+    },
+    "container-title": [
+      "2009 Ninth International Conference on Intelligent Systems Design and Applications"
+    ],
+    "resource": {
+      "primary": {
+        "URL": "http://ieeexplore.ieee.org/document/5364825/"
+      }
+    }
+  },
+  {
+    "DOI": "10.1198/016214506000001437",
+    "title": [
+      "Strictly Proper Scoring Rules, Prediction, and Estimation"
+    ],
+    "author": [
+      {
+        "given": "Tilmann",
+        "family": "Gneiting",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Adrian E",
+        "family": "Raftery",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2007,
+          3
+        ]
+      ]
+    },
+    "container-title": [
+      "Journal of the American Statistical Association"
+    ],
+    "resource": {
+      "primary": {
+        "URL": "http://www.tandfonline.com/doi/abs/10.1198/016214506000001437"
+      }
+    }
+  }
+]

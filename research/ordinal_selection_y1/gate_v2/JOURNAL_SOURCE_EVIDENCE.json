@@ -1,0 +1,127 @@
+{
+  "date": "2026-11-23",
+  "branch": "research/ordinal-selection-y1",
+  "base_commit": "1b71d4c45ae1aba771e7c499f87f197f44b3112c",
+  "scope": "bounded official-publisher screen, not article benchmark or acceptance model",
+  "journals": [
+    {
+      "name": "Journal of Classification",
+      "issn": "0176-4268",
+      "eissn": "1432-1343",
+      "official_overview": "https://link.springer.com/journal/357",
+      "fees_url": "https://link.springer.com/journal/357/how-to-publish-with-us",
+      "guidelines_url": "https://link.springer.com/journal/357/submission-guidelines",
+      "accessed_date": "2026-11-23",
+      "parent_verified": "overview plus publishing-options HTML via fetch",
+      "agent_verified": "guidelines by Luna; exact complete-fee certificate not obtained",
+      "publisher_lists_SCIE": true,
+      "publisher_lists_SSCI": true,
+      "clarivate_independent_verification": "pending",
+      "JCR_edition": null,
+      "JCR_metric_year": null,
+      "JCR_category_rank_quartile": null,
+      "publisher_JIF": {
+        "value": 1.8,
+        "label_year": 2025
+      },
+      "subscription_no_APC_explicit": true,
+      "OA_optional": true,
+      "all_mandatory_fees_exhaustively_verified": false,
+      "median_submission_to_first_decision_days": 28,
+      "time_to_acceptance": null,
+      "time_warning": "First decision is not review completion or acceptance speed",
+      "code_data_condition": "Data availability statement; specific guideline requirements remain relevant",
+      "format_charge": "USD10/page for formats other than Word/LaTeX, per Luna guideline check",
+      "colour_charge": "Online colour free; print colour extra per guidelines",
+      "maximum_pages_verified": 50,
+      "status": "Candidate only; current quartile and final all-fee check pending"
+    },
+    {
+      "name": "Advances in Data Analysis and Classification",
+      "issn": "1862-5347",
+      "eissn": "1862-5355",
+      "official_overview": "https://link.springer.com/journal/11634",
+      "fees_url": "https://link.springer.com/journal/11634/how-to-publish-with-us",
+      "guidelines_url": "https://link.springer.com/journal/11634/submission-guidelines",
+      "accessed_date": "2026-11-23",
+      "parent_verified": "overview plus publishing-options HTML via fetch",
+      "agent_verified": "guidelines by Luna; exact complete-fee certificate not obtained",
+      "publisher_lists_SCIE": true,
+      "publisher_lists_SSCI": false,
+      "clarivate_independent_verification": "pending",
+      "JCR_edition": null,
+      "JCR_metric_year": null,
+      "JCR_category_rank_quartile": null,
+      "publisher_JIF": {
+        "value": 2.1,
+        "label_year": 2025
+      },
+      "subscription_no_APC_explicit": true,
+      "OA_optional": true,
+      "all_mandatory_fees_exhaustively_verified": false,
+      "median_submission_to_first_decision_days": 4,
+      "time_to_acceptance": null,
+      "time_warning": "First decision is not review completion or acceptance speed",
+      "code_data_condition": "Data availability statement; specific guideline requirements remain relevant",
+      "format_charge": "No mandatory page charge verified, not proof none exists",
+      "colour_charge": "Online colour free; print colour extra per guidelines",
+      "maximum_pages_verified": null,
+      "status": "Candidate only; current quartile and final all-fee check pending"
+    },
+    {
+      "name": "Pattern Analysis and Applications",
+      "issn": "1433-7541",
+      "eissn": "1433-755X",
+      "official_overview": "https://link.springer.com/journal/10044",
+      "fees_url": "https://link.springer.com/journal/10044/how-to-publish-with-us",
+      "guidelines_url": "https://link.springer.com/journal/10044/submission-guidelines",
+      "accessed_date": "2026-11-23",
+      "parent_verified": "overview plus publishing-options HTML via fetch",
+      "agent_verified": "guidelines by Luna; exact complete-fee certificate not obtained",
+      "publisher_lists_SCIE": true,
+      "publisher_lists_SSCI": false,
+      "clarivate_independent_verification": "pending",
+      "JCR_edition": null,
+      "JCR_metric_year": null,
+      "JCR_category_rank_quartile": null,
+      "publisher_JIF": {
+        "value": 2.6,
+        "label_year": 2025
+      },
+      "subscription_no_APC_explicit": true,
+      "OA_optional": true,
+      "all_mandatory_fees_exhaustively_verified": false,
+      "median_submission_to_first_decision_days": 1,
+      "time_to_acceptance": null,
+      "time_warning": "First decision is not review completion or acceptance speed",
+      "code_data_condition": "Access to experimental code and data mandatory in overview",
+      "format_charge": "No mandatory page charge verified, not proof none exists",
+      "colour_charge": "Online colour free; print colour extra per guidelines",
+      "maximum_pages_verified": null,
+      "status": "Candidate only; current quartile and final all-fee check pending"
+    }
+  ],
+  "clarivate_needed": "Current journal profile with ISSN, SCIE collection and JCR release/metric year/category/rank/quartile; do not substitute JIF or SJR",
+  "special_issue_observations": [
+    {
+      "journal": "JoC",
+      "title": "Advances in Mixture Models for Complex Data",
+      "overview_deadline": "2026-11-30",
+      "decision": "Y1 not mixture-model development; do not force fit"
+    },
+    {
+      "journal": "ADAC",
+      "title": "Clustering and Classification at the Interface Between Statistics, Data Science and AI",
+      "overview_deadline": "2027-01-31",
+      "decision": "Potential scope only; full call conditions not verified; no deadline-driven protocol shortcuts"
+    },
+    {
+      "journal": "ADAC",
+      "title": "Data Science: Methods for Explainable Modelling",
+      "overview_deadline": "2026-10-31",
+      "decision": "Past deadline as of check"
+    }
+  ],
+  "acceptance_probability": null,
+  "public_submission": false
+}

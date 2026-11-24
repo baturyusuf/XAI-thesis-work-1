@@ -1,0 +1,696 @@
+[
+  {
+    "query": "Weighted kappa loss function for multi class classification of ordinal data in deep learning",
+    "items": [
+      {
+        "DOI": "10.1016/j.patrec.2017.05.018",
+        "title": [
+          "Weighted kappa loss function for multi-class classification of ordinal data in deep learning"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-8142-7983",
+            "authenticated-orcid": false,
+            "given": "Jordi",
+            "family": "de la Torre",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Domenec",
+            "family": "Puig",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-3616-7809",
+            "authenticated-orcid": false,
+            "given": "Aida",
+            "family": "Valls",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2018,
+              4
+            ]
+          ]
+        },
+        "container-title": [
+          "Pattern Recognition Letters"
+        ],
+        "URL": "https://doi.org/10.1016/j.patrec.2017.05.018"
+      },
+      {
+        "DOI": "10.1016/j.asoc.2023.110020",
+        "title": [
+          "Weighted kappa measures for ordinal multi-class classification performance"
+        ],
+        "author": [
+          {
+            "given": "Ayfer Ezgi",
+            "family": "Yilmaz",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Haydar",
+            "family": "Demirhan",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              2
+            ]
+          ]
+        },
+        "container-title": [
+          "Applied Soft Computing"
+        ],
+        "URL": "https://doi.org/10.1016/j.asoc.2023.110020"
+      }
+    ]
+  },
+  {
+    "query": "Evaluation measures for ordinal regression",
+    "items": [
+      {
+        "DOI": "10.1109/isda.2009.230",
+        "title": [
+          "Evaluation Measures for Ordinal Regression"
+        ],
+        "author": [
+          {
+            "given": "Stefano",
+            "family": "Baccianella",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Andrea",
+            "family": "Esuli",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Fabrizio",
+            "family": "Sebastiani",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2009
+            ]
+          ]
+        },
+        "container-title": [
+          "2009 Ninth International Conference on Intelligent Systems Design and Applications"
+        ],
+        "URL": "https://doi.org/10.1109/isda.2009.230"
+      },
+      {
+        "DOI": "10.5715/jnlp.28.1319",
+        "title": [
+          "Evaluating Evaluation Measures for Ordinal Classification and Ordinal Quantification"
+        ],
+        "author": [
+          {
+            "given": "Tetsuya",
+            "family": "Sakai",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Waseda University"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2021
+            ]
+          ]
+        },
+        "container-title": [
+          "Journal of Natural Language Processing"
+        ],
+        "URL": "https://doi.org/10.5715/jnlp.28.1319"
+      }
+    ]
+  },
+  {
+    "query": "Metrics to guide a multi objective evolutionary algorithm for ordinal classification",
+    "items": [
+      {
+        "DOI": "10.1016/j.neucom.2013.05.058",
+        "title": [
+          "Metrics to guide a multi-objective evolutionary algorithm for ordinal classification"
+        ],
+        "author": [
+          {
+            "given": "M.",
+            "family": "Cruz-Ramírez",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "C.",
+            "family": "Hervás-Martínez",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "J.",
+            "family": "Sánchez-Monedero",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "P.A.",
+            "family": "Gutiérrez",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2014,
+              7
+            ]
+          ]
+        },
+        "container-title": [
+          "Neurocomputing"
+        ],
+        "URL": "https://doi.org/10.1016/j.neucom.2013.05.058"
+      },
+      {
+        "DOI": "10.1109/isda.2011.6121818",
+        "title": [
+          "A preliminary study of ordinal metrics to guide a multi-objective evolutionary algorithm"
+        ],
+        "author": [
+          {
+            "given": "M.",
+            "family": "Cruz-Ramirez",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "C.",
+            "family": "Hervas-Martinez",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "J.",
+            "family": "Sanchez-Monedero",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "P. A.",
+            "family": "Gutierrez",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2011,
+              11
+            ]
+          ]
+        },
+        "container-title": [
+          "2011 11th International Conference on Intelligent Systems Design and Applications"
+        ],
+        "URL": "https://doi.org/10.1109/isda.2011.6121818"
+      }
+    ]
+  },
+  {
+    "query": "TOC UCO comprehensive repository tabular ordinal classification datasets",
+    "items": [
+      {
+        "DOI": "10.1016/j.neucom.2026.133528",
+        "title": [
+          "TOC-UCO: a comprehensive repository of tabular ordinal classification datasets"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-3024-6194",
+            "authenticated-orcid": false,
+            "given": "Rafael",
+            "family": "Ayllón-Gavilán",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-8035-4057",
+            "authenticated-orcid": false,
+            "given": "David",
+            "family": "Guijo-Rubio",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-1929-2408",
+            "authenticated-orcid": false,
+            "given": "Antonio Manuel",
+            "family": "Gómez-Orellana",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-1648-2780",
+            "authenticated-orcid": false,
+            "given": "Francisco",
+            "family": "Bérchez-Moreno",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-0700-275X",
+            "authenticated-orcid": false,
+            "given": "Víctor Manuel",
+            "family": "Vargas",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-2657-776X",
+            "authenticated-orcid": false,
+            "given": "Pedro A.",
+            "family": "Gutiérrez",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              7
+            ]
+          ]
+        },
+        "container-title": [
+          "Neurocomputing"
+        ],
+        "URL": "https://doi.org/10.1016/j.neucom.2026.133528"
+      },
+      {
+        "DOI": "10.31219/osf.io/u8x9d",
+        "title": [
+          "Comprehensive Benchmarking of Classical Machine Learning Algorithms on Tabular Datasets"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-4006-6659",
+            "authenticated-orcid": true,
+            "given": "Harshvardhan",
+            "family": "Sikka",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2022,
+              6,
+              1
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.31219/osf.io/u8x9d"
+      }
+    ]
+  },
+  {
+    "query": "Sample or pixel a critical metric issue in industrial defect detection",
+    "items": [
+      {
+        "DOI": "10.1007/s10044-026-01805-w",
+        "title": [
+          "Sample or pixel: a critical metric issue in industrial defect detection"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-4880-6762",
+            "authenticated-orcid": false,
+            "given": "Hang-Cheng",
+            "family": "Dong",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0000-2399-400X",
+            "authenticated-orcid": false,
+            "given": "Yibo",
+            "family": "Jiao",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-2337-1483",
+            "authenticated-orcid": false,
+            "given": "Fupeng",
+            "family": "Wei",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-3300-7845",
+            "authenticated-orcid": false,
+            "given": "Guodong",
+            "family": "Liu",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-3715-5885",
+            "authenticated-orcid": false,
+            "given": "Dong",
+            "family": "Ye",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0001-5746-0206",
+            "authenticated-orcid": false,
+            "given": "Bingguo",
+            "family": "Liu",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              },
+              {
+                "role": "corresponding-author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              12
+            ]
+          ]
+        },
+        "container-title": [
+          "Pattern Analysis and Applications"
+        ],
+        "URL": "https://doi.org/10.1007/s10044-026-01805-w"
+      },
+      {
+        "DOI": "10.1016/j.compeleceng.2022.108516",
+        "title": [
+          "Zero-DD: Zero-sample defect detection for industrial products"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-8461-766X",
+            "authenticated-orcid": false,
+            "given": "Haigang",
+            "family": "Zhang",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Ronghui",
+            "family": "Pan",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Fengjun",
+            "family": "Chang",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Liming",
+            "family": "He",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Zhongming",
+            "family": "Dong",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Jinfeng",
+            "family": "Yang",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              1
+            ]
+          ]
+        },
+        "container-title": [
+          "Computers and Electrical Engineering"
+        ],
+        "URL": "https://doi.org/10.1016/j.compeleceng.2022.108516"
+      }
+    ]
+  }
+]

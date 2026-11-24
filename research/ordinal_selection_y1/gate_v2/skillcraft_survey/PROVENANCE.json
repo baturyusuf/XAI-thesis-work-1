@@ -1,0 +1,104 @@
+{
+  "recorded_utc": "2026-11-23T11:31:37.817486+00:00",
+  "decision": "Astra-authorized bounded fourth-source pilot; post-v1 source-audit narrowing, not untouched confirmation or full benchmark",
+  "source_manifest_sha256": "c6e8851e0dd495a4f9e710716a6baf204bbc7ea33958bf06d929395e68a4b780",
+  "original_record": {
+    "dataset": "skillcraft",
+    "source_url": "https://archive.ics.uci.edu/dataset/272/skillcraft1+master+table+dataset",
+    "download_url": "https://archive.ics.uci.edu/static/public/272/skillcraft1+master+table+dataset.zip",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "archive_sha256": "d6f4f88c2d077a0938cf774ff242df511c9a5801dcc66e4461ffdf893ce23fc2",
+    "table_sha256": "a6027cb2ac3e56f5cededcf8ee422a4051c0ebe976285e9b14b2bfd779fad370",
+    "n": 3395,
+    "features": 18,
+    "target": "LeagueIndex",
+    "exclude": [
+      "GameID"
+    ],
+    "labels": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "counts": [
+      167,
+      347,
+      553,
+      811,
+      806,
+      621,
+      35,
+      55
+    ],
+    "full_duplicate_excess": 0,
+    "predictor_duplicate_excess": 1,
+    "missing_features": 168,
+    "groups": 3395,
+    "grouping": "game_id",
+    "family": "skillcraft",
+    "target_kind": "natural_league",
+    "role": "technical_pilot_conditional_not_confirmatory",
+    "group_limitation": "Latent batch/player/TA identity not fully available; no new-entity claim"
+  },
+  "original_table_sha256": "a6027cb2ac3e56f5cededcf8ee422a4051c0ebe976285e9b14b2bfd779fad370",
+  "primary_evidence": [
+    {
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0075129",
+      "doi": "10.1371/journal.pone.0075129",
+      "accessed_utc": "2026-11-23T11:28:32.993949+00:00",
+      "sha256": "342812232144994bd68b4ce1bc67f4ad68614e5a529c40acf2a7fe1faebedcb2",
+      "file": "plos_0075129.html"
+    },
+    {
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0094215",
+      "doi": "10.1371/journal.pone.0094215",
+      "accessed_utc": "2026-11-23T11:28:33.568229+00:00",
+      "sha256": "cc4e71b92d4ee3879a850d3961d2fb109a00d99b9a6c743eb18e5525b6242b7b",
+      "file": "plos_0094215.html"
+    }
+  ],
+  "evidence_interpretation": {
+    "2013": "Thompson, Blair, Chen & Henrey, DOI10.1371/journal.pone.0075129. Data Collection: survey replay/demographics/player code; professional games acquired on websites. Exclusions: Grandmaster35 omitted; professionals55 games. Discussion: we have only a single game from each participant.",
+    "2014": "Thompson, Blair & Henrey, DOI10.1371/journal.pone.0094215. Method/Overview: Participants filled out a short survey and provided exactly one replay file. Article analyzes3305 amateurs, not authenticated as all3340 UCI leagues1..7."
+  },
+  "license": "UCI CC-BY-4.0 per original manifest; original data remain local; PLOS articles attribution-licensed; citations retained. No source rows or identities public.",
+  "remaining_uncertainty": "Exact UCI-paper cohort linkage and person identities not authenticated. GameID is not player ID. Multiple accounts, opponent/match links and latent dependencies may remain. One-game-per-participant is a documented source-protocol assumption, not a verified dataset identity guarantee.",
+  "labels": {
+    "raw": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "ranks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "names": [
+      "Bronze",
+      "Silver",
+      "Gold",
+      "Platinum",
+      "Diamond",
+      "Master",
+      "Grandmaster"
+    ],
+    "excluded": {
+      "8": "Professional; separate heterogeneous acquisition, not model-performance grounds"
+    }
+  }
+}

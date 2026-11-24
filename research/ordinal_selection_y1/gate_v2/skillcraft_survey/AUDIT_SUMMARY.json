@@ -1,0 +1,101 @@
+{
+  "status": "READY_BOUNDED_PILOT_PERSON_INDEPENDENCE_ASSUMPTION",
+  "prepared_utc": "2026-11-23T11:32:26.006494+00:00",
+  "rows": 3340,
+  "excluded_league8": 55,
+  "source_rows": 3395,
+  "source_groups": 3394,
+  "groups": 3339,
+  "class_counts": [
+    167,
+    347,
+    553,
+    811,
+    806,
+    621,
+    35
+  ],
+  "class_groups": [
+    167,
+    347,
+    553,
+    811,
+    805,
+    621,
+    35
+  ],
+  "endpoint_groups": [
+    167,
+    35
+  ],
+  "features": [
+    "Age",
+    "HoursPerWeek",
+    "TotalHours",
+    "APM",
+    "SelectByHotkeys",
+    "AssignToHotkeys",
+    "UniqueHotkeys",
+    "MinimapAttacks",
+    "MinimapRightClicks",
+    "NumberOfPACs",
+    "GapBetweenPACs",
+    "ActionLatency",
+    "ActionsInPAC",
+    "TotalMapExplored",
+    "WorkersMade",
+    "UniqueUnitsMade",
+    "ComplexUnitsMade",
+    "ComplexAbilitiesUsed"
+  ],
+  "missing": {
+    "Age": 0,
+    "HoursPerWeek": 1,
+    "TotalHours": 2,
+    "APM": 0,
+    "SelectByHotkeys": 0,
+    "AssignToHotkeys": 0,
+    "UniqueHotkeys": 0,
+    "MinimapAttacks": 0,
+    "MinimapRightClicks": 0,
+    "NumberOfPACs": 0,
+    "GapBetweenPACs": 0,
+    "ActionLatency": 0,
+    "ActionsInPAC": 0,
+    "TotalMapExplored": 0,
+    "WorkersMade": 0,
+    "UniqueUnitsMade": 0,
+    "ComplexUnitsMade": 0,
+    "ComplexAbilitiesUsed": 0
+  },
+  "raw_labels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "ranks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "label_names": [
+    "Bronze",
+    "Silver",
+    "Gold",
+    "Platinum",
+    "Diamond",
+    "Master",
+    "Grandmaster"
+  ],
+  "source_sha256": "a6027cb2ac3e56f5cededcf8ee422a4051c0ebe976285e9b14b2bfd779fad370",
+  "full_Y1_GO": false,
+  "fits": 0
+}

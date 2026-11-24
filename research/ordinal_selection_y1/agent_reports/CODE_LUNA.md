@@ -1,0 +1,2 @@
+# Luna receipt and Astra verification
+Model GPT-6-Luna, session7bb9787c-99c1-4f81-88d9-99cdaeb27bb6. Read-only source inspection at currentbf1f500 and metadata for scientificc7f7729. Report write failed; returned text. Main finding: selective factory/fold/bootstrap reuse, no defensible60–70% estimate, public source licence not found. Limitation: absent files checked only at currentHEAD. Astra corrected this against c7f7729: ordinal modules/selection scripts/RPS exist and were used. No raw rows/fits/commits/push by subagent. Final architecture remains Astra.

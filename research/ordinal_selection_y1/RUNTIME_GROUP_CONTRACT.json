@@ -1,0 +1,70 @@
+[
+  {
+    "dataset": "wine_red",
+    "implemented_groups": 1359,
+    "endpoint_rows": [
+      10,
+      18
+    ],
+    "endpoint_groups": [
+      10,
+      17
+    ],
+    "group_assignment_sha256": "5133b9970c038659211a46f6df9ae296f65d4af701f2a1a4d4077acc76687fbb",
+    "source_identity_groups": 1359,
+    "runtime_grouping": "identical_predictors",
+    "source_family": "wine_quality",
+    "eligible_confirmatory": false
+  },
+  {
+    "dataset": "wine_white",
+    "implemented_groups": 3961,
+    "endpoint_rows": [
+      20,
+      5
+    ],
+    "endpoint_groups": [
+      20,
+      5
+    ],
+    "group_assignment_sha256": "6ef687ab51478e5554bcb84c552852617334bf9f23a167deb92a5fb9876eddaa",
+    "source_identity_groups": 3961,
+    "runtime_grouping": "identical_predictors",
+    "source_family": "wine_quality",
+    "eligible_confirmatory": false
+  },
+  {
+    "dataset": "skillcraft",
+    "implemented_groups": 3394,
+    "endpoint_rows": [
+      167,
+      55
+    ],
+    "endpoint_groups": [
+      167,
+      55
+    ],
+    "group_assignment_sha256": "17769db0cd566e519afcc92ef0a27edbbb79be798ee2d2e83fefece169aa2f7f",
+    "source_identity_groups": 3395,
+    "runtime_grouping": "identical_predictors",
+    "source_family": "skillcraft",
+    "eligible_confirmatory": false
+  },
+  {
+    "dataset": "tae",
+    "implemented_groups": 25,
+    "endpoint_rows": [
+      49,
+      52
+    ],
+    "endpoint_groups": [
+      20,
+      16
+    ],
+    "group_assignment_sha256": "d53d2f81c8dd1bcad72126373fa2f14ab2e22b3e9c2776dff8d3cdd96eb6af42",
+    "source_identity_groups": 25,
+    "runtime_grouping": "instructor",
+    "source_family": "teaching_assignments",
+    "eligible_confirmatory": false
+  }
+]

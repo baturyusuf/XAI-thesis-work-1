@@ -1,0 +1,98 @@
+{
+  "locally_verified_utc": "2026-11-23T11:08:42.186516+00:00",
+  "note": "Existing source evidence supplied by parent; timestamp is local inspection, not original retrieval. MovieLens receipt is current retrieval.",
+  "sources": {
+    "restaurant": {
+      "url": "https://archive.ics.uci.edu/dataset/232/restaurant+consumer+data",
+      "doi": "10.24432/C5DP41",
+      "license": "CC-BY-4.0 (UCI release)",
+      "archive": "local/gate_v2/restaurant.zip",
+      "license_evidence": "local/gate_v2/restaurant.html",
+      "readme_member": "README",
+      "paper_url": "https://ceur-ws.org/Vol-791/paper8.pdf",
+      "paper_text_sha256": "e35c13e459c6c50dd98a14062fdf9a234874033e84931fab0867404ab44539fe",
+      "direction_evidence": "Paper lists 0,1,2; 0 dislike, 2 high preference. 1 is ordered middle, not explicitly named intermediate.",
+      "version": "UCI 1161 ratings/138 users; paper 1251 ratings/111 users/237 restaurants.",
+      "archive_sha256": "dc61ec3779db8d3bd2cde8d65abf87dc07e9b22ae94f9b9ad6375d57f627e333",
+      "license_evidence_sha256": "a54562b4fe23ce54afc854dead144fb3da1fe64f38275785acacd8455ff116bc",
+      "archive_member_sha256": {
+        "chefmozaccepts.csv": "c60001bd0009826c8d8fe29a692c57249960b05d2569ffdba222f0fbcd83e8f7",
+        "chefmozcuisine.csv": "70fb1c59250039f00792b49d1c38e64c424935288f10564c463797dc828d533a",
+        "chefmozhours4.csv": "daee9dd9fee854f93ca6ef3a34c92fb85bef1eaa6337baf3934bbb194d510aca",
+        "chefmozparking.csv": "ac9c536476334d9aa4d6093690bcedde22e9c9a85bf885d4a80cf2c3ce880902",
+        "geoplaces2.csv": "b92bbd60eb0660d6580e0a0c945dd5668ba8d39eef7959997e34ee0eb9912220",
+        "rating_final.csv": "fc994ea4e872365fc63e7f0bc970b36f86edeb4e80218d6a674a3d0e51181901",
+        "README": "140cf9ba199ea79365e2d426544ff9207efa634d8904ffb2010147a77404aba9",
+        "usercuisine.csv": "2cb93a2c5432ccd0d2ece72e60ec0f79fd08339a78006ed8c945fd1100e90e80",
+        "userpayment.csv": "92b25576fd7582109e0ff12db60811cb8b4d1e01c102079c905ba9ffb138c696",
+        "userprofile.csv": "9ac765bf4731d7ce322580f33b472b4fa96409cc626390286affee097152bfb3"
+      },
+      "readme_sha256": "140cf9ba199ea79365e2d426544ff9207efa634d8904ffb2010147a77404aba9"
+    },
+    "sushi": {
+      "url": "https://www.kamishima.net/sushi/",
+      "license": "Any research purpose; no redistribution without permission; acknowledge Kamishima KDD2003",
+      "archive": "local/gate_v2/sushi3-2016.zip",
+      "license_evidence": "local/gate_v2/sushi_page.html",
+      "readme_member": "sushi3-2016/README-en.txt",
+      "version": "2016 release corrects pre-Dec-29-2015 reversed score coding (older 0 most preferred; 2016 0 most disliked and 4 most preferred) and README user-ID issue; row positions align score rows.",
+      "archive_sha256": "4f8bbf3acd6f796cb3d0add6c73c394664982c57d3b48e75e92014e5278558a8",
+      "license_evidence_sha256": "20341589141aa46f34da1250c1370079a0fef8a28425ee49341681aa2f1f5006",
+      "archive_member_sha256": {
+        "sushi3-2016/README-stat-ja.txt": "40a941af8439aac9bbaa626e4a0b1a32069de803a1232e4ec4eb012c8e6cf7b5",
+        "sushi3-2016/sushi3b.5000.10.score": "4a600bbbdea7f75dc218e14776fa41228f9bd553842997ffe79c1227f3ec119d",
+        "sushi3-2016/sushi3.udata": "592d345613b6fbc1d7d126775eb5fb5628619e855c292166250f09651716eca2",
+        "sushi3-2016/sushi3.idata": "568d73580f82a9ffba7ee1a3750506a0517c9ce904eec41559fe4ab573911fde",
+        "sushi3-2016/sushi3a.5000.10.order": "c56da325c0f58f9a38bafc650ed699b48dd2fb9f6ad64ba61ffc288d1ae4cc24",
+        "sushi3-2016/sushi3b.5000.10.order": "a241c87331e4eabea5841aae0c8a982453cccd01b0a0f3b6a4e9cfabcdab563b",
+        "sushi3-2016/README-en.txt": "deb639156f15fd4ba5659c62bdac752f99e232db3b93b4d3c9f04d86c3a11d56",
+        "sushi3-2016/README-ja.txt": "901eb1fb123d2769a1881873cbf749aa12bc8f608c35b5efc363299758002881"
+      },
+      "readme_sha256": "deb639156f15fd4ba5659c62bdac752f99e232db3b93b4d3c9f04d86c3a11d56"
+    },
+    "movielens100k": {
+      "url": "https://grouplens.org/datasets/movielens/100k/",
+      "download": "https://files.grouplens.org/datasets/movielens/ml-100k.zip",
+      "readme_url": "https://files.grouplens.org/datasets/movielens/ml-100k-README.txt",
+      "doi": "10.1145/2827872",
+      "citation": "F. Maxwell Harper and Joseph A. Konstan (2015), The MovieLens Datasets: History and Context",
+      "license": "Research permitted; attribution required; no endorsement; no redistribution without permission; no commercial/revenue-bearing use without permission. Parent confirmed academic study.",
+      "archive": "local/gate_v2/real_extension/ml-100k.zip",
+      "license_evidence": "local/gate_v2/movielens_README.txt",
+      "readme_member": "ml-100k/README",
+      "archive_sha256": "50d2a982c66986937beb9ffb3aa76efe955bf3d5c6b761f4e3a7cd717c6a3229",
+      "license_evidence_sha256": "4d489cafb05f6402ea02c4ecf8d3c34c0f12aeaa2c1814fc6318599cde83933e",
+      "archive_member_sha256": {
+        "ml-100k/allbut.pl": "bfc6a75cbd65c74bb38a0b580dbe866af252733dfa9a65a2c4b93258774ee8a3",
+        "ml-100k/mku.sh": "7929735c375e89a04340e34de621bf2ea643cd04b0bcda2c6f458e4be961ae71",
+        "ml-100k/README": "4883b8cf340ed0059971b33f56ad3adc88a40792108ebca3d24aafc4c82e8b52",
+        "ml-100k/u.data": "06416e597f82b7342361e41163890c81036900f418ad91315590814211dca490",
+        "ml-100k/u.genre": "9757e0d3e6b298159a80dd48eaf938114690e911e39af97a76949ef1663610bb",
+        "ml-100k/u.info": "5b0a40b2e47a729ee6203063f6dcf8790c2e63f5a18663e6ee318a72c5f3c27b",
+        "ml-100k/u.item": "553841ebc7de3a0fd0d6b62a204ea30c1e651aacfb2814c7a6584ac52f2c5701",
+        "ml-100k/u.occupation": "cd5fbec9afe345d993a62fc7817df1a4a9079c4feb267b3118763b8fd942137d",
+        "ml-100k/u.user": "f120e114da2e8cf314fd28f99417c94ae9ddf1cb6db8ce0e4b5995d40e90e62c",
+        "ml-100k/u1.base": "ce253ec86c448b44fb3ba9a30d12dcfc2e9210cbde71efada3730c22e9ac212a",
+        "ml-100k/u1.test": "18c6014a4b2c7324f250a63f8904a7b16b2b19f911129e346141507b0cbac950",
+        "ml-100k/u2.base": "6c06f0b5df4b256da1a994f3ac66edc8da4d3f09bc9282df6b14d893366d703e",
+        "ml-100k/u2.test": "4de658d1e04ed9104629509a2e2528fce833ac8e048280183f1df167632038c3",
+        "ml-100k/u3.base": "afdc155c291c6edc41c0407e39d7462eb98d341e064f0b0a12175b80b3c4af5d",
+        "ml-100k/u3.test": "0f548b51c78327de4c156461d3e430b7e5579fe2b5681586a59416e48fd35f6d",
+        "ml-100k/u4.base": "219f0f4d40dfe9c5141d425f53fa91ee23ed275f14e280bbf1b50117afb064ca",
+        "ml-100k/u4.test": "7c02ad0a1e7ab1083c8b9d4b627203a051dd7b5eab46d99fa44de33470de8db9",
+        "ml-100k/u5.base": "a9574e59ce961eec2121627760b6e9b0974ce1637b3fe69ac32cb14a4bfab485",
+        "ml-100k/u5.test": "351cc52e0d15b6c721466276fc24671d40936899e3d01fadeaf312915b8c5634",
+        "ml-100k/ua.base": "67b5bcdb380c29f85d56a012ecd88612ae020f30a6730d117a334ee8203b91f2",
+        "ml-100k/ua.test": "d0497e202417720f57a184ec8c66be2d1afa4ff41bb53787c57b28d6bf79bc42",
+        "ml-100k/ub.base": "237254d253b6ad7de84f919d041055428646254f34ed8f562703c899430cd881",
+        "ml-100k/ub.test": "d54a72d05730d5892062734b2bec73e976f9b713d18c828a18b968d6cce442da"
+      },
+      "readme_sha256": "4883b8cf340ed0059971b33f56ad3adc88a40792108ebca3d24aafc4c82e8b52",
+      "download_receipt": {
+        "url": "https://files.grouplens.org/datasets/movielens/ml-100k.zip",
+        "accessed_utc": "2026-11-23T11:06:32.538146+00:00",
+        "sha256": "50d2a982c66986937beb9ffb3aa76efe955bf3d5c6b761f4e3a7cd717c6a3229"
+      }
+    }
+  }
+}

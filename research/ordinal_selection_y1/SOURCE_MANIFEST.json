@@ -1,0 +1,27 @@
+{
+  "repository": "https://github.com/baturyusuf/employee-performance-with-XAI",
+  "commit": "c7f7729ff1c944891e66eb2e42b9d1113a179a32",
+  "local_use": "user-authorized; public redistribution not cleared",
+  "files": [
+    {
+      "path": "src/models/ordinal_models_v3.py",
+      "sha256": "8df4bc881662fda56f56288da314c826733bda3fb72c658d6f2465d3464b7a8d"
+    },
+    {
+      "path": "src/models/canonical_models.py",
+      "sha256": "c1161f50cc3193461390b38407df77d4cf71e1924c9f295a47849923c0f6d874"
+    },
+    {
+      "path": "src/models/ordinal_evaluation_v3.py",
+      "sha256": "bc546632454696d96c64ec60285b31f729319405a645b97d89da9fe27daefb4e"
+    },
+    {
+      "path": "src/models/evaluate.py",
+      "sha256": "3dc16655c669cb71700c1c9354eacd02a1849d16e9b5c810089483fcf5664bd8"
+    },
+    {
+      "path": "src/models/task_schema.py",
+      "sha256": "e826ea0491e7021f5e718c85e7b858f02afdec338578a7fd391512e273c575e7"
+    }
+  ]
+}

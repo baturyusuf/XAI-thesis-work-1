@@ -1,0 +1,2 @@
+# Independent reviewer receipt
+GPT-6.1-Terra199d2c11-c6db-46a0-a197-5f1626fd844e; read-only review of Y1 code/protocol and aggregate results. Findings: source-vs-runtime grouping mismatch, absent source-family aggregation, incomplete run identity checks. Also conditional bootstrap/feasible-split limitations. Main coordinator addressed report/integrity issues without changing fitted models or frozen selection. Full responses synthesized in Y1_POSTPILOT_AUDIT.md. No raw data/predictions read and no experiment run by reviewer.

@@ -1,0 +1,181 @@
+{
+  "created_utc": "2026-11-23T11:39:12.991583+00:00",
+  "elapsed_seconds": 2.8076970000001893,
+  "status": "PASS",
+  "totals": {
+    "pass": 448,
+    "fail": 0
+  },
+  "checks": {
+    "freeze_digest": {
+      "pass": 1,
+      "fail": 0
+    },
+    "frozen_file_hash": {
+      "pass": 31,
+      "fail": 0
+    },
+    "runtime_versions": {
+      "pass": 1,
+      "fail": 0
+    },
+    "recorded_run_status_and_fit_count": {
+      "pass": 1,
+      "fail": 0
+    },
+    "run_freeze": {
+      "pass": 1,
+      "fail": 0
+    },
+    "candidate_grid": {
+      "pass": 1,
+      "fail": 0
+    },
+    "source_class_counts": {
+      "pass": 1,
+      "fail": 0
+    },
+    "source_view": {
+      "pass": 1,
+      "fail": 0
+    },
+    "source_features": {
+      "pass": 1,
+      "fail": 0
+    },
+    "frozen_selection_exact": {
+      "pass": 1,
+      "fail": 0
+    },
+    "audit_counts": {
+      "pass": 1,
+      "fail": 0
+    },
+    "repeat_structure": {
+      "pass": 1,
+      "fail": 0
+    },
+    "schedule_cardinality": {
+      "pass": 1,
+      "fail": 0
+    },
+    "inner_score_cardinality": {
+      "pass": 1,
+      "fail": 0
+    },
+    "npz_keys": {
+      "pass": 1,
+      "fail": 0
+    },
+    "npz_labels_groups": {
+      "pass": 1,
+      "fail": 0
+    },
+    "probability_array": {
+      "pass": 22,
+      "fail": 0
+    },
+    "outer_fold_count": {
+      "pass": 2,
+      "fail": 0
+    },
+    "outer_partition": {
+      "pass": 6,
+      "fail": 0
+    },
+    "outer_group_disjoint": {
+      "pass": 6,
+      "fail": 0
+    },
+    "outer_class_support": {
+      "pass": 6,
+      "fail": 0
+    },
+    "inner_fold_count": {
+      "pass": 6,
+      "fail": 0
+    },
+    "inner_partition": {
+      "pass": 12,
+      "fail": 0
+    },
+    "inner_group_disjoint": {
+      "pass": 12,
+      "fail": 0
+    },
+    "inner_class_support": {
+      "pass": 12,
+      "fail": 0
+    },
+    "inner_oof_coverage": {
+      "pass": 6,
+      "fail": 0
+    },
+    "selector_replay": {
+      "pass": 84,
+      "fail": 0
+    },
+    "selected_candidate_match": {
+      "pass": 84,
+      "fail": 0
+    },
+    "outer_oof_coverage": {
+      "pass": 2,
+      "fail": 0
+    },
+    "summary_metric_keys": {
+      "pass": 1,
+      "fail": 0
+    },
+    "summary_metrics_replay": {
+      "pass": 44,
+      "fail": 0
+    },
+    "independent_qwk_formula": {
+      "pass": 44,
+      "fail": 0
+    },
+    "policy_count": {
+      "pass": 1,
+      "fail": 0
+    },
+    "control_count": {
+      "pass": 1,
+      "fail": 0
+    },
+    "policy_metric_differences": {
+      "pass": 14,
+      "fail": 0
+    },
+    "policy_selection_counts": {
+      "pass": 14,
+      "fail": 0
+    },
+    "policy_bootstrap_replay": {
+      "pass": 14,
+      "fail": 0
+    },
+    "fixed_weight_metric_differences": {
+      "pass": 4,
+      "fail": 0
+    },
+    "fixed_weight_bootstrap_replay": {
+      "pass": 4,
+      "fail": 0
+    },
+    "no_automatic_go": {
+      "pass": 1,
+      "fail": 0
+    }
+  },
+  "failed_categories": [],
+  "versions": {
+    "python": "3.13.15",
+    "numpy": "2.5.5",
+    "scipy": "1.18.1",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1",
+    "threadpoolctl": "3.8.0"
+  },
+  "limits": "No fitting; 144 is recorded metadata. Selector replay trusts saved inner metrics; inner predictions not reconstructed. Scores and bootstrap replay reuse frozen helpers except independently computed QWK. Person independence and pre-fit timing not authenticated. Run hashes are post-run."
+}

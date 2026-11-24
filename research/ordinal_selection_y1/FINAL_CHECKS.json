@@ -1,0 +1,14 @@
+{
+  "utc": "2026-11-20T14:40:28.990807+00:00",
+  "required_reports": 7,
+  "dataset_audit_rows": 28,
+  "pytest_returncode": 0,
+  "pytest_result": "........................                                                 [100%]\n24 passed in 2.01s",
+  "python_files_parse_pass": 16,
+  "public_candidate_files": 47,
+  "simple_secret_screen": "PASS; not a comprehensive secret-history audit",
+  "raw_binary_output_screen": "PASS; ignored local only",
+  "protocol_freeze_sha256": "069564744276ddeaa0921b029be595c52cab243f8800fe16de15aa81f8fe8e03",
+  "commit_push": "none",
+  "full_benchmark": "NOT_STARTED"
+}

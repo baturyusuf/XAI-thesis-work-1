@@ -1,0 +1,43 @@
+{
+  "datasets": [
+    "restaurant",
+    "sushi",
+    "movielens100k"
+  ],
+  "seeds": [
+    20261124,
+    20261125
+  ],
+  "outer_folds": 3,
+  "inner_folds": 2,
+  "split_seed_attempts": 100,
+  "objectives": [
+    "qwk",
+    "mae",
+    "amae",
+    "mmae",
+    "macro_f1",
+    "rps",
+    "qwk_recall"
+  ],
+  "recall_floor": 0.2,
+  "tie_tolerance": 1e-12,
+  "po_C": [
+    0.1,
+    1.0
+  ],
+  "rf_depths": [
+    4,
+    null
+  ],
+  "rf_estimators": 100,
+  "po_max_iter": 1000,
+  "fit_threads": 1,
+  "bootstrap_replicates": 1000,
+  "selected_groups": {
+    "sushi": 500,
+    "movielens100k": 400
+  },
+  "selection_prefix": "Y1-real-extension-v1",
+  "minimum_endpoint_groups": 20
+}

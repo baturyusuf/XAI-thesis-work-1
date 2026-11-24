@@ -1,0 +1,34 @@
+{
+  "time_utc": "2026-11-20T09:44:40.581371+00:00",
+  "status": "PASS",
+  "dataset_checks": [
+    {
+      "dataset": "wine_red",
+      "status": "PASS",
+      "checks": "source/hash/arrays/groups/split/inner-only selection/outer-summary replay",
+      "fits_not_repeated": 144
+    },
+    {
+      "dataset": "wine_white",
+      "status": "PASS",
+      "checks": "source/hash/arrays/groups/split/inner-only selection/outer-summary replay",
+      "fits_not_repeated": 144
+    },
+    {
+      "dataset": "skillcraft",
+      "status": "PASS",
+      "checks": "source/hash/arrays/groups/split/inner-only selection/outer-summary replay",
+      "fits_not_repeated": 144
+    },
+    {
+      "dataset": "tae",
+      "status": "PASS",
+      "checks": "source/hash/arrays/groups/split/inner-only selection/outer-summary replay",
+      "fits_not_repeated": 144
+    }
+  ],
+  "total_pilot_fits": 576,
+  "validation_refits": 0,
+  "scientific_decision": "CONDITIONAL GO, not full-stage authorization",
+  "analysis_sha256": "ac621b0f415fd3a5e1ba32b3fc516e6a754ea7c44db54cb15cef126a60228aeb"
+}
