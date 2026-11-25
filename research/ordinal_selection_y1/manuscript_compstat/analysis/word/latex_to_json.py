@@ -242,6 +242,47 @@ def math_runs(s, sub=False, sup=False, bold=False):
     return merged
 
 
+# ------------------------------------------------------------------ title page
+ACCENTS = {'\\"{o}': 'ö', '\\"{u}': 'ü', '\\"{O}': 'Ö', '\\"{U}': 'Ü', '\\c{s}': 'ş', '\\c{S}': 'Ş',
+           '\\c{c}': 'ç', '\\c{C}': 'Ç', '\\u{g}': 'ğ', '\\.{I}': 'İ', '{\\i}': 'ı'}
+SUP = str.maketrans('0123456789', '⁰¹²³⁴⁵⁶⁷⁸⁹')
+
+
+def latex_accents(s):
+    for k, v in ACCENTS.items():
+        s = s.replace(k, v)
+    return s
+
+
+def title_page(raw, src):
+    """Author line, affiliations and notes for the Word title page, read from the sn-jnl author block."""
+    orcid = {m.group(1).strip(): m.group(2) for m in re.finditer(r'%% ORCID: (.+?) = (\S+)', latex_accents(raw))}
+    src = latex_accents(src)
+    authors, equal = [], None
+    for m in re.finditer(r'\\author(\*?)\[([^\]]*)\]\{\\fnm\{([^}]*)\} \\sur\{([^}]*)\}\}\\email\{([^}]*)\}'
+                         r'(\s*\\equalcont\{([^}]*)\})?', src):
+        name = latex_accents(m.group(3) + ' ' + m.group(4))
+        marks = m.group(2).translate(SUP) + ('*' if m.group(1) else '') + ('†' if m.group(6) else '')
+        authors.append({'name': name, 'marks': marks, 'email': m.group(5), 'corr': m.group(1) == '*'})
+        equal = m.group(7) or equal
+    affils = [m.group(1).translate(SUP) + ' ' + latex_accents(', '.join(m.group(2, 3, 4, 5)))
+              for m in re.finditer(r'\\affil\*?\[(\d+)\]\{\\orgdiv\{([^}]*)\}, \\orgname\{([^}]*)\}, '
+                                   r'\\orgaddress\{\\city\{([^}]*)\}, \\country\{([^}]*)\}\}\}', src)]
+    if not authors or not affils:
+        raise SystemExit('author block not parsed')
+    notes = ['*Corresponding author: ' + '; '.join(a['name'] + ', ' + a['email'] for a in authors if a['corr'])]
+    if equal:
+        notes.append('†' + equal)
+    others = [a for a in authors if not a['corr']]
+    if others:
+        notes.append('E-mail: ' + '; '.join(a['name'] + ', ' + a['email'] for a in others))
+    if orcid:
+        notes.append('ORCID: ' + '; '.join(n + ', https://orcid.org/' + o for n, o in orcid.items()))
+    line = ' · '.join(a['name'] + a['marks'] for a in authors)
+    return {'authors': [[{'t': line}]], 'affil': [[{'t': a}] for a in affils], 'notes': [[{'t': n}] for n in notes],
+            'creator': ', '.join(a['name'] for a in authors)}
+
+
 # ------------------------------------------------------------------ text -> runs
 LABELS = {}
 
@@ -262,7 +303,8 @@ def plain_fix(t):
 
 def text_runs(s, highlight_placeholders=False):
     """Paragraph LaTeX -> runs. Handles citations, refs, emph, inline math, ensuremath."""
-    s = expand_macros(s)
+    s = latex_accents(expand_macros(s))
+    s = re.sub(r'\\url\{([^{}]*)\}', lambda m: m.group(1), s)
     s = re.sub(r'\\label\{[^}]*\}', '', s)
     s = re.sub(r'\\cite(p|t|alp)(?:\[([^\]]*)\])?(?:\[([^\]]*)\])?\{([^}]*)\}',
                lambda m: cite('cite' + m.group(1), (m.group(2) or '').strip(), (m.group(3) or '').strip(), m.group(4)), s)
@@ -414,15 +456,14 @@ def number_labels(body):
 
 
 def parse_main(src):
+    raw = src
     src = strip_comments_keep_notes(src)
     doc = {'blocks': []}
     B = doc['blocks']
     title = re.search(r'\\title\[([^\]]*)\]\{([^}]*)\}', src)
     doc['running_title'] = title.group(1)
     doc['title'] = title.group(2)
-    doc['authors'] = [text_runs(a, True) for a in ['[First name] [Surname]\u00b9*', '[First name] [Surname]\u00b9']]
-    doc['affil'] = text_runs('\u00b9[Department], [Institution], [City], [Country]', True)
-    doc['email'] = text_runs('*Corresponding author: [corresponding e-mail]', True)
+    doc.update(title_page(raw, src))
     abstract = re.search(r'\\abstract\{(.*?)\}\n\n\\keywords\{(.*?)\}', src, flags=re.S)
     doc['abstract'] = text_runs(squash(abstract.group(1)))
     doc['keywords'] = abstract.group(2)
@@ -565,7 +606,8 @@ def format_ref(e, key=None):
 def parse_supplement(src):
     src = re.sub(r'(?<!\\)%.*', '', src)
     doc = {'blocks': [], 'title': 'Supplementary Information',
-           'subtitle': re.search(r'\\large ([^}]*)\}', src).group(1).strip()}
+           'subtitle': re.search(r'\\large ([^}]*)\}', src).group(1).strip(),
+           'authors_line': re.search(r'\\author\{([^}]*)\}', latex_accents(src)).group(1).replace(' \\and ', ' · ')}
     body = src[src.index('\\maketitle') + len('\\maketitle'):src.index('\\end{document}')]
     number_labels(body)
     B = doc['blocks']

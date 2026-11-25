@@ -2,7 +2,7 @@
 
 Tarih: 2026-11-24. Branch: `research/q3-journal-selection`. Bu klasör, Y1 çalışmasının Computational Statistics (Springer) için hazırlanmış makalesini içerir. Gönderim sırası Computational Statistics → PAA → JoC; dergi bazlı değişiklikler `JOURNAL_CASCADE_TR.md` dosyasında.
 
-Makale dört aşamanın sonuçlarına dayanıyor: v1, gate-v2, M1 ve önceden belirlenmiş sağlamlık aşaması (aşama 4, M2).
+Makale beş aşamanın sonuçlarına dayanıyor: v1, gate-v2, M1, önceden belirlenmiş sağlamlık aşaması (aşama 4, M2) ve public repoda ön kayda alınmış doğrulama aşaması (aşama 5, M5).
 - **M1.** Fitleri `research/ordinal-y1-m1-extension` dalında çalıştırıldı; bu dalda yalnızca kayıtlı tahminleri okundu.
 - **Aşama 4.** Bu dalda `../robustness_m2/` altında çalıştırıldı. Protokol, hipotezler (H1–H5, S1–S3) ve kod, ilk fitten önce SHA-256 ve UTC zaman damgasıyla donduruldu (`FREEZE.json`). Yerel bir dondurma; dış kayıt yok.
 - **Fit sayısı.** 24 aday ve 3 aile (PO, RF, gradient boosting) ile 6.048 gerçek veri fiti, 1.440 simülasyon fiti.
@@ -13,11 +13,11 @@ Makale dört aşamanın sonuçlarına dayanıyor: v1, gate-v2, M1 ve önceden be
 |---|---|
 | `main.tex` | Ana makale (Springer Nature `sn-jnl` şablonu, yazar-yıl atıf stili `sn-mathphys-ay`) |
 | `supplement.tex` | Ek Bilgiler (standart `article` sınıfı; her LaTeX kurulumunda derlenir) |
-| `refs.bib` | Kaynakça. 43 kayıt; DOI'li olanların hepsi Crossref/DataCite'tan doğrulandı (`analysis/out/crossref_bibliography*.json`) |
+| `refs.bib` | Kaynakça. 49 kayıt; DOI'li olanların hepsi Crossref/DataCite'tan doğrulandı (`analysis/out/crossref_bibliography*.json`) |
 | `numbers.tex` | Metindeki her sayının makrosu. **Elle düzenlemeyin**; `analysis/make_tables.py` üretir |
 | `tables/` | Analiz çıktısından otomatik üretilen tablolar |
 | `figures/` | Şekiller (PDF + PNG) |
-| `cover_letter.txt` | Editöre ön yazı (köşeli parantezli yerler doldurulacak) |
+| `cover_letter.txt` | Editöre ön yazı (dolduruldu, tarih 25 Kasım 2026) |
 | `submission/` | Editorial Manager için alt klasörsüz düz paket (ana makale) |
 | `supplement_package/` | Ek Bilgiler için düz paket |
 | `analysis/` | M3 analizi, şekil, tablo ve kontrol betikleri; `analysis/out/` yalnız toplu (aggregate) sonuçları içerir |
@@ -26,7 +26,7 @@ Makale dört aşamanın sonuçlarına dayanıyor: v1, gate-v2, M1 ve önceden be
 
 Makalenin sorusu: aynı aday havuzunda hangi ölçütle model seçildiğinde (QWK, MAE, AMAE, MMAE, macro-F1, RPS, uç sınıf recall tabanlı QWK) uç sınıflara ne oluyor?
 
-Kapsam: **10 birincil görev (9 kaynak)** ve **4 kontrol görevi**. Aşama 1–3'te 2.160 gerçek fit ve 480 simülasyon fiti var; aşama 4 ile toplam 10.128 fit. 8 ligli eski SkillCraft "superseded" olarak ek bilgilerde.
+Kapsam: **10 birincil görev (9 kaynak)** ve **4 kontrol görevi**. Aşama 1–3'te 2.160 gerçek fit ve 480 simülasyon fiti var; aşama 4 ile toplam 10.128, aşama 5 ile toplam 20.496 fit. 8 ligli eski SkillCraft "superseded" olarak ek bilgilerde.
 
 Ana bulgular:
 1. **Seçim ölçütü sınıf ağırlığını belirliyor.** "Balanced" seçme oranı MAE'de 0,04, RPS'de 0,00, MMAE'de 0,96.
@@ -73,19 +73,20 @@ Tekrar üretilebilirlik paketi `reproducibility/` klasöründe: kaynak, DOI, lis
 
 ## Word sürümü (`word/`)
 
-Dergi Word dosyasını da kabul ediyor. `word/` klasöründe dört öğe var:
+Dergi Word dosyasını da kabul ediyor. `word/` klasöründe beş öğe var:
 
 | Dosya | İçerik |
 |---|---|
-| `manuscript.docx` | Ana makale, 31 sayfa |
+| `manuscript.docx` | Ana makale, 32 sayfa |
 | `supplementary_information.docx` | Ek Bilgiler; geniş tablolar nedeniyle yatay sayfa, 20 sayfa |
+| `supplementary_information.pdf` | Ek Bilgiler'in Word'den alınmış PDF'i; Editorial Manager'a "Supplementary Material" olarak bu yüklenir |
 | `cover_letter.docx` | Editöre ön yazı |
 | `figures/Fig1–Fig6` (.pdf ve .png) | Şekiller, makaledeki numaralarıyla; dergi ayrı şekil dosyası isterse |
 
 Word dosyalarının özellikleri:
 - **Aynı kaynaktan üretiliyor.** Word dosyaları LaTeX kaynağından otomatik oluşturuluyor, bu yüzden sayılar ve metin iki sürümde birebir aynı.
 - **Biçim.** Denklemler Word'ün kendi denklem nesneleri (düzenlenebilir). Satır numaraları ve sayfa numaraları var. Times New Roman 12 pt, 1,5 satır aralığı.
-- **Doldurulacak yerler sarı vurgulu.** Yazar adları, kurum, e-posta, beyanlar ve yapay zekâ kullanım notu.
+- **Yazar bilgileri ve beyanlar dolu** (2026-11-25). Başlık sayfası `main.tex`'teki yazar bloğundan üretiliyor; ORCID'ler `%% ORCID:` yorum satırlarından okunuyor.
 - **Doğrulama.** Üç dosya da Office XML şema doğrulamasından geçti. Word'de PDF'e çevrilip sayfa sayfa görsel olarak kontrol edildi.
 
 **Önemli:** Word dosyasında doğrudan düzenleme yaparsanız, LaTeX sürümüyle senkronizasyon kopar. Sayı veya metin değişikliklerini `main.tex` üzerinde yapıp yeniden üretmek daha güvenli. Yeniden üretmek için:
@@ -107,14 +108,16 @@ Overleaf'te derlemek için:
 
 İsterseniz bu bilgisayara TinyTeX ve Springer şablonunu kurup PDF'i burada da derleyebilirim. Bu, dosya indirme ve kurulum gerektirdiği için önce onayınızı isterim.
 
-## Gönderim öncesi sizin doldurmanız gerekenler
+## Gönderim öncesi durum
 
-- [ ] Yazar adları, kurum, e-posta (`main.tex` başı, `cover_letter.txt`)
-- [ ] **Yapay zekâ kullanım beyanı.** Dergi, LLM kullanımının Methods bölümünde belgelenmesini istiyor. Şu an genel bir ifade var; kullanılan araçları (Zed'deki ajanlar, Claude vb.) ve sürümlerini siz netleştirin.
-- [ ] Funding, Competing interests, Author contributions
-- [ ] Etik: kurumunuzun ikincil açık veri analizi için beyan veya muafiyet gerektirip gerektirmediği
-- [ ] Code availability: kod deposu URL'si. PO modelinin kodu kendi `employee-performance-with-XAI` deponuzdan geliyor; açık lisans kararı sizde.
-- [ ] Ön yazıdaki tarih ve imza
+- [x] Yazarlar, kurumlar, e-postalar, ORCID'ler ve eşit katkı notu (`main.tex`, Ek Bilgiler, ön yazı)
+- [x] Yapay zekâ kullanım beyanı Methods'ta: "Claude, Anthropic"
+- [x] Funding, Competing interests, Ethics, Author contributions (CRediT)
+- [x] Code availability: repo linki, `compstat-v1` etiketi ve ön kayıt commit'i `66e426e`. PO modelinin kodu (`employee-performance-with-XAI`) talep üzerine.
+- [x] Ön yazıda tarih ve imza
+- [ ] M1 dalını (`research/ordinal-y1-m1-extension`) bu dala birleştirmek; Code availability "tüm aşamaların kodu" diyor
+- [ ] Commit, `compstat-v1` etiketi ve push. Etiket GitHub'da olmadan gönderim yapılmamalı; metin bu etikete atıf yapıyor.
+- [ ] Editorial Manager'da gönderim: https://www.editorialmanager.com/cost/
 
 ## Dergi kurallarına uyum (submission guidelines, 2026-11-24'te okundu)
 

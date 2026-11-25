@@ -210,8 +210,10 @@ function buildMain(d) {
   const kids = [];
   kids.push(new Paragraph({ style: 'Title', children: [T(d.title, { bold: true, size: 32 })] }));
   d.authors.forEach((a) => kids.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 0 }, children: runs(a) })));
-  kids.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 120, after: 0 }, children: runs(d.affil, { size: 22 }) }));
-  kids.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 240 }, children: runs(d.email, { size: 22 }) }));
+  d.affil.forEach((a, i) => kids.push(new Paragraph({ alignment: AlignmentType.CENTER,
+    spacing: { before: i === 0 ? 120 : 0, after: 0 }, children: runs(a, { size: 22 }) })));
+  d.notes.forEach((a, i) => kids.push(new Paragraph({ alignment: AlignmentType.CENTER,
+    spacing: { before: i === 0 ? 160 : 0, after: i === d.notes.length - 1 ? 240 : 0 }, children: runs(a, { size: 20 }) })));
   kids.push(new Paragraph({ spacing: { before: 240, after: 60 }, children: [T('Abstract', { bold: true })] }));
   kids.push(new Paragraph({ alignment: AlignmentType.JUSTIFIED, children: runs(d.abstract) }));
   kids.push(new Paragraph({ spacing: { before: 120, after: 240 }, children: [T('Keywords ', { bold: true }), T(d.keywords.split(',').map((s) => s.trim()).join(' · '))] }));
@@ -247,7 +249,7 @@ function buildMain(d) {
     kids.push(new Paragraph({ indent: { left: 360, hanging: 360 }, spacing: { after: 80, line: 276 }, children: runs(r, { size: 22 }) }));
   }
   return new Document({
-    creator: '[Authors]', title: d.title, styles, numbering,
+    creator: d.creator, title: d.title, styles, numbering,
     sections: [{ properties: { page: { size: A4, margin: { top: MARGIN, bottom: MARGIN, left: MARGIN, right: MARGIN } },
       lineNumbers: { countBy: 1, restart: LineNumberRestartFormat.CONTINUOUS } }, footers: footer(), children: kids }],
   });
@@ -258,7 +260,8 @@ function buildSupplement(d) {
   const TW = A4.height - 2 * MARGIN;
   const kids = [
     new Paragraph({ style: 'Title', children: [T(d.title, { bold: true, size: 32 })] }),
-    new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 360 }, children: [T(d.subtitle, { size: 24 })] }),
+    new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 120 }, children: [T(d.subtitle, { size: 24 })] }),
+    new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 360 }, children: [T(d.authors_line, { size: 22 })] }),
   ];
   for (const b of d.blocks) {
     if (b.k === 'h1') kids.push(new Paragraph({ heading: HeadingLevel.HEADING_1, children: [T(b.text, { bold: true, size: 26 })] }));
@@ -266,7 +269,7 @@ function buildSupplement(d) {
       children: [...(b.runin ? [T(b.runin.replace(/\.$/, '') + '. ', { bold: true })] : []), ...runs(b.runs, { size: 22 })] }));
     else if (b.k === 'table') { kids.push(caption('Table', b.num, b.caption)); kids.push(table(b, TW, true)); kids.push(new Paragraph({ children: [] })); }
   }
-  return new Document({ creator: '[Authors]', title: 'Supplementary Information', styles, numbering,
+  return new Document({ creator: d.authors_line.replace(' · ', ', '), title: 'Supplementary Information', styles, numbering,
     sections: [{ properties: { page: { size: { width: A4.width, height: A4.height, orientation: PageOrientation.LANDSCAPE },
       margin: { top: MARGIN, bottom: MARGIN, left: MARGIN, right: MARGIN } } }, footers: footer(), children: kids }] });
 }

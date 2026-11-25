@@ -14,6 +14,7 @@
 \usepackage{booktabs}
 \usepackage{xcolor}
 \usepackage{textcomp}
+\usepackage{url}
 
 \theoremstyle{thmstyleone}
 \newtheorem{proposition}{Proposition}
@@ -30,10 +31,19 @@
 
 \title[Which metric should choose the ordinal model?]{Which metric should choose the model? Selection criteria, class weighting and endpoint recall in tabular ordinal classification}
 
-%% AUTHORS: replace the placeholders below before submission.
-\author*[1]{\fnm{[First name]} \sur{[Surname]}}\email{[corresponding e-mail]}
-\author[1]{\fnm{[First name]} \sur{[Surname]}}
-\affil*[1]{\orgdiv{[Department]}, \orgname{[Institution]}, \orgaddress{\city{[City]}, \country{[Country]}}}
+%% ORCID: Muhammed Yusuf Batur = 0009-0004-6448-5622
+%% ORCID: Mehmet G\"{o}kt\"{u}rk = 0000-0002-8030-8923
+\author*[1,2]{\fnm{Muhammed Yusuf} \sur{Batur}}\email{baturmuhammedyusuf@gmail.com}
+\equalcont{These authors contributed equally to this work and share first authorship.}
+
+\author[3]{\fnm{Mehmet} \sur{G\"{o}kt\"{u}rk}}\email{gokturk@gtu.edu.tr}
+\equalcont{These authors contributed equally to this work and share first authorship.}
+
+\affil*[1]{\orgdiv{Department of Computer Science, Faculty of Engineering and Natural Sciences}, \orgname{Istanbul Rumeli University}, \orgaddress{\city{Istanbul}, \country{T\"{u}rkiye}}}
+
+\affil[2]{\orgdiv{Department of Computer Engineering, Graduate School}, \orgname{Gebze Technical University}, \orgaddress{\city{Kocaeli}, \country{T\"{u}rkiye}}}
+
+\affil[3]{\orgdiv{Department of Computer Engineering, Faculty of Engineering}, \orgname{Gebze Technical University}, \orgaddress{\city{Kocaeli}, \country{T\"{u}rkiye}}}
 
 \abstract{Ordinal classifiers are usually tuned by maximizing one validation criterion, often the quadratically weighted kappa (QWK), but what this does to the extreme categories is rarely examined. We let seven criteria (QWK, mean absolute error (MAE), average and maximum class-wise MAE (AMAE, MMAE), macro-F1, the ranked probability score (RPS) and QWK with an endpoint-recall floor) select from fixed candidate pools, with and without class-balanced weights, under grouped nested cross-validation. We did this on \NPrimary{} real tabular tasks and \NControls{} controls, in a pre-specified stage with 24 candidates and a simulation, and in a publicly pre-registered stage with four new sources, an ordinal model family and median decoding. The criterion largely decided whether weighting was adopted: in every stage MAE and RPS almost never chose balanced weights and MMAE almost always did. Weighting raised the recall of endpoint categories whose share was below $1/K$ and lowered it for most endpoints above $1/K$. We prove that prior correction cannot lower the recall of a rarest category; this held in all \VtwobN{} pre-registered comparisons. AMAE selection followed the same rule on the original tasks but not on the new sources. A constant middle-category prediction attains a data-independent normalized AMAE of $(K+1)/(4K)$ with zero endpoint recall and beat every fitted candidate in four tasks. No criterion was close to optimal on all metrics. A recall floor protected the endpoints when feasible; otherwise an AMAE fallback lost up to \VfourAllMinOrigAbs{} in endpoint recall. Of \PredAllN{} pre-specified predictions, \PredAllOk{} were supported.}
 
@@ -180,7 +190,7 @@ Part B is a simulation designed for the rule. It uses the latent model of Sectio
 
 \subsection{Pre-registered validation stage}\label{sec:stage5}
 
-Stage 4 reused the tasks on which the claims had been formed. Stage 5 therefore tested them on new sources, with an ordinal model family and a second decoding rule. Its protocol, code, data hashes and split assignments were committed and pushed to the public repository of this study before any stage-5 model was fitted. Thirteen further candidate sources were screened with the stage-3 eligibility rules, inspecting only label marginals and group counts. Four were eligible: alcohol use in the Drug Consumption data ($K=7$; \citealp{Fehrman2017,UCIDrug}), chosen without looking at outcomes as the first substance in the source's variable list; performance in an entrance examination ($K=4$; \citealp{UCIEntrance}); and self-rated general health in NHANES 2017--2018 ($K=5$; \citealp{NHANES2017}) and in the NHIS 2019 sample adult file ($K=5$; \citealp{NHIS2019}), the latter subsampled to 5000 adults by the stage-3 rule. Of the nine blocked sources, three failed the licence, label or order rules before download and six failed after download because an endpoint category had fewer than 20 distinct groups (Supplementary Information).
+Stage 4 reused the tasks on which the claims had been formed. Stage 5 therefore tested them on new sources, with an ordinal model family and a second decoding rule. Its protocol, code, data hashes and split assignments were committed and pushed to the public repository of this study (commit \texttt{66e426e}, 24 November 2026; see Code availability) before any stage-5 model was fitted. Thirteen further candidate sources were screened with the stage-3 eligibility rules, inspecting only label marginals and group counts. Four were eligible: alcohol use in the Drug Consumption data ($K=7$; \citealp{Fehrman2017,UCIDrug}), chosen without looking at outcomes as the first substance in the source's variable list; performance in an entrance examination ($K=4$; \citealp{UCIEntrance}); and self-rated general health in NHANES 2017--2018 ($K=5$; \citealp{NHANES2017}) and in the NHIS 2019 sample adult file ($K=5$; \citealp{NHIS2019}), the latter subsampled to 5000 adults by the stage-3 rule. Of the nine blocked sources, three failed the licence, label or order rules before download and six failed after download because an endpoint category had fewer than 20 distinct groups (Supplementary Information).
 
 All 18 task runs (the four new tasks and the 14 tasks of stages 1--3, on their frozen splits) used the 24 stage-4 candidates and a fourth family. The Frank--Hall family (FH; \citealp{Frank2001}) fits $K-1$ binary gradient-boosting models for $P(y>k)$ with the four HGB settings and combines them by differences; its balanced version passes the $K$-class balanced weights to every binary model. This gives \FitsStageFive{} fits. Inner out-of-fold probabilities were saved, so that the whole selection could be repeated with median decoding, which predicts the smallest $k$ with cumulative probability at least $0.5$ and minimizes the expected absolute error.
 
@@ -190,8 +200,7 @@ The predictions (Table~\ref{tab:stage5}) fall into three parts. Part A concerns 
 
 All analyses used Python~3.13 with NumPy~2.5.5, pandas~3.1.1, SciPy~1.18.1 and scikit-learn~1.9.1 \citep{Pedregosa2011}, one thread per fit and no GPU. Stages 1--3 comprise \NRealFits{} real-data fits (fifteen task runs, including the control and the superseded task) and 480 simulation fits; stage 4 added \FitsStageFour{} real-data and \FitsSimFour{} simulation fits and stage 5 \FitsStageFive{} real-data fits, \FitsTotalAllFive{} in total. HGB is scikit-learn's \texttt{HistGradientBoostingClassifier}. All stage-4 and stage-5 fits completed; no candidate, task or criterion was dropped. Rerunning the 14 tasks of stages 1--3 in stage 5 reproduced the stage-4 predictions of the 24 shared candidates exactly (largest absolute difference \RoneDiff{}). Before analysis, an independent re-implementation of all metrics reproduced the stored values of QWK, normalized AMAE, RPS, endpoint recall and macro-F1 for every selected policy and repeat (\NRecompute{} comparisons; largest absolute difference \RecomputeMaxDiff{}). Tables and the numbers quoted in the text are generated by script from the analysis outputs.
 
-%% AUTHORS: name the tools and versions you used and confirm this description.
-Large-language-model-based assistants were used to implement analysis scripts under the authors' specifications, to screen literature and to draft parts of the manuscript text. All code, results and text were reviewed by the authors, who take full responsibility for the content.
+Large-language-model-based assistants (Claude, Anthropic) were used to implement analysis scripts under the authors' specifications, to screen literature and to draft parts of the manuscript text. All code, results and text were reviewed by the authors, who take full responsibility for the content.
 
 %% =====================================================================
 \section{Results}\label{sec:results}
@@ -397,20 +406,19 @@ In tabular ordinal classification, the criterion used for model selection is not
 \bmhead{Supplementary information}
 The online Supplementary Information contains full per-policy metrics for all tasks (Table~S1), all policy contrasts with bootstrap intervals (Table~S2), all fixed-hyperparameter controls (Table~S3), the simulation results (Table~S4), Friedman ranks for all evaluation metrics (Table~S5), the stage-4 weighting choices, regret matrix and simulation results (Tables~S6--S8), the stage-5 tasks (Table~S9), and data provenance, feature definitions and the stage-4 and stage-5 protocols.
 
-%% AUTHORS: complete or confirm every statement below.
 \section*{Statements and Declarations}
 
-\bmhead{Funding} [To be completed by the authors, e.g.\ ``The authors did not receive support from any organization for the submitted work.'']
+\bmhead{Funding} The authors did not receive support from any organization for the submitted work.
 
-\bmhead{Competing interests} [To be confirmed by the authors, e.g.\ ``The authors have no relevant financial or non-financial interests to disclose.'']
+\bmhead{Competing interests} The authors have no relevant financial or non-financial interests to disclose.
 
-\bmhead{Ethics approval and consent to participate} This study is a secondary analysis of publicly documented, de-identified data sets; no new data were collected from human participants. [Authors: confirm with your institution whether a formal statement or exemption is required.]
+\bmhead{Ethics approval and consent to participate} This study is a secondary analysis of publicly documented, de-identified data sets; no new data were collected from human participants.
 
 \bmhead{Data availability} The wine, SkillCraft, Restaurant, TAE, CTG, HCV, Cirrhosis, Diabetes130, Student, Drug Consumption and Entrance Examination data are available from the UCI Machine Learning Repository under CC BY 4.0; the NHANES 2017--2018 and NHIS 2019 public-use files are available from the National Center for Health Statistics under its data user agreement; SUPPORT2 is available from the Vanderbilt Department of Biostatistics data repository, which grants permission for use; NPHA is distributed by ICPSR. The Sushi and MovieLens-100k data permit research use but not redistribution and must be obtained from their providers \citep{Kamishima2003,Harper2015}. Scripts that reproduce the task definitions, subsampling and splits from the original files are provided with the code. Aggregate results (all tables and figures) are included in the Supplementary Information.
 
-\bmhead{Code availability} [Authors: insert the repository URL or ``available from the corresponding author on reasonable request''. The proportional-odds implementation is taken from the authors' earlier code base; confirm the licence before public release.]
+\bmhead{Code availability} The code for all stages, the protocols and freeze records of stages 3 to 5, and the aggregate results are available at \url{https://github.com/baturyusuf/XAI-thesis-work-1} (directory \texttt{research/ordinal\_selection\_y1}, tag \texttt{compstat-v1}). The stage-5 protocol was pushed in commit \texttt{66e426e} before any stage-5 model was fitted. The proportional-odds implementation is taken from the authors' earlier code base and is available from the corresponding author on request.
 
-\bmhead{Author contributions} [To be completed by the authors.]
+\bmhead{Author contributions} Muhammed Yusuf Batur: conceptualization, methodology, software, data curation, formal analysis, investigation, validation, visualization, project administration, writing -- original draft, writing -- review and editing. Mehmet G\"{o}kt\"{u}rk: conceptualization, methodology, formal analysis, investigation, validation, visualization, supervision, project administration, writing -- original draft, writing -- review and editing. Both authors contributed equally to the conceptual development, methodological design, scientific evaluation, interpretation of the results and preparation of the manuscript, and share first authorship. Both authors read and approved the final manuscript.
 
 \bibliography{refs}
 
