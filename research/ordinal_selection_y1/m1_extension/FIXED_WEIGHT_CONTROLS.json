@@ -1,0 +1,1150 @@
+[
+  {
+    "dataset": "ctg",
+    "family": "po",
+    "fixed_h": 0,
+    "balanced_minus_none": {
+      "qwk": -0.03122605532283884,
+      "macro_f1": 0.024157302120703772,
+      "normalized_mae": 0.03010348071495767,
+      "normalized_amae": -0.06756048114924659,
+      "normalized_mmae": -0.13911787365177197,
+      "rps": 0.022276364223784324,
+      "recall_low": -0.14712990936555886,
+      "recall_high": 0.21874999999999994,
+      "recall_extreme": 0.03581004531722054,
+      "ece": 0.04602557069652602,
+      "cumulative_ece": 0.07538217235429225,
+      "qwk_observed": 0.061618062088428974,
+      "qwk_expected": 0.13829582935461066
+    },
+    "endpoint_ci": {
+      "low": -0.14712990936555892,
+      "high": 0.21875,
+      "mean": 0.03581004531722054,
+      "low_ci": [
+        -0.18661298799227666,
+        -0.11199174583320924
+      ],
+      "high_ci": [
+        0.1206896551724138,
+        0.3093568002740665
+      ],
+      "mean_ci": [
+        -0.015253265016944427,
+        0.08304465507068416
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "ctg",
+    "family": "po",
+    "fixed_h": 1,
+    "balanced_minus_none": {
+      "qwk": -0.015827255732851986,
+      "macro_f1": 0.028175036950413845,
+      "normalized_mae": 0.024694261523988716,
+      "normalized_amae": -0.06838695211627774,
+      "normalized_mmae": -0.15152638674884436,
+      "rps": 0.019383673602647176,
+      "recall_low": -0.12930513595166165,
+      "recall_high": 0.22443181818181818,
+      "recall_extreme": 0.04756334111507826,
+      "ece": 0.03277845392340729,
+      "cumulative_ece": 0.05967978339770592,
+      "qwk_observed": 0.04797742238946377,
+      "qwk_expected": 0.12802873353162786
+    },
+    "endpoint_ci": {
+      "low": -0.12930513595166163,
+      "high": 0.22443181818181818,
+      "mean": 0.047563341115078275,
+      "low_ci": [
+        -0.16436079557347263,
+        -0.09731769541492453
+      ],
+      "high_ci": [
+        0.1283585740913327,
+        0.3116274770777876
+      ],
+      "mean_ci": [
+        -0.0007862035436296568,
+        0.08920465370900098
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "ctg",
+    "family": "rf",
+    "fixed_h": 0,
+    "balanced_minus_none": {
+      "qwk": -0.029855803725844843,
+      "macro_f1": 0.006496674281908699,
+      "normalized_mae": 0.019755409219190972,
+      "normalized_amae": -0.0760464963139511,
+      "normalized_mmae": -0.15198863636363635,
+      "rps": 0.024361722330849763,
+      "recall_low": -0.1069486404833837,
+      "recall_high": 0.1676136363636364,
+      "recall_extreme": 0.03033249794012638,
+      "ece": 0.07363060552252472,
+      "cumulative_ece": 0.08090199692377179,
+      "qwk_observed": 0.059266227657572904,
+      "qwk_expected": 0.14027862711277916
+    },
+    "endpoint_ci": {
+      "low": -0.10694864048338369,
+      "high": 0.16761363636363635,
+      "mean": 0.03033249794012633,
+      "low_ci": [
+        -0.1471855435270824,
+        -0.07694083150262407
+      ],
+      "high_ci": [
+        0.1079958297992649,
+        0.2363667076167076
+      ],
+      "mean_ci": [
+        -0.00426999145343979,
+        0.07016242374217174
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "ctg",
+    "family": "rf",
+    "fixed_h": 1,
+    "balanced_minus_none": {
+      "qwk": -0.033526139859727355,
+      "macro_f1": 0.0014327622244794669,
+      "normalized_mae": 0.010936030103480716,
+      "normalized_amae": -0.029652521425013623,
+      "normalized_mmae": -0.061517719568567025,
+      "rps": 0.008864349321039997,
+      "recall_low": -0.04864048338368582,
+      "recall_high": 0.08806818181818188,
+      "recall_extreme": 0.019713849217248003,
+      "ece": 0.017362653364620406,
+      "cumulative_ece": 0.031419632704098865,
+      "qwk_observed": 0.039746001881467555,
+      "qwk_expected": 0.06772575176841134
+    },
+    "endpoint_ci": {
+      "low": -0.048640483383685804,
+      "high": 0.08806818181818182,
+      "mean": 0.01971384921724801,
+      "low_ci": [
+        -0.0703446711303712,
+        -0.030966954806830087
+      ],
+      "high_ci": [
+        0.03702574525745257,
+        0.16765108783239321
+      ],
+      "mean_ci": [
+        -0.009512885708647051,
+        0.0589675640729125
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "hcv",
+    "family": "po",
+    "fixed_h": 0,
+    "balanced_minus_none": {
+      "qwk": -0.053023053435870326,
+      "macro_f1": 0.07172278896757883,
+      "normalized_mae": 0.07894736842105263,
+      "normalized_amae": -0.15156934021263288,
+      "normalized_mmae": -0.3224206349206349,
+      "rps": 0.07694391919961446,
+      "recall_low": -0.33677298311444653,
+      "recall_high": 0.050000000000000044,
+      "recall_extreme": -0.14338649155722316,
+      "ece": 0.11794846752068999,
+      "cumulative_ece": 0.15693130863534344,
+      "qwk_observed": 0.15460526315789475,
+      "qwk_expected": 0.2793022853185594
+    },
+    "endpoint_ci": {
+      "low": -0.33677298311444653,
+      "high": 0.05,
+      "mean": -0.14338649155722327,
+      "low_ci": [
+        -0.37710544054415657,
+        -0.3017192024216899
+      ],
+      "high_ci": [
+        -0.06666666666666667,
+        0.17860714285714283
+      ],
+      "mean_ci": [
+        -0.2048908476825871,
+        -0.07723162552289373
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "hcv",
+    "family": "po",
+    "fixed_h": 1,
+    "balanced_minus_none": {
+      "qwk": -0.11107916722050304,
+      "macro_f1": 0.022212743568647053,
+      "normalized_mae": 0.08223684210526316,
+      "normalized_amae": -0.11168401381816018,
+      "normalized_mmae": -0.21130952380952378,
+      "rps": 0.0717693577952029,
+      "recall_low": -0.3217636022514071,
+      "recall_high": 0.033333333333333326,
+      "recall_extreme": -0.14421513445903694,
+      "ece": 0.10010881940810998,
+      "cumulative_ece": 0.14859707026269792,
+      "qwk_observed": 0.21052631578947367,
+      "qwk_expected": 0.2623571675900279
+    },
+    "endpoint_ci": {
+      "low": -0.32176360225140715,
+      "high": 0.03333333333333333,
+      "mean": -0.14421513445903691,
+      "low_ci": [
+        -0.3595505617977528,
+        -0.2875809414219961
+      ],
+      "high_ci": [
+        -0.0690270935960591,
+        0.15388888888888885
+      ],
+      "mean_ci": [
+        -0.1987977738049938,
+        -0.08196754275872108
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "hcv",
+    "family": "rf",
+    "fixed_h": 0,
+    "balanced_minus_none": {
+      "qwk": 0.04605896335752235,
+      "macro_f1": 0.07220422721646791,
+      "normalized_mae": 0.006304824561403511,
+      "normalized_amae": -0.12774055213079605,
+      "normalized_mmae": -0.24404761904761907,
+      "rps": 0.027999808782779433,
+      "recall_low": -0.058161350844277704,
+      "recall_high": 0.06666666666666676,
+      "recall_extreme": 0.004252657911194502,
+      "ece": 0.13328809722171941,
+      "cumulative_ece": 0.0916079941469523,
+      "qwk_observed": 0.0024671052631578816,
+      "qwk_expected": 0.21458405470914138
+    },
+    "endpoint_ci": {
+      "low": -0.058161350844277676,
+      "high": 0.06666666666666667,
+      "mean": 0.004252657911194495,
+      "low_ci": [
+        -0.07722381126636446,
+        -0.041436334030443965
+      ],
+      "high_ci": [
+        -0.05772058823529412,
+        0.1875
+      ],
+      "mean_ci": [
+        -0.055609306985724555,
+        0.0667855325939002
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "hcv",
+    "family": "rf",
+    "fixed_h": 1,
+    "balanced_minus_none": {
+      "qwk": 0.06347908656429041,
+      "macro_f1": 0.07832696117777993,
+      "normalized_mae": -0.006304824561403511,
+      "normalized_amae": -0.08159089386223536,
+      "normalized_mmae": -0.10317460317460322,
+      "rps": 0.008416279801788877,
+      "recall_low": -0.014071294559099445,
+      "recall_high": 0.10000000000000009,
+      "recall_extreme": 0.04296435272045035,
+      "ece": 0.07151218041916027,
+      "cumulative_ece": 0.04226655689680841,
+      "qwk_observed": -0.04851973684210527,
+      "qwk_expected": 0.11297827216066503
+    },
+    "endpoint_ci": {
+      "low": -0.014071294559099437,
+      "high": 0.1,
+      "mean": 0.04296435272045029,
+      "low_ci": [
+        -0.022852050143640636,
+        -0.0064932058682058685
+      ],
+      "high_ci": [
+        0.0,
+        0.2174252717391304
+      ],
+      "mean_ci": [
+        -0.006256087662337663,
+        0.10155987956008433
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "cirrhosis",
+    "family": "po",
+    "fixed_h": 0,
+    "balanced_minus_none": {
+      "qwk": 0.008000362519704707,
+      "macro_f1": -0.022478203221537985,
+      "normalized_mae": 0.07969255663430419,
+      "normalized_amae": -0.003091606558471932,
+      "normalized_mmae": -0.25611879160266254,
+      "rps": 0.02716904834102045,
+      "recall_low": 0.40476190476190477,
+      "recall_high": -0.02777777777777779,
+      "recall_extreme": 0.1884920634920635,
+      "ece": 0.04426611500268264,
+      "cumulative_ece": 0.10054054515157282,
+      "qwk_observed": 0.5327669902912622,
+      "qwk_expected": 0.8863229333584696
+    },
+    "endpoint_ci": {
+      "low": 0.40476190476190477,
+      "high": -0.027777777777777776,
+      "mean": 0.1884920634920635,
+      "low_ci": [
+        0.2,
+        0.6
+      ],
+      "high_ci": [
+        -0.06489007110739307,
+        0.007195547909498487
+      ],
+      "mean_ci": [
+        0.08736887473688851,
+        0.2898405841710795
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "cirrhosis",
+    "family": "po",
+    "fixed_h": 1,
+    "balanced_minus_none": {
+      "qwk": -0.01153884312167891,
+      "macro_f1": -0.02324865794791947,
+      "normalized_mae": 0.07888349514563105,
+      "normalized_amae": 0.005420439661761506,
+      "normalized_mmae": -0.2222222222222222,
+      "rps": 0.030755035012384913,
+      "recall_low": 0.4285714285714286,
+      "recall_high": -0.03125,
+      "recall_extreme": 0.19866071428571427,
+      "ece": 0.061896778395992814,
+      "cumulative_ece": 0.09017181393103177,
+      "qwk_observed": 0.5473300970873787,
+      "qwk_expected": 0.858210010368555
+    },
+    "endpoint_ci": {
+      "low": 0.42857142857142855,
+      "high": -0.03125,
+      "mean": 0.19866071428571427,
+      "low_ci": [
+        0.25,
+        0.6041666666666666
+      ],
+      "high_ci": [
+        -0.06623037558468023,
+        0.0034519970230711947
+      ],
+      "mean_ci": [
+        0.10930945860125427,
+        0.2891478846973572
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "cirrhosis",
+    "family": "rf",
+    "fixed_h": 0,
+    "balanced_minus_none": {
+      "qwk": 0.11276684329280384,
+      "macro_f1": 0.08705348648436229,
+      "normalized_mae": 0.03843042071197414,
+      "normalized_amae": -0.06683205696179044,
+      "normalized_mmae": -0.38069358178053825,
+      "rps": 0.012644366433387788,
+      "recall_low": 0.45238095238095233,
+      "recall_high": 0.055555555555555525,
+      "recall_extreme": 0.25396825396825395,
+      "ece": 0.033556432321980786,
+      "cumulative_ece": 0.07389298838894973,
+      "qwk_observed": 0.27305825242718457,
+      "qwk_expected": 0.7270242247148648
+    },
+    "endpoint_ci": {
+      "low": 0.4523809523809524,
+      "high": 0.05555555555555555,
+      "mean": 0.25396825396825395,
+      "low_ci": [
+        0.24972826086956523,
+        0.6666666666666666
+      ],
+      "high_ci": [
+        0.014593288872551593,
+        0.09542796816631476
+      ],
+      "mean_ci": [
+        0.14685055218062282,
+        0.3594288455513784
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "cirrhosis",
+    "family": "rf",
+    "fixed_h": 1,
+    "balanced_minus_none": {
+      "qwk": 0.05392877336604418,
+      "macro_f1": 0.05057470859638813,
+      "normalized_mae": 0.02224919093851134,
+      "normalized_amae": -0.03553494670035695,
+      "normalized_mmae": -0.2142857142857143,
+      "rps": 0.007937370991997691,
+      "recall_low": 0.23809523809523808,
+      "recall_high": -0.01041666666666663,
+      "recall_extreme": 0.1138392857142857,
+      "ece": 0.017139187977245025,
+      "cumulative_ece": 0.040996553811213865,
+      "qwk_observed": 0.1444174757281554,
+      "qwk_expected": 0.3551701385615985
+    },
+    "endpoint_ci": {
+      "low": 0.23809523809523808,
+      "high": -0.010416666666666666,
+      "mean": 0.11383928571428571,
+      "low_ci": [
+        0.0625,
+        0.42857142857142855
+      ],
+      "high_ci": [
+        -0.04841855410661176,
+        0.024198465774980325
+      ],
+      "mean_ci": [
+        0.023865785860999328,
+        0.20884159426128995
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "support2",
+    "family": "po",
+    "fixed_h": 0,
+    "balanced_minus_none": {
+      "qwk": 0.0057644008623845,
+      "macro_f1": -0.004703261308076356,
+      "normalized_mae": 0.008500000000000035,
+      "normalized_amae": -0.07247587230703359,
+      "normalized_mmae": -0.12798261810022138,
+      "rps": 0.034117763145739416,
+      "recall_low": -0.2130610186585981,
+      "recall_high": -0.3456669912366115,
+      "recall_extreme": -0.2793640049476048,
+      "ece": 0.13958649537227277,
+      "cumulative_ece": 0.11407788448304393,
+      "qwk_observed": -0.9332,
+      "qwk_expected": -1.5343088000000007
+    },
+    "endpoint_ci": {
+      "low": -0.21306101865859808,
+      "high": -0.3456669912366115,
+      "mean": -0.27936400494760477,
+      "low_ci": [
+        -0.23057403634082035,
+        -0.19562927424077892
+      ],
+      "high_ci": [
+        -0.3657298165200098,
+        -0.32685399704700185
+      ],
+      "mean_ci": [
+        -0.29222883047725673,
+        -0.2666877537683115
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "support2",
+    "family": "po",
+    "fixed_h": 1,
+    "balanced_minus_none": {
+      "qwk": 0.0036728968026358277,
+      "macro_f1": -0.004747379224697201,
+      "normalized_mae": 0.009525000000000006,
+      "normalized_amae": -0.07032277448687407,
+      "normalized_mmae": -0.129173643797401,
+      "rps": 0.033899500048371334,
+      "recall_low": -0.21608673726676753,
+      "recall_high": -0.3444498539435248,
+      "recall_extreme": -0.28026829560514616,
+      "ece": 0.14705958435748423,
+      "cumulative_ece": 0.11417978172953062,
+      "qwk_observed": -0.9187000000000003,
+      "qwk_expected": -1.5321806400000004
+    },
+    "endpoint_ci": {
+      "low": -0.21608673726676753,
+      "high": -0.34444985394352484,
+      "mean": -0.2802682956051462,
+      "low_ci": [
+        -0.23362156022339448,
+        -0.19864652724421172
+      ],
+      "high_ci": [
+        -0.36441905526482715,
+        -0.32630234702861133
+      ],
+      "mean_ci": [
+        -0.29285579852625837,
+        -0.2674740421791894
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "support2",
+    "family": "rf",
+    "fixed_h": 0,
+    "balanced_minus_none": {
+      "qwk": -0.07761630341705067,
+      "macro_f1": 0.05444980801333674,
+      "normalized_mae": 0.022050000000000014,
+      "normalized_amae": -0.06976698136960535,
+      "normalized_mmae": -0.06077726640229375,
+      "rps": 0.03709059854830904,
+      "recall_low": -0.1495209278870398,
+      "recall_high": -0.357108081791626,
+      "recall_extreme": -0.25331450483933293,
+      "ece": 0.0801514466140505,
+      "cumulative_ece": 0.06417012544701946,
+      "qwk_observed": -0.3834000000000004,
+      "qwk_expected": -1.3784147199999994
+    },
+    "endpoint_ci": {
+      "low": -0.14952092788703983,
+      "high": -0.3571080817916261,
+      "mean": -0.253314504839333,
+      "low_ci": [
+        -0.17166272879041686,
+        -0.12969468407597234
+      ],
+      "high_ci": [
+        -0.3751932998038033,
+        -0.33886794542842913
+      ],
+      "mean_ci": [
+        -0.26705402945983564,
+        -0.23969799602795835
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "support2",
+    "family": "rf",
+    "fixed_h": 1,
+    "balanced_minus_none": {
+      "qwk": -0.017587330013262514,
+      "macro_f1": 0.05939466371178631,
+      "normalized_mae": 0.0023999999999999855,
+      "normalized_amae": -0.027931767302263683,
+      "normalized_mmae": -0.13840830449826988,
+      "rps": 0.016121416712090872,
+      "recall_low": -0.05143721633888049,
+      "recall_high": -0.10223953261927943,
+      "recall_extreme": -0.07683837447907993,
+      "ece": 0.09180076372319501,
+      "cumulative_ece": 0.04627325800418786,
+      "qwk_observed": -0.1372,
+      "qwk_expected": -0.4560323199999998
+    },
+    "endpoint_ci": {
+      "low": -0.05143721633888049,
+      "high": -0.10223953261927946,
+      "mean": -0.07683837447907997,
+      "low_ci": [
+        -0.06443794559110076,
+        -0.03885008890284499
+      ],
+      "high_ci": [
+        -0.11523438919110125,
+        -0.08924998157429247
+      ],
+      "mean_ci": [
+        -0.0859671818329716,
+        -0.06776228570279115
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "diabetes130",
+    "family": "po",
+    "fixed_h": 0,
+    "balanced_minus_none": {
+      "qwk": 0.04883860915502375,
+      "macro_f1": 0.03789786543616169,
+      "normalized_mae": 0.06739999999999999,
+      "normalized_amae": -0.037121249918203814,
+      "normalized_mmae": -0.326953125,
+      "rps": 0.030302150361164376,
+      "recall_low": -0.2408346333853354,
+      "recall_high": 0.39609375,
+      "recall_extreme": 0.07762955830733231,
+      "ece": 0.023360037732502798,
+      "cumulative_ece": 0.14864530598107295,
+      "qwk_observed": 0.24659999999999999,
+      "qwk_expected": 0.37830975999999994
+    },
+    "endpoint_ci": {
+      "low": -0.24083463338533542,
+      "high": 0.39609375,
+      "mean": 0.0776295583073323,
+      "low_ci": [
+        -0.2555782273655868,
+        -0.22572298172804267
+      ],
+      "high_ci": [
+        0.35816443690095845,
+        0.43689944521497914
+      ],
+      "mean_ci": [
+        0.05703550409662135,
+        0.09843252792306416
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "diabetes130",
+    "family": "po",
+    "fixed_h": 1,
+    "balanced_minus_none": {
+      "qwk": 0.03901217519135142,
+      "macro_f1": 0.032235718229934845,
+      "normalized_mae": 0.06795000000000001,
+      "normalized_amae": -0.030916052308851805,
+      "normalized_mmae": -0.304296875,
+      "rps": 0.03035294138250999,
+      "recall_low": -0.23205928237129486,
+      "recall_high": 0.3765625,
+      "recall_extreme": 0.07225160881435258,
+      "ece": 0.018208292355356176,
+      "cumulative_ece": 0.1423399663274029,
+      "qwk_observed": 0.25129999999999997,
+      "qwk_expected": 0.3705574400000003
+    },
+    "endpoint_ci": {
+      "low": -0.23205928237129486,
+      "high": 0.3765625,
+      "mean": 0.07225160881435258,
+      "low_ci": [
+        -0.2465918796313012,
+        -0.2182019674269611
+      ],
+      "high_ci": [
+        0.33833535418773836,
+        0.41667274052478137
+      ],
+      "mean_ci": [
+        0.05196028888233405,
+        0.09302490911131968
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "diabetes130",
+    "family": "rf",
+    "fixed_h": 0,
+    "balanced_minus_none": {
+      "qwk": 0.1627737718616178,
+      "macro_f1": 0.10844711236293686,
+      "normalized_mae": 0.05760000000000001,
+      "normalized_amae": -0.09050632546599191,
+      "normalized_mmae": -0.492578125,
+      "rps": 0.0330946116308701,
+      "recall_low": -0.31552262090483624,
+      "recall_high": 0.46328125,
+      "recall_extreme": 0.07387931454758193,
+      "ece": 0.03278538359732035,
+      "cumulative_ece": 0.1423716905695356,
+      "qwk_observed": 0.20879999999999993,
+      "qwk_expected": 0.45107488000000007
+    },
+    "endpoint_ci": {
+      "low": -0.3155226209048362,
+      "high": 0.46328125,
+      "mean": 0.0738793145475819,
+      "low_ci": [
+        -0.3311639622865926,
+        -0.2995328694035266
+      ],
+      "high_ci": [
+        0.4236217738407699,
+        0.502904815544917
+      ],
+      "mean_ci": [
+        0.05140574324390717,
+        0.09432305594508751
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "diabetes130",
+    "family": "rf",
+    "fixed_h": 1,
+    "balanced_minus_none": {
+      "qwk": 0.049917471714355566,
+      "macro_f1": 0.06351731490354795,
+      "normalized_mae": 0.026400000000000007,
+      "normalized_amae": -0.03872062016389338,
+      "normalized_mmae": -0.20390624999999996,
+      "rps": 0.01478801986387418,
+      "recall_low": -0.19364274570982837,
+      "recall_high": 0.1921875,
+      "recall_extreme": -0.0007276228549141783,
+      "ece": 0.024229642891469512,
+      "cumulative_ece": 0.1045587950107987,
+      "qwk_observed": 0.07920000000000005,
+      "qwk_expected": 0.15198079999999992
+    },
+    "endpoint_ci": {
+      "low": -0.1936427457098284,
+      "high": 0.1921875,
+      "mean": -0.0007276228549141922,
+      "low_ci": [
+        -0.20556894200900722,
+        -0.17990277758878073
+      ],
+      "high_ci": [
+        0.16346115136876008,
+        0.22157542088152749
+      ],
+      "mean_ci": [
+        -0.01574042171353995,
+        0.014721018464783788
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "student_por",
+    "family": "po",
+    "fixed_h": 0,
+    "balanced_minus_none": {
+      "qwk": 0.06225727576271667,
+      "macro_f1": -0.004889158601016463,
+      "normalized_mae": 0.028120184899845926,
+      "normalized_amae": -0.0011669469803343296,
+      "normalized_mmae": -0.14786585365853658,
+      "rps": 0.00584978178755384,
+      "recall_low": 0.225,
+      "recall_high": 0.22560975609756098,
+      "recall_extreme": 0.22530487804878047,
+      "ece": 0.02597436465357497,
+      "cumulative_ece": 0.021897609304419707,
+      "qwk_observed": 0.30354391371340517,
+      "qwk_expected": 0.9402589262608594
+    },
+    "endpoint_ci": {
+      "low": 0.225,
+      "high": 0.22560975609756098,
+      "mean": 0.2253048780487805,
+      "low_ci": [
+        0.1590909090909091,
+        0.300049504950495
+      ],
+      "high_ci": [
+        0.14771998834498834,
+        0.30283074853616077
+      ],
+      "mean_ci": [
+        0.17141007513991385,
+        0.28045900644071375
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "student_por",
+    "family": "po",
+    "fixed_h": 1,
+    "balanced_minus_none": {
+      "qwk": 0.04567699563579136,
+      "macro_f1": 0.006156653476636548,
+      "normalized_mae": 0.023305084745762733,
+      "normalized_amae": -0.003181228597273364,
+      "normalized_mmae": -0.125,
+      "rps": 0.0075677181646626734,
+      "recall_low": 0.22999999999999998,
+      "recall_high": 0.18902439024390244,
+      "recall_extreme": 0.2095121951219512,
+      "ece": 0.013706594918445572,
+      "cumulative_ece": 0.021628025677671095,
+      "qwk_observed": 0.27657935285053925,
+      "qwk_expected": 0.8098401950612653
+    },
+    "endpoint_ci": {
+      "low": 0.23,
+      "high": 0.18902439024390244,
+      "mean": 0.20951219512195124,
+      "low_ci": [
+        0.16264683734939758,
+        0.30357560080106805
+      ],
+      "high_ci": [
+        0.11623353880638834,
+        0.2597467532467532
+      ],
+      "mean_ci": [
+        0.15695312666752043,
+        0.2603509336964628
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "student_por",
+    "family": "rf",
+    "fixed_h": 0,
+    "balanced_minus_none": {
+      "qwk": 0.17904935447424586,
+      "macro_f1": 0.07167311028151176,
+      "normalized_mae": 0.03717257318952236,
+      "normalized_amae": -0.018317748937447725,
+      "normalized_mmae": -0.2576219512195122,
+      "rps": 0.0015335668632145416,
+      "recall_low": 0.5449999999999999,
+      "recall_high": 0.2682926829268293,
+      "recall_extreme": 0.4066463414634146,
+      "ece": -0.0024069096451309925,
+      "cumulative_ece": 0.024799393026707136,
+      "qwk_observed": 0.5215716486902928,
+      "qwk_expected": 1.6787958718046732
+    },
+    "endpoint_ci": {
+      "low": 0.545,
+      "high": 0.2682926829268293,
+      "mean": 0.40664634146341466,
+      "low_ci": [
+        0.458752147766323,
+        0.6386207370737074
+      ],
+      "high_ci": [
+        0.19112266857962695,
+        0.35258333333333336
+      ],
+      "mean_ci": [
+        0.34987847963200075,
+        0.46613459551736736
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "student_por",
+    "family": "rf",
+    "fixed_h": 1,
+    "balanced_minus_none": {
+      "qwk": 0.06717974727807047,
+      "macro_f1": 0.017395255845074176,
+      "normalized_mae": 0.020416024653312798,
+      "normalized_amae": -0.008675934943590535,
+      "normalized_mmae": -0.12804878048780485,
+      "rps": 0.0018337723501876263,
+      "recall_low": 0.30499999999999994,
+      "recall_high": 0.1402439024390244,
+      "recall_extreme": 0.22262195121951217,
+      "ece": 0.009690046743497731,
+      "cumulative_ece": 0.012337927770951405,
+      "qwk_observed": 0.26348228043143296,
+      "qwk_expected": 0.8048461423405928
+    },
+    "endpoint_ci": {
+      "low": 0.305,
+      "high": 0.1402439024390244,
+      "mean": 0.2226219512195122,
+      "low_ci": [
+        0.23293876262626262,
+        0.3762388996631622
+      ],
+      "high_ci": [
+        0.08549854750512646,
+        0.2015084153699587
+      ],
+      "mean_ci": [
+        0.1788086065038527,
+        0.2716690880865101
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "npha",
+    "family": "po",
+    "fixed_h": 0,
+    "balanced_minus_none": {
+      "qwk": 0.046691752736744974,
+      "macro_f1": 0.049147591630845866,
+      "normalized_mae": 0.16106442577030813,
+      "normalized_amae": 0.07550494765256385,
+      "normalized_mmae": -0.07069208784052672,
+      "rps": 0.012758492984774952,
+      "recall_low": 0.4847328244274809,
+      "recall_high": 0.3175355450236967,
+      "recall_extreme": 0.4011341847255888,
+      "ece": 0.08273231612369997,
+      "cumulative_ece": 0.0708457167165911,
+      "qwk_observed": 0.592436974789916,
+      "qwk_expected": 0.7077615359869436
+    },
+    "endpoint_ci": {
+      "low": 0.4847328244274809,
+      "high": 0.3175355450236967,
+      "mean": 0.4011341847255888,
+      "low_ci": [
+        0.41093060105398094,
+        0.5616559941638972
+      ],
+      "high_ci": [
+        0.2658985317779566,
+        0.37114770550132287
+      ],
+      "mean_ci": [
+        0.35429605991723495,
+        0.44701250714283225
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "npha",
+    "family": "po",
+    "fixed_h": 1,
+    "balanced_minus_none": {
+      "qwk": 0.02303357993028199,
+      "macro_f1": 0.039761029197651815,
+      "normalized_mae": 0.1400560224089636,
+      "normalized_amae": 0.0675432847469975,
+      "normalized_mmae": -0.0778644043269057,
+      "rps": 0.01600087540206091,
+      "recall_low": 0.4312977099236641,
+      "recall_high": 0.24407582938388628,
+      "recall_extreme": 0.3376867696537752,
+      "ece": 0.10496250738553473,
+      "cumulative_ece": 0.060881480847555416,
+      "qwk_observed": 0.5224089635854342,
+      "qwk_expected": 0.6052303274250876
+    },
+    "endpoint_ci": {
+      "low": 0.4312977099236641,
+      "high": 0.24407582938388625,
+      "mean": 0.3376867696537752,
+      "low_ci": [
+        0.35655737704918034,
+        0.5041675420168067
+      ],
+      "high_ci": [
+        0.19851900665926747,
+        0.2885572139303483
+      ],
+      "mean_ci": [
+        0.2931421720406951,
+        0.3805840292268229
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "npha",
+    "family": "rf",
+    "fixed_h": 0,
+    "balanced_minus_none": {
+      "qwk": 0.053957437234892935,
+      "macro_f1": 0.07719237151159522,
+      "normalized_mae": 0.15511204481792717,
+      "normalized_amae": 0.08115442697909023,
+      "normalized_mmae": -0.06278716399551387,
+      "rps": 0.010555667316197767,
+      "recall_low": 0.37404580152671757,
+      "recall_high": 0.36018957345971564,
+      "recall_extreme": 0.3671176874932166,
+      "ece": 0.008010759242963739,
+      "cumulative_ece": 0.0768938285837244,
+      "qwk_observed": 0.5833333333333333,
+      "qwk_expected": 0.669936602091817
+    },
+    "endpoint_ci": {
+      "low": 0.37404580152671757,
+      "high": 0.36018957345971564,
+      "mean": 0.3671176874932166,
+      "low_ci": [
+        0.29923999611499613,
+        0.4464715608465608
+      ],
+      "high_ci": [
+        0.30611864148644535,
+        0.41555696202531645
+      ],
+      "mean_ci": [
+        0.32206442570969535,
+        0.41269016763838723
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  },
+  {
+    "dataset": "npha",
+    "family": "rf",
+    "fixed_h": 1,
+    "balanced_minus_none": {
+      "qwk": 0.0481340909259832,
+      "macro_f1": 0.06681126484270378,
+      "normalized_mae": 0.10049019607843138,
+      "normalized_amae": 0.049385610228636745,
+      "normalized_mmae": -0.07061068702290077,
+      "rps": 0.009266205036304292,
+      "recall_low": 0.2862595419847328,
+      "recall_high": 0.22511848341232227,
+      "recall_extreme": 0.2556890126985275,
+      "ece": 0.0336524563760275,
+      "cumulative_ece": 0.029568910663721915,
+      "qwk_observed": 0.39005602240896364,
+      "qwk_expected": 0.45053119286930443
+    },
+    "endpoint_ci": {
+      "low": 0.2862595419847328,
+      "high": 0.22511848341232227,
+      "mean": 0.2556890126985275,
+      "low_ci": [
+        0.22180375333495025,
+        0.35496936520691036
+      ],
+      "high_ci": [
+        0.1802030456852792,
+        0.27488151658767773
+      ],
+      "mean_ci": [
+        0.2158112732980093,
+        0.29772925933450234
+      ],
+      "unsupported_bootstrap_draws": 0,
+      "draws": 1000,
+      "interpretation": "group-resampled fixed predictions, conditional on fitted models; sparse endpoints unreliable"
+    },
+    "ci_type": "conditional group-bootstrap of fixed predictions; conditional on fitted models, not full-training uncertainty or MC under DGP"
+  }
+]

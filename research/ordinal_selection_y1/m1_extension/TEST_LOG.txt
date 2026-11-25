@@ -1,0 +1,22 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.15, pytest-9.2.0, pluggy-1.7.0 -- <Y1 local venv python>
+rootdir: research/ordinal_selection_y1 (absolute local path removed)
+collecting ... collected 15 items
+
+m1_extension/tests/test_m1_extension.py::test_config_matches_gate_v2_design PASSED [  6%]
+m1_extension/tests/test_m1_extension.py::test_hash_order_label_independent_and_cap_whole_groups PASSED [ 13%]
+m1_extension/tests/test_m1_extension.py::test_exact_groups_follow_y1_rule PASSED [ 20%]
+m1_extension/tests/test_m1_extension.py::test_allowlists_exclude_forbidden_columns PASSED [ 26%]
+m1_extension/tests/test_m1_extension.py::test_hcv_suspect_donor_excluded_not_merged PASSED [ 33%]
+m1_extension/tests/test_m1_extension.py::test_cirrhosis_drops_unlabelled_and_followup_columns PASSED [ 40%]
+m1_extension/tests/test_m1_extension.py::test_support2_order_and_unlabelled_exclusion PASSED [ 46%]
+m1_extension/tests/test_m1_extension.py::test_diabetes_discharge_exclusion_and_none_category PASSED [ 53%]
+m1_extension/tests/test_m1_extension.py::test_student_five_level_cutpoints_from_source_table PASSED [ 60%]
+m1_extension/tests/test_m1_extension.py::test_selection_never_sees_test_and_fallback PASSED [ 66%]
+m1_extension/tests/test_m1_extension.py::test_npz_groups_load_without_pickle PASSED [ 73%]
+m1_extension/tests/test_m1_extension.py::test_prepared_sources_and_grouped_splits PASSED [ 80%]
+m1_extension/tests/test_m1_extension.py::test_archives_reproduce_prepared_without_writes PASSED [ 86%]
+m1_extension/tests/test_m1_extension.py::test_nested_assignments_deterministic PASSED [ 93%]
+m1_extension/tests/test_m1_extension.py::test_freeze_matches_when_present PASSED [100%]
+
+============================= 15 passed in 6.09s ==============================

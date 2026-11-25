@@ -1,0 +1,64 @@
+{
+  "datasets": [
+    "ctg",
+    "hcv",
+    "cirrhosis",
+    "support2",
+    "diabetes130",
+    "student_por",
+    "npha"
+  ],
+  "roles": {
+    "ctg": "primary",
+    "hcv": "primary",
+    "cirrhosis": "primary",
+    "support2": "primary",
+    "diabetes130": "control_source_binned",
+    "student_por": "control_source_binned",
+    "npha": "control_source_binned"
+  },
+  "blocked_before_preparation": [
+    "maternal_health_risk",
+    "cdc_diabetes_health_indicators",
+    "higher_education_students_performance",
+    "heart_disease"
+  ],
+  "seeds": [
+    20261124,
+    20261125
+  ],
+  "outer_folds": 3,
+  "inner_folds": 2,
+  "split_seed_attempts": 100,
+  "objectives": [
+    "qwk",
+    "mae",
+    "amae",
+    "mmae",
+    "macro_f1",
+    "rps",
+    "qwk_recall"
+  ],
+  "recall_floor": 0.2,
+  "tie_tolerance": 1e-12,
+  "po_C": [
+    0.1,
+    1.0
+  ],
+  "rf_depths": [
+    4,
+    null
+  ],
+  "rf_estimators": 100,
+  "po_max_iter": 1000,
+  "fit_threads": 1,
+  "bootstrap_replicates": 1000,
+  "selection_prefix": "Y1-m1-extension-v1",
+  "row_cap": 5000,
+  "subsampled": [
+    "support2",
+    "diabetes130"
+  ],
+  "minimum_endpoint_groups": 20,
+  "fits_per_dataset": 144
+}
