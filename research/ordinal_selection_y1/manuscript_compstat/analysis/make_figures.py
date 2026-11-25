@@ -3,6 +3,7 @@
 Usage: python make_figures.py <analysis out dir> <figure dir>
 Requires numpy, pandas, matplotlib. No model fitting, no row-level data.
 """
+import json
 import sys
 from pathlib import Path
 
@@ -23,8 +24,9 @@ FAM_LABEL = {'po': 'Proportional odds', 'rf': 'Random forest'}
 INK, INK2, GRID = '#0b0b0b', '#52514e', '#d9d8d4'
 BLUES = ['#cde2fb', '#9ec5f4', '#6da7ec', '#3987e5', '#2a78d6', '#1c5cab', '#104281', '#0d366b']
 
+# Journal artwork guidelines: sans-serif lettering (Helvetica or Arial), about 8-12 pt at final size; nothing below 7 pt.
 plt.rcParams.update({
-    'font.family': 'DejaVu Sans', 'font.size': 8, 'axes.titlesize': 8.5, 'axes.labelsize': 8,
+    'font.family': 'sans-serif', 'font.sans-serif': ['Arial', 'Helvetica', 'DejaVu Sans'], 'font.size': 8, 'axes.titlesize': 8.5, 'axes.labelsize': 8,
     'xtick.labelsize': 7.5, 'ytick.labelsize': 7.5, 'legend.fontsize': 7.5,
     'axes.edgecolor': INK2, 'axes.labelcolor': INK, 'xtick.color': INK2, 'ytick.color': INK2,
     'axes.linewidth': 0.6, 'pdf.fonttype': 42, 'ps.fonttype': 42, 'savefig.dpi': 300,
@@ -45,6 +47,14 @@ contr = pd.read_csv(OUT / 'policy_contrasts.csv')
 regret = pd.read_csv(OUT / 'regret_matrix.csv', index_col=0)
 agree = pd.read_csv(OUT / 'selection_agreement.csv', index_col=0)
 pol = pd.read_csv(OUT / 'policy_metrics.csv')
+meta = json.loads((OUT / 'm3_meta.json').read_text(encoding='utf-8'))
+
+
+def check_limits(name, values, lo, hi):
+    """Fixed axis limits must never clip data silently."""
+    v = pd.Series(values).dropna()
+    if v.min() < lo or v.max() > hi:
+        raise SystemExit(f'{name}: data range [{v.min():.3f}, {v.max():.3f}] outside fixed axis limits [{lo}, {hi}]')
 
 
 def save(fig, name):
@@ -66,6 +76,8 @@ order = tt.task.tolist()  # primary first, each block ordered by the share of th
 n_primary = int((tt.role == 'primary').sum())
 prev = tasks.set_index('task')['p_endpoint_min']
 fig, axes = plt.subplots(1, 3, figsize=(6.85, 4.9), sharey=True)
+_shown = contr[contr.policy_minus_qwk.isin(['amae', 'macro_f1', 'qwk_recall']) & contr.task.isin(order)]
+check_limits('Figure endpoint contrasts', pd.concat([_shown.endpoint_ci_low, _shown.endpoint_ci_high]), -0.5, 0.8)
 for ax, p in zip(axes, ['amae', 'macro_f1', 'qwk_recall']):
     sub = contr[contr.policy_minus_qwk == p].set_index(['task', 'family'])
     for i, t in enumerate(order):
@@ -124,16 +136,16 @@ im = ax1.imshow(Am, cmap=cmap, vmin=0, vmax=1)
 for i in range(len(POLICIES)):
     for j in range(i + 1):
         v = A[i, j]
-        ax1.text(j, i, f'{v:.2f}', ha='center', va='center', fontsize=6.5, color='white' if v > 0.55 else INK)
+        ax1.text(j, i, f'{v:.2f}', ha='center', va='center', fontsize=7, color='white' if v > 0.55 else INK)
 ax1.set_xticks(range(len(POLICIES)))
 ax1.set_xticklabels([POL_LABEL[p].replace(' + recall floor', ' + floor') for p in POLICIES], rotation=40,
-                    ha='right', rotation_mode='anchor', fontsize=6.5)
+                    ha='right', rotation_mode='anchor', fontsize=7)
 ax1.set_yticks(range(len(POLICIES)))
 ax1.set_yticklabels([POL_LABEL[p] for p in POLICIES])
 ax1.tick_params(length=0)
 for s in ax1.spines.values():
     s.set_visible(False)
-ax1.set_title('(a) Same candidate selected (72 decisions)')
+ax1.set_title(f"(a) Same candidate selected ({meta['primary_decisions']} decisions)")
 prim = pol[pol.role == 'primary']
 bal = prim.groupby('policy')['balanced_fraction'].mean().reindex(POLICIES)
 yy = np.arange(len(POLICIES))
@@ -175,7 +187,7 @@ for ax, (col, title) in zip(axes, panels):
     ax.set_xlabel('Endpoint share × K  (1 = uniform share)')
     style(ax, 'both')
 axes[0].set_ylabel('Change in recall of the endpoint')
-axes[0].legend(frameon=False, loc='lower left', fontsize=6.5)
+axes[0].legend(frameon=False, loc='lower left', fontsize=7)
 fig.tight_layout()
 save(fig, 'fig4_endpoint_share')
 
@@ -202,8 +214,9 @@ for ax, (col, title) in zip(axes[0], panels):
     ax.set_xlabel('Endpoint share × K  (1 = uniform share)')
     style(ax, 'both')
 axes[0, 0].set_ylabel('Change in recall of the endpoint')
-axes[0, 0].legend(frameon=False, loc='lower left', fontsize=6.5)
+axes[0, 0].legend(frameon=False, loc='lower left', fontsize=7)
 SIG = {0.5: ('#a3a29e', 'o'), 1.0: ('#52514e', 's'), 2.0: ('#0b0b0b', 'D')}
+check_limits('Figure stage 4 simulation', pd.concat([s4.w_lo, s4.w_hi]), -0.45, 0.72)
 for ax, fam in zip(axes[1], ('po', 'rf')):
     for sg, (c, m) in SIG.items():
         g = s4[(s4.family == fam) & (s4.signal == sg)].sort_values('k_pi0')
@@ -220,7 +233,7 @@ for ax, fam in zip(axes[1], ('po', 'rf')):
     ax.set_xlabel('Lowest-category share × K  (K = 5)')
     style(ax, 'both')
 axes[1, 0].set_ylabel('Change in recall of the lowest category')
-axes[1, 0].legend(frameon=False, loc='upper right', fontsize=6.5)
+axes[1, 0].legend(frameon=False, loc='upper right', fontsize=7)
 fig.tight_layout()
 save(fig, 'fig5_stage4_robustness')
 
@@ -249,7 +262,7 @@ for ax, (s, col, title) in zip(axes, panels):
     ax.set_xlabel('Endpoint share × K')
     style(ax, 'both')
 axes[0].set_ylabel('Change in recall of the endpoint')
-axes[0].legend(frameon=False, loc='lower left', fontsize=6)
+axes[0].legend(frameon=False, loc='lower left', fontsize=7)
 fig.tight_layout()
 save(fig, 'fig6_stage5_validation')
 print('figures written to', FIG)

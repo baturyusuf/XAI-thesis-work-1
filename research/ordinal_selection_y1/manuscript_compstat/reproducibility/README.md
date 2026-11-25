@@ -6,15 +6,40 @@ It explains how every result in the paper can be regenerated from the original d
 
 ## What is in the study
 
-| Stage | Tasks | Fits | Protocol and runner (branch / path) |
+All code is in one place: the repository `https://github.com/baturyusuf/XAI-thesis-work-1`, tag `compstat-v2`, directory `research/ordinal_selection_y1/`. Paths below are relative to that directory. The stages were developed on separate branches; their histories were merged without changing any frozen file.
+
+| Stage | Tasks | Fits | Protocol and runner |
 |---|---|---:|---|
-| 1 | wine red, wine white, SkillCraft (8 leagues, superseded), TAE (control) | 576 | `research/ordinal-selection-y1`: `research/ordinal_selection_y1/{Y1_PILOT_PROTOCOL.md, pilot_config.json, run_pilot.py, y1/}` |
-| 2 | Restaurant, Sushi, MovieLens-100k, SkillCraft (7 survey leagues) | 576 | same branch: `research/ordinal_selection_y1/gate_v2/{real_extension, skillcraft_survey}/` |
-| simulation | latent Gaussian model, 6 cells × 10 replications | 480 | same branch: `research/ordinal_selection_y1/gate_v2/mechanism/` |
-| 3 | CTG, HCV, Cirrhosis, SUPPORT2; Diabetes130, Student, NPHA (controls) | 1,008 | `research/ordinal-y1-m1-extension`: `research/ordinal_selection_y1/m1_extension/` (pre-fit freeze commit `2f5533e`) |
-| 4 (pre-specified) | the 14 tasks above (not the superseded one) with 24 candidates; simulation with 6 shares × 3 signals × 10 replications | 6,048 + 1,440 | `research/q3-journal-selection`: `research/ordinal_selection_y1/robustness_m2/{PROTOCOL.md, config.json, FREEZE.json, run.py}` |
-| 5 (pre-registered) | 4 new sources (Drug Consumption alcohol, Entrance Exam, NHANES 2017–18 and NHIS 2019 self-rated health) and the 14 earlier tasks; 32 candidates incl. a Frank–Hall ordinal family; median decoding | 10,368 | `research/q3-journal-selection`: `research/ordinal_selection_y1/validation_m5/{PROTOCOL.md, config.json, FREEZE.json, fetch.py, data.py, run.py}` (pushed before any fit, commit `66e426e`) |
-| analysis | cross-task analysis, tables, figures, manuscript | 0 | `research/q3-journal-selection`: `research/ordinal_selection_y1/manuscript_compstat/` |
+| 1 | wine red, wine white, SkillCraft (8 leagues, superseded), TAE (control) | 576 | `Y1_PILOT_PROTOCOL.md`, `pilot_config.json`, `PROTOCOL_FREEZE.json`, `run_pilot.py`, `y1/` |
+| 2 | Restaurant, Sushi, MovieLens-100k, SkillCraft (7 survey leagues) | 576 | `gate_v2/real_extension/`, `gate_v2/skillcraft_survey/` |
+| simulation | latent Gaussian model, 6 cells × 10 replications | 480 | `gate_v2/mechanism/` |
+| 3 | CTG, HCV, Cirrhosis, SUPPORT2; Diabetes130, Student, NPHA (controls) | 1,008 | `m1_extension/` (pre-fit freeze commit `2f5533e`) |
+| 4 (pre-specified) | the 14 tasks above (not the superseded one) with 24 candidates; simulation with 6 shares × 3 signals × 10 replications | 6,048 + 1,440 | `robustness_m2/{PROTOCOL.md, config.json, FREEZE.json, run.py}` |
+| 5 (pre-registered) | 4 new sources (Drug Consumption alcohol, Entrance Exam, NHANES 2017–18 and NHIS 2019 self-rated health) and the 14 earlier tasks; 32 candidates incl. a Frank–Hall ordinal family; median decoding | 10,368 | `validation_m5/{PROTOCOL.md, config.json, FREEZE.json, fetch.py, data.py, run.py}` (pushed before any fit, commit `66e426e`) |
+| analysis | cross-task analysis, tables, figures, manuscript | 0 | `manuscript_compstat/` |
+
+## Getting the code and the environment
+
+```
+git clone https://github.com/baturyusuf/XAI-thesis-work-1.git
+cd XAI-thesis-work-1
+git checkout compstat-v2
+cd research/ordinal_selection_y1
+python -m venv local/.venv
+local/.venv/Scripts/python -m pip install -r requirements.txt                          # fitting (Windows path; use local/.venv/bin/python elsewhere)
+local/.venv/Scripts/python -m pip install -r manuscript_compstat/requirements-analysis.txt  # figures and tables
+```
+
+All analyses used Python 3.13. `ENVIRONMENT.txt` lists the full package set of the fitting environment.
+
+**Proportional-odds code.** The proportional-odds estimator, the shared preprocessor and the RPS function are read from the authors' earlier public repository, `https://github.com/baturyusuf/employee-performance-with-XAI`, at commit `c7f7729`. They are not copied into this repository. To fetch them:
+
+```
+git clone https://github.com/baturyusuf/employee-performance-with-XAI.git ../../../employee-performance-with-XAI
+python bootstrap_source.py --source-repo ../../../employee-performance-with-XAI
+```
+
+`bootstrap_source.py` copies the five files of that commit into the ignored `local/source/` folder. `y1/source.py` checks them against the SHA-256 hashes in `SOURCE_MANIFEST.json` before every fit and stops if any file differs.
 
 Every stage has a `PROTOCOL.md`, a `config.json` and a `FREEZE.json`.
 
@@ -88,22 +113,24 @@ Run these from `research/ordinal_selection_y1/manuscript_compstat/`:
 python -B analysis/m3_cross_task.py <stage 1-2 local dir> <stage 3 local dir> analysis/out
 python -B analysis/m4_robustness.py ../local/robustness_m2 ../robustness_m2 analysis/out
 python -B analysis/m5_validation.py ../local/validation_m5 ../local/robustness_m2 ../validation_m5 analysis/out
-python analysis/make_figures.py analysis/out figures
-python analysis/make_tables.py analysis/out ../gate_v2/MECHANISM_CONTRASTS.csv .
-python analysis/check_and_package.py .
+python -B analysis/source_level.py analysis/out
+python -B analysis/make_figures.py analysis/out figures
+python -B analysis/make_tables.py analysis/out ../gate_v2/MECHANISM_CONTRASTS.csv .
+python -B analysis/check_and_package.py .
 ```
+
+The first three steps need the saved predictions in the ignored `local/` folders, which are produced by the runs above and are not distributed. The last four steps need only the aggregate files in `analysis/out/`, which are in the repository. In a fresh clone they regenerate every table, figure and number of the paper.
 
 What each step does:
 - **`m3_cross_task.py`** reads the saved out-of-fold probabilities, recomputes every metric with an independent implementation, and checks the results against the stored run summaries (2,100 comparisons; largest difference 2.2e-16). It writes aggregate tables only.
 - **`m4_robustness.py`** evaluates H1–H5 and S1–S3 exactly as written in the stage-4 protocol (task-cluster bootstrap with 2,000 resamples; Monte Carlo t intervals with 9 df) and writes `m4_hypotheses.json` with a supported / not supported verdict for each.
+- **`source_level.py`** repeats the cross-task tests with the nine primary sources as independent units. It runs Friedman tests with source blocks and Wilcoxon tests with the two model families averaged within each source. It also recomputes the bootstrap intervals of the endpoint-share rule with source clusters. Inputs are aggregate outputs only.
 - **`make_tables.py`** writes `numbers.tex` (every number in the text) and `tables/`. It also enforces claim guards: if a re-analysis changed any qualitative statement in the text, the script stops instead of producing an inconsistent manuscript.
 - **`check_and_package.py`** checks the LaTeX sources and builds flat upload folders.
 - **`analysis/word/build_word.ps1`** builds the Word versions from the same sources.
 
-## Code dependency to settle before public release
+## Code dependency and licences
 
-The proportional-odds estimator, the shared preprocessor and the RPS function come from the authors' earlier code base (`employee-performance-with-XAI`, commit `c7f7729`).
+The proportional-odds estimator, the shared preprocessor and the RPS function come from the authors' earlier repository, `employee-performance-with-XAI`, at commit `c7f7729`. That repository is public, but on 2026-11-25 it had no licence file. Readers can therefore inspect and download the code, but no reuse licence is granted yet. Choosing a licence is the owner's decision. The code is not copied into this repository; `bootstrap_source.py` fetches it from a local clone.
 
-That code is snapshotted locally and verified by hash (`SOURCE_MANIFEST.json`). Its public licence must be decided by its owner before the code is released together with this study.
-
-All other code in the repository is under the repository's Apache-2.0 licence.
+All other code in this repository is under the repository's Apache-2.0 licence. Data are not redistributed; see `DATA_SOURCES.csv` for each provider's terms.

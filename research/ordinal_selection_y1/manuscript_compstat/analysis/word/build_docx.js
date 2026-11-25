@@ -106,7 +106,7 @@ function table(b, textWidth, small) {
   const size = small ? 15 : 17;
   const none = { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' };
   const rule = (sz) => ({ style: BorderStyle.SINGLE, size: sz, color: '000000' });
-  const textCols = (b.id === 'tab_stage4' || b.id === 'tab_stage5') ? 3 : b.id === 'tab_s_stage5_tasks' ? 1 : b.id.startsWith('tab_s_stage4') ? 1 : b.id.startsWith('tab_s_') ? 3 : (['tab_inference', 'tab_controls'].includes(b.id) ? 1 : 2);
+  const textCols = (b.id === 'tab_stage4' || b.id === 'tab_stage5') ? 3 : (b.id === 'tab_s_stage5_tasks' || b.id === 'tab_s_source_rule') ? 1 : b.id.startsWith('tab_s_stage4') ? 1 : b.id.startsWith('tab_s_') ? 3 : (['tab_inference', 'tab_controls'].includes(b.id) ? 1 : 2);
   const align = (j) => (j < textCols ? AlignmentType.LEFT : AlignmentType.CENTER);
   const cell = (rs, j, w, borders, span = 1, bold = false) => new TableCell({
     width: { size: w, type: WidthType.DXA }, columnSpan: span > 1 ? span : undefined,
@@ -221,7 +221,8 @@ function buildMain(d) {
     switch (b.k) {
       case 'h1': kids.push(new Paragraph({ heading: HeadingLevel.HEADING_1, children: [T((b.num ? b.num + ' ' : '') + b.text, { bold: true, size: 26 })] })); break;
       case 'h2': kids.push(new Paragraph({ heading: HeadingLevel.HEADING_2, children: [T(b.num + ' ' + b.text, { bold: true, italics: true })] })); break;
-      case 'p': kids.push(new Paragraph({ alignment: AlignmentType.JUSTIFIED,
+      // Paragraphs with long unbreakable URLs or paths are left-aligned: justification would stretch the spaces.
+      case 'p': kids.push(new Paragraph({ alignment: b.runs.some((r) => /https?:\/\//.test(r.t || '')) ? AlignmentType.LEFT : AlignmentType.JUSTIFIED,
         children: [...(b.runin ? [T(b.runin.replace(/\.$/, '') + '. ', { bold: true })] : []), ...runs(b.runs)] })); break;
       case 'ol': b.items.forEach((it) => kids.push(new Paragraph({ numbering: { reference: 'contrib', level: 0 }, alignment: AlignmentType.JUSTIFIED, children: runs(it) }))); break;
       case 'eq': kids.push(...equation(b.id, b.num)); break;
@@ -261,7 +262,9 @@ function buildSupplement(d) {
   const kids = [
     new Paragraph({ style: 'Title', children: [T(d.title, { bold: true, size: 32 })] }),
     new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 120 }, children: [T(d.subtitle, { size: 24 })] }),
-    new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 360 }, children: [T(d.authors_line, { size: 22 })] }),
+    new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 120 }, children: [T(d.authors_line, { size: 22 })] }),
+    ...d.front.map((l, i) => new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: i === d.front.length - 1 ? 360 : 0 },
+      children: [T(l, { size: 20 })] })),
   ];
   for (const b of d.blocks) {
     if (b.k === 'h1') kids.push(new Paragraph({ heading: HeadingLevel.HEADING_1, children: [T(b.text, { bold: true, size: 26 })] }));
@@ -269,7 +272,7 @@ function buildSupplement(d) {
       children: [...(b.runin ? [T(b.runin.replace(/\.$/, '') + '. ', { bold: true })] : []), ...runs(b.runs, { size: 22 })] }));
     else if (b.k === 'table') { kids.push(caption('Table', b.num, b.caption)); kids.push(table(b, TW, true)); kids.push(new Paragraph({ children: [] })); }
   }
-  return new Document({ creator: d.authors_line.replace(' · ', ', '), title: 'Supplementary Information', styles, numbering,
+  return new Document({ creator: d.authors_line.replace(' · ', ', '), title: d.title, styles, numbering,
     sections: [{ properties: { page: { size: { width: A4.width, height: A4.height, orientation: PageOrientation.LANDSCAPE },
       margin: { top: MARGIN, bottom: MARGIN, left: MARGIN, right: MARGIN } } }, footers: footer(), children: kids }] });
 }

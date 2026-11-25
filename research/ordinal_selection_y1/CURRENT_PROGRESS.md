@@ -1,4 +1,6 @@
-# Y1 güncel durum — Gate-v2
+> **Superseded (2026-11-25).** This file records the gate-v2 status of 2026-11-23. It is kept below as a historical record, with only its title marked as historical; its earlier hash is in `gate_v2/CHECKPOINT_SELECTION.json`. Stages 3–5 and the manuscript have been completed since then. For the current state see [`README.md`](README.md) and [`manuscript_compstat/reproducibility/README.md`](manuscript_compstat/reproducibility/README.md).
+
+# Y1 güncel durum — Gate-v2 (tarihsel kayıt)
 
 2026-11-23. Karar: **CONDITIONAL GO — Y1 devam; tam benchmark ve submission henüz yok.** Branch research/ordinal-selection-y1; başlangıç SHA1b71d4c45ae1aba771e7c499f87f197f44b3112c. Orijinal Y1_PROGRESS.md v1 oturumunun tarihsel kaydıdır; güncel durum bu dosyadır.
 

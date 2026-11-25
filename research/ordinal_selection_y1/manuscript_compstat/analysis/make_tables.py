@@ -5,6 +5,7 @@ so text, tables and analysis outputs cannot drift apart.
 
 Usage: python make_tables.py <analysis out dir> <mechanism contrasts csv> <manuscript dir>
 """
+import json
 import sys
 from pathlib import Path
 
@@ -32,8 +33,11 @@ FAM = {'po': 'PO', 'rf': 'RF'}
 tasks = pd.read_csv(OUT / 'tasks.csv').set_index('task')
 pol = pd.read_csv(OUT / 'policy_metrics.csv')
 con = pd.read_csv(OUT / 'policy_contrasts.csv')
-inf = pd.read_csv(OUT / 'cross_task_inference.csv')
-fr = pd.read_csv(OUT / 'friedman_ranks.csv').set_index('eval')
+inf = pd.read_csv(OUT / 'cross_task_inference.csv')  # per model family: source blocks (wine averaged)
+# Source-level analyses (analysis/source_level.py): the nine primary sources are the independent units.
+sinf = pd.read_csv(OUT / 'source_level_inference.csv')  # both families averaged within each source
+fr = pd.read_csv(OUT / 'source_level_friedman.csv').set_index('eval')  # Friedman with sources as blocks
+SL = json.loads((OUT / 'source_level.json').read_text(encoding='utf-8'))
 reg = pd.read_csv(OUT / 'regret_matrix.csv', index_col=0)
 agr = pd.read_csv(OUT / 'selection_agreement.csv', index_col=0)
 mod = pd.read_csv(OUT / 'moderator_endpoint_rarity.csv')
@@ -120,13 +124,14 @@ write('tab_endpoint.tex', '\n'.join(rows) + '\n')
 rows = []
 for pc in ('amae', 'macro_f1', 'qwk_recall', 'mmae', 'mae', 'rps'):
     cells = [POL[pc] + ' $-$ QWK']
-    for fam in ('po', 'rf', 'both'):
+    for fam in ('po', 'rf'):
         r = inf[(inf.policy_minus_qwk == pc) & (inf.model_family == fam) & (inf.metric == 'endpoint_recall_delta')].iloc[0]
         cells.append(f"{int(r.positive)}/{int(r.negative)}")
-    r = inf[(inf.policy_minus_qwk == pc) & (inf.model_family == 'both') & (inf.metric == 'endpoint_recall_delta')].iloc[0]
+    r = sinf[(sinf.policy_minus_qwk == pc) & (sinf.metric == 'endpoint_recall_delta')].iloc[0]
+    cells.append(f"{int(r.positive)}/{int(r.negative)}")
     cells += [signed(r['median'], 3), pval(r.wilcoxon_exact_p),
               (pval(r.holm_p_primary) if not np.isnan(r.holm_p_primary) else '--')]
-    q = inf[(inf.policy_minus_qwk == pc) & (inf.model_family == 'both') & (inf.metric == 'qwk_delta')].iloc[0]
+    q = sinf[(sinf.policy_minus_qwk == pc) & (sinf.metric == 'qwk_delta')].iloc[0]
     cells += [f"{int(q.positive)}/{int(q.negative)}", signed(q['median'], 3)]
     rows.append(' & '.join(cells) + ' \\\\')
 write('tab_inference.tex', '\n'.join(rows) + '\n')
@@ -216,7 +221,6 @@ write('tab_s_friedman.tex', '\n'.join(rows) + '\n')
 
 # ------------------------------------------------------------------ macros
 pp = pol[pol.role == 'primary']
-import json
 meta = json.loads((OUT / 'm3_meta.json').read_text())
 m('NDecisions', int(meta['primary_decisions']), '{}')
 m('NBoot', int(meta['bootstrap_draws']), '{:,}')
@@ -238,12 +242,15 @@ for a, an in [('qwk', 'Qwk'), ('mae', 'Mae'), ('amae', 'Amae'), ('mmae', 'Mmae')
 m('RegOwnMax', max(reg.loc[a, e] for a, e in [('qwk', 'qwk'), ('mae', 'normalized_mae'), ('amae', 'normalized_amae'),
                                                ('mmae', 'normalized_mmae'), ('macro_f1', 'macro_f1'), ('rps', 'rps')]))
 m('FriedEndChi', fr.loc['recall_extreme', 'friedman_chi2'], '{:.1f}')
-m('FriedEndP', '\\ensuremath{<}0.001' if fr.loc['recall_extreme', 'friedman_p'] < 0.001 else f"={fr.loc['recall_extreme', 'friedman_p']:.3f}")
+m('FriedEndP', '\\ensuremath{<}0.001' if fr.loc['recall_extreme', 'friedman_p'] < 0.001 else f"\\ensuremath{{=}}{fr.loc['recall_extreme', 'friedman_p']:.3f}")
 m('FriedQwkChi', fr.loc['qwk', 'friedman_chi2'], '{:.1f}')
 m('FriedQwkP', f"\\ensuremath{{=}}{fr.loc['qwk', 'friedman_p']:.3f}")
 m('NemenyiCD', fr.loc['qwk', 'nemenyi_cd_0.05'])
-ie = inf[(inf.metric == 'endpoint_recall_delta') & (inf.model_family == 'both')].set_index('policy_minus_qwk')
-iq = inf[(inf.metric == 'qwk_delta') & (inf.model_family == 'both')].set_index('policy_minus_qwk')
+m('FriedBlocks', int(fr.loc['qwk', 'blocks']), '{}')
+_fe = fr.loc['recall_extreme'][[f'avg_rank_{k_}' for k_ in POL]]
+m('FriedEndMaxDiff', _fe.max() - _fe.min())
+ie = sinf[sinf.metric == 'endpoint_recall_delta'].set_index('policy_minus_qwk')
+iq = sinf[sinf.metric == 'qwk_delta'].set_index('policy_minus_qwk')
 for a, an in [('amae', 'Amae'), ('macro_f1', 'Mfone'), ('qwk_recall', 'Con'), ('mmae', 'Mmae'), ('mae', 'Mae'), ('rps', 'Rps')]:
     m('WilP' + an, ie.loc[a, 'wilcoxon_exact_p'], '{:.3f}')
     m('WilPos' + an, int(ie.loc[a, 'positive']), '{}')
@@ -302,8 +309,24 @@ m('NPrimary', len(PRIMARY), '{}')
 m('NControls', len(CONTROLS), '{}')
 m('NFamiliesPrimary', tasks.loc[PRIMARY, 'source_family'].nunique(), '{}')
 m('NCells', 2 * len(PRIMARY), '{}')
-m('NBlocks', int(ie.loc['amae', 'blocks']), '{}')
-m('NBlocksFam', int(ie.loc['amae', 'blocks']) // 2, '{}')
+m('NBlocks', int(ie.loc['amae', 'blocks']), '{}')  # sources, families averaged
+m('NBlocksFam', int(inf[(inf.model_family == 'po') & (inf.metric == 'endpoint_recall_delta')].blocks.iloc[0]), '{}')
+# source-cluster bootstrap of the endpoint-share rule (sensitivity to the task-cluster intervals)
+for key, nm in (('stage13_weighting', 'EpW'), ('stage13_amae', 'EpA'), ('H2', 'HfW'), ('H3', 'HfA')):
+    sc_ = SL['rules'][key]['source_cluster']
+    m(nm + 'AgrLoS', sc_['agreement_ci'][0]); m(nm + 'AgrHiS', sc_['agreement_ci'][1])
+    m(nm + 'RhoLoS', sc_['rho_ci'][0]); m(nm + 'RhoHiS', sc_['rho_ci'][1])
+m('NSourcesRule', SL['rules']['H2']['sources'], '{}')
+rows = []
+for key, name in (('stage13_weighting', 'Stages 1--3: balanced $-$ unweighted'),
+                  ('stage13_amae', 'Stages 1--3: AMAE $-$ QWK selection'),
+                  ('H2', 'Stage 4 (H2): balanced $-$ unweighted'), ('H3', 'Stage 4 (H3): AMAE $-$ QWK selection')):
+    r_ = SL['rules'][key]
+    tc, sc_ = r_['task_cluster'], r_['source_cluster']
+    rows.append(f"{name} & {r_['points']} & {f2(r_['agreement'])} & [{f2(tc['agreement_ci'][0])}, {f2(tc['agreement_ci'][1])}] & "
+                f"[{f2(sc_['agreement_ci'][0])}, {f2(sc_['agreement_ci'][1])}] & {signed(r_['spearman_rho'], 2)} & "
+                f"[{signed(tc['rho_ci'][0], 2)}, {signed(tc['rho_ci'][1], 2)}] & [{signed(sc_['rho_ci'][0], 2)}, {signed(sc_['rho_ci'][1], 2)}]\\\\")
+write('tab_s_source_rule.tex', '\n'.join(rows) + '\n')
 m('NRealFits', 144 * (len(PRIMARY) + len(CONTROLS) + 1), '{:,}')
 m('QwkCostPosCon', int(iq.loc['qwk_recall', 'positive']), '{}')
 m('ConNonzero', int(ie.loc['qwk_recall', 'nonzero_blocks']), '{}')
@@ -436,6 +459,20 @@ differ = wd.index[wd['qwk_recall'] != wd['qwk']]
 floor_worst_ok = (len(differ) == 2 and len(wd) == 6 and set(differ) == set(wf.index[wf]) and all(c_.endswith('_none') for c_ in wd.loc[differ, 'qwk_recall'])
                   and all(cm4.loc[(worst4[0], worst4[1], c_), 'recall_low'] < 0.05 for c_ in wd.loc[differ, 'qwk_recall']))
 m('HfFloorDiffer', len(differ), '{}')
+# Cells in which every departure of the floor from QWK met the floor on the inner predictions (no fallback):
+# inner feasibility does not guarantee endpoint recall on the outer folds, so report the losses there.
+_d4 = dec4[dec4.role == 'primary']
+_w4 = _d4[_d4.policy.isin(['qwk', 'qwk_recall'])].pivot_table(index=['task', 'family', 'repeat', 'fold'], columns='policy',
+                                                              values='candidate', aggfunc='first')
+_fb4 = _d4[_d4.policy == 'qwk_recall'].set_index(['task', 'family', 'repeat', 'fold']).fallback.astype(bool).reindex(_w4.index)
+_dep4 = _w4['qwk'] != _w4['qwk_recall']
+_g4 = pd.DataFrame({'dep': _dep4, 'dep_fb': _dep4 & _fb4}).groupby(level=['task', 'family']).sum()
+_feas4 = _g4[(_g4.dep > 0) & (_g4.dep_fb == 0)].index
+_loss4 = dfl4.reindex(_feas4)
+m('FloorFeasCells', len(_feas4), '{}')
+m('FloorFeasNeg', int((_loss4 < -1e-9).sum()), '{}')
+m('FloorFeasMaxLoss', abs(min(float(_loss4.min()), 0.0)), '{:.3f}')
+m('FloorFeasWorstTask', TASK[_loss4.idxmin()[0]])
 k1 = ss4[ss4.pi0 == 0.2]
 m('SfKOneMax', k1.delta_weight.abs().max(), '{:.3f}')
 s3f = ss4[(ss4.signal == 1.0) & (ss4.pi0 == 0.10)].set_index('family')
@@ -629,8 +666,22 @@ guards = {
     'Friedman endpoint: QWK-floor and MMAE best two, MAE and RPS worst two':
         set(fcd[[f'avg_rank_{k_}' for k_ in POL]].sort_values().index[:2]) == {'avg_rank_qwk_recall', 'avg_rank_mmae'}
         and set(fcd[[f'avg_rank_{k_}' for k_ in POL]].sort_values().index[-2:]) == {'avg_rank_mae', 'avg_rank_rps'},
-    'Nemenyi: QWK-floor separated from MAE and RPS; MMAE from RPS but not from MAE':
-        sep[('qwk_recall', 'mae')] and sep[('qwk_recall', 'rps')] and sep[('mmae', 'rps')] and not sep[('mmae', 'mae')],
+    'Nemenyi with source blocks: no pair of criteria separated for endpoint recall':
+        (fcd[[f'avg_rank_{k_}' for k_ in POL]].max() - fcd[[f'avg_rank_{k_}' for k_ in POL]].min()) < cd,
+    'Friedman with source blocks: endpoint recall p < 0.05, QWK p > 0.05':
+        fr.loc['recall_extreme', 'friedman_p'] < 0.05 < fr.loc['qwk', 'friedman_p'],
+    'Friedman QWK ranks: QWK first, QWK-floor second, MMAE last':
+        list(fr.loc['qwk'][[f'avg_rank_{k_}' for k_ in POL]].sort_values().index[:2]) == ['avg_rank_qwk', 'avg_rank_qwk_recall']
+        and fr.loc['qwk'][[f'avg_rank_{k_}' for k_ in POL]].idxmax() == 'avg_rank_mmae',
+    'counts written as words: nine sources (Friedman blocks and Wilcoxon blocks)':
+        int(fr.loc['qwk', 'blocks']) == 9 and int(ie.loc['amae', 'blocks']) == 9,
+    'source-level contrasts: no primary contrast significant after Holm': (ie.loc[['amae', 'macro_f1', 'qwk_recall'], 'holm_p_primary'] > 0.05).all(),
+    'source-cluster bootstrap: endpoint-share rule intervals still above 0.5 (agreement) and below 0 (rho)':
+        all(SL['rules'][k_]['source_cluster']['agreement_above_half_and_rho_below_zero'] for k_ in SL['rules']),
+    'stage 4: floor departures that met the floor on inner predictions lost less than 0.02 (but some lost)':
+        len(_feas4) > 0 and -0.02 < float(_loss4.min()) < 0,
+    'main pool: floor never lowered R_end in any task-family cell':
+        (cq.endpoint_recall_delta >= -1e-12).all(),
     'MMAE endpoint effect is mixed (not significant)': ie.loc['mmae', 'negative'] >= 3 and ie.loc['mmae', 'wilcoxon_exact_p'] > 0.1,
     'MAE and RPS lower endpoint recall in most blocks':
         ie.loc['mae', 'negative'] > 2 * ie.loc['mae', 'positive'] and ie.loc['rps', 'negative'] > 2 * ie.loc['rps', 'positive'],

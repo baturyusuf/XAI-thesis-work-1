@@ -1,0 +1,6 @@
+# Packages for the no-fitting steps (source_level.py, make_figures.py, make_tables.py, check_and_package.py).
+# Model fitting uses ../requirements.txt (adds scikit-learn).
+numpy==2.5.5
+pandas==3.1.1
+scipy==1.18.1
+matplotlib==3.11.2

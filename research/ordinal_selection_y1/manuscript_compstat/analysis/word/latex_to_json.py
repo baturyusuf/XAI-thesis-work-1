@@ -111,7 +111,7 @@ GREEK = {'nu': 'ν', 'rho': 'ρ', 'lambda': 'λ', 'beta': 'β', 'varepsilon': '�
          'pi': 'π'}
 SYMS = {'le': '≤', 'ge': '≥', 'in': '∈', 'times': '×', 'to': '→', 'infty': '∞', 'sim': '∼', 'propto': '∝', 'mid': ' | ',
         'dots': '…', 'ldots': '…', 'sum': '∑', 'cdot': '·', 'qquad': '    ', 'quad': '  ', 'ne': '≠', 'top': '⊤', 'equiv': '≡',
-        '|': '‖', 'lvert': '|', 'rvert': '|', ',': ' ', ' ': ' '}
+        '|': '‖', 'lvert': '|', 'rvert': '|', 'lfloor': '⌊', 'rfloor': '⌋', ',': ' ', ' ': ' '}
 ROMAN_FUN = {'Pr', 'max', 'min', 'arg', 'log'}
 
 
@@ -393,7 +393,7 @@ HEADERS = {
     'tab_endpoint': [H('', '', ('QWK selection', 2), ('$\\Delta R_{\\mathrm{end}}$ relative to QWK', 3), '$\\Delta$QWK'),
                      H('Task', 'Family', '$R_0$', '$R_{K-1}$', 'AMAE', 'MMAE', 'QWK-floor', 'QWK-floor')],
     'tab_inference': [H('', ('$\\Delta R_{\\mathrm{end}}$', 6), ('$\\Delta$QWK', 2)),
-                      H('Contrast', 'PO $+/-$', 'RF $+/-$', 'All $+/-$', 'Median', '$p$', 'Holm $p$', '$+/-$', 'Median')],
+                      H('Contrast', 'PO $+/-$', 'RF $+/-$', 'Both $+/-$', 'Median', '$p$', 'Holm $p$', '$+/-$', 'Median')],
     'tab_controls': [H('Metric', 'Increase', 'Decrease', 'Median', 'Range')],
     'tab_constant': [H('Task', '$K$', '$\\nu_K$', 'Best cand.', 'QWK-sel.', 'AMAE-sel.', 'Worse than $\\nu_K$', 'QWK of QWK-sel.')],
     'tab_s_policies': [H('Task', 'Fam.', 'Criterion', 'QWK', 'MAE', 'AMAE', 'MMAE', 'Macro-F1', 'RPS', '$R_0$', '$R_{K-1}$', 'Bal.')],
@@ -412,6 +412,9 @@ HEADERS = {
     'tab_stage5': [H('', 'Prediction', 'Result', 'Supported')],
     'tab_s_stage5_tasks': [H('Task', '$n$', '$K$', '$K\\pi$ (low / high)', 'Best QWK')],
     'tab_s_friedman': [H('Evaluation', '$\\chi^2_6$', '$p$', 'QWK', 'MAE', 'AMAE', 'MMAE', 'Macro-F1', 'RPS', 'QWK-floor')],
+    'tab_s_source_rule': [H('', '', ('Agreement', 3), ('Spearman $\\rho$', 3)),
+                          H('Comparison', 'Points', 'Estimate', 'Task clusters', 'Source clusters', 'Estimate',
+                            'Task clusters', 'Source clusters')],
 }
 
 
@@ -605,10 +608,22 @@ def format_ref(e, key=None):
 
 def parse_supplement(src):
     src = re.sub(r'(?<!\\)%.*', '', src)
-    doc = {'blocks': [], 'title': 'Supplementary Information',
+    doc = {'blocks': [], 'title': re.search(r'\\title\{(.*?)\\\\\[', src).group(1).strip(),
            'subtitle': re.search(r'\\large ([^}]*)\}', src).group(1).strip(),
            'authors_line': re.search(r'\\author\{([^}]*)\}', latex_accents(src)).group(1).replace(' \\and ', ' · ')}
-    body = src[src.index('\\maketitle') + len('\\maketitle'):src.index('\\end{document}')]
+    # Front block required by the journal for supplementary files: journal name, corresponding author's
+    # affiliations and e-mail. It must agree with the author block of main.tex.
+    front = re.search(r'\\maketitle\s*\\begin\{center\}\\small\s*(.*?)\\end\{center\}', src, flags=re.S)
+    doc['front'] = [latex_accents(x).strip() for x in front.group(1).split('\\\\') if x.strip()]
+    main_src = latex_accents((MS / 'main.tex').read_text(encoding='utf-8'))
+    corr = re.search(r'\\author\*\[([^\]]*)\]\{\\fnm\{([^}]*)\} \\sur\{([^}]*)\}\}\\email\{([^}]*)\}', main_src)
+    affils = {m.group(1): latex_accents(', '.join(m.group(2, 3, 4, 5))) for m in re.finditer(
+        r'\\affil\*?\[(\d+)\]\{\\orgdiv\{([^}]*)\}, \\orgname\{([^}]*)\}, \\orgaddress\{\\city\{([^}]*)\}, \\country\{([^}]*)\}\}\}', main_src)}
+    need = [latex_accents(corr.group(2) + ' ' + corr.group(3)), corr.group(4)] + [affils[i] for i in corr.group(1).split(',')]
+    missing = [x for x in need if not any(x in line for line in doc['front'])]
+    if missing:
+        raise SystemExit('supplement front block disagrees with main.tex: ' + '; '.join(missing))
+    body = src[front.end():src.index('\\end{document}')]
     number_labels(body)
     B = doc['blocks']
     pat = re.compile(r'\\section\*\{([^}]*)\}|\\begin\{longtable\}.*?\\caption\{((?:[^{}]|\{(?:[^{}]|\{[^{}]*\})*\})*)\}'

@@ -130,7 +130,7 @@ Bu artışlar kalibre edilmiş değildir. Mantıkları şu: M1, ML dergilerinde 
 ## Ek (2026-11-24, makale yazımı sonrası)
 
 - **Görev sayısı düzeltmesi.** Yukarıda "4 kaynak" yazmıştım; bu yalnız gate-v2 görevlerini kapsıyordu. v1 pilot koşularıyla birlikte makale **6 birincil görev / 5 kaynak ailesi** kullanıyor: iki şarap, SkillCraft, Restaurant, Sushi ve MovieLens-100k. TAE kontrol görevi, eski 8 ligli SkillCraft ise "superseded" olarak ek bilgilerde raporlandı.
-- **Yeni analitik katkı.** Orta sınıfı sabit tahmin eden kural, veriden bağımsız olarak nAMAE = (K+1)/(4K) değerini alıyor. Zayıf sinyalli 3 görevde 8 adayın hepsi bu değerden daha kötü. Bu sonuç, Computational Statistics editörünün makaleyi "yalnızca benchmark" olarak görme riskini azaltıyor.
+- **Yeni analitik katkı.** Orta sınıfı sabit tahmin eden kural, veriden bağımsız olarak nAMAE = ⌊K²/4⌋/{K(K−1)} değerini alıyor (tek K için (K+1)/(4K)). Zayıf sinyalli 3 görevde 8 adayın hepsi bu değerden daha kötü. Bu sonuç, Computational Statistics editörünün makaleyi "yalnızca benchmark" olarak görme riskini azaltıyor.
 - **Güncellenmiş tahmin.** Bu iki nedenle Computational Statistics için öznel kabul tahminimi %30–40'tan **%35–45**'e çekiyorum (B0 ve M3 tamamlandı). Bu da kalibre edilmiş bir olasılık değildir.
 - **Makale paketi:** `../manuscript_compstat/` (ayrıntılar için `README_SUBMISSION_TR.md`). M1 veri genişletmesi ayrı bir oturumda ve ayrı bir branch'te yürüyor.
 

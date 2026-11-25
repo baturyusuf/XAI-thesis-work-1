@@ -1,4 +1,32 @@
-# Y1 — Ordinal Selection Pilot
+# Ordinal model selection study (Y1)
+
+**Status (2026-11-25).** This directory holds the code, protocols, freeze records and aggregate results for the manuscript "Which metric should choose the model? Selection criteria, class weighting and endpoint recall in tabular ordinal classification", prepared for *Computational Statistics*. The version prepared for submission is tag `compstat-v2`.
+
+Start here:
+
+- [`manuscript_compstat/reproducibility/README.md`](manuscript_compstat/reproducibility/README.md) explains how every result is regenerated. It covers all five stages, the environment, the data preparation, model fitting, analysis, tables and figures.
+- [`manuscript_compstat/reproducibility/DATA_SOURCES.csv`](manuscript_compstat/reproducibility/DATA_SOURCES.csv) gives, for every data source, the provider, DOI, terms of use, whether redistribution is allowed, and the SHA-256 hashes.
+- The stage protocols and freeze records are here:
+
+  | Stage | Files |
+  |---|---|
+  | 1 | `Y1_PILOT_PROTOCOL.md`, `PROTOCOL_FREEZE.json` |
+  | 2 and the simulation | `gate_v2/` |
+  | 3 | `m1_extension/` |
+  | 4 | `robustness_m2/` |
+  | 5 | `validation_m5/`, pushed before any fit in commit `66e426e` |
+
+- [`manuscript_compstat/`](manuscript_compstat/) holds the manuscript sources, the analysis scripts and the aggregate outputs (`analysis/out/`).
+
+Raw data, identifiers and row-level predictions are not in the repository.
+
+The proportional-odds code comes from the authors' public repository `employee-performance-with-XAI` at commit `c7f7729`; see the reproducibility guide.
+
+The text below is the original pilot README, kept as a historical record; only its title was marked as historical. Its earlier hash is recorded in `gate_v2/CHECKPOINT_SELECTION.json`. Statements such as "NOT submission-ready" refer to that pilot stage and are superseded.
+
+---
+
+# Y1 — Ordinal Selection Pilot (historical notes)
 
 Current status: see [CURRENT_PROGRESS.md](CURRENT_PROGRESS.md) and [Gate-v2 decision](gate_v2/Y1_GATE_V2_DECISION.md). The v1 reports below remain historical evidence.
 Own branch: research/ordinal-selection-y1. Research and technical pilot, NOT submission-ready or a completed confirmatory benchmark.

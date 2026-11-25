@@ -12,12 +12,19 @@
 \setlength{\LTcapwidth}{\textwidth}
 \input{numbers}
 
-\title{Supplementary Information\\[4pt]\large Which metric should choose the model? Selection criteria, class weighting and endpoint recall in tabular ordinal classification}
+\title{Online Resource 1: Supplementary Information\\[4pt]\large Which metric should choose the model? Selection criteria, class weighting and endpoint recall in tabular ordinal classification}
 \author{Muhammed Yusuf Batur \and Mehmet G\"{o}kt\"{u}rk}
 \date{}
 
 \begin{document}
 \maketitle
+
+\begin{center}\small
+Journal: Computational Statistics\\
+Corresponding author: Muhammed Yusuf Batur, baturmuhammedyusuf@gmail.com\\
+Department of Computer Sciences, Faculty of Engineering and Natural Sciences, Istanbul Rumeli University, Istanbul, T\"{u}rkiye\\
+Department of Computer Engineering, Graduate School, Gebze Technical University, Kocaeli, T\"{u}rkiye
+\end{center}
 
 \section*{S1 Data provenance, features and dependence}
 
@@ -125,7 +132,7 @@ Prior & Signal & Fam. & Criterion & Same & $\Delta R_{\mathrm{end}}$ & MC 95\% i
 
 {\footnotesize
 \begin{longtable}{@{}lrr*{7}{r}@{}}
-\caption{Friedman tests and mean ranks of the seven criteria over the \NCells{} primary task--family cells, for each evaluation metric (rank 1 = best; Nemenyi critical difference at $\alpha=0.05$: \NemenyiCD{}).}\label{tab:s-friedman}\\
+\caption{Friedman tests and mean ranks of the seven criteria for each evaluation metric, with the \FriedBlocks{} primary sources as blocks: ranks are computed within each of the \NCells{} task--family cells and averaged within each source (the two model families, and for wine the two tasks), because these cells are not independent. Rank 1 = best; Nemenyi critical difference at $\alpha=0.05$ with \FriedBlocks{} blocks: \NemenyiCD{}.}\label{tab:s-friedman}\\
 \toprule
 Evaluation & $\chi^2_6$ & $p$ & QWK & MAE & AMAE & MMAE & Macro-F1 & RPS & QWK-floor\\
 \midrule\endfirsthead
@@ -179,6 +186,18 @@ Task & $n$ & $K$ & $K\pi$ (low / high) & Best QWK\\
 \midrule\endfirsthead
 \bottomrule\endfoot
 \input{tab_s_stage5_tasks}
+\end{longtable}
+}
+
+{\footnotesize
+\begin{longtable}{@{}lrrllrll@{}}
+\caption{Endpoint-share rule with task-cluster and source-cluster bootstrap intervals. Agreement: share of endpoint--family points whose recall changed in the direction given by the rule (zero changes excluded for AMAE$-$QWK selection); $\rho$: Spearman correlation between the change and $\log(K\pi_c)$. The 95\% percentile intervals resample tasks (as in the main text) or the \NSourcesRule{} primary sources (the two wine tasks form one source), 2000 resamples each.}\label{tab:s-source-rule}\\
+\toprule
+& & \multicolumn{3}{c}{Agreement} & \multicolumn{3}{c}{Spearman $\rho$}\\
+Comparison & Points & Estimate & Task clusters & Source clusters & Estimate & Task clusters & Source clusters\\
+\midrule\endfirsthead
+\bottomrule\endfoot
+\input{tab_s_source_rule}
 \end{longtable}
 }
 
