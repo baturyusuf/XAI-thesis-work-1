@@ -17,7 +17,7 @@ Sıra: **1) Computational Statistics → 2) Pattern Analysis and Applications (P
 
 **PAA'ya geçerken (aktif 3–5 saat).**
 - Yorum varsa işlenir.
-- Kod deposu kamuya açılır. Ön koşul olarak `employee-performance-with-XAI` kodunun lisansına karar verilir; bu karar sizde. Ardından M1 dalı birleştirilir. `reproducibility/` hazır.
+- Kod deposu zaten herkese açık; M1 dalı birleştirildi (2026-11-25). `reproducibility/` hazır. Açık kalan tek konu: `employee-performance-with-XAI` deposunun lisans kararı (karar sizde).
 - Giriş ve tartışma "pattern analysis" okuruna göre hafifçe yeniden çerçevelenir: seçim ölçütü bir model-değerlendirme tasarım kararıdır.
 - Kapak mektubu yeniden yazılır.
 

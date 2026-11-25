@@ -27,17 +27,29 @@ BLUES = ['#cde2fb', '#9ec5f4', '#6da7ec', '#3987e5', '#2a78d6', '#1c5cab', '#104
 # Journal artwork guidelines: sans-serif lettering (Helvetica or Arial), about 8-12 pt at final size; nothing below 7 pt.
 plt.rcParams.update({
     'font.family': 'sans-serif', 'font.sans-serif': ['Arial', 'Helvetica', 'DejaVu Sans'], 'font.size': 8, 'axes.titlesize': 8.5, 'axes.labelsize': 8,
-    'xtick.labelsize': 7.5, 'ytick.labelsize': 7.5, 'legend.fontsize': 7.5,
+    'xtick.labelsize': 8, 'ytick.labelsize': 8, 'legend.fontsize': 7.5,
     'axes.edgecolor': INK2, 'axes.labelcolor': INK, 'xtick.color': INK2, 'ytick.color': INK2,
-    'axes.linewidth': 0.6, 'pdf.fonttype': 42, 'ps.fonttype': 42, 'savefig.dpi': 300,
+    'axes.linewidth': 0.6, 'pdf.fonttype': 42, 'ps.fonttype': 42, 'savefig.dpi': 600,
 })
+
+
+def _lum(rgb):
+    c = [x / 12.92 if x <= 0.03928 else ((x + 0.055) / 1.055) ** 2.4 for x in rgb[:3]]
+    return 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2]
+
+
+def text_on(rgb):
+    """Text colour (white or ink) with the higher WCAG contrast on a background colour."""
+    from matplotlib.colors import to_rgb
+    lb, li = _lum(rgb), _lum(to_rgb(INK))
+    return 'white' if 1.05 / (lb + 0.05) > (lb + 0.05) / (li + 0.05) else INK
 
 TASK_LABEL = {'wine_red': 'Wine (red)', 'wine_white': 'Wine (white)', 'skillcraft_survey': 'SkillCraft',
               'restaurant': 'Restaurant', 'sushi': 'Sushi', 'movielens100k': 'MovieLens-100k', 'ctg': 'CTG',
               'hcv': 'HCV', 'cirrhosis': 'Cirrhosis', 'support2': 'SUPPORT2', 'tae': 'TAE (control)',
               'diabetes130': 'Diabetes130 (control)', 'student_por': 'Student (control)', 'npha': 'NPHA (control)'}
 POL_LABEL = {'qwk': 'QWK', 'mae': 'MAE', 'amae': 'AMAE', 'mmae': 'MMAE', 'macro_f1': 'Macro-F1',
-             'rps': 'RPS', 'qwk_recall': 'QWK + recall floor'}
+             'rps': 'RPS', 'qwk_recall': 'QWK-floor'}
 EVAL_LABEL = {'qwk': 'QWK', 'macro_f1': 'Macro-F1', 'normalized_mae': 'MAE', 'normalized_amae': 'AMAE',
               'normalized_mmae': 'MMAE', 'rps': 'RPS', 'recall_extreme': 'Endpoint\nrecall'}
 POLICIES = list(POL_LABEL)
@@ -58,7 +70,8 @@ def check_limits(name, values, lo, hi):
 
 
 def save(fig, name):
-    fig.savefig(FIG / f'{name}.pdf', bbox_inches='tight')
+    # No creation date in the PDF, so that regenerated figures are byte-identical.
+    fig.savefig(FIG / f'{name}.pdf', bbox_inches='tight', metadata={'CreationDate': None})
     fig.savefig(FIG / f'{name}.png', bbox_inches='tight')
     plt.close(fig)
 
@@ -111,7 +124,7 @@ im = ax.imshow(mat, cmap=cmap, vmin=0, vmax=1, aspect='auto')
 for i in range(mat.shape[0]):
     for j in range(mat.shape[1]):
         v = mat[i, j]
-        ax.text(j, i, f'{v:.2f}', ha='center', va='center', fontsize=7, color='white' if v > 0.55 else INK)
+        ax.text(j, i, f'{v:.2f}', ha='center', va='center', fontsize=7.5, color=text_on(cmap(min(max(v, 0), 1))))
 ax.set_xticks(range(mat.shape[1]))
 ax.set_xticklabels([EVAL_LABEL[c] for c in regret.columns])
 ax.set_yticks(range(mat.shape[0]))
@@ -136,10 +149,9 @@ im = ax1.imshow(Am, cmap=cmap, vmin=0, vmax=1)
 for i in range(len(POLICIES)):
     for j in range(i + 1):
         v = A[i, j]
-        ax1.text(j, i, f'{v:.2f}', ha='center', va='center', fontsize=7, color='white' if v > 0.55 else INK)
+        ax1.text(j, i, f'{v:.2f}', ha='center', va='center', fontsize=7, color=text_on(cmap(v)))
 ax1.set_xticks(range(len(POLICIES)))
-ax1.set_xticklabels([POL_LABEL[p].replace(' + recall floor', ' + floor') for p in POLICIES], rotation=40,
-                    ha='right', rotation_mode='anchor', fontsize=7)
+ax1.set_xticklabels([POL_LABEL[p] for p in POLICIES], rotation=40, ha='right', rotation_mode='anchor', fontsize=7.5)
 ax1.set_yticks(range(len(POLICIES)))
 ax1.set_yticklabels([POL_LABEL[p] for p in POLICIES])
 ax1.tick_params(length=0)
@@ -151,13 +163,13 @@ bal = prim.groupby('policy')['balanced_fraction'].mean().reindex(POLICIES)
 yy = np.arange(len(POLICIES))
 ax2.barh(yy, bal.values, color=COL['po'], height=0.55)
 for y_, v in zip(yy, bal.values):
-    inside = v > 0.85
-    ax2.text(v - 0.02 if inside else v + 0.02, y_, f'{v:.2f}', va='center', ha='right' if inside else 'left',
-             fontsize=7, color='white' if inside else INK)
+    # labels outside the bars: ink on white keeps the contrast above 4.5:1
+    ax2.text(v + 0.02, y_, f'{v:.2f}', va='center', ha='left', fontsize=7.5, color=INK)
 ax2.set_yticks(yy)
 ax2.set_yticklabels([POL_LABEL[p] for p in POLICIES])
 ax2.invert_yaxis()
-ax2.set_xlim(0, 1.05)
+ax2.set_xlim(0, 1.13)
+ax2.set_xticks([0, 0.2, 0.4, 0.6, 0.8, 1.0])
 ax2.set_xlabel('Fraction of decisions selecting class-balanced weights')
 ax2.set_title('(b) Class weighting chosen by each criterion')
 style(ax2)

@@ -162,7 +162,8 @@ function figure(b, textWidthDxa) {
     new Paragraph({ alignment: AlignmentType.CENTER, keepNext: true, spacing: { before: 240, after: 0 },
       children: [new ImageRun({ type: 'png', data: buf, transformation: { width: widthPx, height: Math.round(widthPx * h / w) },
         altText: { title: 'Figure ' + b.num, description: b.caption.map((r) => r.t).join('').slice(0, 250), name: b.file } })] }),
-    caption('Fig.', b.num, b.caption, 60),
+    // Journal style: no punctuation at the end of a figure caption.
+    caption('Fig.', b.num, b.caption.map((r, i, a) => (i === a.length - 1 && r.t ? { ...r, t: r.t.replace(/\.\s*$/, '') } : r)), 60),
   ];
 }
 

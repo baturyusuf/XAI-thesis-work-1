@@ -563,7 +563,7 @@ def parse_main(src):
     def sortkey(k):
         last = authors_of(BIB[k])[0][0]
         core = re.sub(r'^(?:[a-z]+\s)+', '', last)
-        return (core.lower(), BIB[k]['year'])
+        return (core.lower(), BIB[k]['year'] + SUFFIX.get(k, ''))
     refs = []
     for k in sorted(CITED, key=sortkey):
         refs.append(format_ref(BIB[k], k))
@@ -590,6 +590,10 @@ def format_ref(e, key=None):
         runs.append({'t': tail + '.'})
     elif typ in ('inproceedings', 'incollection'):
         runs.append({'t': 'In: '})
+        if e.get('editor'):
+            eds = authors_of({'author': e['editor']})
+            runs.append({'t': ', '.join(f"{last} {''.join(p[0] for p in re.split(r'[\s-]+', first) if p)}".strip()
+                                        for last, first in eds) + (' (eds) ' if len(eds) > 1 else ' (ed) ')})
         runs.append({'t': tex_accents(e['booktitle']), 'i': True})
         if e.get('series'):
             runs.append({'t': ' (' + tex_accents(e['series']) + (' ' + e['volume'] if e.get('volume') else '') + ')'})

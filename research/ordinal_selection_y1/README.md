@@ -4,7 +4,7 @@
 
 Start here:
 
-- [`manuscript_compstat/reproducibility/README.md`](manuscript_compstat/reproducibility/README.md) explains how every result is regenerated. It covers all five stages, the environment, the data preparation, model fitting, analysis, tables and figures.
+- [`manuscript_compstat/reproducibility/README.md`](manuscript_compstat/reproducibility/README.md) explains how every table, figure and number is regenerated from the aggregate outputs, how the five stages were run, and the current limits of rerunning the model fits from the raw data.
 - [`manuscript_compstat/reproducibility/DATA_SOURCES.csv`](manuscript_compstat/reproducibility/DATA_SOURCES.csv) gives, for every data source, the provider, DOI, terms of use, whether redistribution is allowed, and the SHA-256 hashes.
 - The stage protocols and freeze records are here:
 

@@ -2,7 +2,7 @@
 
 This guide accompanies the manuscript "Which metric should choose the model? Selection criteria, class weighting and endpoint recall in tabular ordinal classification".
 
-It explains how every result in the paper can be regenerated from the original data sources. Raw data, identifiers and row-level predictions are not distributed. Two providers forbid redistribution, and the others are cited at their source.
+It explains how every table, figure and number in the paper is regenerated from the aggregate outputs in the repository, how each stage was run from the original data sources, and what currently limits a rerun of the model fits (see the last sections). Raw data, identifiers and row-level predictions are not distributed. Two providers forbid redistribution, and the others are cited at their source.
 
 ## What is in the study
 
@@ -35,9 +35,11 @@ All analyses used Python 3.13. `ENVIRONMENT.txt` lists the full package set of t
 **Proportional-odds code.** The proportional-odds estimator, the shared preprocessor and the RPS function are read from the authors' earlier public repository, `https://github.com/baturyusuf/employee-performance-with-XAI`, at commit `c7f7729`. They are not copied into this repository. To fetch them:
 
 ```
-git clone https://github.com/baturyusuf/employee-performance-with-XAI.git ../../../employee-performance-with-XAI
+git clone --no-checkout https://github.com/baturyusuf/employee-performance-with-XAI.git ../../../employee-performance-with-XAI
 python bootstrap_source.py --source-repo ../../../employee-performance-with-XAI
 ```
+
+`--no-checkout` is enough because `bootstrap_source.py` reads the files from the Git history. It also avoids a Windows path-length error on unrelated report files in that repository.
 
 `bootstrap_source.py` copies the five files of that commit into the ignored `local/source/` folder. `y1/source.py` checks them against the SHA-256 hashes in `SOURCE_MANIFEST.json` before every fit and stops if any file differs.
 
@@ -124,10 +126,46 @@ The first three steps need the saved predictions in the ignored `local/` folders
 What each step does:
 - **`m3_cross_task.py`** reads the saved out-of-fold probabilities, recomputes every metric with an independent implementation, and checks the results against the stored run summaries (2,100 comparisons; largest difference 2.2e-16). It writes aggregate tables only.
 - **`m4_robustness.py`** evaluates H1–H5 and S1–S3 exactly as written in the stage-4 protocol (task-cluster bootstrap with 2,000 resamples; Monte Carlo t intervals with 9 df) and writes `m4_hypotheses.json` with a supported / not supported verdict for each.
+- **Superseded outputs kept in `analysis/out/`.** `friedman_ranks.csv` and the rows with `model_family == "both"` in `cross_task_inference.csv` treat task–family cells as independent blocks. They are not used in the paper; use `source_level_*.csv` instead.
 - **`source_level.py`** repeats the cross-task tests with the nine primary sources as independent units. It runs Friedman tests with source blocks and Wilcoxon tests with the two model families averaged within each source. It also recomputes the bootstrap intervals of the endpoint-share rule with source clusters. Inputs are aggregate outputs only.
 - **`make_tables.py`** writes `numbers.tex` (every number in the text) and `tables/`. It also enforces claim guards: if a re-analysis changed any qualitative statement in the text, the script stops instead of producing an inconsistent manuscript.
 - **`check_and_package.py`** checks the LaTeX sources and builds flat upload folders.
 - **`analysis/word/build_word.ps1`** builds the Word versions from the same sources.
+
+## Tests
+
+Run each test folder in its own `pytest` call from `research/ordinal_selection_y1/`. The folders use the same module names (for example `data`), so a single call over all folders fails at import.
+
+- **Without any data.** These run in a fresh clone:
+  ```
+  python -B -m pytest -q -p no:cacheprovider tests                      # 24 tests
+  python -B -m pytest -q -p no:cacheprovider gate_v2/mechanism/tests    # 7 tests
+  ```
+- **With the prepared data.** These read the prepared tables, splits and freezes in the ignored `local/` folder:
+  - `gate_v2/real_extension/tests`
+  - `gate_v2/skillcraft_survey/tests`
+  - `m1_extension/tests`, except `test_freeze_matches_when_present`, which checks the authors' own local freeze and fails on any other machine
+- **With the run outputs.** `gate_v2/tests` reads the outputs of the stage-2 runs.
+- **Stage 4 and 5 smoke checks.** These are scripts, not `pytest` files. Each takes the stage 1–2 and stage 3 directories as arguments:
+  ```
+  python -B robustness_m2/tests/test_smoke.py <stage 1-2 dir> <stage 3 dir>
+  python -B validation_m5/tests/test_smoke.py <stage 1-2 dir> <stage 3 dir>
+  ```
+
+A clean-clone check on 2026-11-25 covered the no-fitting steps above. In a fresh clone with the pinned packages, `source_level.py`, `make_figures.py`, `make_tables.py` and `check_and_package.py` reproduced `numbers.tex` and every table from `analysis/out/` byte for byte on Windows; on other systems the files differ only in line endings. `bootstrap_source.py` retrieved the proportional-odds code from the public upstream repository, and its hash check passed. The two no-data test folders passed. The data-dependent tests stop with "file not found" when `local/` is empty, as expected. Downloading the data and refitting were not repeated in that check.
+
+## Rerunning the model fits from the original data: current limitations
+
+The runners were written to protect the original runs: they refuse to overwrite existing records, and they verify their inputs against the frozen hashes before fitting. In a fresh clone this makes a rerun from raw data harder than the commands above suggest. Before any rerun, work on a copy of `research/ordinal_selection_y1/`, never on the original records.
+
+1. **Manifests rewritten by setup scripts.** `bootstrap_source.py` rewrites `SOURCE_MANIFEST.json`, and `prepare_data.py` rewrites `DATA_MANIFEST.json` with a new time stamp. Both files are hashed by later freezes. After running either script, restore the committed version with `git checkout -- <file>`.
+2. **Stage 1.** `run_pilot.py --prepare` refuses to run while the committed `PROTOCOL_FREEZE.json` exists. Use `make_replay.py`, which creates a separate replay copy (see the historical notes in `../README.md`).
+3. **Stages 2 and 3.** Their freezes also hash time-stamped audit files and saved web pages that cannot be rebuilt byte for byte. The runners' `verify` step therefore fails on a fresh download, even when the prepared tables and splits are identical. Compare the prepared tables and splits with the hashes in the freeze files instead.
+4. **Stage 4.** `robustness_m2/FREEZE.json` records the authors' absolute local paths. `tasks` and `sim` therefore run only after these keys are adjusted in a working copy.
+5. **Stage 5.** `fetch.py` and `prepare` refuse to overwrite their committed outputs. Its freeze labels files by stage (`stage1-2:`, `stage3:`, `stage5:`). With the merged layout, pass the same study directory for both `--y1` and `--m1`.
+6. **Environment.** The runners check the exact package versions in `ENVIRONMENT.txt`, which includes Python 3.13.15 and threadpoolctl 3.8.0 in addition to `requirements.txt`.
+
+A replay script that rebuilds the tables and splits in a fresh directory and checks them against the frozen hashes would remove these obstacles. It has not been written yet.
 
 ## Code dependency and licences
 

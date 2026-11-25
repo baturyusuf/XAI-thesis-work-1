@@ -27,7 +27,7 @@ CONTROLS = ['tae', 'diabetes130', 'student_por', 'npha']
 RATING = ['restaurant', 'sushi', 'movielens100k']
 STAGE3 = ['ctg', 'hcv', 'cirrhosis', 'support2']
 POL = {'qwk': 'QWK', 'mae': 'MAE', 'amae': 'AMAE', 'mmae': 'MMAE', 'macro_f1': 'Macro-F1', 'rps': 'RPS',
-       'qwk_recall': 'QWK+floor'}
+       'qwk_recall': 'QWK-floor'}
 FAM = {'po': 'PO', 'rf': 'RF'}
 
 tasks = pd.read_csv(OUT / 'tasks.csv').set_index('task')
@@ -88,7 +88,7 @@ def write(name, body):
 # ------------------------------------------------------------------ Table 1: data
 lic = {'wine_red': 'CC BY', 'wine_white': 'CC BY', 'skillcraft_survey': 'CC BY', 'restaurant': 'CC BY',
        'sushi': 'research', 'movielens100k': 'research', 'ctg': 'CC BY', 'hcv': 'CC BY', 'cirrhosis': 'CC BY',
-       'support2': 'research', 'tae': 'CC BY', 'diabetes130': 'CC BY', 'student_por': 'CC BY', 'npha': 'CC BY'}
+       'support2': 'permission', 'tae': 'CC BY', 'diabetes130': 'CC BY', 'student_por': 'CC BY', 'npha': 'CC BY'}
 unit = {'wine_red': 'duplicates', 'wine_white': 'duplicates', 'skillcraft_survey': 'duplicates', 'restaurant': 'user',
         'sushi': 'user', 'movielens100k': 'user', 'ctg': 'exam file', 'hcv': 'patient', 'cirrhosis': 'patient',
         'support2': 'patient', 'tae': 'instructor', 'diabetes130': 'patient', 'student_por': 'duplicates',
@@ -129,8 +129,9 @@ for pc in ('amae', 'macro_f1', 'qwk_recall', 'mmae', 'mae', 'rps'):
         cells.append(f"{int(r.positive)}/{int(r.negative)}")
     r = sinf[(sinf.policy_minus_qwk == pc) & (sinf.metric == 'endpoint_recall_delta')].iloc[0]
     cells.append(f"{int(r.positive)}/{int(r.negative)}")
-    cells += [signed(r['median'], 3), pval(r.wilcoxon_exact_p),
-              (pval(r.holm_p_primary) if not np.isnan(r.holm_p_primary) else '--')]
+    # exact Wilcoxon p-values are multiples of 2^-n; four decimals avoid rounding 0.0625 to 0.062
+    cells += [signed(r['median'], 3), f'{r.wilcoxon_exact_p:.4f}',
+              (f'{r.holm_p_primary:.4f}' if not np.isnan(r.holm_p_primary) else '--')]
     q = sinf[(sinf.policy_minus_qwk == pc) & (sinf.metric == 'qwk_delta')].iloc[0]
     cells += [f"{int(q.positive)}/{int(q.negative)}", signed(q['median'], 3)]
     rows.append(' & '.join(cells) + ' \\\\')
@@ -252,7 +253,7 @@ m('FriedEndMaxDiff', _fe.max() - _fe.min())
 ie = sinf[sinf.metric == 'endpoint_recall_delta'].set_index('policy_minus_qwk')
 iq = sinf[sinf.metric == 'qwk_delta'].set_index('policy_minus_qwk')
 for a, an in [('amae', 'Amae'), ('macro_f1', 'Mfone'), ('qwk_recall', 'Con'), ('mmae', 'Mmae'), ('mae', 'Mae'), ('rps', 'Rps')]:
-    m('WilP' + an, ie.loc[a, 'wilcoxon_exact_p'], '{:.3f}')
+    m('WilP' + an, ie.loc[a, 'wilcoxon_exact_p'], '{:.4f}')  # exact p (dyadic), four decimals
     m('WilPos' + an, int(ie.loc[a, 'positive']), '{}')
     m('WilNeg' + an, int(ie.loc[a, 'negative']), '{}')
     m('WilMed' + an, ie.loc[a, 'median'], '{:+.3f}')
@@ -260,7 +261,7 @@ for a, an in [('amae', 'Amae'), ('macro_f1', 'Mfone'), ('qwk_recall', 'Con'), ('
     m('QwkCostMed' + an, iq.loc[a, 'median'], '{:+.3f}')
     m('QwkCostNeg' + an, int(iq.loc[a, 'negative']), '{}')
     m('QwkCostP' + an, iq.loc[a, 'wilcoxon_exact_p'], '{:.3f}')
-m('HolmCon', ie.loc['qwk_recall', 'holm_p_primary'], '{:.3f}')
+m('HolmCon', ie.loc['qwk_recall', 'holm_p_primary'], '{:.4f}')
 amae_c = con[(con.policy_minus_qwk == 'amae') & con.task.isin(PRIMARY)]
 m('AmaeMin', amae_c.endpoint_recall_delta.min(), '{:+.2f}')
 m('AmaeMax', amae_c.endpoint_recall_delta.max(), '{:+.2f}')
@@ -583,7 +584,7 @@ rows = [
     '\\multicolumn{4}{@{}l}{\\emph{Part A: four new sources; PO, RF and HGB unless stated}}\\\\',
     f"V1 & Balanced weights chosen in $<0.20$ of decisions by MAE and RPS, $>0.80$ by MMAE & MAE {f2(b1_['mae'])}, RPS {f2(b1_['rps'])}, MMAE {f2(b1_['mmae'])} & {yes5(sup5['V1'])}\\\\",
     f"V2 & Weighting rule: agreement $\\ge0.75$ and $\\rho<0$ ({H5_['V2']['points']} points) & agreement {f2(H5_['V2']['agreement'])} {rng5(H5_['V2']['agreement_ci'])}; {rhs(H5_['V2'])} & {yes5(sup5['V2'])}\\\\",
-    f"V2b & Proposition~2: weighting never lowers the recall of a rarest category (four families) & {H5_['V2b']['nonnegative']} of {H5_['V2b']['comparisons']} comparisons & {yes5(sup5['V2b'])}\\\\",
+    f"V2b & Implication of Proposition~2 in weighted training: weighting never lowers the recall of a rarest category (four families) & {H5_['V2b']['nonnegative']} of {H5_['V2b']['comparisons']} comparisons & {yes5(sup5['V2b'])}\\\\",
     f"V3 & AMAE rule where QWK of the QWK-selected model $\\ge0.30$: agreement $\\ge0.75$ & {v3['qualifying_nonzero_points']} qualifying points" + (f"; agreement {f2(v3['agreement'])}" if v3['agreement'] is not None else '') + f" & {yes5(sup5['V3'])}\\\\",
     f"V4 & Recall floor with max--min fallback: $\\Delta R_{{\\mathrm{{end}}}}\\ge-0.02$ in every cell (four families) & minimum {signed(H5_['V4']['min_delta'], 3)} in {H5_['V4']['cells']} cells & {yes5(sup5['V4'])}\\\\",
     f"V5 & Every criterion has regret $\\ge0.30$ on some other metric & smallest maximum {f2(min(mr5.values()))} ({POL[min(mr5, key=mr5.get)]}) & {yes5(sup5['V5'])}\\\\",
@@ -631,6 +632,11 @@ m('FtwoExcN', len(excF), '{}')
 qf = D5_['fh_vs_hgb_qwk_of_qwk_selected_primary']
 m('FhQwk', qf['fh']); m('HgbQwk', qf['hgb'])
 m('SchedMismatch', H5_['schedule_reselection_mismatches'], '{}')
+# bootstrap draws discarded because a resampled endpoint category had no cases (per task-family contrast)
+m('BootDropMax', int(con.unsupported_draws.max()), '{}')
+m('BootDropCells', int((con.unsupported_draws > 0).sum()), '{}')
+m('BootContrastCells', len(con), '{}')
+m('NhisKpiLow', t5.set_index('task').loc['nhis_srh', 'kpi_low'])
 m('PredAllN', 8 + len(VERD5), '{}')
 m('PredAllOk', 6 + sum(1 for v in sup5.values() if v is True), '{}')
 rows = []
@@ -673,6 +679,12 @@ guards = {
     'Friedman QWK ranks: QWK first, QWK-floor second, MMAE last':
         list(fr.loc['qwk'][[f'avg_rank_{k_}' for k_ in POL]].sort_values().index[:2]) == ['avg_rank_qwk', 'avg_rank_qwk_recall']
         and fr.loc['qwk'][[f'avg_rank_{k_}' for k_ in POL]].idxmax() == 'avg_rank_mmae',
+    'stage 5: exactly one re-selection mismatch (text says "all but 1 decision")': H5_['schedule_reselection_mismatches'] == 1,
+    'QWK-floor source-level p is the smallest attainable with its nonzero sources':
+        abs(ie.loc['qwk_recall', 'wilcoxon_exact_p'] - 2 / 2 ** int(ie.loc['qwk_recall', 'nonzero_blocks'])) < 1e-12
+        and ie.loc['qwk_recall', 'negative'] == 0,
+    'conclusion: weighting lowered most (not all) above-1/K endpoints':
+        0 < eps.loc[('primary', 'weight_delta')].above_pos < eps.loc[('primary', 'weight_delta')].above_neg,
     'counts written as words: nine sources (Friedman blocks and Wilcoxon blocks)':
         int(fr.loc['qwk', 'blocks']) == 9 and int(ie.loc['amae', 'blocks']) == 9,
     'source-level contrasts: no primary contrast significant after Holm': (ie.loc[['amae', 'macro_f1', 'qwk_recall'], 'holm_p_primary'] > 0.05).all(),
@@ -694,9 +706,11 @@ guards = {
         (ctl[ctl.policy_minus_qwk == 'qwk_recall'].endpoint_recall_delta >= -1e-12).all(),
     'controls: AMAE loss largest in NPHA':
         ctl[ctl.policy_minus_qwk == 'amae'].sort_values('endpoint_recall_delta').task.iloc[0] == 'npha',
-    'endpoints above 1/K: CTG low, HCV low, SUPPORT2 both, Restaurant high, Sushi high':
-        all(json.loads(tasks.loc[t, 'class_counts'])[i] / tasks.loc[t, 'n'] * tasks.loc[t, 'k'] > 1
-            for t, i in (('ctg', 0), ('hcv', 0), ('support2', 0), ('support2', -1), ('restaurant', -1), ('sushi', -1))),
+    'endpoints above 1/K are exactly: CTG low, HCV low, SUPPORT2 both, upper of Restaurant, Sushi, MovieLens, Cirrhosis':
+        {(t, i) for t in PRIMARY for i in (0, -1)
+         if json.loads(tasks.loc[t, 'class_counts'])[i] / tasks.loc[t, 'n'] * tasks.loc[t, 'k'] > 1}
+        == {('ctg', 0), ('hcv', 0), ('support2', 0), ('support2', -1), ('restaurant', -1), ('sushi', -1),
+            ('movielens100k', -1), ('cirrhosis', -1)},
     'wine and SkillCraft: both endpoints below 1/K':
         all(json.loads(tasks.loc[t, 'class_counts'])[i] / tasks.loc[t, 'n'] * tasks.loc[t, 'k'] < 1
             for t in ('wine_red', 'wine_white', 'skillcraft_survey') for i in (0, -1)),

@@ -13,7 +13,7 @@ Makale beş aşamanın sonuçlarına dayanıyor: v1, gate-v2, M1, önceden belir
 |---|---|
 | `main.tex` | Ana makale (Springer Nature `sn-jnl` şablonu, yazar-yıl atıf stili `sn-mathphys-ay`) |
 | `supplement.tex` | Ek Bilgiler (standart `article` sınıfı; her LaTeX kurulumunda derlenir) |
-| `refs.bib` | Kaynakça. 49 kayıt; DOI'li olanların hepsi Crossref/DataCite'tan doğrulandı (`analysis/out/crossref_bibliography*.json`) |
+| `refs.bib` | Kaynakça. 50 kayıt; 2026-11-25'te 49 kaydın hepsi Crossref, DataCite, UCI ve yayıncı sayfalarından tek tek kontrol edildi, HCV veri seti kaydı eklendi |
 | `numbers.tex` | Metindeki her sayının makrosu. **Elle düzenlemeyin**; `analysis/make_tables.py` üretir |
 | `tables/` | Analiz çıktısından otomatik üretilen tablolar |
 | `figures/` | Şekiller (PDF + PNG) |
@@ -31,9 +31,9 @@ Kapsam: **10 birincil görev (9 kaynak)** ve **4 kontrol görevi**. Aşama 1–3
 Ana bulgular:
 1. **Seçim ölçütü sınıf ağırlığını belirliyor.** "Balanced" seçme oranı MAE'de 0,04, RPS'de 0,00, MMAE'de 0,96.
 2. **Sabit hiperparametreli kontroller nedenini gösteriyor.** Ağırlıklandırma 40 karşılaştırmanın 39'unda MAE'yi artırıyor, 38'inde MMAE'yi düşürüyor.
-3. **Yeni mekanizma: uç payı ve 1/K kuralı.** Payı 1/K'nın altındaki uç sınıflarda ağırlıklandırma recall'u 24/24 durumda artırıyor; üstündekilerde 16 durumun 13'ünde düşürüyor. AMAE seçimi de aynı kurala uyuyor. AMAE'nin QWK'ye göre etkisinin −0,40 ile +0,53 arasında yön değiştirmesinin açıklaması bu. M1 görevlerinde kural 16 durumun 15'inde tuttu.
+3. **Yeni mekanizma: uç payı ve 1/K kuralı.** Payı 1/K'nın altındaki uç sınıflarda ağırlıklandırma recall'u 24/24 durumda artırıyor; üstündekilerde 16 durumun 13'ünde düşürüyor. AMAE seçimi ilk görevlerde aynı kurala uydu, aşama 5'in yeni kaynaklarında uymadı. AMAE'nin QWK'ye göre etkisinin −0,40 ile +0,53 arasında yön değiştirmesinin açıklaması bu. M1 görevlerinde kural 16 durumun 15'inde tuttu.
 4. **Analitik sonuç (Önerme 1).** Orta sınıfı sabit tahmin eden kural nAMAE = ⌊K²/4⌋/{K(K−1)} değerini alıyor: tek K için (K+1)/(4K), çift K için K/{4(K−1)}. Bu kural uç sınıfları hiç bulmuyor. 4 görevde 8 adayın hepsinden iyi: üç rating görevi ve SUPPORT2. Deneylerdeki değerler etiketlerden doğrudan hesaplandı ve çift K'lı görevlerde (kırmızı şarap, Cirrhosis, HCV) de genel formülle aynı.
-5. **QWK + recall alt sınırı.** Ana havuzda hiçbir görev–aile hücresinde uç recall'u düşürmedi. İki aile kaynak içinde ortalandığında 9 kaynağın 5'inde artırdı (kesin Wilcoxon p=0,062, Holm p=0,19). Görev başına en büyük QWK kaybı 0,06. İç tahminlerde sağlanması dış testte garanti değil: aşama 4'te bu durumdaki hücrelerde kayıp en çok 0,011.
+5. **QWK + recall alt sınırı.** Ana havuzda hiçbir görev–aile hücresinde uç recall'u düşürmedi. İki aile kaynak içinde ortalandığında 9 kaynağın 5'inde artırdı (kesin Wilcoxon p=0,0625, beş sıfır olmayan kaynakla ulaşılabilecek en küçük değer; Holm p=0,19). Görev başına en büyük QWK kaybı 0,06. İç tahminlerde sağlanması dış testte garanti değil: aşama 4'te bu durumdaki hücrelerde kayıp en çok 0,011.
 6. **İstatistiksel birim (V6).** Görev–aile hücreleri bağımsız değil. Bu yüzden Friedman/Nemenyi ve Wilcoxon testleri 9 kaynak birimiyle yeniden yapıldı (`analysis/source_level.py`). Uç recall için Friedman p=0,039 ve sıralama aynı kaldı, ama Nemenyi hiçbir çifti ayırmıyor. QWK için Friedman artık anlamlı değil (p=0,20). 1/K kuralının bootstrap aralıkları kaynak kümeleriyle de aynı sonucu veriyor (Tablo S10).
 6. **Hiçbir ölçüt tüm metriklerde güvenli değil.**
 7. **Önerme 2 (yeni).** Prior düzeltmesi (m_c = 1/(Kπ_c)), en nadir sınıfın recall'unu düşüremez, en sık sınıfınkini artıramaz. Gerçek ağırlıklı eğitimde istisnasız tuttu: 32/32 ve 20/20.
@@ -61,7 +61,9 @@ Ana bulgular:
      - V2: 1/K kuralı, eşikte (0,75).
      - V2b: Önerme 2, 64/64.
      - V4: max–min yedekli taban yeni kaynaklarda hiç kayıp vermedi; AMAE yedeği 0,16'ya kadar kaybetti.
-     - V5, F1, D1, D2: medyan decoding ile de bulgular tutuyor.
+     - V5: hiçbir ölçüt güvenli değil.
+     - F1: ordinal (Frank–Hall) ailede de ölçüt ağırlığı belirliyor.
+     - D1, D2: medyan decoding ile de ağırlık kuralı ve ölçüt–ağırlık bağı tutuyor.
    - **Desteklenmeyenler:**
      - **V3.** AMAE kuralı yeni kaynaklarda tutmadı (14 noktanın yalnız 4'ü).
      - **F2.** Ordinal ailede ρ aralığı sıfırı içeriyor.
@@ -78,9 +80,9 @@ Dergi Word dosyasını da kabul ediyor. `word/` klasöründe beş öğe var:
 
 | Dosya | İçerik |
 |---|---|
-| `manuscript.docx` | Ana makale, 32 sayfa |
+| `manuscript.docx` | Ana makale, 33 sayfa |
 | `supplementary_information.docx` | Ek Bilgiler; geniş tablolar nedeniyle yatay sayfa, 20 sayfa |
-| `supplementary_information.pdf` | Ek Bilgiler'in Word'den alınmış PDF'i; Editorial Manager'a "Supplementary Material" olarak bu yüklenir |
+| `supplementary_information.pdf` | Ek Bilgiler'in Word'den alınmış PDF'i; Editorial Manager'a "Supplementary Material" olarak `ESM_1.pdf` adıyla yüklenir; metinde "Online Resource 1" olarak anılıyor |
 | `cover_letter.docx` | Editöre ön yazı |
 | `figures/Fig1–Fig6` (.pdf ve .png) | Şekiller, makaledeki numaralarıyla; dergi ayrı şekil dosyası isterse |
 
@@ -112,13 +114,13 @@ Overleaf'te derlemek için:
 ## Gönderim öncesi durum
 
 - [x] Yazarlar, kurumlar, e-postalar, ORCID'ler ve eşit katkı notu (`main.tex`, Ek Bilgiler, ön yazı)
-- [x] Yapay zekâ kullanım beyanı Methods'ta: "Claude, Anthropic"
+- [x] Yapay zekâ kullanım beyanı Methods'ta: "including Claude (Anthropic)". Kullanılan diğer araçları yazarlar teyit etmeli.
 - [x] Funding, Competing interests, Ethics, Author contributions (CRediT)
-- [x] Code availability: repo linki, `compstat-v1` etiketi ve ön kayıt commit'i `66e426e`. PO modelinin kodu (`employee-performance-with-XAI`) talep üzerine.
+- [x] Code availability (V6): repo linki, `compstat-v2` etiketi, yeniden üretim rehberi ve ön kayıt commit'i `66e426e`. PO modelinin kodu herkese açık `employee-performance-with-XAI` deposunda (commit `c7f7729`); o deponun lisansı yok, karar sahibine ait.
 - [x] Ön yazıda tarih ve imza
 - [x] M1 dalı (`research/ordinal-y1-m1-extension`) bu dala birleştirildi (commit `fb44bc2`); Code availability "tüm aşamaların kodu" diyor
-- [x] `compstat-v1` etiketi ve push. Metin bu etikete atıf yapıyor; etiket gönderilen sürümü sabitler, taşınmamalı.
-- [ ] Editorial Manager'da gönderim: https://www.editorialmanager.com/cost/
+- [x] `compstat-v1` etiketi (V5) korunuyor; V6 için yeni etiket `compstat-v2`. Etiketler taşınmamalı.
+- [ ] Editorial Manager'da gönderim: https://www.editorialmanager.com/cost/. Yüklenecek dosyalar `word/submission_v6/editorial_manager/` içinde.
 
 ## Dergi kurallarına uyum (submission guidelines, 2026-11-24'te okundu)
 
@@ -150,6 +152,10 @@ Model eğitimi yapılmaz; yalnız kayıtlı tahminler okunur.
 <Y1 venv python> -B analysis/m3_cross_task.py <Y1 local klasörü> <M1 local klasörü> analysis/out
 # 1b) Aşama 4 hipotez testleri (önce ../robustness_m2/run.py ile fitler; bkz. reproducibility/README.md)
 <Y1 venv python> -B analysis/m4_robustness.py ../local/robustness_m2 ../robustness_m2 analysis/out
+# 1c) Aşama 5 tahmin testleri (önce ../validation_m5/run.py ile fitler)
+<Y1 venv python> -B analysis/m5_validation.py ../local/validation_m5 ../local/robustness_m2 ../validation_m5 analysis/out
+# 1d) Kaynak düzeyinde testler (yalnız analysis/out'taki toplu çıktılar)
+python -B analysis/source_level.py analysis/out
 # 2) Şekiller (matplotlib gerekir)
 python analysis/make_figures.py analysis/out figures
 # 3) Tablolar ve sayı makroları
