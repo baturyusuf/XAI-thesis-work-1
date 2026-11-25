@@ -115,8 +115,8 @@ Overleaf'te derlemek için:
 - [x] Funding, Competing interests, Ethics, Author contributions (CRediT)
 - [x] Code availability: repo linki, `compstat-v1` etiketi ve ön kayıt commit'i `66e426e`. PO modelinin kodu (`employee-performance-with-XAI`) talep üzerine.
 - [x] Ön yazıda tarih ve imza
-- [ ] M1 dalını (`research/ordinal-y1-m1-extension`) bu dala birleştirmek; Code availability "tüm aşamaların kodu" diyor
-- [ ] Commit, `compstat-v1` etiketi ve push. Etiket GitHub'da olmadan gönderim yapılmamalı; metin bu etikete atıf yapıyor.
+- [x] M1 dalı (`research/ordinal-y1-m1-extension`) bu dala birleştirildi (commit `fb44bc2`); Code availability "tüm aşamaların kodu" diyor
+- [x] `compstat-v1` etiketi ve push. Metin bu etikete atıf yapıyor; etiket gönderilen sürümü sabitler, taşınmamalı.
 - [ ] Editorial Manager'da gönderim: https://www.editorialmanager.com/cost/
 
 ## Dergi kurallarına uyum (submission guidelines, 2026-11-24'te okundu)
